@@ -3,6 +3,7 @@
 // #datasets[/field[/name]], #papers[/field], #benchmarks[/board], #status, #about.
 import { trace, requestThumb, mountLive, clearThumbs } from "./glyph.js";
 import { mountCells } from "./cells.js";
+import { saved, bibtex, manifest, downloadText, mountPalette } from "./library.js";
 
 const view = document.getElementById("view");
 const S = { fields: [], sources: [], datasets: [], papers: null, boards: null, status: null, build: null };
@@ -246,8 +247,53 @@ function replaceHash(hash) {
   try { window.history.replaceState(null, "", hash); } catch (e) { /* sandboxed */ }
 }
 
+// ---------- saved items ----------
+// Papers are kept in a lookup so a save button can store the full record.
+const paperIndex = new Map();
+function saveItem(kind, id) {
+  if (kind === "db") {
+    const s = S.sources.find((x) => x.id === id);
+    return s && { key: `db:${id}`, type: "database", title: s.name, version: s.latest, url: s.latest_url, href: `#source/${id}` };
+  }
+  if (kind === "ds") {
+    const d = S.datasets.find((x) => x.id === id);
+    return d && { key: `ds:${id}`, type: "dataset", title: d.name, version: d.versions || "", url: d.links[0]?.url || d.repo, href: `#datasets/${d.field}/${encodeURIComponent(d.name)}` };
+  }
+  const p = paperIndex.get(id);
+  return p && { key: `pp:${id}`, type: "paper", title: p.title, url: p.url, href: p.url, paper: p };
+}
+function saveBtn(kind, id, label = "") {
+  const on = saved.has(`${kind}:${id}`);
+  return `<button class="save ${label ? "with-label" : ""}" type="button" data-save="${esc(kind)}|${esc(id)}" aria-pressed="${on}" aria-label="${on ? "Remove from saved" : "Save"}">
+    <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 1.8h8v12.4L8 11.2l-4 3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>${label ? `<span>${on ? "Saved" : esc(label)}</span>` : ""}</button>`;
+}
+document.addEventListener("click", (e) => {
+  const b = e.target.closest("[data-save]");
+  if (!b) return;
+  e.preventDefault();
+  e.stopPropagation();
+  const [kind, id] = b.dataset.save.split("|");
+  const item = saveItem(kind, id);
+  if (!item) return;
+  const on = saved.toggle(item);
+  document.querySelectorAll(`[data-save="${CSS.escape(b.dataset.save)}"]`).forEach((x) => {
+    x.setAttribute("aria-pressed", String(on));
+    x.setAttribute("aria-label", on ? "Remove from saved" : "Save");
+    const span = x.querySelector("span");
+    if (span) span.textContent = on ? "Saved" : "Save";
+  });
+  toast(on ? "Saved. Find it under the bookmark icon." : "Removed from saved");
+});
+function updateSavedCount() {
+  const n = saved.all().length;
+  const el = document.getElementById("saved-n");
+  el.textContent = n;
+  el.hidden = n === 0;
+}
+saved.onChange(updateSavedCount);
+
 function sourceCard(s) {
-  return `<a class="card" href="#source/${esc(s.id)}">
+  return `<div class="card-wrap"><a class="card" href="#source/${esc(s.id)}">
     <span class="card-art">${art(s.name, s.field)}</span>
     <span class="card-body">
       <h3>${esc(s.name)}</h3>
@@ -255,7 +301,7 @@ function sourceCard(s) {
       <p>${esc(s.summary)}</p>
       <span class="card-meta"><span>${dot(s.id)} ${esc(s.latest) || "—"}</span><span>${s.versions.length} releases</span></span>
     </span>
-  </a>`;
+  </a>${saveBtn("db", s.id)}</div>`;
 }
 
 const dsName = (key) => {
@@ -285,6 +331,7 @@ const prettyDate = (d) => {
 };
 
 function paperCard(p, field, open = false) {
+  paperIndex.set(p.id, p);
   const authors = p.authors.length > 170 ? p.authors.slice(0, 170).replace(/,[^,]*$/, "") + ", et al." : p.authors;
   const fieldTags = (p.fields || []).map((id) => {
     const f = fieldOf(id);
@@ -310,9 +357,13 @@ function paperCard(p, field, open = false) {
       : `<p class="hint">The abstract of this paper is not openly licensed. Read it on the publisher's page.</p>`}
     <div class="links">${safe(p.url) ? `<a class="btn small" href="${esc(p.url)}" target="_blank" rel="noopener">Article</a>` : ""}${
       safe(p.pdf) ? `<a class="btn small" href="${esc(p.pdf)}" target="_blank" rel="noopener">PDF</a>` : ""
-    }${p.doi ? `<button class="btn small" type="button" data-copy="${esc(p.doi)}">Copy DOI</button>` : ""}</div>
+    }<button class="btn small" type="button" data-cite="${esc(p.id)}">Cite (BibTeX)</button>${saveBtn("pp", p.id, "Save")}</div>
   </article>`;
 }
+document.addEventListener("click", (e) => {
+  const c = e.target.closest("[data-cite]");
+  if (c && paperIndex.has(c.dataset.cite)) copy(bibtex(paperIndex.get(c.dataset.cite)));
+});
 document.addEventListener("click", (e) => {
   const more = e.target.closest("[data-more]");
   if (!more) return;
@@ -325,6 +376,7 @@ async function need(name) {
   if (S[name]) return S[name];
   const file = name === "boards" ? "leaderboards" : name;
   try { S[name] = await load(file); } catch (e) { S[name] = null; }
+  if (name === "latest") searchIndex = null;
   return S[name];
 }
 
@@ -347,12 +399,13 @@ async function pageHome() {
       <p class="lede">Every release of ${S.sources.length} core bioinformatics databases with a direct link you can paste into code, ${num(
         S.datasets.length
       )} public datasets, open-access papers by field and task, and published model comparisons. Rebuilt and checked every day.</p>
-      <label class="search" for="q">
+      <button class="search hero-search" type="button" data-open-search>
         <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle cx="7.5" cy="7.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 12l4.5 4.5" stroke="currentColor" stroke-width="1.6"/></svg>
-        <input id="q" type="search" autocomplete="off" placeholder="Search Ensembl 116, gnomAD v4.1, ChEMBL, single-cell…" aria-label="Search databases, releases, datasets and papers">
-        <span class="kbd" aria-hidden="true">/</span>
-      </label>
-      <div id="results" class="results" hidden></div>
+        <span>Search a database, a release, a dataset or a paper</span>
+        <kbd>/</kbd>
+      </button>
+      <p class="try"><span class="muted">Try</span>${["GRCh38", "Ensembl 116", "gnomAD", "AlphaFold", "ChEMBL", "single-cell", "CRISPR"]
+        .map((t) => `<button class="tag" type="button" data-search-for="${esc(t)}">${esc(t)}</button>`).join("")}</p>
       <div class="stats">
         <div class="stat"><b>${num(S.sources.length)}</b><span>databases</span></div>
         <div class="stat"><b>${num(versions)}</b><span>releases, ${num(linked)} linked</span></div>
@@ -392,23 +445,23 @@ async function pageHome() {
   <section class="section" id="home-latest"></section>
 
   <section class="section">
-    <div class="section-head"><h2>Recently released</h2><a href="#status">Source status →</a></div>
+    <div class="section-head"><h2>Recently released</h2><a href="#sources">All databases →</a></div>
     <div class="grid">${[...S.sources]
       .filter((s) => /^\d{4}-\d{2}/.test(s.latest_date))
       .sort((a, b) => b.latest_date.localeCompare(a.latest_date))
-      .slice(0, 8)
+      .slice(0, 4)
       .map(sourceCard)
       .join("")}</div>
   </section>
 
   <section class="section" id="home-board"></section>
-  <section class="section" id="home-papers"></section>
   </div>`;
 
   const stop3d = mountLive(document.getElementById("stage"), featured.name, f.shape);
   const stopCells = mountCells(document.getElementById("cells"));
   stopLive = () => { stop3d(); stopCells(); };
-  wireSearch();
+  view.querySelectorAll("[data-open-search]").forEach((b) => b.addEventListener("click", () => palette.open()));
+  view.querySelectorAll("[data-search-for]").forEach((b) => b.addEventListener("click", () => palette.open(b.dataset.searchFor)));
   armArt();
 
   const latest = await need("latest");
@@ -429,46 +482,43 @@ async function pageHome() {
     slot.innerHTML = `<div class="section-head"><h2>Top models on ${esc(b.title.split(":")[0])}</h2><a href="#benchmarks/${esc(b.id)}">Full comparison →</a></div>
       ${boardTable(b, b.rows.slice(0, 5), false)}`;
   }
-  const papers = await need("papers");
-  const pslot = document.getElementById("home-papers");
-  if (papers && pslot) {
-    const recent = papers.fields
-      .flatMap((x) => x.papers.filter((p) => p.lists.includes("recent")).slice(0, 1).map((p) => [x.id, p]))
-      .sort((a, b2) => b2[1].cited - a[1].cited)
-      .slice(0, 3);
-    pslot.innerHTML = `<div class="section-head"><h2>Recent papers gaining citations</h2><a href="#papers">All papers →</a></div>
-      <div class="paper-list">${recent.map(([fid, p]) => paperCard(p, fid)).join("")}</div>`;
-  }
 }
 
-function wireSearch() {
-  const q = document.getElementById("q");
-  const box = document.getElementById("results");
-  let timer = 0;
-  q.addEventListener("input", () => {
-    clearTimeout(timer);
-    timer = setTimeout(async () => {
-      const term = q.value.trim().toLowerCase();
-      if (term.length < 2) { box.hidden = true; return; }
-      const hit = (t) => String(t || "").toLowerCase().includes(term);
-      const papers = S.papers || (await need("papers"));
-      const rows = [
-        ...S.sources
-          .filter((s) => hit(s.name) || hit(s.summary) || s.versions.some((v) => hit(v.version)))
-          .slice(0, 6)
-          .map((s) => [`#source/${s.id}`, s.name, `database · ${s.latest || ""}`]),
-        ...S.datasets.filter((d) => hit(d.name) || hit(d.description)).slice(0, 6)
-          .map((d) => [`#datasets/${d.field}/${encodeURIComponent(d.name)}`, d.name, "dataset"]),
-        ...(papers?.fields || []).flatMap((x) => x.papers.map((p) => [x.id, p])).filter(([, p]) => hit(p.title) || hit(p.method))
-          .slice(0, 5).map(([fid, p]) => [`#papers/${fid}`, p.title, `paper · ${p.year}`]),
-      ];
-      box.hidden = false;
-      box.innerHTML = rows.length
-        ? rows.map(([href, label, kind]) => `<a href="${esc(href)}"><span>${esc(label)}</span><span class="kind">${esc(kind)}</span></a>`).join("")
-        : `<p class="muted" style="padding:8px 10px">Nothing matches “${esc(q.value)}”. Try a database name, a release or a field.</p>`;
-    }, 120);
-  });
+// ---------- site-wide search ----------
+// Built once from the loaded data; papers join when their files arrive.
+let searchIndex = null;
+function buildIndex() {
+  const idx = [
+    ["Databases", "Every release with a direct link", "#sources"],
+    ["Datasets", "Benchmarks and training data", "#datasets"],
+    ["New papers", "Last 60 days in the leading journals", "#latest"],
+    ["Most cited papers", "By field, all time and last 24 months", "#papers"],
+    ["Benchmarks", "Published model comparisons", "#benchmarks"],
+    ["Saved items", "Your reading list and data manifest", "#saved"],
+    ["Source status", "Daily reachability checks", "#status"],
+    ["How the atlas is built", "Reproducibility and citation", "#about"],
+  ].map(([title, sub, href]) => ({ kind: "Page", title, sub, href, text: title.toLowerCase() }));
+  for (const s of S.sources) {
+    idx.push({ kind: "Database", title: s.name, sub: `${fieldOf(s.field).label} · current ${s.latest || "—"}`, href: `#source/${s.id}`,
+      text: `${s.name} ${s.summary} ${s.id}`.toLowerCase() });
+    for (const v of s.versions) {
+      idx.push({ kind: "Release", title: `${s.name} ${v.version}`, sub: [v.date, v.status].filter(Boolean).join(" · "), href: `#source/${s.id}`,
+        text: `${s.name} ${v.version} ${v.note}`.toLowerCase() });
+    }
+  }
+  for (const d of S.datasets) {
+    idx.push({ kind: "Dataset", title: d.name, sub: d.category, href: `#datasets/${d.field}/${encodeURIComponent(d.name)}`,
+      text: `${d.name} ${d.description}`.toLowerCase() });
+  }
+  for (const p of S.latest?.papers || []) {
+    paperIndex.set(p.id, p);
+    idx.push({ kind: "Paper", title: p.title, sub: `${p.journal} · ${prettyDate(p.date)}`, href: `#latest/${p.fields?.[0] || ""}/${encodeURIComponent(p.title.slice(0, 60).replace(/[/%]/g, " "))}`,
+      text: `${p.title} ${p.authors} ${p.keywords.join(" ")}`.toLowerCase() });
+  }
+  searchIndex = idx;
+  return idx;
 }
+const palette = mountPalette(() => searchIndex || buildIndex(), esc);
 
 function pageSources(field) {
   const counts = {};
@@ -510,7 +560,7 @@ function pageSource(id) {
   const rows = [...s.versions].reverse();
   const related = S.datasets.filter((d) => d.field === s.field).slice(0, 5);
   view.innerHTML = `<div class="page">
-  <a class="back" href="#sources/${esc(s.field)}">← ${esc(f.label)}</a>
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="#sources">Databases</a><span aria-hidden="true">/</span><a href="#sources/${esc(s.field)}">${esc(f.label)}</a><span aria-hidden="true">/</span><span aria-current="page">${esc(s.name)}</span></nav>
   <section class="detail">
     <div class="stage"><canvas id="stage" aria-label="3D figure generated from the name ${esc(s.name)}"></canvas>
       <div class="stage-tag"><span class="eyebrow">${esc(f.shape)}</span><small>drag to rotate</small></div></div>
@@ -519,6 +569,7 @@ function pageSource(id) {
       <h1>${esc(s.name)}</h1>
       ${trace(s.name, 44)}
       <p class="lede">${esc(s.summary)}</p>
+      <div class="detail-actions">${s.latest_url ? `<a class="btn solid" href="#get-current">Get the current release</a>` : ""}<a class="btn" href="#all-releases">All ${s.versions.length} releases</a>${saveBtn("db", s.id, "Save")}</div>
       <dl class="facts">
         <dt>Current release</dt><dd><b>${esc(s.latest) || "—"}</b> <span class="muted">${esc(s.latest_date)}</span></dd>
         <dt>Releases tracked</dt><dd>${s.versions.length}</dd>
@@ -531,16 +582,20 @@ function pageSource(id) {
     </div>
   </section>
 
-  ${s.latest_url ? `<section class="section">${codePanel(s.latest_url, s.latest_url_type, `Current release · ${s.latest}`)}</section>` : ""}
+  ${s.latest_url ? `<section class="section" data-anchor="get-current"><h2>Get the current release</h2>${codePanel(s.latest_url, s.latest_url_type, `Current release · ${s.latest}`)}</section>` : ""}
 
-  <section class="section">
+  <section class="section" data-anchor="all-releases">
     <div class="section-head"><h2>All releases</h2><span class="hint">Newest first. ✓ confirmed against the source; ? from prior knowledge.</span></div>
+    <div class="toolbar">
+      <label class="gel-search" for="relq"><svg width="16" height="16" viewBox="0 0 18 18" aria-hidden="true"><circle cx="7.5" cy="7.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 12l4.5 4.5" stroke="currentColor" stroke-width="1.6"/></svg><input id="relq" type="search" placeholder="Find a release, e.g. ${esc(s.versions[0]?.version || "")}"></label>
+      <label class="check"><input type="checkbox" id="rellinked"> Only releases with a direct link</label>
+    </div>
     <div class="table-wrap"><table>
       <thead><tr><th>Release</th><th>Date</th><th>Status</th><th>Direct link</th><th></th><th>Checked</th></tr></thead>
       <tbody>${rows
         .map((v, i) => {
           const usable = /^(https?|ftp|s3|gs):/.test(v.url);
-          return `<tr>
+          return `<tr data-relrow="${i}" data-linked="${usable}" data-text="${esc(`${v.version} ${v.date} ${v.note}`.toLowerCase())}">
             <td><b>${esc(v.version)}</b>${v.note ? `<br><span class="hint">${esc(v.note)}</span>` : ""}</td>
             <td class="mono nowrap">${esc(v.date) || "—"}</td>
             <td><span class="status ${esc(v.status)}">${esc(v.status || "—")}</span></td>
@@ -557,6 +612,23 @@ function pageSource(id) {
      <div class="rows">${related.map(datasetRow).join("")}</div></section>` : ""}
   <section class="section"><div class="chips"><a class="chip" style="--dot:${baseVar(f)}" href="#papers/${esc(s.field)}">Papers in ${esc(f.label)} →</a></div></section>
   </div>`;
+  const filterReleases = () => {
+    const q = document.getElementById("relq").value.trim().toLowerCase();
+    const linkedOnly = document.getElementById("rellinked").checked;
+    view.querySelectorAll("[data-relrow]").forEach((tr) => {
+      const show = (!q || tr.dataset.text.includes(q)) && (!linkedOnly || tr.dataset.linked === "true");
+      tr.hidden = !show;
+      if (!show) view.querySelector(`[data-relpanel="${tr.dataset.relrow}"]`).hidden = true;
+    });
+  };
+  ["relq", "rellinked"].forEach((x) => document.getElementById(x).addEventListener("input", filterReleases));
+  // In-page jumps without changing the route.
+  view.querySelectorAll('a[href="#get-current"], a[href="#all-releases"]').forEach((a) =>
+    a.addEventListener("click", (e) => {
+      e.preventDefault();
+      view.querySelector(`[data-anchor="${a.getAttribute("href").slice(1)}"]`)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    })
+  );
   view.querySelectorAll("[data-rel]").forEach((b) =>
     b.addEventListener("click", () => {
       const i = Number(b.dataset.rel);
@@ -588,7 +660,7 @@ function datasetRow(d) {
           type !== "portal" ? `<button type="button" data-code="${esc(l.url)}" data-type="${type}" data-label="${esc(d.name + " · " + l.label)}">code</button>` : ""}`;
       }).join("")}</div>` : ""}
     </div>
-    <span class="stars">${d.stars != null ? `★ ${num(d.stars)}` : ""}</span>
+    <div class="row-side"><span class="stars">${d.stars != null ? `★ ${num(d.stars)}` : ""}</span>${saveBtn("ds", d.id)}</div>
   </article>`;
 }
 
@@ -626,7 +698,9 @@ function pageDatasets(field, preset) {
   draw();
 }
 
-async function pageLatest(fieldId) {
+const paperTabs = (on) => `<nav class="tabbar" aria-label="Paper views"><a href="#latest" ${on === "latest" ? "aria-current=\"page\"" : ""}>New papers <small>last 60 days</small></a><a href="#papers" ${on === "top" ? "aria-current=\"page\"" : ""}>Most cited <small>all time and recent</small></a></nav>`;
+
+async function pageLatest(fieldId, preset = "") {
   view.innerHTML = `<div class="page"><p class="loading">Loading new papers…</p></div>`;
   const data = await need("latest");
   if (!data?.papers?.length) return (view.innerHTML = `<div class="page"><p class="note">New papers have not been fetched yet. The daily job fills this page.</p></div>`);
@@ -638,7 +712,8 @@ async function pageLatest(fieldId) {
 
   view.innerHTML = `<div class="page"><section class="section">
     <p class="eyebrow">Updated ${esc(prettyDate(data.generated_at))} · ${esc(prettyDate(data.since))} to ${esc(prettyDate(data.until))}</p>
-    <h1>New papers</h1>
+    <h1>Papers</h1>
+    ${paperTabs("latest")}
     <p class="lede">Every paper published in the last ${data.days} days in the leading bioinformatics and computational biology journals, newest first. Each one is sorted into fields and tasks so you can follow only what matters to your work.</p>
     ${gel({ id: "lfields", active: st.field, counts, unit: "papers", total: all.length })}
     <div class="controls">
@@ -708,6 +783,7 @@ async function pageLatest(fieldId) {
   });
   ["lq", "ltask", "ljour", "lsort", "labs"].forEach((id) => $(id).addEventListener("input", () => draw()));
   $("lmore").addEventListener("click", () => { st.shown += 30; draw(false); });
+  if (preset) $("lq").value = preset;
   fillTasks();
   draw();
 }
@@ -726,6 +802,7 @@ async function pagePapers(fieldId) {
 
   view.innerHTML = `<div class="page"><section class="section">
     <h1>Papers</h1>
+    ${paperTabs("top")}
     <p class="lede">Open-access papers ranked by citations, refreshed daily from Europe PMC. Filter by task, dataset, year and venue, then switch to the comparison table to set methods side by side.</p>
     ${gel({ id: "pfields", active: current.id, counts: Object.fromEntries(papers.fields.map((x) => [x.id, x.papers.length])), unit: "papers", link: (id) => `#papers/${id}` })}
     <div class="chips" id="tasks"><button class="chip plain" type="button" data-task="" aria-pressed="true">All tasks</button>${(f.tasks || [])
@@ -885,6 +962,53 @@ ${esc(inputs)}</div>
   </section></div>`;
 }
 
+function pageSaved() {
+  const draw = () => {
+    const items = saved.all();
+    const groups = [["database", "Databases"], ["dataset", "Datasets"], ["paper", "Papers"]];
+    const papers = items.filter((x) => x.type === "paper");
+    const data = items.filter((x) => x.type !== "paper");
+    view.innerHTML = `<div class="page"><section class="section">
+      <h1>Saved</h1>
+      <p class="lede">Your reading list and the exact data releases for a project, kept in this browser. Export them to cite the papers and to fetch the same data again later.</p>
+      ${items.length ? `<div class="export">
+        <div><b>Data manifest</b><p class="hint">Name, release and direct link of every saved database and dataset, as a tab-separated file you can keep next to your analysis.</p>
+          <div class="export-actions"><button class="btn solid" type="button" data-export="manifest" ${data.length ? "" : "disabled"}>Download manifest.tsv</button><button class="btn" type="button" data-export="manifest-copy" ${data.length ? "" : "disabled"}>Copy</button></div></div>
+        <div><b>References</b><p class="hint">BibTeX entries for every saved paper, ready for LaTeX, Zotero or any reference manager.</p>
+          <div class="export-actions"><button class="btn solid" type="button" data-export="bib" ${papers.length ? "" : "disabled"}>Download references.bib</button><button class="btn" type="button" data-export="bib-copy" ${papers.length ? "" : "disabled"}>Copy</button></div></div>
+      </div>` : ""}
+      ${items.length ? groups.map(([type, label]) => {
+        const list = items.filter((x) => x.type === type);
+        if (!list.length) return "";
+        return `<div class="saved-group"><h2>${label} <span class="count">${list.length}</span></h2><ul class="saved-list">${list.map((x) => `
+          <li><div><a href="${esc(x.href)}" ${x.type === "paper" ? 'target="_blank" rel="noopener"' : ""}>${esc(x.title)}</a>
+            <p class="hint">${x.type === "paper" ? esc([x.paper?.journal, x.paper?.year].filter(Boolean).join(" · ")) : `${x.version ? `Release ${esc(x.version)} · ` : ""}<span class="mono">${esc(x.url || "no direct link")}</span>`}</p></div>
+            <div class="saved-actions">${x.url && x.type !== "paper" ? `<button class="btn small" type="button" data-copy="${esc(x.url)}">Copy link</button>` : ""}${x.type === "paper" && x.paper ? `<button class="btn small" type="button" data-cite-saved="${esc(x.key)}">Cite</button>` : ""}<button class="btn small" type="button" data-unsave="${esc(x.key)}">Remove</button></div></li>`).join("")}</ul></div>`;
+      }).join("") + `<p><button class="btn" type="button" data-clear-saved>Remove everything</button></p>`
+      : `<div class="empty"><svg width="40" height="40" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 1.8h8v12.4L8 11.2l-4 3z" fill="none" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/></svg>
+          <h2>Nothing saved yet</h2><p class="hint">Press the bookmark on any database, dataset or paper. It will appear here, ready to export.</p>
+          <p class="chips"><a class="chip plain" href="#sources">Browse databases</a><a class="chip plain" href="#latest">Read new papers</a></p></div>`}
+    </section></div>`;
+  };
+  draw();
+  view.onclick = (e) => {
+    const t = e.target.closest("[data-unsave],[data-clear-saved],[data-export],[data-cite-saved]");
+    if (!t) return;
+    const items = saved.all();
+    if (t.dataset.unsave) { saved.remove(t.dataset.unsave); draw(); return; }
+    if (t.hasAttribute("data-clear-saved")) {
+      if (t.dataset.confirm) { saved.clear(); draw(); toast("Saved items removed"); }
+      else { t.dataset.confirm = "1"; t.textContent = "Press again to remove everything"; }
+      return;
+    }
+    if (t.dataset.citeSaved) { const x = items.find((i) => i.key === t.dataset.citeSaved); if (x?.paper) copy(bibtex(x.paper)); return; }
+    const bib = items.filter((x) => x.type === "paper" && x.paper).map((x) => bibtex(x.paper)).join("\n\n");
+    const tsv = manifest(items);
+    ({ manifest: () => downloadText("manifest.tsv", tsv, "text/tab-separated-values"), "manifest-copy": () => copy(tsv),
+       bib: () => downloadText("references.bib", bib, "application/x-bibtex"), "bib-copy": () => copy(bib) })[t.dataset.export]?.();
+  };
+}
+
 function notFound(message) {
   view.innerHTML = `<div class="page"><section class="section"><h1>Not found</h1><p class="lede">${esc(message)}</p><a class="chip plain" href="#home">Back to the start</a></section></div>`;
 }
@@ -893,10 +1017,12 @@ function notFound(message) {
 function route() {
   stopLive();
   stopLive = () => {};
+  view.onclick = null;
+  palette.close();
   const [page, a, b] = decodeURIComponent(location.hash.replace(/^#/, "") || "home").split("/");
-  const nav = { source: "sources" }[page] || page;
+  const nav = { source: "sources", latest: "papers" }[page] || page;
   document.querySelectorAll(".nav a").forEach((x) => (x.dataset.nav === nav ? x.setAttribute("aria-current", "page") : x.removeAttribute("aria-current")));
-  const pages = { home: pageHome, latest: () => pageLatest(a), sources: () => pageSources(a), source: () => pageSource(a), datasets: () => pageDatasets(a, b),
+  const pages = { home: pageHome, latest: () => pageLatest(a, b), saved: pageSaved, sources: () => pageSources(a), source: () => pageSource(a), datasets: () => pageDatasets(a, b),
     papers: () => pagePapers(a), benchmarks: () => pageBenchmarks(a), status: pageStatus, about: pageAbout };
   const render = pages[page] || (() => notFound("That page does not exist."));
   const go = () => { render(); armArt(); window.scrollTo({ top: 0, behavior: "instant" }); };
@@ -918,12 +1044,6 @@ function initTheme() {
   });
 }
 
-document.addEventListener("keydown", (e) => {
-  if (e.key === "/" && !/input|textarea|select/i.test(document.activeElement.tagName)) {
-    const q = document.getElementById("q") || document.getElementById("filter") || document.getElementById("pq");
-    if (q) { e.preventDefault(); q.focus(); }
-  }
-});
 
 async function load(name) {
   const res = await fetch(`data/${name}.json`, { cache: "no-cache" });
@@ -947,7 +1067,15 @@ async function start() {
   }
   if (S.build) document.getElementById("foot-build").textContent = `Data build ${S.build.generated_at} · ${S.build.engine}`;
   window.addEventListener("hashchange", route);
+  updateSavedCount();
   route();
+  // Load papers in the background so search covers them too.
+  setTimeout(() => need("latest").then(() => palette.refresh()), 1200);
 }
+
+// Back to top, shown after the reader scrolls a screen.
+const toTop = document.getElementById("to-top");
+window.addEventListener("scroll", () => { toTop.hidden = window.scrollY < window.innerHeight; }, { passive: true });
+toTop.addEventListener("click", () => { window.scrollTo({ top: 0, behavior: "smooth" }); view.focus({ preventScroll: true }); });
 
 start();
