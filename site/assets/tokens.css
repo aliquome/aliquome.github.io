@@ -1,0 +1,83 @@
+/* Tokens. Every colour and face on the site comes from here.
+   Light: agarose under room light. Dark: the same gel on a dark bench.
+   The four bases (A green, C blue, G amber, T red) are the Sanger trace
+   colours and only ever encode data: a field, a band, a trace. */
+:root {
+  --space-3xs: 2px; --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px; --space-md: 16px; --space-lg: 24px; --space-xl: 40px; --space-2xl: 64px; --space-3xl: 96px; --space-4xl: 144px;
+  --text-xs: 0.75rem; --text-sm: 0.875rem; --text-md: 1rem; --text-lg: 1.125rem; --text-xl: 1.375rem; --text-2xl: 1.75rem; --text-3xl: 2.375rem;
+  --text-display: clamp(2.5rem, 5.2vw, 4.25rem);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1); --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms; --dur-short: 220ms; --dur-long: 420ms;
+  --container: 1200px; --gutter: 40px; --gap-columns: 32px;
+  --z-base: 1; --z-raised: 10; --z-sticky: 200; --z-sticky-nav: 300; --z-modal: 400; --z-toast: 500;
+  --radius-card: 6px; --radius-control: 8px; --radius-pill: 999px; --rule-hair: 1px;
+  --tracking-display: -0.015em;
+
+  --font-display: "Newsreader", "Iowan Old Style", "Palatino Linotype", ui-serif, serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", ui-sans-serif, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", monospace;
+  --font-outlier: var(--font-mono);
+
+  --color-paper: oklch(96.6% 0.012 175);
+  --color-paper-2: oklch(93.6% 0.016 175);
+  --color-paper-3: oklch(90.2% 0.02 175);
+  --color-surface: oklch(99.2% 0.005 175);
+  --color-ink: oklch(23% 0.03 195);
+  --color-ink-2: oklch(33% 0.03 195);
+  --color-muted: oklch(44% 0.026 195);
+  --color-rule: oklch(85% 0.02 180);
+  --color-accent: oklch(43% 0.1 175);
+  --color-accent-ink: oklch(98% 0.01 175);
+  --color-focus: oklch(50% 0.17 255);
+  --color-error: oklch(52% 0.19 27);
+  --color-success: oklch(48% 0.12 155);
+  --color-mask: oklch(20% 0.02 190);
+  --color-scrim: oklch(23% 0.03 195 / 0.38);
+
+  --base-a: oklch(50% 0.14 155);
+  --base-c: oklch(49% 0.16 258);
+  --base-g: oklch(54% 0.12 75);
+  --base-t: oklch(52% 0.19 18);
+
+  --color-gel: oklch(25% 0.035 185);
+  --color-gel-2: oklch(30% 0.04 185);
+  --color-gel-well: oklch(16% 0.025 185);
+  --color-gel-ink: oklch(95% 0.02 175);
+  --color-gel-muted: oklch(80% 0.03 175);
+  --color-gel-line: oklch(95% 0.02 175 / 0.08);
+  --color-uv: oklch(86% 0.09 175);
+
+  --color-code: oklch(24% 0.03 195);
+  --color-code-ink: oklch(93% 0.015 175);
+  --color-code-rule: oklch(93% 0.015 175 / 0.25);
+
+  --shadow-pop: 0 20px 50px oklch(23% 0.03 195 / 0.22);
+  --shadow-soft: 0 1px 2px oklch(23% 0.03 195 / 0.08), 0 8px 24px oklch(23% 0.03 195 / 0.06);
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-paper: oklch(17.5% 0.02 190); --color-paper-2: oklch(21% 0.024 190); --color-paper-3: oklch(25% 0.028 190);
+    --color-surface: oklch(20% 0.022 190); --color-ink: oklch(94% 0.012 175); --color-ink-2: oklch(84% 0.015 175);
+    --color-muted: oklch(73% 0.02 180); --color-rule: oklch(33% 0.03 185); --color-accent: oklch(78% 0.11 175);
+    --color-accent-ink: oklch(18% 0.02 190); --color-focus: oklch(75% 0.14 255);
+    --base-a: oklch(76% 0.15 155); --base-c: oklch(74% 0.13 258); --base-g: oklch(80% 0.13 80); --base-t: oklch(73% 0.15 18);
+    --color-gel: oklch(22% 0.035 185); --color-gel-2: oklch(26% 0.04 185);
+    --color-code: oklch(13% 0.02 190); --color-scrim: oklch(5% 0.01 190 / 0.6);
+    --shadow-pop: 0 20px 50px oklch(5% 0.01 190 / 0.55); --shadow-soft: 0 1px 2px oklch(5% 0.01 190 / 0.4);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --color-paper: oklch(17.5% 0.02 190); --color-paper-2: oklch(21% 0.024 190); --color-paper-3: oklch(25% 0.028 190);
+  --color-surface: oklch(20% 0.022 190); --color-ink: oklch(94% 0.012 175); --color-ink-2: oklch(84% 0.015 175);
+  --color-muted: oklch(73% 0.02 180); --color-rule: oklch(33% 0.03 185); --color-accent: oklch(78% 0.11 175);
+  --color-accent-ink: oklch(18% 0.02 190); --color-focus: oklch(75% 0.14 255);
+  --base-a: oklch(76% 0.15 155); --base-c: oklch(74% 0.13 258); --base-g: oklch(80% 0.13 80); --base-t: oklch(73% 0.15 18);
+  --color-gel: oklch(22% 0.035 185); --color-gel-2: oklch(26% 0.04 185);
+  --color-code: oklch(13% 0.02 190); --color-scrim: oklch(5% 0.01 190 / 0.6);
+  --shadow-pop: 0 20px 50px oklch(5% 0.01 190 / 0.55); --shadow-soft: 0 1px 2px oklch(5% 0.01 190 / 0.4);
+  color-scheme: dark;
+}
+@media (max-width: 60rem) { :root { --gutter: 24px; } }
+@media (max-width: 40rem) { :root { --gutter: 16px; --gap-columns: 16px; } }

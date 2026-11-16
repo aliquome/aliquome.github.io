@@ -38,9 +38,21 @@ export function sequence(text, length = 32) {
   return out;
 }
 
+// Theme tokens are written in oklch, which three.js cannot parse. Paint each
+// one onto a 1-pixel canvas and read back plain sRGB.
+const probe = document.createElement("canvas").getContext("2d", { willReadFrequently: true });
+function toColor(css) {
+  probe.clearRect(0, 0, 1, 1);
+  probe.fillStyle = "#888888";
+  probe.fillStyle = css;
+  probe.fillRect(0, 0, 1, 1);
+  const [r, g, b] = probe.getImageData(0, 0, 1, 1).data;
+  return new THREE.Color(r / 255, g / 255, b / 255).convertSRGBToLinear();
+}
+
 function palette() {
   const css = getComputedStyle(document.documentElement);
-  const read = (name) => new THREE.Color(css.getPropertyValue(name).trim() || "#888888");
+  const read = (name) => toColor(css.getPropertyValue(name).trim() || "#888888");
   return {
     A: read("--base-a"), C: read("--base-c"), G: read("--base-g"), T: read("--base-t"),
     ink: read("--muted"),
