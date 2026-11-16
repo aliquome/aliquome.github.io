@@ -191,20 +191,56 @@ document.addEventListener("click", (e) => {
 });
 
 // ---------- shared pieces ----------
-function fieldChips(active, counts) {
-  return (
-    `<button class="chip plain" type="button" data-field="" aria-pressed="${!active}">All</button>` +
-    S.fields
-      .filter((f) => !counts || counts[f.id])
-      .map(
-        (f) =>
-          `<button class="chip" type="button" data-field="${esc(f.id)}" style="--dot:${baseVar(f)}" aria-pressed="${active === f.id}">${esc(
-            f.label
-          )}${counts ? ` <span class="n">${counts[f.id]}</span>` : ""}</button>`
-      )
-      .join("")
-  );
+// The field filter is drawn as an electrophoresis gel: one lane per field,
+// a marker ladder for "All", and a glowing band whose thickness and
+// migration follow how many entries the field holds.
+//   gel({ id, active, counts, unit, search, link })
+//   link: optional (fieldId) => href, turns lanes into links instead of buttons
+function gel({ id, active = "", counts, unit = "entries", search, link, total: given }) {
+  const fields = S.fields.filter((f) => counts[f.id]);
+  // Papers can sit in several fields, so the caller may pass the real total.
+  const total = given ?? Object.values(counts).reduce((a, n) => a + n, 0);
+  const max = Math.max(1, ...fields.map((f) => counts[f.id]));
+  const lane = (f) => {
+    const n = counts[f.id];
+    const pos = 14 + (1 - Math.log(n + 1) / Math.log(max + 1)) * 58;
+    const thick = 4 + Math.round((n / max) * 9);
+    const tag = link ? "a" : "button";
+    const attrs = link
+      ? `href="${esc(link(f.id))}" ${active === f.id ? 'aria-current="true"' : ""}`
+      : `type="button" data-field="${esc(f.id)}" aria-pressed="${active === f.id}"`;
+    return `<${tag} class="lane" ${attrs} data-label="${esc(f.label)}" data-n="${n}" style="--dot:${baseVar(f)};--pos:${pos.toFixed(1)}%;--thick:${thick}px">
+      <span class="well" aria-hidden="true"></span>
+      <span class="track" aria-hidden="true"><i class="band"></i></span>
+      <span class="lane-label">${esc(f.label)}</span><span class="lane-n">${num(n)}</span>
+    </${tag}>`;
+  };
+  const ladder = link
+    ? ""
+    : `<button class="lane ladder" type="button" data-field="" aria-pressed="${!active}" data-label="All fields" data-n="${total}">
+      <span class="well" aria-hidden="true"></span>
+      <span class="track" aria-hidden="true">${[12, 22, 30, 38, 47, 58, 70, 82].map((p) => `<i class="band" style="--pos:${p}%"></i>`).join("")}</span>
+      <span class="lane-label">All fields</span><span class="lane-n">${num(total)}</span>
+    </button>`;
+  const current = active ? fields.find((f) => f.id === active) : null;
+  return `<div class="gel">
+    <div class="gel-head">
+      <p class="gel-readout"><span class="eyebrow">Field</span> <b data-readout>${esc(current ? current.label : "All fields")}</b> <span class="muted" data-readout-n>${num(current ? counts[current.id] : total)} ${esc(unit)}</span></p>
+      ${search ? `<label class="gel-search" for="${esc(search.id)}"><svg width="16" height="16" viewBox="0 0 18 18" aria-hidden="true"><circle cx="7.5" cy="7.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 12l4.5 4.5" stroke="currentColor" stroke-width="1.6"/></svg><input id="${esc(search.id)}" type="search" placeholder="${esc(search.placeholder)}" value="${esc(search.value || "")}" aria-label="${esc(search.placeholder)}"></label>` : ""}
+    </div>
+    <div class="gel-slab" id="${esc(id)}" role="group" aria-label="Filter by field">${ladder}${fields.map(lane).join("")}</div>
+  </div>`;
 }
+
+// Keep the gel's readout in step with the selected lane.
+document.addEventListener("click", (e) => {
+  const lane = e.target.closest(".gel .lane");
+  if (!lane || lane.tagName === "A") return;
+  const g = lane.closest(".gel");
+  g.querySelector("[data-readout]").textContent = lane.dataset.label;
+  const unit = g.querySelector("[data-readout-n]").textContent.replace(/^[\d,]+\s*/, "");
+  g.querySelector("[data-readout-n]").textContent = `${num(lane.dataset.n)} ${unit}`;
+});
 
 function replaceHash(hash) {
   try { window.history.replaceState(null, "", hash); } catch (e) { /* sandboxed */ }
@@ -440,8 +476,7 @@ function pageSources(field) {
   view.innerHTML = `<div class="page"><section class="section">
     <h1>Databases</h1>
     <p class="lede">Open a database to see every release with a direct link and ready-to-run download code. Each figure and trace is generated from the database name.</p>
-    <div class="toolbar"><div class="chips" id="chips">${fieldChips(field, counts)}</div>
-      <input class="input" id="filter" type="search" placeholder="Filter by name or release" aria-label="Filter databases" style="max-width:300px"></div>
+    ${gel({ id: "chips", active: field, counts, unit: "databases", search: { id: "filter", placeholder: "Filter by name or release" } })}
     <div class="grid" id="grid"></div>
   </section></div>`;
   let active = field || "";
@@ -563,8 +598,7 @@ function pageDatasets(field, preset) {
   view.innerHTML = `<div class="page"><section class="section">
     <h1>Datasets and benchmarks</h1>
     <p class="lede">Public datasets from repositories, papers and challenges. Press “code” next to a link to get a download snippet for your language.</p>
-    <div class="toolbar"><div class="chips" id="chips">${fieldChips(field, counts)}</div>
-      <input class="input" id="filter" type="search" placeholder="Filter by name or description" aria-label="Filter datasets" value="${esc(preset || "")}" style="max-width:300px"></div>
+    ${gel({ id: "chips", active: field, counts, unit: "datasets", search: { id: "filter", placeholder: "Filter by name or description", value: preset } })}
     <p class="count" id="count"></p>
     <div class="rows" id="rows"></div>
   </section></div>`;
@@ -606,7 +640,7 @@ async function pageLatest(fieldId) {
     <p class="eyebrow">Updated ${esc(prettyDate(data.generated_at))} · ${esc(prettyDate(data.since))} to ${esc(prettyDate(data.until))}</p>
     <h1>New papers</h1>
     <p class="lede">Every paper published in the last ${data.days} days in the leading bioinformatics and computational biology journals, newest first. Each one is sorted into fields and tasks so you can follow only what matters to your work.</p>
-    <div class="chips" id="lfields">${fieldChips(st.field, counts)}</div>
+    ${gel({ id: "lfields", active: st.field, counts, unit: "papers", total: all.length })}
     <div class="controls">
       <div class="control"><label for="lq">Search</label><input class="input" id="lq" type="search" placeholder="Title, method, keyword, author"></div>
       <div class="control"><label for="ltask">Task</label><select class="input" id="ltask"></select></div>
@@ -693,7 +727,7 @@ async function pagePapers(fieldId) {
   view.innerHTML = `<div class="page"><section class="section">
     <h1>Papers</h1>
     <p class="lede">Open-access papers ranked by citations, refreshed daily from Europe PMC. Filter by task, dataset, year and venue, then switch to the comparison table to set methods side by side.</p>
-    <div class="chips">${papers.fields.map((x) => `<a class="chip" href="#papers/${esc(x.id)}" style="--dot:${baseVar(fieldOf(x.id))}" aria-pressed="${x.id === current.id}">${esc(x.label)} <span class="n">${x.papers.length}</span></a>`).join("")}</div>
+    ${gel({ id: "pfields", active: current.id, counts: Object.fromEntries(papers.fields.map((x) => [x.id, x.papers.length])), unit: "papers", link: (id) => `#papers/${id}` })}
     <div class="chips" id="tasks"><button class="chip plain" type="button" data-task="" aria-pressed="true">All tasks</button>${(f.tasks || [])
       .filter((t) => taskCount[t.id])
       .map((t) => `<button class="chip" type="button" style="--dot:${baseVar(f)}" data-task="${esc(t.id)}" aria-pressed="false">${esc(t.label)} <span class="n">${taskCount[t.id]}</span></button>`)
