@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-16T19:00:09Z",
+  "generated_at": "2026-11-16T19:19:55Z",
   "engine": "local preview",
   "commit": "local",
   "mode": "online",
   "inputs": {
     "data/database_versions.csv": "841eabfca5cfbebfbb1b67b16409a2c10ba209a1668b3cbb7a9e84c1977fbd21",
     "data/datasets.csv": "58e31f8d5645e7b31faac8797571e376733f667ce7be72a7a472951105c3e9fa",
-    "data/fields.toml": "09abbcf89cbe279fd64c951fd860a92921c37ccfd977b5c8f980fa9aa4ad95f9",
+    "data/fields.toml": "571dd9af118aa00923817db37f39bcc34e798f9251c6b40a91f77f6766eaba63",
     "data/leaderboards.toml": "2fc493a21c026d478fa329984f5b920de7794c45f673bcafd67215b4a38cacad",
     "data/sources.toml": "a60d05a7421762d97245c689dec478514c9456a65ac5379a089980abedbda2b5"
   },
@@ -15,6 +15,7 @@
     "versions": 794,
     "datasets": 194,
     "papers": 651,
+    "latest_papers": 1371,
     "leaderboard_rows": 145
   }
 }

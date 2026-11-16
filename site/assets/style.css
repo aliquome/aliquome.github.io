@@ -1,41 +1,42 @@
-/* Layout: a sequencing-lab reference sheet. The four Sanger chromatogram
+/* Layout: a cell-culture lab notebook. Pale agar-green paper by day, deep
+   culture-medium teal by night. The four Sanger chromatogram
    colours (A green, C blue, G amber, T red) carry all meaning: each research
    field owns one base colour, every entry's name is drawn as a chromatogram
    trace, and every database gets a 3D figure folded from the same sequence. */
 :root {
-  --bg: #f3f6f4;
+  --bg: #eff5f0;
   --surface: #ffffff;
-  --sunken: #e8eeeb;
-  --ink: #0f1f24;
-  --muted: #56686c;
-  --line: #d6dfdc;
+  --sunken: #e2ece5;
+  --ink: #0e211b;
+  --muted: #4f6860;
+  --line: #d0ded5;
   --base-a: #14945f;
   --base-c: #2a66d4;
   --base-g: #b77d07;
   --base-t: #cf334f;
   --focus: #2a66d4;
-  --code-bg: #0f1f24;
+  --code-bg: #0e211b;
   --code-ink: #dbe9e5;
   --shadow: 0 1px 2px rgba(15, 31, 36, 0.06), 0 10px 28px rgba(15, 31, 36, 0.07);
   --display: "Bricolage Grotesque", "IBM Plex Sans", system-ui, sans-serif;
   --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
-  --r: 12px;
+  --r: 14px;
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #081214; --surface: #0f1c1f; --sunken: #0b171a; --ink: #e1eeeb; --muted: #8ea4a2;
-    --line: #1d3236; --base-a: #3fd391; --base-c: #6fa2ff; --base-g: #f0b941; --base-t: #ff6b86;
+    --bg: #06130f; --surface: #0d1f19; --sunken: #091914; --ink: #e0f0e8; --muted: #8aa89c;
+    --line: #1b3a2f; --base-a: #3fd391; --base-c: #6fa2ff; --base-g: #f0b941; --base-t: #ff6b86;
     --focus: #6fa2ff; --code-bg: #050c0d; --code-ink: #d4e6e1;
     --shadow: 0 1px 2px rgba(0, 0, 0, 0.35), 0 12px 32px rgba(0, 0, 0, 0.3);
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #081214; --surface: #0f1c1f; --sunken: #0b171a; --ink: #e1eeeb; --muted: #8ea4a2;
-  --line: #1d3236; --base-a: #3fd391; --base-c: #6fa2ff; --base-g: #f0b941; --base-t: #ff6b86;
+  --bg: #06130f; --surface: #0d1f19; --sunken: #091914; --ink: #e0f0e8; --muted: #8aa89c;
+  --line: #1b3a2f; --base-a: #3fd391; --base-c: #6fa2ff; --base-g: #f0b941; --base-t: #ff6b86;
   --focus: #6fa2ff; --code-bg: #050c0d; --code-ink: #d4e6e1;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.35), 0 12px 32px rgba(0, 0, 0, 0.3);
   color-scheme: dark;
@@ -43,6 +44,7 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+html, body { overflow-x: clip; }
 body {
   margin: 0; background: var(--bg); color: var(--ink);
   font: 400 16px/1.6 var(--body); -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
@@ -100,7 +102,7 @@ main { padding-block: 28px 72px; min-height: 70vh; outline: none; }
 .trace .lG { fill: var(--base-g); } .trace .lT { fill: var(--base-t); }
 
 /* ---------- hero ---------- */
-.hero { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: 36px; align-items: center; }
+.hero { position: relative; isolation: isolate; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: 36px; align-items: center; }
 .hero-copy { display: grid; gap: 20px; }
 .stage { position: relative; aspect-ratio: 1 / 0.86; max-width: 100%; background: radial-gradient(120% 90% at 50% 40%, var(--surface), var(--sunken)); border: 1px solid var(--line); border-radius: 20px; overflow: hidden; }
 .stage canvas { width: 100%; height: 100%; display: block; cursor: grab; touch-action: pan-y; }
@@ -272,3 +274,33 @@ td.url { font: 400 0.8rem var(--mono); overflow-wrap: anywhere; min-width: 220px
   html { scroll-behavior: auto; }
   .page, .card, .card-art img, .row-art img, .toast, .icon-btn { animation: none; transition: none; }
 }
+
+/* ---------- living background, actions, field tiles ---------- */
+.cells { position: absolute; inset: -40px -10vw -20px; width: calc(100% + 20vw); height: calc(100% + 60px); z-index: -1; pointer-events: none; mask-image: radial-gradient(55% 75% at 27% 50%, transparent 35%, #000 80%); -webkit-mask-image: radial-gradient(55% 75% at 27% 50%, transparent 35%, #000 80%); }
+.actions { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 36px; }
+.action { display: grid; gap: 4px; padding: 16px 18px; border-radius: var(--r); background: var(--surface); border: 1px solid var(--line); text-decoration: none; position: relative; overflow: hidden; transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease); }
+.action::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 4px; background: var(--dot); }
+.action b { font: 600 1.02rem var(--display); }
+.action span { color: var(--muted); font-size: 0.88rem; }
+.action:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+.fields { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px; }
+.field-tile { display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 14px; align-items: center; padding: 10px 14px 10px 10px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); }
+.field-art { width: 84px; height: 84px; border-radius: 50%; overflow: hidden; background: radial-gradient(circle at 40% 35%, var(--surface), color-mix(in srgb, var(--dot) 14%, var(--sunken))); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--dot) 30%, transparent); }
+.field-art img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.35); display: block; opacity: 0; transition: opacity 0.4s var(--ease); }
+.field-art img.ready { opacity: 1; }
+.field-body { display: grid; gap: 6px; min-width: 0; }
+.field-body h3 { font-size: 0.98rem; }
+.field-links { display: flex; gap: 4px 12px; flex-wrap: wrap; font-size: 0.84rem; }
+.field-links a { color: var(--muted); text-decoration: none; }
+.field-links a:hover { color: var(--ink); text-decoration: underline; }
+.tag.field { color: var(--ink); background: color-mix(in srgb, var(--dot) 16%, var(--surface)); }
+
+/* ---------- new papers ---------- */
+.day { position: sticky; top: calc(64px + env(safe-area-inset-top, 0px)); z-index: 5; font: 500 0.8rem var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); background: var(--bg); padding-block: 8px; margin-top: 10px; }
+.paper .journal { color: var(--ink); font-weight: 500; }
+.check { display: inline-flex; gap: 8px; align-items: center; font-size: 0.92rem; color: var(--muted); cursor: pointer; }
+.check input { width: 16px; height: 16px; accent-color: var(--base-a); }
+.more-row { display: flex; justify-content: center; }
+details.note summary { cursor: pointer; font-weight: 500; color: var(--ink); }
+details.note p { margin-top: 8px; }
+@media (max-width: 880px) { .day { top: calc(108px + env(safe-area-inset-top, 0px)); } .cells { display: none; } }

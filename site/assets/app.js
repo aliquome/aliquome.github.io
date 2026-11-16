@@ -2,6 +2,7 @@
 // Routes live in the URL hash: #home, #sources[/field], #source/<id>,
 // #datasets[/field[/name]], #papers[/field], #benchmarks[/board], #status, #about.
 import { trace, requestThumb, mountLive, clearThumbs } from "./glyph.js";
+import { mountCells } from "./cells.js";
 
 const view = document.getElementById("view");
 const S = { fields: [], sources: [], datasets: [], papers: null, boards: null, status: null, build: null };
@@ -237,25 +238,40 @@ const uniqueByName = (keys) => {
   const seen = new Set();
   return keys.filter((k) => { const n = dsName(k).toLowerCase(); if (seen.has(n)) return false; seen.add(n); return true; });
 };
-const taskLabel = (field, id) => fieldOf(field).tasks?.find((t) => t.id === id)?.label || id;
+// Task ids are "task" inside a field list, or "field:task" in the latest feed.
+const taskLabel = (field, id) => {
+  const [f, t] = id.includes(":") ? id.split(":") : [field, id];
+  return fieldOf(f).tasks?.find((x) => x.id === t)?.label || t;
+};
+const prettyDate = (d) => {
+  const t = Date.parse(d);
+  return Number.isNaN(t) ? d : new Date(t).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+};
 
 function paperCard(p, field, open = false) {
   const authors = p.authors.length > 170 ? p.authors.slice(0, 170).replace(/,[^,]*$/, "") + ", et al." : p.authors;
+  const fieldTags = (p.fields || []).map((id) => {
+    const f = fieldOf(id);
+    return `<a class="tag field" style="--dot:${baseVar(f)}" href="#latest/${esc(id)}">${esc(f.label)}</a>`;
+  }).join("");
   return `<article class="paper">
     <h3><a href="${esc(safe(p.url))}" target="_blank" rel="noopener">${esc(p.title)}</a></h3>
     <p class="who">${esc(authors)}</p>
-    <p class="meta"><span>${esc(p.journal || "—")}</span><span>${esc(p.year)}</span><span>cited ${num(p.cited)}×</span>${
+    <p class="meta"><span class="journal">${esc(p.journal || "—")}</span><span>${esc(p.fields ? prettyDate(p.date) : p.year)}</span>${
+      p.cited ? `<span>cited ${num(p.cited)}×</span>` : ""}${
       p.license ? `<span>${esc(p.license.toUpperCase())}</span>` : ""
     }${p.lists?.includes("recent") ? `<span class="status latest">recent</span>` : ""}</p>
     ${
-      p.tasks?.length || p.datasets?.length
-        ? `<div class="tags">${(p.tasks || []).map((t) => `<span class="tag task">${esc(taskLabel(field, t))}</span>`).join("")}${uniqueByName(p.datasets || [])
+      fieldTags || p.tasks?.length || p.datasets?.length
+        ? `<div class="tags">${fieldTags}${(p.tasks || []).map((t) => `<span class="tag task">${esc(taskLabel(field, t))}</span>`).join("")}${uniqueByName(p.datasets || [])
             .map((d) => `<a class="tag ds" href="${esc(dsHref(d))}">${esc(dsName(d))}</a>`)
             .join("")}</div>`
         : ""
     }
-    <p class="abstract ${open ? "" : "clamp"}" lang="en">${esc(p.abstract)}</p>
-    <button class="more" type="button" data-more>${open ? "Show less" : "Read the full abstract"}</button>
+    ${p.abstract
+      ? `<p class="abstract ${open ? "" : "clamp"}" lang="en">${esc(p.abstract)}</p>
+    <button class="more" type="button" data-more>${open ? "Show less" : "Read the full abstract"}</button>`
+      : `<p class="hint">The abstract of this paper is not openly licensed. Read it on the publisher's page.</p>`}
     <div class="links">${safe(p.url) ? `<a class="btn small" href="${esc(p.url)}" target="_blank" rel="noopener">Article</a>` : ""}${
       safe(p.pdf) ? `<a class="btn small" href="${esc(p.pdf)}" target="_blank" rel="noopener">PDF</a>` : ""
     }${p.doi ? `<button class="btn small" type="button" data-copy="${esc(p.doi)}">Copy DOI</button>` : ""}</div>
@@ -288,6 +304,7 @@ async function pageHome() {
 
   view.innerHTML = `<div class="page">
   <section class="section hero">
+    <canvas class="cells" id="cells" aria-hidden="true"></canvas>
     <div class="hero-copy">
       <p class="eyebrow">Databases · Datasets · Papers · Benchmarks</p>
       <h1>Find the exact release of the data your analysis needs.</h1>
@@ -316,12 +333,27 @@ async function pageHome() {
     </div>
   </section>
 
-  <section class="section">
-    <div class="section-head"><h2>Browse by field</h2><a href="#sources">All databases →</a></div>
-    <div class="chips">${S.fields
-      .map((x) => `<a class="chip" href="#sources/${esc(x.id)}" style="--dot:${baseVar(x)}">${esc(x.label)}</a>`)
-      .join("")}</div>
+  <section class="section actions">
+    <a class="action" href="#sources" style="--dot:var(--base-a)"><b>Get a database release</b><span>Every version with a link and download code</span></a>
+    <a class="action" href="#datasets" style="--dot:var(--base-c)"><b>Find a dataset</b><span>Benchmarks and training data for your task</span></a>
+    <a class="action" href="#latest" style="--dot:var(--base-g)"><b>Read new papers</b><span>The last 60 days in the leading journals</span></a>
+    <a class="action" href="#benchmarks" style="--dot:var(--base-t)"><b>Compare models</b><span>Published results tables, side by side</span></a>
   </section>
+
+  <section class="section">
+    <div class="section-head"><h2>Explore by field</h2><a href="#sources">All databases →</a></div>
+    <div class="fields" id="field-tiles">${S.fields.map((x) => {
+      const nDb = S.sources.filter((s) => s.field === x.id).length;
+      const nDs = S.datasets.filter((d) => d.field === x.id).length;
+      return `<div class="field-tile" style="--dot:${baseVar(x)}">
+        <span class="field-art">${art(x.label, x.id)}</span>
+        <div class="field-body"><h3>${esc(x.label)}</h3>
+          <p class="field-links"><a href="#sources/${esc(x.id)}">${nDb} databases</a><a href="#datasets/${esc(x.id)}">${nDs} datasets</a><a href="#latest/${esc(x.id)}" data-latest-count="${esc(x.id)}">New papers</a></p></div>
+      </div>`;
+    }).join("")}</div>
+  </section>
+
+  <section class="section" id="home-latest"></section>
 
   <section class="section">
     <div class="section-head"><h2>Recently released</h2><a href="#status">Source status →</a></div>
@@ -337,9 +369,22 @@ async function pageHome() {
   <section class="section" id="home-papers"></section>
   </div>`;
 
-  stopLive = mountLive(document.getElementById("stage"), featured.name, f.shape);
+  const stop3d = mountLive(document.getElementById("stage"), featured.name, f.shape);
+  const stopCells = mountCells(document.getElementById("cells"));
+  stopLive = () => { stop3d(); stopCells(); };
   wireSearch();
   armArt();
+
+  const latest = await need("latest");
+  const lslot = document.getElementById("home-latest");
+  if (latest?.papers?.length && lslot) {
+    const counts = {};
+    latest.papers.forEach((p) => p.fields?.forEach((fid) => (counts[fid] = (counts[fid] || 0) + 1)));
+    document.querySelectorAll("[data-latest-count]").forEach((a) => (a.textContent = `${counts[a.dataset.latestCount] || 0} new papers`));
+    const fresh = latest.papers.filter((p) => p.abstract).slice(0, 4);
+    lslot.innerHTML = `<div class="section-head"><h2>New in the journals</h2><a href="#latest">${num(latest.papers.length)} papers in the last ${latest.days} days →</a></div>
+      <div class="paper-list">${fresh.map((p) => paperCard(p, "")).join("")}</div>`;
+  }
 
   const boards = await need("boards");
   const b = boards?.boards?.[0];
@@ -547,6 +592,92 @@ function pageDatasets(field, preset) {
   draw();
 }
 
+async function pageLatest(fieldId) {
+  view.innerHTML = `<div class="page"><p class="loading">Loading new papers…</p></div>`;
+  const data = await need("latest");
+  if (!data?.papers?.length) return (view.innerHTML = `<div class="page"><p class="note">New papers have not been fetched yet. The daily job fills this page.</p></div>`);
+  const all = data.papers;
+  const counts = {};
+  all.forEach((p) => p.fields?.forEach((f) => (counts[f] = (counts[f] || 0) + 1)));
+  const journals = [...new Set(all.map((p) => p.journal).filter(Boolean))].sort();
+  const st = { field: S.fields.some((f) => f.id === fieldId) ? fieldId : "", days: 0, shown: 30 };
+
+  view.innerHTML = `<div class="page"><section class="section">
+    <p class="eyebrow">Updated ${esc(prettyDate(data.generated_at))} · ${esc(prettyDate(data.since))} to ${esc(prettyDate(data.until))}</p>
+    <h1>New papers</h1>
+    <p class="lede">Every paper published in the last ${data.days} days in the leading bioinformatics and computational biology journals, newest first. Each one is sorted into fields and tasks so you can follow only what matters to your work.</p>
+    <div class="chips" id="lfields">${fieldChips(st.field, counts)}</div>
+    <div class="controls">
+      <div class="control"><label for="lq">Search</label><input class="input" id="lq" type="search" placeholder="Title, method, keyword, author"></div>
+      <div class="control"><label for="ltask">Task</label><select class="input" id="ltask"></select></div>
+      <div class="control"><label for="ljour">Journal</label><select class="input" id="ljour"><option value="">All journals</option>${journals.map((j) => `<option>${esc(j)}</option>`).join("")}</select></div>
+      <div class="control"><label for="lsort">Sort by</label><select class="input" id="lsort"><option value="date">Newest first</option><option value="cited">Most cited so far</option></select></div>
+    </div>
+    <div class="toolbar">
+      <div class="seg" id="ldays"><button type="button" data-days="0" aria-pressed="true">${data.days} days</button><button type="button" data-days="30" aria-pressed="false">30 days</button><button type="button" data-days="14" aria-pressed="false">14 days</button><button type="button" data-days="7" aria-pressed="false">7 days</button></div>
+      <label class="check"><input type="checkbox" id="labs"> Only papers with an open abstract</label>
+    </div>
+    <p class="count" id="lcount"></p>
+    <div id="lout"></div>
+    <div class="more-row"><button class="btn" type="button" id="lmore" hidden>Show more papers</button></div>
+    <details class="note"><summary>Which journals are included</summary><p>${data.journals.map(esc).join(" · ")}</p><p>${esc(data.rule)}</p></details>
+  </section></div>`;
+
+  const $ = (id) => document.getElementById(id);
+  const fillTasks = () => {
+    const f = st.field ? [fieldOf(st.field)] : S.fields;
+    const options = f.flatMap((x) => (x.tasks || []).map((t) => [`${x.id}:${t.id}`, st.field ? t.label : `${x.label}: ${t.label}`]))
+      .filter(([id]) => all.some((p) => p.tasks.includes(id)));
+    $("ltask").innerHTML = `<option value="">All tasks</option>` + options.map(([id, l]) => `<option value="${esc(id)}">${esc(l)}</option>`).join("");
+  };
+  const filtered = () => {
+    const q = $("lq").value.trim().toLowerCase(), task = $("ltask").value, jour = $("ljour").value;
+    const cut = st.days ? Date.now() - st.days * 864e5 : 0;
+    const out = all.filter((p) =>
+      (!st.field || p.fields?.includes(st.field)) && (!task || p.tasks.includes(task)) && (!jour || p.journal === jour) &&
+      (!cut || Date.parse(p.date) >= cut) && (!$("labs").checked || p.abstract) &&
+      (!q || p.title.toLowerCase().includes(q) || p.authors.toLowerCase().includes(q) || p.method.toLowerCase().includes(q) || p.keywords.some((k) => k.toLowerCase().includes(q))));
+    if ($("lsort").value === "cited") out.sort((a, b) => b.cited - a.cited);
+    else out.sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+    return out;
+  };
+  const draw = (reset = true) => {
+    if (reset) st.shown = 30;
+    const list = filtered();
+    $("lcount").textContent = `${num(list.length)} of ${num(all.length)} papers`;
+    const page = list.slice(0, st.shown);
+    let html = "", day = "";
+    for (const p of page) {
+      if ($("lsort").value === "date" && p.date !== day) {
+        day = p.date;
+        html += `<h3 class="day">${esc(prettyDate(day))}</h3>`;
+      }
+      html += paperCard(p, "");
+    }
+    $("lout").innerHTML = page.length ? `<div class="paper-list">${html}</div>` : `<p class="note">No paper matches these filters.</p>`;
+    $("lmore").hidden = list.length <= st.shown;
+  };
+  $("lfields").addEventListener("click", (e) => {
+    const b = e.target.closest("button[data-field]");
+    if (!b) return;
+    st.field = b.dataset.field;
+    replaceHash(st.field ? `#latest/${st.field}` : "#latest");
+    $("lfields").querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+    fillTasks();
+    draw();
+  });
+  $("ldays").addEventListener("click", (e) => {
+    const b = e.target.closest("button"); if (!b) return;
+    st.days = Number(b.dataset.days);
+    $("ldays").querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+    draw();
+  });
+  ["lq", "ltask", "ljour", "lsort", "labs"].forEach((id) => $(id).addEventListener("input", () => draw()));
+  $("lmore").addEventListener("click", () => { st.shown += 30; draw(false); });
+  fillTasks();
+  draw();
+}
+
 async function pagePapers(fieldId) {
   view.innerHTML = `<div class="page"><p class="loading">Loading papers…</p></div>`;
   const papers = await need("papers");
@@ -701,6 +832,7 @@ function pageAbout() {
       <p>The site is a set of static pages. A small Rust program, <code>atlas</code>, reads five files kept in the repository and writes the JSON files these pages load. A GitHub Actions job runs it every day, commits the new data and publishes the site.</p>
       <h2>What changes every day</h2>
       <p><b>Papers.</b> For each field, two Europe PMC queries return the most cited open-access papers of all time and of the last 24 months. Each paper is tagged with tasks, from keyword patterns, and with the databases and datasets it names.</p>
+      <p><b>New papers.</b> Every paper published in the last 60 days in the leading bioinformatics and computational biology journals is collected and sorted into fields and tasks. Nature, Science, Cell and Nature Communications are included only for computational papers. Abstracts are shown when the paper is open access or under a Creative Commons licence.</p>
       <p><b>Benchmarks.</b> Published results tables are downloaded and shown unchanged.</p>
       <p><b>Status.</b> Every source's website and the download link of its current release are requested once. Results are kept for 30 days.</p>
       <h2>Reproducing a build</h2>
@@ -730,7 +862,7 @@ function route() {
   const [page, a, b] = decodeURIComponent(location.hash.replace(/^#/, "") || "home").split("/");
   const nav = { source: "sources" }[page] || page;
   document.querySelectorAll(".nav a").forEach((x) => (x.dataset.nav === nav ? x.setAttribute("aria-current", "page") : x.removeAttribute("aria-current")));
-  const pages = { home: pageHome, sources: () => pageSources(a), source: () => pageSource(a), datasets: () => pageDatasets(a, b),
+  const pages = { home: pageHome, latest: () => pageLatest(a), sources: () => pageSources(a), source: () => pageSource(a), datasets: () => pageDatasets(a, b),
     papers: () => pagePapers(a), benchmarks: () => pageBenchmarks(a), status: pageStatus, about: pageAbout };
   const render = pages[page] || (() => notFound("That page does not exist."));
   const go = () => { render(); armArt(); window.scrollTo({ top: 0, behavior: "instant" }); };

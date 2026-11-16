@@ -83,6 +83,8 @@ struct TaskDef {
 struct FieldDef {
     id: String,
     label: String,
+    #[serde(rename = "match", default, skip_serializing)]
+    match_pattern: String,
     base: String,
     shape: String,
     query: String,
@@ -199,9 +201,34 @@ struct Paper {
     tasks: Vec<String>,
     datasets: Vec<String>,
     lists: Vec<String>,
+    #[serde(default, skip_serializing_if = "Vec::is_empty")]
+    fields: Vec<String>,
+    /// Open access or Creative Commons: the abstract may be shown.
+    #[serde(skip)]
+    reusable: bool,
     #[serde(rename = "abstract")]
     abstract_text: String,
     url: String,
+}
+
+#[derive(Deserialize)]
+struct LatestConfig {
+    days: i64,
+    max_papers: usize,
+    core_journals: Vec<String>,
+    general_journals: Vec<String>,
+    general_filter: String,
+}
+
+#[derive(Serialize, Deserialize)]
+struct LatestOut {
+    generated_at: String,
+    since: String,
+    until: String,
+    days: i64,
+    journals: Vec<String>,
+    rule: String,
+    papers: Vec<Paper>,
 }
 
 #[derive(Serialize, Deserialize, Clone)]
@@ -551,82 +578,109 @@ fn fetch_papers(agent: &ureq::Agent, query: &str, tags: &Regex) -> Res<Vec<Paper
     );
     let json: Value = serde_json::from_str(&agent.get(&url).call()?.into_string()?)?;
     let mut papers = Vec::new();
-    let empty = Vec::new();
-    let results = json
-        .get("resultList")
-        .and_then(|r| r.get("result"))
-        .and_then(|r| r.as_array())
-        .unwrap_or(&empty);
-    for r in results {
-        let title = tags.replace_all(&text_of(r, "title"), "").trim().to_string();
-        let abstract_text = tags.replace_all(&text_of(r, "abstractText"), " ");
-        let abstract_text = abstract_text.split_whitespace().collect::<Vec<_>>().join(" ");
-        if title.is_empty() || abstract_text.is_empty() {
-            continue;
-        }
-        let source = text_of(r, "source");
-        let id = text_of(r, "id");
-        let journal = r
-            .pointer("/journalInfo/journal/title")
-            .and_then(|t| t.as_str())
-            .map(|s| s.to_string())
-            .unwrap_or_else(|| if source == "PPR" { "Preprint".to_string() } else { String::new() });
-        let doi = text_of(r, "doi");
-        let mut keywords: Vec<String> = r
-            .pointer("/keywordList/keyword")
-            .and_then(|k| k.as_array())
-            .map(|a| a.iter().filter_map(|x| x.as_str().map(|s| s.trim().to_string())).collect())
-            .unwrap_or_default();
-        if let Some(mesh) = r.pointer("/meshHeadingList/meshHeading").and_then(|m| m.as_array()) {
-            for m in mesh {
-                if m.get("majorTopic_YN").and_then(|y| y.as_str()) == Some("Y") {
-                    if let Some(d) = m.get("descriptorName").and_then(|d| d.as_str()) {
-                        keywords.push(d.to_string());
-                    }
-                }
+    for r in results_of(&json) {
+        if let Some(p) = parse_record(r, tags, true) {
+            papers.push(p);
+            if papers.len() == PAPERS_PER_LIST {
+                break;
             }
-        }
-        keywords.dedup();
-        let pdf = r
-            .pointer("/fullTextUrlList/fullTextUrl")
-            .and_then(|l| l.as_array())
-            .and_then(|l| {
-                l.iter().find(|u| {
-                    u.get("documentStyle").and_then(|s| s.as_str()) == Some("pdf")
-                        && u.get("availabilityCode").and_then(|s| s.as_str()) == Some("OA")
-                })
-            })
-            .and_then(|u| u.get("url").and_then(|s| s.as_str()))
-            .unwrap_or("")
-            .to_string();
-        papers.push(Paper {
-            id: format!("{}:{}", source, id),
-            method: method_from_title(&title),
-            title,
-            authors: text_of(r, "authorString"),
-            journal,
-            year: text_of(r, "pubYear"),
-            date: text_of(r, "firstPublicationDate"),
-            url: if doi.is_empty() {
-                format!("https://europepmc.org/article/{}/{}", source, id)
-            } else {
-                format!("https://doi.org/{}", doi)
-            },
-            doi,
-            cited: r.get("citedByCount").and_then(|c| c.as_u64()).unwrap_or(0),
-            license: text_of(r, "license"),
-            pdf,
-            keywords,
-            tasks: Vec::new(),
-            datasets: Vec::new(),
-            lists: Vec::new(),
-            abstract_text,
-        });
-        if papers.len() == PAPERS_PER_LIST {
-            break;
         }
     }
     Ok(papers)
+}
+
+fn results_of(json: &Value) -> Vec<Value> {
+    json.pointer("/resultList/result")
+        .and_then(|r| r.as_array())
+        .cloned()
+        .unwrap_or_default()
+}
+
+/// Turns one Europe PMC "core" record into a Paper. With `need_abstract`,
+/// records without an abstract are skipped; otherwise the abstract is kept
+/// only when the record is open access or carries a Creative Commons licence.
+/// Europe PMC sometimes sends markup as entities (`&lt;i&gt;`); decode them
+/// so the tag filter can remove the markup.
+fn unescape(text: &str) -> String {
+    text.replace("&lt;", "<")
+        .replace("&gt;", ">")
+        .replace("&quot;", "\"")
+        .replace("&#39;", "'")
+        .replace("&amp;", "&")
+}
+
+fn parse_record(r: &Value, tags: &Regex, need_abstract: bool) -> Option<Paper> {
+    let title = tags.replace_all(&unescape(&text_of(r, "title")), "").trim().to_string();
+    let abstract_text = tags.replace_all(&unescape(&text_of(r, "abstractText")), " ");
+    let mut abstract_text = abstract_text.split_whitespace().collect::<Vec<_>>().join(" ");
+    if title.is_empty() || (need_abstract && abstract_text.is_empty()) {
+        return None;
+    }
+    let license = text_of(r, "license");
+    let reusable = text_of(r, "isOpenAccess") == "Y" || license.to_lowercase().starts_with("cc");
+    if need_abstract && !reusable {
+        abstract_text.clear();
+    }
+    let source = text_of(r, "source");
+    let id = text_of(r, "id");
+    let journal = r
+        .pointer("/journalInfo/journal/title")
+        .and_then(|t| t.as_str())
+        .map(|s| s.to_string())
+        .unwrap_or_else(|| if source == "PPR" { "Preprint".to_string() } else { String::new() });
+    let doi = text_of(r, "doi");
+    let mut keywords: Vec<String> = r
+        .pointer("/keywordList/keyword")
+        .and_then(|k| k.as_array())
+        .map(|a| a.iter().filter_map(|x| x.as_str().map(|s| s.trim().to_string())).collect())
+        .unwrap_or_default();
+    if let Some(mesh) = r.pointer("/meshHeadingList/meshHeading").and_then(|m| m.as_array()) {
+        for m in mesh {
+            if m.get("majorTopic_YN").and_then(|y| y.as_str()) == Some("Y") {
+                if let Some(d) = m.get("descriptorName").and_then(|d| d.as_str()) {
+                    keywords.push(d.to_string());
+                }
+            }
+        }
+    }
+    keywords.dedup();
+    let pdf = r
+        .pointer("/fullTextUrlList/fullTextUrl")
+        .and_then(|l| l.as_array())
+        .and_then(|l| {
+            l.iter().find(|u| {
+                u.get("documentStyle").and_then(|s| s.as_str()) == Some("pdf")
+                    && u.get("availabilityCode").and_then(|s| s.as_str()) == Some("OA")
+            })
+        })
+        .and_then(|u| u.get("url").and_then(|s| s.as_str()))
+        .unwrap_or("")
+        .to_string();
+    Some(Paper {
+        id: format!("{}:{}", source, id),
+        method: method_from_title(&title),
+        title,
+        authors: text_of(r, "authorString"),
+        journal,
+        year: text_of(r, "pubYear"),
+        date: text_of(r, "firstPublicationDate"),
+        url: if doi.is_empty() {
+            format!("https://europepmc.org/article/{}/{}", source, id)
+        } else {
+            format!("https://doi.org/{}", doi)
+        },
+        doi,
+        cited: r.get("citedByCount").and_then(|c| c.as_u64()).unwrap_or(0),
+        license,
+        pdf,
+        keywords,
+        tasks: Vec::new(),
+        datasets: Vec::new(),
+        lists: Vec::new(),
+        fields: Vec::new(),
+        reusable,
+        abstract_text,
+    })
 }
 
 fn tag_paper(p: &mut Paper, tasks: &[(String, Regex)], mentions: &[Mention]) {
@@ -711,6 +765,145 @@ fn build_papers(fields: &[FieldDef], mentions: &[Mention], previous: Option<Pape
             .to_string(),
         fields: out,
     }
+}
+
+// ---------- latest papers from selected journals ----------
+
+fn journal_clause(names: &[String]) -> String {
+    let parts: Vec<String> = names.iter().map(|j| format!("JOURNAL:\"{}\"", j)).collect();
+    format!("({})", parts.join(" OR "))
+}
+
+/// Fields whose pattern matches at least twice, strongest first, at most
+/// three. A paper with only single matches keeps its single best field.
+fn pick_fields(matchers: &[(String, Regex)], text: &str) -> Vec<String> {
+    let mut scored: Vec<(usize, &String)> = matchers
+        .iter()
+        .map(|(id, re)| (re.find_iter(text).count(), id))
+        .filter(|(n, _)| *n > 0)
+        .collect();
+    scored.sort_by(|a, b| b.0.cmp(&a.0));
+    let strong: Vec<String> = scored.iter().filter(|(n, _)| *n >= 2).take(3).map(|(_, id)| (*id).clone()).collect();
+    if strong.is_empty() {
+        scored.first().map(|(_, id)| vec![(*id).clone()]).unwrap_or_default()
+    } else {
+        strong
+    }
+}
+
+fn build_latest(
+    cfg: &LatestConfig,
+    fields: &[FieldDef],
+    mentions: &[Mention],
+    previous: Option<LatestOut>,
+) -> Option<LatestOut> {
+    let agent = http(90);
+    let tags = Regex::new(r"<[^>]+>").expect("static regex");
+    let since = (Utc::now() - chrono::Duration::days(cfg.days)).format("%Y-%m-%d").to_string();
+    let until = today();
+    let query = format!(
+        "({} OR ({} AND {})) AND FIRST_PDATE:[{} TO {}]",
+        journal_clause(&cfg.core_journals),
+        journal_clause(&cfg.general_journals),
+        cfg.general_filter,
+        since,
+        until
+    );
+
+    let matchers: Vec<(String, Regex)> = fields
+        .iter()
+        .filter(|f| !f.match_pattern.is_empty())
+        .filter_map(|f| Regex::new(&format!("(?i){}", f.match_pattern)).ok().map(|re| (f.id.clone(), re)))
+        .collect();
+    let tasks: Vec<(String, Regex)> = fields
+        .iter()
+        .flat_map(|f| {
+            f.tasks.iter().filter_map(move |t| {
+                Regex::new(&format!("(?i){}", t.pattern)).ok().map(|re| (format!("{}:{}", f.id, t.id), re))
+            })
+        })
+        .collect();
+
+    let mut papers: Vec<Paper> = Vec::new();
+    let mut cursor = "*".to_string();
+    loop {
+        let url = format!(
+            "{}?query={}&format=json&resultType=core&pageSize=1000&sort={}&cursorMark={}",
+            EUROPE_PMC,
+            percent_encode(&query),
+            percent_encode("P_PDATE_D desc"),
+            percent_encode(&cursor)
+        );
+        let json: Value = match agent.get(&url).call().map_err(|e| e.to_string()).and_then(|r| {
+            r.into_string().map_err(|e| e.to_string())
+        }) {
+            Ok(body) => match serde_json::from_str(&body) {
+                Ok(v) => v,
+                Err(e) => {
+                    eprintln!("latest: bad JSON: {}", e);
+                    break;
+                }
+            },
+            Err(e) => {
+                eprintln!("latest: request failed: {}", e);
+                break;
+            }
+        };
+        let page = results_of(&json);
+        if page.is_empty() {
+            break;
+        }
+        for r in &page {
+            if let Some(p) = parse_record(r, &tags, false) {
+                if !papers.iter().any(|x| x.id == p.id) {
+                    papers.push(p);
+                }
+            }
+        }
+        let next = text_of(&json, "nextCursorMark");
+        if papers.len() >= cfg.max_papers || next.is_empty() || next == cursor {
+            break;
+        }
+        cursor = next;
+        sleep(Duration::from_millis(500));
+    }
+
+    if papers.is_empty() {
+        eprintln!("latest: no papers fetched; keeping the previous file");
+        return previous;
+    }
+    papers.truncate(cfg.max_papers);
+    for p in papers.iter_mut() {
+        let text = format!("{} {} {}", p.title, p.abstract_text, p.keywords.join(" "));
+        p.fields = pick_fields(&matchers, &text);
+        p.tasks = tasks
+            .iter()
+            .filter(|(id, re)| p.fields.iter().any(|f| id.starts_with(&format!("{}:", f))) && re.is_match(&text))
+            .map(|(id, _)| id.clone())
+            .collect();
+        let found: BTreeSet<String> = mentions.iter().filter(|m| m.re.is_match(&text)).map(|m| m.id.clone()).collect();
+        p.datasets = found.into_iter().collect();
+        // Tag from the full abstract, but publish it only when it may be reused.
+        if !p.reusable {
+            p.abstract_text.clear();
+        }
+    }
+    println!("latest: {} papers since {}", papers.len(), since);
+
+    let mut journals = cfg.core_journals.clone();
+    journals.extend(cfg.general_journals.iter().map(|j| format!("{} (computational papers only)", j)));
+    Some(LatestOut {
+        generated_at: now(),
+        since,
+        until,
+        days: cfg.days,
+        journals,
+        rule: "Every paper first published in the listed journals during the window, newest first. \
+               Fields, tasks and named datasets are assigned from keyword patterns. Abstracts are shown \
+               for open-access or Creative Commons papers."
+            .to_string(),
+        papers,
+    })
 }
 
 // ---------- leaderboards ----------
@@ -918,6 +1111,12 @@ fn run() -> Res<()> {
         counts.insert("papers".to_string(), papers.fields.iter().map(|f| f.papers.len()).sum());
         write_json(&out.join("papers.json"), &papers)?;
 
+        let latest_cfg: LatestConfig = toml::from_str(&fs::read_to_string(data_in.join("latest.toml"))?)?;
+        if let Some(latest) = build_latest(&latest_cfg, &fields_file.field, &mentions, read_json(&out.join("latest.json"))) {
+            counts.insert("latest_papers".to_string(), latest.papers.len());
+            write_json(&out.join("latest.json"), &latest)?;
+        }
+
         let boards = build_boards(&boards_file.board, read_json(&out.join("leaderboards.json")));
         counts.insert("leaderboard_rows".to_string(), boards.boards.iter().map(|b| b.rows.len()).sum());
         write_json(&out.join("leaderboards.json"), &boards)?;
@@ -931,6 +1130,7 @@ fn run() -> Res<()> {
         "data/sources.toml",
         "data/fields.toml",
         "data/leaderboards.toml",
+        "data/latest.toml",
         "data/database_versions.csv",
         "data/datasets.csv",
     ] {

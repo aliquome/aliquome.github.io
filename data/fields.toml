@@ -2,6 +2,7 @@
 #
 #   base   nucleotide colour family of the field (A, C, G or T)
 #   shape  family of the generated 3D figure
+#   match  case-insensitive pattern that assigns a new paper to this field
 #   query  Europe PMC search expression; the engine adds `AND OPEN_ACCESS:y`
 #   tasks  each paper is tagged with every task whose pattern matches its
 #          title, abstract or keywords (case-insensitive regular expression)
@@ -9,6 +10,7 @@
 [[field]]
 id = "genomes"
 label = "Genomes and annotation"
+match = "genome assembl|reference genome|pangenom|genome annotation|read alignment|long-read|telomere-to-telomere|genome sequenc"
 base = "A"
 shape = "helix"
 query = "(TITLE:\"genome assembly\" OR TITLE:\"reference genome\" OR TITLE:\"pangenome\" OR TITLE:\"genome annotation\" OR TITLE:\"read alignment\")"
@@ -23,6 +25,7 @@ tasks = [
 [[field]]
 id = "variants"
 label = "Variants and population genetics"
+match = "genetic variant|variant calling|variant effect|gwas|genome-wide association|polygenic|population genetic|haplotype|\\bsnps?\\b|missense"
 base = "T"
 shape = "variant"
 query = "(TITLE:\"genetic variation\" OR TITLE:\"variant calling\" OR TITLE:\"genome-wide association\" OR TITLE:\"population genomics\" OR TITLE:\"variant effect\")"
@@ -37,6 +40,7 @@ tasks = [
 [[field]]
 id = "cancer"
 label = "Cancer genomics"
+match = "cancer|tumou?r|oncolog|carcinoma|leukemi|lymphoma|metasta"
 base = "T"
 shape = "tumour"
 query = "(TITLE:\"cancer genome\" OR TITLE:\"pan-cancer\" OR TITLE:\"tumor heterogeneity\" OR TITLE:\"cancer genomics\" OR TITLE:\"somatic mutation\")"
@@ -51,6 +55,7 @@ tasks = [
 [[field]]
 id = "expression"
 label = "Expression and single-cell"
+match = "single-cell|single cell|scrna|transcriptom|rna-seq|spatial omics|gene expression"
 base = "G"
 shape = "cells"
 query = "(TITLE:\"single-cell\" OR TITLE:\"spatial transcriptomics\" OR TITLE:\"RNA-seq\")"
@@ -68,6 +73,7 @@ tasks = [
 [[field]]
 id = "proteins"
 label = "Proteins and structures"
+match = "protein structure|protein design|protein language|protein folding|alphafold|enzyme|antibod|protein-protein|peptide|cryo-em"
 base = "C"
 shape = "fold"
 query = "(TITLE:\"protein structure prediction\" OR TITLE:\"protein language model\" OR TITLE:\"protein design\" OR TITLE:\"protein structure\" OR TITLE:\"protein function prediction\")"
@@ -84,6 +90,7 @@ tasks = [
 [[field]]
 id = "pathways"
 label = "Pathways, networks and ontologies"
+match = "pathway|interactome|regulatory network|ontolog|knowledge graph|enrichment analysis|systems biology"
 base = "A"
 shape = "network"
 query = "(TITLE:\"protein-protein interaction\" OR TITLE:\"pathway analysis\" OR TITLE:\"gene ontology\" OR TITLE:\"knowledge graph\" OR TITLE:\"gene set enrichment\")"
@@ -98,6 +105,7 @@ tasks = [
 [[field]]
 id = "chemistry"
 label = "Chemistry and drug discovery"
+match = "drug|ligand|small molecule|compound|virtual screening|binding affinity|molecular generation|docking"
 base = "G"
 shape = "molecule"
 query = "(TITLE:\"drug discovery\" OR TITLE:\"molecular docking\" OR TITLE:\"molecular generation\" OR TITLE:\"virtual screening\" OR TITLE:\"binding affinity\")"
@@ -112,6 +120,7 @@ tasks = [
 [[field]]
 id = "regulation"
 label = "Epigenomics and regulation"
+match = "chromatin|epigen|methylation|enhancer|transcription factor|atac-seq|hi-c|histone|3d genome"
 base = "C"
 shape = "chromatin"
 query = "(TITLE:\"chromatin accessibility\" OR TITLE:\"epigenome\" OR TITLE:\"transcription factor binding\" OR TITLE:\"DNA methylation\" OR TITLE:\"enhancer\")"
@@ -126,6 +135,7 @@ tasks = [
 [[field]]
 id = "rna"
 label = "RNA"
+match = "non-coding rna|ncrna|lncrna|microrna|mirna|rna structure|splicing|rna modification|m6a|rna-binding"
 base = "T"
 shape = "hairpin"
 query = "(TITLE:\"non-coding RNA\" OR TITLE:\"RNA structure\" OR TITLE:\"microRNA\" OR TITLE:\"RNA modification\" OR TITLE:\"alternative splicing\")"
@@ -140,6 +150,7 @@ tasks = [
 [[field]]
 id = "microbiome"
 label = "Microbiome and metagenomics"
+match = "microbio|metagenom|16s rrna|bacteria|viral genom|phage|pathogen|antimicrobial"
 base = "A"
 shape = "microbes"
 query = "(TITLE:\"metagenomics\" OR TITLE:\"microbiome\" OR TITLE:\"metagenome-assembled\" OR TITLE:\"16S rRNA\")"
@@ -154,6 +165,7 @@ tasks = [
 [[field]]
 id = "benchmarks"
 label = "Benchmarks and machine learning"
+match = "benchmark|large language model|\\bllms?\\b|foundation model"
 base = "G"
 shape = "bars"
 query = "(TITLE:\"benchmark\" AND (TITLE:\"genomics\" OR TITLE:\"protein\" OR TITLE:\"single-cell\" OR TITLE:\"bioinformatics\" OR TITLE:\"biology\" OR TITLE:\"biomedical\"))"

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T19:00:09Z",
+  "generated_at": "2026-11-16T19:19:43Z",
   "source": "Europe PMC REST API",
   "rule": "For each field, the 30 most cited open-access papers of all time and the 30 most cited of the last 24 months that match the field query. Tasks come from keyword patterns; datasets are databases and datasets named in the title, abstract or keywords.",
   "fields": [
@@ -1567,7 +1567,7 @@
         },
         {
           "id": "MED:39745367",
-          "title": "Decomposition of the pangenome matrix reveals a structure in gene distribution in the &lt;i&gt;Escherichia coli&lt;/i&gt; species.",
+          "title": "Decomposition of the pangenome matrix reveals a structure in gene distribution in the Escherichia coli species.",
           "method": "",
           "authors": "Chauhan SM, Ardalani O, Hyun JC, Monk JM, Phaneuf PV, Palsson BO.",
           "journal": "mSphere",
@@ -1599,7 +1599,7 @@
         },
         {
           "id": "MED:39694857",
-          "title": "Taurine pangenome uncovers a segmental duplication upstream of &lt;i&gt;KIT&lt;/i&gt; associated with depigmentation in white-headed cattle.",
+          "title": "Taurine pangenome uncovers a segmental duplication upstream of KIT associated with depigmentation in white-headed cattle.",
           "method": "",
           "authors": "Milia S, Leonard AS, Mapel XM, Bernal Ulloa SM, Drögemüller C, Pausch H.",
           "journal": "Genome research",
@@ -1628,7 +1628,7 @@
         },
         {
           "id": "MED:40910469",
-          "title": "The &lt;i&gt;Mycobacterium tuberculosis&lt;/i&gt; complex pangenome is small and shaped by sub-lineage-specific regions of difference.",
+          "title": "The Mycobacterium tuberculosis complex pangenome is small and shaped by sub-lineage-specific regions of difference.",
           "method": "",
           "authors": "Behruznia M, Marin M, Whiley DJ, Farhat MR, Thomas JC, Domingo-Sananes MR, Meehan CJ.",
           "journal": "eLife",
@@ -4962,7 +4962,7 @@
         },
         {
           "id": "MED:40443402",
-          "title": "Deciphering the role of &lt;i&gt;ELAVL1&lt;/i&gt;: Insights from pan-cancer multiomics analyses with emphasis on nasopharyngeal carcinoma.",
+          "title": "Deciphering the role of ELAVL1: Insights from pan-cancer multiomics analyses with emphasis on nasopharyngeal carcinoma.",
           "method": "",
           "authors": "Xie J, Xie Y, Tan W, Ye Y, Ou X, Zou X, He Z, Wu J, Deng X, Tang H, He L, Li K, Luo P, Bai K, Huang G, Li J.",
           "journal": "Journal of translational internal medicine",
@@ -8382,7 +8382,7 @@
         },
         {
           "id": "MED:40341366",
-          "title": "Rational design of &lt;sup&gt;19&lt;/sup&gt;F NMR labelling sites to probe protein structure and interactions.",
+          "title": "Rational design of 19F NMR labelling sites to probe protein structure and interactions.",
           "method": "",
           "authors": "Streit JO, Chan SHS, Daya S, Christodoulou J.",
           "journal": "Nature communications",
@@ -9952,7 +9952,7 @@
         },
         {
           "id": "MED:40700523",
-          "title": "PlantConnectome: A knowledge graph database encompassing &gt;71,000 plant articles.",
+          "title": "PlantConnectome: A knowledge graph database encompassing >71,000 plant articles.",
           "method": "PlantConnectome",
           "authors": "Lim SC, Itharajula M, Møller MH, Sunil RS, Fo K, Chuah YS, Foo H, Davey EE, Fullwood M, Thibault G, Mutwil M.",
           "journal": "The Plant cell",
@@ -14784,7 +14784,7 @@
         },
         {
           "id": "MED:40083919",
-          "title": "NSUN2-mediated m&lt;sup&gt;5&lt;/sup&gt;C modification drives alternative splicing reprogramming and promotes multidrug resistance in anaplastic thyroid cancer through the NSUN2/SRSF6/UAP1 signaling axis.",
+          "title": "NSUN2-mediated m5C modification drives alternative splicing reprogramming and promotes multidrug resistance in anaplastic thyroid cancer through the NSUN2/SRSF6/UAP1 signaling axis.",
           "method": "",
           "authors": "Hou X, Dong Q, Hao J, Liu M, Ning J, Tao M, Wang Z, Guo F, Huang D, Shi X, Gao M, Li D, Zheng X.",
           "journal": "Theranostics",
@@ -14909,7 +14909,7 @@
         },
         {
           "id": "MED:39555714",
-          "title": "m&lt;sup&gt;6&lt;/sup&gt;A-Modified SNRPA Controls Alternative Splicing of ERCC1 Exon 8 to Induce Cisplatin Resistance in Lung Adenocarcinoma.",
+          "title": "m6A-Modified SNRPA Controls Alternative Splicing of ERCC1 Exon 8 to Induce Cisplatin Resistance in Lung Adenocarcinoma.",
           "method": "",
           "authors": "Fan W, Huang J, Tian F, Hong X, Zhu K, Zhan Y, Li X, Wang X, Wang X, Cai L, Xing Y.",
           "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
@@ -14936,6 +14936,7 @@
           ],
           "tasks": [
             "mirna",
+            "modification",
             "splicing"
           ],
           "datasets": [

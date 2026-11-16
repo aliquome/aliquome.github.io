@@ -6,7 +6,8 @@ The atlas is a static website, rebuilt every day, that brings together:
 
 - **Databases.** Every release of 83 core bioinformatics databases (Ensembl, GENCODE, UniProt, PDB, AlphaFold DB, gnomAD, ClinVar, GDC, ChEMBL, STRING and more): 794 releases, 732 with a direct link you can paste into code, with ready-made `curl`, `wget`, Python, `pooch`, R, AWS CLI and `gcloud` snippets.
 - **Datasets.** 194 public datasets and benchmarks with repository and download links.
-- **Papers.** The most cited open-access papers in 11 fields, of all time and of the last 24 months, with abstracts, tagged by task and by the datasets they name. Filter them and compare methods side by side.
+- **New papers.** Every paper from the last 60 days in the leading bioinformatics and computational biology journals (about 1,400), sorted into fields and tasks, with filters by journal, task and period.
+- **Top papers.** The most cited open-access papers in 11 fields, of all time and of the last 24 months, with abstracts, tagged by task and by the datasets they name. Filter them and compare methods side by side.
 - **Benchmarks.** Published model comparison tables (currently ProteinGym), copied daily and shown exactly as published.
 - **Status.** A daily check of every source's website and of the download link of its current release.
 
@@ -16,7 +17,7 @@ Every database and dataset has its own 3D figure and chromatogram trace, both ge
 
 | Path | Contents |
 |---|---|
-| `data/` | All inputs. `sources.toml` (databases), `database_versions.csv` (releases and links), `datasets.csv`, `fields.toml` (fields, tasks, paper queries), `leaderboards.toml` (benchmark tables) |
+| `data/` | All inputs. `sources.toml` (databases), `database_versions.csv` (releases and links), `datasets.csv`, `fields.toml` (fields, tasks, paper queries), `latest.toml` (journals for new papers), `leaderboards.toml` (benchmark tables) |
 | `engine/` | `atlas`, a Rust program that turns `data/` into the JSON files under `site/data/`, fetches papers and benchmark tables, and checks sources |
 | `site/` | The website: HTML, CSS and JavaScript, with three.js for the 3D figures |
 | `.github/workflows/daily.yml` | Daily build: compile, reproducibility check, data refresh, commit, deploy to GitHub Pages |

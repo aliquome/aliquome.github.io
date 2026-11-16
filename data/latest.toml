@@ -1,0 +1,35 @@
+# "Latest papers": every paper published in the last `days` days in the
+# journals below. Core journals are taken in full; general journals only
+# when the title or abstract matches `general_filter`.
+#
+# Journal names are the abbreviations Europe PMC uses (field JOURNAL).
+# Abstracts are shown only when Europe PMC marks the paper open access or
+# reports a Creative Commons licence; otherwise the site links to the article.
+
+days = 60
+max_papers = 1500
+
+core_journals = [
+  "Bioinformatics",
+  "Nucleic Acids Res",
+  "Genome Biol",
+  "Nat Methods",
+  "Nat Biotechnol",
+  "Brief Bioinform",
+  "PLoS Comput Biol",
+  "Genome Res",
+  "Nat Genet",
+  "Cell Syst",
+  "Cell Genom",
+  "Nat Comput Sci",
+  "Genome Med",
+  "Mol Syst Biol",
+  "Gigascience",
+  "NAR Genom Bioinform",
+  "Bioinform Adv",
+  "BMC Bioinformatics",
+]
+
+general_journals = ["Nature", "Science", "Cell", "Nat Commun"]
+
+general_filter = "(TITLE_ABS:\"computational\" OR TITLE_ABS:\"deep learning\" OR TITLE_ABS:\"machine learning\" OR TITLE_ABS:\"bioinformatic*\" OR TITLE_ABS:\"algorithm\" OR TITLE_ABS:\"language model\" OR TITLE_ABS:\"atlas\" OR TITLE_ABS:\"single-cell\" OR TITLE_ABS:\"sequencing\")"
