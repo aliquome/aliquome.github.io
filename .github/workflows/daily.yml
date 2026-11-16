@@ -9,11 +9,9 @@ on:
   push:
     branches: [main]
     paths:
-      - "registry/**"
+      - "data/**"
       - "engine/**"
       - "site/**"
-      - "databases_versions.csv"
-      - "datasets.csv"
       - ".github/workflows/daily.yml"
 
 permissions:
@@ -49,7 +47,7 @@ jobs:
           ./engine/target/release/atlas build --offline
           sha256sum -c /tmp/first.sha
 
-      - name: Fetch papers and check sources
+      - name: Fetch papers and benchmarks, check sources and links
         run: ./engine/target/release/atlas build
 
       - name: Commit the new data

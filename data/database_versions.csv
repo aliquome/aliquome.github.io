@@ -1,0 +1,795 @@
+source_id,version,release_date,status,url,url_type,verified,note
+grch37,GRCh37,2009-02,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.1_GRCh37/,directory,yes,GenBank assembly GCA_000001405.1.
+grch37,GRCh37.p1,,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.2_GRCh37.p1/,directory,yes,GenBank assembly GCA_000001405.2.
+grch37,GRCh37.p2,,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.3_GRCh37.p2/,directory,yes,GenBank assembly GCA_000001405.3.
+grch37,GRCh37.p3,,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.4_GRCh37.p3/,directory,yes,GenBank assembly GCA_000001405.4.
+grch37,GRCh37.p4,,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.5_GRCh37.p4/,directory,yes,GenBank assembly GCA_000001405.5.
+grch37,GRCh37.p5,,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.6_GRCh37.p5/,directory,yes,GenBank assembly GCA_000001405.6.
+grch37,GRCh37.p6,,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.7_GRCh37.p6/,directory,yes,GenBank assembly GCA_000001405.7.
+grch37,GRCh37.p7,,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.8_GRCh37.p7/,directory,yes,GenBank assembly GCA_000001405.8.
+grch37,GRCh37.p8,,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.9_GRCh37.p8/,directory,yes,GenBank assembly GCA_000001405.9.
+grch37,GRCh37.p9,,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.10_GRCh37.p9/,directory,yes,GenBank assembly GCA_000001405.10.
+grch37,GRCh37.p10,,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.11_GRCh37.p10/,directory,yes,GenBank assembly GCA_000001405.11.
+grch37,GRCh37.p11,,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.12_GRCh37.p11/,directory,yes,GenBank assembly GCA_000001405.12.
+grch37,GRCh37.p12,,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.13_GRCh37.p12/,directory,yes,GenBank assembly GCA_000001405.13.
+grch37,GRCh37.p13,2013,latest,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.14_GRCh37.p13/,directory,yes,"Final GRCh37 patch; GenBank GCA_000001405.14, RefSeq GCF_000001405.25."
+grch37,hs37d5,,current,https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/phase2_reference_assembly_sequence/hs37d5.fa.gz,file,no,1000 Genomes Phase 2 GRCh37 reference with decoy sequences.
+grch37,NCBI36 / hg18 and earlier,2006,archived,https://ftp.ncbi.nlm.nih.gov/genomes/archive/old_genbank/Eukaryotes/vertebrates_mammals/Homo_sapiens/,directory,yes,Older human builds in the NCBI GenBank archive.
+grch38,GRCh38,2013-12,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.15_GRCh38/,directory,yes,GenBank assembly GCA_000001405.15. Analysis sets live under seqs_for_alignment_pipelines.ucsc_ids/.
+grch38,GRCh38.p1,,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.16_GRCh38.p1/,directory,yes,GenBank assembly GCA_000001405.16.
+grch38,GRCh38.p2,,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.17_GRCh38.p2/,directory,yes,GenBank assembly GCA_000001405.17.
+grch38,GRCh38.p3,,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.18_GRCh38.p3/,directory,yes,GenBank assembly GCA_000001405.18.
+grch38,GRCh38.p4,,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.19_GRCh38.p4/,directory,yes,GenBank assembly GCA_000001405.19.
+grch38,GRCh38.p5,,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.20_GRCh38.p5/,directory,yes,GenBank assembly GCA_000001405.20.
+grch38,GRCh38.p6,,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.21_GRCh38.p6/,directory,yes,GenBank assembly GCA_000001405.21.
+grch38,GRCh38.p7,,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.22_GRCh38.p7/,directory,yes,GenBank assembly GCA_000001405.22.
+grch38,GRCh38.p8,,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.23_GRCh38.p8/,directory,yes,GenBank assembly GCA_000001405.23.
+grch38,GRCh38.p9,,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.24_GRCh38.p9/,directory,yes,GenBank assembly GCA_000001405.24.
+grch38,GRCh38.p10,,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.25_GRCh38.p10/,directory,yes,GenBank assembly GCA_000001405.25.
+grch38,GRCh38.p11,,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.26_GRCh38.p11/,directory,yes,GenBank assembly GCA_000001405.26.
+grch38,GRCh38.p12,,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.27_GRCh38.p12/,directory,yes,GenBank assembly GCA_000001405.27.
+grch38,GRCh38.p13,2019-02,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.28_GRCh38.p13/,directory,yes,GenBank assembly GCA_000001405.28.
+grch38,GRCh38.p14,2022-02,latest,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.29_GRCh38.p14/,directory,yes,"Latest patch; there is no p15. GenBank GCA_000001405.29, RefSeq GCF_000001405.40."
+t2t-hprc,CHM13 draft v0.4–v0.9,before 2021,archived,s3://human-pangenomics/T2T/CHM13/assemblies/chm13.draft_v{version}.fasta.gz,pattern,yes,"Draft assemblies v0.4, v0.6, v0.7 and v0.9."
+t2t-hprc,CHM13 v1.0,2021,archived,s3://human-pangenomics/T2T/CHM13/assemblies/chm13.v1.0.fasta,file,yes,GenBank GCA_009914755.1.
+t2t-hprc,CHM13 v1.1,2022-04,archived,s3://human-pangenomics/T2T/CHM13/assemblies/chm13.v1.1.fasta,file,yes,
+t2t-hprc,CHM13 v2.0,,latest,s3://human-pangenomics/T2T/CHM13/assemblies/chm13v2.0.fa.gz,file,yes,Latest T2T assembly with chrY from HG002; GCA_009914755.4; UCSC hs1.
+t2t-hprc,HPRC Release 1,2023,archived,s3://human-pangenomics/pangenomes/freeze/freeze1/,directory,yes,"freeze1, 47 individuals; subfolders minigraph, minigraph-cactus, pggb."
+t2t-hprc,HPRC Release 2,2025-05-12,current,s3://human-pangenomics/pangenomes/freeze/release2/,directory,yes,"Latest HPRC pangenome, 232 individuals; subfolders minigraph-cactus, pggb, impg."
+ucsc,"hg4–hg8, hg10–hg13, hg15–hg18",2000–2006,archived,https://hgdownload.soe.ucsc.edu/goldenPath/hg{N}/,pattern,yes,Historical human builds.
+ucsc,hg19,2009,current,https://hgdownload.soe.ucsc.edu/goldenPath/hg19/,directory,yes,Human; equivalent to GRCh37.
+ucsc,hg38,2013,current,https://hgdownload.soe.ucsc.edu/goldenPath/hg38/,directory,yes,Human; equivalent to GRCh38; p14 patch files in the p14/ subfolder.
+ucsc,hs1,,latest,https://hgdownload.soe.ucsc.edu/goldenPath/hs1/,directory,yes,Human T2T-CHM13v2.0; newest human build.
+ucsc,mm9,2007,archived,https://hgdownload.soe.ucsc.edu/goldenPath/mm9/,directory,yes,Mouse; equivalent to NCBI37.
+ucsc,mm10,2011,current,https://hgdownload.soe.ucsc.edu/goldenPath/mm10/,directory,yes,Mouse; equivalent to GRCm38.
+ucsc,mm39,2020-06,current,https://hgdownload.soe.ucsc.edu/goldenPath/mm39/,directory,yes,Mouse; equivalent to GRCm39; latest mouse build.
+ucsc,rn6 / rn7 / rn8,2024,current,https://hgdownload.soe.ucsc.edu/goldenPath/rn7/,directory,yes,"Rat; rn7 = mRatBN7.2; rn8 (GRCr8, 2024) is API-only. URL is for rn7."
+ucsc,danRer10 / danRer11,2017,current,https://hgdownload.soe.ucsc.edu/goldenPath/danRer11/,directory,yes,Zebrafish; danRer11 = GRCz11. URL is for danRer11.
+ucsc,dm3 / dm6,,current,https://hgdownload.soe.ucsc.edu/goldenPath/dm6/,directory,yes,Fruit fly; dm6 = BDGP Release 6. URL is for dm6.
+ucsc,ce10 / ce11,,current,https://hgdownload.soe.ucsc.edu/goldenPath/ce11/,directory,yes,C. elegans; ce11 = WBcel235. URL is for ce11.
+ucsc,sacCer3,2011,current,https://hgdownload.soe.ucsc.edu/goldenPath/sacCer3/,directory,yes,Yeast; equivalent to R64-1-1.
+genbank,270,2026-02-18,archived,https://ftp.ncbi.nlm.nih.gov/genbank/release.notes/gb270.release.notes,file,yes,Release notes for GenBank 270.
+genbank,271,2026-04-22,archived,https://ftp.ncbi.nlm.nih.gov/genbank/release.notes/gb271.release.notes,file,yes,Release notes for GenBank 271.
+genbank,272,2026-06-12,archived,https://ftp.ncbi.nlm.nih.gov/genbank/release.notes/gb272.release.notes,file,yes,Release notes for GenBank 272.
+genbank,273,2026-08-11,archived,https://ftp.ncbi.nlm.nih.gov/genbank/release.notes/gb273.release.notes,file,yes,Release notes for GenBank 273.
+genbank,274.0,c. 2026-10,latest,https://ftp.ncbi.nlm.nih.gov/genbank/,directory,yes,Current release; bimonthly cadence.
+refseq,238,2026-11-13,latest,https://ftp.ncbi.nlm.nih.gov/refseq/release/,directory,yes,Current RefSeq release; older releases keep only release notes.
+refseq,105.20190906 / 105.20201022 / 105.20220307,2019–2022,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/annotation_releases/9606/{version}/,pattern,yes,Human annotation release 105 updates on GRCh37.
+refseq,109 and 109.20190607–109.20211119,2019–2021,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/annotation_releases/9606/{version}/,pattern,yes,Human annotation release 109 and its updates on GRCh38.
+refseq,110,2022,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/annotation_releases/9606/110/,directory,yes,Human annotation release on GRCh38.
+refseq,GCF_000001405.40-RS_2023_03,2023-03,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/annotation_releases/9606/GCF_000001405.40-RS_2023_03/,directory,yes,Human annotation on GRCh38.p14.
+refseq,GCF_000001405.40-RS_2023_10,2023-10,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/annotation_releases/9606/GCF_000001405.40-RS_2023_10/,directory,yes,Human annotation on GRCh38.p14.
+refseq,GCF_000001405.40-RS_2024_08,2024-08,archived,https://ftp.ncbi.nlm.nih.gov/genomes/all/annotation_releases/9606/GCF_000001405.40-RS_2024_08/,directory,yes,Human annotation on GRCh38.p14.
+refseq,GCF_000001405.40-RS_2025_08,2025-08,current,https://ftp.ncbi.nlm.nih.gov/genomes/all/annotation_releases/9606/GCF_000001405.40-RS_2025_08/,directory,yes,Latest human annotation release on GRCh38.
+refseq,GCF_000001405.25-RS_2024_09,2024-09,current,https://ftp.ncbi.nlm.nih.gov/genomes/all/annotation_releases/9606/GCF_000001405.25-RS_2024_09/,directory,yes,Human annotation on GRCh37.p13.
+refseq,GCF_009914755.1-RS_2023_03 / RS_2023_10,2023,current,https://ftp.ncbi.nlm.nih.gov/genomes/all/annotation_releases/9606/{version}/,pattern,yes,Human annotation on T2T-CHM13; folders GCF_009914755.1-RS_2023_03 and -RS_2023_10.
+mane,0.5–0.95,before 2022,archived,https://ftp.ncbi.nlm.nih.gov/refseq/MANE/MANE_human/release_{version}/,pattern,yes,"Pre-releases 0.5, 0.6, 0.7, 0.8, 0.9, 0.91, 0.92, 0.93 and 0.95."
+mane,1.0,2022,archived,https://ftp.ncbi.nlm.nih.gov/refseq/MANE/MANE_human/release_1.0/,directory,yes,First complete release.
+mane,1.1–1.4,2022–2025,archived,https://ftp.ncbi.nlm.nih.gov/refseq/MANE/MANE_human/release_{version}/,pattern,yes,"Releases 1.1, 1.2, 1.3 and 1.4."
+mane,1.5,2025-12-04,latest,https://ftp.ncbi.nlm.nih.gov/refseq/MANE/MANE_human/current/,directory,yes,Current release; files named MANE.GRCh38.v1.5.*.
+ensembl,54,2009-05,archived,https://ftp.ensembl.org/pub/release-54/,directory,no,Last release on NCBI36.
+ensembl,75,2014-02,archived,https://ftp.ensembl.org/pub/release-75/,directory,no,Last release with GRCh37 as the primary assembly.
+ensembl,76,2014-08,archived,https://ftp.ensembl.org/pub/release-76/,directory,no,First release on GRCh38.
+ensembl,100,2020-04,archived,https://ftp.ensembl.org/pub/release-100/,directory,no,Archive website retired.
+ensembl,101,2020-08,archived,https://ftp.ensembl.org/pub/release-101/,directory,no,Archive website retired.
+ensembl,102,2020-11,archived,https://ftp.ensembl.org/pub/release-102/,directory,no,Archive website retired.
+ensembl,103,2021-02,archived,https://ftp.ensembl.org/pub/release-103/,directory,no,Archive website retired.
+ensembl,104,2021-05,archived,https://ftp.ensembl.org/pub/release-104/,directory,no,Archive website may2021.archive.ensembl.org.
+ensembl,105,2021-12,archived,https://ftp.ensembl.org/pub/release-105/,directory,no,
+ensembl,106,2022-04,archived,https://ftp.ensembl.org/pub/release-106/,directory,no,
+ensembl,107,2022-07,archived,https://ftp.ensembl.org/pub/release-107/,directory,no,
+ensembl,108,2022-10,archived,https://ftp.ensembl.org/pub/release-108/,directory,no,
+ensembl,109,2023-02,archived,https://ftp.ensembl.org/pub/release-109/,directory,no,
+ensembl,110,2023-07,archived,https://ftp.ensembl.org/pub/release-110/,directory,no,
+ensembl,111,2024-01,archived,https://ftp.ensembl.org/pub/release-111/,directory,no,
+ensembl,112,2024-05,archived,https://ftp.ensembl.org/pub/release-112/,directory,no,
+ensembl,113,2024-10,archived,https://ftp.ensembl.org/pub/release-113/,directory,no,
+ensembl,114,2025-05,archived,https://ftp.ensembl.org/pub/release-114/,directory,no,
+ensembl,115,2025-09,archived,https://ftp.ensembl.org/pub/release-115/,directory,no,
+ensembl,116,2026-06-11,latest,https://ftp.ensembl.org/pub/release-116/,directory,yes,Last numbered release; archive site jun2026.archive.ensembl.org. Later releases are dated.
+ensembl,Rapid Release,until 2026-01,retired,https://ftp.ensembl.org/pub/rapid-release/,directory,yes,Replaced by Ensembl beta.
+ensembl,Ensembl beta / Ensembl Organisms,,rolling,https://ftp.ebi.ac.uk/pub/ensemblorganisms/,directory,yes,"Partial releases about every two weeks, organized by assembly and genebuild date."
+ensembl-genomes,1,2010,archived,https://ftp.ensemblgenomes.ebi.ac.uk/pub/release-1/,directory,yes,First release.
+ensembl-genomes,2–62,2010–2025,archived,https://ftp.ensemblgenomes.ebi.ac.uk/pub/{division}/release-{N}/,pattern,yes,"Divisions: plants, fungi, bacteria, metazoa, protists."
+ensembl-genomes,63,2026-06,latest,https://ftp.ensemblgenomes.ebi.ac.uk/pub/{division}/release-63/,pattern,yes,"Latest release, paired with Ensembl 116; archive sites such as jun2026-protists.ensembl.org."
+gencode,1–18,,archived,https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_{N}/,pattern,yes,Human releases 1 to 18.
+gencode,v19,2013,archived,https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_19/,directory,no,Human; Ensembl 74; last native GRCh37 annotation.
+gencode,v20,2014,archived,https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_20/,directory,no,Human; Ensembl 76; first release on GRCh38.
+gencode,v44 / M33,2023-07,archived,https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_44/,directory,yes,Human v44 (Ensembl 110); mouse M33 in Gencode_mouse/release_M33/.
+gencode,v45 / M34,2024-01,archived,https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_45/,directory,yes,Human v45 (Ensembl 111); mouse M34 in Gencode_mouse/release_M34/.
+gencode,v46 / M35,2024-05,archived,https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_46/,directory,yes,Human v46 (Ensembl 112); mouse M35 in Gencode_mouse/release_M35/.
+gencode,v47 / M36,2024-10,archived,https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_47/,directory,yes,Human v47 (Ensembl 113); mouse M36 in Gencode_mouse/release_M36/.
+gencode,v48 / M37,2025-05,archived,https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_48/,directory,yes,Human v48 (Ensembl 114); mouse M37 in Gencode_mouse/release_M37/.
+gencode,v49 / M38,2025-09-02,archived,https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_49/,directory,yes,Human v49 (Ensembl 115); mouse M38 in Gencode_mouse/release_M38/.
+gencode,v50 / M39,2026-06-09,latest,https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/,directory,yes,Latest. Human v50 (Ensembl 116); mouse M39 in Gencode_mouse/release_M39/.
+model-organisms,FlyBase FB2026_01,2026-03-12,archived,https://ftp.flybase.net/releases/FB2026_01/,directory,yes,
+model-organisms,FlyBase FB2026_02,2026-06-18,archived,https://ftp.flybase.net/releases/FB2026_02/,directory,yes,
+model-organisms,FlyBase FB2026_03,2026-09-17,latest,https://ftp.flybase.net/releases/FB2026_03/,directory,yes,Current FlyBase release.
+model-organisms,FlyBase FB2026_04,2026-12-17,scheduled,https://ftp.flybase.net/releases/current/,directory,yes,Planned; will appear under releases/current/.
+model-organisms,WormBase WS298,2025-10,current,https://downloads.wormbase.org/releases/WS298/,directory,yes,Final major WormBase release.
+model-organisms,SGD R64-1-1,2011,archived,https://downloads.yeastgenome.org/sequence/S288C_reference/genome_releases/,directory,no,Listing of S288C reference genome releases.
+model-organisms,SGD R64-2-1,2014,archived,https://downloads.yeastgenome.org/sequence/S288C_reference/genome_releases/,directory,no,Listing of S288C reference genome releases.
+model-organisms,SGD R64-3-1,2021,archived,https://downloads.yeastgenome.org/sequence/S288C_reference/genome_releases/,directory,no,Listing of S288C reference genome releases.
+model-organisms,SGD R64-4-1,2023,current,https://downloads.yeastgenome.org/sequence/S288C_reference/genome_releases/,directory,no,Newest SGD reference release listed.
+model-organisms,PomBase monthly,,rolling,https://www.pombase.org/data/releases/pombase-{YYYY}-{MM}-01/,pattern,no,Monthly dated releases.
+model-organisms,VEuPathDB,,rolling,https://{site}.org/common/downloads/release-{NN}/,pattern,no,Releases every 2–3 months; {site} is the component database site.
+dbsnp,b151,2017-04,archived,https://ftp.ncbi.nih.gov/snp/organisms/human_9606_b151_GRCh38p7/,directory,no,Last build with the old directory layout.
+dbsnp,b152,2018-10–2018-11,archived,https://ftp.ncbi.nlm.nih.gov/snp/archive/b152/,directory,yes,
+dbsnp,b153,2019-07,archived,https://ftp.ncbi.nlm.nih.gov/snp/archive/b153/,directory,yes,
+dbsnp,b154,2020-04,archived,https://ftp.ncbi.nlm.nih.gov/snp/archive/b154/,directory,yes,
+dbsnp,b155,2021-06,archived,https://ftp.ncbi.nlm.nih.gov/snp/archive/b155/,directory,yes,
+dbsnp,b156,2022-09,archived,https://ftp.ncbi.nlm.nih.gov/snp/archive/b156/,directory,yes,
+dbsnp,b157,2024–2025,latest,https://ftp.ncbi.nlm.nih.gov/snp/archive/b157/,directory,yes,"Latest build; 1,206,053,617 RS IDs; also at snp/latest_release/."
+clinvar,archive_1.0,before 2017,archived,https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/archive_1.0/,directory,yes,Legacy VCF archive.
+clinvar,Weekly VCF 2017–2025,2017–2025,archived,https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/archive_2.0/{YYYY}/,pattern,yes,Weekly GRCh38 VCFs by year; GRCh37 under vcf_GRCh37/.
+clinvar,Weekly VCF 2026,2026,archived,https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/archive_2.0/2026/clinvar_2026{MMDD}.vcf.gz,pattern,yes,44 files from 20260104 to 20261101.
+clinvar,clinvar_20261108,2026-11-08,latest,https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/clinvar_20261108.vcf.gz,file,yes,Latest weekly GRCh38 VCF.
+clinvar,Monthly XML 2025-01–2026-11,2025–2026,archived,https://ftp.ncbi.nlm.nih.gov/pub/clinvar/xml/ClinVarVCVRelease_{YYYY-MM}.xml.gz,pattern,yes,Monthly VCV XML releases.
+clinvar,XML 2026-11,2026-11,current,https://ftp.ncbi.nlm.nih.gov/pub/clinvar/xml/ClinVarVCVRelease_2026-11.xml.gz,file,yes,Latest monthly VCV XML release.
+gnomad,ExAC r0.3 / r0.3.1,2016,archived,gs://gcp-public-data--gnomad/legacy/exac_browser/,directory,no,Legacy ExAC data on GRCh37.
+gnomad,2.0.1 / 2.0.2,2017-02–2017-10,archived,s3://gnomad-public-us-east-1/release/{version}/,pattern,yes,GRCh37; folders release/2.0.1/ and release/2.0.2/.
+gnomad,2.1,2018-10,archived,s3://gnomad-public-us-east-1/release/2.1/,directory,yes,GRCh37.
+gnomad,2.1.1,2019-03,current,s3://gnomad-public-us-east-1/release/2.1.1/,directory,yes,GRCh37 with GRCh38 liftover.
+gnomad,3.0,2019-10,archived,s3://gnomad-public-us-east-1/release/3.0/,directory,yes,"GRCh38; 71,702 genomes."
+gnomad,3.0.1,,archived,s3://gnomad-public-us-east-1/release/3.0.1/,directory,yes,
+gnomad,3.1,2020-10,archived,s3://gnomad-public-us-east-1/release/3.1/,directory,yes,First release with chrM; HGDP + 1KG subset.
+gnomad,3.1.1,2021-03,archived,s3://gnomad-public-us-east-1/release/3.1.1/,directory,yes,
+gnomad,3.1.2,2021-11,current,s3://gnomad-public-us-east-1/release/3.1.2/,directory,yes,
+gnomad,3.1.3,,current,s3://gnomad-public-us-east-1/release/3.1.3/,directory,yes,JSON/TSV files only.
+gnomad,4.0,2023-11,archived,s3://gnomad-public-us-east-1/release/4.0/,directory,yes,"807,162 individuals; also under release/v4.0/."
+gnomad,4.1,2024-04,latest,s3://gnomad-public-us-east-1/release/4.1/,directory,yes,Current main release.
+gnomad,4.1.1,2026-03,current,s3://gnomad-public-us-east-1/release/4.1.1/,directory,yes,"Constraint, LOFTEE and VEP 115 updates."
+gnomad,4.1.2,2026-09-23,current,s3://gnomad-public-us-east-1/release/4.1.2/constraint/,directory,yes,Constraint only; no official announcement; date is folder date.
+gnomad,lr 0.1,,current,s3://gnomad-public-us-east-1/release/lr/0.1/,directory,yes,Long-read release.
+gnomad,4.2 / 5.0,,unreleased,,none,yes,Empty placeholder folders release/4.2/ and release/5.0/.
+1000genomes,Pilot,2008–2010,archived,https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/,directory,yes,"NCBI36; folders release/2008_12/ to 2010_11/, 20100804/ and 20101123/."
+1000genomes,Phase 1,2011,archived,https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20110521/,directory,yes,"1,092 samples; GRCh37."
+1000genomes,Phase 3,2013–2015,archived,https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/,directory,yes,"2,504 samples; v5a/v5b; GRCh37."
+1000genomes,Phase 3 on GRCh38,2019,current,https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/release/20190312_biallelic_SNV_and_INDEL/,directory,no,
+1000genomes,30x NYGC,2020,archived,https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000G_2504_high_coverage/working/20201028_3202_phased/,directory,no,"High-coverage data for 3,202 samples."
+1000genomes,30x NYGC phased SNV/INDEL/SV,2022,latest,https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000G_2504_high_coverage/working/20220422_3202_phased_SNV_INDEL_SV/,directory,no,Latest phased high-coverage call set.
+cadd,1.0,2014,archived,https://kircherlab.bihealth.org/download/CADD/v1.0/,directory,no,
+cadd,1.3,2015,archived,https://kircherlab.bihealth.org/download/CADD/v1.3/,directory,no,
+cadd,1.4,2018,archived,https://kircherlab.bihealth.org/download/CADD/v1.4/,directory,no,First release on GRCh38.
+cadd,1.5,2019,archived,https://kircherlab.bihealth.org/download/CADD/v1.5/,directory,no,
+cadd,1.6,2020,archived,https://kircherlab.bihealth.org/download/CADD/v1.6/,directory,no,
+cadd,1.7,2023–2024,latest,https://kircherlab.bihealth.org/download/CADD/v1.7/GRCh38/whole_genome_SNVs.tsv.gz,file,yes,Latest; GRCh38 whole-genome SNV scores.
+dbnsfp,2.x,2013,archived,,none,no,
+dbnsfp,3.x,2015–2018,archived,,none,no,
+dbnsfp,4.0–4.9,2019–2024,archived,https://www.sites.google.com/site/jpopgen/dbNSFP,portal,yes,4.7 released 2024-03-03; includes 4.9a and 4.9c.
+dbnsfp,5.0 / 5.1 / 5.2,2025–2026,latest,https://dbnsfp.org,portal,yes,Latest verified build is 5.2c.
+finngen,R2–R4,2019–2020,archived,gs://finngen-public-data-r{N}/summary_stats/,pattern,no,Public summary statistics; browser at r{N}.finngen.fi.
+finngen,R5,2021-05,archived,gs://finngen-public-data-r5/summary_stats/,directory,no,
+finngen,R6,2022-01,archived,gs://finngen-public-data-r6/summary_stats/,directory,no,
+finngen,R7,2022-06,archived,gs://finngen-public-data-r7/summary_stats/,directory,no,
+finngen,R8,2022-12,archived,gs://finngen-public-data-r8/summary_stats/,directory,no,
+finngen,R9,2023-05,archived,gs://finngen-public-data-r9/summary_stats/,directory,no,
+finngen,R10,2023-12,archived,gs://finngen-public-data-r10/summary_stats/,directory,no,
+finngen,R11,2024-06,archived,gs://finngen-public-data-r11/summary_stats/,directory,no,
+finngen,R12,2024-11,archived,gs://finngen-public-data-r12/summary_stats/,directory,no,
+finngen,R13,c. 2026-Q2,latest,gs://finngen-public-data-r13/summary_stats/,directory,yes,"Latest; 500,186 individuals."
+allofus,CDR v3 / v4,2020–2021,retired,,none,no,No longer available on the Researcher Workbench.
+allofus,CDR v5,2021–2022,retired,,none,yes,No longer available.
+allofus,CDR v6,2022,retired,,none,yes,"About 100,000 WGS; no longer available."
+allofus,CDR v7,2023-02,archived,https://www.researchallofus.org/,portal,no,C2022Q4R9; Researcher Workbench.
+allofus,CDR v8,2025-02,latest,https://www.researchallofus.org/,portal,yes,R2024Q3R9 / C2024Q3R9; controlled tier on Researcher Workbench 2.0 since 2026-02-24.
+ukbiobank,Genotyping interim 150k,2015,archived,https://ams.ukbiobank.ac.uk/,portal,no,Via the Access Management System (AMS).
+ukbiobank,Imputed v3,2017-07,current,https://ams.ukbiobank.ac.uk/,portal,no,488k participants; via AMS.
+ukbiobank,Exome 50k / 200k / 300k / 470k,2019 / 2020-10 / 2021 / 2022-06,current,https://ukbiobank.dnanexus.com,portal,no,Via AMS and the UKB Research Analysis Platform (UKB-RAP).
+ukbiobank,WGS 200k interim,2021-11,archived,https://ukbiobank.dnanexus.com,portal,yes,Via UKB-RAP.
+ukbiobank,WGS 500k,2023-11,latest,https://ukbiobank.dnanexus.com,portal,yes,Latest whole-genome release; via UKB-RAP.
+gdc,DR 46.0,2026-08-10,latest,https://api.gdc.cancer.gov/,api,yes,Current release; check https://api.gdc.cancer.gov/status.
+gdc,DR 45.0,2025-12-04,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 44.0,2025-10-29,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 43.0,2025-05-07,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 42.0,2025-01-30,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Added TCGA WGS alignments. Release notes only; GDC does not keep old data releases.
+gdc,DR 41.0,2024-08-28,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 40.0,2024-03-29,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 39.0,2023-12-04,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,GENIE removed. Release notes only; GDC does not keep old data releases.
+gdc,DR 38.0,2023-08-31,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 37.0,2023-03-29,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Legacy files migrated. Release notes only; GDC does not keep old data releases.
+gdc,DR 36.0,2022-12-12,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 35.0,2022-09-28,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 34.0,2022-07-27,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 33.1,2022-05-31,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 33.0,2022-05-03,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 32.0,2022-03-29,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 31.0,2021-10-29,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 30.0,2021-09-23,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 29.0,2021-03-31,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 28.0,2021-02-02,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 27.0-fix,2020-11-09,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 27.0,2020-10-29,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 26.0,2020-09-08,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 25.0,2020-07-22,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 24.0,2020-05-07,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 23.0,2020-04-07,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 22.0,2020-01-16,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 21.0,2019-12-10,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 20.0,2019-11-11,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 19.1,2019-11-06,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 19.0,2019-09-17,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 18.0,2019-07-08,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 17.1,2019-06-12,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 17.0,2019-06-05,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 16.0,2019-03-26,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 15.0,2019-02-20,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 14.0,2018-12-18,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 13.0,2018-09-27,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 12.0,2018-06-13,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 11.0,2018-05-21,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 10.1,2018-02-15,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 10.0,2017-12-21,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 9.0,2017-10-24,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 8.0,2017-08-22,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 7.0,2017-06-29,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 6.0,2017-05-09,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 5.0,2017-03-16,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 4.0,2016-10-31,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 3.0,2016-09-16,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 2.0,2016-08-09,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+gdc,DR 1.0,2016-06-06,archived,https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/,portal,yes,Release notes only; GDC does not keep old data releases.
+cosmic,v90,2019-09,archived,https://cancer.sanger.ac.uk/api/mono/products/v1/downloads/scripted?path=grch38/cosmic/v90/{file}&bucket=downloads,pattern,no,Scripted download requires login.
+cosmic,v91,2020-04,archived,https://cancer.sanger.ac.uk/api/mono/products/v1/downloads/scripted?path=grch38/cosmic/v91/{file}&bucket=downloads,pattern,no,Scripted download requires login.
+cosmic,v92,2020-08,archived,https://cancer.sanger.ac.uk/api/mono/products/v1/downloads/scripted?path=grch38/cosmic/v92/{file}&bucket=downloads,pattern,no,Scripted download requires login.
+cosmic,v94,2021-05,archived,https://cancer.sanger.ac.uk/api/mono/products/v1/downloads/scripted?path=grch38/cosmic/v94/{file}&bucket=downloads,pattern,no,Scripted download requires login.
+cosmic,v95,2021-11,archived,https://cancer.sanger.ac.uk/api/mono/products/v1/downloads/scripted?path=grch38/cosmic/v95/{file}&bucket=downloads,pattern,no,Scripted download requires login.
+cosmic,v96,2022-05,archived,https://cancer.sanger.ac.uk/api/mono/products/v1/downloads/scripted?path=grch38/cosmic/v96/{file}&bucket=downloads,pattern,no,Scripted download requires login.
+cosmic,v97,2022-11,archived,https://cancer.sanger.ac.uk/api/mono/products/v1/downloads/scripted?path=grch38/cosmic/v97/{file}&bucket=downloads,pattern,no,Scripted download requires login.
+cosmic,v98,2023-05,archived,https://cancer.sanger.ac.uk/api/mono/products/v1/downloads/scripted?path=grch38/cosmic/v98/{file}&bucket=downloads,pattern,no,New file naming scheme. Scripted download requires login.
+cosmic,v99,2023-11,archived,https://cancer.sanger.ac.uk/api/mono/products/v1/downloads/scripted?path=grch38/cosmic/v99/{file}&bucket=downloads,pattern,no,Scripted download requires login.
+cosmic,v100,2024-05,archived,https://cancer.sanger.ac.uk/api/mono/products/v1/downloads/scripted?path=grch38/cosmic/v100/{file}&bucket=downloads,pattern,no,Scripted download requires login.
+cosmic,v101,2024-11-19,archived,https://cancer.sanger.ac.uk/api/mono/products/v1/downloads/scripted?path=grch38/cosmic/v101/{file}&bucket=downloads,pattern,yes,Scripted download requires login.
+cosmic,v102,2025-05-21,archived,https://cancer.sanger.ac.uk/api/mono/products/v1/downloads/scripted?path=grch38/cosmic/v102/{file}&bucket=downloads,pattern,yes,Scripted download requires login.
+cosmic,v103,2025-11-18,archived,https://cancer.sanger.ac.uk/api/mono/products/v1/downloads/scripted?path=grch38/cosmic/v103/{file}&bucket=downloads,pattern,yes,Scripted download requires login.
+cosmic,v104,2026-05-19,latest,https://cancer.sanger.ac.uk/api/mono/products/v1/downloads/scripted?path=grch38/cosmic/v104/{file}&bucket=downloads,pattern,yes,Latest. Scripted download requires login.
+depmap,18Q3–21Q4,2018–2021,archived,https://depmap.org/portal/data_page/,portal,no,Quarterly releases; public sets on figshare as 'DepMap <ver> Public'.
+depmap,22Q1 / 22Q2 / 22Q4,2022,archived,https://depmap.org/portal/data_page/,portal,yes,Public sets also on figshare.
+depmap,23Q2 / 23Q4,2023,archived,https://depmap.org/portal/data_page/,portal,yes,Public sets also on figshare.
+depmap,24Q2,c. 2024-06-03,archived,https://depmap.org/portal/data_page/,portal,yes,Added PureCN and Data Explorer 2.0; date from forum post.
+depmap,24Q4,c. 2024-09-10,archived,https://depmap.org/portal/data_page/,portal,yes,Standardized file naming; date from forum post.
+depmap,25Q2,c. 2025-06-05,archived,https://depmap.org/portal/data_page/,portal,yes,Date from forum post.
+depmap,25Q3,c. 2025-09-30,archived,https://depmap.org/portal/data_page/,portal,yes,Date from forum post.
+depmap,26Q1,c. 2026-04-01,archived,https://depmap.org/portal/data_page/,portal,yes,Date from forum post.
+depmap,26Q3,2026,latest,https://depmap.org/portal/data_page/,portal,yes,Latest release.
+icgc,ICGC 25K Release 1–28,until 2019,retired,,none,no,Legacy portal dcc.icgc.org retired in 2024-06.
+icgc,ARGO DR9.0,2024-05-24,archived,https://platform.icgc-argo.org/,portal,yes,
+icgc,ARGO DR10.0,2024-09-25,latest,https://platform.icgc-argo.org/,portal,yes,Latest verified release.
+gtex,v3,2012,retired,,none,no,Pilot; hg19.
+gtex,v4,2014,retired,,none,no,
+gtex,v6 / v6p,2015 / 2016,retired,,none,yes,"GENCODE v19, hg19; removed from the API."
+gtex,v7,2017,retired,,none,yes,"hg19, 714 donors; removed from the API; dbGaP/AnVIL only."
+gtex,v8,2019,current,https://gtexportal.org/api/v2/metadata/dataset?datasetId=gtex_v8,api,yes,"GENCODE v26, GRCh38, 948 donors; files in adult-gtex/bulk-gex/v8/."
+gtex,v10,c. 2024,current,https://gtexportal.org/api/v2/metadata/dataset?datasetId=gtex_v10,api,yes,GENCODE v39.
+gtex,v11,c. 2026-01,latest,https://gtexportal.org/api/v2/metadata/dataset?datasetId=gtex_v11,api,yes,Latest; GENCODE v47.
+archs4,v1.11,2021-11-16,archived,https://s3.amazonaws.com/mssm-seq-matrix/human_matrix_v11.h5,file,yes,Legacy matrix line.
+archs4,v2.2,2023-05-30,archived,https://s3.dev.maayanlab.cloud/archs4/files/human_gene_v2.2.h5,file,yes,Human gene-level matrix.
+archs4,v2.3,2024-03-11,archived,https://s3.dev.maayanlab.cloud/archs4/files/human_gene_v2.3.h5,file,yes,Human gene-level matrix.
+archs4,v2.4,2024-06-04,archived,https://s3.dev.maayanlab.cloud/archs4/files/human_gene_v2.4.h5,file,yes,Human gene-level matrix.
+archs4,v2.5,2024-08-24,latest,https://s3.dev.maayanlab.cloud/archs4/files/human_gene_v2.5.h5,file,yes,Gene matrix 45 GB; transcript matrix human_transcript_v2.5.h5 136 GB; also dated 2024-09-05.
+eqtl-catalogue,r1,2020,archived,https://ftp.ebi.ac.uk/pub/databases/spot/eQTL/,directory,no,112 datasets.
+eqtl-catalogue,r2–r6,2020–2023,archived,https://ftp.ebi.ac.uk/pub/databases/spot/eQTL/,directory,no,
+eqtl-catalogue,r7,2024-06,latest,https://ftp.ebi.ac.uk/pub/databases/spot/eQTL/,directory,yes,Latest final release; sumstats/ and susie/ folders.
+eqtl-catalogue,r8 pre-release,2026-01,current,https://ftp.ebi.ac.uk/pub/databases/spot/eQTL/r8_beta/,directory,yes,Beta; Parquet files.
+eqtl-catalogue,"r8 pre-release, updated",2026-09,current,https://ftp.ebi.ac.uk/pub/databases/spot/eQTL/r8_beta/,directory,yes,Updated beta including GTEx v10.
+eqtl-catalogue,r8,2026-12,scheduled,,none,yes,Final r8 planned for 2026-12.
+hpa,v20,2020-11,archived,https://v20.proteinatlas.org,portal,no,Archive site.
+hpa,v21,2021-11,archived,https://v21.proteinatlas.org,portal,no,Archive site.
+hpa,v22,2022-12,archived,https://v22.proteinatlas.org,portal,no,Archive site.
+hpa,v23,2023-06,archived,https://v23.proteinatlas.org,portal,no,Archive site.
+hpa,v24,2024-11,archived,https://v24.proteinatlas.org,portal,no,Archive site.
+hpa,v25,2025-11-11,archived,https://www.proteinatlas.org,portal,yes,Main site; archived versions use v<NN>.proteinatlas.org.
+hpa,v25.1,2026-05-28,latest,https://www.proteinatlas.org,portal,yes,Latest release.
+expression-atlas,Expression Atlas r42,2025-07,archived,https://ftp.ebi.ac.uk/pub/databases/microarray/data/atlas/experiments/,directory,yes,Live experiments folder.
+expression-atlas,Expression Atlas r43,2025-10,latest,https://ftp.ebi.ac.uk/pub/databases/microarray/data/atlas/experiments/,directory,yes,"Latest; 4,562 datasets."
+expression-atlas,SCXA 202103 / 202105 / 202109 / 202110,2021,archived,https://ftp.ebi.ac.uk/pub/databases/microarray/data/atlas/sc_experiments_{YYYYMM}/,pattern,yes,Dated Single Cell Expression Atlas snapshots.
+expression-atlas,SCXA 202203 / 202212,2022,archived,https://ftp.ebi.ac.uk/pub/databases/microarray/data/atlas/sc_experiments_{YYYYMM}/,pattern,yes,Dated snapshots.
+expression-atlas,SCXA 202303,2023,archived,https://ftp.ebi.ac.uk/pub/databases/microarray/data/atlas/sc_experiments_202303/,directory,yes,
+expression-atlas,SCXA 202409,2024,archived,https://ftp.ebi.ac.uk/pub/databases/microarray/data/atlas/sc_experiments_202409/,directory,yes,
+expression-atlas,SCXA 202509,2025,current,https://ftp.ebi.ac.uk/pub/databases/microarray/data/atlas/sc_experiments_202509/,directory,yes,Latest SCXA snapshot.
+cellxgene-census,2023-05-15,2023-05-15,archived,s3://cellxgene-census-public-us-west-2/cell-census/2023-05-15/,directory,yes,LTS build.
+cellxgene-census,2023-07-25,2023-07-25,archived,s3://cellxgene-census-public-us-west-2/cell-census/2023-07-25/,directory,yes,LTS build.
+cellxgene-census,2023-12-15,2023-12-15,archived,s3://cellxgene-census-public-us-west-2/cell-census/2023-12-15/,directory,yes,LTS build.
+cellxgene-census,2024-05-20,2024-05-20,archived,s3://cellxgene-census-public-us-west-2/cell-census/2024-05-20/,directory,yes,Not LTS but retained.
+cellxgene-census,2024-07-01,2024-07-01,archived,s3://cellxgene-census-public-us-west-2/cell-census/2024-07-01/,directory,yes,LTS build.
+cellxgene-census,2025-01-30,2025-01-30,latest,s3://cellxgene-census-public-us-west-2/cell-census/2025-01-30/,directory,yes,Current stable LTS build; default for reproducible work.
+cellxgene-census,2025-11-04,2025-11-04,rolling,s3://cellxgene-census-public-us-west-2/cell-census/2025-11-04/,directory,yes,Weekly build; may be deleted.
+cellxgene-census,2025-11-08,2025-11-08,rolling,s3://cellxgene-census-public-us-west-2/cell-census/2025-11-08/,directory,yes,Weekly build; may be deleted.
+cellxgene-census,2025-11-10,2025-11-10,rolling,s3://cellxgene-census-public-us-west-2/cell-census/2025-11-10/,directory,yes,Newest weekly build (the 'latest' alias); may be deleted.
+allen-brain,20230630,2023-06-30,archived,s3://allen-brain-cell-atlas/releases/20230630/,directory,yes,
+allen-brain,20230830,2023-08-30,archived,s3://allen-brain-cell-atlas/releases/20230830/,directory,yes,
+allen-brain,20231215,2023-12-15,archived,s3://allen-brain-cell-atlas/releases/20231215/,directory,yes,
+allen-brain,20240330,2024-03-30,archived,s3://allen-brain-cell-atlas/releases/20240330/,directory,yes,
+allen-brain,20240831,2024-08-31,archived,s3://allen-brain-cell-atlas/releases/20240831/,directory,yes,
+allen-brain,20241115,2024-11-15,archived,s3://allen-brain-cell-atlas/releases/20241115/,directory,yes,
+allen-brain,20241130,2024-11-30,archived,s3://allen-brain-cell-atlas/releases/20241130/,directory,yes,
+allen-brain,20250131,2025-01-31,archived,s3://allen-brain-cell-atlas/releases/20250131/,directory,yes,
+allen-brain,20250331,2025-03-31,archived,s3://allen-brain-cell-atlas/releases/20250331/,directory,yes,
+allen-brain,20250531,2025-05-31,archived,s3://allen-brain-cell-atlas/releases/20250531/,directory,yes,
+allen-brain,20250930,2025-09-30,archived,s3://allen-brain-cell-atlas/releases/20250930/,directory,yes,
+allen-brain,20251031,2025-10-31,archived,s3://allen-brain-cell-atlas/releases/20251031/,directory,yes,
+allen-brain,20260131,2026-01-31,archived,s3://allen-brain-cell-atlas/releases/20260131/,directory,yes,
+allen-brain,20260228,2026-02-28,archived,s3://allen-brain-cell-atlas/releases/20260228/,directory,yes,
+allen-brain,20260331,2026-03-31,archived,s3://allen-brain-cell-atlas/releases/20260331/,directory,yes,
+allen-brain,20260415,2026-04-15,archived,s3://allen-brain-cell-atlas/releases/20260415/,directory,yes,
+allen-brain,20260711,2026-07-11,archived,s3://allen-brain-cell-atlas/releases/20260711/,directory,yes,
+allen-brain,20261031,2026-10-31,archived,s3://allen-brain-cell-atlas/releases/20261031/,directory,yes,
+allen-brain,20261101,2026-11-01,archived,s3://allen-brain-cell-atlas/releases/20261101/,directory,yes,
+allen-brain,20261130,2026-11-30,latest,s3://allen-brain-cell-atlas/releases/20261130/,directory,yes,Latest dated release; see manifest.json.
+tabula-sapiens,v1,2022,archived,https://registry.opendata.aws/tabula-sapiens/,portal,yes,"About 500,000 cells from 24 organs."
+tabula-sapiens,v2,2024-12,latest,https://figshare.com/articles/dataset/Tabula_Sapiens_v2/27921984,portal,yes,About 1.1 million cells from 28 tissues; revised 2025-08.
+uniprot,release 1.0–15.0,2005–2009,archived,https://ftp.uniprot.org/pub/databases/uniprot/previous_releases/release{N}.0/,pattern,yes,Legacy numbering.
+uniprot,2010_01–2020_01,2010–2020,archived,https://ftp.uniprot.org/pub/databases/uniprot/previous_releases/release-{YYYY}_01/,pattern,yes,Only the _01 release of each year is archived.
+uniprot,2021_01 / 2021_02 / 2021_03,2021,archived,https://ftp.uniprot.org/pub/databases/uniprot/previous_releases/release-2021_0{N}/,pattern,yes,
+uniprot,2021_04,c. 2021-11-17,archived,https://ftp.uniprot.org/pub/databases/uniprot/previous_releases/release-2021_04/,directory,yes,Approximate date.
+uniprot,2022_01,c. 2022-03-02,archived,https://ftp.uniprot.org/pub/databases/uniprot/previous_releases/release-2022_01/,directory,yes,Approximate date.
+uniprot,2022_02,c. 2022-05-25,archived,https://ftp.uniprot.org/pub/databases/uniprot/previous_releases/release-2022_02/,directory,yes,Approximate date.
+uniprot,2022_03,c. 2022-08-03,archived,https://ftp.uniprot.org/pub/databases/uniprot/previous_releases/release-2022_03/,directory,yes,Approximate date.
+uniprot,2022_04,c. 2022-10-12,archived,https://ftp.uniprot.org/pub/databases/uniprot/previous_releases/release-2022_04/,directory,yes,Approximate date.
+uniprot,2022_05,c. 2022-12-14,archived,https://ftp.uniprot.org/pub/databases/uniprot/previous_releases/release-2022_05/,directory,yes,Approximate date.
+uniprot,2023_01,c. 2023-03-01,archived,https://ftp.uniprot.org/pub/databases/uniprot/previous_releases/release-2023_01/,directory,yes,Approximate date.
+uniprot,2023_02,c. 2023-05-03,archived,https://ftp.uniprot.org/pub/databases/uniprot/previous_releases/release-2023_02/,directory,yes,Approximate date.
+uniprot,2023_03,c. 2023-06-28,archived,https://ftp.uniprot.org/pub/databases/uniprot/previous_releases/release-2023_03/,directory,yes,Approximate date.
+uniprot,2023_04,c. 2023-09-13,archived,https://ftp.uniprot.org/pub/databases/uniprot/previous_releases/release-2023_04/,directory,yes,Approximate date.
+uniprot,2023_05,c. 2023-11-08,archived,https://ftp.uniprot.org/pub/databases/uniprot/previous_releases/release-2023_05/,directory,yes,Approximate date.
+uniprot,2024_01,c. 2024-01-24,archived,https://ftp.uniprot.org/pub/databases/uniprot/previous_releases/release-2024_01/,directory,yes,Approximate date.
+uniprot,2024_02,c. 2024-03-27,archived,https://ftp.uniprot.org/pub/databases/uniprot/previous_releases/release-2024_02/,directory,yes,Approximate date.
+uniprot,2024_03,c. 2024-05-29,archived,https://ftp.uniprot.org/pub/databases/uniprot/previous_releases/release-2024_03/,directory,yes,Approximate date.
+uniprot,2024_04,c. 2024-07-24,archived,https://ftp.uniprot.org/pub/databases/uniprot/previous_releases/release-2024_04/,directory,yes,Approximate date.
+uniprot,2024_05,c. 2024-10-02,archived,https://ftp.uniprot.org/pub/databases/uniprot/previous_releases/release-2024_05/,directory,yes,Approximate date.
+uniprot,2024_06,c. 2024-11-27,archived,https://ftp.uniprot.org/pub/databases/uniprot/previous_releases/release-2024_06/,directory,yes,Approximate date.
+uniprot,2025_01,c. 2025-02-05,archived,https://ftp.uniprot.org/pub/databases/uniprot/previous_releases/release-2025_01/,directory,yes,Approximate date.
+uniprot,2025_02,c. 2025-04-23,archived,https://ftp.uniprot.org/pub/databases/uniprot/previous_releases/release-2025_02/,directory,yes,Approximate date.
+uniprot,2025_03,c. 2025-06-18,archived,https://ftp.uniprot.org/pub/databases/uniprot/previous_releases/release-2025_03/,directory,yes,Approximate date.
+uniprot,2025_04,c. 2025-10-15,archived,https://ftp.uniprot.org/pub/databases/uniprot/previous_releases/release-2025_04/,directory,yes,Approximate date.
+uniprot,2026_01,c. 2026-01-28,archived,https://ftp.uniprot.org/pub/databases/uniprot/previous_releases/release-2026_01/,directory,yes,Approximate date.
+uniprot,2026_02,c. 2026-06-10,archived,https://ftp.uniprot.org/pub/databases/uniprot/previous_releases/release-2026_02/,directory,yes,Approximate date.
+uniprot,2026_03,c. 2026-09-02,archived,https://ftp.uniprot.org/pub/databases/uniprot/previous_releases/release-2026_03/,directory,yes,Approximate date.
+uniprot,2026_04,2026-11-04,latest,https://ftp.uniprot.org/pub/databases/uniprot/current_release/,directory,yes,Current release; moves to previous_releases/ when superseded.
+pdb,"20050106, 20060103, 20070102, 20070731, 20080107",2005–2008,archived,https://snapshots.pdbj.org/{date}/,pattern,yes,Annual and interim snapshots.
+pdb,"20090105, 20090316, 20100104, 20110103, 20110707",2009–2011,archived,https://snapshots.pdbj.org/{date}/,pattern,yes,Annual and interim snapshots.
+pdb,"20120102, 20130101, 20140102, 20141203, 20150102",2012–2015,archived,https://snapshots.pdbj.org/{date}/,pattern,yes,Annual and interim snapshots.
+pdb,"20160101, 20160302, 20170101, 20170308, 20170710",2016–2017,archived,https://snapshots.pdbj.org/{date}/,pattern,yes,Annual and interim snapshots.
+pdb,"20180101, 20180321, 20190101",2018–2019,archived,https://snapshots.pdbj.org/{date}/,pattern,yes,Annual and interim snapshots.
+pdb,"20200101, 20200610, 20200722, 20200916, 20210105",2020–2021,archived,https://snapshots.pdbj.org/{date}/,pattern,yes,Annual and interim snapshots.
+pdb,"20220103, 20230102, 20240101, 20250101",2022–2025,archived,https://snapshots.pdbj.org/{date}/,pattern,yes,"Also on AWS, e.g. s3://pdbsnapshots/20240101/ (used by ColabFold)."
+pdb,20260101,2026-01-01,archived,https://snapshots.pdbj.org/20260101/,directory,yes,
+pdb,20260415,2026-04-15,latest,https://snapshots.pdbj.org/20260415/,directory,yes,Latest snapshot.
+alphafold,v1,2021-07,archived,https://ftp.ebi.ac.uk/pub/databases/alphafold/v1/,directory,no,"About 365,000 structures; human plus 20 organisms."
+alphafold,v2,2021-12–2022-01,archived,https://ftp.ebi.ac.uk/pub/databases/alphafold/v2/,directory,no,Added Swiss-Prot and more proteomes.
+alphafold,v3,2022-07-28,archived,https://ftp.ebi.ac.uk/pub/databases/alphafold/v3/,directory,yes,"214,687,406 structures; UniProt 2021_04."
+alphafold,v4,2022-11-01,archived,https://ftp.ebi.ac.uk/pub/databases/alphafold/v4/,directory,yes,"214,686,924 structures; also gs://public-datasets-deepmind-alphafold-v4/."
+alphafold,v5,2025-10-01,archived,https://ftp.ebi.ac.uk/pub/databases/alphafold/v5/,directory,yes,"Folder without changelog, probably an internal label; date is folder date."
+alphafold,v6,2025-09-15,latest,https://ftp.ebi.ac.uk/pub/databases/alphafold/v6/,directory,yes,"241,070,489 structures; UniProt 2025_03; adds isoforms and MSAs; also alphafold/latest/."
+esm-atlas,v0,2022-11-01,archived,https://dl.fbaipublicfiles.com/esmatlas/v0/,directory,yes,ESMFold v0; about 617 million structures.
+esm-atlas,v2023_02,2023-03-17,latest,https://dl.fbaipublicfiles.com/esmatlas/v2023_02/,directory,yes,Latest; matches MGnify 2023_02.
+pfam,"1.0, 4.0–4.4, 5.0–5.5, 6.0–6.6, 7.0–7.8, 8.0, 9.0",,archived,https://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam{X.Y}/,pattern,yes,Early releases.
+pfam,10.0–33.0,,archived,https://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam{X.Y}/,pattern,yes,
+pfam,"33.1, 34.0",,archived,https://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam{X.Y}/,pattern,yes,Pfam-B returned as a tar file from 33.1.
+pfam,35.0,2023-01-03,archived,https://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam35.0/,directory,yes,Date is FTP folder date.
+pfam,36.0 / 37.0,2024-05-28,archived,https://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam{X.Y}/,pattern,yes,"Folders Pfam36.0/ and Pfam37.0/; folder date, later updated."
+pfam,37.1,2025-02-04,archived,https://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam37.1/,directory,yes,
+pfam,37.2,2025-03-19,archived,https://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam37.2/,directory,yes,
+pfam,37.3,2025-04-14,archived,https://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam37.3/,directory,yes,
+pfam,37.4,2025-07-21,archived,https://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam37.4/,directory,yes,
+pfam,38.0,2025-11-05,archived,https://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam38.0/,directory,yes,
+pfam,38.1 / 38.2,2026-06-15,archived,https://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam{X.Y}/,pattern,yes,Folders Pfam38.1/ and Pfam38.2/; folder date.
+pfam,39.0,2026-11-05,latest,https://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam39.0/,directory,yes,Latest; also at current_release/.
+pfam,Pfam_SARS-CoV-2 1.0 / 2.0,,current,https://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam_SARS-CoV-2_{version}/,pattern,yes,SARS-CoV-2 specific families.
+interpro,1.0–23.1,,archived,https://ftp.ebi.ac.uk/pub/databases/interpro/releases/{N.N}/,pattern,yes,Releases 17.0 and 23.0 do not exist.
+interpro,24.0–72.0,,archived,https://ftp.ebi.ac.uk/pub/databases/interpro/releases/{N.N}/,pattern,yes,
+interpro,73.0,2019-03-26,archived,https://ftp.ebi.ac.uk/pub/databases/interpro/releases/73.0/,directory,yes,
+interpro,74.0,2019-05-09,archived,https://ftp.ebi.ac.uk/pub/databases/interpro/releases/74.0/,directory,yes,
+interpro,75.0,2019-07-03,archived,https://ftp.ebi.ac.uk/pub/databases/interpro/releases/75.0/,directory,yes,
+interpro,76.0,2019-09-25,archived,https://ftp.ebi.ac.uk/pub/databases/interpro/releases/76.0/,directory,yes,
+interpro,78.0,2020-03-03,archived,https://ftp.ebi.ac.uk/pub/databases/interpro/releases/78.0/,directory,yes,
+interpro,79.0,2020-04-28,archived,https://ftp.ebi.ac.uk/pub/databases/interpro/releases/79.0/,directory,yes,
+interpro,80.0,2020-06-22,archived,https://ftp.ebi.ac.uk/pub/databases/interpro/releases/80.0/,directory,yes,
+interpro,81.0,2020-08-12,archived,https://ftp.ebi.ac.uk/pub/databases/interpro/releases/81.0/,directory,yes,
+interpro,82.0,2020-10-07,archived,https://ftp.ebi.ac.uk/pub/databases/interpro/releases/82.0/,directory,yes,
+interpro,83.0,2020-11-30,archived,https://ftp.ebi.ac.uk/pub/databases/interpro/releases/83.0/,directory,yes,
+interpro,84.0 / 85.0,2021-04-27,archived,https://ftp.ebi.ac.uk/pub/databases/interpro/releases/{N.N}/,pattern,yes,Folders 84.0/ and 85.0/.
+interpro,86.0,2021-06-07,archived,https://ftp.ebi.ac.uk/pub/databases/interpro/releases/86.0/,directory,yes,
+interpro,87.0,2021-11-18,archived,https://ftp.ebi.ac.uk/pub/databases/interpro/releases/87.0/,directory,yes,
+interpro,88.0,2022-03-11,archived,https://ftp.ebi.ac.uk/pub/databases/interpro/releases/88.0/,directory,yes,
+interpro,89.0–97.0,2022–2023,archived,https://ftp.ebi.ac.uk/pub/databases/interpro/releases/{N}.0/,pattern,yes,Folders were later updated; dates are not release dates.
+interpro,98.0,2024-01-24,archived,https://ftp.ebi.ac.uk/pub/databases/interpro/releases/98.0/,directory,yes,
+interpro,99.0,2024-03-27,archived,https://ftp.ebi.ac.uk/pub/databases/interpro/releases/99.0/,directory,yes,
+interpro,100.0,2024-05-29,archived,https://ftp.ebi.ac.uk/pub/databases/interpro/releases/100.0/,directory,yes,
+interpro,101.0,2024-07-24,archived,https://ftp.ebi.ac.uk/pub/databases/interpro/releases/101.0/,directory,yes,
+interpro,102.0,2024-10-02,archived,https://ftp.ebi.ac.uk/pub/databases/interpro/releases/102.0/,directory,yes,
+interpro,103.0,2024-11-28,archived,https://ftp.ebi.ac.uk/pub/databases/interpro/releases/103.0/,directory,yes,
+interpro,104.0,2025-02-03,archived,https://ftp.ebi.ac.uk/pub/databases/interpro/releases/104.0/,directory,yes,
+interpro,105.0,2025,archived,https://ftp.ebi.ac.uk/pub/databases/interpro/releases/105.0/,directory,yes,Folder later updated; date is not the release date.
+interpro,106.0,2025-06-18,archived,https://ftp.ebi.ac.uk/pub/databases/interpro/releases/106.0/,directory,yes,
+interpro,107.0,2025-12-17,archived,https://ftp.ebi.ac.uk/pub/databases/interpro/releases/107.0/,directory,yes,
+interpro,108.0,2026-01-27,archived,https://ftp.ebi.ac.uk/pub/databases/interpro/releases/108.0/,directory,yes,
+interpro,109.0,2026-06-30,archived,https://ftp.ebi.ac.uk/pub/databases/interpro/releases/109.0/,directory,yes,
+interpro,110.0,2026-09-04,archived,https://ftp.ebi.ac.uk/pub/databases/interpro/releases/110.0/,directory,yes,
+interpro,111.0,2026-11-12,latest,https://ftp.ebi.ac.uk/pub/databases/interpro/releases/111.0/,directory,yes,Latest; also at current_release/.
+cath,3.x,,archived,,none,no,e.g. 3.5; legacy paths.
+cath,v4.0.0,,archived,https://download.cathdb.info/cath/releases/all-releases/v4_0_0/,directory,yes,
+cath,v4.1.0,,archived,https://download.cathdb.info/cath/releases/all-releases/v4_1_0/,directory,yes,
+cath,v4.2.0,,archived,https://download.cathdb.info/cath/releases/all-releases/v4_2_0/,directory,yes,Standard split used in protein design benchmarks.
+cath,v4.3.0,,archived,https://download.cathdb.info/cath/releases/all-releases/v4_3_0/,directory,yes,
+cath,v4.4.0,2024-10,latest,https://download.cathdb.info/cath/releases/all-releases/v4_4_0/,directory,yes,Latest; over 90 million TED domains; also latest-release/.
+cath,daily,,rolling,https://download.cathdb.info/cath/releases/daily-release/,directory,yes,Daily build.
+scope,SCOP 1.75,2009,archived,,none,no,Final classic SCOP release.
+scope,SCOPe 2.01,,archived,,none,no,
+scope,SCOPe 2.02,,archived,https://scop.berkeley.edu/downloads/parse/dir.cla.scope.2.02-stable.txt,file,yes,Classification file; des/hie/com files follow the same pattern.
+scope,SCOPe 2.03,,archived,https://scop.berkeley.edu/downloads/parse/dir.cla.scope.2.03-stable.txt,file,yes,Classification file; des/hie/com files follow the same pattern.
+scope,SCOPe 2.04,2014-07,archived,https://scop.berkeley.edu/downloads/parse/dir.cla.scope.2.04-stable.txt,file,yes,Classification file; des/hie/com files follow the same pattern.
+scope,SCOPe 2.05,2015-02,archived,https://scop.berkeley.edu/downloads/parse/dir.cla.scope.2.05-stable.txt,file,yes,Classification file; des/hie/com files follow the same pattern.
+scope,SCOPe 2.06,2016-02,archived,https://scop.berkeley.edu/downloads/parse/dir.cla.scope.2.06-stable.txt,file,yes,Classification file; des/hie/com files follow the same pattern.
+scope,SCOPe 2.07,2018-03,archived,https://scop.berkeley.edu/downloads/parse/dir.cla.scope.2.07-stable.txt,file,yes,Classification file; des/hie/com files follow the same pattern.
+scope,SCOPe 2.08,2021-09,latest,https://scop.berkeley.edu/downloads/parse/dir.cla.scope.2.08-stable.txt,file,yes,Latest; sources give 2021-09 or 2021-11. Classification file; des/hie/com files follow the same pattern.
+prosite,"06_1, 07_01, 08_0, 10_0–17_0, 19_0, 19_19, 19_29",,archived,https://ftp.expasy.org/databases/prosite/old_releases/prosite{NN_N}.tar.bz2,pattern,yes,Early releases.
+prosite,2017_01–2026_03,2017–2026,archived,https://ftp.expasy.org/databases/prosite/old_releases/prosite{YYYY_NN}.tar.bz2,pattern,yes,Periodic releases.
+prosite,2026_04,2026-11-04,latest,https://ftp.expasy.org/databases/prosite/prosite.dat,file,yes,Current release data file.
+cdd,3.20,2022-09,archived,https://ftp.ncbi.nih.gov/pub/mmdb/cdd/,directory,yes,Version-specific bitscore file in the CDD FTP directory.
+cdd,3.21,2024-05,archived,https://ftp.ncbi.nih.gov/pub/mmdb/cdd/,directory,yes,Version-specific bitscore file in the CDD FTP directory.
+cdd,3.22,2026-10,latest,https://ftp.ncbi.nih.gov/pub/mmdb/cdd/cdd.tar.gz,file,yes,"Latest; includes Pfam 37.2, COG v2, SMART 6.0, TIGRFAM 15.0; see cdd.info."
+eggnog,"1.0, 2.0, 3.0, 4.0, 4.1, 4.5",,archived,http://eggnog6.embl.de/download/eggnog_{version}/,pattern,yes,Early releases.
+eggnog,5.0,,current,http://eggnog6.embl.de/download/eggnog_5.0/,directory,yes,latest/ still points to 5.0.
+eggnog,"emapperdb 4.5.0, 4.5.1, 5.0.0, 5.0.1, 5.0.2",until 2021-03,current,http://eggnog6.embl.de/download/emapperdb-{version}/,pattern,yes,eggNOG-mapper databases; emapper still uses 5.0.2.
+eggnog,6.0,2022-11-25,latest,http://eggnog6.embl.de/download/eggnog_6.0/,directory,yes,Latest; date is folder date.
+eggnog,novel_fams 1.0.1,2023-08,current,http://eggnog6.embl.de/download/novel_fams-1.0.1/,directory,yes,Novel gene families.
+orthodb,v10.1,,archived,https://data.orthodb.org/v10-1/download/,directory,no,odb10v1.
+orthodb,v11,,archived,https://data.orthodb.org/v11/download/,directory,no,odb11v0.
+orthodb,v12,2024–2025,latest,https://data.orthodb.org/v12-1/download/,directory,yes,Latest; odb12v1.
+kofam,2019–2024,2019–2024,archived,https://www.genome.jp/ftp/db/kofam/archives/{YYYY-MM-DD}/,pattern,yes,Monthly archives.
+kofam,2025-01-01–2025-12-01,2025,archived,https://www.genome.jp/ftp/db/kofam/archives/{YYYY-MM-DD}/,pattern,yes,Monthly archives.
+kofam,2026-01-01–2026-06-01,2026,archived,https://www.genome.jp/ftp/db/kofam/archives/{YYYY-MM-DD}/,pattern,yes,Monthly archives.
+kofam,"2026-07-02, 2026-08-02",2026,archived,https://www.genome.jp/ftp/db/kofam/archives/{YYYY-MM-DD}/,pattern,yes,
+kofam,2026-09-01,2026-09-01,archived,https://www.genome.jp/ftp/db/kofam/archives/2026-09-01/,directory,yes,Latest archived snapshot.
+kofam,current,c. 2026-10,latest,https://www.genome.jp/ftp/db/kofam/profiles.tar.gz,file,yes,Current HMM profiles.
+mgnify-proteins,"2017_08, 2017_11",2017,archived,https://ftp.ebi.ac.uk/pub/databases/metagenomics/peptide_database/{YYYY_MM}/,pattern,yes,
+mgnify-proteins,"2018_02, 2018_03, 2018_04, 2018_05, 2018_06, 2018_09, 2018_11",2018,archived,https://ftp.ebi.ac.uk/pub/databases/metagenomics/peptide_database/{YYYY_MM}/,pattern,yes,
+mgnify-proteins,2018_12,2018,archived,https://ftp.ebi.ac.uk/pub/databases/metagenomics/peptide_database/2018_12/,directory,yes,Used by AlphaFold 2.
+mgnify-proteins,2019_05,2019,archived,https://ftp.ebi.ac.uk/pub/databases/metagenomics/peptide_database/2019_05/,directory,yes,
+mgnify-proteins,2022_05,2022,archived,https://ftp.ebi.ac.uk/pub/databases/metagenomics/peptide_database/2022_05/,directory,yes,Used by AlphaFold 3.
+mgnify-proteins,2023_02,2023,archived,https://ftp.ebi.ac.uk/pub/databases/metagenomics/peptide_database/2023_02/,directory,yes,Matches ESM Atlas v2023_02.
+mgnify-proteins,2024_04,2024,archived,https://ftp.ebi.ac.uk/pub/databases/metagenomics/peptide_database/2024_04/,directory,yes,
+mgnify-proteins,2026_06,2026,retired,,none,yes,Faulty release candidate; do not use.
+mgnify-proteins,2026_07,2026-08-03,latest,https://ftp.ebi.ac.uk/pub/databases/metagenomics/peptide_database/current_release/,directory,yes,Latest release.
+uniref30,"2016_03, 2016_09",2016,archived,https://wwwuser.gwdg.de/~compbiol/uniclust/{YYYY_MM}/,pattern,yes,Named UniClust30 up to 2018_08 and UniRef30 from 2020_01.
+uniref30,"2017_02, 2017_04, 2017_07, 2017_10",2017,archived,https://wwwuser.gwdg.de/~compbiol/uniclust/{YYYY_MM}/,pattern,yes,Named UniClust30 up to 2018_08 and UniRef30 from 2020_01.
+uniref30,2018_08,2018,archived,https://wwwuser.gwdg.de/~compbiol/uniclust/2018_08/,directory,yes,
+uniref30,2019_11,2019,archived,https://wwwuser.gwdg.de/~compbiol/uniclust/2019_11/,directory,yes,
+uniref30,"2020_01, 2020_02, 2020_03, 2020_06",2020,archived,https://wwwuser.gwdg.de/~compbiol/uniclust/{YYYY_MM}/,pattern,yes,Named UniClust30 up to 2018_08 and UniRef30 from 2020_01.
+uniref30,2021_03,2021,archived,https://wwwuser.gwdg.de/~compbiol/uniclust/2021_03/,directory,yes,Used by AlphaFold 2.
+uniref30,2022_02,2022,archived,https://wwwuser.gwdg.de/~compbiol/uniclust/2022_02/,directory,yes,
+uniref30,2023_01,2023,archived,https://wwwuser.gwdg.de/~compbiol/uniclust/2023_01/,directory,yes,
+uniref30,2023_02,2023,latest,https://wwwuser.gwdg.de/~compbiol/uniclust/2023_02/,directory,yes,"Latest; ColabFold default uniref30_2302, also at https://opendata.mmseqs.org/colabfold/uniref30_2302.tar.gz."
+kegg,113.0,2025-01-01,archived,,none,yes,No public archive of past releases.
+kegg,114.0,2025-04-01,archived,,none,yes,No public archive of past releases.
+kegg,115.0,2025-07-01,archived,,none,yes,No public archive of past releases.
+kegg,115.1,2025-08-01,archived,,none,yes,No public archive of past releases.
+kegg,116.0,2025-10-01,archived,,none,yes,No public archive of past releases.
+kegg,116.1,2025-12-01,archived,,none,yes,30th anniversary release. No public archive of past releases.
+kegg,117.0,2026-01-01,archived,,none,yes,No public archive of past releases.
+kegg,118.0,2026-04-01,archived,,none,yes,No public archive of past releases.
+kegg,118.1,2026-05-01,archived,,none,yes,No public archive of past releases.
+kegg,118.2,2026-06-01,archived,,none,yes,No public archive of past releases.
+kegg,119.0,2026-07-01,archived,,none,yes,No public archive of past releases.
+kegg,120.0,2026-10-01,latest,https://rest.kegg.jp/info/kegg,api,yes,Current release via the REST API; bulk FTP requires a paid licence.
+reactome,V73,2020-06-11,archived,https://reactome.org/download/73/,directory,yes,
+reactome,V74,2020-09-21,archived,https://reactome.org/download/74/,directory,yes,
+reactome,V75,2020-12-02,archived,https://reactome.org/download/75/,directory,yes,
+reactome,V76,2021-03-21,archived,https://reactome.org/download/76/,directory,yes,
+reactome,V77,2021-06-09,archived,https://reactome.org/download/77/,directory,yes,
+reactome,V78,2021-10-10,archived,https://reactome.org/download/78/,directory,yes,
+reactome,V79,2021-12-13,archived,https://reactome.org/download/79/,directory,yes,
+reactome,V80,2022-04-05,archived,https://reactome.org/download/80/,directory,yes,
+reactome,V81,2022-06-14,archived,https://reactome.org/download/81/,directory,yes,
+reactome,V82,2022-09-15,archived,https://reactome.org/download/82/,directory,yes,
+reactome,V83,2022-11-30,archived,https://reactome.org/download/83/,directory,yes,
+reactome,V84,2023-03-23,archived,https://reactome.org/download/84/,directory,yes,
+reactome,V85,2023-05-25,archived,https://reactome.org/download/85/,directory,yes,
+reactome,V86,2023-09-07,archived,https://reactome.org/download/86/,directory,yes,
+reactome,V87,2023-12-04,archived,https://reactome.org/download/87/,directory,yes,
+reactome,V88,2024-03-20,archived,https://reactome.org/download/88/,directory,yes,
+reactome,V89,2024-06-09,archived,https://reactome.org/download/89/,directory,yes,
+reactome,V90,2024-09-17,archived,https://reactome.org/download/90/,directory,yes,
+reactome,V91,2024-11-30,archived,https://reactome.org/download/91/,directory,yes,
+reactome,V92,2025-03-20,archived,https://reactome.org/download/92/,directory,yes,
+reactome,V93,2025-06-12,archived,https://reactome.org/download/93/,directory,yes,
+reactome,V94,2025-09-11,archived,https://reactome.org/download/94/,directory,yes,
+reactome,V95,2025-12-03,archived,https://reactome.org/download/95/,directory,yes,
+reactome,V96,2026-04-01,archived,https://reactome.org/download/96/,directory,yes,
+reactome,V97,2026-06-23,archived,https://reactome.org/download/97/,directory,yes,
+reactome,V98,2026-10-21,latest,https://reactome.org/download/current/,directory,yes,Latest release.
+string,3.0,before 2003,retired,,none,yes,Data not available.
+string,4.0,2003,retired,,none,yes,Data not available.
+string,5.1,2004-07-30,archived,https://stringdb-downloads.org/download/archive/,directory,yes,File archive for versions 5.1–9.05.
+string,6.0,2005-02-20,archived,https://stringdb-downloads.org/download/archive/,directory,yes,File archive for versions 5.1–9.05.
+string,6.2,2005-06-26,archived,https://stringdb-downloads.org/download/archive/,directory,yes,File archive for versions 5.1–9.05.
+string,6.3,2005-12-12,archived,https://stringdb-downloads.org/download/archive/,directory,yes,File archive for versions 5.1–9.05.
+string,7.0,2007-01-15,archived,https://stringdb-downloads.org/download/archive/,directory,yes,File archive for versions 5.1–9.05.
+string,7.1,2007-10-19,archived,https://stringdb-downloads.org/download/archive/,directory,yes,File archive for versions 5.1–9.05.
+string,8.0,2008-11-09,archived,https://stringdb-downloads.org/download/archive/,directory,yes,File archive for versions 5.1–9.05.
+string,8.1,2009-06-14,archived,https://stringdb-downloads.org/download/archive/,directory,yes,File archive for versions 5.1–9.05.
+string,8.2,2009-10-18,archived,https://stringdb-downloads.org/download/archive/,directory,yes,File archive for versions 5.1–9.05.
+string,8.3,2010-05-26,archived,https://stringdb-downloads.org/download/archive/,directory,yes,File archive for versions 5.1–9.05.
+string,9.0,2011-05-29,archived,https://stringdb-downloads.org/download/archive/,directory,yes,File archive for versions 5.1–9.05.
+string,9.05,2013-03-03,archived,https://stringdb-downloads.org/download/archive/,directory,yes,File archive for versions 5.1–9.05.
+string,9.1,2013-12-27,archived,https://string91.embl.de,portal,yes,Version-specific archive site.
+string,10.0a,2015-04-12,archived,https://version10a.string-db.org,portal,yes,Version-specific archive site.
+string,10.0,2016-04-16,archived,https://version10.string-db.org,portal,yes,Version-specific archive site.
+string,10.5,2017-05-14,archived,https://version-10-5.string-db.org,portal,yes,Version-specific archive site.
+string,11.0,2019-01-19,archived,https://version-11-0.string-db.org,portal,yes,Version-specific archive site.
+string,11.0b,2020-10-17,archived,https://version-11-0b.string-db.org,portal,yes,Version-specific archive site.
+string,11.5,2021-08-12,archived,https://version-11-5.string-db.org,portal,yes,Version-specific archive site.
+string,12.0,2023-07-26,archived,https://version-12-0.string-db.org,portal,yes,Version-specific archive site.
+string,12.5,2026-09-29,latest,https://string-db.org,portal,yes,Latest release.
+biogrid,2.0.17,,archived,https://downloads.thebiogrid.org/BioGRID/Release-Archive/BIOGRID-2.0.17/,directory,yes,Oldest archived build.
+biogrid,2.0.x–4.4.x,,archived,https://downloads.thebiogrid.org/BioGRID/Release-Archive/BIOGRID-{version}/,pattern,yes,Monthly builds.
+biogrid,4.4.249,,archived,https://downloads.thebiogrid.org/BioGRID/Release-Archive/BIOGRID-4.4.249/,directory,yes,
+biogrid,5.0.249–5.0.262,,archived,https://downloads.thebiogrid.org/BioGRID/Release-Archive/BIOGRID-5.0.{N}/,pattern,yes,Major version changed around build 250.
+biogrid,5.0.263,2026,latest,https://downloads.thebiogrid.org/BioGRID/Release-Archive/BIOGRID-5.0.263/,directory,yes,Latest build.
+go,2004-03-01–2024,2004–2024,archived,https://release.geneontology.org/{YYYY-MM-DD}/,pattern,yes,Oldest release 2004-03-01.
+go,2025-02-06,2025-02-06,archived,https://release.geneontology.org/2025-02-06/,directory,yes,
+go,2025-03-16,2025-03-16,archived,https://release.geneontology.org/2025-03-16/,directory,yes,
+go,2025-06-01,2025-06-01,archived,https://release.geneontology.org/2025-06-01/,directory,yes,
+go,2025-07-22,2025-07-22,archived,https://release.geneontology.org/2025-07-22/,directory,yes,
+go,2025-10-10,2025-10-10,archived,https://release.geneontology.org/2025-10-10/,directory,yes,
+go,2026-01-23,2026-01-23,archived,https://release.geneontology.org/2026-01-23/,directory,yes,
+go,2026-03-25,2026-03-25,archived,https://release.geneontology.org/2026-03-25/,directory,yes,
+go,2026-05-19,2026-05-19,archived,https://release.geneontology.org/2026-05-19/,directory,yes,
+go,2026-06-19,2026-06-19,archived,https://release.geneontology.org/2026-06-19/,directory,yes,
+go,2026-08-05,2026-08-05,latest,https://release.geneontology.org/2026-08-05/,directory,yes,Latest; also current.geneontology.org.
+hpo,v2025-05-06,2025-05-06,archived,https://github.com/obophenotype/human-phenotype-ontology/releases/download/v2025-05-06/hp.obo,file,yes,
+hpo,v2025-08-11,2025-08-11,archived,https://github.com/obophenotype/human-phenotype-ontology/releases/download/v2025-08-11/hp.obo,file,yes,
+hpo,v2025-09-01,2025-09-01,archived,https://github.com/obophenotype/human-phenotype-ontology/releases/download/v2025-09-01/hp.obo,file,yes,
+hpo,v2025-10-22,2025-10-22,archived,https://github.com/obophenotype/human-phenotype-ontology/releases/download/v2025-10-22/hp.obo,file,yes,
+hpo,v2025-11-24,2025-11-24,archived,https://github.com/obophenotype/human-phenotype-ontology/releases/download/v2025-11-24/hp.obo,file,yes,
+hpo,v2026-01-08,2026-01-08,archived,https://github.com/obophenotype/human-phenotype-ontology/releases/download/v2026-01-08/hp.obo,file,yes,
+hpo,v2026-02-16,2026-02-16,archived,https://github.com/obophenotype/human-phenotype-ontology/releases/download/v2026-02-16/hp.obo,file,yes,
+hpo,v2026-06-06,2026-06-06,archived,https://github.com/obophenotype/human-phenotype-ontology/releases/download/v2026-06-06/hp.obo,file,yes,
+hpo,v2026-06-23,2026-06-23,archived,https://github.com/obophenotype/human-phenotype-ontology/releases/download/v2026-06-23/hp.obo,file,yes,
+hpo,v2026-09-01,2026-09-03,latest,https://github.com/obophenotype/human-phenotype-ontology/releases/download/v2026-09-01/hp.obo,file,yes,Latest; tag v2026-09-01 published 2026-09-03.
+mondo,v2026-02-03,2026-02-03,archived,https://github.com/monarch-initiative/mondo/releases/download/v2026-02-03/mondo.obo,file,yes,Monthly release; other formats in the same release.
+mondo,v2026-03-03,2026-03-03,archived,https://github.com/monarch-initiative/mondo/releases/download/v2026-03-03/mondo.obo,file,yes,Monthly release; other formats in the same release.
+mondo,v2026-04-07,2026-04-07,archived,https://github.com/monarch-initiative/mondo/releases/download/v2026-04-07/mondo.obo,file,yes,Monthly release; other formats in the same release.
+mondo,v2026-05-05,2026-05-05,archived,https://github.com/monarch-initiative/mondo/releases/download/v2026-05-05/mondo.obo,file,yes,Monthly release; other formats in the same release.
+mondo,v2026-06-02,2026-06-02,archived,https://github.com/monarch-initiative/mondo/releases/download/v2026-06-02/mondo.obo,file,yes,Monthly release; other formats in the same release.
+mondo,v2026-07-06,2026-07-06,archived,https://github.com/monarch-initiative/mondo/releases/download/v2026-07-06/mondo.obo,file,yes,Monthly release; other formats in the same release.
+mondo,v2026-08-04,2026-08-04,archived,https://github.com/monarch-initiative/mondo/releases/download/v2026-08-04/mondo.obo,file,yes,Monthly release; other formats in the same release.
+mondo,v2026-09-01,2026-09-01,archived,https://github.com/monarch-initiative/mondo/releases/download/v2026-09-01/mondo.obo,file,yes,Monthly release; other formats in the same release.
+mondo,v2026-10-06,2026-10-06,archived,https://github.com/monarch-initiative/mondo/releases/download/v2026-10-06/mondo.obo,file,yes,Monthly release; other formats in the same release.
+mondo,v2026-11-03,2026-11-03,latest,https://github.com/monarch-initiative/mondo/releases/download/v2026-11-03/mondo.obo,file,yes,Latest; 31 files per release.
+umls,2002AA–2003AC,2002–2003,archived,https://download.nlm.nih.gov/umls/kss/{VER}/umls-{VER}-full.zip,pattern,yes,Requires a UTS account.
+umls,2004AA,2004-07-23,archived,https://download.nlm.nih.gov/umls/kss/2004AA/umls-2004AA-full.zip,file,yes,Requires a UTS account.
+umls,2004AB–2015AB,2004–2015,archived,https://download.nlm.nih.gov/umls/kss/{VER}/umls-{VER}-full.zip,pattern,yes,Requires a UTS account.
+umls,2016AA,2016-05-09,archived,https://download.nlm.nih.gov/umls/kss/2016AA/umls-2016AA-full.zip,file,yes,Requires a UTS account.
+umls,2016AB,2016-11-06,archived,https://download.nlm.nih.gov/umls/kss/2016AB/umls-2016AB-full.zip,file,yes,Requires a UTS account.
+umls,2017AA,2017-05-08,archived,https://download.nlm.nih.gov/umls/kss/2017AA/umls-2017AA-full.zip,file,yes,Requires a UTS account.
+umls,2017AB,2017-11-06,archived,https://download.nlm.nih.gov/umls/kss/2017AB/umls-2017AB-full.zip,file,yes,Requires a UTS account.
+umls,2018AA,2018-05-07,archived,https://download.nlm.nih.gov/umls/kss/2018AA/umls-2018AA-full.zip,file,yes,Requires a UTS account.
+umls,2018AB,2018-11-05,archived,https://download.nlm.nih.gov/umls/kss/2018AB/umls-2018AB-full.zip,file,yes,Requires a UTS account.
+umls,2019AA,2019-05-06,archived,https://download.nlm.nih.gov/umls/kss/2019AA/umls-2019AA-full.zip,file,yes,Requires a UTS account.
+umls,2019AB,2019-11-04,archived,https://download.nlm.nih.gov/umls/kss/2019AB/umls-2019AB-full.zip,file,yes,Requires a UTS account.
+umls,2020AA,2020-05-04,archived,https://download.nlm.nih.gov/umls/kss/2020AA/umls-2020AA-full.zip,file,yes,Requires a UTS account.
+umls,2020AB,2020-11-02,archived,https://download.nlm.nih.gov/umls/kss/2020AB/umls-2020AB-full.zip,file,yes,Requires a UTS account.
+umls,2021AA,2021,archived,https://download.nlm.nih.gov/umls/kss/2021AA/umls-2021AA-full.zip,file,yes,"Source gave the 2021AB date, likely an error. Requires a UTS account."
+umls,2021AB,2021-11-01,archived,https://download.nlm.nih.gov/umls/kss/2021AB/umls-2021AB-full.zip,file,yes,Requires a UTS account.
+umls,2022AA,2022-05-02,archived,https://download.nlm.nih.gov/umls/kss/2022AA/umls-2022AA-full.zip,file,yes,Requires a UTS account.
+umls,2022AB,2022-11,archived,https://download.nlm.nih.gov/umls/kss/2022AB/umls-2022AB-full.zip,file,yes,Requires a UTS account.
+umls,2023AA,2023-05,archived,https://download.nlm.nih.gov/umls/kss/2023AA/umls-2023AA-full.zip,file,yes,Requires a UTS account.
+umls,2023AB,2023-11,archived,https://download.nlm.nih.gov/umls/kss/2023AB/umls-2023AB-full.zip,file,yes,Requires a UTS account.
+umls,2024AA,2024-05,archived,https://download.nlm.nih.gov/umls/kss/2024AA/umls-2024AA-full.zip,file,yes,Requires a UTS account.
+umls,2024AB,2024-11,archived,https://download.nlm.nih.gov/umls/kss/2024AB/umls-2024AB-full.zip,file,yes,Requires a UTS account.
+umls,2025AA,2025-05,archived,https://download.nlm.nih.gov/umls/kss/2025AA/umls-2025AA-full.zip,file,yes,Requires a UTS account.
+umls,2025AB,2025-11,archived,https://download.nlm.nih.gov/umls/kss/2025AB/umls-2025AB-full.zip,file,yes,Requires a UTS account.
+umls,2026AA,2026-05,latest,https://download.nlm.nih.gov/umls/kss/2026AA/umls-2026AA-full.zip,file,yes,Latest. Requires a UTS account.
+umls,2026AB,2026-11,scheduled,,none,yes,Expected release.
+msigdb,v1.0,2005,archived,,none,no,
+msigdb,v2.x–v7.5.1,until 2022,archived,https://data.broadinstitute.org/gsea-msigdb/msigdb/release/{ver}/,pattern,no,
+msigdb,2022.1.Hs / 2022.1.Mm,2022,archived,https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2022.1.Hs/,directory,no,Mouse in release/2022.1.Mm/.
+msigdb,2023.1 / 2023.2,2023,archived,https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2023.{N}.Hs/,pattern,no,
+msigdb,2024.1,2024,archived,https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2024.1.Hs/,directory,no,
+msigdb,2025.1.Hs,2025-06,archived,https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2025.1.Hs/,directory,yes,
+msigdb,2026.1.Hs / 2026.1.Mm,2026-01,latest,https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2026.1.Hs/,directory,yes,Latest verified; mouse in release/2026.1.Mm/.
+msigdb,2026.2,c. 2026-10,unreleased,,none,no,Reported by one unofficial source; not confirmed.
+corum,1.0,2008,archived,,none,no,
+corum,2.0,2010,archived,,none,no,
+corum,3.0,2019,archived,,none,no,
+corum,4.0 / 4.1,2022,archived,,none,yes,
+corum,5.0,2024,latest,https://mips.helmholtz-muenchen.de/corum/download,portal,yes,"Latest; 7,193 complexes."
+pathway-commons,PC1,until 2016,archived,https://download.baderlab.org/PathwayCommons/PC1/,directory,yes,
+pathway-commons,PC2 v1–v12,2012–2019,archived,https://download.baderlab.org/PathwayCommons/PC2/,directory,no,Versions listed under PC2/.
+pathway-commons,PC2 v13,2023,archived,https://download.baderlab.org/PathwayCommons/PC2/,directory,no,Versions listed under PC2/.
+pathway-commons,PC2 v14,2024,latest,https://download.baderlab.org/PathwayCommons/PC2/,directory,no,Latest; versions listed under PC2/.
+chembl,chembl_01–chembl_20,until 2015,archived,https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_{NN}/,pattern,yes,Folders re-dated in July 2025.
+chembl,chembl_21,2016-07-14,archived,https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_21/,directory,yes,Date is FTP folder date.
+chembl,chembl_22,2016-11-18,archived,https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_22/,directory,yes,Date is FTP folder date.
+chembl,chembl_22_1,2016-11-15,archived,https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_22_1/,directory,yes,Date is FTP folder date.
+chembl,chembl_23,2017-07-31,archived,https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_23/,directory,yes,Date is FTP folder date.
+chembl,chembl_24,2018-06-18,archived,https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_24/,directory,yes,Date is FTP folder date.
+chembl,chembl_24_1,2018-12-21,archived,https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_24_1/,directory,yes,Date is FTP folder date.
+chembl,chembl_25,2019-03-26,archived,https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_25/,directory,yes,Date is FTP folder date.
+chembl,chembl_26,2020-04-13,archived,https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_26/,directory,yes,Date is FTP folder date.
+chembl,chembl_27,2020-12-03,archived,https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_27/,directory,yes,Date is FTP folder date.
+chembl,chembl_28,2021-06-24,archived,https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_28/,directory,yes,Date is FTP folder date.
+chembl,chembl_29,2021-07-21,archived,https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_29/,directory,yes,Date is FTP folder date.
+chembl,chembl_30,2022-03-10,archived,https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_30/,directory,yes,Date is FTP folder date.
+chembl,chembl_31,2022-08-18,archived,https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_31/,directory,yes,Date is FTP folder date.
+chembl,chembl_32,2023-06-12,archived,https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_32/,directory,yes,Date is FTP folder date.
+chembl,chembl_33,2024-04-15,archived,https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_33/,directory,yes,Date is FTP folder date.
+chembl,chembl_34,2024-12-11,archived,https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_34/,directory,yes,Date is FTP folder date.
+chembl,chembl_35,2025-07-16,archived,https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_35/,directory,yes,Date is FTP folder date.
+chembl,chembl_36,2025-09-24,archived,https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_36/,directory,yes,Date is FTP folder date.
+chembl,chembl_37,2026-05-29,latest,https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_37/,directory,yes,Latest; official release date 2026-05-01; shown date is FTP folder date; also latest/.
+opentargets,"16.04, 16.08, 16.12",2016,archived,https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/{ver}/,pattern,yes,
+opentargets,"17.02, 17.04, 17.06, 17.09, 17.12",2017,archived,https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/{ver}/,pattern,yes,
+opentargets,"18.02, 18.04, 18.06, 18.08, 18.10, 18.12",2018,archived,https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/{ver}/,pattern,yes,
+opentargets,"19.02, 19.04, 19.06, 19.09, 19.11",2019,archived,https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/{ver}/,pattern,yes,
+opentargets,"20.02, 20.04, 20.06, 20.09, 20.11",2020,archived,https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/{ver}/,pattern,yes,
+opentargets,"21.02, 21.04",2021,archived,https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/{ver}/,pattern,yes,
+opentargets,21.06,2021-06-30,archived,https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/21.06/,directory,yes,
+opentargets,21.09,2021-09-30,archived,https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/21.09/,directory,yes,
+opentargets,21.11,2021-11-29,archived,https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/21.11/,directory,yes,
+opentargets,22.02,2022-02-28,archived,https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/22.02/,directory,yes,
+opentargets,22.04,2022-04-28,archived,https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/22.04/,directory,yes,
+opentargets,22.06,2022-06-24,archived,https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/22.06/,directory,yes,
+opentargets,22.09,2022-09-29,archived,https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/22.09/,directory,yes,
+opentargets,22.11,2022-11-24,archived,https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/22.11/,directory,yes,
+opentargets,23.02,2023-02-22,archived,https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/23.02/,directory,yes,
+opentargets,23.06,2023-06-26,archived,https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/23.06/,directory,yes,
+opentargets,23.09,2023-09-21,archived,https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/23.09/,directory,yes,
+opentargets,23.12,2023-11-30,archived,https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/23.12/,directory,yes,
+opentargets,24.03,2024-03-20,archived,https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/24.03/,directory,yes,
+opentargets,24.06,2024-06-19,archived,https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/24.06/,directory,yes,Open Targets Genetics merged into Platform.
+opentargets,24.09,2024-09-18,archived,https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/24.09/,directory,yes,
+opentargets,25.03,2025-03-19,archived,https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/25.03/,directory,yes,New directory layout (output/<dataset>/).
+opentargets,25.06,2025-06-18,archived,https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/25.06/,directory,yes,
+opentargets,25.09,2025-09-17,archived,https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/25.09/,directory,yes,
+opentargets,25.12,2025-12-10,archived,https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/25.12/,directory,yes,
+opentargets,26.03,2026-03-23,archived,https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/26.03/,directory,yes,
+opentargets,26.06,2026-06-24,archived,https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/26.06/,directory,yes,
+opentargets,26.09,2026-09-24,latest,https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/26.09/,directory,yes,Latest; also latest/.
+opentargets-genetics,"190303, 190504, 190505",2019,archived,https://ftp.ebi.ac.uk/pub/databases/opentargets/genetics/{ver}/,pattern,yes,Service retired; files remain on FTP.
+opentargets-genetics,20022712,2020,archived,https://ftp.ebi.ac.uk/pub/databases/opentargets/genetics/20022712/,directory,yes,Service retired; files remain on FTP.
+opentargets-genetics,210608,2021,archived,https://ftp.ebi.ac.uk/pub/databases/opentargets/genetics/210608/,directory,yes,Service retired; files remain on FTP.
+opentargets-genetics,21.10.01,2021,archived,https://ftp.ebi.ac.uk/pub/databases/opentargets/genetics/21.10.01/,directory,yes,Service retired; files remain on FTP.
+opentargets-genetics,22.02.01,2022,archived,https://ftp.ebi.ac.uk/pub/databases/opentargets/genetics/22.02.01/,directory,yes,Service retired; files remain on FTP.
+opentargets-genetics,22.09,2022,latest,https://ftp.ebi.ac.uk/pub/databases/opentargets/genetics/22.09/,directory,yes,"Final release; service retired, portal closed 2024-07; files remain on FTP."
+drugbank,5.1.12,2024-03-14,archived,https://go.drugbank.com/releases/5-1-12/downloads/all-full-database,file,no,Requires a DrugBank account.
+drugbank,5.1.13,2025-01-02,archived,https://go.drugbank.com/releases/5-1-13/downloads/all-full-database,file,no,Requires a DrugBank account.
+drugbank,5.1.14,2026-01-04,archived,https://go.drugbank.com/releases/5-1-14/downloads/all-full-database,file,no,Requires a DrugBank account.
+drugbank,5.1.22,2026-06-27,latest,https://go.drugbank.com/releases/5-1-22/downloads/all-full-database,file,no,Newest in a search summary; inconsistent with other sources. Requires a DrugBank account.
+pdbbind,v2007–v2019,2007–2019,archived,http://www.pdbbind.org.cn/,portal,no,Free with registration; v2016 ships with CASF-2016; legacy site.
+pdbbind,v2020,2020,latest,http://www.pdbbind.org.cn/,portal,yes,Last free release; legacy site.
+pdbbind,"v2021, v2024 and later",2021–,current,https://www.pdbbind-plus.org.cn/,portal,yes,PDBbind+ subscription releases.
+hmdb,1.0,2007,archived,,none,no,
+hmdb,2.0 / 2.5,2009,archived,,none,no,
+hmdb,3.0 / 3.6,2013,archived,,none,no,
+hmdb,4.0,2018,archived,,none,no,
+hmdb,5.0,2022,latest,https://hmdb.ca/downloads,portal,yes,Latest found; version 6.0 not found.
+papyrus,05.4,2022-04-04,latest,https://zenodo.org/records/10943992,portal,yes,Latest verified release on Zenodo; record modified 2024-04-08.
+papyrus,05.5 / 05.6 / 05.7,,current,,none,no,Unverified; download with: papyrus download -V <ver>.
+jaspar,2004,2004,archived,,none,no,First release.
+jaspar,2006,2006,archived,,none,no,
+jaspar,2008,2008,archived,,none,no,
+jaspar,2010,2010,archived,,none,no,
+jaspar,2014,2014,archived,,none,no,
+jaspar,2016,2016,archived,,none,no,
+jaspar,2018,2018,archived,,none,no,Bioconductor package JASPAR2018.
+jaspar,2020,2020,archived,https://jaspar2020.genereg.net,portal,no,Also Bioconductor package JASPAR2020.
+jaspar,2022,2022,archived,https://jaspar2022.genereg.net,portal,no,Also Bioconductor package JASPAR2022.
+jaspar,2024,2024,archived,https://jaspar2024.genereg.net,portal,no,Site did not respond; Bioconductor package JASPAR2024.
+jaspar,2026,2026-01,latest,https://jaspar.elixir.no/api/v1/releases/11/,api,yes,Latest; release 11.
+hocomoco,v9,2013,archived,https://github.com/autosome-ru/hocomoco_v9,portal,yes,GitHub repository.
+hocomoco,v10,2015–2016,archived,https://hocomoco14.autosome.org/downloads_v10,portal,yes,Served from the HOCOMOCO v14 site.
+hocomoco,v11,2017–2018,archived,https://hocomoco14.autosome.org/downloads_v11,portal,yes,Served from the HOCOMOCO v14 site.
+hocomoco,v12,2023,archived,https://hocomoco14.autosome.org/downloads_v12,portal,yes,Served from the HOCOMOCO v14 site.
+hocomoco,v13,2024–2025,archived,https://hocomoco14.autosome.org/downloads_v13,portal,yes,Served from the HOCOMOCO v14 site.
+hocomoco,v14,,latest,https://hocomoco14.autosome.org/downloads_v14,portal,yes,"Latest; 1,595 models."
+remap,ReMap 2018,2018,archived,https://remap2018.univ-amu.fr/,portal,no,
+remap,ReMap 2020,2020,archived,https://remap2020.univ-amu.fr/,portal,no,
+remap,ReMap 2022,2022,latest,https://remap2022.univ-amu.fr/,portal,yes,Latest verified release.
+encode-ccre,V1,2017–2018,archived,,none,no,
+encode-ccre,V2,2020,archived,,none,no,
+encode-ccre,V3,2022,archived,,none,no,
+encode-ccre,V4,2024–2025,latest,https://downloads.wenglab.org/,portal,no,Latest; files such as GRCh38-cCREs.V4.bed.
+rnacentral,1–24,,archived,https://ftp.ebi.ac.uk/pub/databases/RNAcentral/releases/{N}.0/,pattern,no,
+rnacentral,25,2025-06-19,archived,https://ftp.ebi.ac.uk/pub/databases/RNAcentral/releases/25.0/,directory,yes,Includes Rfam 15.0.
+rnacentral,26,2025-10-08,archived,https://ftp.ebi.ac.uk/pub/databases/RNAcentral/releases/26.0/,directory,yes,
+rnacentral,27,2026-07-29,archived,https://ftp.ebi.ac.uk/pub/databases/RNAcentral/releases/27.0/,directory,yes,Includes Rfam 15.1.
+rnacentral,28,2026-10-19,latest,https://ftp.ebi.ac.uk/pub/databases/RNAcentral/releases/28.0/,directory,yes,Latest; also current_release/.
+rfam,12.0–12.3,,archived,https://ftp.ebi.ac.uk/pub/databases/Rfam/12.{N}/,pattern,no,
+rfam,13.0,,archived,https://ftp.ebi.ac.uk/pub/databases/Rfam/13.0/,directory,no,
+rfam,14.0–14.10,until 2023,archived,https://ftp.ebi.ac.uk/pub/databases/Rfam/14.{N}/,pattern,no,14.9 used by AlphaFold 3.
+rfam,15.0,2024–2025,archived,https://ftp.ebi.ac.uk/pub/databases/Rfam/15.0/,directory,yes,
+rfam,15.1,2026-01,latest,https://ftp.ebi.ac.uk/pub/databases/Rfam/15.1/,directory,yes,"Latest; 4,227 families; also CURRENT/."
+mirbase,1.0,2002,archived,,none,no,First release.
+mirbase,20,2013,archived,https://www.mirbase.org/download_version_files/miRNA/20/,directory,no,
+mirbase,21,2014-06,archived,https://www.mirbase.org/download_version_files/miRNA/21/,directory,no,
+mirbase,22,2018-03,archived,https://www.mirbase.org/download_version_files/miRNA/22/,directory,no,
+mirbase,22.1,2018-10,latest,https://www.mirbase.org/download_version_files/miRNA/22.1/,directory,no,Latest; version 23 not found.
+mirtarbase,1.0,2010,archived,,none,no,
+mirtarbase,6.0,2016,archived,,none,no,
+mirtarbase,7.0,2018,archived,,none,no,
+mirtarbase,8.0,2020,archived,,none,no,
+mirtarbase,9.0,2022,archived,,none,no,
+mirtarbase,10.0,2024-09-30,latest,https://mirtarbase.cuhk.edu.cn/,portal,yes,Latest; also called miRTarBase 2025.
+targetscan,6.2,2012,archived,https://www.targetscan.org/vert_62/,directory,no,
+targetscan,7.0,2015,archived,https://www.targetscan.org/vert_70/,directory,no,
+targetscan,7.1,2016,archived,https://www.targetscan.org/vert_71/,directory,no,
+targetscan,7.2,2018-03,archived,https://www.targetscan.org/vert_72/,directory,no,
+targetscan,8.0,2021-09,latest,https://www.targetscan.org/vert_80/vert_80_data_download/,directory,no,Latest; data download page.
+silva,"102, 104, 106, 108",,archived,https://www.arb-silva.de/fileadmin/silva_databases/release_{N}/,pattern,no,Early releases.
+silva,111,2012,archived,https://www.arb-silva.de/fileadmin/silva_databases/release_111/,directory,no,
+silva,"115, 119, 119.1",,archived,https://www.arb-silva.de/fileadmin/silva_databases/release_{N}/,pattern,no,
+silva,123 / 123.1,2015,archived,https://www.arb-silva.de/fileadmin/silva_databases/release_123/,directory,no,Also release 123.1.
+silva,128,2016-09,archived,https://www.arb-silva.de/fileadmin/silva_databases/release_128/,directory,no,
+silva,132,2017-12,archived,https://www.arb-silva.de/fileadmin/silva_databases/release_132/,directory,no,
+silva,138,2019-12,archived,https://www.arb-silva.de/fileadmin/silva_databases/release_138/,directory,no,
+silva,138.1,2020-08,archived,https://www.arb-silva.de/fileadmin/silva_databases/release_{N}/,pattern,no,
+silva,138.2,2024-07-11,current,https://www.arb-silva.de/documentation/release-1382,portal,yes,Latest LSU release; maintenance release; e.g. SILVA_138.2_SSURef_NR99_03_07_24_opt.arb.gz.
+silva,144,2026-08-14,latest,https://www.arb-silva.de/documentation/release-144,portal,yes,Latest SSU release; SSU and LSU released separately from 144; files at /current-release.
+gtdb,R80,2017-11,archived,https://data.gtdb.aau.ecogenomic.org/releases/release80/,directory,no,
+gtdb,R83,,archived,https://data.gtdb.aau.ecogenomic.org/releases/release83/,directory,no,
+gtdb,R86,,archived,https://data.gtdb.aau.ecogenomic.org/releases/release86/,directory,no,
+gtdb,R89,2019-06,archived,https://data.gtdb.aau.ecogenomic.org/releases/release89/,directory,no,
+gtdb,R95,2020-07,archived,https://data.gtdb.aau.ecogenomic.org/releases/release95/,directory,no,
+gtdb,R06-RS202,2021-04,archived,https://data.gtdb.aau.ecogenomic.org/releases/release202/,directory,no,
+gtdb,R07-RS207,2022-04,archived,https://data.gtdb.aau.ecogenomic.org/releases/release207/,directory,no,
+gtdb,R08-RS214,2023-04,archived,https://data.gtdb.aau.ecogenomic.org/releases/release214/,directory,no,
+gtdb,R09-RS220,2024-04,archived,https://data.gtdb.aau.ecogenomic.org/releases/release220/,directory,no,
+gtdb,R10-RS226,2025-04,archived,https://data.gtdb.aau.ecogenomic.org/releases/release226/,directory,yes,"732,475 genomes."
+gtdb,R11-RS232,2026-04-15,latest,https://data.gtdb.aau.ecogenomic.org/releases/release232/232.0/,directory,yes,"Latest; 901,341 genomes; also releases/latest/."
+kraken2,20200919,2020-09-19,archived,https://genome-idx.s3.amazonaws.com/kraken/k2_{collection}_20200919.tar.gz,pattern,yes,
+kraken2,20201202 / 20210127,2020–2021,archived,https://genome-idx.s3.amazonaws.com/kraken/k2_{collection}_{date}.tar.gz,pattern,yes,
+kraken2,20210517,2021-05-17,archived,https://genome-idx.s3.amazonaws.com/kraken/k2_{collection}_20210517.tar.gz,pattern,yes,
+kraken2,20220607,2022-06-07,archived,https://genome-idx.s3.amazonaws.com/kraken/k2_{collection}_20220607.tar.gz,pattern,yes,
+kraken2,20220908 / 20220926,2022-09,archived,https://genome-idx.s3.amazonaws.com/kraken/k2_{collection}_{date}.tar.gz,pattern,yes,
+kraken2,20221209,2022-12-09,archived,https://genome-idx.s3.amazonaws.com/kraken/k2_{collection}_20221209.tar.gz,pattern,yes,
+kraken2,20230314,2023-03-14,archived,https://genome-idx.s3.amazonaws.com/kraken/k2_{collection}_20230314.tar.gz,pattern,yes,
+kraken2,20230407,2023-04-07,archived,https://genome-idx.s3.amazonaws.com/kraken/k2_eupathdb48_20230407.tar.gz,file,yes,EuPathDB48 index.
+kraken2,20230502 / 20231129 / 20240530,2023–2024,retired,https://genome-idx.s3.amazonaws.com/kraken/k2_nt_{date}.tar.gz,pattern,yes,Full nt indexes; discontinued.
+kraken2,20230605,2023-06-05,archived,https://genome-idx.s3.amazonaws.com/kraken/k2_{collection}_20230605.tar.gz,pattern,yes,
+kraken2,20231009,2023-10-09,archived,https://genome-idx.s3.amazonaws.com/kraken/k2_{collection}_20231009.tar.gz,pattern,yes,
+kraken2,20240112,2024-01-12,archived,https://genome-idx.s3.amazonaws.com/kraken/k2_{collection}_20240112.tar.gz,pattern,yes,
+kraken2,20240605,2024-06-05,archived,https://genome-idx.s3.amazonaws.com/kraken/k2_{collection}_20240605.tar.gz,pattern,yes,
+kraken2,20240904,2024-09-04,archived,https://genome-idx.s3.amazonaws.com/kraken/k2_{collection}_20240904.tar.gz,pattern,yes,
+kraken2,20241109,2024-11-09,archived,https://genome-idx.s3.amazonaws.com/kraken/k2_{collection}_20241109.tar.gz,pattern,yes,GTDB r220.
+kraken2,20241228,2024-12-28,archived,https://genome-idx.s3.amazonaws.com/kraken/k2_{collection}_20241228.tar.gz,pattern,yes,
+kraken2,20250402,2025-04-02,archived,https://genome-idx.s3.amazonaws.com/kraken/k2_{collection}_20250402.tar.gz,pattern,yes,
+kraken2,20250609,2025-06-09,archived,https://genome-idx.s3.amazonaws.com/kraken/k2_gtdb_genome_reps_20250609.tar.gz,file,yes,GTDB r226 genome representatives.
+kraken2,20250714,2025-07-14,archived,https://genome-idx.s3.amazonaws.com/kraken/k2_{collection}_20250714.tar.gz,pattern,yes,
+kraken2,20251007,2025-10-07,archived,https://genome-idx.s3.amazonaws.com/kraken/k2_{collection}_20251007.tar.gz,pattern,yes,Pracken NCBI index.
+kraken2,20251015,2025-10-15,archived,https://genome-idx.s3.amazonaws.com/kraken/k2_core_nt_20251015.tar.gz,file,yes,core_nt index.
+kraken2,20260226,2026-02-26,archived,https://genome-idx.s3.amazonaws.com/kraken/k2_{collection}_20260226.tar.gz,pattern,yes,
+kraken2,20260626,2026-06-26,archived,https://genome-idx.s3.amazonaws.com/kraken/k2_{collection}_20260626.tar.gz,pattern,yes,
+kraken2,20261022,2026-10-22,latest,https://genome-idx.s3.amazonaws.com/kraken/k2_standard_20261022.tar.gz,file,yes,"Latest; collections Standard, PlusPF, PlusPFP, Viral, MinusB."
+unite,"7.0, 7.1, 7.2",2017,archived,https://unite.ut.ee/repository.php,portal,no,DOIs via PlutoF.
+unite,8.0,2018,archived,https://unite.ut.ee/repository.php,portal,no,DOIs via PlutoF.
+unite,8.2,2020,archived,https://unite.ut.ee/repository.php,portal,no,DOIs via PlutoF.
+unite,8.3,2021,archived,https://unite.ut.ee/repository.php,portal,no,DOIs via PlutoF.
+unite,9.0,2022–2023,archived,https://unite.ut.ee/repository.php,portal,no,DOIs via PlutoF.
+unite,10.0,2025-02-19,latest,https://unite.ut.ee/repository.php,portal,yes,Latest; one tgz with all three clusterings; some sources give 2024.
+greengenes,Greengenes 13_5 / 13_8,2013,retired,,none,no,Retired; available through QIIME.
+greengenes,Greengenes2 2022.10,2022-10,archived,https://ftp.microbio.me/greengenes_release/2022.10/,directory,no,
+greengenes,Greengenes2 2024.09,2024-09,latest,https://ftp.microbio.me/greengenes_release/2024.09/,directory,yes,Latest release.
+metaphlan,mpa_v20_m200,,archived,,none,no,MetaPhlAn 2 database.
+metaphlan,mpa_v30,2019,archived,,none,no,MetaPhlAn 3; ChocoPhlAn 201901.
+metaphlan,mpa_v31,,archived,,none,no,MetaPhlAn 3.1.
+metaphlan,mpa_vJan21,2021-01,archived,,none,no,
+metaphlan,mpa_vOct22_CHOCOPhlAnSGB_202212,2022,archived,http://cmprod1.cibio.unitn.it/biobakery4/metaphlan_databases/,directory,no,MetaPhlAn 4.0; metaphlan --install --index <name>.
+metaphlan,mpa_vJun23_CHOCOPhlAnSGB_202307,2023,archived,http://cmprod1.cibio.unitn.it/biobakery4/metaphlan_databases/,directory,no,MetaPhlAn 4.1; metaphlan --install --index <name>.
+metaphlan,mpa_vJan25_CHOCOPhlAnSGB_202503,2025,latest,http://cmprod1.cibio.unitn.it/biobakery4/metaphlan_databases/,directory,no,MetaPhlAn 4.2; newest index; metaphlan --install --index <name>.
+proteingym,v0.1,2022,archived,https://huggingface.co/datasets/ICML2022/ProteinGym,portal,no,Original release; Hugging Face mirror.
+proteingym,v1.0,,archived,https://doi.org/10.5281/zenodo.13932633,portal,yes,Zenodo record.
+proteingym,v1.1,,archived,https://doi.org/10.5281/zenodo.13936340,portal,yes,Zenodo record.
+proteingym,v1.2,,archived,https://doi.org/10.5281/zenodo.14997691,portal,yes,Zenodo record.
+proteingym,v1.3,,latest,https://doi.org/10.5281/zenodo.15293562,portal,yes,Latest release (Zenodo).
+casp,CASP1–CASP15,1994–2022,archived,https://predictioncenter.org/download_area/CASP{N}/,pattern,no,Biennial rounds.
+casp,CASP16,2024,archived,https://predictioncenter.org/casp16/,portal,yes,
+casp,CASP17,2026,latest,https://predictioncenter.org/download_area/CASP17/,directory,yes,Prediction season finished; conference in December 2026.
+cafa,CAFA1,2010–2011,archived,https://www.biofunctionprediction.org/cafa/,portal,no,
+cafa,CAFA2,2013–2014,archived,https://www.biofunctionprediction.org/cafa/,portal,no,
+cafa,CAFA3,2016–2017,archived,https://www.biofunctionprediction.org/cafa/,portal,no,
+cafa,CAFA4,2019–2020,archived,https://www.biofunctionprediction.org/cafa/,portal,no,
+cafa,CAFA5,2023,archived,https://www.kaggle.com/competitions/cafa-5-protein-function-prediction,portal,no,Kaggle competition.
+cafa,CAFA6,2025-10,latest,https://www.kaggle.com/competitions/cafa-6-protein-function-prediction,portal,yes,Kaggle competition; final evaluation c. May 2026.

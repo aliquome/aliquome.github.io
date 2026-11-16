@@ -3,9 +3,9 @@
     {
       "id": "tape",
       "name": "TAPE",
-      "desc": "بنچمارک یادگیری بازنمایی پروتئین (Pfam، ساختار ثانویه، Remote homology، Fluorescence، Stability)",
+      "description": "Protein representation-learning benchmark with five tasks: Pfam, secondary structure, remote homology, fluorescence and stability.",
       "field": "proteins",
-      "category": "پروتئین: توالی، ساختار و عملکرد",
+      "category": "Proteins: sequence, structure and function",
       "stars": 746,
       "repo": "https://github.com/songlab-cal/tape",
       "links": [
@@ -34,14 +34,17 @@
           "url": "http://s3.amazonaws.com/songlabdata/proteindata/data_pytorch/proteinnet.tar.gz"
         }
       ],
-      "access": "pfam · secondary_structure · remote_homology · fluorescence · stability · proteinnet"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "proteingym",
       "name": "ProteinGym",
-      "desc": "(آخرین نسخه v1.3): بنچمارک پیش‌بینی اثر واریانت‌ها (DMS)",
+      "description": "Benchmark of deep mutational scanning (DMS) assays for predicting the fitness effects of protein variants; latest release v1.3.",
       "field": "proteins",
-      "category": "پروتئین: توالی، ساختار و عملکرد",
+      "category": "Proteins: sequence, structure and function",
       "stars": 488,
       "repo": "https://github.com/OATML-Markslab/ProteinGym",
       "links": [
@@ -54,25 +57,31 @@
           "url": "https://doi.org/10.5281/zenodo.15293562"
         }
       ],
-      "access": "Hugging Face · Zenodo"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "sidechainnet",
       "name": "SidechainNet",
-      "desc": "ساختار تمام‌اتمی پروتئین برای ML",
+      "description": "All-atom protein structures, including side chains, extending ProteinNet for machine learning.",
       "field": "proteins",
-      "category": "پروتئین: توالی، ساختار و عملکرد",
+      "category": "Proteins: sequence, structure and function",
       "stars": 365,
       "repo": "https://github.com/jonathanking/sidechainnet",
       "links": [],
-      "access": "`pip install sidechainnet` ← `scn.load(casp_version=12, casp_thinning=30)`"
+      "access": "pip install sidechainnet, then scn.load(casp_version=12, casp_thinning=30)",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "foldbench",
       "name": "FoldBench",
-      "desc": "بنچمارک کم‌همولوژی پروتئین، اسید نوکلئیک و لیگاند",
+      "description": "Low-homology benchmark for structure prediction of proteins, nucleic acids and ligands.",
       "field": "proteins",
-      "category": "پروتئین: توالی، ساختار و عملکرد",
+      "category": "Proteins: sequence, structure and function",
       "stars": 160,
       "repo": "https://github.com/BEAM-Labs/FoldBench",
       "links": [
@@ -81,14 +90,17 @@
           "url": "https://drive.google.com/file/d/17KdWDXKATaeHF6inPxhPHIRuIzeqiJxS/view?usp=sharing"
         }
       ],
-      "access": "Google Drive"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "flip",
       "name": "FLIP",
-      "desc": "بنچمارک fitness landscape پروتئین",
+      "description": "Benchmark of protein fitness landscapes with curated train/test splits for fitness prediction.",
       "field": "proteins",
-      "category": "پروتئین: توالی، ساختار و عملکرد",
+      "category": "Proteins: sequence, structure and function",
       "stars": 145,
       "repo": "https://github.com/J-SNACKKB/FLIP",
       "links": [
@@ -101,30 +113,36 @@
           "url": "https://doi.org/10.5281/zenodo.18433203"
         }
       ],
-      "access": "flip.protein.properties · Zenodo"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "proteinshake",
       "name": "ProteinShake",
-      "desc": "دیتاست‌های ساختار پروتئین برای ML",
+      "description": "Ready-to-use protein structure datasets and tasks for machine learning.",
       "field": "proteins",
-      "category": "پروتئین: توالی، ساختار و عملکرد",
+      "category": "Proteins: sequence, structure and function",
       "stars": 116,
       "repo": "https://github.com/BorgwardtLab/proteinshake",
       "links": [
         {
-          "label": "مستندات",
+          "label": "Docs",
           "url": "https://proteinshake.readthedocs.io/en/latest/notebooks/dataset.html"
         }
       ],
-      "access": "`pip install proteinshake` (مستندات)"
+      "access": "pip install proteinshake",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "cpsea",
       "name": "CPSea",
-      "desc": "کمپلکس‌های پپتید حلقوی–پروتئین (از AFDB)",
+      "description": "Cyclic peptide–protein complexes derived from the AlphaFold Database (AFDB).",
       "field": "proteins",
-      "category": "پروتئین: توالی، ساختار و عملکرد",
+      "category": "Proteins: sequence, structure and function",
       "stars": 72,
       "repo": "https://github.com/YZY010418/CPSea",
       "links": [
@@ -137,14 +155,17 @@
           "url": "https://www.kaggle.com/datasets/ziyiyang180104/cpsea"
         }
       ],
-      "access": "Zenodo · Kaggle"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "prop3d",
       "name": "Prop3D",
-      "desc": "ساختار سه‌بعدی همراه با ویژگی‌های بیوفیزیکی",
+      "description": "3D protein structures paired with biophysical properties for structure-based learning.",
       "field": "proteins",
-      "category": "پروتئین: توالی، ساختار و عملکرد",
+      "category": "Proteins: sequence, structure and function",
       "stars": 40,
       "repo": "https://github.com/bouralab/Prop3D",
       "links": [
@@ -153,36 +174,45 @@
           "url": "https://zenodo.org/record/6873024/files/Prop3D-20.h5"
         }
       ],
-      "access": "Prop3D-20.h5"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "cbh21-protein-solubility",
       "name": "CBH21 Protein Solubility",
-      "desc": "حلالیت پروتئین",
+      "description": "Protein solubility dataset from the CBH21 challenge.",
       "field": "proteins",
-      "category": "پروتئین: توالی، ساختار و عملکرد",
+      "category": "Proteins: sequence, structure and function",
       "stars": 24,
       "repo": "https://github.com/ProteinQure/cbh21-protein-solubility-challenge",
       "links": [],
-      "access": "داخل ریپو (`git clone`)"
+      "access": "Included in the repository (git clone)",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "ps4",
       "name": "PS4",
-      "desc": "بزرگ‌ترین دیتاست باز ساختار ثانویه از تک‌توالی",
+      "description": "Largest open dataset for predicting protein secondary structure from single sequences.",
       "field": "proteins",
-      "category": "پروتئین: توالی، ساختار و عملکرد",
+      "category": "Proteins: sequence, structure and function",
       "stars": 15,
       "repo": "https://github.com/omarperacha/ps4-dataset",
       "links": [],
-      "access": "داخل ریپو (`git clone --recursive`)"
+      "access": "Included in the repository (git clone --recursive)",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "cb513",
       "name": "CB513",
-      "desc": "ساختار ثانویه‌ی پروتئین",
+      "description": "Classic benchmark set for protein secondary-structure prediction.",
       "field": "proteins",
-      "category": "پروتئین: توالی، ساختار و عملکرد",
+      "category": "Proteins: sequence, structure and function",
       "stars": 12,
       "repo": "https://github.com/taneishi/CB513_dataset",
       "links": [
@@ -191,25 +221,31 @@
           "url": "http://www.princeton.edu/~jzthree/datasets/ICML2014/"
         }
       ],
-      "access": "Princeton ICML2014"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "proteinconformers",
       "name": "ProteinConformers",
-      "desc": "بنچمارک conformational landscape",
+      "description": "Benchmark of protein conformational landscapes for evaluating ensemble generation.",
       "field": "proteins",
-      "category": "پروتئین: توالی، ساختار و عملکرد",
+      "category": "Proteins: sequence, structure and function",
       "stars": 12,
       "repo": "https://github.com/auroua/ProteinConformers",
       "links": [],
-      "access": "داخل ریپو / طبق README"
+      "access": "Included in the repository; see README",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "opi",
       "name": "OPI",
-      "desc": "Open Protein Instructions (دیتاست instruction برای LLM)",
+      "description": "Open Protein Instructions: an instruction-tuning dataset for protein-focused large language models.",
       "field": "proteins",
-      "category": "پروتئین: توالی، ساختار و عملکرد",
+      "category": "Proteins: sequence, structure and function",
       "stars": 11,
       "repo": "https://github.com/ocx-lab/opi",
       "links": [
@@ -218,25 +254,31 @@
           "url": "https://huggingface.co/datasets/BAAI/OPI"
         }
       ],
-      "access": "Hugging Face BAAI/OPI"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "mhc-peptides",
       "name": "MHC peptides",
-      "desc": "۸۶ هزار پپتید و میزان اتصال به MHC",
+      "description": "About 86,000 peptides with measured MHC binding affinities.",
       "field": "proteins",
-      "category": "پروتئین: توالی، ساختار و عملکرد",
+      "category": "Proteins: sequence, structure and function",
       "stars": 4,
       "repo": "https://github.com/ditekunov/mhc-peptides-dataset",
       "links": [],
-      "access": "داخل ریپو"
+      "access": "Included in the repository",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "mplid",
       "name": "MPLID",
-      "desc": "برهم‌کنش پروتئین غشایی–لیپید",
+      "description": "Dataset of membrane protein–lipid interactions.",
       "field": "proteins",
-      "category": "پروتئین: توالی، ساختار و عملکرد",
+      "category": "Proteins: sequence, structure and function",
       "stars": 2,
       "repo": "https://github.com/omagebright/MPLID",
       "links": [
@@ -245,36 +287,45 @@
           "url": "https://doi.org/10.5281/zenodo.18487584"
         }
       ],
-      "access": "Zenodo"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "peer",
       "name": "PEER",
-      "desc": "بنچمارک ۱۷ وظیفه‌ای (عملکرد، مکان‌یابی، ساختار، PPI، پروتئین–لیگاند)",
+      "description": "Protein understanding benchmark with 17 tasks covering function, localization, structure, PPI and protein–ligand interaction.",
       "field": "proteins",
-      "category": "پروتئین: توالی، ساختار و عملکرد",
+      "category": "Proteins: sequence, structure and function",
       "stars": null,
       "repo": "https://github.com/DeepGraphLearning/PEER_Benchmark",
       "links": [],
-      "access": "طبق README (بر پایه‌ی TorchDrug)"
+      "access": "See README (built on TorchDrug)",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "proteinnet",
       "name": "ProteinNet",
-      "desc": "split استاندارد بر اساس CASP7 تا CASP12",
+      "description": "Standardized protein structure dataset with splits based on CASP7 to CASP12.",
       "field": "proteins",
-      "category": "پروتئین: توالی، ساختار و عملکرد",
+      "category": "Proteins: sequence, structure and function",
       "stars": null,
       "repo": "https://github.com/aqlaboratory/proteinnet",
       "links": [],
-      "access": "طبق README"
+      "access": "See README",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "mol-instructions",
       "name": "Mol-Instructions",
-      "desc": "دیتاست instruction برای مولکول، پروتئین و متن زیستی",
+      "description": "Instruction dataset spanning molecules, proteins and biomolecular text for training language models.",
       "field": "proteins",
-      "category": "پروتئین: توالی، ساختار و عملکرد",
+      "category": "Proteins: sequence, structure and function",
       "stars": null,
       "repo": "https://github.com/zjunlp/Mol-Instructions",
       "links": [
@@ -283,14 +334,17 @@
           "url": "https://huggingface.co/datasets/zjunlp/Mol-Instructions"
         }
       ],
-      "access": "`load_dataset(\"zjunlp/Mol-Instructions\", \"Protein-oriented Instructions\")` · Hugging Face"
+      "access": "load_dataset(\"zjunlp/Mol-Instructions\", \"Protein-oriented Instructions\")",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "tdc-therapeutics-data-commons",
       "name": "TDC (Therapeutics Data Commons)",
-      "desc": "بیش از ۶۰ دیتاست ADMET، DTI، تولید مولکول و...",
+      "description": "Collection of more than 60 datasets for ADMET, drug–target interaction, molecule generation and other therapeutic tasks.",
       "field": "chemistry",
-      "category": "پروتئین–لیگاند و کشف دارو",
+      "category": "Protein–ligand and drug discovery",
       "stars": 1301,
       "repo": "https://github.com/mims-harvard/TDC",
       "links": [
@@ -303,25 +357,31 @@
           "url": "https://tdcommons.ai"
         }
       ],
-      "access": "`pip install PyTDC` ← `from tdc.single_pred import ADME; ADME(name='Caco2_Wang')` · Harvard Dataverse · tdcommons.ai"
+      "access": "pip install PyTDC, then from tdc.single_pred import ADME; ADME(name='Caco2_Wang')",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "deeppurpose-datasets",
       "name": "DeepPurpose datasets",
-      "desc": "DAVIS، KIBA، BindingDB و داده‌های ضدویروسی",
+      "description": "Drug–target interaction datasets including DAVIS, KIBA, BindingDB and antiviral data.",
       "field": "chemistry",
-      "category": "پروتئین–لیگاند و کشف دارو",
+      "category": "Protein–ligand and drug discovery",
       "stars": 1203,
       "repo": "https://github.com/kexinhuang12345/DeepPurpose",
       "links": [],
-      "access": "`pip install DeepPurpose` ← `from DeepPurpose import dataset; dataset.load_process_DAVIS('./data')`"
+      "access": "pip install DeepPurpose, then from DeepPurpose import dataset; dataset.load_process_DAVIS('./data')",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "plinder",
       "name": "PLINDER",
-      "desc": "برهم‌کنش پروتئین–لیگاند",
+      "description": "Large curated dataset of protein–ligand interactions with leakage-aware splits for training and evaluation.",
       "field": "chemistry",
-      "category": "پروتئین–لیگاند و کشف دارو",
+      "category": "Protein–ligand and drug discovery",
       "stars": 320,
       "repo": "https://github.com/plinder-org/plinder",
       "links": [
@@ -330,14 +390,17 @@
           "url": "https://cameo3d.org/plinder/PLINDER-2026-09/"
         }
       ],
-      "access": "Cameo file server · `pip install plinder && plinder_download --release 2026-09`"
+      "access": "pip install plinder && plinder_download --release 2026-09",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "protein-ligand-benchmark-openff",
       "name": "Protein-Ligand Benchmark (OpenFF)",
-      "desc": "محاسبات انرژی آزاد",
+      "description": "Curated benchmark of protein–ligand systems for free-energy calculations.",
       "field": "chemistry",
-      "category": "پروتئین–لیگاند و کشف دارو",
+      "category": "Protein–ligand and drug discovery",
       "stars": 247,
       "repo": "https://github.com/openforcefield/protein-ligand-benchmark",
       "links": [
@@ -346,14 +409,17 @@
           "url": "https://doi.org/10.5281/zenodo.4813735"
         }
       ],
-      "access": "Zenodo"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "fs-mol",
       "name": "FS-Mol",
-      "desc": "یادگیری few-shot روی مولکول‌ها",
+      "description": "Few-shot learning benchmark for molecular property prediction.",
       "field": "chemistry",
-      "category": "پروتئین–لیگاند و کشف دارو",
+      "category": "Protein–ligand and drug discovery",
       "stars": 177,
       "repo": "https://github.com/microsoft/FS-Mol",
       "links": [
@@ -362,14 +428,17 @@
           "url": "https://figshare.com/projects/FS-Mol_Dataset_and_Models/125797"
         }
       ],
-      "access": "Figshare"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "runs-n-poses",
       "name": "Runs N' Poses",
-      "desc": "بنچمارک co-folding پروتئین–لیگاند",
+      "description": "Benchmark for protein–ligand co-folding methods.",
       "field": "chemistry",
-      "category": "پروتئین–لیگاند و کشف دارو",
+      "category": "Protein–ligand and drug discovery",
       "stars": 95,
       "repo": "https://github.com/plinder-org/runs-n-poses",
       "links": [
@@ -382,14 +451,17 @@
           "url": "https://polarishub.io/datasets/plinder-org/runs-n-poses-dataset"
         }
       ],
-      "access": "Zenodo · Polaris"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "hiqbind",
       "name": "HiQBind",
-      "desc": "کمپلکس‌های پروتئین–لیگاند با کیفیت بالا",
+      "description": "High-quality protein–ligand complexes with binding affinities.",
       "field": "chemistry",
-      "category": "پروتئین–لیگاند و کشف دارو",
+      "category": "Protein–ligand and drug discovery",
       "stars": 91,
       "repo": "https://github.com/THGLab/HiQBind",
       "links": [
@@ -398,14 +470,17 @@
           "url": "https://doi.org/10.6084/m9.figshare.27430305"
         }
       ],
-      "access": "Figshare"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "bigbind-bayesbind",
       "name": "BigBind / BayesBind",
-      "desc": "",
+      "description": "Large protein–ligand activity dataset (BigBind) with a companion virtual-screening benchmark (BayesBind).",
       "field": "chemistry",
-      "category": "پروتئین–لیگاند و کشف دارو",
+      "category": "Protein–ligand and drug discovery",
       "stars": 21,
       "repo": "https://github.com/molecularmodelinglab/bigbind",
       "links": [
@@ -414,14 +489,17 @@
           "url": "https://storage.googleapis.com/bigbind/BigBindV1.tar.bz2"
         }
       ],
-      "access": "BigBindV1 (لینک‌های V1.5 و BayesBind داخل README ریپو در زمان بررسی 404 دادند)"
+      "access": "BigBind V1.5 and BayesBind links in the repository README returned 404 when checked.",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "siu",
       "name": "SIU",
-      "desc": "یک میلیون برهم‌کنش ساختاری مولکول کوچک–پروتئین",
+      "description": "About one million structural small molecule–protein interactions.",
       "field": "chemistry",
-      "category": "پروتئین–لیگاند و کشف دارو",
+      "category": "Protein–ligand and drug discovery",
       "stars": 17,
       "repo": "https://github.com/bowen-gao/SIU",
       "links": [
@@ -430,36 +508,45 @@
           "url": "https://huggingface.co/datasets/bgao95/SIU"
         }
       ],
-      "access": "Hugging Face"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "protac-degradation",
       "name": "PROTAC degradation",
-      "desc": "داده‌های تخریب هدفمند پروتئین",
+      "description": "Targeted protein degradation data for predicting PROTAC activity.",
       "field": "chemistry",
-      "category": "پروتئین–لیگاند و کشف دارو",
+      "category": "Protein–ligand and drug discovery",
       "stars": 17,
       "repo": "https://github.com/AstraZeneca/Machine-Learning-for-Predicting-Targeted-Protein-Degradation",
       "links": [],
-      "access": "داخل ریپو"
+      "access": "Included in the repository",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "plumb",
       "name": "PLUMB",
-      "desc": "بنچمارک force field و انرژی آزاد",
+      "description": "Benchmark for force fields and binding free-energy calculations.",
       "field": "chemistry",
-      "category": "پروتئین–لیگاند و کشف دارو",
+      "category": "Protein–ligand and drug discovery",
       "stars": 12,
       "repo": "https://github.com/omsf/plumb",
       "links": [],
-      "access": "داخل ریپو (لینک Zenodo هنوز منتشر نشده)"
+      "access": "Included in the repository (Zenodo link not yet published)",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "guacamol",
       "name": "GuacaMol",
-      "desc": "بنچمارک طراحی مولکول (حدود ۱.۶ میلیون SMILES از ChEMBL 24 و ۲۵ وظیفه)",
+      "description": "Molecular design benchmark with about 1.6 million SMILES from ChEMBL 24 with 25 tasks.",
       "field": "chemistry",
-      "category": "پروتئین–لیگاند و کشف دارو",
+      "category": "Protein–ligand and drug discovery",
       "stars": null,
       "repo": "https://github.com/BenevolentAI/guacamol",
       "links": [
@@ -468,25 +555,31 @@
           "url": "https://figshare.com/projects/GuacaMol/56639"
         }
       ],
-      "access": "Figshare"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "moses",
       "name": "MOSES",
-      "desc": "بنچمارک تولید مولکول (حدود ۱.۹ میلیون SMILES از ZINC)",
+      "description": "Molecule generation benchmark with about 1.9 million SMILES from ZINC.",
       "field": "chemistry",
-      "category": "پروتئین–لیگاند و کشف دارو",
+      "category": "Protein–ligand and drug discovery",
       "stars": null,
       "repo": "https://github.com/molecularsets/moses",
       "links": [],
-      "access": "داخل ریپو / طبق README"
+      "access": "Included in the repository; see README",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "geom",
       "name": "GEOM",
-      "desc": "GEOM-Drugs و GEOM-QM9 (کانفورمرهای سه‌بعدی)",
+      "description": "3D conformer ensembles for drug-like molecules (GEOM-Drugs) and small molecules (GEOM-QM9).",
       "field": "chemistry",
-      "category": "پروتئین–لیگاند و کشف دارو",
+      "category": "Protein–ligand and drug discovery",
       "stars": null,
       "repo": "https://github.com/learningmatter-mit/geom",
       "links": [
@@ -495,14 +588,17 @@
           "url": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/JNGTDF"
         }
       ],
-      "access": "Harvard Dataverse"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "posebusters",
       "name": "PoseBusters",
-      "desc": "بنچمارک اعتبار poseهای پروتئین–لیگاند (V1: ۴۲۸، V2: ۳۰۸ کمپلکس)",
+      "description": "Benchmark for checking the physical validity of predicted protein–ligand poses (V1: 428, V2: 308 complexes).",
       "field": "chemistry",
-      "category": "پروتئین–لیگاند و کشف دارو",
+      "category": "Protein–ligand and drug discovery",
       "stars": null,
       "repo": "https://github.com/maabuu/posebusters",
       "links": [
@@ -511,25 +607,31 @@
           "url": "https://zenodo.org/records/8278563"
         }
       ],
-      "access": "`pip install posebusters` · Zenodo 8278563"
+      "access": "pip install posebusters",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "pmo-mol-opt",
       "name": "PMO / mol_opt",
-      "desc": "بنچمارک بهینه‌سازی مولکول (۲۳ وظیفه‌ی oracle)",
+      "description": "Practical molecular optimization benchmark with 23 oracle tasks.",
       "field": "chemistry",
-      "category": "پروتئین–لیگاند و کشف دارو",
+      "category": "Protein–ligand and drug discovery",
       "stars": null,
       "repo": "https://github.com/wenhao-gao/mol_opt",
       "links": [],
-      "access": "داخل ریپو"
+      "access": "Included in the repository",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "papyrus",
       "name": "Papyrus",
-      "desc": "حدود ۶۰ میلیون نقطه‌ی bioactivity",
+      "description": "About 60 million curated bioactivity data points for drug discovery modelling.",
       "field": "chemistry",
-      "category": "پروتئین–لیگاند و کشف دارو",
+      "category": "Protein–ligand and drug discovery",
       "stars": null,
       "repo": "https://github.com/OlivierBeq/Papyrus-scripts",
       "links": [
@@ -538,36 +640,45 @@
           "url": "https://zenodo.org/records/7377161"
         }
       ],
-      "access": "`pip install papyrus-scripts` ← `papyrus download -V latest` · Zenodo"
+      "access": "pip install papyrus-scripts, then papyrus download -V latest",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "polaris",
       "name": "Polaris",
-      "desc": "پلتفرم بنچمارک (شامل چالش ASAP Antiviral 2025)",
+      "description": "Benchmarking platform for drug discovery datasets, including the ASAP Antiviral 2025 challenge.",
       "field": "chemistry",
-      "category": "پروتئین–لیگاند و کشف دارو",
+      "category": "Protein–ligand and drug discovery",
       "stars": null,
       "repo": "https://github.com/polaris-hub/polaris",
       "links": [],
-      "access": "`pip install polaris-lib` ← `polaris login` ← `po.load_dataset(...)`"
+      "access": "pip install polaris-lib, then polaris login, then po.load_dataset(...)",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "tartarus",
       "name": "Tartarus",
-      "desc": "بنچمارک طراحی معکوس مولکول و مواد",
+      "description": "Benchmark for inverse design of molecules and materials.",
       "field": "chemistry",
-      "category": "پروتئین–لیگاند و کشف دارو",
+      "category": "Protein–ligand and drug discovery",
       "stars": null,
       "repo": "https://github.com/aspuru-guzik-group/Tartarus",
       "links": [],
-      "access": "داخل ریپو"
+      "access": "Included in the repository",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "dockstring",
       "name": "DOCKSTRING",
-      "desc": "بنچمارک داکینگ",
+      "description": "Docking-score benchmark for molecular property prediction and optimization.",
       "field": "chemistry",
-      "category": "پروتئین–لیگاند و کشف دارو",
+      "category": "Protein–ligand and drug discovery",
       "stars": null,
       "repo": "https://github.com/dockstring/dockstring",
       "links": [
@@ -576,74 +687,92 @@
           "url": "https://figshare.com/s/95f2fed733dec170b998"
         }
       ],
-      "access": "Figshare"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "marcel",
       "name": "MARCEL",
-      "desc": "بنچمارک مجموعه‌ی کانفورمرها (Drugs-75K، Kraken، BDE، EE)",
+      "description": "Benchmark for learning from conformer ensembles (Drugs-75K, Kraken, BDE, EE).",
       "field": "chemistry",
-      "category": "پروتئین–لیگاند و کشف دارو",
+      "category": "Protein–ligand and drug discovery",
       "stars": null,
       "repo": "https://github.com/SXKDZ/MARCEL",
       "links": [],
-      "access": "طبق README"
+      "access": "See README",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "moldata",
       "name": "MolData",
-      "desc": "۱۲۵۵ وظیفه‌ی bioassay",
+      "description": "Molecular benchmark of 1,255 bioassay tasks.",
       "field": "chemistry",
-      "category": "پروتئین–لیگاند و کشف دارو",
+      "category": "Protein–ligand and drug discovery",
       "stars": null,
       "repo": "https://github.com/LumosBio/MolData",
       "links": [],
-      "access": "داخل ریپو"
+      "access": "Included in the repository",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "posecheck",
       "name": "PoseCheck",
-      "desc": "ارزیابی poseهای تولیدشده",
+      "description": "Tool and benchmark for evaluating generated protein–ligand poses.",
       "field": "chemistry",
-      "category": "پروتئین–لیگاند و کشف دارو",
+      "category": "Protein–ligand and drug discovery",
       "stars": null,
       "repo": "https://github.com/cch1999/posecheck",
       "links": [],
-      "access": "طبق README"
+      "access": "See README",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "pinder",
       "name": "PINDER",
-      "desc": "Protein INteraction Dataset and Evaluation Resource",
+      "description": "Protein INteraction Dataset and Evaluation Resource for protein–protein docking and complex prediction.",
       "field": "proteins",
-      "category": "برهم‌کنش پروتئین–پروتئین (PPI)",
+      "category": "Protein–protein interaction",
       "stars": 160,
       "repo": "https://github.com/pinder-org/pinder",
       "links": [
         {
-          "label": "راهنما",
+          "label": "Guide",
           "url": "https://pinder-org.github.io/pinder/"
         }
       ],
-      "access": "`pip install pinder` (راهنما)"
+      "access": "pip install pinder",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "pipr-seq-ppi",
       "name": "PIPR / seq_ppi",
-      "desc": "PPI مبتنی بر توالی",
+      "description": "Sequence-based protein–protein interaction datasets.",
       "field": "proteins",
-      "category": "برهم‌کنش پروتئین–پروتئین (PPI)",
+      "category": "Protein–protein interaction",
       "stars": 116,
       "repo": "https://github.com/muhaochen/seq_ppi",
       "links": [],
-      "access": "داخل ریپو"
+      "access": "Included in the repository",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "ppiref",
       "name": "PPIRef",
-      "desc": "PPIهای سه‌بعدی",
+      "description": "Dataset of 3D protein–protein interactions.",
       "field": "proteins",
-      "category": "برهم‌کنش پروتئین–پروتئین (PPI)",
+      "category": "Protein–protein interaction",
       "stars": 110,
       "repo": "https://github.com/anton-bushuiev/PPIRef",
       "links": [
@@ -652,14 +781,17 @@
           "url": "https://doi.org/10.5281/zenodo.14845086"
         }
       ],
-      "access": "Zenodo"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "dips-plus",
       "name": "DIPS-Plus",
-      "desc": "ساختارهای پروتئینی برهم‌کنش‌کننده برای پیش‌بینی interface",
+      "description": "Interacting protein structures for predicting protein interfaces.",
       "field": "proteins",
-      "category": "برهم‌کنش پروتئین–پروتئین (PPI)",
+      "category": "Protein–protein interaction",
       "stars": 56,
       "repo": "https://github.com/BioinfoMachineLearning/DIPS-Plus",
       "links": [
@@ -672,30 +804,36 @@
           "url": "https://zenodo.org/record/8140981"
         }
       ],
-      "access": "Zenodo 5134732 · Zenodo 8140981"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "genomic-benchmarks",
       "name": "Genomic Benchmarks",
-      "desc": "طبقه‌بندی توالی‌های ژنومی",
+      "description": "Collection of genomic sequence classification datasets.",
       "field": "genomes",
-      "category": "ژنومیکس و DNA",
+      "category": "Genomics and DNA",
       "stars": 185,
       "repo": "https://github.com/ML-Bioinfo-CEITEC/genomic_benchmarks",
       "links": [
         {
-          "label": "پوشه‌ی datasets",
+          "label": "datasets folder",
           "url": "https://github.com/ML-Bioinfo-CEITEC/genomic_benchmarks/tree/main/datasets"
         }
       ],
-      "access": "`pip install genomic-benchmarks` · پوشه‌ی datasets"
+      "access": "pip install genomic-benchmarks",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "genomic-fm",
       "name": "Genomic-FM",
-      "desc": "دیتاست بزرگ برای بنچمارک مدل‌های پایه‌ی ژنومی",
+      "description": "Large dataset for benchmarking genomic foundation models.",
       "field": "genomes",
-      "category": "ژنومیکس و DNA",
+      "category": "Genomics and DNA",
       "stars": 33,
       "repo": "https://github.com/bowang-lab/genomic-FM",
       "links": [
@@ -704,85 +842,106 @@
           "url": "https://zenodo.org/records/11502840"
         }
       ],
-      "access": "Zenodo · `python download_data.py` (حدود ۳۰ گیگابایت)"
+      "access": "python download_data.py (about 30 GB)",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "afgr",
       "name": "AFGR",
-      "desc": "African Functional Genomics Resource",
+      "description": "African Functional Genomics Resource of genomic and expression data from African populations.",
       "field": "genomes",
-      "category": "ژنومیکس و DNA",
+      "category": "Genomics and DNA",
       "stars": 9,
       "repo": "https://github.com/smontgomlab/AFGR",
       "links": [
         {
-          "label": "نمونه",
+          "label": "Example",
           "url": "https://www.dropbox.com/sh/fikqu51rkxco2ra/AAAz9c-wnxuL_8BHxhzQUN7Ia?dl=0"
         }
       ],
-      "access": "لینک‌های Dropbox داخل README (نمونه)"
+      "access": "Dropbox links in the README",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "gue-gue",
       "name": "GUE / GUE+",
-      "desc": "(DNABERT-2): ۲۸ دیتاست در ۷ وظیفه و ۴ گونه",
+      "description": "Genome Understanding Evaluation from DNABERT-2: 28 datasets across 7 tasks and 4 species.",
       "field": "genomes",
-      "category": "ژنومیکس و DNA",
+      "category": "Genomics and DNA",
       "stars": null,
       "repo": "https://github.com/MAGICS-LAB/DNABERT_2",
       "links": [],
-      "access": "لینک Google Drive داخل README"
+      "access": "Google Drive link in the README",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "bend",
       "name": "BEND",
-      "desc": "۷ وظیفه (ژن، enhancer، دسترس‌پذیری کروماتین، متیلاسیون، اثر واریانت)",
+      "description": "DNA language model benchmark with 7 tasks: genes, enhancers, chromatin accessibility, methylation and variant effects.",
       "field": "genomes",
-      "category": "ژنومیکس و DNA",
+      "category": "Genomics and DNA",
       "stars": null,
       "repo": "https://github.com/frederikkemarin/BEND",
       "links": [],
-      "access": "لینک sid.erda.dk داخل README"
+      "access": "sid.erda.dk link in the README",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "dart-eval",
       "name": "DART-Eval",
-      "desc": "بنچمارک DNA تنظیمی در ۵ سطح",
+      "description": "Benchmark for regulatory DNA models across five levels of difficulty.",
       "field": "genomes",
-      "category": "ژنومیکس و DNA",
+      "category": "Genomics and DNA",
       "stars": null,
       "repo": "https://github.com/kundajelab/DART-Eval",
       "links": [],
-      "access": "Synapse/ENCODE طبق README"
+      "access": "Synapse/ENCODE; see README",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "basenji2-enformer-borzoi",
       "name": "Basenji2 / Enformer / Borzoi",
-      "desc": "داده‌ی آموزش مدل‌های توالی",
+      "description": "Training data for sequence-to-function models predicting genomic tracks.",
       "field": "genomes",
-      "category": "ژنومیکس و DNA",
+      "category": "Genomics and DNA",
       "stars": null,
       "repo": "https://github.com/calico/basenji",
       "links": [],
-      "access": "`gs://basenji_barnyard/data` (requester-pays) · Borzoi: `gs://borzoi-paper`"
+      "access": "gs://basenji_barnyard/data (requester-pays); Borzoi: gs://borzoi-paper",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "grelu",
       "name": "gReLU",
-      "desc": "فریم‌ورک و model zoo مدل‌های توالی",
+      "description": "Framework and model zoo for DNA sequence models.",
       "field": "genomes",
-      "category": "ژنومیکس و DNA",
+      "category": "Genomics and DNA",
       "stars": null,
       "repo": "https://github.com/Genentech/gReLU",
       "links": [],
-      "access": "`pip install gReLU` (داده در W&B artifacts)"
+      "access": "pip install gReLU (data in W&B artifacts)",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "open-problems-in-single-cell",
       "name": "Open Problems in Single-Cell",
-      "desc": "دیتاست‌های بنچمارک",
+      "description": "Benchmark datasets and tasks for single-cell analysis methods.",
       "field": "expression",
-      "category": "تک‌سلولی (Single-cell) و ترانسکریپتومیکس فضایی",
+      "category": "Single-cell and spatial transcriptomics",
       "stars": 443,
       "repo": "https://github.com/openproblems-bio/openproblems",
       "links": [
@@ -791,14 +950,17 @@
           "url": "https://openproblems.bio/datasets"
         }
       ],
-      "access": "openproblems.bio/datasets"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "tabula-muris",
       "name": "Tabula Muris",
-      "desc": "اطلس تک‌سلولی موش",
+      "description": "Single-cell transcriptomic atlas of the mouse across organs (FACS and droplet).",
       "field": "expression",
-      "category": "تک‌سلولی (Single-cell) و ترانسکریپتومیکس فضایی",
+      "category": "Single-cell and spatial transcriptomics",
       "stars": 203,
       "repo": "https://github.com/czbiohub-sf/tabula-muris",
       "links": [
@@ -811,14 +973,17 @@
           "url": "https://figshare.com/articles/Single-cell_RNA-seq_data_from_microfluidic_emulsion/5715025"
         }
       ],
-      "access": "Figshare FACS · Figshare droplet"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "sc-pert",
       "name": "sc-pert",
-      "desc": "دیتاست‌های perturbation تک‌سلولی (Norman، Dixit، Frangieh، McFarland و...)",
+      "description": "Single-cell perturbation datasets (Norman, Dixit, Frangieh, McFarland and others).",
       "field": "expression",
-      "category": "تک‌سلولی (Single-cell) و ترانسکریپتومیکس فضایی",
+      "category": "Single-cell and spatial transcriptomics",
       "stars": 186,
       "repo": "https://github.com/theislab/sc-pert",
       "links": [
@@ -827,25 +992,31 @@
           "url": "https://github.com/theislab/sc-pert/tree/main/datasets"
         }
       ],
-      "access": "نوت‌بوک‌های دانلود در datasets/"
+      "access": "Download notebooks in datasets/",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "lung-adenocarcinoma-single-cell",
       "name": "Lung adenocarcinoma single-cell",
-      "desc": "",
+      "description": "Single-cell RNA-seq data of lung adenocarcinoma.",
       "field": "expression",
-      "category": "تک‌سلولی (Single-cell) و ترانسکریپتومیکس فضایی",
+      "category": "Single-cell and spatial transcriptomics",
       "stars": 155,
       "repo": "https://github.com/czbiohub-sf/scell_lung_adenocarcinoma",
       "links": [],
-      "access": "طبق README"
+      "access": "See README",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "cellxgene-census",
       "name": "CELLxGENE Census",
-      "desc": "ده‌ها میلیون سلول انسان و موش",
+      "description": "Tens of millions of human and mouse single cells with harmonized metadata, accessible through an API.",
       "field": "expression",
-      "category": "تک‌سلولی (Single-cell) و ترانسکریپتومیکس فضایی",
+      "category": "Single-cell and spatial transcriptomics",
       "stars": 130,
       "repo": "https://github.com/chanzuckerberg/cellxgene-census",
       "links": [
@@ -854,25 +1025,31 @@
           "url": "https://cellxgene.cziscience.com/"
         }
       ],
-      "access": "`pip install cellxgene-census` · cellxgene.cziscience.com (کد نمونه در DATABASES.md)"
+      "access": "pip install cellxgene-census (example code in DATABASES.md)",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
-      "id": "covid-19-scrna-seq-immune-repertoire",
-      "name": "COVID-19 scRNA-seq و immune repertoire",
-      "desc": "فهرست دیتاست‌ها",
+      "id": "covid-19-scrna-seq-and-immune-repertoire",
+      "name": "COVID-19 scRNA-seq and immune repertoire",
+      "description": "Curated list of COVID-19 single-cell and immune repertoire datasets.",
       "field": "expression",
-      "category": "تک‌سلولی (Single-cell) و ترانسکریپتومیکس فضایی",
+      "category": "Single-cell and spatial transcriptomics",
       "stars": 46,
       "repo": "https://github.com/immunomind/covid19",
       "links": [],
-      "access": "لینک‌های GEO، SRA، Synapse و Mendeley داخل README"
+      "access": "GEO, SRA, Synapse and Mendeley links in the README",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "st-datasets",
       "name": "st_datasets",
-      "desc": "ترانسکریپتومیکس فضایی با annotation",
+      "description": "Annotated spatial transcriptomics datasets.",
       "field": "expression",
-      "category": "تک‌سلولی (Single-cell) و ترانسکریپتومیکس فضایی",
+      "category": "Single-cell and spatial transcriptomics",
       "stars": 14,
       "repo": "https://github.com/hannshu/st_datasets",
       "links": [
@@ -881,14 +1058,17 @@
           "url": "https://huggingface.co/datasets/han-shu/st_datasets"
         }
       ],
-      "access": "Hugging Face"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "tenxvisiumdata",
       "name": "TENxVisiumData",
-      "desc": "دیتاست‌های 10x Visium (پکیج Bioconductor)",
+      "description": "Bioconductor package of 10x Visium spatial transcriptomics datasets.",
       "field": "expression",
-      "category": "تک‌سلولی (Single-cell) و ترانسکریپتومیکس فضایی",
+      "category": "Single-cell and spatial transcriptomics",
       "stars": 8,
       "repo": "https://github.com/HelenaLC/TENxVisiumData",
       "links": [
@@ -897,78 +1077,96 @@
           "url": "https://support.10xgenomics.com/spatial-gene-expression/datasets"
         }
       ],
-      "access": "`BiocManager::install(\"TENxVisiumData\")` · 10x datasets"
+      "access": "BiocManager::install(\"TENxVisiumData\")",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "st-visium-datasets",
       "name": "st-visium-datasets",
-      "desc": "Visium به شکل Hugging Face datasets",
+      "description": "10x Visium data packaged as Hugging Face datasets.",
       "field": "expression",
-      "category": "تک‌سلولی (Single-cell) و ترانسکریپتومیکس فضایی",
+      "category": "Single-cell and spatial transcriptomics",
       "stars": 1,
       "repo": "https://github.com/obendidi/st-visium-datasets",
       "links": [],
-      "access": "`load_visium_dataset(\"human\")`"
+      "access": "load_visium_dataset(\"human\")",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "scgpt-corpus",
       "name": "scGPT corpus",
-      "desc": "پیش‌آموزش روی حدود ۳۳ میلیون سلول CELLxGENE",
+      "description": "Pretraining corpus of about 33 million cells from CELLxGENE used for scGPT.",
       "field": "expression",
-      "category": "تک‌سلولی (Single-cell) و ترانسکریپتومیکس فضایی",
+      "category": "Single-cell and spatial transcriptomics",
       "stars": null,
       "repo": "https://github.com/bowang-lab/scGPT",
       "links": [],
-      "access": "طبق README"
+      "access": "See README",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "cz-benchmarks",
       "name": "cz-benchmarks",
-      "desc": "بنچمارک مدل‌های virtual cell (CZI)",
+      "description": "CZI benchmark suite for virtual cell models.",
       "field": "expression",
-      "category": "تک‌سلولی (Single-cell) و ترانسکریپتومیکس فضایی",
+      "category": "Single-cell and spatial transcriptomics",
       "stars": null,
       "repo": "https://github.com/chanzuckerberg/cz-benchmarks",
       "links": [],
-      "access": "طبق README"
+      "access": "See README",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "ogb",
       "name": "OGB",
-      "desc": "شامل ogbn-proteins، ogbl-biokg، ogbl-ppa، ogbl-ddi، ogbg-molhiv",
+      "description": "Open Graph Benchmark, including ogbn-proteins, ogbl-biokg, ogbl-ppa, ogbl-ddi and ogbg-molhiv.",
       "field": "pathways",
-      "category": "گراف دانش و شبکه‌های زیستی",
+      "category": "Knowledge graphs and networks",
       "stars": 2103,
       "repo": "https://github.com/snap-stanford/ogb",
       "links": [],
-      "access": "`pip install ogb` ← `PygNodePropPredDataset(name='ogbn-proteins')` (دانلود خودکار)"
+      "access": "pip install ogb, then PygNodePropPredDataset(name='ogbn-proteins') (automatic download)",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "primekg",
       "name": "PrimeKG",
-      "desc": "گراف دانش پزشکی دقیق",
+      "description": "Precision medicine knowledge graph linking diseases, drugs, genes and phenotypes.",
       "field": "pathways",
-      "category": "گراف دانش و شبکه‌های زیستی",
+      "category": "Knowledge graphs and networks",
       "stars": 841,
       "repo": "https://github.com/mims-harvard/PrimeKG",
       "links": [
         {
-          "label": "kg.csv از Dataverse",
+          "label": "kg.csv (Dataverse)",
           "url": "https://dataverse.harvard.edu/api/access/datafile/6180620"
         },
         {
-          "label": "صفحه‌ی Dataverse",
+          "label": "Dataverse page",
           "url": "https://dataverse.harvard.edu/citation?persistentId=doi:10.7910/DVN/IYNGEV"
         }
       ],
-      "access": "kg.csv از Dataverse · صفحه‌ی Dataverse"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "drkg",
       "name": "DRKG",
-      "desc": "گراف دانش بازکاربرد دارو",
+      "description": "Drug repurposing knowledge graph of genes, compounds, diseases and their relations.",
       "field": "pathways",
-      "category": "گراف دانش و شبکه‌های زیستی",
+      "category": "Knowledge graphs and networks",
       "stars": 705,
       "repo": "https://github.com/gnn4dr/DRKG",
       "links": [
@@ -977,14 +1175,17 @@
           "url": "https://dgl-data.s3-us-west-2.amazonaws.com/dataset/DRKG/drkg.tar.gz"
         }
       ],
-      "access": "drkg.tar.gz"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "hetionet",
       "name": "Hetionet",
-      "desc": "شبکه‌ی ناهمگن ۴۷ هزار گره و ۲.۲ میلیون یال",
+      "description": "Heterogeneous biomedical network with 47,000 nodes and 2.2 million edges.",
       "field": "pathways",
-      "category": "گراف دانش و شبکه‌های زیستی",
+      "category": "Knowledge graphs and networks",
       "stars": 366,
       "repo": "https://github.com/hetio/hetionet",
       "links": [
@@ -993,25 +1194,31 @@
           "url": "https://github.com/hetio/hetionet/tree/main/hetnet"
         }
       ],
-      "access": "فایل‌های JSON/TSV/Neo4j در پوشه‌ی hetnet/"
+      "access": "JSON/TSV/Neo4j files in the hetnet/ folder",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "bionev",
       "name": "BioNEV",
-      "desc": "شبکه‌های زیست‌پزشکی برای graph embedding",
+      "description": "Biomedical networks for benchmarking graph embedding methods.",
       "field": "pathways",
-      "category": "گراف دانش و شبکه‌های زیستی",
+      "category": "Knowledge graphs and networks",
       "stars": 231,
       "repo": "https://github.com/xiangyue9607/BioNEV",
       "links": [],
-      "access": "داخل ریپو (پوشه‌ی data)"
+      "access": "Included in the repository (data folder)",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "crossbar",
       "name": "CROssBAR",
-      "desc": "گراف دانش یکپارچه‌ی زیست‌پزشکی",
+      "description": "Integrated biomedical knowledge graph built from multiple databases.",
       "field": "pathways",
-      "category": "گراف دانش و شبکه‌های زیستی",
+      "category": "Knowledge graphs and networks",
       "stars": 33,
       "repo": "https://github.com/cansyl/CROssBAR",
       "links": [
@@ -1020,14 +1227,17 @@
           "url": "https://www.ebi.ac.uk/Tools/crossbar/swagger-ui.html"
         }
       ],
-      "access": "CROssBAR API"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "cbioportal-datahub",
       "name": "cBioPortal DataHub",
-      "desc": "صدها مطالعه‌ی ژنومیکس سرطان (TCGA و غیره)",
+      "description": "Hundreds of cancer genomics studies, including TCGA, in cBioPortal format.",
       "field": "cancer",
-      "category": "سرطان و مولتی‌اومیکس بالینی",
+      "category": "Cancer and clinical multi-omics",
       "stars": 218,
       "repo": "https://github.com/cBioPortal/datahub",
       "links": [
@@ -1036,14 +1246,17 @@
           "url": "https://www.cbioportal.org/datasets"
         }
       ],
-      "access": "`git lfs install && git clone https://github.com/cBioPortal/datahub` · cbioportal.org/datasets"
+      "access": "git lfs install && git clone https://github.com/cBioPortal/datahub",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "cancer-data",
       "name": "cancer_data",
-      "desc": "دانلودر یکپارچه‌ی DepMap/CCLE، GTEx، TCGA",
+      "description": "Unified downloader for DepMap/CCLE, GTEx and TCGA data.",
       "field": "cancer",
-      "category": "سرطان و مولتی‌اومیکس بالینی",
+      "category": "Cancer and clinical multi-omics",
       "stars": 16,
       "repo": "https://github.com/kevinhu/cancer_data",
       "links": [
@@ -1056,36 +1269,45 @@
           "url": "https://gtexportal.org/home/datasets"
         }
       ],
-      "access": "DepMap · GTEx"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "tcga-brca-pam50",
       "name": "TCGA BRCA PAM50",
-      "desc": "",
+      "description": "TCGA breast cancer data with PAM50 subtype analysis.",
       "field": "cancer",
-      "category": "سرطان و مولتی‌اومیکس بالینی",
+      "category": "Cancer and clinical multi-omics",
       "stars": 3,
       "repo": "https://github.com/malbiruk/tcga-brca-pam50-analysis",
       "links": [],
-      "access": "طبق README (داده‌ی خام از GDC)"
+      "access": "See README (raw data from GDC)",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "oncology-trial-failures",
       "name": "Oncology trial failures",
-      "desc": "۲۳ هزار کارآزمایی بالینی متوقف‌شده",
+      "description": "About 23,000 terminated or halted oncology clinical trials.",
       "field": "cancer",
-      "category": "سرطان و مولتی‌اومیکس بالینی",
+      "category": "Cancer and clinical multi-omics",
       "stars": 1,
       "repo": "https://github.com/ThorfinnThor/oncology-trial-failures",
       "links": [],
-      "access": "داخل ریپو"
+      "access": "Included in the repository",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "grump",
       "name": "GRUMP",
-      "desc": "متابارکدینگ جهانی rRNA پلانکتون",
+      "description": "Global rRNA universal metabarcoding of plankton across ocean samples.",
       "field": "microbiome",
-      "category": "میکروبیوم و متاژنومیکس",
+      "category": "Microbiome and metagenomics",
       "stars": 11,
       "repo": "https://github.com/jcmcnch/Global-rRNA-Univeral-Metabarcoding-of-Plankton",
       "links": [
@@ -1098,14 +1320,17 @@
           "url": "https://simonscmap.com/catalog/datasets/GRUMP"
         }
       ],
-      "access": "OSF · Simons CMAP"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "full16s-sewage",
       "name": "Full16S sewage",
-      "desc": "توالی کامل 16S rRNA فاضلاب",
+      "description": "Full-length 16S rRNA sequences from wastewater with ASV counts and taxonomy.",
       "field": "microbiome",
-      "category": "میکروبیوم و متاژنومیکس",
+      "category": "Microbiome and metagenomics",
       "stars": 0,
       "repo": "https://github.com/loulanomics/Full16S_sewageDatabase",
       "links": [
@@ -1122,47 +1347,59 @@
           "url": "https://raw.githubusercontent.com/loulanomics/Full16S_sewageDatabase/main/Files/Wastewater_full16S_ASV_taxonomy.csv"
         }
       ],
-      "access": "ASV fasta · ASV counts · ASV taxonomy"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "ncrna-deep",
       "name": "ncRNA-deep",
-      "desc": "دیتاست‌های طبقه‌بندی RNAهای غیرکدکننده",
+      "description": "Classification datasets for non-coding RNAs.",
       "field": "rna",
       "category": "RNA",
       "stars": 16,
       "repo": "https://github.com/bioinformatics-sannio/ncrna-deep",
       "links": [],
-      "access": "داخل ریپو"
+      "access": "Included in the repository",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "sirna-data-grabber",
       "name": "siRNA data grabber",
-      "desc": "بیش از ۱۸ هزار رکورد کارایی knockdown از ۱۰ منبع",
+      "description": "More than 18,000 siRNA knockdown efficacy records from 10 sources.",
       "field": "rna",
       "category": "RNA",
       "stars": 13,
       "repo": "https://github.com/BrandonWalk/sirna-data-grabber",
       "links": [],
-      "access": "`pip install sirna-data-grabber` ← `load_records()`"
+      "access": "pip install sirna-data-grabber, then load_records()",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "lncrna-homologs",
       "name": "lncRNA homologs",
-      "desc": "",
+      "description": "Dataset of lncRNA homologs across species.",
       "field": "rna",
       "category": "RNA",
       "stars": 3,
       "repo": "https://github.com/bioinformatics-sannio/lncrna-homologs",
       "links": [],
-      "access": "داخل ریپو"
+      "access": "Included in the repository",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "bcss",
       "name": "BCSS",
-      "desc": "Breast Cancer Semantic Segmentation (TCGA)",
+      "description": "Breast Cancer Semantic Segmentation dataset of annotated TCGA histology regions.",
       "field": "cancer",
-      "category": "پاتولوژی و تصویربرداری زیستی",
+      "category": "Pathology and bioimaging",
       "stars": 190,
       "repo": "https://github.com/PathologyDataScience/BCSS",
       "links": [
@@ -1175,14 +1412,17 @@
           "url": "https://drive.google.com/drive/folders/1mSd3ZG1lnno_RuTHQXSU0GRAhtR21yIy?usp=sharing"
         }
       ],
-      "access": "Google Drive 1 · Google Drive 2"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "bsccm",
       "name": "BSCCM",
-      "desc": "Berkeley Single Cell Computational Microscopy",
+      "description": "Berkeley Single Cell Computational Microscopy dataset of multi-contrast white blood cell images.",
       "field": "cancer",
-      "category": "پاتولوژی و تصویربرداری زیستی",
+      "category": "Pathology and bioimaging",
       "stars": 22,
       "repo": "https://github.com/Waller-Lab/BSCCM",
       "links": [
@@ -1191,36 +1431,45 @@
           "url": "https://zenodo.org/doi/10.5281/zenodo.10392182"
         }
       ],
-      "access": "Zenodo"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "jump-cp-cpg0016",
       "name": "JUMP-CP (cpg0016)",
-      "desc": "Cell Painting برای حدود ۱۱۶ هزار ترکیب",
+      "description": "Cell Painting images and profiles for about 116,000 compounds and genetic perturbations.",
       "field": "cancer",
-      "category": "پاتولوژی و تصویربرداری زیستی",
+      "category": "Pathology and bioimaging",
       "stars": null,
       "repo": "https://github.com/jump-cellpainting/datasets",
       "links": [],
-      "access": "`aws s3 ls --no-sign-request s3://cellpainting-gallery/cpg0016-jump/`"
+      "access": "aws s3 ls --no-sign-request s3://cellpainting-gallery/cpg0016-jump/",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "imcs-21",
       "name": "IMCS-21",
-      "desc": "بنچمارک مشاوره‌ی پزشکی خودکار",
+      "description": "Benchmark for automated medical consultation dialogue.",
       "field": "benchmarks",
-      "category": "متن زیست‌پزشکی (NLP) و بنچمارک‌های کدنویسی",
+      "category": "Biomedical text and coding benchmarks",
       "stars": 73,
       "repo": "https://github.com/lemuria-wchen/imcs21",
       "links": [],
-      "access": "داخل ریپو"
+      "access": "Included in the repository",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "biocoder",
       "name": "BioCoder",
-      "desc": "بنچمارک تولید کد بیوانفورماتیک",
+      "description": "Benchmark for bioinformatics code generation.",
       "field": "benchmarks",
-      "category": "متن زیست‌پزشکی (NLP) و بنچمارک‌های کدنویسی",
+      "category": "Biomedical text and coding benchmarks",
       "stars": 59,
       "repo": "https://github.com/gersteinlab/BioCoder",
       "links": [
@@ -1229,58 +1478,73 @@
           "url": "https://huggingface.co/datasets/lilbillbiscuit/biocoder_public"
         }
       ],
-      "access": "Hugging Face"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "biotaskbench",
       "name": "bioTaskBench",
-      "desc": "بنچمارک وظایف بیوانفورماتیک",
+      "description": "Benchmark of bioinformatics tasks for evaluating AI agents.",
       "field": "benchmarks",
-      "category": "متن زیست‌پزشکی (NLP) و بنچمارک‌های کدنویسی",
+      "category": "Biomedical text and coding benchmarks",
       "stars": 16,
       "repo": "https://github.com/GPTomics/bioTaskBench",
       "links": [],
-      "access": "داخل ریپو"
+      "access": "Included in the repository",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "pancan-re",
       "name": "PanCan-RE",
-      "desc": "کورپوس روابط زیست‌پزشکی سرطان پانکراس",
+      "description": "Corpus of biomedical relations for pancreatic cancer.",
       "field": "benchmarks",
-      "category": "متن زیست‌پزشکی (NLP) و بنچمارک‌های کدنویسی",
+      "category": "Biomedical text and coding benchmarks",
       "stars": 0,
       "repo": "https://github.com/MHD-AI-DS/PanCan-RE",
       "links": [],
-      "access": "داخل ریپو"
+      "access": "Included in the repository",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "medqa",
       "name": "MedQA",
-      "desc": "سؤال‌های سبک USMLE",
+      "description": "USMLE-style medical exam questions for question answering.",
       "field": "benchmarks",
-      "category": "متن زیست‌پزشکی (NLP) و بنچمارک‌های کدنویسی",
+      "category": "Biomedical text and coding benchmarks",
       "stars": null,
       "repo": "https://github.com/jind11/MedQA",
       "links": [],
-      "access": "طبق README"
+      "access": "See README",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "bigbio",
       "name": "BigBio",
-      "desc": "بیش از ۱۲۶ دیتاست زیست‌پزشکی با schema یکسان",
+      "description": "More than 126 biomedical NLP datasets with unified schemas.",
       "field": "benchmarks",
-      "category": "متن زیست‌پزشکی (NLP) و بنچمارک‌های کدنویسی",
+      "category": "Biomedical text and coding benchmarks",
       "stars": null,
       "repo": "https://github.com/bigscience-workshop/biomedical",
       "links": [],
-      "access": "`load_dataset(\"bigbio/<name>\", name=\"<name>_bigbio_<schema>\")`"
+      "access": "load_dataset(\"bigbio/<name>\", name=\"<name>_bigbio_<schema>\")",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "lab-bench",
       "name": "LAB-Bench",
-      "desc": "حدود ۲۴۰۰ سؤال چندگزینه‌ای برای عامل‌های زیستی",
+      "description": "About 2,400 multiple-choice questions for evaluating biology research agents.",
       "field": "benchmarks",
-      "category": "متن زیست‌پزشکی (NLP) و بنچمارک‌های کدنویسی",
+      "category": "Biomedical text and coding benchmarks",
       "stars": null,
       "repo": "https://github.com/Future-House/LAB-Bench",
       "links": [
@@ -1289,25 +1553,31 @@
           "url": "https://huggingface.co/datasets/futurehouse/lab-bench"
         }
       ],
-      "access": "Hugging Face"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "bioprobench",
       "name": "BioProBench",
-      "desc": "درک پروتکل‌های آزمایشگاهی",
+      "description": "Benchmark for understanding and reasoning over laboratory protocols.",
       "field": "benchmarks",
-      "category": "متن زیست‌پزشکی (NLP) و بنچمارک‌های کدنویسی",
+      "category": "Biomedical text and coding benchmarks",
       "stars": null,
       "repo": "https://github.com/YuyangSunshine/bioprotocolbench",
       "links": [],
-      "access": "طبق README"
+      "access": "See README",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "casp",
       "name": "CASP",
-      "desc": "ارزیابی کور پیش‌بینی ساختار (دوسالانه) [latest=CASP17 (فصل پیش‌بینی تمام شد؛ کنفرانس دسامبر ۲۰۲۶)]",
+      "description": "Biennial blind assessment of protein structure prediction methods.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [
@@ -1316,14 +1586,17 @@
           "url": "https://predictioncenter.org/download_area/CASP17/"
         }
       ],
-      "access": "download_area/CASP17"
+      "access": "",
+      "license": "",
+      "versions": "latest: CASP17 (prediction season finished; conference December 2026)",
+      "paper_count": null
     },
     {
       "id": "cafa",
       "name": "CAFA",
-      "desc": "پیش‌بینی عملکرد پروتئین (GO) [latest=CAFA6 روی Kaggle (اکتبر ۲۰۲۵)]",
+      "description": "Critical assessment of protein function prediction using GO terms.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [
@@ -1332,14 +1605,17 @@
           "url": "https://www.biofunctionprediction.org/cafa/"
         }
       ],
-      "access": "`kaggle.com/competitions/cafa-6-protein-function-prediction` · biofunctionprediction.org"
+      "access": "kaggle.com/competitions/cafa-6-protein-function-prediction",
+      "license": "",
+      "versions": "latest: CAFA6 on Kaggle (October 2025)",
+      "paper_count": null
     },
     {
       "id": "cameo",
       "name": "CAMEO",
-      "desc": "ارزیابی کور هفتگی (3D، QE، لیگاند) [latest=پیوسته]",
+      "description": "Continuous weekly blind assessment of 3D structure, quality estimation and ligand prediction.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [
@@ -1348,47 +1624,59 @@
           "url": "https://cameo3d.org"
         }
       ],
-      "access": "cameo3d.org"
+      "access": "",
+      "license": "",
+      "versions": "latest: continuous",
+      "paper_count": null
     },
     {
       "id": "nucleotide-transformer-downstream-tasks-revised",
       "name": "Nucleotide Transformer downstream tasks (revised)",
-      "desc": "۱۸ وظیفه، حدود ۵۳۲ هزار ردیف (نسخه‌ی پیشنهادی به جای نسخه‌ی اصلی) [latest=revised]",
+      "description": "18 genomics tasks with about 532,000 rows; the revised version is recommended over the original.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [],
-      "access": "`load_dataset(\"InstaDeepAI/nucleotide_transformer_downstream_tasks_revised\")`"
+      "access": "load_dataset(\"InstaDeepAI/nucleotide_transformer_downstream_tasks_revised\")",
+      "license": "",
+      "versions": "latest: revised",
+      "paper_count": null
     },
     {
       "id": "genomics-long-range-benchmark-lrb",
       "name": "Genomics Long-Range Benchmark (LRB)",
-      "desc": "توالی تا حدود ۱۰۰ کیلوباز [latest=2024]",
+      "description": "Genomics benchmark with input sequences of up to about 100 kb.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [],
-      "access": "`load_dataset(\"InstaDeepAI/genomics-long-range-benchmark\", task_name=..., sequence_length=...)`"
+      "access": "load_dataset(\"InstaDeepAI/genomics-long-range-benchmark\", task_name=..., sequence_length=...)",
+      "license": "",
+      "versions": "latest: 2024",
+      "paper_count": null
     },
     {
       "id": "tahoe-100m",
       "name": "Tahoe-100M",
-      "desc": "بیش از ۱۰۰ میلیون سلول، ۵۰ رده‌ی سلولی، حدود ۱۱۰۰ اختلال دارویی [latest=فوریه‌ی ۲۰۲۵]",
+      "description": "More than 100 million single cells across 50 cell lines and about 1,100 drug perturbations.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [],
-      "access": "`load_dataset(\"tahoebio/Tahoe-100M\", streaming=True)`"
+      "access": "load_dataset(\"tahoebio/Tahoe-100M\", streaming=True)",
+      "license": "",
+      "versions": "latest: February 2025",
+      "paper_count": null
     },
     {
       "id": "virtual-cell-challenge",
       "name": "Virtual Cell Challenge",
-      "desc": "(Arc): ۲۰۲۵ با داده‌ی H1 hESC Perturb-seq (حدود ۳۰۰ هزار سلول). ۲۰۲۶ بدون داده‌ی آموزش (zero-shot روی ۶ رده‌ی سلولی) [latest=VCC 2026]",
+      "description": "Arc Institute challenge: 2025 used H1 hESC Perturb-seq (about 300,000 cells); 2026 is zero-shot across 6 cell lines with no training data.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [
@@ -1401,14 +1689,17 @@
           "url": "https://arcinstitute.org/news/virtual-cell-challenge-2026"
         }
       ],
-      "access": "Arc Virtual Cell Atlas · VCC 2026"
+      "access": "",
+      "license": "",
+      "versions": "latest: VCC 2026",
+      "paper_count": null
     },
     {
       "id": "scperturb",
       "name": "scPerturb",
-      "desc": "۴۴ دیتاست اختلال هماهنگ‌شده (h5ad) [latest=رکوردهای Zenodo]",
+      "description": "44 harmonized single-cell perturbation datasets in h5ad format.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [
@@ -1417,14 +1708,17 @@
           "url": "https://scperturb.org"
         }
       ],
-      "access": "scperturb.org"
+      "access": "",
+      "license": "",
+      "versions": "latest: Zenodo records",
+      "paper_count": null
     },
     {
       "id": "replogle-2022-state-replogle-filtered",
       "name": "Replogle 2022 (State-Replogle-Filtered)",
-      "desc": "CRISPRi روی K562 و RPE1 [latest=—]",
+      "description": "Genome-scale CRISPRi Perturb-seq data in K562 and RPE1 cells.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [
@@ -1433,14 +1727,17 @@
           "url": "https://huggingface.co/datasets/arcinstitute/State-Replogle-Filtered"
         }
       ],
-      "access": "HF arcinstitute/State-Replogle-Filtered"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "genecorpus-30m",
       "name": "Genecorpus-30M",
-      "desc": "(Geneformer) [latest=—]",
+      "description": "Pretraining corpus of about 30 million single-cell transcriptomes used for Geneformer.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [
@@ -1449,14 +1746,17 @@
           "url": "https://huggingface.co/datasets/ctheodoris/Genecorpus-30M"
         }
       ],
-      "access": "HF ctheodoris/Genecorpus-30M"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "moleculenet",
       "name": "MoleculeNet",
-      "desc": "QM7/8/9، ESOL، FreeSolv، Lipophilicity، PCBA، HIV، BACE، BBBP، Tox21، ToxCast، SIDER، ClinTox [latest=2018 (در DeepChem نگهداری می‌شود)]",
+      "description": "Molecular property benchmark: QM7/8/9, ESOL, FreeSolv, Lipophilicity, PCBA, HIV, BACE, BBBP, Tox21, ToxCast, SIDER and ClinTox.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [
@@ -1465,14 +1765,17 @@
           "url": "https://moleculenet.org"
         }
       ],
-      "access": "moleculenet.org · `deepchem.molnet.load_*`"
+      "access": "deepchem.molnet.load_*",
+      "license": "",
+      "versions": "latest: 2018 (maintained in DeepChem)",
+      "paper_count": null
     },
     {
       "id": "openadmet-expansionrx-blind-challenge",
       "name": "OpenADMET ExpansionRx Blind Challenge",
-      "desc": "بیش از ۷۰۰۰ مولکول، ۹ endpoint از ADMET [latest=۲۰۲۵–۲۶]",
+      "description": "Blind ADMET challenge with more than 7,000 molecules and 9 endpoints.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [
@@ -1481,14 +1784,17 @@
           "url": "https://huggingface.co/datasets/openadmet/openadmet-expansionrx-challenge-train-data"
         }
       ],
-      "access": "HF openadmet/openadmet-expansionrx-challenge-train-data"
+      "access": "",
+      "license": "",
+      "versions": "latest: 2025–2026",
+      "paper_count": null
     },
     {
-      "id": "asap-discovery-polaris-antiviral-2025",
+      "id": "asap-discovery-x-polaris-antiviral-2025",
       "name": "ASAP Discovery × Polaris Antiviral 2025",
-      "desc": "(ADMET، Potency، Ligand Poses) [latest=داده‌ی unblinded از نوامبر ۲۰۲۵]",
+      "description": "Antiviral challenge data for ADMET, potency and ligand pose prediction.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [
@@ -1497,14 +1803,17 @@
           "url": "https://polaris-hub.vercel.app/datasets/asap-discovery/antiviral-potency-2025-unblinded"
         }
       ],
-      "access": "دیتاست `asap-discovery/antiviral-potency-2025-unblinded` در Polaris"
+      "access": "Dataset asap-discovery/antiviral-potency-2025-unblinded on Polaris",
+      "license": "",
+      "versions": "latest: unblinded data since November 2025",
+      "paper_count": null
     },
     {
       "id": "lit-pcba",
       "name": "LIT-PCBA",
-      "desc": "۱۵ هدف از PubChem (گزارش‌هایی از نشت داده هست) [latest=2020]",
+      "description": "Virtual screening benchmark of 15 targets from PubChem; data leakage has been reported.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [
@@ -1513,14 +1822,17 @@
           "url": "https://drugdesign.unistra.fr/LIT-PCBA/"
         }
       ],
-      "access": "drugdesign.unistra.fr/LIT-PCBA"
+      "access": "",
+      "license": "",
+      "versions": "latest: 2020",
+      "paper_count": null
     },
     {
       "id": "pdbbind-casf-2016",
       "name": "PDBbind / CASF-2016",
-      "desc": "(۲۸۵ کمپلکس core set) [latest=v2020 آخرین نسخه‌ی رایگان]",
+      "description": "Protein–ligand binding affinity data; CASF-2016 core set of 285 complexes for scoring-function evaluation.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [
@@ -1529,14 +1841,17 @@
           "url": "https://www.pdbbind-plus.org.cn"
         }
       ],
-      "access": "pdbbind-plus.org.cn"
+      "access": "",
+      "license": "",
+      "versions": "latest: v2020 (last free release)",
+      "paper_count": null
     },
     {
-      "id": "dud-e",
-      "name": "DUD-E",
-      "desc": "(۱۰۲ هدف) و DEKOIS 2.0 (۸۱ هدف) [latest=2012]",
+      "id": "dud-e-and-dekois-2-0",
+      "name": "DUD-E and DEKOIS 2.0",
+      "description": "Virtual screening benchmarks with actives and decoys: DUD-E (102 targets) and DEKOIS 2.0 (81 targets).",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [
@@ -1549,25 +1864,31 @@
           "url": "http://www.dekois.com/"
         }
       ],
-      "access": "dude.docking.org · dekois.com"
+      "access": "",
+      "license": "",
+      "versions": "latest: 2012",
+      "paper_count": null
     },
     {
       "id": "belka",
       "name": "BELKA",
-      "desc": "(Leash Bio): حدود ۱۳۳ میلیون مولکول DEL [latest=Kaggle 2024]",
+      "description": "Leash Bio DNA-encoded library dataset of about 133 million molecules for binding prediction.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [],
-      "access": "`kaggle.com/competitions/leash-BELKA`"
+      "access": "kaggle.com/competitions/leash-BELKA",
+      "license": "",
+      "versions": "latest: Kaggle 2024",
+      "paper_count": null
     },
     {
       "id": "mdcath",
       "name": "mdCATH",
-      "desc": "۵۳۹۸ دامنه‌ی CATH، ۵ دما × ۵ تکرار (حدود ۳ ترابایت) [latest=2024]",
+      "description": "Molecular dynamics of 5,398 CATH domains at 5 temperatures with 5 replicas each (about 3 TB).",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [
@@ -1576,14 +1897,17 @@
           "url": "https://huggingface.co/datasets/compsciencelab/mdCATH"
         }
       ],
-      "access": "HF compsciencelab/mdCATH"
+      "access": "",
+      "license": "",
+      "versions": "latest: 2024",
+      "paper_count": null
     },
     {
       "id": "atlas-md",
       "name": "ATLAS MD",
-      "desc": "حدود ۱۳۹۰ زنجیره، ۳×۱۰۰ نانوثانیه [latest=2024]",
+      "description": "Molecular dynamics of about 1,390 protein chains, 3 × 100 ns each.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [
@@ -1592,14 +1916,17 @@
           "url": "https://www.dsimb.inserm.fr/ATLAS"
         }
       ],
-      "access": "dsimb.inserm.fr/ATLAS"
+      "access": "",
+      "license": "",
+      "versions": "latest: 2024",
+      "paper_count": null
     },
     {
-      "id": "sabdab",
-      "name": "SAbDab",
-      "desc": "و OAS [latest=SAbDab هفتگی]",
+      "id": "sabdab-and-oas",
+      "name": "SAbDab and OAS",
+      "description": "Structural antibody database (SAbDab) and Observed Antibody Space repertoire sequences (OAS).",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [
@@ -1612,14 +1939,17 @@
           "url": "https://opig.stats.ox.ac.uk/webapps/oas/"
         }
       ],
-      "access": "SAbDab · OAS"
+      "access": "",
+      "license": "",
+      "versions": "latest: SAbDab weekly",
+      "paper_count": null
     },
     {
       "id": "biolip2",
       "name": "BioLiP2",
-      "desc": "محل اتصال لیگاند–پروتئین (هفتگی) [latest=پیوسته]",
+      "description": "Weekly-updated database of biologically relevant ligand–protein binding sites.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [
@@ -1628,14 +1958,17 @@
           "url": "https://zhanggroup.org/BioLiP/"
         }
       ],
-      "access": "zhanggroup.org/BioLiP"
+      "access": "",
+      "license": "",
+      "versions": "latest: continuous",
+      "paper_count": null
     },
     {
       "id": "cagi",
       "name": "CAGI",
-      "desc": "تفسیر ژنوم (CAGI1 تا CAGI7) [latest=CAGI7 (۲۰۲۴–۲۵)]",
+      "description": "Critical Assessment of Genome Interpretation challenges (CAGI1 to CAGI7).",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [
@@ -1644,14 +1977,17 @@
           "url": "https://genomeinterpretation.org"
         }
       ],
-      "access": "genomeinterpretation.org"
+      "access": "",
+      "license": "",
+      "versions": "latest: CAGI7 (2024–2025)",
+      "paper_count": null
     },
     {
       "id": "dream-challenges",
       "name": "DREAM Challenges",
-      "desc": "(مثلاً Random Promoter DREAM 2022 با حدود ۶.۷ میلیون پروموتر) [latest=—]",
+      "description": "Crowdsourced biomedical challenges, e.g. Random Promoter DREAM 2022 with about 6.7 million promoters.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [
@@ -1660,25 +1996,31 @@
           "url": "https://dreamchallenges.org"
         }
       ],
-      "access": "dreamchallenges.org"
+      "access": "",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "deepsea-sei",
       "name": "DeepSEA / Sei",
-      "desc": "۹۱۹ ویژگی کروماتین (Sei: ۲۱٬۹۰۷) [latest=2015]",
+      "description": "Chromatin-profile prediction data: 919 features in DeepSEA and 21,907 in Sei.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [],
-      "access": "`deepsea_train_bundle.v0.9.tar.gz` (آدرس تأیید نشد)"
+      "access": "deepsea_train_bundle.v0.9.tar.gz (URL not verified)",
+      "license": "",
+      "versions": "latest: 2015",
+      "paper_count": null
     },
     {
       "id": "bixbench",
       "name": "BixBench",
-      "desc": "بیش از ۵۰ سناریوی تحلیل و حدود ۳۰۰ سؤال برای عامل‌های AI [latest=2025 (+ Verified-50)]",
+      "description": "More than 50 analysis scenarios and about 300 questions for evaluating bioinformatics AI agents.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [
@@ -1687,14 +2029,17 @@
           "url": "https://huggingface.co/datasets/futurehouse/BixBench"
         }
       ],
-      "access": "HF futurehouse/BixBench"
+      "access": "",
+      "license": "",
+      "versions": "latest: 2025 (plus Verified-50)",
+      "paper_count": null
     },
     {
       "id": "labbench2",
       "name": "LABBench2",
-      "desc": "۱۸۹۲ وظیفه در ۱۱ دسته [latest=2026]",
+      "description": "1,892 tasks in 11 categories for evaluating AI on biology research.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [
@@ -1703,14 +2048,17 @@
           "url": "https://arxiv.org/pdf/2604.09554"
         }
       ],
-      "access": "arXiv 2604.09554"
+      "access": "",
+      "license": "",
+      "versions": "latest: 2026",
+      "paper_count": null
     },
     {
-      "id": "pubmedqa",
-      "name": "PubMedQA",
-      "desc": "و BLURB و BioASQ [latest=BioASQ 13 (۲۰۲۵)]",
+      "id": "pubmedqa-blurb-and-bioasq",
+      "name": "PubMedQA, BLURB and BioASQ",
+      "description": "Biomedical question answering and language understanding benchmarks.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [
@@ -1727,14 +2075,17 @@
           "url": "http://bioasq.org"
         }
       ],
-      "access": "pubmedqa.github.io · BLURB · bioasq.org"
+      "access": "",
+      "license": "",
+      "versions": "latest: BioASQ 13 (2025)",
+      "paper_count": null
     },
     {
       "id": "camelyon16-17",
       "name": "CAMELYON16/17",
-      "desc": "اسلایدهای متاستاز غدد لنفاوی [latest=—]",
+      "description": "Whole-slide images of lymph node metastases for detection and staging.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [
@@ -1743,25 +2094,31 @@
           "url": "https://camelyon17.grand-challenge.org"
         }
       ],
-      "access": "camelyon17.grand-challenge.org · `s3://camelyon-dataset`"
+      "access": "s3://camelyon-dataset",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "panda",
       "name": "PANDA",
-      "desc": "حدود ۱۱ هزار WSI پروستات [latest=Kaggle 2020]",
+      "description": "About 11,000 prostate whole-slide images for Gleason grading.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [],
-      "access": "`kaggle.com/c/prostate-cancer-grade-assessment`"
+      "access": "kaggle.com/c/prostate-cancer-grade-assessment",
+      "license": "",
+      "versions": "latest: Kaggle 2020",
+      "paper_count": null
     },
     {
       "id": "livecell",
       "name": "LIVECell",
-      "desc": "حدود ۱.۶ میلیون سلول [latest=2021]",
+      "description": "Label-free cell segmentation dataset with about 1.6 million annotated cells.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [
@@ -1770,14 +2127,17 @@
           "url": "https://sartorius-research.github.io/LIVECell/"
         }
       ],
-      "access": "sartorius-research.github.io/LIVECell"
+      "access": "",
+      "license": "",
+      "versions": "latest: 2021",
+      "paper_count": null
     },
     {
       "id": "rxrx1-rxrx2-rxrx3-rxrx3-core",
       "name": "RxRx1 / RxRx2 / RxRx3 / RxRx3-core",
-      "desc": "[latest=—]",
+      "description": "Recursion cellular imaging datasets of genetic and chemical perturbations.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [
@@ -1786,14 +2146,17 @@
           "url": "https://www.rxrx.ai/datasets"
         }
       ],
-      "access": "rxrx.ai/datasets · HF `recursionpharma/rxrx3-core`"
+      "access": "Hugging Face: recursionpharma/rxrx3-core",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
-      "id": "monuseg",
-      "name": "MoNuSeg",
-      "desc": "و PanNuke (۷۹۰۴ patch، ۱۹ بافت) [latest=—]",
+      "id": "monuseg-and-pannuke",
+      "name": "MoNuSeg and PanNuke",
+      "description": "Nuclear segmentation datasets; PanNuke has 7,904 patches from 19 tissues.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [
@@ -1802,25 +2165,31 @@
           "url": "https://monuseg.grand-challenge.org"
         }
       ],
-      "access": "monuseg.grand-challenge.org · warwick.ac.uk/fac/cross_fac/tia/data/pannuke"
+      "access": "PanNuke: warwick.ac.uk/fac/cross_fac/tia/data/pannuke",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
-      "id": "kaggle",
-      "name": "مسابقات زیستی Kaggle",
-      "desc": "Stanford RNA 3D Folding Part 2 (۲۰۲۶)، Ribonanza، Novozymes enzyme stability، Open Problems multimodal و perturbation، CZII cryo-ET، HuBMAP، HPA، Echoes of Silenced Genes (۲۰۲۶) [latest=—]",
+      "id": "kaggle-biology-competitions",
+      "name": "Kaggle biology competitions",
+      "description": "Biology competitions such as Stanford RNA 3D Folding Part 2 (2026), Ribonanza, Novozymes enzyme stability, Open Problems, CZII cryo-ET, HuBMAP and HPA.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و چالش‌های مهم",
+      "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
       "links": [],
-      "access": "`kaggle competitions list -s <term>`"
+      "access": "kaggle competitions list -s <term>",
+      "license": "",
+      "versions": "",
+      "paper_count": null
     },
     {
       "id": "zinc",
       "name": "ZINC",
-      "desc": "[papers=89; versions=ZINC250k (91 بار)، 15 (17)، 20 (10)، 22 (7); license=آکادمیک غیرتجاری]",
+      "description": "Commercially available compounds for virtual screening; ZINC250k is the common generative-model training set.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -1833,14 +2202,17 @@
           "url": "https://github.com/aspuru-guzik-group/chemical_vae"
         }
       ],
-      "access": "zinc.docking.org · ZINC250k"
+      "access": "",
+      "license": "Academic, non-commercial",
+      "versions": "ZINC250k (91 uses), 15 (17), 20 (10), 22 (7)",
+      "paper_count": 89
     },
     {
       "id": "chembl",
       "name": "ChEMBL",
-      "desc": "[papers=83; versions=22 و 31 رایج‌ترین؛ 35 و 36 در کارهای ۲۰۲۵–۲۶ (آخرین: 37); license=CC BY-SA 3.0]",
+      "description": "Manually curated bioactivity data for drug-like molecules, widely used to train generative and property models.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -1849,14 +2221,17 @@
           "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/"
         }
       ],
-      "access": "FTP"
+      "access": "",
+      "license": "CC BY-SA 3.0",
+      "versions": "22 and 31 most common; 35 and 36 in 2025–2026 work (latest: 37)",
+      "paper_count": 83
     },
     {
       "id": "crossdocked2020",
       "name": "CrossDocked2020",
-      "desc": "[papers=64; versions=v1.1 (21 بار؛ split استاندارد ۱۰۰ هزار آموزش و ۱۰۰ تست); license=باز (Koes lab)]",
+      "description": "Docked protein–ligand poses used to train and evaluate structure-based molecule generation.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -1865,14 +2240,17 @@
           "url": "https://bits.csb.pitt.edu/files/crossdock2020/"
         }
       ],
-      "access": "bits.csb.pitt.edu"
+      "access": "",
+      "license": "Open (Koes lab)",
+      "versions": "v1.1 (21 uses; standard split of 100,000 train and 100 test)",
+      "paper_count": 64
     },
     {
       "id": "qm9",
       "name": "QM9",
-      "desc": "[papers=52; versions=زیرمجموعه‌ی GDB-17; license=CC0]",
+      "description": "Quantum-chemical properties of about 134,000 small organic molecules.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -1881,14 +2259,17 @@
           "url": "https://figshare.com/collections/Quantum_chemistry_structures_and_properties_of_134_kilo_molecules/978904"
         }
       ],
-      "access": "Figshare"
+      "access": "",
+      "license": "CC0",
+      "versions": "Subset of GDB-17",
+      "paper_count": 52
     },
     {
       "id": "moses-2",
       "name": "MOSES",
-      "desc": "[papers=47; versions=یک انتشار; license=MIT]",
+      "description": "Benchmark platform and dataset for molecule generation.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "https://github.com/molecularsets/moses",
       "links": [
@@ -1897,14 +2278,17 @@
           "url": "https://github.com/molecularsets/moses"
         }
       ],
-      "access": "molecularsets/moses"
+      "access": "",
+      "license": "MIT",
+      "versions": "Single release",
+      "paper_count": 47
     },
     {
       "id": "geom-2",
       "name": "GEOM",
-      "desc": "(Drugs / QM9) [papers=34; versions=drugs (107 بار)، qm9 (9); license=CC0]",
+      "description": "Conformer ensembles for drug-like (Drugs) and small (QM9) molecules.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -1913,14 +2297,17 @@
           "url": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/JNGTDF"
         }
       ],
-      "access": "Dataverse"
+      "access": "",
+      "license": "CC0",
+      "versions": "drugs (107 uses), qm9 (9)",
+      "paper_count": 34
     },
     {
       "id": "guacamol-2",
       "name": "GuacaMol",
-      "desc": "[papers=30; versions=v1 (ChEMBL 24); license=MIT (کد)]",
+      "description": "Benchmark suite for de novo molecular design based on ChEMBL.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "https://github.com/BenevolentAI/guacamol",
       "links": [
@@ -1929,14 +2316,17 @@
           "url": "https://github.com/BenevolentAI/guacamol"
         }
       ],
-      "access": "BenevolentAI/guacamol"
+      "access": "",
+      "license": "MIT (code)",
+      "versions": "v1 (ChEMBL 24)",
+      "paper_count": 30
     },
     {
       "id": "pdbbind",
       "name": "PDBbind",
-      "desc": "[papers=19; versions=2020 (28 بار)، 2016 (12); license=آکادمیک؛ نسخه‌ی جدید پولی]",
+      "description": "Experimental binding affinities for protein–ligand complexes in the PDB.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -1945,14 +2335,17 @@
           "url": "https://www.pdbbind-plus.org.cn/"
         }
       ],
-      "access": "pdbbind-plus.org.cn"
+      "access": "",
+      "license": "Academic; newer releases are paid",
+      "versions": "2020 (28 uses), 2016 (12)",
+      "paper_count": 19
     },
     {
       "id": "pubchem",
       "name": "PubChem",
-      "desc": "[papers=19; versions=پیوسته; license=عمومی]",
+      "description": "Public repository of chemical structures and bioassay results.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -1961,14 +2354,17 @@
           "url": "https://pubchem.ncbi.nlm.nih.gov/"
         }
       ],
-      "access": "pubchem.ncbi.nlm.nih.gov"
+      "access": "",
+      "license": "Public",
+      "versions": "Continuous",
+      "paper_count": 19
     },
     {
       "id": "enamine-real",
       "name": "Enamine REAL",
-      "desc": "[papers=14; versions=REAL Space (۶ تا بیش از ۳۸ میلیارد); license=غربالگری آکادمیک رایگان]",
+      "description": "Make-on-demand chemical space for virtual screening.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -1977,14 +2373,17 @@
           "url": "https://enamine.net/compound-collections/real-compounds"
         }
       ],
-      "access": "enamine.net"
+      "access": "",
+      "license": "Free for academic screening",
+      "versions": "REAL Space (6 to more than 38 billion)",
+      "paper_count": 14
     },
     {
       "id": "posebusters-2",
       "name": "PoseBusters",
-      "desc": "[papers=12; versions=Benchmark set (۴۲۸); license=BSD-3-Clause]",
+      "description": "Benchmark set for physical validity of docked and generated poses.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "https://github.com/maabuu/posebusters",
       "links": [
@@ -1993,14 +2392,17 @@
           "url": "https://github.com/maabuu/posebusters"
         }
       ],
-      "access": "maabuu/posebusters"
+      "access": "",
+      "license": "BSD-3-Clause",
+      "versions": "Benchmark set (428)",
+      "paper_count": 12
     },
     {
       "id": "binding-moad",
       "name": "Binding MOAD",
-      "desc": "[papers=10; versions=2020، 2022; license=آکادمیک]",
+      "description": "High-quality protein–ligand complexes with binding data.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2009,14 +2411,17 @@
           "url": "http://bindingmoad.org/"
         }
       ],
-      "access": "bindingmoad.org"
+      "access": "",
+      "license": "Academic",
+      "versions": "2020, 2022",
+      "paper_count": 10
     },
     {
       "id": "bindingdb",
       "name": "BindingDB",
-      "desc": "[papers=7; versions=ماهانه; license=CC BY 3.0 US]",
+      "description": "Measured binding affinities between proteins and small molecules.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2025,14 +2430,17 @@
           "url": "https://www.bindingdb.org/"
         }
       ],
-      "access": "bindingdb.org"
+      "access": "",
+      "license": "CC BY 3.0 US",
+      "versions": "Monthly",
+      "paper_count": 7
     },
     {
       "id": "gdb-11-13-17-20",
       "name": "GDB-11/13/17/20",
-      "desc": "[papers=7; versions=GDB-20 (۲۰۲۶، در مقیاس تریلیون); license=آکادمیک]",
+      "description": "Enumerated chemical universe databases of small organic molecules.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2041,14 +2449,17 @@
           "url": "https://gdb.unibe.ch/downloads/"
         }
       ],
-      "access": "gdb.unibe.ch"
+      "access": "",
+      "license": "Academic",
+      "versions": "GDB-20 (2026, trillion scale)",
+      "paper_count": 7
     },
     {
       "id": "pmo-mol-opt-2",
       "name": "PMO / mol_opt",
-      "desc": "[papers=7; versions=NeurIPS 2022; license=MIT]",
+      "description": "Practical molecular optimization benchmark with oracle-budgeted tasks.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "https://github.com/wenhao-gao/mol_opt",
       "links": [
@@ -2057,14 +2468,17 @@
           "url": "https://github.com/wenhao-gao/mol_opt"
         }
       ],
-      "access": "wenhao-gao/mol_opt"
+      "access": "",
+      "license": "MIT",
+      "versions": "NeurIPS 2022",
+      "paper_count": 7
     },
     {
       "id": "rcsb-pdb",
       "name": "RCSB PDB",
-      "desc": "[papers=7; versions=split بر اساس تاریخ snapshot; license=CC0]",
+      "description": "Experimentally determined 3D structures of biological macromolecules.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2073,14 +2487,17 @@
           "url": "https://www.rcsb.org/"
         }
       ],
-      "access": "rcsb.org"
+      "access": "",
+      "license": "CC0",
+      "versions": "Splits based on snapshot date",
+      "paper_count": 7
     },
     {
       "id": "tdc",
       "name": "TDC",
-      "desc": "[papers=7; versions=TDC-1 / TDC-2; license=MIT + مجوز هر دیتاست]",
+      "description": "Therapeutics Data Commons datasets and benchmarks for drug discovery.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "https://github.com/mims-harvard/TDC",
       "links": [
@@ -2089,14 +2506,17 @@
           "url": "https://github.com/mims-harvard/TDC"
         }
       ],
-      "access": "mims-harvard/TDC"
+      "access": "",
+      "license": "MIT plus per-dataset licenses",
+      "versions": "TDC-1 / TDC-2",
+      "paper_count": 7
     },
     {
       "id": "drugbank",
       "name": "DrugBank",
-      "desc": "[papers=6; versions=5.x; license=CC BY-NC 4.0]",
+      "description": "Drug and drug–target database with chemical, pharmacological and target data.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2105,14 +2525,17 @@
           "url": "https://go.drugbank.com/"
         }
       ],
-      "access": "go.drugbank.com"
+      "access": "",
+      "license": "CC BY-NC 4.0",
+      "versions": "5.x",
+      "paper_count": 6
     },
     {
       "id": "materials-project-mp-20",
       "name": "Materials Project / MP-20",
-      "desc": "[papers=6; versions=MP-20 (۴۵٬۲۳۱ ساختار); license=CC BY 4.0]",
+      "description": "Inorganic crystal structures; MP-20 is a standard benchmark for crystal generation.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2125,14 +2548,17 @@
           "url": "https://github.com/txie-93/cdvae"
         }
       ],
-      "access": "materialsproject.org · cdvae"
+      "access": "",
+      "license": "CC BY 4.0",
+      "versions": "MP-20 (45,231 structures)",
+      "paper_count": 6
     },
     {
       "id": "moleculenet-2",
       "name": "MoleculeNet",
-      "desc": "[papers=6; versions=2018; license=MIT]",
+      "description": "Benchmark collection for molecular property prediction.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2141,14 +2567,17 @@
           "url": "https://moleculenet.org/"
         }
       ],
-      "access": "moleculenet.org"
+      "access": "",
+      "license": "MIT",
+      "versions": "2018",
+      "paper_count": 6
     },
     {
       "id": "pcba",
       "name": "PCBA",
-      "desc": "[papers=6; versions=PCBA-128; license=MIT]",
+      "description": "PubChem BioAssay subset of 128 assays for multitask activity prediction.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2157,14 +2586,17 @@
           "url": "https://moleculenet.org/datasets-1"
         }
       ],
-      "access": "moleculenet.org"
+      "access": "",
+      "license": "MIT",
+      "versions": "PCBA-128",
+      "paper_count": 6
     },
     {
       "id": "uspto",
       "name": "USPTO",
-      "desc": "[papers=6; versions=50k، MIT (480k)، full (حدود ۱ میلیون)، STEREO، 1k-TPL; license=CC0]",
+      "description": "Chemical reactions extracted from US patents for reaction prediction and retrosynthesis.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2173,14 +2605,17 @@
           "url": "https://figshare.com/articles/dataset/Chemical_reactions_from_US_patents_1976-Sep2016_/5104873"
         }
       ],
-      "access": "Figshare (Lowe)"
+      "access": "",
+      "license": "CC0",
+      "versions": "50k, MIT (480k), full (about 1 million), STEREO, 1k-TPL",
+      "paper_count": 6
     },
     {
       "id": "chebi-20-l-m-24",
       "name": "ChEBI-20 / L+M-24",
-      "desc": "[papers=5; versions=ChEBI-20 (۳۳٬۰۱۰ جفت); license=CC BY 4.0 / MIT]",
+      "description": "Paired molecules and text descriptions for molecule–language translation.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "https://github.com/blender-nlp/MolT5",
       "links": [
@@ -2189,14 +2624,17 @@
           "url": "https://github.com/blender-nlp/MolT5"
         }
       ],
-      "access": "blender-nlp/MolT5"
+      "access": "",
+      "license": "CC BY 4.0 / MIT",
+      "versions": "ChEBI-20 (33,010 pairs)",
+      "paper_count": 5
     },
     {
       "id": "excape-db",
       "name": "ExCAPE-DB",
-      "desc": "[papers=5; versions=v2; license=CC BY-SA 4.0]",
+      "description": "Integrated large-scale chemogenomics dataset for bioactivity modelling.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2205,14 +2643,17 @@
           "url": "https://zenodo.org/records/2543724"
         }
       ],
-      "access": "Zenodo 2543724"
+      "access": "",
+      "license": "CC BY-SA 4.0",
+      "versions": "v2",
+      "paper_count": 5
     },
     {
       "id": "posecheck-2",
       "name": "PoseCheck",
-      "desc": "[papers=5; versions=2023; license=MIT]",
+      "description": "Benchmark for evaluating poses from structure-based generative models.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "https://github.com/cch1999/posecheck",
       "links": [
@@ -2221,14 +2662,17 @@
           "url": "https://github.com/cch1999/posecheck"
         }
       ],
-      "access": "cch1999/posecheck"
+      "access": "",
+      "license": "MIT",
+      "versions": "2023",
+      "paper_count": 5
     },
     {
       "id": "mol-instructions-2",
       "name": "Mol-Instructions",
-      "desc": "[papers=5; versions=v1 / v2; license=CC BY 4.0]",
+      "description": "Biomolecular instruction dataset for language models.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "https://github.com/zjunlp/Mol-Instructions",
       "links": [
@@ -2237,14 +2681,17 @@
           "url": "https://github.com/zjunlp/Mol-Instructions"
         }
       ],
-      "access": "zjunlp/Mol-Instructions"
+      "access": "",
+      "license": "CC BY 4.0",
+      "versions": "v1 / v2",
+      "paper_count": 5
     },
     {
       "id": "uniprot-swiss-prot",
       "name": "UniProt / Swiss-Prot",
-      "desc": "[papers=5; versions=مثلاً 2023_05 (آخرین: 2026_04); license=CC BY 4.0]",
+      "description": "Reviewed protein sequences and functional annotation.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2253,25 +2700,31 @@
           "url": "https://www.uniprot.org/"
         }
       ],
-      "access": "uniprot.org"
+      "access": "",
+      "license": "CC BY 4.0",
+      "versions": "e.g. 2023_05 (latest: 2026_04)",
+      "paper_count": 5
     },
     {
       "id": "casf-2016",
       "name": "CASF-2016",
-      "desc": "[papers=4; versions=2007، 2013، 2016; license=آکادمیک]",
+      "description": "Benchmark for evaluating scoring functions on protein–ligand complexes.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [],
-      "access": "از طریق PDBbind+"
+      "access": "Available via PDBbind+",
+      "license": "Academic",
+      "versions": "2007, 2013, 2016",
+      "paper_count": 4
     },
     {
-      "id": "dud-e-2",
+      "id": "dud-e",
       "name": "DUD-E",
-      "desc": "[papers=4; versions=2012; license=آکادمیک]",
+      "description": "Directory of useful decoys for benchmarking virtual screening.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2280,14 +2733,17 @@
           "url": "https://dude.docking.org/"
         }
       ],
-      "access": "dude.docking.org"
+      "access": "",
+      "license": "Academic",
+      "versions": "2012",
+      "paper_count": 4
     },
     {
       "id": "lincs-l1000",
       "name": "LINCS L1000",
-      "desc": "[papers=4; versions=GSE92742، GSE70138; license=CC BY 4.0]",
+      "description": "Gene expression signatures of cells under chemical and genetic perturbations.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2296,14 +2752,17 @@
           "url": "https://clue.io/data"
         }
       ],
-      "access": "clue.io/data"
+      "access": "",
+      "license": "CC BY 4.0",
+      "versions": "GSE92742, GSE70138",
+      "paper_count": 4
     },
     {
       "id": "lit-pcba-2",
       "name": "LIT-PCBA",
-      "desc": "[papers=4; versions=2020; license=آکادمیک]",
+      "description": "Unbiased virtual screening benchmark built from PubChem assays.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2312,14 +2771,17 @@
           "url": "https://drugdesign.unistra.fr/LIT-PCBA/"
         }
       ],
-      "access": "drugdesign.unistra.fr"
+      "access": "",
+      "license": "Academic",
+      "versions": "2020",
+      "paper_count": 4
     },
     {
       "id": "marcel-2",
       "name": "MARCEL",
-      "desc": "[papers=3; versions=2023; license=MIT]",
+      "description": "Benchmark for learning on molecular conformer ensembles.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "https://github.com/SXKDZ/MARCEL",
       "links": [
@@ -2328,14 +2790,17 @@
           "url": "https://github.com/SXKDZ/MARCEL"
         }
       ],
-      "access": "SXKDZ/MARCEL"
+      "access": "",
+      "license": "MIT",
+      "versions": "2023",
+      "paper_count": 3
     },
     {
       "id": "qmugs",
       "name": "QMugs",
-      "desc": "[papers=3; versions=1.0; license=CC BY 4.0]",
+      "description": "Quantum-mechanical properties of drug-like molecules.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2344,14 +2809,17 @@
           "url": "https://www.research-collection.ethz.ch/handle/20.500.11850/482129"
         }
       ],
-      "access": "ETH Research Collection"
+      "access": "",
+      "license": "CC BY 4.0",
+      "versions": "1.0",
+      "paper_count": 3
     },
     {
       "id": "rabd-igfold",
       "name": "RAbD / IgFold",
-      "desc": "[papers=2; versions=RAbD (۶۰ کمپلکس); license=آکادمیک]",
+      "description": "Antibody design benchmark (RAbD) and antibody structure prediction resources (IgFold).",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "https://github.com/RosettaCommons/RAbD_benchmark",
       "links": [
@@ -2364,14 +2832,17 @@
           "url": "https://github.com/Graylab/IgFold"
         }
       ],
-      "access": "RAbD_benchmark · IgFold"
+      "access": "",
+      "license": "Academic",
+      "versions": "RAbD (60 complexes)",
+      "paper_count": 2
     },
     {
       "id": "davis",
       "name": "DAVIS",
-      "desc": "[papers=2; versions=2011; license=باز (TDC)]",
+      "description": "Kinase inhibitor binding affinities for drug–target interaction prediction.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2380,14 +2851,17 @@
           "url": "https://tdcommons.ai/multi_pred_tasks/dti/"
         }
       ],
-      "access": "TDC DTI"
+      "access": "",
+      "license": "Open (TDC)",
+      "versions": "2011",
+      "paper_count": 2
     },
     {
       "id": "dockstring-2",
       "name": "DOCKSTRING",
-      "desc": "[papers=2; versions=2022; license=MIT (کد)]",
+      "description": "Docking scores for molecules against protein targets for benchmarking.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "https://github.com/dockstring/dockstring",
       "links": [
@@ -2396,14 +2870,17 @@
           "url": "https://github.com/dockstring/dockstring"
         }
       ],
-      "access": "dockstring/dockstring"
+      "access": "",
+      "license": "MIT (code)",
+      "versions": "2022",
+      "paper_count": 2
     },
     {
       "id": "kiba",
       "name": "KIBA",
-      "desc": "[papers=2; versions=2014 (نسخه‌ی فیلترشده); license=باز (TDC)]",
+      "description": "Kinase inhibitor bioactivity scores for drug–target interaction prediction.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2412,14 +2889,17 @@
           "url": "https://tdcommons.ai/multi_pred_tasks/dti/"
         }
       ],
-      "access": "TDC DTI"
+      "access": "",
+      "license": "Open (TDC)",
+      "versions": "2014 (filtered version)",
+      "paper_count": 2
     },
     {
       "id": "moldata-2",
       "name": "MolData",
-      "desc": "[papers=2; versions=2022; license=MIT]",
+      "description": "Bioassay benchmark for molecular machine learning.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "https://github.com/LumosBio/MolData",
       "links": [
@@ -2428,14 +2908,17 @@
           "url": "https://github.com/LumosBio/MolData"
         }
       ],
-      "access": "LumosBio/MolData"
+      "access": "",
+      "license": "MIT",
+      "versions": "2022",
+      "paper_count": 2
     },
     {
       "id": "molecule3d-drugs-75k",
       "name": "Molecule3D / Drugs-75K",
-      "desc": "[papers=2; versions=Molecule3D (۳.۹ میلیون); license=GPL-3.0 / MIT]",
+      "description": "Large sets of molecular 3D geometries for geometry prediction and generation.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "https://github.com/divelab/MoleculeX",
       "links": [
@@ -2448,14 +2931,17 @@
           "url": "https://github.com/pengxingang/MolDiff"
         }
       ],
-      "access": "MoleculeX · MolDiff"
+      "access": "",
+      "license": "GPL-3.0 / MIT",
+      "versions": "Molecule3D (3.9 million)",
+      "paper_count": 2
     },
     {
       "id": "pubchemqc",
       "name": "PubChemQC",
-      "desc": "[papers=2; versions=PM6، B3LYP; license=CC BY 4.0]",
+      "description": "Quantum chemistry calculations on PubChem molecules.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2464,14 +2950,17 @@
           "url": "http://pubchemqc.riken.jp/"
         }
       ],
-      "access": "pubchemqc.riken.jp"
+      "access": "",
+      "license": "CC BY 4.0",
+      "versions": "PM6, B3LYP",
+      "paper_count": 2
     },
     {
-      "id": "sabdab-2",
+      "id": "sabdab",
       "name": "SAbDab",
-      "desc": "[papers=2; versions=هفتگی; license=آکادمیک]",
+      "description": "Structural antibody database of antibody structures from the PDB.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2480,14 +2969,17 @@
           "url": "https://opig.stats.ox.ac.uk/webapps/sabdab-sabpred/sabdab"
         }
       ],
-      "access": "SAbDab"
+      "access": "",
+      "license": "Academic",
+      "versions": "Weekly",
+      "paper_count": 2
     },
     {
       "id": "nist-massbank-gnps",
       "name": "NIST / MassBank / GNPS",
-      "desc": "[papers=2; versions=NIST 17/20/23 (تجاری); license=CC BY / تجاری]",
+      "description": "Mass spectral libraries for metabolite and small-molecule identification.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2500,14 +2992,17 @@
           "url": "https://gnps.ucsd.edu/"
         }
       ],
-      "access": "massbank.eu · gnps.ucsd.edu"
+      "access": "",
+      "license": "CC BY / commercial",
+      "versions": "NIST 17/20/23 (commercial)",
+      "paper_count": 2
     },
     {
       "id": "surechembl",
       "name": "SureChEMBL",
-      "desc": "[papers=2; versions=پیوسته; license=CC BY-SA 3.0]",
+      "description": "Chemical structures extracted from patent documents.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2516,14 +3011,17 @@
           "url": "https://www.surechembl.org/"
         }
       ],
-      "access": "surechembl.org"
+      "access": "",
+      "license": "CC BY-SA 3.0",
+      "versions": "Continuous",
+      "paper_count": 2
     },
     {
       "id": "tartarus-2",
       "name": "Tartarus",
-      "desc": "[papers=2; versions=2022/2023; license=MIT]",
+      "description": "Inverse molecular design benchmark suite.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "https://github.com/aspuru-guzik-group/Tartarus",
       "links": [
@@ -2532,14 +3030,17 @@
           "url": "https://github.com/aspuru-guzik-group/Tartarus"
         }
       ],
-      "access": "aspuru-guzik-group/Tartarus"
+      "access": "",
+      "license": "MIT",
+      "versions": "2022/2023",
+      "paper_count": 2
     },
     {
       "id": "alex-mp-20-alexandria",
       "name": "Alex-MP-20 / Alexandria",
-      "desc": "[papers=1; versions=حدود ۶۰۰ هزار ساختار; license=CC BY 4.0]",
+      "description": "Inorganic crystal structures computed with DFT for materials generation.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2552,14 +3053,17 @@
           "url": "https://github.com/microsoft/mattergen"
         }
       ],
-      "access": "alexandria.icams.rub.de · mattergen"
+      "access": "",
+      "license": "CC BY 4.0",
+      "versions": "About 600,000 structures",
+      "paper_count": 1
     },
     {
       "id": "alphafold-db",
       "name": "AlphaFold DB",
-      "desc": "[papers=1; versions=v4 (آخرین: v6); license=CC BY 4.0]",
+      "description": "Predicted protein structures from AlphaFold.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2568,14 +3072,17 @@
           "url": "https://alphafold.ebi.ac.uk/"
         }
       ],
-      "access": "alphafold.ebi.ac.uk"
+      "access": "",
+      "license": "CC BY 4.0",
+      "versions": "v4 (latest: v6)",
+      "paper_count": 1
     },
     {
       "id": "cath",
       "name": "CATH",
-      "desc": "[papers=1; versions=split ۴۰٪ نسخه‌ی 4.2 (آخرین: 4.4); license=CC BY 4.0]",
+      "description": "Hierarchical classification of protein domain structures.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2584,14 +3091,17 @@
           "url": "https://www.cathdb.info/"
         }
       ],
-      "access": "cathdb.info"
+      "access": "",
+      "license": "CC BY 4.0",
+      "versions": "40% split of version 4.2 (latest: 4.4)",
+      "paper_count": 1
     },
     {
       "id": "gdsc",
       "name": "GDSC",
-      "desc": "[papers=1; versions=GDSC1 / GDSC2; license=CC BY-NC]",
+      "description": "Drug sensitivity of cancer cell lines.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2600,14 +3110,17 @@
           "url": "https://www.cancerrxgene.org/"
         }
       ],
-      "access": "cancerrxgene.org"
+      "access": "",
+      "license": "CC BY-NC",
+      "versions": "GDSC1 / GDSC2",
+      "paper_count": 1
     },
     {
       "id": "iza-zeolite",
       "name": "IZA zeolite",
-      "desc": "[papers=1; versions=—; license=آکادمیک]",
+      "description": "Database of zeolite framework structures.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2616,14 +3129,17 @@
           "url": "https://www.iza-structure.org/databases/"
         }
       ],
-      "access": "iza-structure.org"
+      "access": "",
+      "license": "Academic",
+      "versions": "",
+      "paper_count": 1
     },
     {
       "id": "oas",
       "name": "OAS",
-      "desc": "[papers=1; versions=بازسازی ۲۰۲۱; license=آکادمیک]",
+      "description": "Observed Antibody Space: large collection of antibody repertoire sequences.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2632,14 +3148,17 @@
           "url": "https://opig.stats.ox.ac.uk/webapps/oas/"
         }
       ],
-      "access": "OAS"
+      "access": "",
+      "license": "Academic",
+      "versions": "2021 rebuild",
+      "paper_count": 1
     },
     {
       "id": "papyrus-2",
       "name": "Papyrus",
-      "desc": "[papers=1; versions=05.5 / 05.6; license=CC BY 4.0 (داده)]",
+      "description": "Curated large-scale bioactivity dataset for drug discovery.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2648,14 +3167,17 @@
           "url": "https://zenodo.org/records/7377161"
         }
       ],
-      "access": "Zenodo"
+      "access": "",
+      "license": "CC BY 4.0 (data)",
+      "versions": "05.5 / 05.6",
+      "paper_count": 1
     },
     {
       "id": "pepbdb",
       "name": "PepBDB",
-      "desc": "[papers=1; versions=2019; license=آکادمیک]",
+      "description": "Database of peptide–protein complex structures.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2664,14 +3186,17 @@
           "url": "http://huanglab.phys.hust.edu.cn/pepbdb/"
         }
       ],
-      "access": "PepBDB"
+      "access": "",
+      "license": "Academic",
+      "versions": "2019",
+      "paper_count": 1
     },
     {
       "id": "perov-5",
       "name": "Perov-5",
-      "desc": "[papers=1; versions=split نسخه‌ی CDVAE; license=MIT]",
+      "description": "Perovskite crystal structures used as a crystal-generation benchmark.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "https://github.com/txie-93/cdvae",
       "links": [
@@ -2680,14 +3205,17 @@
           "url": "https://github.com/txie-93/cdvae"
         }
       ],
-      "access": "cdvae"
+      "access": "",
+      "license": "MIT",
+      "versions": "CDVAE split",
+      "paper_count": 1
     },
     {
       "id": "dekois-2-0",
       "name": "DEKOIS 2.0",
-      "desc": "[papers=1; versions=2.0; license=آکادمیک]",
+      "description": "Benchmark sets of actives and decoys for evaluating docking.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2696,14 +3224,17 @@
           "url": "http://www.dekois.com/"
         }
       ],
-      "access": "dekois.com"
+      "access": "",
+      "license": "Academic",
+      "versions": "2.0",
+      "paper_count": 1
     },
     {
       "id": "skempi-2-0",
       "name": "SKEMPI 2.0",
-      "desc": "[papers=1; versions=2.0; license=آکادمیک]",
+      "description": "Binding free-energy changes upon mutation in protein–protein complexes.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2712,14 +3243,17 @@
           "url": "https://life.bsc.es/pid/skempi2"
         }
       ],
-      "access": "life.bsc.es/pid/skempi2"
+      "access": "",
+      "license": "Academic",
+      "versions": "2.0",
+      "paper_count": 1
     },
     {
       "id": "tox21",
       "name": "Tox21",
-      "desc": "[papers=1; versions=Challenge set; license=عمومی (NIH)]",
+      "description": "Toxicity measurements for compounds across 12 assays.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2728,14 +3262,17 @@
           "url": "https://moleculenet.org/datasets-1"
         }
       ],
-      "access": "moleculenet.org"
+      "access": "",
+      "license": "Public (NIH)",
+      "versions": "Challenge set",
+      "paper_count": 1
     },
     {
       "id": "zinc22",
       "name": "ZINC22",
-      "desc": "[papers=1; versions=2023 (بیش از ۳۷ میلیارد); license=آکادمیک]",
+      "description": "Multi-billion-scale library of make-on-demand compounds for virtual screening.",
       "field": "chemistry",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / دیتاست‌های مقالات طراحی مولکول با یادگیری عمیق",
+      "category": "Molecular design datasets",
       "stars": null,
       "repo": "",
       "links": [
@@ -2744,14 +3281,17 @@
           "url": "https://cartblanche22.docking.org/"
         }
       ],
-      "access": "cartblanche22.docking.org"
+      "access": "",
+      "license": "Academic",
+      "versions": "2023 (more than 37 billion)",
+      "paper_count": 1
     },
     {
       "id": "gdb-20",
       "name": "GDB-20",
-      "desc": "پایگاه داده‌ی مولکول‌های دارومانند در مقیاس تریلیون [year=2026]",
+      "description": "Trillion-scale database of drug-like molecules.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و دیتاست‌های جدید معرفی‌شده در همان مقاله‌ها",
+      "category": "New benchmarks from papers",
       "stars": null,
       "repo": "https://github.com/reymond-group/GDB-ML",
       "links": [
@@ -2764,14 +3304,17 @@
           "url": "https://doi.org/10.5281/zenodo.17368725"
         }
       ],
-      "access": "reymond-group/GDB-ML · Zenodo"
+      "access": "",
+      "license": "",
+      "versions": "2026",
+      "paper_count": null
     },
     {
       "id": "molgenbench",
       "name": "MolGenBench",
-      "desc": "ارزیابی SBDD از طراحی de novo تا بهینه‌سازی lead [year=2026]",
+      "description": "Benchmark for structure-based drug design, from de novo design to lead optimization.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و دیتاست‌های جدید معرفی‌شده در همان مقاله‌ها",
+      "category": "New benchmarks from papers",
       "stars": null,
       "repo": "https://github.com/CAODH/MolGenBench",
       "links": [
@@ -2784,14 +3327,17 @@
           "url": "https://doi.org/10.5281/zenodo.21757787"
         }
       ],
-      "access": "CAODH/MolGenBench · Zenodo"
+      "access": "",
+      "license": "",
+      "versions": "2026",
+      "paper_count": null
     },
     {
       "id": "scramblebench",
       "name": "ScrambleBench",
-      "desc": "کنترل با درهم‌ریختن pocket [year=2026]",
+      "description": "Control benchmark for structure-based design using scrambled binding pockets.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و دیتاست‌های جدید معرفی‌شده در همان مقاله‌ها",
+      "category": "New benchmarks from papers",
       "stars": null,
       "repo": "https://github.com/Feriolet/ScrambleBench",
       "links": [
@@ -2800,14 +3346,17 @@
           "url": "https://github.com/Feriolet/ScrambleBench"
         }
       ],
-      "access": "Feriolet/ScrambleBench"
+      "access": "",
+      "license": "",
+      "versions": "2026",
+      "paper_count": null
     },
     {
-      "id": "sbdd",
-      "name": "بنچمارک SBDD یک‌بعدی، دوبعدی و سه‌بعدی",
-      "desc": "(Beyond Affinity) [year=2026]",
+      "id": "1d-2d-and-3d-sbdd-benchmark-beyond-affinity",
+      "name": "1D, 2D and 3D SBDD benchmark (Beyond Affinity)",
+      "description": "Benchmark comparing 1D, 2D and 3D structure-based drug design methods beyond binding affinity.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و دیتاست‌های جدید معرفی‌شده در همان مقاله‌ها",
+      "category": "New benchmarks from papers",
       "stars": null,
       "repo": "https://github.com/zkysfls/2025-sbdd-benchmark",
       "links": [
@@ -2816,14 +3365,17 @@
           "url": "https://github.com/zkysfls/2025-sbdd-benchmark"
         }
       ],
-      "access": "zkysfls/2025-sbdd-benchmark"
+      "access": "",
+      "license": "",
+      "versions": "2026",
+      "paper_count": null
     },
     {
       "id": "pymolgen",
       "name": "PyMolGen",
-      "desc": "پایگاه ترکیبات تولیدشده [year=2026]",
+      "description": "Database of generated compounds.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و دیتاست‌های جدید معرفی‌شده در همان مقاله‌ها",
+      "category": "New benchmarks from papers",
       "stars": null,
       "repo": "https://github.com/HirstGroup/PyMolGen",
       "links": [
@@ -2832,14 +3384,17 @@
           "url": "https://github.com/HirstGroup/PyMolGen"
         }
       ],
-      "access": "HirstGroup/PyMolGen"
+      "access": "",
+      "license": "",
+      "versions": "2026",
+      "paper_count": null
     },
     {
-      "id": "dataset",
-      "name": "بنچمارک طراحی معکوس پلیمر",
-      "desc": "[year=2025]",
+      "id": "polymer-inverse-design-benchmark",
+      "name": "Polymer inverse design benchmark",
+      "description": "Benchmark of generative models for polymer inverse design.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و دیتاست‌های جدید معرفی‌شده در همان مقاله‌ها",
+      "category": "New benchmarks from papers",
       "stars": null,
       "repo": "https://github.com/ytl0410/Polymer-Generative-Models-Benchmark",
       "links": [
@@ -2848,14 +3403,17 @@
           "url": "https://github.com/ytl0410/Polymer-Generative-Models-Benchmark"
         }
       ],
-      "access": "ytl0410/Polymer-Generative-Models-Benchmark"
+      "access": "",
+      "license": "",
+      "versions": "2025",
+      "paper_count": null
     },
     {
       "id": "durian",
       "name": "Durian",
-      "desc": "بنچمارک تولید مولکول سه‌بعدی بر اساس ساختار [year=2024]",
+      "description": "Benchmark for structure-based 3D molecule generation.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و دیتاست‌های جدید معرفی‌شده در همان مقاله‌ها",
+      "category": "New benchmarks from papers",
       "stars": null,
       "repo": "https://github.com/19990210nd/Durian",
       "links": [
@@ -2864,14 +3422,17 @@
           "url": "https://github.com/19990210nd/Durian"
         }
       ],
-      "access": "19990210nd/Durian"
+      "access": "",
+      "license": "",
+      "versions": "2024",
+      "paper_count": null
     },
     {
-      "id": "sbdd-2",
-      "name": "بنچمارک SBDD ۲۰۲۴",
-      "desc": "(Do 3D Methods Really Dominate?) [year=2024]",
+      "id": "sbdd-benchmark-2024-do-3d-methods-really-dominate",
+      "name": "SBDD benchmark 2024 (Do 3D Methods Really Dominate?)",
+      "description": "Benchmark testing whether 3D methods outperform simpler approaches in structure-based drug design.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و دیتاست‌های جدید معرفی‌شده در همان مقاله‌ها",
+      "category": "New benchmarks from papers",
       "stars": null,
       "repo": "https://github.com/zkysfls/2024-sbdd-benchmark",
       "links": [
@@ -2880,14 +3441,17 @@
           "url": "https://github.com/zkysfls/2024-sbdd-benchmark"
         }
       ],
-      "access": "zkysfls/2024-sbdd-benchmark"
+      "access": "",
+      "license": "",
+      "versions": "2024",
+      "paper_count": null
     },
     {
       "id": "bento",
       "name": "Bento",
-      "desc": "بنچمارک داکینگ پروتئین–لیگاند [year=2024]",
+      "description": "Benchmark for protein–ligand docking.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و دیتاست‌های جدید معرفی‌شده در همان مقاله‌ها",
+      "category": "New benchmarks from papers",
       "stars": null,
       "repo": "https://github.com/LigandPro/Bento",
       "links": [
@@ -2896,14 +3460,17 @@
           "url": "https://github.com/LigandPro/Bento"
         }
       ],
-      "access": "LigandPro/Bento"
+      "access": "",
+      "license": "",
+      "versions": "2024",
+      "paper_count": null
     },
     {
       "id": "rediscmol",
       "name": "RediscMol",
-      "desc": "بنچمارک کشف دوباره [year=2024]",
+      "description": "Benchmark testing whether generative models rediscover known active molecules.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و دیتاست‌های جدید معرفی‌شده در همان مقاله‌ها",
+      "category": "New benchmarks from papers",
       "stars": null,
       "repo": "https://github.com/gaoqiweng/RediscMol",
       "links": [
@@ -2912,14 +3479,17 @@
           "url": "https://github.com/gaoqiweng/RediscMol"
         }
       ],
-      "access": "gaoqiweng/RediscMol"
+      "access": "",
+      "license": "",
+      "versions": "2024",
+      "paper_count": null
     },
     {
       "id": "smina-docking-benchmark",
       "name": "smina docking benchmark",
-      "desc": "[year=2023]",
+      "description": "Docking-based benchmark for molecule generation using smina.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و دیتاست‌های جدید معرفی‌شده در همان مقاله‌ها",
+      "category": "New benchmarks from papers",
       "stars": null,
       "repo": "https://github.com/cieplinski-tobiasz/smina-docking-benchmark",
       "links": [
@@ -2928,14 +3498,17 @@
           "url": "https://github.com/cieplinski-tobiasz/smina-docking-benchmark"
         }
       ],
-      "access": "cieplinski-tobiasz/smina-docking-benchmark"
+      "access": "",
+      "license": "",
+      "versions": "2023",
+      "paper_count": null
     },
     {
       "id": "gdb-13s",
       "name": "GDB-13s",
-      "desc": "فضای قطعه‌های زیست‌فعال [year=2023]",
+      "description": "Chemical space of fragments derived from bioactive molecules.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و دیتاست‌های جدید معرفی‌شده در همان مقاله‌ها",
+      "category": "New benchmarks from papers",
       "stars": null,
       "repo": "https://github.com/Ye-Buehler/Molecule_Breakdown_Model",
       "links": [
@@ -2944,14 +3517,17 @@
           "url": "https://github.com/Ye-Buehler/Molecule_Breakdown_Model"
         }
       ],
-      "access": "Ye-Buehler/Molecule_Breakdown_Model"
+      "access": "",
+      "license": "",
+      "versions": "2023",
+      "paper_count": null
     },
     {
       "id": "congen-dataset",
       "name": "ConGen dataset",
-      "desc": "تولید مولکول چندقیدی [year=2023]",
+      "description": "Dataset for multi-constraint molecule generation.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و دیتاست‌های جدید معرفی‌شده در همان مقاله‌ها",
+      "category": "New benchmarks from papers",
       "stars": null,
       "repo": "https://github.com/jpmailoa/ConGen_Dataset",
       "links": [
@@ -2960,14 +3536,17 @@
           "url": "https://github.com/jpmailoa/ConGen_Dataset"
         }
       ],
-      "access": "jpmailoa/ConGen_Dataset"
+      "access": "",
+      "license": "",
+      "versions": "2023",
+      "paper_count": null
     },
     {
-      "id": "dataset-2",
-      "name": "دیتاست ترکیبات چندهدفی",
-      "desc": "[year=2021]",
+      "id": "multi-target-compounds-dataset",
+      "name": "Multi-target compounds dataset",
+      "description": "Dataset of compounds for multi-target molecular design with REINVENT.",
       "field": "benchmarks",
-      "category": "دیتاست‌ها و بنچمارک‌های مقالات / بنچمارک‌ها و دیتاست‌های جدید معرفی‌شده در همان مقاله‌ها",
+      "category": "New benchmarks from papers",
       "stars": null,
       "repo": "https://github.com/tblaschke/reinvent-multi-target",
       "links": [
@@ -2976,7 +3555,10 @@
           "url": "https://github.com/tblaschke/reinvent-multi-target"
         }
       ],
-      "access": "tblaschke/reinvent-multi-target"
+      "access": "",
+      "license": "",
+      "versions": "2021",
+      "paper_count": null
     }
   ]
 }

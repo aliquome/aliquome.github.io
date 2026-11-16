@@ -1,0 +1,222 @@
+# Research fields shown on the site.
+#
+#   base   nucleotide colour family of the field (A, C, G or T)
+#   shape  family of the generated 3D figure
+#   query  Europe PMC search expression; the engine adds `AND OPEN_ACCESS:y`
+#   tasks  each paper is tagged with every task whose pattern matches its
+#          title, abstract or keywords (case-insensitive regular expression)
+
+[[field]]
+id = "genomes"
+label = "Genomes and annotation"
+base = "A"
+shape = "helix"
+query = "(TITLE:\"genome assembly\" OR TITLE:\"reference genome\" OR TITLE:\"pangenome\" OR TITLE:\"genome annotation\" OR TITLE:\"read alignment\")"
+tasks = [
+  { id = "assembly", label = "Genome assembly", pattern = "assembl" },
+  { id = "annotation", label = "Gene annotation", pattern = "annotation|gene prediction|gene model" },
+  { id = "pangenome", label = "Pangenomes", pattern = "pangenom|pan-genom" },
+  { id = "alignment", label = "Read alignment", pattern = "read alignment|aligner|read mapping|mapping reads" },
+  { id = "long-read", label = "Long-read sequencing", pattern = "long-read|long read|nanopore|pacbio|hifi" },
+]
+
+[[field]]
+id = "variants"
+label = "Variants and population genetics"
+base = "T"
+shape = "variant"
+query = "(TITLE:\"genetic variation\" OR TITLE:\"variant calling\" OR TITLE:\"genome-wide association\" OR TITLE:\"population genomics\" OR TITLE:\"variant effect\")"
+tasks = [
+  { id = "variant-calling", label = "Variant calling", pattern = "variant call|variant detection|genotyp" },
+  { id = "variant-effect", label = "Variant effect prediction", pattern = "pathogenic|variant effect|missense|deleterious|variant interpretation" },
+  { id = "gwas", label = "Association studies (GWAS)", pattern = "genome-wide association|gwas|association stud" },
+  { id = "ancestry", label = "Ancestry and population structure", pattern = "ancestry|population structure|admixture|demograph" },
+  { id = "polygenic", label = "Polygenic risk scores", pattern = "polygenic" },
+]
+
+[[field]]
+id = "cancer"
+label = "Cancer genomics"
+base = "T"
+shape = "tumour"
+query = "(TITLE:\"cancer genome\" OR TITLE:\"pan-cancer\" OR TITLE:\"tumor heterogeneity\" OR TITLE:\"cancer genomics\" OR TITLE:\"somatic mutation\")"
+tasks = [
+  { id = "somatic", label = "Somatic mutation calling", pattern = "somatic" },
+  { id = "heterogeneity", label = "Tumour heterogeneity and evolution", pattern = "heterogeneity|clonal|subclon|evolution" },
+  { id = "subtyping", label = "Subtype classification", pattern = "subtyp|classification|molecular class" },
+  { id = "drug-response", label = "Drug response", pattern = "drug response|drug sensitivity|resistance" },
+  { id = "prognosis", label = "Survival and prognosis", pattern = "surviv|prognos" },
+]
+
+[[field]]
+id = "expression"
+label = "Expression and single-cell"
+base = "G"
+shape = "cells"
+query = "(TITLE:\"single-cell\" OR TITLE:\"spatial transcriptomics\" OR TITLE:\"RNA-seq\")"
+tasks = [
+  { id = "cell-annotation", label = "Cell type annotation", pattern = "cell type annotation|cell-type annotation|annotat\\w* cell type|label transfer|reference mapping" },
+  { id = "integration", label = "Data integration and batch correction", pattern = "integrat|batch" },
+  { id = "clustering", label = "Clustering", pattern = "cluster" },
+  { id = "differential", label = "Differential expression", pattern = "differential expression|differentially expressed" },
+  { id = "spatial", label = "Spatial transcriptomics", pattern = "spatial" },
+  { id = "trajectory", label = "Trajectory and RNA velocity", pattern = "trajector|pseudotime|velocity|lineage" },
+  { id = "perturbation", label = "Perturbation prediction", pattern = "perturb" },
+  { id = "foundation", label = "Foundation models", pattern = "foundation model|pretrain|pre-train|transformer|large-scale model" },
+]
+
+[[field]]
+id = "proteins"
+label = "Proteins and structures"
+base = "C"
+shape = "fold"
+query = "(TITLE:\"protein structure prediction\" OR TITLE:\"protein language model\" OR TITLE:\"protein design\" OR TITLE:\"protein structure\" OR TITLE:\"protein function prediction\")"
+tasks = [
+  { id = "structure", label = "Structure prediction", pattern = "structure prediction|predict\\w* (the )?(3d |three-dimensional )?structure|folding" },
+  { id = "design", label = "Protein design", pattern = "protein design|de novo design|design\\w* protein|inverse folding|sequence design" },
+  { id = "function", label = "Function prediction", pattern = "function prediction|functional annotation|enzyme commission|gene ontology" },
+  { id = "fitness", label = "Fitness and variant effects", pattern = "fitness|mutational effect|deep mutational|variant effect|stability" },
+  { id = "language-model", label = "Protein language models", pattern = "language model|plm|transformer|embedding" },
+  { id = "complexes", label = "Complexes and docking", pattern = "complex|docking|interface|protein-protein" },
+  { id = "search", label = "Structure search and alignment", pattern = "structural alignment|structure search|structure comparison|tm-score" },
+]
+
+[[field]]
+id = "pathways"
+label = "Pathways, networks and ontologies"
+base = "A"
+shape = "network"
+query = "(TITLE:\"protein-protein interaction\" OR TITLE:\"pathway analysis\" OR TITLE:\"gene ontology\" OR TITLE:\"knowledge graph\" OR TITLE:\"gene set enrichment\")"
+tasks = [
+  { id = "ppi", label = "Interaction prediction", pattern = "interaction predict|predict\\w* interaction|link prediction" },
+  { id = "enrichment", label = "Enrichment analysis", pattern = "enrichment|over-representation|gene set" },
+  { id = "network", label = "Network inference", pattern = "network infer|regulatory network|co-expression network" },
+  { id = "knowledge-graph", label = "Knowledge graphs", pattern = "knowledge graph|graph embedding" },
+  { id = "ontology", label = "Ontologies", pattern = "ontolog" },
+]
+
+[[field]]
+id = "chemistry"
+label = "Chemistry and drug discovery"
+base = "G"
+shape = "molecule"
+query = "(TITLE:\"drug discovery\" OR TITLE:\"molecular docking\" OR TITLE:\"molecular generation\" OR TITLE:\"virtual screening\" OR TITLE:\"binding affinity\")"
+tasks = [
+  { id = "generation", label = "Molecule generation", pattern = "generat|de novo|design" },
+  { id = "property", label = "Property and ADMET prediction", pattern = "property prediction|admet|toxicity|solubility|qsar" },
+  { id = "affinity", label = "Binding affinity and drug–target interaction", pattern = "affinity|drug-target|drug–target|dti|binding" },
+  { id = "docking", label = "Docking and virtual screening", pattern = "docking|virtual screening|pose" },
+  { id = "reaction", label = "Reactions and retrosynthesis", pattern = "retrosynth|reaction" },
+]
+
+[[field]]
+id = "regulation"
+label = "Epigenomics and regulation"
+base = "C"
+shape = "chromatin"
+query = "(TITLE:\"chromatin accessibility\" OR TITLE:\"epigenome\" OR TITLE:\"transcription factor binding\" OR TITLE:\"DNA methylation\" OR TITLE:\"enhancer\")"
+tasks = [
+  { id = "accessibility", label = "Chromatin accessibility", pattern = "accessib|atac" },
+  { id = "tf-binding", label = "Transcription factor binding", pattern = "transcription factor|motif|chip-seq" },
+  { id = "methylation", label = "DNA methylation", pattern = "methylat" },
+  { id = "3d-genome", label = "3D genome", pattern = "hi-c|3d genome|chromatin conformation|topologically" },
+  { id = "enhancers", label = "Enhancers and regulatory elements", pattern = "enhancer|regulatory element|cis-regulatory" },
+]
+
+[[field]]
+id = "rna"
+label = "RNA"
+base = "T"
+shape = "hairpin"
+query = "(TITLE:\"non-coding RNA\" OR TITLE:\"RNA structure\" OR TITLE:\"microRNA\" OR TITLE:\"RNA modification\" OR TITLE:\"alternative splicing\")"
+tasks = [
+  { id = "rna-structure", label = "RNA structure prediction", pattern = "secondary structure|rna structure|tertiary structure|fold" },
+  { id = "mirna", label = "microRNA targets", pattern = "microrna|mirna|target" },
+  { id = "modification", label = "RNA modifications", pattern = "modification|m6a|methylat|pseudouridin" },
+  { id = "lncrna", label = "Long non-coding RNA", pattern = "lncrna|long non-coding" },
+  { id = "splicing", label = "Splicing", pattern = "splic" },
+]
+
+[[field]]
+id = "microbiome"
+label = "Microbiome and metagenomics"
+base = "A"
+shape = "microbes"
+query = "(TITLE:\"metagenomics\" OR TITLE:\"microbiome\" OR TITLE:\"metagenome-assembled\" OR TITLE:\"16S rRNA\")"
+tasks = [
+  { id = "profiling", label = "Taxonomic profiling", pattern = "taxonom|profil|classif" },
+  { id = "binning", label = "Genome binning (MAGs)", pattern = "binning|metagenome-assembled|mags?\\b" },
+  { id = "functional", label = "Functional profiling", pattern = "functional|pathway|metabolic" },
+  { id = "resistance", label = "Antimicrobial resistance", pattern = "antimicrobial|antibiotic|resistance gene|resistome" },
+  { id = "amplicon", label = "16S and amplicon analysis", pattern = "16s|amplicon|its region" },
+]
+
+[[field]]
+id = "benchmarks"
+label = "Benchmarks and machine learning"
+base = "G"
+shape = "bars"
+query = "(TITLE:\"benchmark\" AND (TITLE:\"genomics\" OR TITLE:\"protein\" OR TITLE:\"single-cell\" OR TITLE:\"bioinformatics\" OR TITLE:\"biology\" OR TITLE:\"biomedical\"))"
+tasks = [
+  { id = "benchmark", label = "Method benchmarks", pattern = "benchmark|comparison|evaluat" },
+  { id = "foundation-eval", label = "Foundation model evaluation", pattern = "foundation model|pretrain|language model" },
+  { id = "llm", label = "Large language models", pattern = "large language model|llm|gpt|chatbot" },
+  { id = "reproducibility", label = "Reproducibility", pattern = "reproducib|replicab" },
+]
+
+# Maps the dataset categories in data/datasets.csv to a field.
+[[category]]
+prefix = "Proteins"
+field = "proteins"
+
+[[category]]
+prefix = "Protein–ligand"
+field = "chemistry"
+
+[[category]]
+prefix = "Protein–protein"
+field = "proteins"
+
+[[category]]
+prefix = "Genomics"
+field = "genomes"
+
+[[category]]
+prefix = "Single-cell"
+field = "expression"
+
+[[category]]
+prefix = "Knowledge graphs"
+field = "pathways"
+
+[[category]]
+prefix = "Cancer"
+field = "cancer"
+
+[[category]]
+prefix = "Microbiome"
+field = "microbiome"
+
+[[category]]
+prefix = "RNA"
+field = "rna"
+
+[[category]]
+prefix = "Pathology"
+field = "cancer"
+
+[[category]]
+prefix = "Biomedical text"
+field = "benchmarks"
+
+[[category]]
+prefix = "Molecular design"
+field = "chemistry"
+
+[[category]]
+prefix = "Paper benchmarks"
+field = "benchmarks"
+
+[[category]]
+prefix = "New benchmarks"
+field = "benchmarks"

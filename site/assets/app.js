@@ -1,45 +1,58 @@
 // Bioinformatics Data Atlas: reads the JSON files in data/ and draws the pages.
-// Routes live in the URL hash: #home, #sources, #source/<id>, #datasets,
-// #papers/<field>, #status, #about.
-import { sequence, thumb, mountLive, clearThumbs } from "./glyph.js";
+// Routes live in the URL hash: #home, #sources[/field], #source/<id>,
+// #datasets[/field[/name]], #papers[/field], #benchmarks[/board], #status, #about.
+import { trace, requestThumb, mountLive, clearThumbs } from "./glyph.js";
 
 const view = document.getElementById("view");
-const state = { fields: [], sources: [], datasets: [], papers: null, status: null, build: null };
+const S = { fields: [], sources: [], datasets: [], papers: null, boards: null, status: null, build: null };
 let stopLive = () => {};
 
-// ---------- small helpers ----------
+// ---------- helpers ----------
 const esc = (s) =>
   String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const num = (n) => Number(n || 0).toLocaleString("en-US");
-const short = (v) => String(v || "").split(" (")[0].split("؛")[0].trim();
-const fieldOf = (id) => state.fields.find((f) => f.id === id) || { id, label: id, base: "A", shape: "network" };
-const safeUrl = (u) => (/^https?:\/\//i.test(u || "") ? u : "");
+const safe = (u) => (/^(https?|ftp):\/\//i.test(u || "") ? u : "");
+const fieldOf = (id) => S.fields.find((f) => f.id === id) || { id, label: id, base: "A", shape: "network", tasks: [] };
+const baseVar = (f) => `var(--base-${(f.base || "A").toLowerCase()})`;
+const BLANK = "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==";
+const STATE_LABEL = { ok: "Reachable", blocked: "Up, refuses automated checks", down: "Not reachable" };
 
-function strip(name, length = 28) {
-  return `<span class="strip" aria-hidden="true">${sequence(name, length).map((b) => `<i class="b-${b}"></i>`).join("")}</span>`;
+function toast(text) {
+  const t = document.getElementById("toast");
+  t.textContent = text;
+  t.classList.add("show");
+  clearTimeout(toast.timer);
+  toast.timer = setTimeout(() => t.classList.remove("show"), 1600);
+}
+
+async function copy(text) {
+  try {
+    await navigator.clipboard.writeText(text);
+    toast("Copied");
+  } catch (e) {
+    const area = document.createElement("textarea");
+    area.value = text;
+    document.body.append(area);
+    area.select();
+    try { document.execCommand("copy"); toast("Copied"); } catch (err) { toast("Select the text and copy it"); }
+    area.remove();
+  }
 }
 
 function licenceClass(text) {
   const t = (text || "").toLowerCase();
-  if (/controlled|licence required|commercial licence|paid|academic use only|non-commercial|nc/.test(t)) {
-    return /controlled/.test(t) ? "closed" : "limited";
-  }
+  if (/controlled/.test(t)) return "closed";
+  if (/licen[cs]e required|commercial|paid|academic use only|non-commercial|-nc|by-nc|registration/.test(t)) return "limited";
   if (/open|public domain|cc0|cc by|mit/.test(t)) return "open";
   return "";
 }
 
-function statusOf(id) {
-  return state.status?.sources?.[id] || null;
-}
-
-const STATE_LABEL = { ok: "Reachable", blocked: "Up, refuses automated checks", down: "Not reachable" };
-
+const statusOf = (id) => S.status?.sources?.[id] || null;
 function dot(id) {
   const s = statusOf(id);
   const label = s ? STATE_LABEL[s.state] || s.state : "Not checked yet";
   return `<span class="dot ${s ? esc(s.state) : ""}" title="${esc(label)}" role="img" aria-label="${esc(label)}"></span>`;
 }
-
 function history(id) {
   const s = statusOf(id);
   if (!s?.history?.length) return `<span class="muted">No checks yet</span>`;
@@ -48,182 +61,351 @@ function history(id) {
     .join("")}</span>`;
 }
 
-// Draw 3D stills only when a card scrolls into view.
+// 3D stills are drawn only when they scroll near the viewport, one per idle slot.
 const lazy = new IntersectionObserver(
-  (entries) => {
-    for (const e of entries) {
-      if (!e.isIntersecting) continue;
-      const img = e.target;
-      lazy.unobserve(img);
-      const url = thumb(img.dataset.name, img.dataset.shape);
-      if (url) img.src = url;
-    }
-  },
-  { rootMargin: "300px" }
+  (entries) => entries.forEach((e) => { if (e.isIntersecting) { lazy.unobserve(e.target); requestThumb(e.target); } }),
+  { rootMargin: "400px" }
 );
-const BLANK = "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==";
 const art = (name, field) =>
-  `<img src="${BLANK}" alt="" loading="lazy" data-name="${esc(name)}" data-shape="${esc(fieldOf(field).shape)}">`;
-const armArt = () => view.querySelectorAll("img[data-name]").forEach((img) => lazy.observe(img));
+  `<img src="${BLANK}" alt="" data-name="${esc(name)}" data-shape="${esc(fieldOf(field).shape)}">`;
+const armArt = () => view.querySelectorAll("img[data-name]:not(.ready)").forEach((img) => lazy.observe(img));
 
-function fieldChips(active, counts, hrefBase) {
-  const all = `<button class="chip plain" type="button" data-field="" aria-pressed="${active ? "false" : "true"}">All</button>`;
+// ---------- download code ----------
+const fileName = (url) => {
+  const last = url.split("?")[0].replace(/\/+$/, "").split("/").pop() || "download";
+  return last.includes("{") ? "download" : last;
+};
+
+function inferType(url) {
+  if (/huggingface\.co\/datasets\//.test(url)) return "hf";
+  if (/^https?:\/\/github\.com\/[^/]+\/[^/]+\/?$/.test(url)) return "git";
+  if (/\.(gz|zip|tar|tgz|bz2|xz|zst|h5|h5ad|csv|tsv|json|pkl|parquet|fasta|fa|faa|pdb|cif|txt|sdf|smi|npz|pt|obo|owl|gaf|vcf|bed|gtf|gff3?)(\?|$)/i.test(url)) return "file";
+  return "portal";
+}
+
+function snippets(url, type) {
+  if (!url) return [];
+  const f = fileName(url);
+  const q = JSON.stringify(url);
+  if (url.startsWith("s3://")) {
+    const key = url.replace(/^s3:\/\/[^/]+\/?/, "");
+    const b = url.replace(/^s3:\/\/([^/]+).*/, "$1");
+    const isFile = type === "file";
+    return [
+      ["AWS CLI", isFile ? `aws s3 cp --no-sign-request ${q} .` : `aws s3 sync --no-sign-request ${q} ./${fileName(url)}`],
+      ["Python", isFile
+        ? `import boto3\nfrom botocore import UNSIGNED\nfrom botocore.config import Config\n\ns3 = boto3.client("s3", config=Config(signature_version=UNSIGNED))\ns3.download_file(${JSON.stringify(b)}, ${JSON.stringify(key)}, ${JSON.stringify(f)})`
+        : `import boto3\nfrom botocore import UNSIGNED\nfrom botocore.config import Config\n\ns3 = boto3.client("s3", config=Config(signature_version=UNSIGNED))\npages = s3.get_paginator("list_objects_v2").paginate(Bucket=${JSON.stringify(b)}, Prefix=${JSON.stringify(key)})\nfor page in pages:\n    for obj in page.get("Contents", []):\n        print(obj["Key"], obj["Size"])`],
+    ];
+  }
+  if (url.startsWith("gs://")) {
+    return [
+      ["gcloud", `gcloud storage cp --recursive ${q} .`],
+      ["Python", `from google.cloud import storage\n\nclient = storage.Client.create_anonymous_client()\nbucket, _, prefix = ${q}[5:].partition("/")\nfor blob in client.list_blobs(bucket, prefix=prefix):\n    print(blob.name, blob.size)`],
+    ];
+  }
+  if (type === "hf") {
+    const repo = url.replace(/^https?:\/\/huggingface\.co\/datasets\//, "").split("/").slice(0, 2).join("/");
+    return [
+      ["hf CLI", `hf download ${repo} --repo-type dataset --local-dir ${repo.split("/")[1]}`],
+      ["Python", `from huggingface_hub import snapshot_download\n\npath = snapshot_download(repo_id=${JSON.stringify(repo)}, repo_type="dataset")`],
+      ["datasets", `from datasets import load_dataset\n\nds = load_dataset(${JSON.stringify(repo)})`],
+    ];
+  }
+  if (type === "git") return [["git", `git clone --depth 1 ${url}`]];
+  if (type === "api") {
+    return [
+      ["curl", `curl -s ${q}`],
+      ["Python", `import requests\n\ndata = requests.get(${q}, timeout=60).json()`],
+      ["R", `data <- jsonlite::fromJSON(${q})`],
+    ];
+  }
+  if (type === "directory") {
+    return [
+      ["wget", `wget -r -np -nd -c -R "index.html*" ${q}`],
+      ["curl", `# list the folder, then fetch the files you need\ncurl -s ${q}`],
+      ["Python", `import re, urllib.request\n\nbase = ${q}\nhtml = urllib.request.urlopen(base).read().decode()\nfiles = sorted(set(re.findall(r'href="([^"?/][^"]*)"', html)))\nprint(files)`],
+    ];
+  }
+  if (type === "file" || type === "pattern") {
+    return [
+      ["curl", `curl -L -C - -O ${q}`],
+      ["wget", `wget -c ${q}`],
+      ["Python", `import urllib.request\n\nurllib.request.urlretrieve(${q}, ${JSON.stringify(f)})`],
+      ["pooch", `# downloads once, caches, and records the SHA-256 for reproducibility\nimport pooch\n\npath = pooch.retrieve(url=${q}, known_hash=None, progressbar=True)\nprint(pooch.file_hash(path))`],
+      ["R", `download.file(${q}, destfile = ${JSON.stringify(f)}, mode = "wb")`],
+    ];
+  }
+  return [];
+}
+
+let panelSeq = 0;
+function codePanel(url, type, title) {
+  const tabs = snippets(url, type);
+  const id = `p${++panelSeq}`;
+  const open = safe(url) ? `<a class="btn" href="${esc(url)}" target="_blank" rel="noopener">Open</a>` : "";
+  const isPattern = type === "pattern" || url.includes("{");
+  return `<div class="get" data-panel="${id}">
+    <div class="get-head"><span class="eyebrow">${esc(title || "Direct link")}</span><span class="hint">${
+      isPattern ? "Replace the {placeholder} with the release you need." : type === "portal" ? "This source is a web portal; open it to choose files." : "Use this link in your code to fetch exactly this release."
+    }</span></div>
+    <div class="url-line"><code>${esc(url)}</code><button class="btn solid" type="button" data-copy="${esc(url)}">Copy link</button>${open}</div>
+    ${
+      tabs.length
+        ? `<div class="tabs" role="tablist">${tabs
+            .map((t, i) => `<button type="button" role="tab" aria-selected="${i === 0}" data-tab="${id}-${i}">${esc(t[0])}</button>`)
+            .join("")}</div>
+           ${tabs
+             .map(
+               (t, i) => `<div class="code" data-pane="${id}-${i}" ${i ? "hidden" : ""}><pre>${esc(t[1])}</pre><button class="btn small" type="button" data-copy-pre>Copy</button></div>`
+             )
+             .join("")}`
+        : ""
+    }
+  </div>`;
+}
+
+// One listener for every copy button, tab and code toggle on every page.
+document.addEventListener("click", (e) => {
+  const c = e.target.closest("[data-copy]");
+  if (c) return copy(c.dataset.copy);
+  const pre = e.target.closest("[data-copy-pre]");
+  if (pre) return copy(pre.parentElement.querySelector("pre").textContent);
+  const tab = e.target.closest("[data-tab]");
+  if (tab) {
+    const panel = tab.closest(".get");
+    panel.querySelectorAll("[data-tab]").forEach((b) => b.setAttribute("aria-selected", String(b === tab)));
+    panel.querySelectorAll("[data-pane]").forEach((p) => (p.hidden = p.dataset.pane !== tab.dataset.tab));
+    return;
+  }
+  const toggle = e.target.closest("[data-code]");
+  if (toggle) {
+    const host = toggle.closest(".row-main");
+    const existing = host.querySelector(".get");
+    if (existing && existing.dataset.for === toggle.dataset.code) { existing.remove(); return; }
+    existing?.remove();
+    host.insertAdjacentHTML("beforeend", codePanel(toggle.dataset.code, toggle.dataset.type, toggle.dataset.label));
+    host.lastElementChild.dataset.for = toggle.dataset.code;
+  }
+});
+
+// ---------- shared pieces ----------
+function fieldChips(active, counts) {
   return (
-    all +
-    state.fields
+    `<button class="chip plain" type="button" data-field="" aria-pressed="${!active}">All</button>` +
+    S.fields
       .filter((f) => !counts || counts[f.id])
       .map(
         (f) =>
-          `<button class="chip" type="button" data-field="${esc(f.id)}" style="--dot: var(--base-${f.base.toLowerCase()})" aria-pressed="${
-            active === f.id
-          }">${esc(f.label)}${counts ? ` <span class="muted">${counts[f.id]}</span>` : ""}</button>`
+          `<button class="chip" type="button" data-field="${esc(f.id)}" style="--dot:${baseVar(f)}" aria-pressed="${active === f.id}">${esc(
+            f.label
+          )}${counts ? ` <span class="n">${counts[f.id]}</span>` : ""}</button>`
       )
       .join("")
   );
 }
 
-// ---------- pages ----------
+function replaceHash(hash) {
+  try { window.history.replaceState(null, "", hash); } catch (e) { /* sandboxed */ }
+}
+
 function sourceCard(s) {
   return `<a class="card" href="#source/${esc(s.id)}">
     <span class="card-art">${art(s.name, s.field)}</span>
     <span class="card-body">
       <h3>${esc(s.name)}</h3>
-      ${strip(s.name)}
+      ${trace(s.name)}
       <p>${esc(s.summary)}</p>
-      <span class="card-meta"><span dir="auto">${dot(s.id)} ${esc(short(s.latest)) || "—"}</span><span>${s.versions.length} releases</span></span>
+      <span class="card-meta"><span>${dot(s.id)} ${esc(s.latest) || "—"}</span><span>${s.versions.length} releases</span></span>
     </span>
   </a>`;
 }
 
-function paperItem(p) {
-  const authors = p.authors.length > 150 ? p.authors.slice(0, 150).replace(/,[^,]*$/, "") + ", et al." : p.authors;
+const dsName = (key) => {
+  const [kind, id] = key.split(":");
+  if (kind === "db") return S.sources.find((s) => s.id === id)?.name || id;
+  return S.datasets.find((d) => d.id === id)?.name || id;
+};
+const dsHref = (key) => {
+  const [kind, id] = key.split(":");
+  if (kind === "db") return `#source/${id}`;
+  const d = S.datasets.find((x) => x.id === id);
+  return d ? `#datasets/${d.field}/${encodeURIComponent(d.name)}` : "#datasets";
+};
+// One tag per visible name: a database and a dataset can share a name.
+const uniqueByName = (keys) => {
+  const seen = new Set();
+  return keys.filter((k) => { const n = dsName(k).toLowerCase(); if (seen.has(n)) return false; seen.add(n); return true; });
+};
+const taskLabel = (field, id) => fieldOf(field).tasks?.find((t) => t.id === id)?.label || id;
+
+function paperCard(p, field, open = false) {
+  const authors = p.authors.length > 170 ? p.authors.slice(0, 170).replace(/,[^,]*$/, "") + ", et al." : p.authors;
   return `<article class="paper">
-    <h3><a href="${esc(safeUrl(p.url))}" target="_blank" rel="noopener">${esc(p.title)}</a></h3>
+    <h3><a href="${esc(safe(p.url))}" target="_blank" rel="noopener">${esc(p.title)}</a></h3>
     <p class="who">${esc(authors)}</p>
-    <p class="meta"><span>${esc(p.journal || "—")}</span><span>${esc(p.year)}</span><span>cited ${num(p.cited)}×</span></p>
-    <details><summary>Abstract</summary><p>${esc(p.abstract)}</p></details>
+    <p class="meta"><span>${esc(p.journal || "—")}</span><span>${esc(p.year)}</span><span>cited ${num(p.cited)}×</span>${
+      p.license ? `<span>${esc(p.license.toUpperCase())}</span>` : ""
+    }${p.lists?.includes("recent") ? `<span class="status latest">recent</span>` : ""}</p>
+    ${
+      p.tasks?.length || p.datasets?.length
+        ? `<div class="tags">${(p.tasks || []).map((t) => `<span class="tag task">${esc(taskLabel(field, t))}</span>`).join("")}${uniqueByName(p.datasets || [])
+            .map((d) => `<a class="tag ds" href="${esc(dsHref(d))}">${esc(dsName(d))}</a>`)
+            .join("")}</div>`
+        : ""
+    }
+    <p class="abstract ${open ? "" : "clamp"}" lang="en">${esc(p.abstract)}</p>
+    <button class="more" type="button" data-more>${open ? "Show less" : "Read the full abstract"}</button>
+    <div class="links">${safe(p.url) ? `<a class="btn small" href="${esc(p.url)}" target="_blank" rel="noopener">Article</a>` : ""}${
+      safe(p.pdf) ? `<a class="btn small" href="${esc(p.pdf)}" target="_blank" rel="noopener">PDF</a>` : ""
+    }${p.doi ? `<button class="btn small" type="button" data-copy="${esc(p.doi)}">Copy DOI</button>` : ""}</div>
   </article>`;
 }
+document.addEventListener("click", (e) => {
+  const more = e.target.closest("[data-more]");
+  if (!more) return;
+  const abs = more.parentElement.querySelector(".abstract");
+  const opened = abs.classList.toggle("clamp") === false;
+  more.textContent = opened ? "Show less" : "Read the full abstract";
+});
 
-function pageHome() {
+async function need(name) {
+  if (S[name]) return S[name];
+  const file = name === "boards" ? "leaderboards" : name;
+  try { S[name] = await load(file); } catch (e) { S[name] = null; }
+  return S[name];
+}
+
+// ---------- pages ----------
+async function pageHome() {
   const day = Math.floor(Date.now() / 864e5);
-  const featured = state.sources[day % state.sources.length];
+  const featured = S.sources[day % S.sources.length];
   const f = fieldOf(featured.field);
-  const checked = Object.values(state.status?.sources || {});
+  const checked = Object.values(S.status?.sources || {});
   const up = checked.filter((s) => s.state !== "down").length;
-  const versions = state.sources.reduce((a, s) => a + s.versions.length, 0);
-  const papers = (state.papers?.fields || []).reduce((a, x) => a + x.classics.length + x.recent.length, 0);
-  const recent = (state.papers?.fields || [])
-    .flatMap((x) => x.recent.slice(0, 1))
-    .sort((a, b) => b.cited - a.cited)
-    .slice(0, 4);
+  const versions = S.sources.reduce((a, s) => a + s.versions.length, 0);
+  const linked = S.sources.reduce((a, s) => a + s.versions.filter((v) => /^(https?|ftp|s3|gs):/.test(v.url)).length, 0);
 
-  view.innerHTML = `
-  <section class="hero">
+  view.innerHTML = `<div class="page">
+  <section class="section hero">
     <div class="hero-copy">
-      <p class="eyebrow">Databases · Datasets · Papers · Daily status</p>
+      <p class="eyebrow">Databases · Datasets · Papers · Benchmarks</p>
       <h1>Find the exact release of the data your analysis needs.</h1>
-      <p class="lede">Every release of ${state.sources.length} major bioinformatics databases with its archive path and licence, ${state.datasets.length} public datasets and benchmarks, and the most cited open-access papers in each field. Checked every day.</p>
+      <p class="lede">Every release of ${S.sources.length} core bioinformatics databases with a direct link you can paste into code, ${num(
+        S.datasets.length
+      )} public datasets, open-access papers by field and task, and published model comparisons. Rebuilt and checked every day.</p>
       <label class="search" for="q">
-        <input id="q" type="search" autocomplete="off" placeholder="Search: Ensembl, gnomAD v4, single-cell, ZINC…" aria-label="Search databases, datasets and papers">
+        <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle cx="7.5" cy="7.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 12l4.5 4.5" stroke="currentColor" stroke-width="1.6"/></svg>
+        <input id="q" type="search" autocomplete="off" placeholder="Search Ensembl 116, gnomAD v4.1, ChEMBL, single-cell…" aria-label="Search databases, releases, datasets and papers">
         <span class="kbd" aria-hidden="true">/</span>
       </label>
       <div id="results" class="results" hidden></div>
       <div class="stats">
-        <div class="stat"><b>${num(state.sources.length)}</b><span>databases</span></div>
-        <div class="stat"><b>${num(versions)}</b><span>releases tracked</span></div>
-        <div class="stat"><b>${num(state.datasets.length)}</b><span>datasets</span></div>
-        <div class="stat"><b>${num(papers)}</b><span>papers</span></div>
+        <div class="stat"><b>${num(S.sources.length)}</b><span>databases</span></div>
+        <div class="stat"><b>${num(versions)}</b><span>releases, ${num(linked)} linked</span></div>
+        <div class="stat"><b>${num(S.datasets.length)}</b><span>datasets</span></div>
+        <div class="stat"><b>${checked.length ? `${up}/${checked.length}` : "—"}</b><span>sources up today</span></div>
       </div>
     </div>
-    <div class="hero-stage">
+    <div class="stage">
       <canvas id="stage" aria-label="3D figure generated from the name ${esc(featured.name)}"></canvas>
       <div class="stage-tag">
-        <span><span class="eyebrow">Today's database</span><br><a href="#source/${esc(featured.id)}">${esc(featured.name)} →</a></span>
-        <small>${esc(f.label)}<br>shape: ${esc(f.shape)} · drag to turn</small>
+        <span><span class="eyebrow">Database of the day</span><br><a href="#source/${esc(featured.id)}">${esc(featured.name)} →</a></span>
+        <small>${esc(f.label)}<br>drag to rotate</small>
       </div>
     </div>
   </section>
 
   <section class="section">
     <div class="section-head"><h2>Browse by field</h2><a href="#sources">All databases →</a></div>
-    <div class="chips">${state.fields
-      .map((x) => `<a class="chip" href="#sources/${esc(x.id)}" style="--dot: var(--base-${x.base.toLowerCase()})">${esc(x.label)}</a>`)
+    <div class="chips">${S.fields
+      .map((x) => `<a class="chip" href="#sources/${esc(x.id)}" style="--dot:${baseVar(x)}">${esc(x.label)}</a>`)
       .join("")}</div>
   </section>
 
   <section class="section">
-    <div class="section-head"><h2>Recently updated databases</h2><a href="#status">${
-      checked.length ? `${up} of ${checked.length} sources reachable today →` : "Source status →"
-    }</a></div>
-    <div class="grid">${[...state.sources]
-      .filter((s) => /^\d{4}/.test(s.latest_date))
+    <div class="section-head"><h2>Recently released</h2><a href="#status">Source status →</a></div>
+    <div class="grid">${[...S.sources]
+      .filter((s) => /^\d{4}-\d{2}/.test(s.latest_date))
       .sort((a, b) => b.latest_date.localeCompare(a.latest_date))
       .slice(0, 8)
       .map(sourceCard)
       .join("")}</div>
   </section>
 
-  <section class="section">
-    <div class="section-head"><h2>Recent papers gaining citations</h2><a href="#papers">All papers by field →</a></div>
-    <div class="paper-cols">
-      <div class="paper-list">${recent.slice(0, 2).map(paperItem).join("")}</div>
-      <div class="paper-list">${recent.slice(2, 4).map(paperItem).join("")}</div>
-    </div>
-  </section>`;
+  <section class="section" id="home-board"></section>
+  <section class="section" id="home-papers"></section>
+  </div>`;
 
   stopLive = mountLive(document.getElementById("stage"), featured.name, f.shape);
+  wireSearch();
+  armArt();
+
+  const boards = await need("boards");
+  const b = boards?.boards?.[0];
+  const slot = document.getElementById("home-board");
+  if (b && slot) {
+    slot.innerHTML = `<div class="section-head"><h2>Top models on ${esc(b.title.split(":")[0])}</h2><a href="#benchmarks/${esc(b.id)}">Full comparison →</a></div>
+      ${boardTable(b, b.rows.slice(0, 5), false)}`;
+  }
+  const papers = await need("papers");
+  const pslot = document.getElementById("home-papers");
+  if (papers && pslot) {
+    const recent = papers.fields
+      .flatMap((x) => x.papers.filter((p) => p.lists.includes("recent")).slice(0, 1).map((p) => [x.id, p]))
+      .sort((a, b2) => b2[1].cited - a[1].cited)
+      .slice(0, 3);
+    pslot.innerHTML = `<div class="section-head"><h2>Recent papers gaining citations</h2><a href="#papers">All papers →</a></div>
+      <div class="paper-list">${recent.map(([fid, p]) => paperCard(p, fid)).join("")}</div>`;
+  }
+}
+
+function wireSearch() {
   const q = document.getElementById("q");
   const box = document.getElementById("results");
+  let timer = 0;
   q.addEventListener("input", () => {
-    const term = q.value.trim().toLowerCase();
-    if (term.length < 2) { box.hidden = true; return; }
-    const hit = (t) => String(t || "").toLowerCase().includes(term);
-    const rows = [
-      ...state.sources
-        .filter((s) => hit(s.name) || hit(s.summary) || s.versions.some((v) => hit(v.version)))
-        .slice(0, 6)
-        .map((s) => [`#source/${s.id}`, s.name, "database"]),
-      ...state.datasets
-        .filter((d) => hit(d.name) || hit(d.desc))
-        .slice(0, 6)
-        .map((d) => [`#datasets/${d.field}/${encodeURIComponent(d.name)}`, d.name, "dataset"]),
-      ...(state.papers?.fields || [])
-        .flatMap((x) => [...x.classics, ...x.recent].map((p) => [x.id, p]))
-        .filter(([, p]) => hit(p.title))
-        .slice(0, 5)
-        .map(([fid, p]) => [`#papers/${fid}`, p.title, "paper"]),
-    ];
-    box.hidden = false;
-    box.innerHTML = rows.length
-      ? rows.map(([href, label, kind]) => `<a href="${esc(href)}"><span>${esc(label)}</span><span class="kind">${kind}</span></a>`).join("")
-      : `<p class="muted" style="padding:8px 10px">Nothing matches “${esc(q.value)}”. Try a database name or a field.</p>`;
+    clearTimeout(timer);
+    timer = setTimeout(async () => {
+      const term = q.value.trim().toLowerCase();
+      if (term.length < 2) { box.hidden = true; return; }
+      const hit = (t) => String(t || "").toLowerCase().includes(term);
+      const papers = S.papers || (await need("papers"));
+      const rows = [
+        ...S.sources
+          .filter((s) => hit(s.name) || hit(s.summary) || s.versions.some((v) => hit(v.version)))
+          .slice(0, 6)
+          .map((s) => [`#source/${s.id}`, s.name, `database · ${s.latest || ""}`]),
+        ...S.datasets.filter((d) => hit(d.name) || hit(d.description)).slice(0, 6)
+          .map((d) => [`#datasets/${d.field}/${encodeURIComponent(d.name)}`, d.name, "dataset"]),
+        ...(papers?.fields || []).flatMap((x) => x.papers.map((p) => [x.id, p])).filter(([, p]) => hit(p.title) || hit(p.method))
+          .slice(0, 5).map(([fid, p]) => [`#papers/${fid}`, p.title, `paper · ${p.year}`]),
+      ];
+      box.hidden = false;
+      box.innerHTML = rows.length
+        ? rows.map(([href, label, kind]) => `<a href="${esc(href)}"><span>${esc(label)}</span><span class="kind">${esc(kind)}</span></a>`).join("")
+        : `<p class="muted" style="padding:8px 10px">Nothing matches “${esc(q.value)}”. Try a database name, a release or a field.</p>`;
+    }, 120);
   });
 }
 
 function pageSources(field) {
   const counts = {};
-  state.sources.forEach((s) => (counts[s.field] = (counts[s.field] || 0) + 1));
-  view.innerHTML = `
-  <section class="section" style="margin-block-start:8px">
+  S.sources.forEach((s) => (counts[s.field] = (counts[s.field] || 0) + 1));
+  view.innerHTML = `<div class="page"><section class="section">
     <h1>Databases</h1>
-    <p class="lede">Each card opens the full release history with archive paths. The figure and colour strip are generated from the database name.</p>
-    <div class="toolbar">
-      <div class="chips" id="chips">${fieldChips(field, counts)}</div>
-      <input class="filter" id="filter" type="search" placeholder="Filter by name or release" aria-label="Filter databases">
-    </div>
+    <p class="lede">Open a database to see every release with a direct link and ready-to-run download code. Each figure and trace is generated from the database name.</p>
+    <div class="toolbar"><div class="chips" id="chips">${fieldChips(field, counts)}</div>
+      <input class="input" id="filter" type="search" placeholder="Filter by name or release" aria-label="Filter databases" style="max-width:300px"></div>
     <div class="grid" id="grid"></div>
-  </section>`;
+  </section></div>`;
+  let active = field || "";
   const grid = document.getElementById("grid");
   const filter = document.getElementById("filter");
-  let active = field || "";
   const draw = () => {
     const term = filter.value.trim().toLowerCase();
-    const list = state.sources.filter(
-      (s) =>
-        (!active || s.field === active) &&
-        (!term || s.name.toLowerCase().includes(term) || s.versions.some((v) => v.version.toLowerCase().includes(term)))
-    );
+    const list = S.sources.filter((s) => (!active || s.field === active) &&
+      (!term || s.name.toLowerCase().includes(term) || s.versions.some((v) => v.version.toLowerCase().includes(term))));
     grid.innerHTML = list.length ? list.map(sourceCard).join("") : `<p class="note">No database matches this filter.</p>`;
     armArt();
   };
@@ -231,7 +413,7 @@ function pageSources(field) {
     const b = e.target.closest("button[data-field]");
     if (!b) return;
     active = b.dataset.field;
-    history_replace(active ? `#sources/${active}` : "#sources");
+    replaceHash(active ? `#sources/${active}` : "#sources");
     document.querySelectorAll("#chips button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
     draw();
   });
@@ -239,82 +421,92 @@ function pageSources(field) {
   draw();
 }
 
-function history_replace(hash) {
-  try { window.history.replaceState(null, "", hash); } catch (e) { /* file:// or sandbox */ }
-}
-
 function pageSource(id) {
-  const s = state.sources.find((x) => x.id === id);
+  const s = S.sources.find((x) => x.id === id);
   if (!s) return notFound("That database is not in the atlas.");
   const f = fieldOf(s.field);
   const st = statusOf(s.id);
-  const related = state.datasets.filter((d) => d.field === s.field).slice(0, 6);
+  const link = S.status?.links?.[s.id];
   const rows = [...s.versions].reverse();
-  view.innerHTML = `
+  const related = S.datasets.filter((d) => d.field === s.field).slice(0, 5);
+  view.innerHTML = `<div class="page">
   <a class="back" href="#sources/${esc(s.field)}">← ${esc(f.label)}</a>
   <section class="detail">
-    <div class="hero-stage">
-      <canvas id="stage" aria-label="3D figure generated from the name ${esc(s.name)}"></canvas>
-      <div class="stage-tag"><span class="eyebrow">shape: ${esc(f.shape)}</span><small>drag to turn</small></div>
-    </div>
+    <div class="stage"><canvas id="stage" aria-label="3D figure generated from the name ${esc(s.name)}"></canvas>
+      <div class="stage-tag"><span class="eyebrow">${esc(f.shape)}</span><small>drag to rotate</small></div></div>
     <div class="detail-info">
-      <p class="eyebrow t-${esc(f.base)}">${esc(f.label)}</p>
+      <p class="eyebrow" style="color:${baseVar(f)}">${esc(f.label)}</p>
       <h1>${esc(s.name)}</h1>
-      ${strip(s.name, 40)}
+      ${trace(s.name, 44)}
       <p class="lede">${esc(s.summary)}</p>
       <dl class="facts">
-        <dt>Latest release</dt><dd dir="auto"><b>${esc(short(s.latest)) || "—"}</b> <span class="muted">${esc(s.latest_date)}</span></dd>
+        <dt>Current release</dt><dd><b>${esc(s.latest) || "—"}</b> <span class="muted">${esc(s.latest_date)}</span></dd>
         <dt>Releases tracked</dt><dd>${s.versions.length}</dd>
         <dt>Licence</dt><dd><span class="badge ${licenceClass(s.license)}">${esc(s.license)}</span></dd>
-        <dt>Website</dt><dd><a href="${esc(safeUrl(s.homepage))}" target="_blank" rel="noopener">${esc(s.homepage)}</a></dd>
+        <dt>Website</dt><dd><a href="${esc(safe(s.homepage))}" target="_blank" rel="noopener">${esc(s.homepage)}</a></dd>
         <dt>Status today</dt><dd>${dot(s.id)} ${st ? `${esc(STATE_LABEL[st.state] || st.state)} <span class="muted mono">HTTP ${st.code || "—"} · ${st.ms} ms</span>` : `<span class="muted">Not checked yet</span>`}</dd>
+        <dt>Download link</dt><dd>${link ? `${dot("")} ${link.state === "ok" ? "Answered today" : esc(STATE_LABEL[link.state] || link.state)} <span class="muted mono">HTTP ${link.code || "—"}</span>` : `<span class="muted">Not checked yet</span>`}</dd>
         <dt>Last 30 checks</dt><dd>${history(s.id)}</dd>
       </dl>
     </div>
   </section>
 
+  ${s.latest_url ? `<section class="section">${codePanel(s.latest_url, s.latest_url_type, `Current release · ${s.latest}`)}</section>` : ""}
+
   <section class="section">
-    <div class="section-head"><h2>Release history</h2><span class="muted">newest first · ✓ confirmed against the source, ? from prior knowledge</span></div>
+    <div class="section-head"><h2>All releases</h2><span class="hint">Newest first. ✓ confirmed against the source; ? from prior knowledge.</span></div>
     <div class="table-wrap"><table>
-      <thead><tr><th>Release</th><th>Date</th><th>Path or pattern</th><th>Checked</th></tr></thead>
+      <thead><tr><th>Release</th><th>Date</th><th>Status</th><th>Direct link</th><th></th><th>Checked</th></tr></thead>
       <tbody>${rows
-        .map(
-          (v) => `<tr class="${v.latest ? "is-latest" : ""}">
-          <td dir="auto">${esc(v.version)}</td><td dir="auto" class="mono">${esc(v.date)}</td>
-          <td class="mono" dir="auto">${esc(v.url)}</td><td>${v.verified ? "✓" : "?"}</td></tr>`
-        )
+        .map((v, i) => {
+          const usable = /^(https?|ftp|s3|gs):/.test(v.url);
+          return `<tr>
+            <td><b>${esc(v.version)}</b>${v.note ? `<br><span class="hint">${esc(v.note)}</span>` : ""}</td>
+            <td class="mono nowrap">${esc(v.date) || "—"}</td>
+            <td><span class="status ${esc(v.status)}">${esc(v.status || "—")}</span></td>
+            <td class="url">${v.url ? esc(v.url) : `<span class="muted">—</span>`}</td>
+            <td class="nowrap">${usable ? `<button class="btn small" type="button" data-copy="${esc(v.url)}">Copy</button> <button class="btn small" type="button" data-rel="${i}">Code</button>` : ""}</td>
+            <td>${v.verified ? "✓" : "?"}</td></tr>
+            <tr data-relpanel="${i}" hidden><td colspan="6"></td></tr>`;
+        })
         .join("")}</tbody>
     </table></div>
   </section>
 
-  ${
-    related.length
-      ? `<section class="section"><div class="section-head"><h2>Datasets in this field</h2><a href="#datasets/${esc(s.field)}">All →</a></div>
-         <div class="rows">${related.map(datasetRow).join("")}</div></section>`
-      : ""
-  }
-  <section class="section"><a class="chip plain" href="#papers/${esc(s.field)}">Most cited papers in ${esc(f.label)} →</a></section>`;
+  ${related.length ? `<section class="section"><div class="section-head"><h2>Datasets in ${esc(f.label.toLowerCase())}</h2><a href="#datasets/${esc(s.field)}">All →</a></div>
+     <div class="rows">${related.map(datasetRow).join("")}</div></section>` : ""}
+  <section class="section"><div class="chips"><a class="chip" style="--dot:${baseVar(f)}" href="#papers/${esc(s.field)}">Papers in ${esc(f.label)} →</a></div></section>
+  </div>`;
+  view.querySelectorAll("[data-rel]").forEach((b) =>
+    b.addEventListener("click", () => {
+      const i = Number(b.dataset.rel);
+      const row = view.querySelector(`[data-relpanel="${i}"]`);
+      if (!row.hidden) { row.hidden = true; return; }
+      const v = rows[i];
+      row.firstElementChild.innerHTML = codePanel(v.url, v.url_type || inferType(v.url), `${s.name} ${v.version}`);
+      row.hidden = false;
+    })
+  );
   stopLive = mountLive(document.getElementById("stage"), s.name, f.shape);
   armArt();
 }
 
 function datasetRow(d) {
-  const links = [
-    ...(safeUrl(d.repo) ? [{ label: "repository", url: d.repo }] : []),
-    ...d.links.filter((l) => safeUrl(l.url)).slice(0, 5),
-  ];
+  const links = [...(safe(d.repo) ? [{ label: "Repository", url: d.repo }] : []), ...d.links.filter((l) => safe(l.url))];
+  const facts = [d.versions && `Versions: ${d.versions}`, d.license && `Licence: ${d.license}`, d.paper_count && `Used by ${d.paper_count} papers`]
+    .filter(Boolean).join(" · ");
   return `<article class="row">
     <span class="row-art">${art(d.name, d.field)}</span>
     <div class="row-main">
       <h3>${esc(d.name)}</h3>
-      ${d.desc ? `<p dir="auto">${esc(d.desc)}</p>` : ""}
-      ${
-        links.length
-          ? `<div class="row-links">${links.map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join("")}</div>`
-          : d.access
-          ? `<p class="mono" dir="auto">${esc(d.access)}</p>`
-          : ""
-      }
+      ${d.description ? `<p>${esc(d.description)}</p>` : ""}
+      ${facts ? `<p class="hint">${esc(facts)}</p>` : ""}
+      ${d.access ? `<p class="mono hint">${esc(d.access)}</p>` : ""}
+      ${links.length ? `<div class="row-links">${links.slice(0, 8).map((l) => {
+        const type = inferType(l.url);
+        return `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>${
+          type !== "portal" ? `<button type="button" data-code="${esc(l.url)}" data-type="${type}" data-label="${esc(d.name + " · " + l.label)}">code</button>` : ""}`;
+      }).join("")}</div>` : ""}
     </div>
     <span class="stars">${d.stars != null ? `★ ${num(d.stars)}` : ""}</span>
   </article>`;
@@ -322,25 +514,24 @@ function datasetRow(d) {
 
 function pageDatasets(field, preset) {
   const counts = {};
-  state.datasets.forEach((d) => (counts[d.field] = (counts[d.field] || 0) + 1));
-  view.innerHTML = `
-  <section class="section" style="margin-block-start:8px">
+  S.datasets.forEach((d) => (counts[d.field] = (counts[d.field] || 0) + 1));
+  view.innerHTML = `<div class="page"><section class="section">
     <h1>Datasets and benchmarks</h1>
-    <p class="lede">Public datasets from GitHub, papers and challenges, with repository and download links. Descriptions are currently in Persian.</p>
-    <div class="toolbar">
-      <div class="chips" id="chips">${fieldChips(field, counts)}</div>
-      <input class="filter" id="filter" type="search" placeholder="Filter by name" aria-label="Filter datasets" value="${esc(preset || "")}">
-    </div>
+    <p class="lede">Public datasets from repositories, papers and challenges. Press “code” next to a link to get a download snippet for your language.</p>
+    <div class="toolbar"><div class="chips" id="chips">${fieldChips(field, counts)}</div>
+      <input class="input" id="filter" type="search" placeholder="Filter by name or description" aria-label="Filter datasets" value="${esc(preset || "")}" style="max-width:300px"></div>
+    <p class="count" id="count"></p>
     <div class="rows" id="rows"></div>
-  </section>`;
+  </section></div>`;
+  let active = field || "";
   const rows = document.getElementById("rows");
   const filter = document.getElementById("filter");
-  let active = field || "";
   const draw = () => {
     const term = filter.value.trim().toLowerCase();
-    const list = state.datasets
-      .filter((d) => (!active || d.field === active) && (!term || d.name.toLowerCase().includes(term) || d.desc.toLowerCase().includes(term)))
-      .sort((a, b) => (b.stars ?? -1) - (a.stars ?? -1));
+    const list = S.datasets
+      .filter((d) => (!active || d.field === active) && (!term || d.name.toLowerCase().includes(term) || d.description.toLowerCase().includes(term)))
+      .sort((a, b) => (b.stars ?? -1) - (a.stars ?? -1) || (b.paper_count ?? 0) - (a.paper_count ?? 0));
+    document.getElementById("count").textContent = `${list.length} of ${S.datasets.length} datasets`;
     rows.innerHTML = list.length ? list.map(datasetRow).join("") : `<p class="note">No dataset matches this filter.</p>`;
     armArt();
   };
@@ -348,7 +539,7 @@ function pageDatasets(field, preset) {
     const b = e.target.closest("button[data-field]");
     if (!b) return;
     active = b.dataset.field;
-    history_replace(active ? `#datasets/${active}` : "#datasets");
+    replaceHash(active ? `#datasets/${active}` : "#datasets");
     document.querySelectorAll("#chips button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
     draw();
   });
@@ -356,83 +547,180 @@ function pageDatasets(field, preset) {
   draw();
 }
 
-function pagePapers(field) {
-  const all = state.papers?.fields || [];
-  if (!all.length) return (view.innerHTML = `<p class="note">Papers have not been fetched yet. The daily job fills this page.</p>`);
-  const current = all.find((x) => x.id === field) || all[0];
-  view.innerHTML = `
-  <section class="section" style="margin-block-start:8px">
-    <h1>Papers by field</h1>
-    <p class="lede">Open-access papers ranked by citation count, refreshed daily from Europe PMC. The left column is all-time, the right column is the last 24 months.</p>
-    <div class="chips" id="chips">${state.fields
-      .filter((f) => all.some((x) => x.id === f.id))
-      .map(
-        (f) =>
-          `<a class="chip" href="#papers/${esc(f.id)}" style="--dot: var(--base-${f.base.toLowerCase()})" aria-pressed="${f.id === current.id}">${esc(f.label)}</a>`
-      )
+async function pagePapers(fieldId) {
+  view.innerHTML = `<div class="page"><p class="loading">Loading papers…</p></div>`;
+  const papers = await need("papers");
+  if (!papers?.fields?.length) return (view.innerHTML = `<div class="page"><p class="note">Papers have not been fetched yet. The daily job fills this page.</p></div>`);
+  const current = papers.fields.find((x) => x.id === fieldId) || papers.fields[0];
+  const f = fieldOf(current.id);
+  const list = current.papers;
+  const taskCount = {}, dsCount = {};
+  list.forEach((p) => { p.tasks.forEach((t) => (taskCount[t] = (taskCount[t] || 0) + 1)); p.datasets.forEach((d) => (dsCount[d] = (dsCount[d] || 0) + 1)); });
+  const years = [...new Set(list.map((p) => p.year).filter(Boolean))].sort();
+  const journals = [...new Set(list.map((p) => p.journal).filter(Boolean))].sort();
+
+  view.innerHTML = `<div class="page"><section class="section">
+    <h1>Papers</h1>
+    <p class="lede">Open-access papers ranked by citations, refreshed daily from Europe PMC. Filter by task, dataset, year and venue, then switch to the comparison table to set methods side by side.</p>
+    <div class="chips">${papers.fields.map((x) => `<a class="chip" href="#papers/${esc(x.id)}" style="--dot:${baseVar(fieldOf(x.id))}" aria-pressed="${x.id === current.id}">${esc(x.label)} <span class="n">${x.papers.length}</span></a>`).join("")}</div>
+    <div class="chips" id="tasks"><button class="chip plain" type="button" data-task="" aria-pressed="true">All tasks</button>${(f.tasks || [])
+      .filter((t) => taskCount[t.id])
+      .map((t) => `<button class="chip" type="button" style="--dot:${baseVar(f)}" data-task="${esc(t.id)}" aria-pressed="false">${esc(t.label)} <span class="n">${taskCount[t.id]}</span></button>`)
       .join("")}</div>
-    <div class="paper-cols">
-      <div class="paper-list"><p class="eyebrow">Most cited, all time</p>${current.classics.map(paperItem).join("") || `<p class="note">None found.</p>`}</div>
-      <div class="paper-list"><p class="eyebrow">Most cited, last 24 months</p>${current.recent.map(paperItem).join("") || `<p class="note">None found.</p>`}</div>
+    <div class="controls">
+      <div class="control"><label for="pq">Search</label><input class="input" id="pq" type="search" placeholder="Title, method, keyword"></div>
+      <div class="control"><label for="pds">Dataset or database</label><select class="input" id="pds"><option value="">Any</option>${Object.entries(dsCount)
+        .sort((a, b) => b[1] - a[1]).map(([k, n]) => `<option value="${esc(k)}">${esc(dsName(k))} (${n})</option>`).join("")}</select></div>
+      <div class="control"><label for="pfrom">From year</label><select class="input" id="pfrom"><option value="">Any</option>${years.map((y) => `<option>${y}</option>`).join("")}</select></div>
+      <div class="control"><label for="pjour">Venue</label><select class="input" id="pjour"><option value="">Any</option>${journals.map((j) => `<option>${esc(j)}</option>`).join("")}</select></div>
+      <div class="control"><label for="pcit">Min. citations</label><input class="input" id="pcit" type="number" min="0" step="10" placeholder="0"></div>
+      <div class="control"><label for="psort">Sort by</label><select class="input" id="psort"><option value="cited">Most cited</option><option value="year">Newest</option><option value="title">Title</option></select></div>
     </div>
-    <p class="note">Selection rule: ${esc(state.papers.rule)}<br><span class="mono">${esc(current.query)}</span><br>Fetched ${esc(state.papers.generated_at)} from ${esc(state.papers.source)}. Only open-access records are shown, so abstracts can be reused.</p>
-  </section>`;
+    <div class="toolbar">
+      <div class="seg" id="plist"><button type="button" data-list="" aria-pressed="true">All</button><button type="button" data-list="classic" aria-pressed="false">Most cited ever</button><button type="button" data-list="recent" aria-pressed="false">Last 24 months</button></div>
+      <div class="seg" id="pview"><button type="button" data-view="list" aria-pressed="true">Abstracts</button><button type="button" data-view="table" aria-pressed="false">Compare methods</button></div>
+    </div>
+    <p class="count" id="pcount"></p>
+    <div id="pout"></div>
+    <p class="note">Tasks are assigned from keyword patterns and datasets are the databases and datasets named in each title, abstract or keyword list, so check the paper before relying on a tag. Query: <span class="mono">${esc(current.query)}</span>. Fetched ${esc(papers.generated_at)}.</p>
+  </section></div>`;
+
+  const st = { task: "", list: "", view: "list", sort: "cited", dir: -1 };
+  const $ = (id) => document.getElementById(id);
+  const draw = () => {
+    const q = $("pq").value.trim().toLowerCase();
+    const ds = $("pds").value, from = $("pfrom").value, jour = $("pjour").value, min = Number($("pcit").value || 0);
+    let out = list.filter((p) =>
+      (!st.task || p.tasks.includes(st.task)) && (!st.list || p.lists.includes(st.list)) && (!ds || p.datasets.includes(ds)) &&
+      (!from || p.year >= from) && (!jour || p.journal === jour) && p.cited >= min &&
+      (!q || p.title.toLowerCase().includes(q) || p.method.toLowerCase().includes(q) || p.keywords.some((k) => k.toLowerCase().includes(q))));
+    const key = $("psort").value;
+    out.sort((a, b) => key === "year" ? (b.date || b.year).localeCompare(a.date || a.year) : key === "title" ? a.title.localeCompare(b.title) : b.cited - a.cited);
+    $("pcount").textContent = `${out.length} of ${list.length} papers`;
+    if (!out.length) { $("pout").innerHTML = `<p class="note">No paper matches these filters.</p>`; return; }
+    $("pout").innerHTML = st.view === "list"
+      ? `<div class="paper-list">${out.map((p) => paperCard(p, current.id)).join("")}</div>`
+      : `<div class="table-wrap"><table class="compare"><thead><tr><th>Method</th><th>Paper</th><th>Year</th><th>Venue</th><th>Cited</th><th>Tasks</th><th>Datasets named</th><th>Text</th></tr></thead><tbody>${out
+          .map((p) => `<tr><td><b>${esc(p.method || "—")}</b></td><td><a href="${esc(safe(p.url))}" target="_blank" rel="noopener">${esc(p.title)}</a></td>
+            <td class="num">${esc(p.year)}</td><td>${esc(p.journal)}</td><td class="num">${num(p.cited)}</td>
+            <td><div class="tags">${p.tasks.map((t) => `<span class="tag task">${esc(taskLabel(current.id, t))}</span>`).join("")}</div></td>
+            <td><div class="tags">${uniqueByName(p.datasets).map((d) => `<a class="tag ds" href="${esc(dsHref(d))}">${esc(dsName(d))}</a>`).join("") || `<span class="muted">—</span>`}</div></td>
+            <td class="nowrap">${safe(p.pdf) ? `<a href="${esc(p.pdf)}" target="_blank" rel="noopener">PDF</a>` : "—"}</td></tr>`)
+          .join("")}</tbody></table></div>`;
+  };
+  $("tasks").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-task]"); if (!b) return;
+    st.task = b.dataset.task;
+    $("tasks").querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+    draw();
+  });
+  for (const [id, key] of [["plist", "list"], ["pview", "view"]]) {
+    $(id).addEventListener("click", (e) => {
+      const b = e.target.closest("button"); if (!b) return;
+      st[key] = b.dataset[key];
+      $(id).querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+      draw();
+    });
+  }
+  ["pq", "pds", "pfrom", "pjour", "pcit", "psort"].forEach((id) => $(id).addEventListener("input", draw));
+  draw();
+}
+
+// "Sun, N., Zou, S. … (2024). Title" -> "Sun et al., 2024"
+function shortCite(text) {
+  const year = (text.match(/\((\d{4})\)/) || text.match(/\b(19|20)\d{2}\b/) || [""])[0].replace(/[()]/g, "");
+  const first = text.trim().split(/[,.]/)[0].trim().split(/\s+/);
+  const surname = /^[A-Z]\.?$/.test(first[0] || "") ? first[first.length - 1] : first.length > 1 && !/,/.test(text.split(" ")[0]) ? first[first.length - 1] : first[0];
+  return surname ? `${surname} et al.${year ? ", " + year : ""}` : "paper";
+}
+
+function boardTable(b, rows, full = true) {
+  const max = Math.max(...b.rows.map((r) => r.score));
+  return `<div class="table-wrap"><table>
+    <thead><tr><th>#</th><th>Model</th><th>Family</th><th>${esc(b.metric_label)}</th>${full ? b.columns.map((c) => `<th>${esc(c)}</th>`).join("") + "<th>Paper</th>" : ""}</tr></thead>
+    <tbody>${rows.map((r) => `<tr><td class="num">${r.rank}</td><td><b>${esc(r.model)}</b></td><td class="muted">${esc(r.kind)}</td>
+      <td class="num"><span class="bar"><i style="width:${Math.max(2, (r.score / max) * 90).toFixed(0)}px"></i>${r.score.toFixed(3)}</span></td>
+      ${full ? r.values.map((v) => `<td class="num">${v == null ? "—" : v.toFixed(3)}</td>`).join("") +
+        `<td class="nowrap">${safe(r.paper_url) ? `<a href="${esc(r.paper_url)}" target="_blank" rel="noopener" title="${esc(r.paper)}">${esc(shortCite(r.paper))}</a>` : "—"}</td>` : ""}</tr>`).join("")}</tbody>
+  </table></div>`;
+}
+
+async function pageBenchmarks(id) {
+  view.innerHTML = `<div class="page"><p class="loading">Loading benchmarks…</p></div>`;
+  const data = await need("boards");
+  if (!data?.boards?.length) return (view.innerHTML = `<div class="page"><p class="note">No benchmark table has been fetched yet. The daily job fills this page.</p></div>`);
+  const b = data.boards.find((x) => x.id === id) || data.boards[0];
+  const kinds = [...new Set(b.rows.map((r) => r.kind).filter(Boolean))].sort();
+  view.innerHTML = `<div class="page"><section class="section">
+    <h1>Benchmarks</h1>
+    <p class="lede">Model comparisons copied daily from the results tables that benchmark maintainers publish. Scores are shown exactly as published.</p>
+    <div class="chips">${data.boards.map((x) => `<a class="chip" style="--dot:${baseVar(fieldOf(x.field))}" href="#benchmarks/${esc(x.id)}" aria-pressed="${x.id === b.id}">${esc(x.title.replace(/^[^:]+:\s*/, ""))}</a>`).join("")}</div>
+    <div class="section-head"><h2>${esc(b.title)}</h2><span class="hint">${b.rows.length} models · ${b.higher ? "higher is better" : "lower is better"}</span></div>
+    <div class="controls">
+      <div class="control"><label for="bq">Model</label><input class="input" id="bq" type="search" placeholder="Filter models"></div>
+      <div class="control"><label for="bk">Family</label><select class="input" id="bk"><option value="">All families</option>${kinds.map((k) => `<option>${esc(k)}</option>`).join("")}</select></div>
+    </div>
+    <div id="bout"></div>
+    <p class="note">Source: <a href="${esc(safe(b.source))}" target="_blank" rel="noopener">${esc(b.source)}</a> · CSV: <span class="mono">${esc(b.csv)}</span> · fetched ${esc(b.fetched_at)}. Task: ${esc(taskLabel(b.field, b.task))}.</p>
+  </section></div>`;
+  const draw = () => {
+    const q = document.getElementById("bq").value.trim().toLowerCase();
+    const k = document.getElementById("bk").value;
+    const rows = b.rows.filter((r) => (!k || r.kind === k) && (!q || r.model.toLowerCase().includes(q)));
+    document.getElementById("bout").innerHTML = rows.length ? boardTable(b, rows) : `<p class="note">No model matches.</p>`;
+  };
+  ["bq", "bk"].forEach((x) => document.getElementById(x).addEventListener("input", draw));
+  draw();
 }
 
 function pageStatus() {
-  const checked = state.status?.checked_at;
-  const body = state.sources
-    .map((s) => {
-      const st = statusOf(s.id);
-      return `<tr><td><a href="#source/${esc(s.id)}">${esc(s.name)}</a></td>
-        <td>${dot(s.id)} ${st ? esc(STATE_LABEL[st.state] || st.state) : `<span class="muted">Not checked yet</span>`}</td>
-        <td class="mono">${st ? st.code || "—" : "—"}</td><td class="mono">${st ? st.ms + " ms" : "—"}</td><td>${history(s.id)}</td></tr>`;
-    })
-    .join("");
-  view.innerHTML = `
-  <section class="section" style="margin-block-start:8px">
+  const checked = S.status?.checked_at;
+  view.innerHTML = `<div class="page"><section class="section">
     <h1>Source status</h1>
-    <p class="lede">Once a day the build job requests each source's website and records the answer. A source that refuses automated checks still counts as up.</p>
-    ${
-      checked
-        ? `<p class="muted">Last check: <span class="mono">${esc(checked)}</span></p>`
-        : `<p class="note">No check has run yet. The first run of the daily job on GitHub fills this table.</p>`
-    }
+    <p class="lede">Each day the build requests every source's website and the download link of its current release. A server that refuses automated checks still counts as up.</p>
+    ${checked ? `<p class="hint">Last check: <span class="mono">${esc(checked)}</span></p>` : `<p class="note">No check has run yet. The first run of the daily job on GitHub fills this table.</p>`}
     <div class="table-wrap"><table>
-      <thead><tr><th>Database</th><th>State</th><th>HTTP</th><th>Response</th><th>Last 30 days</th></tr></thead>
-      <tbody>${body}</tbody>
+      <thead><tr><th>Database</th><th>Website</th><th>HTTP</th><th>Response</th><th>Download link</th><th>Last 30 days</th></tr></thead>
+      <tbody>${S.sources.map((s) => {
+        const st = statusOf(s.id), l = S.status?.links?.[s.id];
+        return `<tr><td><a href="#source/${esc(s.id)}">${esc(s.name)}</a></td>
+          <td class="nowrap">${dot(s.id)} ${st ? esc(STATE_LABEL[st.state] || st.state) : `<span class="muted">—</span>`}</td>
+          <td class="num">${st ? st.code || "—" : "—"}</td><td class="num">${st ? st.ms + " ms" : "—"}</td>
+          <td class="nowrap">${l ? `<span class="dot ${esc(l.state)}"></span> ${l.code || "—"}` : `<span class="muted">—</span>`}</td><td>${history(s.id)}</td></tr>`;
+      }).join("")}</tbody>
     </table></div>
-  </section>`;
+  </section></div>`;
 }
 
 function pageAbout() {
-  const b = state.build || {};
+  const b = S.build || {};
   const inputs = Object.entries(b.inputs || {}).map(([k, v]) => `${v.slice(0, 16)}…  ${k}`).join("\n");
-  view.innerHTML = `
-  <section class="section" style="margin-block-start:8px">
+  view.innerHTML = `<div class="page"><section class="section">
     <h1>How the atlas is built</h1>
     <div class="prose">
-      <p>The site is a set of static pages. A small Rust program, <code>atlas</code>, reads four files kept in the repository and writes the JSON files these pages load. A GitHub Actions job runs it every day, commits the new data and publishes the site.</p>
-      <h2>What is checked every day</h2>
-      <p><b>Papers.</b> For each field, one Europe PMC query returns open-access papers ranked by citations: all-time and the last 24 months. The query for every field is printed on its page.</p>
-      <p><b>Status.</b> Each source's website is requested once. The answer and the response time are kept for 30 days.</p>
+      <p>The site is a set of static pages. A small Rust program, <code>atlas</code>, reads five files kept in the repository and writes the JSON files these pages load. A GitHub Actions job runs it every day, commits the new data and publishes the site.</p>
+      <h2>What changes every day</h2>
+      <p><b>Papers.</b> For each field, two Europe PMC queries return the most cited open-access papers of all time and of the last 24 months. Each paper is tagged with tasks, from keyword patterns, and with the databases and datasets it names.</p>
+      <p><b>Benchmarks.</b> Published results tables are downloaded and shown unchanged.</p>
+      <p><b>Status.</b> Every source's website and the download link of its current release are requested once. Results are kept for 30 days.</p>
       <h2>Reproducing a build</h2>
-      <p>Databases, releases and datasets come only from files in the repository, so the same commit always gives the same <code>sources.json</code> and <code>datasets.json</code>. Run <code>atlas build --offline</code> to rebuild them without any network call. Each build records the commit and the SHA-256 of every input:</p>
+      <p>Databases, releases and datasets come only from files in the repository, so a commit always gives the same <code>sources.json</code> and <code>datasets.json</code>. The daily job builds them twice with <code>atlas build --offline</code> and stops if the two outputs differ. Every build records the commit and the SHA-256 of each input:</p>
       <div class="pre">built      ${esc(b.generated_at || "—")}
 engine     ${esc(b.engine || "—")}
 commit     ${esc(b.commit || "—")}
 mode       ${esc(b.mode || "—")}
 ${esc(inputs)}</div>
+      <p>For your own analyses, pin the exact release link from a database page and record its checksum. The “pooch” code tab does both.</p>
       <h2>Adding or fixing an entry</h2>
-      <p>Add a block to <code>registry/sources.toml</code> and rows to <code>databases_versions.csv</code>, then open a pull request. No code change is needed.</p>
+      <p>Add a block to <code>data/sources.toml</code> and rows to <code>data/database_versions.csv</code>, then open a pull request. No code change is needed.</p>
       <h2>Limits</h2>
-      <p>Release rows marked “?” come from prior knowledge and were not confirmed against the source. Licence text is a short indication, not legal advice. The atlas links to data; it does not host or mirror any of it.</p>
+      <p>Releases marked “?” come from prior knowledge and were not confirmed against the source. Licence text is a short indication, not legal advice. Task and dataset tags on papers are automatic.</p>
     </div>
-  </section>`;
+  </section></div>`;
 }
 
 function notFound(message) {
-  view.innerHTML = `<section class="section"><h1>Not found</h1><p class="lede">${esc(message)}</p><a class="chip plain" href="#home">Back to the start</a></section>`;
+  view.innerHTML = `<div class="page"><section class="section"><h1>Not found</h1><p class="lede">${esc(message)}</p><a class="chip plain" href="#home">Back to the start</a></section></div>`;
 }
 
 // ---------- router ----------
@@ -441,42 +729,32 @@ function route() {
   stopLive = () => {};
   const [page, a, b] = decodeURIComponent(location.hash.replace(/^#/, "") || "home").split("/");
   const nav = { source: "sources" }[page] || page;
-  document.querySelectorAll(".nav a").forEach((x) => {
-    if (x.dataset.nav === nav) x.setAttribute("aria-current", "page");
-    else x.removeAttribute("aria-current");
-  });
-  if (page === "home") pageHome();
-  else if (page === "sources") pageSources(a);
-  else if (page === "source") pageSource(a);
-  else if (page === "datasets") pageDatasets(a, b);
-  else if (page === "papers") pagePapers(a);
-  else if (page === "status") pageStatus();
-  else if (page === "about") pageAbout();
-  else notFound("That page does not exist.");
-  armArt();
-  window.scrollTo(0, 0);
+  document.querySelectorAll(".nav a").forEach((x) => (x.dataset.nav === nav ? x.setAttribute("aria-current", "page") : x.removeAttribute("aria-current")));
+  const pages = { home: pageHome, sources: () => pageSources(a), source: () => pageSource(a), datasets: () => pageDatasets(a, b),
+    papers: () => pagePapers(a), benchmarks: () => pageBenchmarks(a), status: pageStatus, about: pageAbout };
+  const render = pages[page] || (() => notFound("That page does not exist."));
+  const go = () => { render(); armArt(); window.scrollTo({ top: 0, behavior: "instant" }); };
+  if (document.startViewTransition && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.startViewTransition(go);
+  else go();
 }
 
-// ---------- theme ----------
 function initTheme() {
   let saved = "";
   try { saved = localStorage.getItem("atlas-theme") || ""; } catch (e) { /* storage blocked */ }
   if (saved) document.documentElement.dataset.theme = saved;
   document.getElementById("theme-toggle").addEventListener("click", () => {
-    const dark =
-      document.documentElement.dataset.theme === "dark" ||
-      (!document.documentElement.dataset.theme && window.matchMedia("(prefers-color-scheme: dark)").matches);
-    const next = dark ? "light" : "dark";
-    document.documentElement.dataset.theme = next;
-    try { localStorage.setItem("atlas-theme", next); } catch (e) { /* storage blocked */ }
+    const root = document.documentElement;
+    const dark = root.dataset.theme === "dark" || (!root.dataset.theme && matchMedia("(prefers-color-scheme: dark)").matches);
+    root.dataset.theme = dark ? "light" : "dark";
+    try { localStorage.setItem("atlas-theme", root.dataset.theme); } catch (e) { /* storage blocked */ }
     clearThumbs();
     route();
   });
 }
 
 document.addEventListener("keydown", (e) => {
-  if (e.key === "/" && !/input|textarea/i.test(document.activeElement.tagName)) {
-    const q = document.getElementById("q") || document.getElementById("filter");
+  if (e.key === "/" && !/input|textarea|select/i.test(document.activeElement.tagName)) {
+    const q = document.getElementById("q") || document.getElementById("filter") || document.getElementById("pq");
     if (q) { e.preventDefault(); q.focus(); }
   }
 });
@@ -491,20 +769,17 @@ async function start() {
   initTheme();
   try {
     const [sources, datasets] = await Promise.all([load("sources"), load("datasets")]);
-    state.fields = sources.fields;
-    state.sources = sources.sources;
-    state.datasets = datasets.datasets;
-    const optional = await Promise.allSettled([load("papers"), load("status"), load("build")]);
-    state.papers = optional[0].status === "fulfilled" ? optional[0].value : null;
-    state.status = optional[1].status === "fulfilled" ? optional[1].value : null;
-    state.build = optional[2].status === "fulfilled" ? optional[2].value : null;
+    S.fields = sources.fields;
+    S.sources = sources.sources;
+    S.datasets = datasets.datasets;
+    const [status, build] = await Promise.allSettled([load("status"), load("build")]);
+    S.status = status.status === "fulfilled" ? status.value : null;
+    S.build = build.status === "fulfilled" ? build.value : null;
   } catch (err) {
-    view.innerHTML = `<p class="note">The data files could not be loaded (${esc(err.message)}). If you opened this page from a folder, serve it over HTTP instead, for example with <code>npx serve site</code>.</p>`;
+    view.innerHTML = `<p class="note">The data files could not be loaded (${esc(err.message)}). If you opened this page from a folder, serve it over HTTP instead.</p>`;
     return;
   }
-  if (state.build) {
-    document.getElementById("foot-build").textContent = `Data build: ${state.build.generated_at} · ${state.build.engine}`;
-  }
+  if (S.build) document.getElementById("foot-build").textContent = `Data build ${S.build.generated_at} · ${S.build.engine}`;
   window.addEventListener("hashchange", route);
   route();
 }

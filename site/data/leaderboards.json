@@ -1,0 +1,2130 @@
+{
+  "boards": [
+    {
+      "id": "proteingym-zero-shot-substitutions",
+      "title": "ProteinGym: zero-shot fitness prediction, substitutions",
+      "field": "proteins",
+      "task": "fitness",
+      "dataset": "proteingym",
+      "source": "https://proteingym.org/benchmarks",
+      "csv": "https://raw.githubusercontent.com/OATML-Markslab/ProteinGym/main/benchmarks/DMS_zero_shot/substitutions/Spearman/Summary_performance_DMS_substitutions_Spearman.csv",
+      "metric_label": "Spearman (mean)",
+      "higher": true,
+      "columns": [
+        "Activity",
+        "Binding",
+        "Expression",
+        "Organismal fitness",
+        "Stability"
+      ],
+      "fetched_at": "2026-11-16T19:00:09Z",
+      "rows": [
+        {
+          "rank": 1,
+          "model": "AIDO Protein-RAG (16B)",
+          "kind": "Structure & MSA",
+          "score": 0.518,
+          "values": [
+            0.517,
+            0.426,
+            0.522,
+            0.491,
+            0.635
+          ],
+          "paper": "Sun, N., Zou, S., Tao, T., Mahbub, S., Li, D., Zhuang, Y., Wang, H., Cheng, X., Song, L., & Xing, E.P. (2024). Mixture of Experts Enable Efficient and Effective Protein Understanding and Design. bioRxiv.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2024.11.29.625425v1"
+        },
+        {
+          "rank": 2,
+          "model": "VenusREM",
+          "kind": "Structure & MSA",
+          "score": 0.518,
+          "values": [
+            0.495,
+            0.454,
+            0.533,
+            0.459,
+            0.65
+          ],
+          "paper": "Yang Tan, Ruilin Wang, Banghao Wu, Liang Hong, Bingxin Zhou. (2024). Retrieval-Enhanced Mutation Mastery: Augmenting Zero-Shot Prediction of Protein Language Model. ArXiv, abs/2410.21127.",
+          "paper_url": "https://arxiv.org/abs/2410.21127"
+        },
+        {
+          "rank": 3,
+          "model": "ProSST (K=2048)",
+          "kind": "Single sequence & Structure",
+          "score": 0.507,
+          "values": [
+            0.476,
+            0.445,
+            0.53,
+            0.431,
+            0.653
+          ],
+          "paper": "Mingchen Li, Yang Tan, Xinzhu Ma, Bozitao Zhong, Ziyi Zhou, Huiqun Yu, Wanli Ouyang, Liang Hong, Bingxin Zhou, Pan Tan. (2024). ProSST: Protein language modeling with quantizied structure and disentangled attention. bioRxiv.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2024.04.15.589672v3"
+        },
+        {
+          "rank": 4,
+          "model": "ProSST (K=4096)",
+          "kind": "Single sequence & Structure",
+          "score": 0.498,
+          "values": [
+            0.444,
+            0.472,
+            0.507,
+            0.416,
+            0.652
+          ],
+          "paper": "Mingchen Li, Yang Tan, Xinzhu Ma, Bozitao Zhong, Ziyi Zhou, Huiqun Yu, Wanli Ouyang, Liang Hong, Bingxin Zhou, Pan Tan. (2024). ProSST: Protein language modeling with quantizied structure and disentangled attention. bioRxiv.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2024.04.15.589672v3"
+        },
+        {
+          "rank": 5,
+          "model": "S3F-MSA",
+          "kind": "Structure & MSA",
+          "score": 0.496,
+          "values": [
+            0.502,
+            0.44,
+            0.479,
+            0.477,
+            0.581
+          ],
+          "paper": "Zuobai Zhang, Pascal Notin, Yining Huang, Aurelie C. Lozano, Vijil Chenthamarakshan, Debora Marks, Payel Das, Jian Tang. (2024). Multi-Scale Representation Learning for Protein Fitness Prediction. NeurIPS.",
+          "paper_url": "https://papers.nips.cc/paper_files/paper/2024/hash/b7d795e655c1463d7299688d489e8ef4-Abstract-Conference.html"
+        },
+        {
+          "rank": 6,
+          "model": "S2F-MSA",
+          "kind": "Structure & MSA",
+          "score": 0.488,
+          "values": [
+            0.498,
+            0.432,
+            0.472,
+            0.472,
+            0.567
+          ],
+          "paper": "Zuobai Zhang, Pascal Notin, Yining Huang, Aurelie C. Lozano, Vijil Chenthamarakshan, Debora Marks, Payel Das, Jian Tang. (2024). Multi-Scale Representation Learning for Protein Fitness Prediction. NeurIPS.",
+          "paper_url": "https://papers.nips.cc/paper_files/paper/2024/hash/b7d795e655c1463d7299688d489e8ef4-Abstract-Conference.html"
+        },
+        {
+          "rank": 7,
+          "model": "ProSST (K=1024)",
+          "kind": "Single sequence & Structure",
+          "score": 0.485,
+          "values": [
+            0.433,
+            0.436,
+            0.499,
+            0.414,
+            0.642
+          ],
+          "paper": "Mingchen Li, Yang Tan, Xinzhu Ma, Bozitao Zhong, Ziyi Zhou, Huiqun Yu, Wanli Ouyang, Liang Hong, Bingxin Zhou, Pan Tan. (2024). ProSST: Protein language modeling with quantizied structure and disentangled attention. bioRxiv.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2024.04.15.589672v3"
+        },
+        {
+          "rank": 8,
+          "model": "Protriever",
+          "kind": "MSA",
+          "score": 0.479,
+          "values": [
+            0.487,
+            0.396,
+            0.496,
+            0.479,
+            0.537
+          ],
+          "paper": "",
+          "paper_url": ""
+        },
+        {
+          "rank": 9,
+          "model": "ESCOTT",
+          "kind": "Structure & MSA",
+          "score": 0.476,
+          "values": [
+            0.499,
+            0.389,
+            0.468,
+            0.466,
+            0.557
+          ],
+          "paper": "Mustafa Tekpinar, Laurent David, Thomas Henry, Alessandra Carbone. (2024). PRESCOTT: a population aware, epistatic and structural model accurately predicts missense effect. medRxiv.",
+          "paper_url": "https://www.medrxiv.org/content/10.1101/2024.02.03.24302219v1"
+        },
+        {
+          "rank": 10,
+          "model": "ProSST (K=512)",
+          "kind": "Single sequence & Structure",
+          "score": 0.471,
+          "values": [
+            0.423,
+            0.431,
+            0.479,
+            0.394,
+            0.629
+          ],
+          "paper": "Mingchen Li, Yang Tan, Xinzhu Ma, Bozitao Zhong, Ziyi Zhou, Huiqun Yu, Wanli Ouyang, Liang Hong, Bingxin Zhou, Pan Tan. (2024). ProSST: Protein language modeling with quantizied structure and disentangled attention. bioRxiv.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2024.04.15.589672v3"
+        },
+        {
+          "rank": 11,
+          "model": "S3F",
+          "kind": "Single sequence & Structure",
+          "score": 0.47,
+          "values": [
+            0.468,
+            0.404,
+            0.472,
+            0.413,
+            0.594
+          ],
+          "paper": "Zuobai Zhang, Pascal Notin, Yining Huang, Aurelie C. Lozano, Vijil Chenthamarakshan, Debora Marks, Payel Das, Jian Tang. (2024). Multi-Scale Representation Learning for Protein Fitness Prediction. NeurIPS.",
+          "paper_url": "https://papers.nips.cc/paper_files/paper/2024/hash/b7d795e655c1463d7299688d489e8ef4-Abstract-Conference.html"
+        },
+        {
+          "rank": 12,
+          "model": "PoET (200M)",
+          "kind": "MSA",
+          "score": 0.47,
+          "values": [
+            0.494,
+            0.396,
+            0.466,
+            0.475,
+            0.519
+          ],
+          "paper": "Truong, Timothy F. and Tristan Bepler. PoET: A generative model of protein families as sequences-of-sequences. NeurIPS.",
+          "paper_url": "https://papers.nips.cc/paper_files/paper/2023/hash/f4366126eba252699b280e8f93c0ab2f-Abstract-Conference.html"
+        },
+        {
+          "rank": 13,
+          "model": "ProSST (K=128)",
+          "kind": "Single sequence & Structure",
+          "score": 0.469,
+          "values": [
+            0.417,
+            0.44,
+            0.473,
+            0.387,
+            0.628
+          ],
+          "paper": "Mingchen Li, Yang Tan, Xinzhu Ma, Bozitao Zhong, Ziyi Zhou, Huiqun Yu, Wanli Ouyang, Liang Hong, Bingxin Zhou, Pan Tan. (2024). ProSST: Protein language modeling with quantizied structure and disentangled attention. bioRxiv.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2024.04.15.589672v3"
+        },
+        {
+          "rank": 14,
+          "model": "ESM3 open (1.4B)",
+          "kind": "Single sequence, Structure & Function annotations",
+          "score": 0.466,
+          "values": [
+            0.43,
+            0.4,
+            0.47,
+            0.389,
+            0.641
+          ],
+          "paper": "Hayes, T., Rao, R., Akin, H., Sofroniew, N.J., Oktay, D., Lin, Z., Verkuil, R., Tran, V.Q., Deaton, J., Wiggert, M., Badkundri, R., Shafkat, I., Gong, J., Derry, A., Molina, R.S., Thomas, N., Khan, Y.A., Mishra, C., Kim, C., Bartie, L.J., Nemeth, M., Hsu, P.D., Sercu, T., Candido, S., & Rives, A. (2025). Simulating 500 million years of evolution with a language model. Science.",
+          "paper_url": "https://www.science.org/doi/10.1126/science.ads0018"
+        },
+        {
+          "rank": 15,
+          "model": "RSALOR",
+          "kind": "Structure & MSA",
+          "score": 0.465,
+          "values": [
+            0.479,
+            0.416,
+            0.427,
+            0.426,
+            0.575
+          ],
+          "paper": "Matsvei Tsishyn, Pauline Hermans, Fabrizio Pucci, Marianne Rooman. (2025). Residue conservation and solvent accessibility are (almost) all you need for predicting mutational effects in proteins. bioRxiv.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2025.02.03.636212v1"
+        },
+        {
+          "rank": 16,
+          "model": "VespaG",
+          "kind": "Single sequence",
+          "score": 0.458,
+          "values": [
+            0.493,
+            0.37,
+            0.456,
+            0.437,
+            0.533
+          ],
+          "paper": "Marquet, C., Schlensok, J., Abakarova, M., Rost, B., & Laine, E. (2024). Expert-guided protein Language Models enable accurate and blazingly fast fitness prediction. bioRxiv.",
+          "paper_url": "https://doi.org/10.1101/2024.04.24.590982"
+        },
+        {
+          "rank": 17,
+          "model": "SaProt (650M)",
+          "kind": "Single sequence & Structure",
+          "score": 0.457,
+          "values": [
+            0.458,
+            0.378,
+            0.488,
+            0.366,
+            0.592
+          ],
+          "paper": "Jin Su, Chenchen Han, Yuyang Zhou, Junjie Shan, Xibin Zhou, Fajie Yuan. (2024). SaProt: Protein Language Modeling with Structure-aware Vocabulary. bioRxiv.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2023.10.01.560349v5"
+        },
+        {
+          "rank": 18,
+          "model": "TranceptEVE L",
+          "kind": "MSA",
+          "score": 0.456,
+          "values": [
+            0.487,
+            0.376,
+            0.457,
+            0.459,
+            0.5
+          ],
+          "paper": "Notin, P., Van Niekerk, L., Kollasch, A., Ritter, D., Gal, Y. & Marks, D.S. &  (2022). TranceptEVE: Combining Family-specific and Family-agnostic Models of Protein Sequences for Improved Fitness Prediction. NeurIPS, LMRL workshop.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2022.12.07.519495v1?rss=1"
+        },
+        {
+          "rank": 19,
+          "model": "S2F",
+          "kind": "Single sequence & Structure",
+          "score": 0.456,
+          "values": [
+            0.459,
+            0.391,
+            0.456,
+            0.404,
+            0.568
+          ],
+          "paper": "Zuobai Zhang, Pascal Notin, Yining Huang, Aurelie C. Lozano, Vijil Chenthamarakshan, Debora Marks, Payel Das, Jian Tang. (2024). Multi-Scale Representation Learning for Protein Fitness Prediction. NeurIPS.",
+          "paper_url": "https://papers.nips.cc/paper_files/paper/2024/hash/b7d795e655c1463d7299688d489e8ef4-Abstract-Conference.html"
+        },
+        {
+          "rank": 20,
+          "model": "GEMME",
+          "kind": "MSA",
+          "score": 0.455,
+          "values": [
+            0.482,
+            0.383,
+            0.438,
+            0.452,
+            0.519
+          ],
+          "paper": "Laine, É., Karami, Y., & Carbone, A. (2019). GEMME: A Simple and Fast Global Epistatic Model Predicting Mutational Effects. Molecular Biology and Evolution, 36, 2604 - 2619.",
+          "paper_url": "https://pubmed.ncbi.nlm.nih.gov/31406981/"
+        },
+        {
+          "rank": 21,
+          "model": "TranceptEVE M",
+          "kind": "MSA",
+          "score": 0.455,
+          "values": [
+            0.479,
+            0.386,
+            0.452,
+            0.454,
+            0.502
+          ],
+          "paper": "Notin, P., Van Niekerk, L., Kollasch, A., Ritter, D., Gal, Y. & Marks, D.S. &  (2022). TranceptEVE: Combining Family-specific and Family-agnostic Models of Protein Sequences for Improved Fitness Prediction. NeurIPS, LMRL workshop.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2022.12.07.519495v1?rss=1"
+        },
+        {
+          "rank": 22,
+          "model": "TranceptEVE S",
+          "kind": "MSA",
+          "score": 0.452,
+          "values": [
+            0.475,
+            0.396,
+            0.443,
+            0.449,
+            0.497
+          ],
+          "paper": "Notin, P., Dias, M., Frazer, J., Marchena-Hurtado, J., Gomez, A.N., Marks, D.S., & Gal, Y. (2022). Tranception: Protein Fitness Prediction with Autoregressive Transformers and Inference-time Retrieval. ICML.",
+          "paper_url": "https://proceedings.mlr.press/v162/notin22a.html"
+        },
+        {
+          "rank": 23,
+          "model": "ProtSSN (ensemble)",
+          "kind": "Single sequence & Structure",
+          "score": 0.449,
+          "values": [
+            0.466,
+            0.366,
+            0.449,
+            0.396,
+            0.568
+          ],
+          "paper": "Yang Tan, Bingxin Zhou, Lirong Zheng, Guisheng Fan, Liang Hong. (2023). Semantical and Topological Protein Encoding Toward Enhanced Bioactivity and Thermostability. bioRxiv.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2023.12.01.569522v1"
+        },
+        {
+          "rank": 24,
+          "model": "ProtSSN (k=20, h=1280)",
+          "kind": "Single sequence & Structure",
+          "score": 0.442,
+          "values": [
+            0.458,
+            0.366,
+            0.435,
+            0.385,
+            0.566
+          ],
+          "paper": "Yang Tan, Bingxin Zhou, Lirong Zheng, Guisheng Fan, Liang Hong. (2023). Semantical and Topological Protein Encoding Toward Enhanced Bioactivity and Thermostability. bioRxiv.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2023.12.01.569522v1"
+        },
+        {
+          "rank": 25,
+          "model": "ProtSSN (k=20, h=512)",
+          "kind": "Single sequence & Structure",
+          "score": 0.44,
+          "values": [
+            0.457,
+            0.353,
+            0.437,
+            0.391,
+            0.563
+          ],
+          "paper": "Yang Tan, Bingxin Zhou, Lirong Zheng, Guisheng Fan, Liang Hong. (2023). Semantical and Topological Protein Encoding Toward Enhanced Bioactivity and Thermostability. bioRxiv.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2023.12.01.569522v1"
+        },
+        {
+          "rank": 26,
+          "model": "EVE (ensemble)",
+          "kind": "MSA",
+          "score": 0.439,
+          "values": [
+            0.464,
+            0.386,
+            0.408,
+            0.447,
+            0.491
+          ],
+          "paper": "Frazer, J., Notin, P., Dias, M., Gomez, A.N., Min, J.K., Brock, K.P., Gal, Y., & Marks, D.S. (2021). Disease variant prediction with deep generative models of evolutionary data. Nature.",
+          "paper_url": "https://www.nature.com/articles/s41586-021-04043-8"
+        },
+        {
+          "rank": 27,
+          "model": "ProtSSN (k=20, h=768)",
+          "kind": "Single sequence & Structure",
+          "score": 0.439,
+          "values": [
+            0.459,
+            0.347,
+            0.439,
+            0.387,
+            0.563
+          ],
+          "paper": "Yang Tan, Bingxin Zhou, Lirong Zheng, Guisheng Fan, Liang Hong. (2023). Semantical and Topological Protein Encoding Toward Enhanced Bioactivity and Thermostability. bioRxiv.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2023.12.01.569522v1"
+        },
+        {
+          "rank": 28,
+          "model": "ProSST (K=20)",
+          "kind": "Single sequence & Structure",
+          "score": 0.438,
+          "values": [
+            0.392,
+            0.41,
+            0.447,
+            0.354,
+            0.589
+          ],
+          "paper": "Mingchen Li, Yang Tan, Xinzhu Ma, Bozitao Zhong, Ziyi Zhou, Huiqun Yu, Wanli Ouyang, Liang Hong, Bingxin Zhou, Pan Tan. (2024). ProSST: Protein language modeling with quantizied structure and disentangled attention. bioRxiv.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2024.04.15.589672v3"
+        },
+        {
+          "rank": 29,
+          "model": "ProtSSN (k=30, h=512)",
+          "kind": "Single sequence & Structure",
+          "score": 0.438,
+          "values": [
+            0.455,
+            0.35,
+            0.443,
+            0.384,
+            0.557
+          ],
+          "paper": "Yang Tan, Bingxin Zhou, Lirong Zheng, Guisheng Fan, Liang Hong. (2023). Semantical and Topological Protein Encoding Toward Enhanced Bioactivity and Thermostability. bioRxiv.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2023.12.01.569522v1"
+        },
+        {
+          "rank": 30,
+          "model": "ProtSSN (k=30, h=768)",
+          "kind": "Single sequence & Structure",
+          "score": 0.438,
+          "values": [
+            0.457,
+            0.351,
+            0.435,
+            0.384,
+            0.561
+          ],
+          "paper": "Yang Tan, Bingxin Zhou, Lirong Zheng, Guisheng Fan, Liang Hong. (2023). Semantical and Topological Protein Encoding Toward Enhanced Bioactivity and Thermostability. bioRxiv.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2023.12.01.569522v1"
+        },
+        {
+          "rank": 31,
+          "model": "ProtSSN (k=30, h=1280)",
+          "kind": "Single sequence & Structure",
+          "score": 0.437,
+          "values": [
+            0.454,
+            0.357,
+            0.431,
+            0.384,
+            0.561
+          ],
+          "paper": "Yang Tan, Bingxin Zhou, Lirong Zheng, Guisheng Fan, Liang Hong. (2023). Semantical and Topological Protein Encoding Toward Enhanced Bioactivity and Thermostability. bioRxiv.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2023.12.01.569522v1"
+        },
+        {
+          "rank": 32,
+          "model": "VESPA",
+          "kind": "Single sequence",
+          "score": 0.435,
+          "values": [
+            0.468,
+            0.366,
+            0.404,
+            0.439,
+            0.5
+          ],
+          "paper": "Marquet, C., Heinzinger, M., Olenyi, T., Dallago, C., Bernhofer, M., Erckert, K., & Rost, B. (2021). Embeddings from protein language models predict conservation and variant effects. Human Genetics, 141, 1629 - 1647.",
+          "paper_url": "https://link.springer.com/article/10.1007/s00439-021-02411-y"
+        },
+        {
+          "rank": 33,
+          "model": "Tranception L",
+          "kind": "MSA",
+          "score": 0.434,
+          "values": [
+            0.465,
+            0.349,
+            0.45,
+            0.435,
+            0.471
+          ],
+          "paper": "Notin, P., Dias, M., Frazer, J., Marchena-Hurtado, J., Gomez, A.N., Marks, D.S., & Gal, Y. (2022). Tranception: Protein Fitness Prediction with Autoregressive Transformers and Inference-time Retrieval. ICML.",
+          "paper_url": "https://proceedings.mlr.press/v162/notin22a.html"
+        },
+        {
+          "rank": 34,
+          "model": "ProtSSN (k=10, h=1280)",
+          "kind": "Single sequence & Structure",
+          "score": 0.433,
+          "values": [
+            0.446,
+            0.352,
+            0.436,
+            0.381,
+            0.548
+          ],
+          "paper": "Yang Tan, Bingxin Zhou, Lirong Zheng, Guisheng Fan, Liang Hong. (2023). Semantical and Topological Protein Encoding Toward Enhanced Bioactivity and Thermostability. bioRxiv.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2023.12.01.569522v1"
+        },
+        {
+          "rank": 35,
+          "model": "EVE (single)",
+          "kind": "MSA",
+          "score": 0.432,
+          "values": [
+            0.458,
+            0.372,
+            0.404,
+            0.441,
+            0.487
+          ],
+          "paper": "Frazer, J., Notin, P., Dias, M., Gomez, A.N., Min, J.K., Brock, K.P., Gal, Y., & Marks, D.S. (2021). Disease variant prediction with deep generative models of evolutionary data. Nature.",
+          "paper_url": "https://www.nature.com/articles/s41586-021-04043-8"
+        },
+        {
+          "rank": 36,
+          "model": "MSA Transformer (ensemble)",
+          "kind": "MSA",
+          "score": 0.432,
+          "values": [
+            0.473,
+            0.329,
+            0.446,
+            0.419,
+            0.492
+          ],
+          "paper": "Rao, R., Liu, J., Verkuil, R., Meier, J., Canny, J.F., Abbeel, P., Sercu, T., & Rives, A. (2021). MSA Transformer. ICML.",
+          "paper_url": "http://proceedings.mlr.press/v139/rao21a.html"
+        },
+        {
+          "rank": 37,
+          "model": "ProtSSN (k=10, h=512)",
+          "kind": "Single sequence & Structure",
+          "score": 0.43,
+          "values": [
+            0.451,
+            0.344,
+            0.42,
+            0.376,
+            0.557
+          ],
+          "paper": "Yang Tan, Bingxin Zhou, Lirong Zheng, Guisheng Fan, Liang Hong. (2023). Semantical and Topological Protein Encoding Toward Enhanced Bioactivity and Thermostability. bioRxiv.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2023.12.01.569522v1"
+        },
+        {
+          "rank": 38,
+          "model": "Tranception M",
+          "kind": "MSA",
+          "score": 0.428,
+          "values": [
+            0.448,
+            0.361,
+            0.441,
+            0.424,
+            0.465
+          ],
+          "paper": "Notin, P., Dias, M., Frazer, J., Marchena-Hurtado, J., Gomez, A.N., Marks, D.S., & Gal, Y. (2022). Tranception: Protein Fitness Prediction with Autoregressive Transformers and Inference-time Retrieval. ICML.",
+          "paper_url": "https://proceedings.mlr.press/v162/notin22a.html"
+        },
+        {
+          "rank": 39,
+          "model": "SiteRM",
+          "kind": "MSA",
+          "score": 0.424,
+          "values": [
+            0.453,
+            0.388,
+            0.39,
+            0.437,
+            0.449
+          ],
+          "paper": "Sebastian Prillo, Wilson Wu, Yun Song. (2024). Ultrafast classical phylogenetic method beats large protein language models on variant effect prediction. NeurIPS.",
+          "paper_url": "https://papers.nips.cc/paper_files/paper/2024/hash/eb2f4fb51ac3b8dc4aac9cf71b0e7799-Abstract-Conference.html"
+        },
+        {
+          "rank": 40,
+          "model": "ESM-IF1",
+          "kind": "Structure",
+          "score": 0.422,
+          "values": [
+            0.368,
+            0.389,
+            0.407,
+            0.324,
+            0.624
+          ],
+          "paper": "Chloe Hsu, Robert Verkuil, Jason Liu, Zeming Lin, Brian Hie, Tom Sercu, Adam Lerer, Alexander Rives (2022). Learning Inverse Folding from Millions of Predicted Structures. BioRxiv.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2022.04.10.487779v2.full.pdf+html"
+        },
+        {
+          "rank": 41,
+          "model": "ProtSSN (k=10, h=768)",
+          "kind": "Single sequence & Structure",
+          "score": 0.422,
+          "values": [
+            0.441,
+            0.337,
+            0.417,
+            0.37,
+            0.547
+          ],
+          "paper": "Yang Tan, Bingxin Zhou, Lirong Zheng, Guisheng Fan, Liang Hong. (2023). Semantical and Topological Protein Encoding Toward Enhanced Bioactivity and Thermostability. bioRxiv.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2023.12.01.569522v1"
+        },
+        {
+          "rank": 42,
+          "model": "DeepSequence (ensemble)",
+          "kind": "MSA",
+          "score": 0.419,
+          "values": [
+            0.455,
+            0.363,
+            0.39,
+            0.411,
+            0.476
+          ],
+          "paper": "Riesselman, A.J., Ingraham, J., & Marks, D.S. (2018). Deep generative models of genetic variation capture the effects of mutations. Nature Methods, 15, 816-822.",
+          "paper_url": "https://www.nature.com/articles/s41592-018-0138-4"
+        },
+        {
+          "rank": 43,
+          "model": "Tranception S",
+          "kind": "MSA",
+          "score": 0.418,
+          "values": [
+            0.436,
+            0.372,
+            0.42,
+            0.412,
+            0.452
+          ],
+          "paper": "Notin, P., Dias, M., Frazer, J., Marchena-Hurtado, J., Gomez, A.N., Marks, D.S., & Gal, Y. (2022). Tranception: Protein Fitness Prediction with Autoregressive Transformers and Inference-time Retrieval. ICML.",
+          "paper_url": "https://proceedings.mlr.press/v162/notin22a.html"
+        },
+        {
+          "rank": 44,
+          "model": "MSA Transformer (single)",
+          "kind": "MSA",
+          "score": 0.417,
+          "values": [
+            0.455,
+            0.312,
+            0.429,
+            0.412,
+            0.475
+          ],
+          "paper": "Rao, R., Liu, J., Verkuil, R., Meier, J., Canny, J.F., Abbeel, P., Sercu, T., & Rives, A. (2021). MSA Transformer. ICML.",
+          "paper_url": "http://proceedings.mlr.press/v139/rao21a.html"
+        },
+        {
+          "rank": 45,
+          "model": "ESM2 (650M)",
+          "kind": "Single sequence",
+          "score": 0.414,
+          "values": [
+            0.425,
+            0.337,
+            0.415,
+            0.368,
+            0.523
+          ],
+          "paper": "Zeming Lin, Halil Akin, Roshan Rao, Brian Hie, Zhongkai Zhu, Wenting Lu, Nikita Smetanin, Robert Verkuil, Ori Kabeli, Yaniv Shmueli, Allan Dos Santos Costa, Maryam Fazel-Zarandi, Tom Sercu, Salvatore Candido, Alexander Rives (2023). Evolutionary-scale prediction of atomic-level protein structure with a language model. Science, Vol. 379.",
+          "paper_url": "https://www.science.org/doi/abs/10.1126/science.ade2574"
+        },
+        {
+          "rank": 46,
+          "model": "DeepSequence (single)",
+          "kind": "MSA",
+          "score": 0.407,
+          "values": [
+            0.447,
+            0.349,
+            0.371,
+            0.396,
+            0.473
+          ],
+          "paper": "Riesselman, A.J., Ingraham, J., & Marks, D.S. (2018). Deep generative models of genetic variation capture the effects of mutations. Nature Methods, 15, 816-822.",
+          "paper_url": "https://www.nature.com/articles/s41592-018-0138-4"
+        },
+        {
+          "rank": 47,
+          "model": "ESM-1v (ensemble)",
+          "kind": "Single sequence",
+          "score": 0.407,
+          "values": [
+            0.42,
+            0.32,
+            0.429,
+            0.386,
+            0.477
+          ],
+          "paper": "Meier, J., Rao, R., Verkuil, R., Liu, J., Sercu, T., & Rives, A. (2021). Language models enable zero-shot prediction of the effects of mutations on protein function. NeurIPS.",
+          "paper_url": "https://proceedings.neurips.cc/paper/2021/hash/f51338d736f95dd42427296047067694-Abstract.html"
+        },
+        {
+          "rank": 48,
+          "model": "SaProt (35M)",
+          "kind": "Single sequence & Structure",
+          "score": 0.407,
+          "values": [
+            0.372,
+            0.357,
+            0.439,
+            0.289,
+            0.575
+          ],
+          "paper": "Jin Su, Chenchen Han, Yuyang Zhou, Junjie Shan, Xibin Zhou, Fajie Yuan. (2024). SaProt: Protein Language Modeling with Structure-aware Vocabulary. bioRxiv.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2023.10.01.560349v5"
+        },
+        {
+          "rank": 49,
+          "model": "ESM-C (300M)",
+          "kind": "Single sequence",
+          "score": 0.406,
+          "values": [
+            0.423,
+            0.315,
+            0.408,
+            0.36,
+            0.526
+          ],
+          "paper": "ESM Team. ESM Cambrian: Revealing the mysteries of proteins with unsupervised learning. EvolutionaryScale Website, December 4, 2024",
+          "paper_url": "https://evolutionaryscale.ai/blog/esm-cambrian"
+        },
+        {
+          "rank": 50,
+          "model": "ESM2 (3B)",
+          "kind": "Single sequence",
+          "score": 0.406,
+          "values": [
+            0.417,
+            0.321,
+            0.403,
+            0.378,
+            0.509
+          ],
+          "paper": "Zeming Lin, Halil Akin, Roshan Rao, Brian Hie, Zhongkai Zhu, Wenting Lu, Nikita Smetanin, Robert Verkuil, Ori Kabeli, Yaniv Shmueli, Allan Dos Santos Costa, Maryam Fazel-Zarandi, Tom Sercu, Salvatore Candido, Alexander Rives (2023). Evolutionary-scale prediction of atomic-level protein structure with a language model. Science, Vol. 379.",
+          "paper_url": "https://www.science.org/doi/abs/10.1126/science.ade2574"
+        },
+        {
+          "rank": 51,
+          "model": "ESM-C (600M)",
+          "kind": "Single sequence",
+          "score": 0.405,
+          "values": [
+            0.423,
+            0.294,
+            0.42,
+            0.362,
+            0.528
+          ],
+          "paper": "ESM Team. ESM Cambrian: Revealing the mysteries of proteins with unsupervised learning. EvolutionaryScale Website, December 4, 2024",
+          "paper_url": "https://evolutionaryscale.ai/blog/esm-cambrian"
+        },
+        {
+          "rank": 52,
+          "model": "ESM2 (15B)",
+          "kind": "Single sequence",
+          "score": 0.4,
+          "values": [
+            0.405,
+            0.317,
+            0.405,
+            0.387,
+            0.488
+          ],
+          "paper": "Zeming Lin, Halil Akin, Roshan Rao, Brian Hie, Zhongkai Zhu, Wenting Lu, Nikita Smetanin, Robert Verkuil, Ori Kabeli, Yaniv Shmueli, Allan Dos Santos Costa, Maryam Fazel-Zarandi, Tom Sercu, Salvatore Candido, Alexander Rives (2023). Evolutionary-scale prediction of atomic-level protein structure with a language model. Science, Vol. 379.",
+          "paper_url": "https://www.science.org/doi/abs/10.1126/science.ade2574"
+        },
+        {
+          "rank": 53,
+          "model": "MIF-ST",
+          "kind": "Single sequence & Structure",
+          "score": 0.4,
+          "values": [
+            0.39,
+            0.321,
+            0.438,
+            0.366,
+            0.485
+          ],
+          "paper": "Kevin K. Yang, Hugh Yeh, Niccolo Zanichelli (2023). Masked Inverse folding with Sequence Transfer for Protein Representation Learning. BioRxiv.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2022.05.25.493516v3"
+        },
+        {
+          "rank": 54,
+          "model": "xTrimoPGLM-3B-MLM",
+          "kind": "Single sequence",
+          "score": 0.399,
+          "values": [
+            0.408,
+            0.308,
+            0.396,
+            0.4,
+            0.482
+          ],
+          "paper": "Chen, B., Cheng, X., Li, P., Geng, Y., Gong, J., Li, S., Bei, Z., Tan, X., Wang, B., Zeng, X., Liu, C., Zeng, A., Dong, Y., Tang, J., & Song, L. (2025). xTrimoPGLM: unified 100-billion-parameter pretrained transformer for deciphering the language of proteins. Nature methods.",
+          "paper_url": "https://www.nature.com/articles/s41592-025-02636-z"
+        },
+        {
+          "rank": 55,
+          "model": "xTrimoPGLM-10B-MLM",
+          "kind": "Single sequence",
+          "score": 0.396,
+          "values": [
+            0.405,
+            0.301,
+            0.398,
+            0.394,
+            0.481
+          ],
+          "paper": "Chen, B., Cheng, X., Li, P., Geng, Y., Gong, J., Li, S., Bei, Z., Tan, X., Wang, B., Zeng, X., Liu, C., Zeng, A., Dong, Y., Tang, J., & Song, L. (2025). xTrimoPGLM: unified 100-billion-parameter pretrained transformer for deciphering the language of proteins. Nature methods.",
+          "paper_url": "https://www.nature.com/articles/s41592-025-02636-z"
+        },
+        {
+          "rank": 56,
+          "model": "EVmutation",
+          "kind": "MSA",
+          "score": 0.395,
+          "values": [
+            0.44,
+            0.317,
+            0.378,
+            0.41,
+            0.43
+          ],
+          "paper": "Hopf, T.A., Ingraham, J., Poelwijk, F.J., Schärfe, C.P., Springer, M., Sander, C., & Marks, D.S. (2017). Mutation effects predicted from sequence co-variation. Nature Biotechnology, 35, 128-135.",
+          "paper_url": "https://www.nature.com/articles/nbt.3769"
+        },
+        {
+          "rank": 57,
+          "model": "ESM-1b",
+          "kind": "Single sequence",
+          "score": 0.394,
+          "values": [
+            0.428,
+            0.287,
+            0.406,
+            0.349,
+            0.5
+          ],
+          "paper": "Rives, A., Goyal, S., Meier, J., Guo, D., Ott, M., Zitnick, C.L., Ma, J., & Fergus, R. (2019). Biological structure and function emerge from scaling unsupervised learning to 250 million protein sequences. Proceedings of the National Academy of Sciences of the United States of America, 118.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/622803v4"
+        },
+        {
+          "rank": 58,
+          "model": "VESPAl",
+          "kind": "Single sequence",
+          "score": 0.393,
+          "values": [
+            0.429,
+            0.347,
+            0.326,
+            0.403,
+            0.461
+          ],
+          "paper": "Marquet, C., Heinzinger, M., Olenyi, T., Dallago, C., Bernhofer, M., Erckert, K., & Rost, B. (2021). Embeddings from protein language models predict conservation and variant effects. Human Genetics, 141, 1629 - 1647.",
+          "paper_url": "https://link.springer.com/article/10.1007/s00439-021-02411-y"
+        },
+        {
+          "rank": 59,
+          "model": "Progen3 3B",
+          "kind": "Single sequence",
+          "score": 0.392,
+          "values": [
+            0.41,
+            0.287,
+            0.428,
+            0.4,
+            0.438
+          ],
+          "paper": "Bhatnagar, A., Jain, S., Beazer, J., Curran, S.C., Hoffnagle, A.M., Ching, K., Martyn, M., Nayfach, S., Ruffolo, J.A., & Madani, A. (2025). Scaling unlocks broader generation and deeper functional understanding of proteins. bioRxiv, 2025.04.15.649055.",
+          "paper_url": "https://doi.org/10.1101/2025.04.15.649055"
+        },
+        {
+          "rank": 60,
+          "model": "Progen2 XL",
+          "kind": "Single sequence",
+          "score": 0.391,
+          "values": [
+            0.402,
+            0.302,
+            0.418,
+            0.387,
+            0.445
+          ],
+          "paper": "Nijkamp, E., Ruffolo, J.A., Weinstein, E.N., Naik, N., & Madani, A. (2022). ProGen2: Exploring the Boundaries of Protein Language Models. ArXiv, abs/2206.13517.",
+          "paper_url": "https://arxiv.org/abs/2206.13517"
+        },
+        {
+          "rank": 61,
+          "model": "Progen3 1B",
+          "kind": "Single sequence",
+          "score": 0.389,
+          "values": [
+            0.409,
+            0.303,
+            0.428,
+            0.396,
+            0.408
+          ],
+          "paper": "Bhatnagar, A., Jain, S., Beazer, J., Curran, S.C., Hoffnagle, A.M., Ching, K., Martyn, M., Nayfach, S., Ruffolo, J.A., & Madani, A. (2025). Scaling unlocks broader generation and deeper functional understanding of proteins. bioRxiv, 2025.04.15.649055.",
+          "paper_url": "https://doi.org/10.1101/2025.04.15.649055"
+        },
+        {
+          "rank": 62,
+          "model": "ESM2 (150M)",
+          "kind": "Single sequence",
+          "score": 0.387,
+          "values": [
+            0.391,
+            0.326,
+            0.402,
+            0.305,
+            0.51
+          ],
+          "paper": "Zeming Lin, Halil Akin, Roshan Rao, Brian Hie, Zhongkai Zhu, Wenting Lu, Nikita Smetanin, Robert Verkuil, Ori Kabeli, Yaniv Shmueli, Allan Dos Santos Costa, Maryam Fazel-Zarandi, Tom Sercu, Salvatore Candido, Alexander Rives (2023). Evolutionary-scale prediction of atomic-level protein structure with a language model. Science, Vol. 379.",
+          "paper_url": "https://www.science.org/doi/abs/10.1126/science.ade2574"
+        },
+        {
+          "rank": 63,
+          "model": "MIF",
+          "kind": "Structure",
+          "score": 0.383,
+          "values": [
+            0.327,
+            0.336,
+            0.43,
+            0.3,
+            0.522
+          ],
+          "paper": "Kevin K. Yang, Hugh Yeh, Niccolo Zanichelli (2023). Masked Inverse folding with Sequence Transfer for Protein Representation Learning. BioRxiv.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2022.05.25.493516v3"
+        },
+        {
+          "rank": 64,
+          "model": "Progen2 L",
+          "kind": "Single sequence",
+          "score": 0.38,
+          "values": [
+            0.406,
+            0.293,
+            0.427,
+            0.379,
+            0.396
+          ],
+          "paper": "Nijkamp, E., Ruffolo, J.A., Weinstein, E.N., Naik, N., & Madani, A. (2022). ProGen2: Exploring the Boundaries of Protein Language Models. ArXiv, abs/2206.13517.",
+          "paper_url": "https://arxiv.org/abs/2206.13517"
+        },
+        {
+          "rank": 65,
+          "model": "Progen2 M",
+          "kind": "Single sequence",
+          "score": 0.38,
+          "values": [
+            0.393,
+            0.295,
+            0.433,
+            0.383,
+            0.396
+          ],
+          "paper": "Nijkamp, E., Ruffolo, J.A., Weinstein, E.N., Naik, N., & Madani, A. (2022). ProGen2: Exploring the Boundaries of Protein Language Models. ArXiv, abs/2206.13517.",
+          "paper_url": "https://arxiv.org/abs/2206.13517"
+        },
+        {
+          "rank": 66,
+          "model": "xTrimoPGLM-1B-MLM",
+          "kind": "Single sequence",
+          "score": 0.379,
+          "values": [
+            0.39,
+            0.298,
+            0.406,
+            0.357,
+            0.445
+          ],
+          "paper": "Chen, B., Cheng, X., Li, P., Geng, Y., Gong, J., Li, S., Bei, Z., Tan, X., Wang, B., Zeng, X., Liu, C., Zeng, A., Dong, Y., Tang, J., & Song, L. (2025). xTrimoPGLM: unified 100-billion-parameter pretrained transformer for deciphering the language of proteins. Nature methods.",
+          "paper_url": "https://www.nature.com/articles/s41592-025-02636-z"
+        },
+        {
+          "rank": 67,
+          "model": "Progen2 Base",
+          "kind": "Single sequence",
+          "score": 0.378,
+          "values": [
+            0.396,
+            0.294,
+            0.437,
+            0.381,
+            0.383
+          ],
+          "paper": "Nijkamp, E., Ruffolo, J.A., Weinstein, E.N., Naik, N., & Madani, A. (2022). ProGen2: Exploring the Boundaries of Protein Language Models. ArXiv, abs/2206.13517.",
+          "paper_url": "https://arxiv.org/abs/2206.13517"
+        },
+        {
+          "rank": 68,
+          "model": "Tranception L no retrieval",
+          "kind": "Single sequence",
+          "score": 0.374,
+          "values": [
+            0.401,
+            0.288,
+            0.413,
+            0.387,
+            0.381
+          ],
+          "paper": "Notin, P., Dias, M., Frazer, J., Marchena-Hurtado, J., Gomez, A.N., Marks, D.S., & Gal, Y. (2022). Tranception: Protein Fitness Prediction with Autoregressive Transformers and Inference-time Retrieval. ICML.",
+          "paper_url": "https://proceedings.mlr.press/v162/notin22a.html"
+        },
+        {
+          "rank": 69,
+          "model": "ESM-1v (single)",
+          "kind": "Single sequence",
+          "score": 0.374,
+          "values": [
+            0.396,
+            0.268,
+            0.405,
+            0.361,
+            0.437
+          ],
+          "paper": "Meier, J., Rao, R., Verkuil, R., Liu, J., Sercu, T., & Rives, A. (2021). Language models enable zero-shot prediction of the effects of mutations on protein function. NeurIPS.",
+          "paper_url": "https://proceedings.neurips.cc/paper/2021/hash/f51338d736f95dd42427296047067694-Abstract.html"
+        },
+        {
+          "rank": 70,
+          "model": "Wavenet",
+          "kind": "MSA",
+          "score": 0.373,
+          "values": [
+            0.379,
+            0.325,
+            0.35,
+            0.364,
+            0.449
+          ],
+          "paper": "Shin, J., Riesselman, A.J., Kollasch, A.W., McMahon, C., Simon, E., Sander, C., Manglik, A., Kruse, A.C., & Marks, D.S. (2021). Protein design and variant prediction using autoregressive generative models. Nature Communications, 12.",
+          "paper_url": "https://www.nature.com/articles/s41467-021-22732-w"
+        },
+        {
+          "rank": 71,
+          "model": "RITA XL",
+          "kind": "Single sequence",
+          "score": 0.373,
+          "values": [
+            0.366,
+            0.302,
+            0.414,
+            0.384,
+            0.398
+          ],
+          "paper": "Hesslow, D., Zanichelli, N., Notin, P., Poli, I., & Marks, D.S. (2022). RITA: a Study on Scaling Up Generative Protein Sequence Models. ArXiv, abs/2205.05789.",
+          "paper_url": "https://arxiv.org/abs/2205.05789"
+        },
+        {
+          "rank": 72,
+          "model": "CARP (640M)",
+          "kind": "Single sequence",
+          "score": 0.369,
+          "values": [
+            0.395,
+            0.273,
+            0.397,
+            0.366,
+            0.412
+          ],
+          "paper": "Kevin K. Yang, Nicolo Fusi, Alex X. Lu (2023). Convolutions are competitive with transformers for protein sequence pretraining. BioRxiv.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2022.05.19.492714v4"
+        },
+        {
+          "rank": 73,
+          "model": "RITA L",
+          "kind": "Single sequence",
+          "score": 0.366,
+          "values": [
+            0.359,
+            0.29,
+            0.42,
+            0.378,
+            0.383
+          ],
+          "paper": "Hesslow, D., Zanichelli, N., Notin, P., Poli, I., & Marks, D.S. (2022). RITA: a Study on Scaling Up Generative Protein Sequence Models. ArXiv, abs/2205.05789.",
+          "paper_url": "https://arxiv.org/abs/2205.05789"
+        },
+        {
+          "rank": 74,
+          "model": "xTrimoPGLM-100B-int4",
+          "kind": "Single sequence",
+          "score": 0.364,
+          "values": [
+            0.378,
+            0.259,
+            0.38,
+            0.355,
+            0.45
+          ],
+          "paper": "Chen, B., Cheng, X., Li, P., Geng, Y., Gong, J., Li, S., Bei, Z., Tan, X., Wang, B., Zeng, X., Liu, C., Zeng, A., Dong, Y., Tang, J., & Song, L. (2025). xTrimoPGLM: unified 100-billion-parameter pretrained transformer for deciphering the language of proteins. Nature methods.",
+          "paper_url": "https://www.nature.com/articles/s41592-025-02636-z"
+        },
+        {
+          "rank": 75,
+          "model": "Progen3 762m",
+          "kind": "Single sequence",
+          "score": 0.364,
+          "values": [
+            0.376,
+            0.296,
+            0.386,
+            0.373,
+            0.386
+          ],
+          "paper": "Bhatnagar, A., Jain, S., Beazer, J., Curran, S.C., Hoffnagle, A.M., Ching, K., Martyn, M., Nayfach, S., Ruffolo, J.A., & Madani, A. (2025). Scaling unlocks broader generation and deeper functional understanding of proteins. bioRxiv, 2025.04.15.649055.",
+          "paper_url": "https://doi.org/10.1101/2025.04.15.649055"
+        },
+        {
+          "rank": 76,
+          "model": "Site-Independent",
+          "kind": "MSA",
+          "score": 0.359,
+          "values": [
+            0.369,
+            0.344,
+            0.343,
+            0.383,
+            0.358
+          ],
+          "paper": "Hopf, T.A., Ingraham, J., Poelwijk, F.J., Schärfe, C.P., Springer, M., Sander, C., & Marks, D.S. (2017). Mutation effects predicted from sequence co-variation. Nature Biotechnology, 35, 128-135.",
+          "paper_url": "https://www.nature.com/articles/nbt.3769"
+        },
+        {
+          "rank": 77,
+          "model": "RITA M",
+          "kind": "Single sequence",
+          "score": 0.35,
+          "values": [
+            0.352,
+            0.273,
+            0.405,
+            0.374,
+            0.348
+          ],
+          "paper": "Hesslow, D., Zanichelli, N., Notin, P., Poli, I., & Marks, D.S. (2022). RITA: a Study on Scaling Up Generative Protein Sequence Models. ArXiv, abs/2205.05789.",
+          "paper_url": "https://arxiv.org/abs/2205.05789"
+        },
+        {
+          "rank": 78,
+          "model": "Tranception M no retrieval",
+          "kind": "Single sequence",
+          "score": 0.349,
+          "values": [
+            0.349,
+            0.284,
+            0.406,
+            0.364,
+            0.342
+          ],
+          "paper": "Notin, P., Dias, M., Frazer, J., Marchena-Hurtado, J., Gomez, A.N., Marks, D.S., & Gal, Y. (2022). Tranception: Protein Fitness Prediction with Autoregressive Transformers and Inference-time Retrieval. ICML.",
+          "paper_url": "https://proceedings.mlr.press/v162/notin22a.html"
+        },
+        {
+          "rank": 79,
+          "model": "Unirep evotuned",
+          "kind": "MSA",
+          "score": 0.347,
+          "values": [
+            0.355,
+            0.305,
+            0.365,
+            0.345,
+            0.366
+          ],
+          "paper": "Alley, E.C., Khimulya, G., Biswas, S., AlQuraishi, M., & Church, G.M. (2019). Unified rational protein engineering with sequence-based deep representation learning. Nature Methods, 1-8.",
+          "paper_url": "https://www.nature.com/articles/s41592-019-0598-1"
+        },
+        {
+          "rank": 80,
+          "model": "Progen3 339m",
+          "kind": "Single sequence",
+          "score": 0.347,
+          "values": [
+            0.345,
+            0.294,
+            0.38,
+            0.355,
+            0.359
+          ],
+          "paper": "Bhatnagar, A., Jain, S., Beazer, J., Curran, S.C., Hoffnagle, A.M., Ching, K., Martyn, M., Nayfach, S., Ruffolo, J.A., & Madani, A. (2025). Scaling unlocks broader generation and deeper functional understanding of proteins. bioRxiv, 2025.04.15.649055.",
+          "paper_url": "https://doi.org/10.1101/2025.04.15.649055"
+        },
+        {
+          "rank": 81,
+          "model": "xTrimoPGLM-1B-CLM",
+          "kind": "Single sequence",
+          "score": 0.343,
+          "values": [
+            0.347,
+            0.296,
+            0.4,
+            0.336,
+            0.333
+          ],
+          "paper": "Chen, B., Cheng, X., Li, P., Geng, Y., Gong, J., Li, S., Bei, Z., Tan, X., Wang, B., Zeng, X., Liu, C., Zeng, A., Dong, Y., Tang, J., & Song, L. (2025). xTrimoPGLM: unified 100-billion-parameter pretrained transformer for deciphering the language of proteins. Nature methods.",
+          "paper_url": "https://www.nature.com/articles/s41592-025-02636-z"
+        },
+        {
+          "rank": 82,
+          "model": "Progen2 S",
+          "kind": "Single sequence",
+          "score": 0.336,
+          "values": [
+            0.333,
+            0.275,
+            0.384,
+            0.338,
+            0.349
+          ],
+          "paper": "Nijkamp, E., Ruffolo, J.A., Weinstein, E.N., Naik, N., & Madani, A. (2022). ProGen2: Exploring the Boundaries of Protein Language Models. ArXiv, abs/2206.13517.",
+          "paper_url": "https://arxiv.org/abs/2206.13517"
+        },
+        {
+          "rank": 83,
+          "model": "CARP (76M)",
+          "kind": "Single sequence",
+          "score": 0.328,
+          "values": [
+            0.342,
+            0.282,
+            0.369,
+            0.271,
+            0.376
+          ],
+          "paper": "Kevin K. Yang, Nicolo Fusi, Alex X. Lu (2023). Convolutions are competitive with transformers for protein sequence pretraining. BioRxiv.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2022.05.19.492714v4"
+        },
+        {
+          "rank": 84,
+          "model": "ESM2 (35M)",
+          "kind": "Single sequence",
+          "score": 0.321,
+          "values": [
+            0.314,
+            0.291,
+            0.343,
+            0.217,
+            0.439
+          ],
+          "paper": "Zeming Lin, Halil Akin, Roshan Rao, Brian Hie, Zhongkai Zhu, Wenting Lu, Nikita Smetanin, Robert Verkuil, Ori Kabeli, Yaniv Shmueli, Allan Dos Santos Costa, Maryam Fazel-Zarandi, Tom Sercu, Salvatore Candido, Alexander Rives (2023). Evolutionary-scale prediction of atomic-level protein structure with a language model. Science, Vol. 379.",
+          "paper_url": "https://www.science.org/doi/abs/10.1126/science.ade2574"
+        },
+        {
+          "rank": 85,
+          "model": "Progen3 219m",
+          "kind": "Single sequence",
+          "score": 0.318,
+          "values": [
+            0.31,
+            0.293,
+            0.347,
+            0.335,
+            0.305
+          ],
+          "paper": "Bhatnagar, A., Jain, S., Beazer, J., Curran, S.C., Hoffnagle, A.M., Ching, K., Martyn, M., Nayfach, S., Ruffolo, J.A., & Madani, A. (2025). Scaling unlocks broader generation and deeper functional understanding of proteins. bioRxiv, 2025.04.15.649055.",
+          "paper_url": "https://doi.org/10.1101/2025.04.15.649055"
+        },
+        {
+          "rank": 86,
+          "model": "MULAN",
+          "kind": "Single sequence & Structure",
+          "score": 0.317,
+          "values": [
+            0.283,
+            0.326,
+            0.383,
+            0.225,
+            0.369
+          ],
+          "paper": "Daria Frolova, Daria Marina A. Pak, Anna Litvin, Ilya Sharov, Dmitry N. Ivankov, Ivan Oseledets. (2024). MULAN: Multimodal Protein Language Model for Sequence and Structure Encoding.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2024.05.30.596565v1"
+        },
+        {
+          "rank": 87,
+          "model": "RITA S",
+          "kind": "Single sequence",
+          "score": 0.305,
+          "values": [
+            0.294,
+            0.275,
+            0.336,
+            0.329,
+            0.289
+          ],
+          "paper": "Hesslow, D., Zanichelli, N., Notin, P., Poli, I., & Marks, D.S. (2022). RITA: a Study on Scaling Up Generative Protein Sequence Models. ArXiv, abs/2205.05789.",
+          "paper_url": "https://arxiv.org/abs/2205.05789"
+        },
+        {
+          "rank": 88,
+          "model": "Tranception S no retrieval",
+          "kind": "Single sequence",
+          "score": 0.303,
+          "values": [
+            0.288,
+            0.286,
+            0.349,
+            0.321,
+            0.27
+          ],
+          "paper": "Notin, P., Dias, M., Frazer, J., Marchena-Hurtado, J., Gomez, A.N., Marks, D.S., & Gal, Y. (2022). Tranception: Protein Fitness Prediction with Autoregressive Transformers and Inference-time Retrieval. ICML.",
+          "paper_url": "https://proceedings.mlr.press/v162/notin22a.html"
+        },
+        {
+          "rank": 89,
+          "model": "Progen3 112m",
+          "kind": "Single sequence",
+          "score": 0.282,
+          "values": [
+            0.273,
+            0.301,
+            0.302,
+            0.301,
+            0.233
+          ],
+          "paper": "Bhatnagar, A., Jain, S., Beazer, J., Curran, S.C., Hoffnagle, A.M., Ching, K., Martyn, M., Nayfach, S., Ruffolo, J.A., & Madani, A. (2025). Scaling unlocks broader generation and deeper functional understanding of proteins. bioRxiv, 2025.04.15.649055.",
+          "paper_url": "https://doi.org/10.1101/2025.04.15.649055"
+        },
+        {
+          "rank": 90,
+          "model": "CARP (38M)",
+          "kind": "Single sequence",
+          "score": 0.28,
+          "values": [
+            0.285,
+            0.268,
+            0.312,
+            0.218,
+            0.314
+          ],
+          "paper": "Kevin K. Yang, Nicolo Fusi, Alex X. Lu (2023). Convolutions are competitive with transformers for protein sequence pretraining. BioRxiv.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2022.05.19.492714v4"
+        },
+        {
+          "rank": 91,
+          "model": "ProteinMPNN",
+          "kind": "Structure",
+          "score": 0.257,
+          "values": [
+            0.197,
+            0.163,
+            0.198,
+            0.164,
+            0.565
+          ],
+          "paper": "J. Dauparas, I. Anishchenko, N. Bennett, H. Bai, R. J. Ragotte, L. F. Milles, B. I. M. Wicky, A. Courbet, R. J. de Haas, N. Bethel, P. J. Y. Leung, T. F. Huddy, S. Pellock, D. Tischer, F. Chan,B. Koepnick, H. Nguyen, A. Kang, B. Sankaran,A. K. Bera, N. P. King,D. Baker (2022). Robust deep learning-based protein sequence design using ProteinMPNN. Science, Vol 378.",
+          "paper_url": "https://www.science.org/doi/10.1126/science.add2187"
+        },
+        {
+          "rank": 92,
+          "model": "xTrimoPGLM-3B-CLM",
+          "kind": "Single sequence",
+          "score": 0.233,
+          "values": [
+            0.214,
+            0.249,
+            0.27,
+            0.236,
+            0.196
+          ],
+          "paper": "Chen, B., Cheng, X., Li, P., Geng, Y., Gong, J., Li, S., Bei, Z., Tan, X., Wang, B., Zeng, X., Liu, C., Zeng, A., Dong, Y., Tang, J., & Song, L. (2025). xTrimoPGLM: unified 100-billion-parameter pretrained transformer for deciphering the language of proteins. Nature methods.",
+          "paper_url": "https://www.nature.com/articles/s41592-025-02636-z"
+        },
+        {
+          "rank": 93,
+          "model": "ESM2 (8M)",
+          "kind": "Single sequence",
+          "score": 0.226,
+          "values": [
+            0.201,
+            0.26,
+            0.266,
+            0.14,
+            0.262
+          ],
+          "paper": "Zeming Lin, Halil Akin, Roshan Rao, Brian Hie, Zhongkai Zhu, Wenting Lu, Nikita Smetanin, Robert Verkuil, Ori Kabeli, Yaniv Shmueli, Allan Dos Santos Costa, Maryam Fazel-Zarandi, Tom Sercu, Salvatore Candido, Alexander Rives (2023). Evolutionary-scale prediction of atomic-level protein structure with a language model. Science, Vol. 379.",
+          "paper_url": "https://www.science.org/doi/abs/10.1126/science.ade2574"
+        },
+        {
+          "rank": 94,
+          "model": "Unirep",
+          "kind": "Single sequence",
+          "score": 0.19,
+          "values": [
+            0.182,
+            0.202,
+            0.216,
+            0.139,
+            0.21
+          ],
+          "paper": "Alley, E.C., Khimulya, G., Biswas, S., AlQuraishi, M., & Church, G.M. (2019). Unified rational protein engineering with sequence-based deep representation learning. Nature Methods, 1-8.",
+          "paper_url": "https://www.nature.com/articles/s41592-019-0598-1"
+        },
+        {
+          "rank": 95,
+          "model": "ProtGPT2",
+          "kind": "Single sequence",
+          "score": 0.188,
+          "values": [
+            0.176,
+            0.149,
+            0.193,
+            0.166,
+            0.257
+          ],
+          "paper": "Ferruz, N., Schmidt, S., & Höcker, B. (2022). ProtGPT2 is a deep unsupervised language model for protein design. Nature Communications, 13.",
+          "paper_url": "https://www.nature.com/articles/s41467-022-32007-7"
+        },
+        {
+          "rank": 96,
+          "model": "CARP (600K)",
+          "kind": "Single sequence",
+          "score": 0.106,
+          "values": [
+            0.112,
+            0.084,
+            0.171,
+            0.059,
+            0.105
+          ],
+          "paper": "Kevin K. Yang, Nicolo Fusi, Alex X. Lu (2023). Convolutions are competitive with transformers for protein sequence pretraining. BioRxiv.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2022.05.19.492714v4"
+        },
+        {
+          "rank": 97,
+          "model": "xTrimoPGLM-7B-CLM",
+          "kind": "Single sequence",
+          "score": 0.102,
+          "values": [
+            0.116,
+            0.154,
+            0.078,
+            0.061,
+            0.099
+          ],
+          "paper": "Chen, B., Cheng, X., Li, P., Geng, Y., Gong, J., Li, S., Bei, Z., Tan, X., Wang, B., Zeng, X., Liu, C., Zeng, A., Dong, Y., Tang, J., & Song, L. (2025). xTrimoPGLM: unified 100-billion-parameter pretrained transformer for deciphering the language of proteins. Nature methods.",
+          "paper_url": "https://www.nature.com/articles/s41592-025-02636-z"
+        }
+      ]
+    },
+    {
+      "id": "proteingym-zero-shot-indels",
+      "title": "ProteinGym: zero-shot fitness prediction, insertions and deletions",
+      "field": "proteins",
+      "task": "fitness",
+      "dataset": "proteingym",
+      "source": "https://proteingym.org/benchmarks",
+      "csv": "https://raw.githubusercontent.com/OATML-Markslab/ProteinGym/main/benchmarks/DMS_zero_shot/indels/Spearman/Summary_performance_DMS_indels_Spearman.csv",
+      "metric_label": "Spearman (mean)",
+      "higher": true,
+      "columns": [
+        "Activity",
+        "Expression",
+        "Organismal fitness",
+        "Stability"
+      ],
+      "fetched_at": "2026-11-16T19:00:09Z",
+      "rows": [
+        {
+          "rank": 1,
+          "model": "PoET (200M)",
+          "kind": "Hybrid - Alignment & PLM",
+          "score": 0.517,
+          "values": [
+            0.59,
+            0.458,
+            0.525,
+            0.493
+          ],
+          "paper": "Truong, Timothy F. and Tristan Bepler. PoET: A generative model of protein families as sequences-of-sequences. NeurIPS.",
+          "paper_url": "https://papers.nips.cc/paper_files/paper/2023/hash/f4366126eba252699b280e8f93c0ab2f-Abstract-Conference.html"
+        },
+        {
+          "rank": 2,
+          "model": "Progen2 M",
+          "kind": "Protein language model",
+          "score": 0.465,
+          "values": [
+            0.51,
+            0.464,
+            0.374,
+            0.511
+          ],
+          "paper": "Nijkamp, E., Ruffolo, J.A., Weinstein, E.N., Naik, N., & Madani, A. (2022). ProGen2: Exploring the Boundaries of Protein Language Models. ArXiv, abs/2206.13517.",
+          "paper_url": "https://arxiv.org/abs/2206.13517"
+        },
+        {
+          "rank": 3,
+          "model": "Progen2 Base",
+          "kind": "Protein language model",
+          "score": 0.464,
+          "values": [
+            0.533,
+            0.46,
+            0.374,
+            0.489
+          ],
+          "paper": "Nijkamp, E., Ruffolo, J.A., Weinstein, E.N., Naik, N., & Madani, A. (2022). ProGen2: Exploring the Boundaries of Protein Language Models. ArXiv, abs/2206.13517.",
+          "paper_url": "https://arxiv.org/abs/2206.13517"
+        },
+        {
+          "rank": 4,
+          "model": "RITA L",
+          "kind": "Protein language model",
+          "score": 0.457,
+          "values": [
+            0.466,
+            0.456,
+            0.419,
+            0.488
+          ],
+          "paper": "Hesslow, D., Zanichelli, N., Notin, P., Poli, I., & Marks, D.S. (2022). RITA: a Study on Scaling Up Generative Protein Sequence Models. ArXiv, abs/2205.05789.",
+          "paper_url": "https://arxiv.org/abs/2205.05789"
+        },
+        {
+          "rank": 5,
+          "model": "Tranception M no retrieval",
+          "kind": "Protein language model",
+          "score": 0.453,
+          "values": [
+            0.469,
+            0.408,
+            0.501,
+            0.434
+          ],
+          "paper": "Notin, P., Dias, M., Frazer, J., Marchena-Hurtado, J., Gomez, A.N., Marks, D.S., & Gal, Y. (2022). Tranception: Protein Fitness Prediction with Autoregressive Transformers and Inference-time Retrieval. ICML.",
+          "paper_url": "https://proceedings.mlr.press/v162/notin22a.html"
+        },
+        {
+          "rank": 6,
+          "model": "RITA XL",
+          "kind": "Protein language model",
+          "score": 0.449,
+          "values": [
+            0.475,
+            0.434,
+            0.393,
+            0.496
+          ],
+          "paper": "Hesslow, D., Zanichelli, N., Notin, P., Poli, I., & Marks, D.S. (2022). RITA: a Study on Scaling Up Generative Protein Sequence Models. ArXiv, abs/2205.05789.",
+          "paper_url": "https://arxiv.org/abs/2205.05789"
+        },
+        {
+          "rank": 7,
+          "model": "Progen2 L",
+          "kind": "Protein language model",
+          "score": 0.449,
+          "values": [
+            0.504,
+            0.43,
+            0.36,
+            0.5
+          ],
+          "paper": "Nijkamp, E., Ruffolo, J.A., Weinstein, E.N., Naik, N., & Madani, A. (2022). ProGen2: Exploring the Boundaries of Protein Language Models. ArXiv, abs/2206.13517.",
+          "paper_url": "https://arxiv.org/abs/2206.13517"
+        },
+        {
+          "rank": 8,
+          "model": "Tranception L no retrieval",
+          "kind": "Protein language model",
+          "score": 0.437,
+          "values": [
+            0.43,
+            0.41,
+            0.445,
+            0.463
+          ],
+          "paper": "Notin, P., Dias, M., Frazer, J., Marchena-Hurtado, J., Gomez, A.N., Marks, D.S., & Gal, Y. (2022). Tranception: Protein Fitness Prediction with Autoregressive Transformers and Inference-time Retrieval. ICML.",
+          "paper_url": "https://proceedings.mlr.press/v162/notin22a.html"
+        },
+        {
+          "rank": 9,
+          "model": "RITA M",
+          "kind": "Protein language model",
+          "score": 0.436,
+          "values": [
+            0.464,
+            0.381,
+            0.444,
+            0.456
+          ],
+          "paper": "Hesslow, D., Zanichelli, N., Notin, P., Poli, I., & Marks, D.S. (2022). RITA: a Study on Scaling Up Generative Protein Sequence Models. ArXiv, abs/2205.05789.",
+          "paper_url": "https://arxiv.org/abs/2205.05789"
+        },
+        {
+          "rank": 10,
+          "model": "Progen2 XL",
+          "kind": "Protein language model",
+          "score": 0.431,
+          "values": [
+            0.405,
+            0.359,
+            0.431,
+            0.531
+          ],
+          "paper": "Nijkamp, E., Ruffolo, J.A., Weinstein, E.N., Naik, N., & Madani, A. (2022). ProGen2: Exploring the Boundaries of Protein Language Models. ArXiv, abs/2206.13517.",
+          "paper_url": "https://arxiv.org/abs/2206.13517"
+        },
+        {
+          "rank": 11,
+          "model": "TranceptEVE M",
+          "kind": "Hybrid - Alignment & PLM",
+          "score": 0.424,
+          "values": [
+            0.514,
+            0.426,
+            0.555,
+            0.202
+          ],
+          "paper": "Notin, P., Van Niekerk, L., Kollasch, A., Ritter, D., Gal, Y. & Marks, D.S. &  (2022). TranceptEVE: Combining Family-specific and Family-agnostic Models of Protein Sequences for Improved Fitness Prediction. NeurIPS, LMRL workshop.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2022.12.07.519495v1?rss=1"
+        },
+        {
+          "rank": 12,
+          "model": "Progen2 S",
+          "kind": "Protein language model",
+          "score": 0.424,
+          "values": [
+            0.505,
+            0.363,
+            0.387,
+            0.441
+          ],
+          "paper": "Nijkamp, E., Ruffolo, J.A., Weinstein, E.N., Naik, N., & Madani, A. (2022). ProGen2: Exploring the Boundaries of Protein Language Models. ArXiv, abs/2206.13517.",
+          "paper_url": "https://arxiv.org/abs/2206.13517"
+        },
+        {
+          "rank": 13,
+          "model": "TranceptEVE L",
+          "kind": "Hybrid - Alignment & PLM",
+          "score": 0.412,
+          "values": [
+            0.474,
+            0.428,
+            0.477,
+            0.269
+          ],
+          "paper": "Notin, P., Van Niekerk, L., Kollasch, A., Ritter, D., Gal, Y. & Marks, D.S. &  (2022). TranceptEVE: Combining Family-specific and Family-agnostic Models of Protein Sequences for Improved Fitness Prediction. NeurIPS, LMRL workshop.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2022.12.07.519495v1?rss=1"
+        },
+        {
+          "rank": 14,
+          "model": "Tranception S no retrieval",
+          "kind": "Protein language model",
+          "score": 0.41,
+          "values": [
+            0.419,
+            0.372,
+            0.479,
+            0.372
+          ],
+          "paper": "Notin, P., Dias, M., Frazer, J., Marchena-Hurtado, J., Gomez, A.N., Marks, D.S., & Gal, Y. (2022). Tranception: Protein Fitness Prediction with Autoregressive Transformers and Inference-time Retrieval. ICML.",
+          "paper_url": "https://proceedings.mlr.press/v162/notin22a.html"
+        },
+        {
+          "rank": 15,
+          "model": "RITA S",
+          "kind": "Protein language model",
+          "score": 0.397,
+          "values": [
+            0.436,
+            0.348,
+            0.414,
+            0.39
+          ],
+          "paper": "Hesslow, D., Zanichelli, N., Notin, P., Poli, I., & Marks, D.S. (2022). RITA: a Study on Scaling Up Generative Protein Sequence Models. ArXiv, abs/2205.05789.",
+          "paper_url": "https://arxiv.org/abs/2205.05789"
+        },
+        {
+          "rank": 16,
+          "model": "Tranception L",
+          "kind": "Hybrid - Alignment & PLM",
+          "score": 0.395,
+          "values": [
+            0.453,
+            0.434,
+            0.456,
+            0.238
+          ],
+          "paper": "Notin, P., Dias, M., Frazer, J., Marchena-Hurtado, J., Gomez, A.N., Marks, D.S., & Gal, Y. (2022). Tranception: Protein Fitness Prediction with Autoregressive Transformers and Inference-time Retrieval. ICML.",
+          "paper_url": "https://proceedings.mlr.press/v162/notin22a.html"
+        },
+        {
+          "rank": 17,
+          "model": "Tranception M",
+          "kind": "Hybrid - Alignment & PLM",
+          "score": 0.394,
+          "values": [
+            0.472,
+            0.4,
+            0.53,
+            0.174
+          ],
+          "paper": "Notin, P., Dias, M., Frazer, J., Marchena-Hurtado, J., Gomez, A.N., Marks, D.S., & Gal, Y. (2022). Tranception: Protein Fitness Prediction with Autoregressive Transformers and Inference-time Retrieval. ICML.",
+          "paper_url": "https://proceedings.mlr.press/v162/notin22a.html"
+        },
+        {
+          "rank": 18,
+          "model": "Hidden Markov Model",
+          "kind": "Alignment-based model",
+          "score": 0.389,
+          "values": [
+            0.463,
+            0.302,
+            0.436,
+            0.354
+          ],
+          "paper": "HMMER: biosequence analysis using profile hidden Markov models",
+          "paper_url": "http://hmmer.org/"
+        },
+        {
+          "rank": 19,
+          "model": "Wavenet",
+          "kind": "Alignment-based model",
+          "score": 0.368,
+          "values": [
+            0.418,
+            0.232,
+            0.346,
+            0.476
+          ],
+          "paper": "Shin, J., Riesselman, A.J., Kollasch, A.W., McMahon, C., Simon, E., Sander, C., Manglik, A., Kruse, A.C., & Marks, D.S. (2021). Protein design and variant prediction using autoregressive generative models. Nature Communications, 12.",
+          "paper_url": "https://www.nature.com/articles/s41467-021-22732-w"
+        },
+        {
+          "rank": 20,
+          "model": "TranceptEVE S",
+          "kind": "Hybrid - Alignment & PLM",
+          "score": 0.357,
+          "values": [
+            0.456,
+            0.378,
+            0.497,
+            0.096
+          ],
+          "paper": "Notin, P., Dias, M., Frazer, J., Marchena-Hurtado, J., Gomez, A.N., Marks, D.S., & Gal, Y. (2022). Tranception: Protein Fitness Prediction with Autoregressive Transformers and Inference-time Retrieval. ICML.",
+          "paper_url": "https://proceedings.mlr.press/v162/notin22a.html"
+        },
+        {
+          "rank": 21,
+          "model": "Provean",
+          "kind": "Alignment-based model",
+          "score": 0.347,
+          "values": [
+            0.314,
+            0.328,
+            0.413,
+            0.334
+          ],
+          "paper": "Choi Y, Sims GE, Murphy S, Miller JR, Chan AP (2012). Predicting the functional effect of amino acid substitutions and indels. PloS one.",
+          "paper_url": "https://www.jcvi.org/publications/predicting-functional-effect-amino-acid-substitutions-and-indels"
+        },
+        {
+          "rank": 22,
+          "model": "Tranception S",
+          "kind": "Hybrid - Alignment & PLM",
+          "score": 0.34,
+          "values": [
+            0.441,
+            0.357,
+            0.488,
+            0.074
+          ],
+          "paper": "Notin, P., Dias, M., Frazer, J., Marchena-Hurtado, J., Gomez, A.N., Marks, D.S., & Gal, Y. (2022). Tranception: Protein Fitness Prediction with Autoregressive Transformers and Inference-time Retrieval. ICML.",
+          "paper_url": "https://proceedings.mlr.press/v162/notin22a.html"
+        },
+        {
+          "rank": 23,
+          "model": "ProtGPT2",
+          "kind": "Protein language model",
+          "score": 0.191,
+          "values": [
+            0.194,
+            0.236,
+            0.099,
+            0.235
+          ],
+          "paper": "Ferruz, N., Schmidt, S., & Höcker, B. (2022). ProtGPT2 is a deep unsupervised language model for protein design. Nature Communications, 13.",
+          "paper_url": "https://www.nature.com/articles/s41467-022-32007-7"
+        },
+        {
+          "rank": 24,
+          "model": "Unirep",
+          "kind": "Protein language model",
+          "score": 0.169,
+          "values": [
+            0.085,
+            0.182,
+            0.065,
+            0.342
+          ],
+          "paper": "Alley, E.C., Khimulya, G., Biswas, S., AlQuraishi, M., & Church, G.M. (2019). Unified rational protein engineering with sequence-based deep representation learning. Nature Methods, 1-8.",
+          "paper_url": "https://www.nature.com/articles/s41592-019-0598-1"
+        }
+      ]
+    },
+    {
+      "id": "proteingym-supervised-substitutions",
+      "title": "ProteinGym: supervised fitness prediction, substitutions",
+      "field": "proteins",
+      "task": "fitness",
+      "dataset": "proteingym",
+      "source": "https://proteingym.org/benchmarks",
+      "csv": "https://raw.githubusercontent.com/OATML-Markslab/ProteinGym/main/benchmarks/DMS_supervised/substitutions/Spearman/Summary_performance_DMS_substitutions_Spearman.csv",
+      "metric_label": "Spearman (mean)",
+      "higher": true,
+      "columns": [
+        "Random split",
+        "Modulo split",
+        "Contiguous split"
+      ],
+      "fetched_at": "2026-11-16T19:00:09Z",
+      "rows": [
+        {
+          "rank": 1,
+          "model": "Kermut",
+          "kind": "Structure & sequence embedding",
+          "score": 0.657,
+          "values": [
+            0.745,
+            0.633,
+            0.593
+          ],
+          "paper": "Groth, P. M., Kerrn, M. H., Olsen, L., Salomon, J., & Boomsma, W. (2024). Kermut: Composite kernel regression for protein variant effects. Thirty-Eighth Conference on Neural Information Processing Systems",
+          "paper_url": "https://openreview.net/forum?id=jM9atrvUii"
+        },
+        {
+          "rank": 2,
+          "model": "ProteinNPT",
+          "kind": "Sequence embedding",
+          "score": 0.619,
+          "values": [
+            0.741,
+            0.588,
+            0.529
+          ],
+          "paper": "Notin, P., Weitzman, R., Marks, D. S., & Gal, Y. (2023). ProteinNPT: Improving protein property prediction and design with non-parametric transformers. Thirty-Seventh Conference on Neural Information Processing Systems",
+          "paper_url": "https://openreview.net/forum?id=AwzbQVuDBk"
+        },
+        {
+          "rank": 3,
+          "model": "MSA Transformer Embeddings",
+          "kind": "Sequence embedding",
+          "score": 0.581,
+          "values": [
+            0.67,
+            0.562,
+            0.513
+          ],
+          "paper": "Rao, R., Liu, J., Verkuil, R., Meier, J., Canny, J.F., Abbeel, P., Sercu, T., & Rives, A. (2021). MSA Transformer. ICML.",
+          "paper_url": "http://proceedings.mlr.press/v139/rao21a.html"
+        },
+        {
+          "rank": 4,
+          "model": "Tranception Embeddings",
+          "kind": "Sequence embedding",
+          "score": 0.548,
+          "values": [
+            0.681,
+            0.525,
+            0.439
+          ],
+          "paper": "Notin, P., Dias, M., Frazer, J., Marchena-Hurtado, J., Gomez, A.N., Marks, D.S., & Gal, Y. (2022). Tranception: Protein Fitness Prediction with Autoregressive Transformers and Inference-time Retrieval. ICML.",
+          "paper_url": "https://proceedings.mlr.press/v162/notin22a.html"
+        },
+        {
+          "rank": 5,
+          "model": "ESM-1v Embeddings",
+          "kind": "Sequence embedding",
+          "score": 0.535,
+          "values": [
+            0.614,
+            0.514,
+            0.479
+          ],
+          "paper": "Meier, J., Rao, R., Verkuil, R., Liu, J., Sercu, T., & Rives, A. (2021). Language models enable zero-shot prediction of the effects of mutations on protein function. NeurIPS.",
+          "paper_url": "https://proceedings.neurips.cc/paper/2021/hash/f51338d736f95dd42427296047067694-Abstract.html"
+        },
+        {
+          "rank": 6,
+          "model": "TranceptEVE + One-Hot Encodings",
+          "kind": "One-hot Encoding",
+          "score": 0.474,
+          "values": [
+            0.552,
+            0.435,
+            0.435
+          ],
+          "paper": "Notin, P., Van Niekerk, L., Kollasch, A., Ritter, D., Gal, Y. & Marks, D.S. &  (2022). TranceptEVE: Combining Family-specific and Family-agnostic Models of Protein Sequences for Improved Fitness Prediction. NeurIPS, LMRL workshop.",
+          "paper_url": "https://www.biorxiv.org/content/10.1101/2022.12.07.519495v1?rss=1"
+        },
+        {
+          "rank": 7,
+          "model": "Tranception + One-Hot Encodings",
+          "kind": "One-hot Encoding",
+          "score": 0.459,
+          "values": [
+            0.55,
+            0.413,
+            0.415
+          ],
+          "paper": "Notin, P., Dias, M., Frazer, J., Marchena-Hurtado, J., Gomez, A.N., Marks, D.S., & Gal, Y. (2022). Tranception: Protein Fitness Prediction with Autoregressive Transformers and Inference-time Retrieval. ICML.",
+          "paper_url": "https://proceedings.mlr.press/v162/notin22a.html"
+        },
+        {
+          "rank": 8,
+          "model": "MSA_Transformer + One-Hot Encodings",
+          "kind": "One-hot Encoding",
+          "score": 0.452,
+          "values": [
+            0.54,
+            0.409,
+            0.407
+          ],
+          "paper": "Rao, R., Liu, J., Verkuil, R., Meier, J., Canny, J.F., Abbeel, P., Sercu, T., & Rives, A. (2021). MSA Transformer. ICML.",
+          "paper_url": "http://proceedings.mlr.press/v139/rao21a.html"
+        },
+        {
+          "rank": 9,
+          "model": "ESM-1v + One-Hot Encodings",
+          "kind": "One-hot Encoding",
+          "score": 0.452,
+          "values": [
+            0.565,
+            0.394,
+            0.396
+          ],
+          "paper": "Meier, J., Rao, R., Verkuil, R., Liu, J., Sercu, T., & Rives, A. (2021). Language models enable zero-shot prediction of the effects of mutations on protein function. NeurIPS.",
+          "paper_url": "https://proceedings.neurips.cc/paper/2021/hash/f51338d736f95dd42427296047067694-Abstract.html"
+        },
+        {
+          "rank": 10,
+          "model": "DeepSequence + One-Hot Encodings",
+          "kind": "One-hot Encoding",
+          "score": 0.437,
+          "values": [
+            0.523,
+            0.393,
+            0.395
+          ],
+          "paper": "Hsu, C., Nisonoff, H., Fannjiang, C. et al. Learning protein fitness models from evolutionary and assay-labeled data. Nat Biotechnol 40, 1114–1122 (2022). https://doi.org/10.1038/s41587-021-01146-5",
+          "paper_url": "https://www.nature.com/articles/s41587-021-01146-5"
+        },
+        {
+          "rank": 11,
+          "model": "One-Hot Encodings",
+          "kind": "One-hot Encoding",
+          "score": 0.221,
+          "values": [
+            0.582,
+            0.022,
+            0.059
+          ],
+          "paper": "Hsu, C., Nisonoff, H., Fannjiang, C. et al. Learning protein fitness models from evolutionary and assay-labeled data. Nat Biotechnol 40, 1114–1122 (2022). https://doi.org/10.1038/s41587-021-01146-5",
+          "paper_url": "https://www.nature.com/articles/s41587-021-01146-5"
+        }
+      ]
+    },
+    {
+      "id": "proteingym-clinical-substitutions",
+      "title": "ProteinGym: clinical variant classification, substitutions",
+      "field": "variants",
+      "task": "variant-effect",
+      "dataset": "proteingym",
+      "source": "https://proteingym.org/benchmarks",
+      "csv": "https://raw.githubusercontent.com/OATML-Markslab/ProteinGym/main/benchmarks/clinical_zero_shot/substitutions/AUC/Summary_performance_clinical_substitutions_AUC.csv",
+      "metric_label": "AUC (mean)",
+      "higher": true,
+      "columns": [],
+      "fetched_at": "2026-11-16T19:00:09Z",
+      "rows": [
+        {
+          "rank": 1,
+          "model": "PoET (200M)",
+          "kind": "MSA",
+          "score": 0.92,
+          "values": [],
+          "paper": "",
+          "paper_url": ""
+        },
+        {
+          "rank": 2,
+          "model": "TranceptEVE L",
+          "kind": "MSA",
+          "score": 0.92,
+          "values": [],
+          "paper": "",
+          "paper_url": ""
+        },
+        {
+          "rank": 3,
+          "model": "GEMME",
+          "kind": "MSA",
+          "score": 0.919,
+          "values": [],
+          "paper": "",
+          "paper_url": ""
+        },
+        {
+          "rank": 4,
+          "model": "EVE",
+          "kind": "MSA",
+          "score": 0.914,
+          "values": [],
+          "paper": "",
+          "paper_url": ""
+        },
+        {
+          "rank": 5,
+          "model": "ESM-1b",
+          "kind": "Single sequence",
+          "score": 0.892,
+          "values": [],
+          "paper": "",
+          "paper_url": ""
+        },
+        {
+          "rank": 6,
+          "model": "Provean",
+          "kind": "Clinical Predictor",
+          "score": 0.886,
+          "values": [],
+          "paper": "",
+          "paper_url": ""
+        },
+        {
+          "rank": 7,
+          "model": "SIFT",
+          "kind": "Clinical Predictor",
+          "score": 0.878,
+          "values": [],
+          "paper": "",
+          "paper_url": ""
+        },
+        {
+          "rank": 8,
+          "model": "SIFT4G",
+          "kind": "Clinical Predictor",
+          "score": 0.877,
+          "values": [],
+          "paper": "",
+          "paper_url": ""
+        },
+        {
+          "rank": 9,
+          "model": "MutationAssessor",
+          "kind": "Clinical Predictor",
+          "score": 0.877,
+          "values": [],
+          "paper": "",
+          "paper_url": ""
+        },
+        {
+          "rank": 10,
+          "model": "MutPred",
+          "kind": "Clinical Predictor",
+          "score": 0.875,
+          "values": [],
+          "paper": "",
+          "paper_url": ""
+        },
+        {
+          "rank": 11,
+          "model": "PrimateAI",
+          "kind": "Clinical Predictor",
+          "score": 0.855,
+          "values": [],
+          "paper": "",
+          "paper_url": ""
+        },
+        {
+          "rank": 12,
+          "model": "LIST-S2",
+          "kind": "Clinical Predictor",
+          "score": 0.842,
+          "values": [],
+          "paper": "",
+          "paper_url": ""
+        },
+        {
+          "rank": 13,
+          "model": "LRT",
+          "kind": "Clinical Predictor",
+          "score": 0.805,
+          "values": [],
+          "paper": "",
+          "paper_url": ""
+        }
+      ]
+    }
+  ]
+}

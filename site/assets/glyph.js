@@ -307,12 +307,60 @@ function dispose(group) {
   });
 }
 
-// ---- still images for cards: one hidden renderer, each figure drawn once ----
+// ---- chromatogram trace: the name drawn as a Sanger sequencing read ----
+export function trace(name, length = 36) {
+  const seq = sequence(name, length);
+  const w = 360, h = 34, step = w / length;
+  const curves = { A: [], C: [], G: [], T: [] };
+  const rnd = rng(hash(name) ^ 0x9e3779b9);
+  const peaks = seq.map((b, i) => ({ b, x: step * (i + 0.5), amp: 0.62 + rnd() * 0.33 }));
+  for (const base of BASES) {
+    let d = "";
+    for (let x = 0; x <= w; x += 2) {
+      let y = 0;
+      for (const p of peaks) {
+        const dx = (x - p.x) / (step * 0.34);
+        if (dx > -4 && dx < 4) y += (p.b === base ? p.amp : 0.05) * Math.exp(-dx * dx);
+      }
+      d += `${x === 0 ? "M" : "L"}${x},${(h - 2 - y * (h - 6)).toFixed(1)}`;
+    }
+    curves[base] = d;
+  }
+  return `<svg class="trace" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" aria-hidden="true">${BASES.map(
+    (b) => `<path class="${b}" d="${curves[b]}"/>`
+  ).join("")}</svg>`;
+}
+
+// ---- still images for cards: one hidden renderer, drawn one per frame ----
 let still = null;
 const cache = new Map();
+const queue = [];
+let pumping = false;
 
 export function clearThumbs() {
   cache.clear();
+}
+
+/** Queue an <img data-name data-shape> for drawing; keeps scrolling smooth. */
+export function requestThumb(img) {
+  queue.push(img);
+  if (pumping) return;
+  pumping = true;
+  const idle = window.requestIdleCallback || ((fn) => setTimeout(() => fn({ timeRemaining: () => 8 }), 16));
+  const pump = (deadline) => {
+    while (queue.length && deadline.timeRemaining() > 4) {
+      const el = queue.shift();
+      if (!el.isConnected) continue;
+      const url = thumb(el.dataset.name, el.dataset.shape);
+      if (url) {
+        el.src = url;
+        el.classList.add("ready");
+      }
+    }
+    if (queue.length) idle(pump);
+    else pumping = false;
+  };
+  idle(pump);
 }
 
 export function thumb(name, shape) {
@@ -375,18 +423,26 @@ export function mountLive(canvas, name, shape) {
   watcher.observe(canvas);
   fit();
 
-  let frame = 0, alive = true;
+  // Only animate while the canvas is on screen and the tab is visible.
+  let frame = 0, alive = true, visible = true;
   const loop = () => {
-    if (!alive) return;
+    frame = 0;
+    if (!alive || !visible || document.hidden) return;
     controls.update();
     renderer.render(scene, camera);
     frame = requestAnimationFrame(loop);
   };
+  const wake = () => { if (!frame) loop(); };
+  const seen = new IntersectionObserver(([e]) => { visible = e.isIntersecting; wake(); });
+  seen.observe(canvas);
+  document.addEventListener("visibilitychange", wake);
   loop();
 
   return () => {
     alive = false;
     cancelAnimationFrame(frame);
+    seen.disconnect();
+    document.removeEventListener("visibilitychange", wake);
     watcher.disconnect();
     controls.dispose();
     dispose(group);

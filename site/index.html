@@ -2,13 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Bioinformatics Data Atlas</title>
-  <meta name="description" content="Every release of the major bioinformatics databases, public datasets and benchmarks, the most cited open-access papers per field, and a daily check of which sources are reachable.">
+  <meta name="description" content="Every release of the major bioinformatics databases with direct download links, public datasets and benchmarks, open-access papers by field and task, model comparison tables, and a daily check of every source.">
+  <meta name="theme-color" content="#0f1f24">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Vazirmatn:wght@400;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="modulepreload" href="assets/app.js">
+  <link rel="preload" href="data/sources.json" as="fetch" crossorigin>
   <script type="importmap">
   {
     "imports": {
@@ -23,18 +26,24 @@
   <header class="top">
     <div class="wrap top-row">
       <a class="brand" href="#home" aria-label="Bioinformatics Data Atlas, home">
-        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
-        <span class="brand-name">Bioinformatics Data Atlas</span>
+        <svg class="brand-trace" viewBox="0 0 34 24" aria-hidden="true">
+          <path d="M1 22 C5 22 6 3 9 3 S12 22 15 22" fill="none" stroke="var(--base-a)" stroke-width="2"/>
+          <path d="M8 22 C12 22 13 9 16 9 S19 22 22 22" fill="none" stroke="var(--base-c)" stroke-width="2"/>
+          <path d="M15 22 C19 22 20 6 23 6 S26 22 29 22" fill="none" stroke="var(--base-g)" stroke-width="2"/>
+          <path d="M22 22 C25 22 26 13 28 13 S31 22 33 22" fill="none" stroke="var(--base-t)" stroke-width="2"/>
+        </svg>
+        <span>Bioinformatics Data Atlas</span>
       </a>
       <nav class="nav" aria-label="Sections">
         <a href="#sources" data-nav="sources">Databases</a>
         <a href="#datasets" data-nav="datasets">Datasets</a>
         <a href="#papers" data-nav="papers">Papers</a>
+        <a href="#benchmarks" data-nav="benchmarks">Benchmarks</a>
         <a href="#status" data-nav="status">Status</a>
         <a href="#about" data-nav="about">About</a>
       </nav>
-      <button class="theme" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
-        <span aria-hidden="true">◐</span>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg>
       </button>
     </div>
   </header>
@@ -46,9 +55,10 @@
   <footer class="foot">
     <div class="wrap foot-row">
       <p id="foot-build">Data build: loading…</p>
-      <p>Licence and version details are indicative. Confirm terms on each source before use.</p>
+      <p>The atlas links to data; it hosts none. Confirm licence terms on each source before use.</p>
     </div>
   </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
   <noscript><p class="wrap">This site needs JavaScript to load its data files.</p></noscript>
   <script type="module" src="assets/app.js"></script>

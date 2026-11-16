@@ -1,0 +1,89 @@
+# Published results tables that the engine downloads every day.
+# Each board is a CSV published by the benchmark maintainers. The site shows
+# it unchanged, apart from choosing which columns to display.
+#
+#   url        raw CSV
+#   model      column with the model name
+#   kind       column with the model family (optional)
+#   reference  column with an HTML <a> link to the paper (optional)
+#   metric     main score column; the table is sorted by it
+#   higher     true when a larger score is better
+#   columns    extra score columns to show, as "CSV column = label"
+
+[[board]]
+id = "proteingym-zero-shot-substitutions"
+title = "ProteinGym: zero-shot fitness prediction, substitutions"
+field = "proteins"
+task = "fitness"
+dataset = "proteingym"
+url = "https://raw.githubusercontent.com/OATML-Markslab/ProteinGym/main/benchmarks/DMS_zero_shot/substitutions/Spearman/Summary_performance_DMS_substitutions_Spearman.csv"
+source = "https://proteingym.org/benchmarks"
+model = "Model_name"
+kind = "Model type"
+reference = "References"
+metric = "Average_Spearman"
+metric_label = "Spearman (mean)"
+higher = true
+columns = [
+  "Function_Activity = Activity",
+  "Function_Binding = Binding",
+  "Function_Expression = Expression",
+  "Function_OrganismalFitness = Organismal fitness",
+  "Function_Stability = Stability",
+]
+
+[[board]]
+id = "proteingym-zero-shot-indels"
+title = "ProteinGym: zero-shot fitness prediction, insertions and deletions"
+field = "proteins"
+task = "fitness"
+dataset = "proteingym"
+url = "https://raw.githubusercontent.com/OATML-Markslab/ProteinGym/main/benchmarks/DMS_zero_shot/indels/Spearman/Summary_performance_DMS_indels_Spearman.csv"
+source = "https://proteingym.org/benchmarks"
+model = "Model_name"
+kind = "Model type"
+reference = "References"
+metric = "Average_Spearman"
+metric_label = "Spearman (mean)"
+higher = true
+columns = [
+  "Function_Activity = Activity",
+  "Function_Expression = Expression",
+  "Function_OrganismalFitness = Organismal fitness",
+  "Function_Stability = Stability",
+]
+
+[[board]]
+id = "proteingym-supervised-substitutions"
+title = "ProteinGym: supervised fitness prediction, substitutions"
+field = "proteins"
+task = "fitness"
+dataset = "proteingym"
+url = "https://raw.githubusercontent.com/OATML-Markslab/ProteinGym/main/benchmarks/DMS_supervised/substitutions/Spearman/Summary_performance_DMS_substitutions_Spearman.csv"
+source = "https://proteingym.org/benchmarks"
+model = "Model_name"
+kind = "Model type"
+reference = "References"
+metric = "Average_Spearman"
+metric_label = "Spearman (mean)"
+higher = true
+columns = [
+  "Average_Spearman_fold_random_5 = Random split",
+  "Average_Spearman_fold_modulo_5 = Modulo split",
+  "Average_Spearman_fold_contiguous_5 = Contiguous split",
+]
+
+[[board]]
+id = "proteingym-clinical-substitutions"
+title = "ProteinGym: clinical variant classification, substitutions"
+field = "variants"
+task = "variant-effect"
+dataset = "proteingym"
+url = "https://raw.githubusercontent.com/OATML-Markslab/ProteinGym/main/benchmarks/clinical_zero_shot/substitutions/AUC/Summary_performance_clinical_substitutions_AUC.csv"
+source = "https://proteingym.org/benchmarks"
+model = "Model_name"
+kind = "Model type"
+metric = "Average_AUC"
+metric_label = "AUC (mean)"
+higher = true
+columns = []

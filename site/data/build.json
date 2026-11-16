@@ -1,17 +1,20 @@
 {
-  "generated_at": "2026-11-16T18:16:47Z",
-  "engine": "local preview (bootstrap script)",
+  "generated_at": "2026-11-16T19:00:09Z",
+  "engine": "local preview",
   "commit": "local",
-  "mode": "offline",
+  "mode": "online",
   "inputs": {
-    "databases_versions.csv": "d05a89cde74b9598dfd67947204c59dcfb52b552742b7f1c13fa7a98982a2103",
-    "datasets.csv": "a6bbddb828d82d91cb4348402eb6a62e1db2f3927f7c80583e8341ea32393c6a",
-    "registry/fields.toml": "20d5b4477d5a6c51855fd7f90ce4efbe12a0c28d5b2a486924959bac7eca8291",
-    "registry/sources.toml": "045f18bfc6da673aab7aaed1d0f78f73fa6bd4a99bfc703b163c29eb50c66a82"
+    "data/database_versions.csv": "841eabfca5cfbebfbb1b67b16409a2c10ba209a1668b3cbb7a9e84c1977fbd21",
+    "data/datasets.csv": "58e31f8d5645e7b31faac8797571e376733f667ce7be72a7a472951105c3e9fa",
+    "data/fields.toml": "09abbcf89cbe279fd64c951fd860a92921c37ccfd977b5c8f980fa9aa4ad95f9",
+    "data/leaderboards.toml": "2fc493a21c026d478fa329984f5b920de7794c45f673bcafd67215b4a38cacad",
+    "data/sources.toml": "a60d05a7421762d97245c689dec478514c9456a65ac5379a089980abedbda2b5"
   },
   "counts": {
-    "datasets": 194,
     "sources": 83,
-    "versions": 794
+    "versions": 794,
+    "datasets": 194,
+    "papers": 651,
+    "leaderboard_rows": 145
   }
 }
