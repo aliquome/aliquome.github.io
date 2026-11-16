@@ -1,0 +1,80 @@
+name: Daily build and deploy
+
+# Runs once a day, on every push to main that touches the site or its inputs,
+# and by hand from the Actions tab.
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "registry/**"
+      - "engine/**"
+      - "site/**"
+      - "databases_versions.csv"
+      - "datasets.csv"
+      - ".github/workflows/daily.yml"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily-build
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache Rust build
+        uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: engine
+
+      - name: Build the engine
+        run: cargo build --release --locked --manifest-path engine/Cargo.toml || cargo build --release --manifest-path engine/Cargo.toml
+
+      - name: Check that offline builds are reproducible
+        run: |
+          ./engine/target/release/atlas build --offline
+          sha256sum site/data/sources.json site/data/datasets.json > /tmp/first.sha
+          ./engine/target/release/atlas build --offline
+          sha256sum -c /tmp/first.sha
+
+      - name: Fetch papers and check sources
+        run: ./engine/target/release/atlas build
+
+      - name: Commit the new data
+        run: |
+          git config user.name "atlas-bot"
+          git config user.email "atlas-bot@users.noreply.github.com"
+          git add site/data
+          if git diff --cached --quiet; then
+            echo "No data changes."
+          else
+            git commit -m "data: daily update $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

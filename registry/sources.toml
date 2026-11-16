@@ -1,0 +1,750 @@
+# Registry of data sources. One [[source]] block per database.
+# `csv` is the exact name used in databases_versions.csv; versions are read from that file.
+# Licence text is indicative. Always confirm terms on the source site.
+
+[[source]]
+id = "grch37"
+name = "GRCh37 (hg19)"
+csv = "GRCh37 (hg19)"
+field = "genomes"
+homepage = "https://www.ncbi.nlm.nih.gov/grc/human"
+license = "Public domain"
+summary = "Human reference assembly GRCh37 with all patch releases."
+
+[[source]]
+id = "grch38"
+name = "GRCh38 (hg38)"
+csv = "GRCh38 (hg38)"
+field = "genomes"
+homepage = "https://www.ncbi.nlm.nih.gov/grc/human"
+license = "Public domain"
+summary = "Current human reference assembly with patch releases p1 to p14."
+
+[[source]]
+id = "t2t-hprc"
+name = "T2T-CHM13 and HPRC pangenome"
+csv = "T2T-CHM13 و HPRC"
+field = "genomes"
+homepage = "https://humanpangenome.org/"
+license = "Open (CC0)"
+summary = "Telomere-to-telomere human assembly and the Human Pangenome Reference Consortium releases."
+
+[[source]]
+id = "ucsc"
+name = "UCSC Genome Browser"
+csv = "UCSC (نام‌های ژنوم)"
+field = "genomes"
+homepage = "https://genome.ucsc.edu/"
+license = "Open data; browser software licensed for commercial use"
+summary = "Genome builds, tracks and download server for many species."
+
+[[source]]
+id = "genbank"
+name = "GenBank"
+csv = "GenBank"
+field = "genomes"
+homepage = "https://www.ncbi.nlm.nih.gov/genbank/"
+license = "Public domain"
+summary = "NIH genetic sequence database, part of INSDC."
+
+[[source]]
+id = "refseq"
+name = "RefSeq"
+csv = "RefSeq و annotation انسانی RefSeq"
+field = "genomes"
+homepage = "https://www.ncbi.nlm.nih.gov/refseq/"
+license = "Public domain"
+summary = "Curated reference sequences and the NCBI human annotation releases."
+
+[[source]]
+id = "mane"
+name = "MANE"
+csv = "MANE"
+field = "genomes"
+homepage = "https://www.ncbi.nlm.nih.gov/refseq/MANE/"
+license = "Public domain"
+summary = "Matched Annotation from NCBI and EMBL-EBI: one agreed transcript per human gene."
+
+[[source]]
+id = "ensembl"
+name = "Ensembl"
+csv = "Ensembl"
+field = "genomes"
+homepage = "https://www.ensembl.org/"
+license = "Open, no restrictions"
+summary = "Genome annotation for vertebrates. Release 116 is the last numbered release."
+
+[[source]]
+id = "ensembl-genomes"
+name = "Ensembl Genomes"
+csv = "Ensembl Genomes (گیاهان، قارچ‌ها، باکتری‌ها، متازوآ، پروتیست‌ها)"
+field = "genomes"
+homepage = "https://ensemblgenomes.org/"
+license = "Open, no restrictions"
+summary = "Ensembl annotation for plants, fungi, bacteria, metazoa and protists."
+
+[[source]]
+id = "gencode"
+name = "GENCODE"
+csv = "GENCODE"
+field = "genomes"
+homepage = "https://www.gencodegenes.org/"
+license = "Open, no restrictions"
+summary = "Reference gene annotation for human and mouse."
+
+[[source]]
+id = "model-organisms"
+name = "Model organism databases"
+csv = "ارگانیسم‌های مدل"
+field = "genomes"
+homepage = "https://www.alliancegenome.org/"
+license = "Varies by database"
+summary = "FlyBase, WormBase, SGD, MGI, ZFIN, RGD, TAIR and related resources."
+
+[[source]]
+id = "dbsnp"
+name = "dbSNP"
+csv = "dbSNP"
+field = "variants"
+homepage = "https://www.ncbi.nlm.nih.gov/snp/"
+license = "Public domain"
+summary = "Catalogue of short genetic variants, by build."
+
+[[source]]
+id = "clinvar"
+name = "ClinVar"
+csv = "ClinVar"
+field = "variants"
+homepage = "https://www.ncbi.nlm.nih.gov/clinvar/"
+license = "Public domain"
+summary = "Clinical significance of human variants, with weekly and monthly archives."
+
+[[source]]
+id = "gnomad"
+name = "gnomAD"
+csv = "gnomAD"
+field = "variants"
+homepage = "https://gnomad.broadinstitute.org/"
+license = "Open (CC0)"
+summary = "Aggregated exome and genome variant frequencies."
+
+[[source]]
+id = "1000genomes"
+name = "1000 Genomes"
+csv = "1000 Genomes"
+field = "variants"
+homepage = "https://www.internationalgenome.org/"
+license = "Open, no restrictions"
+summary = "Human variation across populations, from the pilot to the 30x high-coverage data."
+
+[[source]]
+id = "cadd"
+name = "CADD"
+csv = "CADD"
+field = "variants"
+homepage = "https://cadd.gs.washington.edu/"
+license = "Free for non-commercial use"
+summary = "Deleteriousness scores for human variants."
+
+[[source]]
+id = "dbnsfp"
+name = "dbNSFP"
+csv = "dbNSFP"
+field = "variants"
+homepage = "https://www.dbnsfp.org/"
+license = "Free for academic use"
+summary = "Functional predictions and annotations for non-synonymous variants."
+
+[[source]]
+id = "finngen"
+name = "FinnGen"
+csv = "FinnGen (summary statهای عمومی)"
+field = "variants"
+homepage = "https://www.finngen.fi/en/access_results"
+license = "Open summary statistics"
+summary = "GWAS summary statistics from Finnish biobank data freezes."
+
+[[source]]
+id = "allofus"
+name = "All of Us"
+csv = "All of Us (CDR)"
+field = "variants"
+homepage = "https://www.researchallofus.org/"
+license = "Controlled access tiers"
+summary = "US cohort data, released as curated data repository versions."
+
+[[source]]
+id = "ukbiobank"
+name = "UK Biobank"
+csv = "UK Biobank (داده‌ی ژنتیکی)"
+field = "variants"
+homepage = "https://www.ukbiobank.ac.uk/"
+license = "Controlled access by application"
+summary = "Genetic and health data for 500,000 participants."
+
+[[source]]
+id = "gdc"
+name = "Genomic Data Commons"
+csv = "GDC (Genomic Data Commons)"
+field = "cancer"
+homepage = "https://portal.gdc.cancer.gov/"
+license = "Open and controlled tiers"
+summary = "TCGA, TARGET, CPTAC and other cancer programs, by data release."
+
+[[source]]
+id = "cosmic"
+name = "COSMIC"
+csv = "COSMIC"
+field = "cancer"
+homepage = "https://cancer.sanger.ac.uk/cosmic"
+license = "Free for academics; commercial licence required"
+summary = "Catalogue of somatic mutations in cancer."
+
+[[source]]
+id = "depmap"
+name = "DepMap"
+csv = "DepMap"
+field = "cancer"
+homepage = "https://depmap.org/portal/"
+license = "Open (CC BY 4.0)"
+summary = "Cancer dependency map: CRISPR screens and cell line omics, by quarterly release."
+
+[[source]]
+id = "icgc"
+name = "ICGC ARGO and ICGC 25K"
+csv = "ICGC ARGO و ICGC 25K"
+field = "cancer"
+homepage = "https://platform.icgc-argo.org/"
+license = "Controlled access"
+summary = "International cancer genome data. The 25K portal was retired in 2024."
+
+[[source]]
+id = "gtex"
+name = "GTEx"
+csv = "GTEx"
+field = "expression"
+homepage = "https://gtexportal.org/"
+license = "Open summary data; raw data controlled"
+summary = "Gene expression and eQTLs across human tissues."
+
+[[source]]
+id = "archs4"
+name = "ARCHS4"
+csv = "ARCHS4"
+field = "expression"
+homepage = "https://archs4.org/"
+license = "See site"
+summary = "Uniformly processed RNA-seq from GEO and SRA."
+
+[[source]]
+id = "eqtl-catalogue"
+name = "eQTL Catalogue"
+csv = "eQTL Catalogue"
+field = "expression"
+homepage = "https://www.ebi.ac.uk/eqtl/"
+license = "Open (CC BY 4.0)"
+summary = "Uniformly processed QTL summary statistics."
+
+[[source]]
+id = "hpa"
+name = "Human Protein Atlas"
+csv = "Human Protein Atlas"
+field = "expression"
+homepage = "https://www.proteinatlas.org/"
+license = "Open (CC BY-SA)"
+summary = "Protein and RNA expression across human tissues and cells."
+
+[[source]]
+id = "expression-atlas"
+name = "Expression Atlas"
+csv = "Expression Atlas و Single Cell Expression Atlas"
+field = "expression"
+homepage = "https://www.ebi.ac.uk/gxa/home"
+license = "Open (EMBL-EBI terms)"
+summary = "Curated bulk and single-cell expression experiments."
+
+[[source]]
+id = "cellxgene-census"
+name = "CELLxGENE Census"
+csv = "CELLxGENE Census"
+field = "expression"
+homepage = "https://cellxgene.cziscience.com/"
+license = "Open (CC BY 4.0)"
+summary = "Tens of millions of single cells, released as dated builds."
+
+[[source]]
+id = "allen-brain"
+name = "Allen Brain Cell Atlas"
+csv = "Allen Brain Cell Atlas"
+field = "expression"
+homepage = "https://portal.brain-map.org/atlases-and-data/bkp/abc-atlas"
+license = "Allen Institute terms"
+summary = "Whole-brain single-cell and spatial atlases, by dated release."
+
+[[source]]
+id = "tabula-sapiens"
+name = "Tabula Sapiens"
+csv = "Tabula Sapiens"
+field = "expression"
+homepage = "https://tabula-sapiens.sf.czbiohub.org/"
+license = "See site"
+summary = "Human multi-organ single-cell atlas."
+
+[[source]]
+id = "uniprot"
+name = "UniProt"
+csv = "UniProt"
+field = "proteins"
+homepage = "https://www.uniprot.org/"
+license = "Open (CC BY 4.0)"
+summary = "Protein sequence and function knowledgebase."
+
+[[source]]
+id = "pdb"
+name = "Protein Data Bank"
+csv = "PDB snapshots (PDBj و AWS)"
+field = "proteins"
+homepage = "https://www.rcsb.org/"
+license = "Open (CC0)"
+summary = "Experimental 3D structures, with yearly snapshots."
+
+[[source]]
+id = "alphafold"
+name = "AlphaFold DB"
+csv = "AlphaFold Protein Structure Database"
+field = "proteins"
+homepage = "https://alphafold.ebi.ac.uk/"
+license = "Open (CC BY 4.0)"
+summary = "Predicted protein structures, versions v1 to v6."
+
+[[source]]
+id = "esm-atlas"
+name = "ESM Metagenomic Atlas"
+csv = "ESM Metagenomic Atlas"
+field = "proteins"
+homepage = "https://esmatlas.com/"
+license = "Open (CC BY 4.0)"
+summary = "Predicted structures for metagenomic proteins."
+
+[[source]]
+id = "pfam"
+name = "Pfam"
+csv = "Pfam"
+field = "proteins"
+homepage = "https://www.ebi.ac.uk/interpro/entry/pfam/"
+license = "Open (CC0)"
+summary = "Protein families as hidden Markov models."
+
+[[source]]
+id = "interpro"
+name = "InterPro"
+csv = "InterPro"
+field = "proteins"
+homepage = "https://www.ebi.ac.uk/interpro/"
+license = "Open (CC0)"
+summary = "Integrated protein family, domain and site annotation."
+
+[[source]]
+id = "cath"
+name = "CATH"
+csv = "CATH"
+field = "proteins"
+homepage = "https://www.cathdb.info/"
+license = "Open (CC BY 4.0)"
+summary = "Hierarchical classification of protein domain structures."
+
+[[source]]
+id = "scope"
+name = "SCOPe and SCOP"
+csv = "SCOPe و SCOP"
+field = "proteins"
+homepage = "https://scop.berkeley.edu/"
+license = "See site"
+summary = "Structural classification of proteins."
+
+[[source]]
+id = "prosite"
+name = "PROSITE"
+csv = "PROSITE"
+field = "proteins"
+homepage = "https://prosite.expasy.org/"
+license = "CC BY-NC-ND 4.0"
+summary = "Protein domains, families and functional sites."
+
+[[source]]
+id = "cdd"
+name = "NCBI CDD"
+csv = "CDD (NCBI)"
+field = "proteins"
+homepage = "https://www.ncbi.nlm.nih.gov/cdd/"
+license = "Public domain"
+summary = "Conserved domain database."
+
+[[source]]
+id = "eggnog"
+name = "eggNOG"
+csv = "eggNOG"
+field = "proteins"
+homepage = "http://eggnog5.embl.de/"
+license = "See site"
+summary = "Orthologous groups and functional annotation."
+
+[[source]]
+id = "orthodb"
+name = "OrthoDB"
+csv = "OrthoDB"
+field = "proteins"
+homepage = "https://www.orthodb.org/"
+license = "See site"
+summary = "Hierarchical catalogue of orthologs."
+
+[[source]]
+id = "kofam"
+name = "KOfam"
+csv = "KOfam (KEGG HMM)"
+field = "proteins"
+homepage = "https://www.genome.jp/tools/kofamkoala/"
+license = "KEGG terms"
+summary = "HMM profiles for KEGG orthologs."
+
+[[source]]
+id = "mgnify-proteins"
+name = "MGnify protein database"
+csv = "MGnify protein database"
+field = "proteins"
+homepage = "https://www.ebi.ac.uk/metagenomics/"
+license = "Open (EMBL-EBI terms)"
+summary = "Protein sequences predicted from metagenomic assemblies."
+
+[[source]]
+id = "uniref30"
+name = "UniClust30 / UniRef30"
+csv = "UniClust30 / UniRef30 (فرمت HH-suite)"
+field = "proteins"
+homepage = "https://uniclust.mmseqs.com/"
+license = "See site"
+summary = "Clustered sequence databases in HH-suite format, used for MSAs."
+
+[[source]]
+id = "kegg"
+name = "KEGG"
+csv = "KEGG"
+field = "pathways"
+homepage = "https://www.kegg.jp/"
+license = "Academic use only; licence for bulk and commercial use"
+summary = "Pathways, genomes, compounds and orthologs."
+
+[[source]]
+id = "reactome"
+name = "Reactome"
+csv = "Reactome"
+field = "pathways"
+homepage = "https://reactome.org/"
+license = "Open (CC0)"
+summary = "Curated, peer-reviewed pathway database."
+
+[[source]]
+id = "string"
+name = "STRING"
+csv = "STRING"
+field = "pathways"
+homepage = "https://string-db.org/"
+license = "Open (CC BY 4.0)"
+summary = "Protein-protein association networks."
+
+[[source]]
+id = "biogrid"
+name = "BioGRID"
+csv = "BioGRID"
+field = "pathways"
+homepage = "https://thebiogrid.org/"
+license = "Open (MIT)"
+summary = "Curated protein, genetic and chemical interactions."
+
+[[source]]
+id = "go"
+name = "Gene Ontology"
+csv = "Gene Ontology"
+field = "pathways"
+homepage = "https://geneontology.org/"
+license = "Open (CC BY 4.0)"
+summary = "Ontology and annotations for gene function."
+
+[[source]]
+id = "hpo"
+name = "Human Phenotype Ontology"
+csv = "HPO"
+field = "pathways"
+homepage = "https://hpo.jax.org/"
+license = "Open (HPO licence)"
+summary = "Standard vocabulary of human phenotypic abnormalities."
+
+[[source]]
+id = "mondo"
+name = "MONDO"
+csv = "MONDO"
+field = "pathways"
+homepage = "https://mondo.monarchinitiative.org/"
+license = "Open (CC BY 4.0)"
+summary = "Unified disease ontology."
+
+[[source]]
+id = "umls"
+name = "UMLS"
+csv = "UMLS"
+field = "pathways"
+homepage = "https://www.nlm.nih.gov/research/umls/"
+license = "Licence required (free)"
+summary = "Unified Medical Language System metathesaurus."
+
+[[source]]
+id = "msigdb"
+name = "MSigDB"
+csv = "MSigDB"
+field = "pathways"
+homepage = "https://www.gsea-msigdb.org/gsea/msigdb"
+license = "Registration; mostly CC BY 4.0"
+summary = "Gene set collections for enrichment analysis."
+
+[[source]]
+id = "corum"
+name = "CORUM"
+csv = "CORUM"
+field = "pathways"
+homepage = "https://mips.helmholtz-muenchen.de/corum/"
+license = "Non-commercial use"
+summary = "Mammalian protein complexes."
+
+[[source]]
+id = "pathway-commons"
+name = "Pathway Commons"
+csv = "Pathway Commons"
+field = "pathways"
+homepage = "https://www.pathwaycommons.org/"
+license = "Varies by source database"
+summary = "Aggregated pathway and interaction data."
+
+[[source]]
+id = "chembl"
+name = "ChEMBL"
+csv = "ChEMBL"
+field = "chemistry"
+homepage = "https://www.ebi.ac.uk/chembl/"
+license = "Open (CC BY-SA 3.0)"
+summary = "Bioactive molecules with drug-like properties."
+
+[[source]]
+id = "opentargets"
+name = "Open Targets Platform"
+csv = "Open Targets Platform"
+field = "chemistry"
+homepage = "https://platform.opentargets.org/"
+license = "Open (CC0)"
+summary = "Target-disease evidence for drug discovery."
+
+[[source]]
+id = "opentargets-genetics"
+name = "Open Targets Genetics (retired)"
+csv = "Open Targets Genetics (بازنشسته)"
+field = "chemistry"
+homepage = "https://genetics.opentargets.org/"
+license = "Open (CC0)"
+summary = "Variant-to-gene evidence. Stopped at release 22.09."
+
+[[source]]
+id = "drugbank"
+name = "DrugBank"
+csv = "DrugBank"
+field = "chemistry"
+homepage = "https://go.drugbank.com/"
+license = "CC BY-NC for academics; commercial licence"
+summary = "Drug and drug target information."
+
+[[source]]
+id = "pdbbind"
+name = "PDBbind"
+csv = "PDBbind"
+field = "chemistry"
+homepage = "https://www.pdbbind-plus.org.cn/"
+license = "Registration; recent releases paid"
+summary = "Binding affinities for biomolecular complexes in the PDB."
+
+[[source]]
+id = "hmdb"
+name = "HMDB"
+csv = "HMDB"
+field = "chemistry"
+homepage = "https://hmdb.ca/"
+license = "Free for academic use"
+summary = "Human metabolome database."
+
+[[source]]
+id = "papyrus"
+name = "Papyrus"
+csv = "Papyrus"
+field = "chemistry"
+homepage = "https://github.com/OlivierBeq/Papyrus-scripts"
+license = "Open (CC BY-SA 4.0)"
+summary = "Large-scale curated bioactivity dataset."
+
+[[source]]
+id = "jaspar"
+name = "JASPAR"
+csv = "JASPAR"
+field = "regulation"
+homepage = "https://jaspar.elixir.no/"
+license = "Open (CC BY 4.0)"
+summary = "Transcription factor binding profiles."
+
+[[source]]
+id = "hocomoco"
+name = "HOCOMOCO"
+csv = "HOCOMOCO"
+field = "regulation"
+homepage = "https://hocomoco14.autosome.org/"
+license = "See site"
+summary = "Transcription factor binding models for human and mouse."
+
+[[source]]
+id = "remap"
+name = "ReMap"
+csv = "ReMap"
+field = "regulation"
+homepage = "https://remap.univ-amu.fr/"
+license = "See site"
+summary = "Atlas of regulatory regions from ChIP-seq."
+
+[[source]]
+id = "encode-ccre"
+name = "ENCODE cCRE Registry"
+csv = "ENCODE cCRE Registry (SCREEN)"
+field = "regulation"
+homepage = "https://screen.encodeproject.org/"
+license = "Open, no restrictions"
+summary = "Candidate cis-regulatory elements."
+
+[[source]]
+id = "rnacentral"
+name = "RNAcentral"
+csv = "RNAcentral"
+field = "rna"
+homepage = "https://rnacentral.org/"
+license = "Open (CC0)"
+summary = "Non-coding RNA sequences from many databases."
+
+[[source]]
+id = "rfam"
+name = "Rfam"
+csv = "Rfam"
+field = "rna"
+homepage = "https://rfam.org/"
+license = "Open (CC0)"
+summary = "RNA families."
+
+[[source]]
+id = "mirbase"
+name = "miRBase"
+csv = "miRBase"
+field = "rna"
+homepage = "https://www.mirbase.org/"
+license = "See site"
+summary = "MicroRNA sequences and annotation."
+
+[[source]]
+id = "mirtarbase"
+name = "miRTarBase"
+csv = "miRTarBase"
+field = "rna"
+homepage = "https://mirtarbase.cuhk.edu.cn/"
+license = "See site"
+summary = "Experimentally validated microRNA-target interactions."
+
+[[source]]
+id = "targetscan"
+name = "TargetScan"
+csv = "TargetScan"
+field = "rna"
+homepage = "https://www.targetscan.org/"
+license = "See site"
+summary = "Predicted microRNA targets."
+
+[[source]]
+id = "silva"
+name = "SILVA"
+csv = "SILVA"
+field = "microbiome"
+homepage = "https://www.arb-silva.de/"
+license = "Open (CC BY 4.0)"
+summary = "Ribosomal RNA gene database. SSU and LSU have separate release numbers."
+
+[[source]]
+id = "gtdb"
+name = "GTDB"
+csv = "GTDB"
+field = "microbiome"
+homepage = "https://gtdb.ecogenomic.org/"
+license = "Open (CC BY-SA 4.0)"
+summary = "Genome-based taxonomy for bacteria and archaea."
+
+[[source]]
+id = "kraken2"
+name = "Kraken2 prebuilt indexes"
+csv = "Kraken2 prebuilt indexes (Ben Langmead)"
+field = "microbiome"
+homepage = "https://benlangmead.github.io/aws-indexes/k2"
+license = "See site"
+summary = "Dated prebuilt Kraken2 databases."
+
+[[source]]
+id = "unite"
+name = "UNITE"
+csv = "UNITE"
+field = "microbiome"
+homepage = "https://unite.ut.ee/"
+license = "See site"
+summary = "Fungal ITS sequences for identification."
+
+[[source]]
+id = "greengenes"
+name = "Greengenes and Greengenes2"
+csv = "Greengenes و Greengenes2"
+field = "microbiome"
+homepage = "https://greengenes2.ucsd.edu/"
+license = "See site"
+summary = "16S rRNA reference taxonomy."
+
+[[source]]
+id = "metaphlan"
+name = "MetaPhlAn / ChocoPhlAn"
+csv = "MetaPhlAn / ChocoPhlAn"
+field = "microbiome"
+homepage = "https://github.com/biobakery/MetaPhlAn"
+license = "See site"
+summary = "Marker gene databases for metagenomic profiling."
+
+[[source]]
+id = "proteingym"
+name = "ProteinGym"
+csv = "ProteinGym"
+field = "benchmarks"
+homepage = "https://proteingym.org/"
+license = "Open (MIT)"
+summary = "Benchmarks for protein fitness and variant effect prediction."
+
+[[source]]
+id = "casp"
+name = "CASP"
+csv = "CASP"
+field = "benchmarks"
+homepage = "https://predictioncenter.org/"
+license = "Open"
+summary = "Critical Assessment of protein Structure Prediction."
+
+[[source]]
+id = "cafa"
+name = "CAFA"
+csv = "CAFA"
+field = "benchmarks"
+homepage = "https://biofunctionprediction.org/cafa/"
+license = "Open"
+summary = "Critical Assessment of Functional Annotation."

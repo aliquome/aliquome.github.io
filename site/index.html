@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bioinformatics Data Atlas</title>
+  <meta name="description" content="Every release of the major bioinformatics databases, public datasets and benchmarks, the most cited open-access papers per field, and a daily check of which sources are reachable.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Vazirmatn:wght@400;600&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#view">Skip to content</a>
+  <header class="top">
+    <div class="wrap top-row">
+      <a class="brand" href="#home" aria-label="Bioinformatics Data Atlas, home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span class="brand-name">Bioinformatics Data Atlas</span>
+      </a>
+      <nav class="nav" aria-label="Sections">
+        <a href="#sources" data-nav="sources">Databases</a>
+        <a href="#datasets" data-nav="datasets">Datasets</a>
+        <a href="#papers" data-nav="papers">Papers</a>
+        <a href="#status" data-nav="status">Status</a>
+        <a href="#about" data-nav="about">About</a>
+      </nav>
+      <button class="theme" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <span aria-hidden="true">◐</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="view" class="wrap" tabindex="-1">
+    <p class="loading">Loading the atlas…</p>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-row">
+      <p id="foot-build">Data build: loading…</p>
+      <p>Licence and version details are indicative. Confirm terms on each source before use.</p>
+    </div>
+  </footer>
+
+  <noscript><p class="wrap">This site needs JavaScript to load its data files.</p></noscript>
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>

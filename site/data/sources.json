@@ -1,0 +1,6637 @@
+{
+  "fields": [
+    {
+      "id": "genomes",
+      "label": "Genomes and annotation",
+      "base": "A",
+      "shape": "helix",
+      "query": "(TITLE:\"genome assembly\" OR TITLE:\"reference genome\" OR TITLE:\"pangenome\" OR TITLE:\"genome annotation\")"
+    },
+    {
+      "id": "variants",
+      "label": "Variants and population genetics",
+      "base": "T",
+      "shape": "variant",
+      "query": "(TITLE:\"genetic variation\" OR TITLE:\"variant calling\" OR TITLE:\"genome-wide association\" OR TITLE:\"population genomics\")"
+    },
+    {
+      "id": "cancer",
+      "label": "Cancer genomics",
+      "base": "T",
+      "shape": "tumour",
+      "query": "(TITLE:\"cancer genome\" OR TITLE:\"pan-cancer\" OR TITLE:\"tumor heterogeneity\" OR TITLE:\"cancer genomics\")"
+    },
+    {
+      "id": "expression",
+      "label": "Expression and single-cell",
+      "base": "G",
+      "shape": "cells",
+      "query": "(TITLE:\"single-cell\" OR TITLE:\"spatial transcriptomics\" OR TITLE:\"RNA-seq\")"
+    },
+    {
+      "id": "proteins",
+      "label": "Proteins and structures",
+      "base": "C",
+      "shape": "fold",
+      "query": "(TITLE:\"protein structure prediction\" OR TITLE:\"protein language model\" OR TITLE:\"protein design\" OR TITLE:\"protein structure\")"
+    },
+    {
+      "id": "pathways",
+      "label": "Pathways, networks and ontologies",
+      "base": "A",
+      "shape": "network",
+      "query": "(TITLE:\"protein-protein interaction\" OR TITLE:\"pathway analysis\" OR TITLE:\"gene ontology\" OR TITLE:\"knowledge graph\")"
+    },
+    {
+      "id": "chemistry",
+      "label": "Chemistry and drug discovery",
+      "base": "G",
+      "shape": "molecule",
+      "query": "(TITLE:\"drug discovery\" OR TITLE:\"molecular docking\" OR TITLE:\"molecular generation\" OR TITLE:\"virtual screening\")"
+    },
+    {
+      "id": "regulation",
+      "label": "Epigenomics and regulation",
+      "base": "C",
+      "shape": "chromatin",
+      "query": "(TITLE:\"chromatin accessibility\" OR TITLE:\"epigenome\" OR TITLE:\"transcription factor binding\" OR TITLE:\"DNA methylation\")"
+    },
+    {
+      "id": "rna",
+      "label": "RNA",
+      "base": "T",
+      "shape": "hairpin",
+      "query": "(TITLE:\"non-coding RNA\" OR TITLE:\"RNA structure\" OR TITLE:\"microRNA\" OR TITLE:\"RNA modification\")"
+    },
+    {
+      "id": "microbiome",
+      "label": "Microbiome and metagenomics",
+      "base": "A",
+      "shape": "microbes",
+      "query": "(TITLE:\"metagenomics\" OR TITLE:\"microbiome\" OR TITLE:\"metagenome-assembled\")"
+    },
+    {
+      "id": "benchmarks",
+      "label": "Benchmarks and machine learning",
+      "base": "G",
+      "shape": "bars",
+      "query": "(TITLE:\"benchmark\" AND (TITLE:\"genomics\" OR TITLE:\"protein\" OR TITLE:\"single-cell\" OR TITLE:\"bioinformatics\" OR TITLE:\"biology\"))"
+    }
+  ],
+  "sources": [
+    {
+      "id": "grch37",
+      "name": "GRCh37 (hg19)",
+      "field": "genomes",
+      "homepage": "https://www.ncbi.nlm.nih.gov/grc/human",
+      "license": "Public domain",
+      "summary": "Human reference assembly GRCh37 with all patch releases.",
+      "latest": "GRCh37.p13 (آخرین)",
+      "latest_date": "2013",
+      "versions": [
+        {
+          "version": "GRCh37 (p0)",
+          "date": "2009-02",
+          "url": "GCA_000001405.1",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "GRCh37.p1",
+          "date": "—",
+          "url": "GCA_000001405.2",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "GRCh37.p2",
+          "date": "—",
+          "url": "GCA_000001405.3",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "GRCh37.p3",
+          "date": "—",
+          "url": "GCA_000001405.4",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "GRCh37.p4",
+          "date": "—",
+          "url": "GCA_000001405.5",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "GRCh37.p5",
+          "date": "—",
+          "url": "GCA_000001405.6",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "GRCh37.p6",
+          "date": "—",
+          "url": "GCA_000001405.7",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "GRCh37.p7",
+          "date": "—",
+          "url": "GCA_000001405.8",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "GRCh37.p8",
+          "date": "—",
+          "url": "GCA_000001405.9",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "GRCh37.p9",
+          "date": "—",
+          "url": "GCA_000001405.10",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "GRCh37.p10",
+          "date": "—",
+          "url": "GCA_000001405.11",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "GRCh37.p11",
+          "date": "—",
+          "url": "GCA_000001405.12",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "GRCh37.p12",
+          "date": "—",
+          "url": "GCA_000001405.13",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "GRCh37.p13 (آخرین)",
+          "date": "2013",
+          "url": "GCA_000001405.14 / GCF_000001405.25",
+          "verified": true,
+          "latest": true
+        },
+        {
+          "version": "hs37d5 (1000G + decoy)",
+          "date": "—",
+          "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/phase2_reference_assembly_sequence/hs37d5.fa.gz",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "NCBI36 / hg18 و قدیمی‌تر",
+          "date": "2006",
+          "url": "https://ftp.ncbi.nlm.nih.gov/genomes/archive/old_genbank/Eukaryotes/vertebrates_mammals/Homo_sapiens/",
+          "verified": true,
+          "latest": false
+        }
+      ]
+    },
+    {
+      "id": "grch38",
+      "name": "GRCh38 (hg38)",
+      "field": "genomes",
+      "homepage": "https://www.ncbi.nlm.nih.gov/grc/human",
+      "license": "Public domain",
+      "summary": "Current human reference assembly with patch releases p1 to p14.",
+      "latest": "GRCh38.p14 (آخرین؛ p15 وجود ندارد)",
+      "latest_date": "2022-02",
+      "versions": [
+        {
+          "version": "GRCh38 (p0)",
+          "date": "2013-12",
+          "url": "GCA_000001405.15",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "GRCh38.p1",
+          "date": "—",
+          "url": "GCA_000001405.16",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "GRCh38.p2",
+          "date": "—",
+          "url": "GCA_000001405.17",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "GRCh38.p3",
+          "date": "—",
+          "url": "GCA_000001405.18",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "GRCh38.p4",
+          "date": "—",
+          "url": "GCA_000001405.19",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "GRCh38.p5",
+          "date": "—",
+          "url": "GCA_000001405.20",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "GRCh38.p6",
+          "date": "—",
+          "url": "GCA_000001405.21",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "GRCh38.p7",
+          "date": "—",
+          "url": "GCA_000001405.22",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "GRCh38.p8",
+          "date": "—",
+          "url": "GCA_000001405.23",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "GRCh38.p9",
+          "date": "—",
+          "url": "GCA_000001405.24",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "GRCh38.p10",
+          "date": "—",
+          "url": "GCA_000001405.25",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "GRCh38.p11",
+          "date": "—",
+          "url": "GCA_000001405.26",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "GRCh38.p12",
+          "date": "—",
+          "url": "GCA_000001405.27",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "GRCh38.p13",
+          "date": "2019-02",
+          "url": "GCA_000001405.28",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "GRCh38.p14 (آخرین؛ p15 وجود ندارد)",
+          "date": "2022-02",
+          "url": "GCA_000001405.29 / GCF_000001405.40",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "t2t-hprc",
+      "name": "T2T-CHM13 and HPRC pangenome",
+      "field": "genomes",
+      "homepage": "https://humanpangenome.org/",
+      "license": "Open (CC0)",
+      "summary": "Telomere-to-telomere human assembly and the Human Pangenome Reference Consortium releases.",
+      "latest": "HPRC Release 2 (۲۳۲ نفر، آخرین)",
+      "latest_date": "2025-05-12",
+      "versions": [
+        {
+          "version": "CHM13 draft v0.4 / 0.6 / 0.7 / 0.9",
+          "date": "قبل از 2021",
+          "url": "s3://human-pangenomics/T2T/CHM13/assemblies/chm13.draft_v<ver>.fasta.gz",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "CHM13 v1.0",
+          "date": "2021",
+          "url": "chm13.v1.0.fasta · GCA_009914755.1",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "CHM13 v1.1",
+          "date": "2022-04",
+          "url": "chm13.v1.1.fasta",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "CHM13 v2.0 = hs1 (آخرین؛ با chrY از HG002)",
+          "date": "—",
+          "url": "chm13v2.0.fa.gz · GCA_009914755.4 · UCSC hs1",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "HPRC Release 1 (freeze1، ۴۷ نفر)",
+          "date": "2023",
+          "url": "s3://human-pangenomics/pangenomes/freeze/freeze1/{minigraph,minigraph-cactus,pggb}/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "HPRC Release 2 (۲۳۲ نفر، آخرین)",
+          "date": "2025-05-12",
+          "url": "s3://human-pangenomics/pangenomes/freeze/release2/{minigraph-cactus,pggb,impg}/",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "ucsc",
+      "name": "UCSC Genome Browser",
+      "field": "genomes",
+      "homepage": "https://genome.ucsc.edu/",
+      "license": "Open data; browser software licensed for commercial use",
+      "summary": "Genome builds, tracks and download server for many species.",
+      "latest": "موش mm39 = GRCm39 (آخرین)",
+      "latest_date": "2020-06",
+      "versions": [
+        {
+          "version": "انسان hg4–hg8، hg10–hg13، hg15–hg18",
+          "date": "2000–2006",
+          "url": "goldenPath/hg<N>/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "انسان hg19 = GRCh37",
+          "date": "2009",
+          "url": "goldenPath/hg19/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "انسان hg38 = GRCh38",
+          "date": "2013",
+          "url": "goldenPath/hg38/ (زیرپوشه‌ی p14/)",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "انسان hs1 = T2T-CHM13v2.0 (آخرین)",
+          "date": "—",
+          "url": "goldenPath/hs1/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "موش mm9 = NCBI37",
+          "date": "2007",
+          "url": "goldenPath/mm9/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "موش mm10 = GRCm38",
+          "date": "2011",
+          "url": "goldenPath/mm10/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "موش mm39 = GRCm39 (آخرین)",
+          "date": "2020-06",
+          "url": "goldenPath/mm39/",
+          "verified": true,
+          "latest": true
+        },
+        {
+          "version": "موش صحرایی rn6 / rn7 (mRatBN7.2) / rn8 (GRCr8، فقط در API)",
+          "date": "2024 (rn8)",
+          "url": "goldenPath/rn7/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "زبرافیش danRer10 / danRer11 (GRCz11)",
+          "date": "2017",
+          "url": "goldenPath/danRer11/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "مگس dm3 / dm6 (BDGP R6)",
+          "date": "—",
+          "url": "goldenPath/dm6/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "کرم ce10 / ce11 (WBcel235)",
+          "date": "—",
+          "url": "goldenPath/ce11/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "مخمر sacCer3 (R64-1-1)",
+          "date": "2011",
+          "url": "goldenPath/sacCer3/",
+          "verified": true,
+          "latest": false
+        }
+      ]
+    },
+    {
+      "id": "genbank",
+      "name": "GenBank",
+      "field": "genomes",
+      "homepage": "https://www.ncbi.nlm.nih.gov/genbank/",
+      "license": "Public domain",
+      "summary": "NIH genetic sequence database, part of INSDC.",
+      "latest": "274.0 (آخرین)",
+      "latest_date": "حدود 2026-10",
+      "versions": [
+        {
+          "version": "270",
+          "date": "2026-02-18",
+          "url": "genbank/release.notes/gb270.release.notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "271",
+          "date": "2026-04-22",
+          "url": "genbank/release.notes/gb271.release.notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "272",
+          "date": "2026-06-12",
+          "url": "genbank/release.notes/gb272.release.notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "273",
+          "date": "2026-08-11",
+          "url": "genbank/release.notes/gb273.release.notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "274.0 (آخرین)",
+          "date": "حدود 2026-10",
+          "url": "https://ftp.ncbi.nlm.nih.gov/genbank/",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "refseq",
+      "name": "RefSeq",
+      "field": "genomes",
+      "homepage": "https://www.ncbi.nlm.nih.gov/refseq/",
+      "license": "Public domain",
+      "summary": "Curated reference sequences and the NCBI human annotation releases.",
+      "latest": "GCF_000001405.40-RS_2025_08 (آخرین GRCh38)",
+      "latest_date": "2025-08",
+      "versions": [
+        {
+          "version": "RefSeq release 238 (آخرین)",
+          "date": "2026-11-13",
+          "url": "https://ftp.ncbi.nlm.nih.gov/refseq/release/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "Annotation 105.20190906 / 105.20201022 / 105.20220307 (GRCh37)",
+          "date": "2019–2022",
+          "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/annotation_releases/9606/<ver>/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "Annotation 109 و 109.20190607 تا 109.20211119 (GRCh38)",
+          "date": "2019–2021",
+          "url": "همان الگو",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "Annotation 110",
+          "date": "2022",
+          "url": "همان الگو",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "GCF_000001405.40-RS_2023_03",
+          "date": "2023-03",
+          "url": "همان الگو",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "GCF_000001405.40-RS_2023_10",
+          "date": "2023-10",
+          "url": "همان الگو",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "GCF_000001405.40-RS_2024_08",
+          "date": "2024-08",
+          "url": "همان الگو",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "GCF_000001405.40-RS_2025_08 (آخرین GRCh38)",
+          "date": "2025-08",
+          "url": "همان الگو",
+          "verified": true,
+          "latest": true
+        },
+        {
+          "version": "GCF_000001405.25-RS_2024_09 (GRCh37.p13)",
+          "date": "2024-09",
+          "url": "همان الگو",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "GCF_009914755.1-RS_2023_03 / RS_2023_10 (T2T)",
+          "date": "2023",
+          "url": "همان الگو",
+          "verified": true,
+          "latest": false
+        }
+      ]
+    },
+    {
+      "id": "mane",
+      "name": "MANE",
+      "field": "genomes",
+      "homepage": "https://www.ncbi.nlm.nih.gov/refseq/MANE/",
+      "license": "Public domain",
+      "summary": "Matched Annotation from NCBI and EMBL-EBI: one agreed transcript per human gene.",
+      "latest": "1.5 (آخرین)",
+      "latest_date": "2025-12-04",
+      "versions": [
+        {
+          "version": "0.5, 0.6, 0.7, 0.8, 0.9, 0.91, 0.92, 0.93, 0.95",
+          "date": "پیش از 2022",
+          "url": "MANE_human/release_<ver>/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "1.0 (اولین نسخه‌ی کامل)",
+          "date": "2022",
+          "url": "MANE_human/release_1.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "1.1, 1.2, 1.3, 1.4",
+          "date": "2022–2025",
+          "url": "MANE_human/release_<ver>/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "1.5 (آخرین)",
+          "date": "2025-12-04",
+          "url": "MANE_human/current/MANE.GRCh38.v1.5.*",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "ensembl",
+      "name": "Ensembl",
+      "field": "genomes",
+      "homepage": "https://www.ensembl.org/",
+      "license": "Open, no restrictions",
+      "summary": "Genome annotation for vertebrates. Release 116 is the last numbered release.",
+      "latest": "116 (آخرین انتشار شماره‌دار)",
+      "latest_date": "2026-06-11",
+      "versions": [
+        {
+          "version": "54 (آخرین با NCBI36)",
+          "date": "2009-05",
+          "url": "release-54/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "75 (آخرین با GRCh37 به‌عنوان اصلی)",
+          "date": "2014-02",
+          "url": "release-75/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "76 (اولین با GRCh38)",
+          "date": "2014-08",
+          "url": "release-76/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "100",
+          "date": "2020-04",
+          "url": "release-100/ (سایت آرشیو بازنشسته شد)",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "101",
+          "date": "2020-08",
+          "url": "release-101/ (سایت آرشیو بازنشسته شد)",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "102",
+          "date": "2020-11",
+          "url": "release-102/ (سایت آرشیو بازنشسته شد)",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "103",
+          "date": "2021-02",
+          "url": "release-103/ (سایت آرشیو بازنشسته شد)",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "104",
+          "date": "2021-05",
+          "url": "release-104/ · may2021.archive.ensembl.org",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "105",
+          "date": "2021-12",
+          "url": "release-105/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "106",
+          "date": "2022-04",
+          "url": "release-106/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "107",
+          "date": "2022-07",
+          "url": "release-107/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "108",
+          "date": "2022-10",
+          "url": "release-108/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "109",
+          "date": "2023-02",
+          "url": "release-109/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "110",
+          "date": "2023-07",
+          "url": "release-110/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "111",
+          "date": "2024-01",
+          "url": "release-111/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "112",
+          "date": "2024-05",
+          "url": "release-112/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "113",
+          "date": "2024-10",
+          "url": "release-113/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "114",
+          "date": "2025-05",
+          "url": "release-114/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "115",
+          "date": "2025-09",
+          "url": "release-115/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "116 (آخرین انتشار شماره‌دار)",
+          "date": "2026-06-11",
+          "url": "release-116/ · jun2026.archive.ensembl.org",
+          "verified": true,
+          "latest": true
+        },
+        {
+          "version": "Rapid Release (جایگزین‌شده با beta)",
+          "date": "تا 2026-01",
+          "url": "https://ftp.ensembl.org/pub/rapid-release/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "Ensembl beta / Ensembl Organisms",
+          "date": "partial هر حدود ۲ هفته",
+          "url": "https://ftp.ebi.ac.uk/pub/ensemblorganisms/",
+          "verified": true,
+          "latest": false
+        }
+      ]
+    },
+    {
+      "id": "ensembl-genomes",
+      "name": "Ensembl Genomes",
+      "field": "genomes",
+      "homepage": "https://ensemblgenomes.org/",
+      "license": "Open, no restrictions",
+      "summary": "Ensembl annotation for plants, fungi, bacteria, metazoa and protists.",
+      "latest": "63 (آخرین، همراه Ensembl 116)",
+      "latest_date": "2026-06",
+      "versions": [
+        {
+          "version": "1",
+          "date": "2010",
+          "url": "pub/release-1/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2 تا 62",
+          "date": "2010–2025",
+          "url": "pub/<division>/release-<N>/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "63 (آخرین، همراه Ensembl 116)",
+          "date": "2026-06",
+          "url": "pub/<division>/release-63/ · jun2026-protists.ensembl.org",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "gencode",
+      "name": "GENCODE",
+      "field": "genomes",
+      "homepage": "https://www.gencodegenes.org/",
+      "license": "Open, no restrictions",
+      "summary": "Reference gene annotation for human and mouse.",
+      "latest": "انسان v50 (Ensembl 116) / موش M39 (آخرین)",
+      "latest_date": "2026-06-09",
+      "versions": [
+        {
+          "version": "انسان release_1 تا release_18",
+          "date": "—",
+          "url": "Gencode_human/release_<N>/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "انسان v19 (Ensembl 74، آخرین GRCh37 بومی)",
+          "date": "2013",
+          "url": "Gencode_human/release_19/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "انسان v20 (Ensembl 76، اولین GRCh38)",
+          "date": "2014",
+          "url": "Gencode_human/release_20/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "انسان v44 (Ensembl 110) / موش M33",
+          "date": "2023-07",
+          "url": "release_44/ · release_M33/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "انسان v45 (Ensembl 111) / موش M34",
+          "date": "2024-01",
+          "url": "release_45/ · release_M34/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "انسان v46 (Ensembl 112) / موش M35",
+          "date": "2024-05",
+          "url": "release_46/ · release_M35/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "انسان v47 (Ensembl 113) / موش M36",
+          "date": "2024-10",
+          "url": "release_47/ · release_M36/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "انسان v48 (Ensembl 114) / موش M37",
+          "date": "2025-05",
+          "url": "release_48/ · release_M37/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "انسان v49 (Ensembl 115) / موش M38",
+          "date": "2025-09-02",
+          "url": "release_49/ · release_M38/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "انسان v50 (Ensembl 116) / موش M39 (آخرین)",
+          "date": "2026-06-09",
+          "url": "release_50/ · release_M39/",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "model-organisms",
+      "name": "Model organism databases",
+      "field": "genomes",
+      "homepage": "https://www.alliancegenome.org/",
+      "license": "Varies by database",
+      "summary": "FlyBase, WormBase, SGD, MGI, ZFIN, RGD, TAIR and related resources.",
+      "latest": "WormBase WS298 (آخرین انتشار اصلی)",
+      "latest_date": "2025-10",
+      "versions": [
+        {
+          "version": "FlyBase FB2026_01",
+          "date": "2026-03-12",
+          "url": "https://ftp.flybase.net/releases/FB2026_01/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "FlyBase FB2026_02",
+          "date": "2026-06-18",
+          "url": "https://ftp.flybase.net/releases/FB2026_02/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "FlyBase FB2026_03 (فعلی)",
+          "date": "2026-09-17",
+          "url": "https://ftp.flybase.net/releases/FB2026_03/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "FlyBase FB2026_04 (برنامه‌ریزی‌شده)",
+          "date": "2026-12-17",
+          "url": "https://ftp.flybase.net/releases/current/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "WormBase WS298 (آخرین انتشار اصلی)",
+          "date": "2025-10",
+          "url": "https://downloads.wormbase.org/releases/WS298/",
+          "verified": true,
+          "latest": true
+        },
+        {
+          "version": "SGD R64-1-1",
+          "date": "2011",
+          "url": "https://downloads.yeastgenome.org/sequence/S288C_reference/genome_releases/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "SGD R64-2-1",
+          "date": "2014",
+          "url": "همان الگو",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "SGD R64-3-1",
+          "date": "2021",
+          "url": "همان الگو",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "SGD R64-4-1",
+          "date": "2023",
+          "url": "همان الگو",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "PomBase",
+          "date": "ماهانه",
+          "url": "https://www.pombase.org/data/releases/pombase-YYYY-MM-01/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "VEuPathDB",
+          "date": "هر ۲ تا ۳ ماه",
+          "url": "https://<site>.org/common/downloads/release-<NN>/",
+          "verified": false,
+          "latest": false
+        }
+      ]
+    },
+    {
+      "id": "dbsnp",
+      "name": "dbSNP",
+      "field": "variants",
+      "homepage": "https://www.ncbi.nlm.nih.gov/snp/",
+      "license": "Public domain",
+      "summary": "Catalogue of short genetic variants, by build.",
+      "latest": "b157 (آخرین؛ 1,206,053,617 RS)",
+      "latest_date": "2024/2025",
+      "versions": [
+        {
+          "version": "b151 (آخرین با چیدمان قدیمی)",
+          "date": "2017-04",
+          "url": "https://ftp.ncbi.nih.gov/snp/organisms/human_9606_b151_GRCh38p7/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "b152",
+          "date": "2018-10/11",
+          "url": "snp/archive/b152/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "b153",
+          "date": "2019-07",
+          "url": "snp/archive/b153/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "b154",
+          "date": "2020-04",
+          "url": "snp/archive/b154/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "b155",
+          "date": "2021-06",
+          "url": "snp/archive/b155/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "b156",
+          "date": "2022-09",
+          "url": "snp/archive/b156/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "b157 (آخرین؛ 1,206,053,617 RS)",
+          "date": "2024/2025",
+          "url": "snp/archive/b157/ · snp/latest_release/",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "clinvar",
+      "name": "ClinVar",
+      "field": "variants",
+      "homepage": "https://www.ncbi.nlm.nih.gov/clinvar/",
+      "license": "Public domain",
+      "summary": "Clinical significance of human variants, with weekly and monthly archives.",
+      "latest": "XML 2026-11 (آخرین)",
+      "latest_date": "2026-11",
+      "versions": [
+        {
+          "version": "archive_1.0",
+          "date": "قبل از 2017",
+          "url": "vcf_GRCh38/archive_1.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "VCF هفتگی 2017 تا 2025",
+          "date": "2017–2025",
+          "url": "vcf_GRCh38/archive_2.0/<YYYY>/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "VCF هفتگی 2026 (۴۴ فایل از 20260104 تا 20261101)",
+          "date": "2026",
+          "url": "vcf_GRCh38/archive_2.0/2026/clinvar_2026MMDD.vcf.gz",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "clinvar_20261108 (آخرین هفتگی)",
+          "date": "2026-11-08",
+          "url": "vcf_GRCh38/clinvar_20261108.vcf.gz",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "XML ماهانه 2025-01 تا 2026-11",
+          "date": "2025–2026",
+          "url": "xml/ClinVarVCVRelease_<YYYY-MM>.xml.gz",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "XML 2026-11 (آخرین)",
+          "date": "2026-11",
+          "url": "xml/ClinVarVCVRelease_2026-11.xml.gz",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "gnomad",
+      "name": "gnomAD",
+      "field": "variants",
+      "homepage": "https://gnomad.broadinstitute.org/",
+      "license": "Open (CC0)",
+      "summary": "Aggregated exome and genome variant frequencies.",
+      "latest": "4.1 (نسخه‌ی اصلی فعلی)",
+      "latest_date": "2024-04",
+      "versions": [
+        {
+          "version": "ExAC r0.3 / r0.3.1 (GRCh37)",
+          "date": "2016",
+          "url": "gs://gcp-public-data--gnomad/legacy/exac_browser/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "2.0.1 / 2.0.2 (GRCh37)",
+          "date": "2017-02 تا 2017-10",
+          "url": "release/2.0.1/ · release/2.0.2/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2.1 (GRCh37)",
+          "date": "2018-10",
+          "url": "release/2.1/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2.1.1 (GRCh37 + liftover)",
+          "date": "2019-03",
+          "url": "release/2.1.1/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "3.0 (GRCh38، ۷۱٬۷۰۲ ژنوم)",
+          "date": "2019-10",
+          "url": "release/3.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "3.0.1",
+          "date": "—",
+          "url": "release/3.0.1/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "3.1 (اولین chrM؛ زیرمجموعه‌ی HGDP+1KG)",
+          "date": "2020-10",
+          "url": "release/3.1/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "3.1.1",
+          "date": "2021-03",
+          "url": "release/3.1.1/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "3.1.2",
+          "date": "2021-11",
+          "url": "release/3.1.2/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "3.1.3 (فقط json/tsv)",
+          "date": "—",
+          "url": "release/3.1.3/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "4.0 (۸۰۷٬۱۶۲ نفر)",
+          "date": "2023-11",
+          "url": "release/4.0/ و release/v4.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "4.1 (نسخه‌ی اصلی فعلی)",
+          "date": "2024-04",
+          "url": "release/4.1/",
+          "verified": true,
+          "latest": true
+        },
+        {
+          "version": "4.1.1 (constraint، LOFTEE، VEP 115)",
+          "date": "2026-03",
+          "url": "release/4.1.1/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "4.1.2 (فقط constraint؛ اعلام رسمی ندارد)",
+          "date": "2026-09-23 (پوشه)",
+          "url": "release/4.1.2/constraint/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "lr 0.1 (long-read)",
+          "date": "—",
+          "url": "release/lr/0.1/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "4.2 و 5.0 (پوشه‌ی خالی، منتشر نشده)",
+          "date": "—",
+          "url": "release/4.2/ · release/5.0/",
+          "verified": true,
+          "latest": false
+        }
+      ]
+    },
+    {
+      "id": "1000genomes",
+      "name": "1000 Genomes",
+      "field": "variants",
+      "homepage": "https://www.internationalgenome.org/",
+      "license": "Open, no restrictions",
+      "summary": "Human variation across populations, from the pilot to the 30x high-coverage data.",
+      "latest": "30x NYGC phased SNV/INDEL/SV (آخرین)",
+      "latest_date": "2022",
+      "versions": [
+        {
+          "version": "Pilot (NCBI36)",
+          "date": "2008–2010",
+          "url": "release/2008_12/ … 2010_11/ · 20100804/ · 20101123/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "Phase 1 (۱۰۹۲ نمونه، GRCh37)",
+          "date": "2011",
+          "url": "release/20110521/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "Phase 3 (۲۵۰۴ نمونه، v5a/v5b)",
+          "date": "2013/2015",
+          "url": "release/20130502/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "Phase 3 روی GRCh38",
+          "date": "2019",
+          "url": "data_collections/1000_genomes_project/release/20190312_biallelic_SNV_and_INDEL/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "30x NYGC (۳۲۰۲ نمونه)",
+          "date": "2020",
+          "url": "data_collections/1000G_2504_high_coverage/working/20201028_3202_phased/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "30x NYGC phased SNV/INDEL/SV (آخرین)",
+          "date": "2022",
+          "url": ".../working/20220422_3202_phased_SNV_INDEL_SV/",
+          "verified": false,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "cadd",
+      "name": "CADD",
+      "field": "variants",
+      "homepage": "https://cadd.gs.washington.edu/",
+      "license": "Free for non-commercial use",
+      "summary": "Deleteriousness scores for human variants.",
+      "latest": "1.7 (آخرین)",
+      "latest_date": "2023/2024",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2014",
+          "url": "https://kircherlab.bihealth.org/download/CADD/v1.0/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "1.3",
+          "date": "2015",
+          "url": ".../CADD/v1.3/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "1.4 (اولین GRCh38)",
+          "date": "2018",
+          "url": ".../CADD/v1.4/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "1.5",
+          "date": "2019",
+          "url": ".../CADD/v1.5/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "1.6",
+          "date": "2020",
+          "url": ".../CADD/v1.6/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "1.7 (آخرین)",
+          "date": "2023/2024",
+          "url": ".../CADD/v1.7/GRCh38/whole_genome_SNVs.tsv.gz",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "dbnsfp",
+      "name": "dbNSFP",
+      "field": "variants",
+      "homepage": "https://www.dbnsfp.org/",
+      "license": "Free for academic use",
+      "summary": "Functional predictions and annotations for non-synonymous variants.",
+      "latest": "5.0 / 5.1 / 5.2 (آخرین تأییدشده 5.2c)",
+      "latest_date": "2025–2026",
+      "versions": [
+        {
+          "version": "2.x",
+          "date": "2013",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "3.x",
+          "date": "2015–2018",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "4.0 تا 4.9 (4.7 در 2024-03-03؛ 4.9a/4.9c)",
+          "date": "2019–2024",
+          "url": "https://www.sites.google.com/site/jpopgen/dbNSFP",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "5.0 / 5.1 / 5.2 (آخرین تأییدشده 5.2c)",
+          "date": "2025–2026",
+          "url": "https://dbnsfp.org",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "finngen",
+      "name": "FinnGen",
+      "field": "variants",
+      "homepage": "https://www.finngen.fi/en/access_results",
+      "license": "Open summary statistics",
+      "summary": "GWAS summary statistics from Finnish biobank data freezes.",
+      "latest": "R13 (آخرین؛ ۵۰۰٬۱۸۶ نفر)",
+      "latest_date": "حدود Q2 2026",
+      "versions": [
+        {
+          "version": "R2 تا R4",
+          "date": "2019–2020",
+          "url": "finngen-public-data-r<N>",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "R5",
+          "date": "2021-05",
+          "url": "finngen-public-data-r5",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "R6",
+          "date": "2022-01",
+          "url": "finngen-public-data-r6",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "R7",
+          "date": "2022-06",
+          "url": "finngen-public-data-r7",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "R8",
+          "date": "2022-12",
+          "url": "finngen-public-data-r8",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "R9",
+          "date": "2023-05",
+          "url": "finngen-public-data-r9",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "R10",
+          "date": "2023-12",
+          "url": "finngen-public-data-r10",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "R11",
+          "date": "2024-06",
+          "url": "finngen-public-data-r11",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "R12",
+          "date": "2024-11",
+          "url": "finngen-public-data-r12",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "R13 (آخرین؛ ۵۰۰٬۱۸۶ نفر)",
+          "date": "حدود Q2 2026",
+          "url": "finngen-public-data-r13",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "allofus",
+      "name": "All of Us",
+      "field": "variants",
+      "homepage": "https://www.researchallofus.org/",
+      "license": "Controlled access tiers",
+      "summary": "US cohort data, released as curated data repository versions.",
+      "latest": "CDR v8 (R2024Q3R9 / C2024Q3R9، آخرین)",
+      "latest_date": "2025-02 (نسخه‌ی کنترل‌شده روی RW 2.0 از 2026-02-24)",
+      "versions": [
+        {
+          "version": "CDR v3 / v4",
+          "date": "2020–2021",
+          "url": "Researcher Workbench (دیگر در دسترس نیست)",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "CDR v5",
+          "date": "2021/2022",
+          "url": "(دیگر در دسترس نیست)",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "CDR v6 (حدود ۱۰۰ هزار WGS)",
+          "date": "2022",
+          "url": "(دیگر در دسترس نیست)",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "CDR v7 (C2022Q4R9)",
+          "date": "2023-02",
+          "url": "Researcher Workbench",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "CDR v8 (R2024Q3R9 / C2024Q3R9، آخرین)",
+          "date": "2025-02 (نسخه‌ی کنترل‌شده روی RW 2.0 از 2026-02-24)",
+          "url": "Researcher Workbench 2.0",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "ukbiobank",
+      "name": "UK Biobank",
+      "field": "variants",
+      "homepage": "https://www.ukbiobank.ac.uk/",
+      "license": "Controlled access by application",
+      "summary": "Genetic and health data for 500,000 participants.",
+      "latest": "WGS 500k (آخرین)",
+      "latest_date": "2023-11",
+      "versions": [
+        {
+          "version": "Genotyping interim 150k",
+          "date": "2015",
+          "url": "AMS",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "Imputed v3 (488k)",
+          "date": "2017-07",
+          "url": "AMS",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "Exome 50k / 200k / 300k / 470k",
+          "date": "2019 / 2020-10 / 2021 / 2022-06",
+          "url": "AMS / UKB-RAP",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "WGS 200k interim",
+          "date": "2021-11",
+          "url": "UKB-RAP",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "WGS 500k (آخرین)",
+          "date": "2023-11",
+          "url": "UKB-RAP",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "gdc",
+      "name": "Genomic Data Commons",
+      "field": "cancer",
+      "homepage": "https://portal.gdc.cancer.gov/",
+      "license": "Open and controlled tiers",
+      "summary": "TCGA, TARGET, CPTAC and other cancer programs, by data release.",
+      "latest": "DR 46.0 (آخرین)",
+      "latest_date": "2026-08-10",
+      "versions": [
+        {
+          "version": "DR 46.0 (آخرین)",
+          "date": "2026-08-10",
+          "url": "https://api.gdc.cancer.gov/",
+          "verified": true,
+          "latest": true
+        },
+        {
+          "version": "DR 45.0",
+          "date": "2025-12-04",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 44.0",
+          "date": "2025-10-29",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 43.0",
+          "date": "2025-05-07",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 42.0 (WGS alignmentهای TCGA)",
+          "date": "2025-01-30",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 41.0",
+          "date": "2024-08-28",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 40.0",
+          "date": "2024-03-29",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 39.0 (حذف GENIE)",
+          "date": "2023-12-04",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 38.0",
+          "date": "2023-08-31",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 37.0 (انتقال فایل‌های legacy)",
+          "date": "2023-03-29",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 36.0",
+          "date": "2022-12-12",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 35.0",
+          "date": "2022-09-28",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 34.0",
+          "date": "2022-07-27",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 33.1",
+          "date": "2022-05-31",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 33.0",
+          "date": "2022-05-03",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 32.0",
+          "date": "2022-03-29",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 31.0",
+          "date": "2021-10-29",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 30.0",
+          "date": "2021-09-23",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 29.0",
+          "date": "2021-03-31",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 28.0",
+          "date": "2021-02-02",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 27.0-fix",
+          "date": "2020-11-09",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 27.0",
+          "date": "2020-10-29",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 26.0",
+          "date": "2020-09-08",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 25.0",
+          "date": "2020-07-22",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 24.0",
+          "date": "2020-05-07",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 23.0",
+          "date": "2020-04-07",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 22.0",
+          "date": "2020-01-16",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 21.0",
+          "date": "2019-12-10",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 20.0",
+          "date": "2019-11-11",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 19.1",
+          "date": "2019-11-06",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 19.0",
+          "date": "2019-09-17",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 18.0",
+          "date": "2019-07-08",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 17.1",
+          "date": "2019-06-12",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 17.0",
+          "date": "2019-06-05",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 16.0",
+          "date": "2019-03-26",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 15.0",
+          "date": "2019-02-20",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 14.0",
+          "date": "2018-12-18",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 13.0",
+          "date": "2018-09-27",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 12.0",
+          "date": "2018-06-13",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 11.0",
+          "date": "2018-05-21",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 10.1",
+          "date": "2018-02-15",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 10.0",
+          "date": "2017-12-21",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 9.0",
+          "date": "2017-10-24",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 8.0",
+          "date": "2017-08-22",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 7.0",
+          "date": "2017-06-29",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 6.0",
+          "date": "2017-05-09",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 5.0",
+          "date": "2017-03-16",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 4.0",
+          "date": "2016-10-31",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 3.0",
+          "date": "2016-09-16",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 2.0",
+          "date": "2016-08-09",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "DR 1.0",
+          "date": "2016-06-06",
+          "url": "release notes",
+          "verified": true,
+          "latest": false
+        }
+      ]
+    },
+    {
+      "id": "cosmic",
+      "name": "COSMIC",
+      "field": "cancer",
+      "homepage": "https://cancer.sanger.ac.uk/cosmic",
+      "license": "Free for academics; commercial licence required",
+      "summary": "Catalogue of somatic mutations in cancer.",
+      "latest": "v104 (آخرین)",
+      "latest_date": "2026-05-19",
+      "versions": [
+        {
+          "version": "v90",
+          "date": "2019-09",
+          "url": "grch38/cosmic/v90/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "v91",
+          "date": "2020-04",
+          "url": "grch38/cosmic/v91/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "v92",
+          "date": "2020-08",
+          "url": "grch38/cosmic/v92/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "v94",
+          "date": "2021-05",
+          "url": "grch38/cosmic/v94/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "v95",
+          "date": "2021-11",
+          "url": "grch38/cosmic/v95/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "v96",
+          "date": "2022-05",
+          "url": "grch38/cosmic/v96/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "v97",
+          "date": "2022-11",
+          "url": "grch38/cosmic/v97/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "v98 (نام‌گذاری جدید فایل‌ها)",
+          "date": "2023-05",
+          "url": "grch38/cosmic/v98/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "v99",
+          "date": "2023-11",
+          "url": "grch38/cosmic/v99/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "v100",
+          "date": "2024-05",
+          "url": "grch38/cosmic/v100/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "v101",
+          "date": "2024-11-19",
+          "url": "grch38/cosmic/v101/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v102",
+          "date": "2025-05-21",
+          "url": "grch38/cosmic/v102/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v103",
+          "date": "2025-11-18",
+          "url": "grch38/cosmic/v103/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v104 (آخرین)",
+          "date": "2026-05-19",
+          "url": "grch38/cosmic/v104/",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "depmap",
+      "name": "DepMap",
+      "field": "cancer",
+      "homepage": "https://depmap.org/portal/",
+      "license": "Open (CC BY 4.0)",
+      "summary": "Cancer dependency map: CRISPR screens and cell line omics, by quarterly release.",
+      "latest": "26Q3 (آخرین)",
+      "latest_date": "2026",
+      "versions": [
+        {
+          "version": "18Q3 تا 21Q4 (فصلی)",
+          "date": "2018–2021",
+          "url": "figshare «DepMap <ver> Public»",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "22Q1 / 22Q2 / 22Q4",
+          "date": "2022",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "23Q2 / 23Q4",
+          "date": "2023",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "24Q2 (PureCN، Data Explorer 2.0)",
+          "date": "حدود 2024-06-03",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "24Q4 (نام‌گذاری استاندارد فایل‌ها)",
+          "date": "حدود 2024-09-10",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "25Q2",
+          "date": "حدود 2025-06-05",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "25Q3",
+          "date": "حدود 2025-09-30",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "26Q1",
+          "date": "حدود 2026-04-01",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "26Q3 (آخرین)",
+          "date": "2026",
+          "url": "https://depmap.org/portal/data_page/",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "icgc",
+      "name": "ICGC ARGO and ICGC 25K",
+      "field": "cancer",
+      "homepage": "https://platform.icgc-argo.org/",
+      "license": "Controlled access",
+      "summary": "International cancer genome data. The 25K portal was retired in 2024.",
+      "latest": "ARGO DR10.0 (آخرین تأییدشده)",
+      "latest_date": "2024-09-25",
+      "versions": [
+        {
+          "version": "ICGC 25K Release 1 تا 28",
+          "date": "تا 2019",
+          "url": "dcc.icgc.org (بازنشسته در 2024-06)",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "ARGO DR9.0",
+          "date": "2024-05-24",
+          "url": "https://platform.icgc-argo.org/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "ARGO DR10.0 (آخرین تأییدشده)",
+          "date": "2024-09-25",
+          "url": "همان",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "gtex",
+      "name": "GTEx",
+      "field": "expression",
+      "homepage": "https://gtexportal.org/",
+      "license": "Open summary data; raw data controlled",
+      "summary": "Gene expression and eQTLs across human tissues.",
+      "latest": "v11 (آخرین؛ GENCODE v47)",
+      "latest_date": "حدود 2026-01",
+      "versions": [
+        {
+          "version": "v3 (pilot، hg19)",
+          "date": "2012",
+          "url": "بازنشسته",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "v4",
+          "date": "2014",
+          "url": "بازنشسته",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "v6 / v6p (GENCODE v19، hg19)",
+          "date": "2015 / 2016",
+          "url": "بازنشسته از API",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v7 (hg19، ۷۱۴ نفر)",
+          "date": "2017",
+          "url": "بازنشسته از API (فقط dbGaP/AnVIL)",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v8 (GENCODE v26، GRCh38، ۹۴۸ نفر)",
+          "date": "2019",
+          "url": "datasetId=gtex_v8 · adult-gtex/bulk-gex/v8/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v10 (GENCODE v39)",
+          "date": "حدود 2024",
+          "url": "datasetId=gtex_v10",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v11 (آخرین؛ GENCODE v47)",
+          "date": "حدود 2026-01",
+          "url": "datasetId=gtex_v11",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "archs4",
+      "name": "ARCHS4",
+      "field": "expression",
+      "homepage": "https://archs4.org/",
+      "license": "See site",
+      "summary": "Uniformly processed RNA-seq from GEO and SRA.",
+      "latest": "v2.5 (آخرین)",
+      "latest_date": "2024-08-24 / 2024-09-05",
+      "versions": [
+        {
+          "version": "v1.11 (خط قدیمی)",
+          "date": "2021-11-16",
+          "url": "https://s3.amazonaws.com/mssm-seq-matrix/human_matrix_v11.h5",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v2.2",
+          "date": "2023-05-30",
+          "url": "human_gene_v2.2.h5",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v2.3",
+          "date": "2024-03-11",
+          "url": "human_gene_v2.3.h5",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v2.4",
+          "date": "2024-06-04",
+          "url": "human_gene_v2.4.h5",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v2.5 (آخرین)",
+          "date": "2024-08-24 / 2024-09-05",
+          "url": "human_gene_v2.5.h5 (۴۵ گیگابایت) · human_transcript_v2.5.h5 (۱۳۶ گیگابایت)",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "eqtl-catalogue",
+      "name": "eQTL Catalogue",
+      "field": "expression",
+      "homepage": "https://www.ebi.ac.uk/eqtl/",
+      "license": "Open (CC BY 4.0)",
+      "summary": "Uniformly processed QTL summary statistics.",
+      "latest": "r8 نهایی",
+      "latest_date": "برنامه‌ریزی‌شده برای 2026-12",
+      "versions": [
+        {
+          "version": "r1 (۱۱۲ دیتاست)",
+          "date": "2020",
+          "url": "FTP",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "r2 تا r6",
+          "date": "2020–2023",
+          "url": "FTP",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "r7",
+          "date": "2024-06",
+          "url": "FTP",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "r8 pre-release",
+          "date": "2026-01",
+          "url": "r8_beta/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "r8 pre-release (به‌روزرسانی، با GTEx v10)",
+          "date": "2026-09",
+          "url": "r8_beta/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "r8 نهایی",
+          "date": "برنامه‌ریزی‌شده برای 2026-12",
+          "url": "—",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "hpa",
+      "name": "Human Protein Atlas",
+      "field": "expression",
+      "homepage": "https://www.proteinatlas.org/",
+      "license": "Open (CC BY-SA)",
+      "summary": "Protein and RNA expression across human tissues and cells.",
+      "latest": "v25.1 (آخرین)",
+      "latest_date": "2026-05-28",
+      "versions": [
+        {
+          "version": "v20",
+          "date": "2020-11",
+          "url": "https://v20.proteinatlas.org",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "v21",
+          "date": "2021-11",
+          "url": "https://v21.proteinatlas.org",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "v22",
+          "date": "2022-12",
+          "url": "https://v22.proteinatlas.org",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "v23",
+          "date": "2023-06",
+          "url": "https://v23.proteinatlas.org",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "v24",
+          "date": "2024-11",
+          "url": "https://v24.proteinatlas.org",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "v25",
+          "date": "2025-11-11",
+          "url": "https://www.proteinatlas.org",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v25.1 (آخرین)",
+          "date": "2026-05-28",
+          "url": "https://www.proteinatlas.org",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "expression-atlas",
+      "name": "Expression Atlas",
+      "field": "expression",
+      "homepage": "https://www.ebi.ac.uk/gxa/home",
+      "license": "Open (EMBL-EBI terms)",
+      "summary": "Curated bulk and single-cell expression experiments.",
+      "latest": "SCXA sc_experiments_202509 (آخرین snapshot)",
+      "latest_date": "2025",
+      "versions": [
+        {
+          "version": "Expression Atlas r42",
+          "date": "2025-07",
+          "url": "https://ftp.ebi.ac.uk/pub/databases/microarray/data/atlas/experiments/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "Expression Atlas r43 (آخرین)",
+          "date": "2025-10",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "SCXA sc_experiments_202103 / 202105 / 202109 / 202110",
+          "date": "2021",
+          "url": ".../atlas/sc_experiments_<YYYYMM>/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "SCXA sc_experiments_202203 / 202212",
+          "date": "2022",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "SCXA sc_experiments_202303",
+          "date": "2023",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "SCXA sc_experiments_202409",
+          "date": "2024",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "SCXA sc_experiments_202509 (آخرین snapshot)",
+          "date": "2025",
+          "url": "همان",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "cellxgene-census",
+      "name": "CELLxGENE Census",
+      "field": "expression",
+      "homepage": "https://cellxgene.cziscience.com/",
+      "license": "Open (CC BY 4.0)",
+      "summary": "Tens of millions of single cells, released as dated builds.",
+      "latest": "2025-01-30 (LTS = stable فعلی)",
+      "latest_date": "2025-01-30",
+      "versions": [
+        {
+          "version": "2023-05-15 (LTS)",
+          "date": "2023-05-15",
+          "url": "s3://cellxgene-census-public-us-west-2/cell-census/2023-05-15/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2023-07-25 (LTS)",
+          "date": "2023-07-25",
+          "url": ".../cell-census/2023-07-25/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2023-12-15 (LTS)",
+          "date": "2023-12-15",
+          "url": ".../cell-census/2023-12-15/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2024-05-20 (بدون LTS، نگه داشته می‌شود)",
+          "date": "2024-05-20",
+          "url": ".../cell-census/2024-05-20/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2024-07-01 (LTS)",
+          "date": "2024-07-01",
+          "url": ".../cell-census/2024-07-01/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2025-01-30 (LTS = stable فعلی)",
+          "date": "2025-01-30",
+          "url": ".../cell-census/2025-01-30/",
+          "verified": true,
+          "latest": true
+        },
+        {
+          "version": "2025-11-04 (هفتگی، ممکن است حذف شود)",
+          "date": "2025-11-04",
+          "url": ".../cell-census/2025-11-04/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2025-11-08 (هفتگی)",
+          "date": "2025-11-08",
+          "url": ".../cell-census/2025-11-08/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2025-11-10 (latest)",
+          "date": "2025-11-10",
+          "url": ".../cell-census/2025-11-10/",
+          "verified": true,
+          "latest": false
+        }
+      ]
+    },
+    {
+      "id": "allen-brain",
+      "name": "Allen Brain Cell Atlas",
+      "field": "expression",
+      "homepage": "https://portal.brain-map.org/atlases-and-data/bkp/abc-atlas",
+      "license": "Allen Institute terms",
+      "summary": "Whole-brain single-cell and spatial atlases, by dated release.",
+      "latest": "20261130 (آخرین)",
+      "latest_date": "2026-11-30",
+      "versions": [
+        {
+          "version": "20230630",
+          "date": "2023-06-30",
+          "url": "releases/20230630/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20230830",
+          "date": "2023-08-30",
+          "url": "releases/20230830/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20231215",
+          "date": "2023-12-15",
+          "url": "releases/20231215/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20240330",
+          "date": "2024-03-30",
+          "url": "releases/20240330/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20240831",
+          "date": "2024-08-31",
+          "url": "releases/20240831/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20241115",
+          "date": "2024-11-15",
+          "url": "releases/20241115/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20241130",
+          "date": "2024-11-30",
+          "url": "releases/20241130/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20250131",
+          "date": "2025-01-31",
+          "url": "releases/20250131/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20250331",
+          "date": "2025-03-31",
+          "url": "releases/20250331/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20250531",
+          "date": "2025-05-31",
+          "url": "releases/20250531/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20250930",
+          "date": "2025-09-30",
+          "url": "releases/20250930/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20251031",
+          "date": "2025-10-31",
+          "url": "releases/20251031/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20260131",
+          "date": "2026-01-31",
+          "url": "releases/20260131/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20260228",
+          "date": "2026-02-28",
+          "url": "releases/20260228/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20260331",
+          "date": "2026-03-31",
+          "url": "releases/20260331/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20260415",
+          "date": "2026-04-15",
+          "url": "releases/20260415/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20260711",
+          "date": "2026-07-11",
+          "url": "releases/20260711/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20261031",
+          "date": "2026-10-31",
+          "url": "releases/20261031/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20261101",
+          "date": "2026-11-01",
+          "url": "releases/20261101/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20261130 (آخرین)",
+          "date": "2026-11-30",
+          "url": "releases/20261130/",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "tabula-sapiens",
+      "name": "Tabula Sapiens",
+      "field": "expression",
+      "homepage": "https://tabula-sapiens.sf.czbiohub.org/",
+      "license": "See site",
+      "summary": "Human multi-organ single-cell atlas.",
+      "latest": "v2 (حدود ۱.۱ میلیون سلول، ۲۸ بافت)",
+      "latest_date": "2024-12 (بازبینی 2025-08)",
+      "versions": [
+        {
+          "version": "v1 (حدود ۵۰۰ هزار سلول، ۲۴ اندام)",
+          "date": "2022",
+          "url": "https://registry.opendata.aws/tabula-sapiens/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v2 (حدود ۱.۱ میلیون سلول، ۲۸ بافت)",
+          "date": "2024-12 (بازبینی 2025-08)",
+          "url": "https://figshare.com/articles/dataset/Tabula_Sapiens_v2/27921984",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "uniprot",
+      "name": "UniProt",
+      "field": "proteins",
+      "homepage": "https://www.uniprot.org/",
+      "license": "Open (CC BY 4.0)",
+      "summary": "Protein sequence and function knowledgebase.",
+      "latest": "2026_04 (آخرین)",
+      "latest_date": "2026-11-04",
+      "versions": [
+        {
+          "version": "release1.0 تا release15.0 (شماره‌گذاری قدیمی)",
+          "date": "2005–2009",
+          "url": "previous_releases/release<N>.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2010_01 تا 2020_01 (فقط snapshot سالانه)",
+          "date": "2010–2020",
+          "url": "previous_releases/release-<YYYY>_01/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2021_01 / 2021_02 / 2021_03",
+          "date": "2021",
+          "url": "previous_releases/release-2021_0N/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2021_04",
+          "date": "≈ 2021-11-17",
+          "url": "previous_releases/release-2021_04/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2022_01",
+          "date": "≈ 2022-03-02",
+          "url": "previous_releases/release-2022_01/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2022_02",
+          "date": "≈ 2022-05-25",
+          "url": "previous_releases/release-2022_02/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2022_03",
+          "date": "≈ 2022-08-03",
+          "url": "previous_releases/release-2022_03/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2022_04",
+          "date": "≈ 2022-10-12",
+          "url": "previous_releases/release-2022_04/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2022_05",
+          "date": "≈ 2022-12-14",
+          "url": "previous_releases/release-2022_05/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2023_01",
+          "date": "≈ 2023-03-01",
+          "url": "previous_releases/release-2023_01/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2023_02",
+          "date": "≈ 2023-05-03",
+          "url": "previous_releases/release-2023_02/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2023_03",
+          "date": "≈ 2023-06-28",
+          "url": "previous_releases/release-2023_03/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2023_04",
+          "date": "≈ 2023-09-13",
+          "url": "previous_releases/release-2023_04/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2023_05",
+          "date": "≈ 2023-11-08",
+          "url": "previous_releases/release-2023_05/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2024_01",
+          "date": "≈ 2024-01-24",
+          "url": "previous_releases/release-2024_01/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2024_02",
+          "date": "≈ 2024-03-27",
+          "url": "previous_releases/release-2024_02/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2024_03",
+          "date": "≈ 2024-05-29",
+          "url": "previous_releases/release-2024_03/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2024_04",
+          "date": "≈ 2024-07-24",
+          "url": "previous_releases/release-2024_04/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2024_05",
+          "date": "≈ 2024-10-02",
+          "url": "previous_releases/release-2024_05/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2024_06",
+          "date": "≈ 2024-11-27",
+          "url": "previous_releases/release-2024_06/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2025_01",
+          "date": "≈ 2025-02-05",
+          "url": "previous_releases/release-2025_01/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2025_02",
+          "date": "≈ 2025-04-23",
+          "url": "previous_releases/release-2025_02/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2025_03",
+          "date": "≈ 2025-06-18",
+          "url": "previous_releases/release-2025_03/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2025_04",
+          "date": "≈ 2025-10-15",
+          "url": "previous_releases/release-2025_04/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2026_01",
+          "date": "≈ 2026-01-28",
+          "url": "previous_releases/release-2026_01/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2026_02",
+          "date": "≈ 2026-06-10",
+          "url": "previous_releases/release-2026_02/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2026_03",
+          "date": "≈ 2026-09-02",
+          "url": "previous_releases/release-2026_03/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2026_04 (آخرین)",
+          "date": "2026-11-04",
+          "url": "current_release/",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "pdb",
+      "name": "Protein Data Bank",
+      "field": "proteins",
+      "homepage": "https://www.rcsb.org/",
+      "license": "Open (CC0)",
+      "summary": "Experimental 3D structures, with yearly snapshots.",
+      "latest": "20260415 (آخرین)",
+      "latest_date": "2026-04-15",
+      "versions": [
+        {
+          "version": "20050106, 20060103, 20070102, 20070731, 20080107",
+          "date": "2005–2008",
+          "url": "https://snapshots.pdbj.org/<date>/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20090105, 20090316, 20100104, 20110103, 20110707",
+          "date": "2009–2011",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20120102, 20130101, 20140102, 20141203, 20150102",
+          "date": "2012–2015",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20160101, 20160302, 20170101, 20170308, 20170710",
+          "date": "2016–2017",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20180101, 20180321, 20190101",
+          "date": "2018–2019",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20200101, 20200610, 20200722, 20200916, 20210105",
+          "date": "2020–2021",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20220103, 20230102, 20240101, 20250101",
+          "date": "2022–2025",
+          "url": "همان · s3://pdbsnapshots/20240101/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20260101",
+          "date": "2026-01-01",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20260415 (آخرین)",
+          "date": "2026-04-15",
+          "url": "https://snapshots.pdbj.org/20260415/",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "alphafold",
+      "name": "AlphaFold DB",
+      "field": "proteins",
+      "homepage": "https://alphafold.ebi.ac.uk/",
+      "license": "Open (CC BY 4.0)",
+      "summary": "Predicted protein structures, versions v1 to v6.",
+      "latest": "v6 (آخرین؛ ۲۴۱٬۰۷۰٬۴۸۹؛ UniProt 2025_03؛ ایزوفرم + MSA)",
+      "latest_date": "2025-09-15 (changelog) / 2025-10-21 (release notes)",
+      "versions": [
+        {
+          "version": "v1 (حدود ۳۶۵ هزار ساختار؛ انسان + ۲۰ ارگانیسم)",
+          "date": "2021-07",
+          "url": "alphafold/v1/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "v2 (Swiss-Prot و پروتئوم‌های بیشتر)",
+          "date": "2021-12 تا 2022-01",
+          "url": "alphafold/v2/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "v3 (۲۱۴٬۶۸۷٬۴۰۶؛ UniProt 2021_04)",
+          "date": "2022-07-28",
+          "url": "alphafold/v3/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v4 (۲۱۴٬۶۸۶٬۹۲۴)",
+          "date": "2022-11-01",
+          "url": "alphafold/v4/ · gs://public-datasets-deepmind-alphafold-v4/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v5 (پوشه بدون changelog؛ احتمالاً برچسب داخلی)",
+          "date": "2025-10-01 (پوشه)",
+          "url": "alphafold/v5/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v6 (آخرین؛ ۲۴۱٬۰۷۰٬۴۸۹؛ UniProt 2025_03؛ ایزوفرم + MSA)",
+          "date": "2025-09-15 (changelog) / 2025-10-21 (release notes)",
+          "url": "alphafold/v6/ · alphafold/latest/",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "esm-atlas",
+      "name": "ESM Metagenomic Atlas",
+      "field": "proteins",
+      "homepage": "https://esmatlas.com/",
+      "license": "Open (CC BY 4.0)",
+      "summary": "Predicted structures for metagenomic proteins.",
+      "latest": "v2023_02 (آخرین؛ هماهنگ با MGnify 2023_02)",
+      "latest_date": "2023-03-17",
+      "versions": [
+        {
+          "version": "v0 (ESMFold v0، حدود ۶۱۷ میلیون ساختار)",
+          "date": "2022-11-01",
+          "url": "https://dl.fbaipublicfiles.com/esmatlas/v0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v2023_02 (آخرین؛ هماهنگ با MGnify 2023_02)",
+          "date": "2023-03-17",
+          "url": "https://dl.fbaipublicfiles.com/esmatlas/v2023_02/",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "pfam",
+      "name": "Pfam",
+      "field": "proteins",
+      "homepage": "https://www.ebi.ac.uk/interpro/entry/pfam/",
+      "license": "Open (CC0)",
+      "summary": "Protein families as hidden Markov models.",
+      "latest": "39.0 (آخرین)",
+      "latest_date": "2026-11-05",
+      "versions": [
+        {
+          "version": "1.0، 4.0–4.4، 5.0–5.5، 6.0–6.6، 7.0–7.8، 8.0، 9.0",
+          "date": "قدیمی",
+          "url": "releases/Pfam<X.Y>/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "10.0 تا 33.0",
+          "date": "—",
+          "url": "releases/Pfam<X.Y>/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "33.1، 34.0",
+          "date": "—",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "35.0",
+          "date": "2023-01-03 (پوشه)",
+          "url": "releases/Pfam35.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "36.0 / 37.0",
+          "date": "2024-05-28 (پوشه، بعداً به‌روز شده)",
+          "url": "releases/Pfam36.0/ · Pfam37.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "37.1",
+          "date": "2025-02-04",
+          "url": "releases/Pfam37.1/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "37.2",
+          "date": "2025-03-19",
+          "url": "releases/Pfam37.2/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "37.3",
+          "date": "2025-04-14",
+          "url": "releases/Pfam37.3/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "37.4",
+          "date": "2025-07-21",
+          "url": "releases/Pfam37.4/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "38.0",
+          "date": "2025-11-05",
+          "url": "releases/Pfam38.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "38.1 / 38.2",
+          "date": "2026-06-15 (پوشه)",
+          "url": "releases/Pfam38.1/ · Pfam38.2/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "39.0 (آخرین)",
+          "date": "2026-11-05",
+          "url": "releases/Pfam39.0/ · current_release/",
+          "verified": true,
+          "latest": true
+        },
+        {
+          "version": "Pfam_SARS-CoV-2 1.0 / 2.0",
+          "date": "—",
+          "url": "releases/Pfam_SARS-CoV-2_<ver>/",
+          "verified": true,
+          "latest": false
+        }
+      ]
+    },
+    {
+      "id": "interpro",
+      "name": "InterPro",
+      "field": "proteins",
+      "homepage": "https://www.ebi.ac.uk/interpro/",
+      "license": "Open (CC0)",
+      "summary": "Integrated protein family, domain and site annotation.",
+      "latest": "111.0 (آخرین)",
+      "latest_date": "2026-11-12",
+      "versions": [
+        {
+          "version": "1.0 تا 23.1 (17.0 و 23.0 وجود ندارند)",
+          "date": "قدیمی",
+          "url": "releases/<N.N>/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "24.0 تا 72.0",
+          "date": "—",
+          "url": "releases/<N.N>/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "73.0",
+          "date": "2019-03-26",
+          "url": "releases/73.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "74.0",
+          "date": "2019-05-09",
+          "url": "releases/74.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "75.0",
+          "date": "2019-07-03",
+          "url": "releases/75.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "76.0",
+          "date": "2019-09-25",
+          "url": "releases/76.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "78.0",
+          "date": "2020-03-03",
+          "url": "releases/78.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "79.0",
+          "date": "2020-04-28",
+          "url": "releases/79.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "80.0",
+          "date": "2020-06-22",
+          "url": "releases/80.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "81.0",
+          "date": "2020-08-12",
+          "url": "releases/81.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "82.0",
+          "date": "2020-10-07",
+          "url": "releases/82.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "83.0",
+          "date": "2020-11-30",
+          "url": "releases/83.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "84.0 / 85.0",
+          "date": "2021-04-27",
+          "url": "releases/84.0/ · 85.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "86.0",
+          "date": "2021-06-07",
+          "url": "releases/86.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "87.0",
+          "date": "2021-11-18",
+          "url": "releases/87.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "88.0",
+          "date": "2022-03-11",
+          "url": "releases/88.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "89.0 تا 97.0",
+          "date": "2022–2023",
+          "url": "releases/<N>.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "98.0",
+          "date": "2024-01-24",
+          "url": "releases/98.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "99.0",
+          "date": "2024-03-27",
+          "url": "releases/99.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "100.0",
+          "date": "2024-05-29",
+          "url": "releases/100.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "101.0",
+          "date": "2024-07-24",
+          "url": "releases/101.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "102.0",
+          "date": "2024-10-02",
+          "url": "releases/102.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "103.0",
+          "date": "2024-11-28",
+          "url": "releases/103.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "104.0",
+          "date": "2025-02-03",
+          "url": "releases/104.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "105.0",
+          "date": "2025",
+          "url": "releases/105.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "106.0",
+          "date": "2025-06-18",
+          "url": "releases/106.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "107.0",
+          "date": "2025-12-17",
+          "url": "releases/107.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "108.0",
+          "date": "2026-01-27",
+          "url": "releases/108.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "109.0",
+          "date": "2026-06-30",
+          "url": "releases/109.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "110.0",
+          "date": "2026-09-04",
+          "url": "releases/110.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "111.0 (آخرین)",
+          "date": "2026-11-12",
+          "url": "releases/111.0/ · current_release/",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "cath",
+      "name": "CATH",
+      "field": "proteins",
+      "homepage": "https://www.cathdb.info/",
+      "license": "Open (CC BY 4.0)",
+      "summary": "Hierarchical classification of protein domain structures.",
+      "latest": "v4.4.0 (آخرین؛ بیش از ۹۰ میلیون دامنه‌ی TED)",
+      "latest_date": "2024-10",
+      "versions": [
+        {
+          "version": "3.x (مثلاً 3.5)",
+          "date": "قدیمی",
+          "url": "مسیرهای legacy",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "v4.0.0",
+          "date": "—",
+          "url": "all-releases/v4_0_0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v4.1.0",
+          "date": "—",
+          "url": "all-releases/v4_1_0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v4.2.0 (split استاندارد طراحی پروتئین)",
+          "date": "—",
+          "url": "all-releases/v4_2_0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v4.3.0",
+          "date": "—",
+          "url": "all-releases/v4_3_0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v4.4.0 (آخرین؛ بیش از ۹۰ میلیون دامنه‌ی TED)",
+          "date": "2024-10",
+          "url": "all-releases/v4_4_0/ · latest-release/",
+          "verified": true,
+          "latest": true
+        },
+        {
+          "version": "daily",
+          "date": "روزانه",
+          "url": "daily-release/",
+          "verified": true,
+          "latest": false
+        }
+      ]
+    },
+    {
+      "id": "scope",
+      "name": "SCOPe and SCOP",
+      "field": "proteins",
+      "homepage": "https://scop.berkeley.edu/",
+      "license": "See site",
+      "summary": "Structural classification of proteins.",
+      "latest": "SCOPe 2.08 (آخرین)",
+      "latest_date": "2021-09 / 2021-11",
+      "versions": [
+        {
+          "version": "SCOP 1.75",
+          "date": "2009",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "SCOPe 2.01",
+          "date": "—",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "SCOPe 2.02",
+          "date": "—",
+          "url": "dir.cla.scope.2.02-stable.txt",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "SCOPe 2.03",
+          "date": "—",
+          "url": "dir.cla.scope.2.03-stable.txt",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "SCOPe 2.04",
+          "date": "2014-07",
+          "url": "dir.cla.scope.2.04-stable.txt",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "SCOPe 2.05",
+          "date": "2015-02",
+          "url": "dir.cla.scope.2.05-stable.txt",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "SCOPe 2.06",
+          "date": "2016-02",
+          "url": "dir.cla.scope.2.06-stable.txt",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "SCOPe 2.07",
+          "date": "2018-03",
+          "url": "dir.cla.scope.2.07-stable.txt",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "SCOPe 2.08 (آخرین)",
+          "date": "2021-09 / 2021-11",
+          "url": "dir.cla.scope.2.08-stable.txt",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "prosite",
+      "name": "PROSITE",
+      "field": "proteins",
+      "homepage": "https://prosite.expasy.org/",
+      "license": "CC BY-NC-ND 4.0",
+      "summary": "Protein domains, families and functional sites.",
+      "latest": "2026_04 (آخرین)",
+      "latest_date": "2026-11-04",
+      "versions": [
+        {
+          "version": "06_1، 07_01، 08_0، 10_0 تا 17_0، 19_0، 19_19، 19_29",
+          "date": "قدیمی",
+          "url": "old_releases/prosite<NN_N>.tar.bz2",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2017_01 تا 2026_03 (دوره‌ای)",
+          "date": "2017–2026",
+          "url": "old_releases/prosite<YYYY_NN>.tar.bz2",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2026_04 (آخرین)",
+          "date": "2026-11-04",
+          "url": "https://ftp.expasy.org/databases/prosite/prosite.dat",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "cdd",
+      "name": "NCBI CDD",
+      "field": "proteins",
+      "homepage": "https://www.ncbi.nlm.nih.gov/cdd/",
+      "license": "Public domain",
+      "summary": "Conserved domain database.",
+      "latest": "3.22 (آخرین؛ Pfam 37.2، COG v2، SMART 6.0، TIGRFAM 15.0)",
+      "latest_date": "2026-10",
+      "versions": [
+        {
+          "version": "3.20",
+          "date": "2022-09",
+          "url": "https://ftp.ncbi.nih.gov/pub/mmdb/cdd/ (فایل bitscore)",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "3.21",
+          "date": "2024-05",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "3.22 (آخرین؛ Pfam 37.2، COG v2، SMART 6.0، TIGRFAM 15.0)",
+          "date": "2026-10",
+          "url": "cdd.tar.gz · cdd.info",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "eggnog",
+      "name": "eggNOG",
+      "field": "proteins",
+      "homepage": "http://eggnog5.embl.de/",
+      "license": "See site",
+      "summary": "Orthologous groups and functional annotation.",
+      "latest": "6.0 (آخرین)",
+      "latest_date": "2022-11-25 (پوشه)",
+      "versions": [
+        {
+          "version": "1.0، 2.0، 3.0، 4.0، 4.1، 4.5",
+          "date": "قدیمی",
+          "url": "download/eggnog_<ver>/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "5.0",
+          "date": "—",
+          "url": "download/eggnog_5.0/ · latest/ (همچنان به ۵.۰ اشاره می‌کند)",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "emapperdb 4.5.0، 4.5.1، 5.0.0، 5.0.1، 5.0.2",
+          "date": "تا 2021-03",
+          "url": "download/emapperdb-<ver>/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "6.0 (آخرین)",
+          "date": "2022-11-25 (پوشه)",
+          "url": "download/eggnog_6.0/",
+          "verified": true,
+          "latest": true
+        },
+        {
+          "version": "novel_fams 1.0.1",
+          "date": "2023-08",
+          "url": "download/novel_fams-1.0.1/",
+          "verified": true,
+          "latest": false
+        }
+      ]
+    },
+    {
+      "id": "orthodb",
+      "name": "OrthoDB",
+      "field": "proteins",
+      "homepage": "https://www.orthodb.org/",
+      "license": "See site",
+      "summary": "Hierarchical catalogue of orthologs.",
+      "latest": "v12 (odb12v1، آخرین)",
+      "latest_date": "2024/2025",
+      "versions": [
+        {
+          "version": "v10.1 (odb10v1)",
+          "date": "—",
+          "url": "https://data.orthodb.org/v10-1/download/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "v11 (odb11v0)",
+          "date": "—",
+          "url": "https://data.orthodb.org/v11/download/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "v12 (odb12v1، آخرین)",
+          "date": "2024/2025",
+          "url": "https://data.orthodb.org/v12-1/download/",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "kofam",
+      "name": "KOfam",
+      "field": "proteins",
+      "homepage": "https://www.genome.jp/tools/kofamkoala/",
+      "license": "KEGG terms",
+      "summary": "HMM profiles for KEGG orthologs.",
+      "latest": "2026-09-01 (آخرین آرشیو)",
+      "latest_date": "2026-09-01",
+      "versions": [
+        {
+          "version": "2019 تا 2024 (ماهانه)",
+          "date": "2019–2024",
+          "url": "archives/<YYYY-MM-DD>/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2025-01-01 تا 2025-12-01 (ماهانه)",
+          "date": "2025",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2026-01-01 تا 2026-06-01",
+          "date": "2026",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2026-07-02، 2026-08-02",
+          "date": "2026",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2026-09-01 (آخرین آرشیو)",
+          "date": "2026-09-01",
+          "url": "archives/2026-09-01/",
+          "verified": true,
+          "latest": true
+        },
+        {
+          "version": "current (حدود 2026-10)",
+          "date": "2026-10",
+          "url": "https://www.genome.jp/ftp/db/kofam/profiles.tar.gz",
+          "verified": true,
+          "latest": false
+        }
+      ]
+    },
+    {
+      "id": "mgnify-proteins",
+      "name": "MGnify protein database",
+      "field": "proteins",
+      "homepage": "https://www.ebi.ac.uk/metagenomics/",
+      "license": "Open (EMBL-EBI terms)",
+      "summary": "Protein sequences predicted from metagenomic assemblies.",
+      "latest": "2026_07 (آخرین)",
+      "latest_date": "2026-08-03",
+      "versions": [
+        {
+          "version": "2017_08, 2017_11",
+          "date": "2017",
+          "url": "peptide_database/<YYYY_MM>/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2018_02, 2018_03, 2018_04, 2018_05, 2018_06, 2018_09, 2018_11",
+          "date": "2018",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2018_12 (AlphaFold 2)",
+          "date": "2018",
+          "url": "peptide_database/2018_12/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2019_05",
+          "date": "2019",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2022_05 (AlphaFold 3)",
+          "date": "2022",
+          "url": "peptide_database/2022_05/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2023_02 (ESM Atlas v2023_02)",
+          "date": "2023",
+          "url": "peptide_database/2023_02/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2024_04",
+          "date": "2024",
+          "url": "peptide_database/2024_04/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2026_06 (کاندید خطادار؛ استفاده نکنید)",
+          "date": "2026",
+          "url": "—",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2026_07 (آخرین)",
+          "date": "2026-08-03",
+          "url": "peptide_database/current_release/",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "uniref30",
+      "name": "UniClust30 / UniRef30",
+      "field": "proteins",
+      "homepage": "https://uniclust.mmseqs.com/",
+      "license": "See site",
+      "summary": "Clustered sequence databases in HH-suite format, used for MSAs.",
+      "latest": "2023_02 (آخرین؛ پیش‌فرض ColabFold `uniref30_2302`)",
+      "latest_date": "2023",
+      "versions": [
+        {
+          "version": "2016_03, 2016_09",
+          "date": "2016",
+          "url": "uniclust/<YYYY_MM>/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2017_02, 2017_04, 2017_07, 2017_10",
+          "date": "2017",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2018_08",
+          "date": "2018",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2019_11",
+          "date": "2019",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2020_01, 2020_02, 2020_03, 2020_06",
+          "date": "2020",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2021_03 (AlphaFold 2)",
+          "date": "2021",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2022_02",
+          "date": "2022",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2023_01",
+          "date": "2023",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2023_02 (آخرین؛ پیش‌فرض ColabFold `uniref30_2302`)",
+          "date": "2023",
+          "url": "همان · https://opendata.mmseqs.org/colabfold/uniref30_2302.tar.gz",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "kegg",
+      "name": "KEGG",
+      "field": "pathways",
+      "homepage": "https://www.kegg.jp/",
+      "license": "Academic use only; licence for bulk and commercial use",
+      "summary": "Pathways, genomes, compounds and orthologs.",
+      "latest": "120.0 (آخرین)",
+      "latest_date": "2026-10-01",
+      "versions": [
+        {
+          "version": "113.0",
+          "date": "2025-01-01",
+          "url": "https://rest.kegg.jp/info/kegg",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "114.0",
+          "date": "2025-04-01",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "115.0",
+          "date": "2025-07-01",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "115.1",
+          "date": "2025-08-01",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "116.0",
+          "date": "2025-10-01",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "116.1 (سی‌امین سالگرد)",
+          "date": "2025-12-01",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "117.0",
+          "date": "2026-01-01",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "118.0",
+          "date": "2026-04-01",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "118.1",
+          "date": "2026-05-01",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "118.2",
+          "date": "2026-06-01",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "119.0",
+          "date": "2026-07-01",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "120.0 (آخرین)",
+          "date": "2026-10-01",
+          "url": "همان",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "reactome",
+      "name": "Reactome",
+      "field": "pathways",
+      "homepage": "https://reactome.org/",
+      "license": "Open (CC0)",
+      "summary": "Curated, peer-reviewed pathway database.",
+      "latest": "V98 (آخرین)",
+      "latest_date": "2026-10-21",
+      "versions": [
+        {
+          "version": "V73",
+          "date": "2020-06-11",
+          "url": "download/73/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "V74",
+          "date": "2020-09-21",
+          "url": "download/74/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "V75",
+          "date": "2020-12-02",
+          "url": "download/75/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "V76",
+          "date": "2021-03-21",
+          "url": "download/76/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "V77",
+          "date": "2021-06-09",
+          "url": "download/77/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "V78",
+          "date": "2021-10-10",
+          "url": "download/78/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "V79",
+          "date": "2021-12-13",
+          "url": "download/79/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "V80",
+          "date": "2022-04-05",
+          "url": "download/80/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "V81",
+          "date": "2022-06-14",
+          "url": "download/81/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "V82",
+          "date": "2022-09-15",
+          "url": "download/82/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "V83",
+          "date": "2022-11-30",
+          "url": "download/83/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "V84",
+          "date": "2023-03-23",
+          "url": "download/84/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "V85",
+          "date": "2023-05-25",
+          "url": "download/85/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "V86",
+          "date": "2023-09-07",
+          "url": "download/86/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "V87",
+          "date": "2023-12-04",
+          "url": "download/87/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "V88",
+          "date": "2024-03-20",
+          "url": "download/88/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "V89",
+          "date": "2024-06-09",
+          "url": "download/89/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "V90",
+          "date": "2024-09-17",
+          "url": "download/90/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "V91",
+          "date": "2024-11-30",
+          "url": "download/91/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "V92",
+          "date": "2025-03-20",
+          "url": "download/92/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "V93",
+          "date": "2025-06-12",
+          "url": "download/93/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "V94",
+          "date": "2025-09-11",
+          "url": "download/94/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "V95",
+          "date": "2025-12-03",
+          "url": "download/95/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "V96",
+          "date": "2026-04-01",
+          "url": "download/96/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "V97",
+          "date": "2026-06-23",
+          "url": "download/97/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "V98 (آخرین)",
+          "date": "2026-10-21",
+          "url": "download/current/",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "string",
+      "name": "STRING",
+      "field": "pathways",
+      "homepage": "https://string-db.org/",
+      "license": "Open (CC BY 4.0)",
+      "summary": "Protein-protein association networks.",
+      "latest": "12.5 (آخرین)",
+      "latest_date": "2026-09-29",
+      "versions": [
+        {
+          "version": "3.0",
+          "date": "قبل از 2003",
+          "url": "داده در دسترس نیست",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "4.0",
+          "date": "2003",
+          "url": "داده در دسترس نیست",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "5.1",
+          "date": "2004-07-30",
+          "url": "stringdb-downloads.org/download/archive/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "6.0",
+          "date": "2005-02-20",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "6.2",
+          "date": "2005-06-26",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "6.3",
+          "date": "2005-12-12",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "7.0",
+          "date": "2007-01-15",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "7.1",
+          "date": "2007-10-19",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "8.0",
+          "date": "2008-11-09",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "8.1",
+          "date": "2009-06-14",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "8.2",
+          "date": "2009-10-18",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "8.3",
+          "date": "2010-05-26",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "9.0",
+          "date": "2011-05-29",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "9.05",
+          "date": "2013-03-03",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "9.1",
+          "date": "2013-12-27",
+          "url": "string91.embl.de",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "10.0a",
+          "date": "2015-04-12",
+          "url": "version10a.string-db.org",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "10.0",
+          "date": "2016-04-16",
+          "url": "version10.string-db.org",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "10.5",
+          "date": "2017-05-14",
+          "url": "version-10-5.string-db.org",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "11.0",
+          "date": "2019-01-19",
+          "url": "version-11-0.string-db.org",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "11.0b",
+          "date": "2020-10-17",
+          "url": "version-11-0b.string-db.org",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "11.5",
+          "date": "2021-08-12",
+          "url": "https://version-11-5.string-db.org",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "12.0",
+          "date": "2023-07-26",
+          "url": "https://version-12-0.string-db.org",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "12.5 (آخرین)",
+          "date": "2026-09-29",
+          "url": "https://string-db.org",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "biogrid",
+      "name": "BioGRID",
+      "field": "pathways",
+      "homepage": "https://thebiogrid.org/",
+      "license": "Open (MIT)",
+      "summary": "Curated protein, genetic and chemical interactions.",
+      "latest": "5.0.263 (آخرین)",
+      "latest_date": "2026",
+      "versions": [
+        {
+          "version": "2.0.17 (قدیمی‌ترین)",
+          "date": "—",
+          "url": "Release-Archive/BIOGRID-2.0.17/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2.0.x تا 4.4.x",
+          "date": "—",
+          "url": "Release-Archive/BIOGRID-<ver>/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "4.4.249",
+          "date": "—",
+          "url": "Release-Archive/BIOGRID-4.4.249/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "5.0.249 تا 5.0.262 (تغییر نسخه‌ی اصلی حدود ساخت ۲۵۰)",
+          "date": "—",
+          "url": "Release-Archive/BIOGRID-5.0.<N>/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "5.0.263 (آخرین)",
+          "date": "2026",
+          "url": "Release-Archive/BIOGRID-5.0.263/",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "go",
+      "name": "Gene Ontology",
+      "field": "pathways",
+      "homepage": "https://geneontology.org/",
+      "license": "Open (CC BY 4.0)",
+      "summary": "Ontology and annotations for gene function.",
+      "latest": "2026-08-05 (آخرین)",
+      "latest_date": "2026-08-05",
+      "versions": [
+        {
+          "version": "2004-03-01 (قدیمی‌ترین) تا 2024",
+          "date": "2004–2024",
+          "url": "release.geneontology.org/<date>/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2025-02-06",
+          "date": "2025-02-06",
+          "url": "release.geneontology.org/2025-02-06/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2025-03-16",
+          "date": "2025-03-16",
+          "url": "release.geneontology.org/2025-03-16/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2025-06-01",
+          "date": "2025-06-01",
+          "url": "release.geneontology.org/2025-06-01/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2025-07-22",
+          "date": "2025-07-22",
+          "url": "release.geneontology.org/2025-07-22/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2025-10-10",
+          "date": "2025-10-10",
+          "url": "release.geneontology.org/2025-10-10/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2026-01-23",
+          "date": "2026-01-23",
+          "url": "release.geneontology.org/2026-01-23/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2026-03-25",
+          "date": "2026-03-25",
+          "url": "release.geneontology.org/2026-03-25/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2026-05-19",
+          "date": "2026-05-19",
+          "url": "release.geneontology.org/2026-05-19/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2026-06-19",
+          "date": "2026-06-19",
+          "url": "release.geneontology.org/2026-06-19/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2026-08-05 (آخرین)",
+          "date": "2026-08-05",
+          "url": "release.geneontology.org/2026-08-05/ · current.geneontology.org",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "hpo",
+      "name": "Human Phenotype Ontology",
+      "field": "pathways",
+      "homepage": "https://hpo.jax.org/",
+      "license": "Open (HPO licence)",
+      "summary": "Standard vocabulary of human phenotypic abnormalities.",
+      "latest": "v2026-09-01 (آخرین)",
+      "latest_date": "2026-09-03",
+      "versions": [
+        {
+          "version": "v2025-05-06",
+          "date": "2025-05-06",
+          "url": "releases/download/v2025-05-06/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v2025-08-11",
+          "date": "2025-08-11",
+          "url": "releases/download/v2025-08-11/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v2025-09-01",
+          "date": "2025-09-01",
+          "url": "releases/download/v2025-09-01/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v2025-10-22",
+          "date": "2025-10-22",
+          "url": "releases/download/v2025-10-22/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v2025-11-24",
+          "date": "2025-11-24",
+          "url": "releases/download/v2025-11-24/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v2026-01-08",
+          "date": "2026-01-08",
+          "url": "releases/download/v2026-01-08/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v2026-02-16",
+          "date": "2026-02-16",
+          "url": "releases/download/v2026-02-16/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v2026-06-06",
+          "date": "2026-06-06",
+          "url": "releases/download/v2026-06-06/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v2026-06-23",
+          "date": "2026-06-23",
+          "url": "releases/download/v2026-06-23/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v2026-09-01 (آخرین)",
+          "date": "2026-09-03",
+          "url": "releases/download/v2026-09-01/",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "mondo",
+      "name": "MONDO",
+      "field": "pathways",
+      "homepage": "https://mondo.monarchinitiative.org/",
+      "license": "Open (CC BY 4.0)",
+      "summary": "Unified disease ontology.",
+      "latest": "v2026-11-03 (آخرین)",
+      "latest_date": "2026-11-03",
+      "versions": [
+        {
+          "version": "v2026-02-03",
+          "date": "2026-02-03",
+          "url": "releases/download/v2026-02-03/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v2026-03-03",
+          "date": "2026-03-03",
+          "url": "releases/download/v2026-03-03/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v2026-04-07",
+          "date": "2026-04-07",
+          "url": "releases/download/v2026-04-07/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v2026-05-05",
+          "date": "2026-05-05",
+          "url": "releases/download/v2026-05-05/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v2026-06-02",
+          "date": "2026-06-02",
+          "url": "releases/download/v2026-06-02/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v2026-07-06",
+          "date": "2026-07-06",
+          "url": "releases/download/v2026-07-06/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v2026-08-04",
+          "date": "2026-08-04",
+          "url": "releases/download/v2026-08-04/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v2026-09-01",
+          "date": "2026-09-01",
+          "url": "releases/download/v2026-09-01/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v2026-10-06",
+          "date": "2026-10-06",
+          "url": "releases/download/v2026-10-06/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v2026-11-03 (آخرین)",
+          "date": "2026-11-03",
+          "url": "releases/download/v2026-11-03/",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "umls",
+      "name": "UMLS",
+      "field": "pathways",
+      "homepage": "https://www.nlm.nih.gov/research/umls/",
+      "license": "Licence required (free)",
+      "summary": "Unified Medical Language System metathesaurus.",
+      "latest": "2026AA (آخرین)",
+      "latest_date": "2026-05",
+      "versions": [
+        {
+          "version": "2002AA تا 2003AC",
+          "date": "2002–2003",
+          "url": "kss/<VER>/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2004AA",
+          "date": "2004-07-23",
+          "url": "kss/2004AA/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2004AB تا 2015AB",
+          "date": "2004–2015",
+          "url": "kss/<VER>/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2016AA",
+          "date": "2016-05-09",
+          "url": "kss/2016AA/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2016AB",
+          "date": "2016-11-06",
+          "url": "kss/2016AB/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2017AA",
+          "date": "2017-05-08",
+          "url": "kss/2017AA/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2017AB",
+          "date": "2017-11-06",
+          "url": "kss/2017AB/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2018AA",
+          "date": "2018-05-07",
+          "url": "kss/2018AA/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2018AB",
+          "date": "2018-11-05",
+          "url": "kss/2018AB/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2019AA",
+          "date": "2019-05-06",
+          "url": "kss/2019AA/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2019AB",
+          "date": "2019-11-04",
+          "url": "kss/2019AB/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2020AA",
+          "date": "2020-05-04",
+          "url": "kss/2020AA/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2020AB",
+          "date": "2020-11-02",
+          "url": "kss/2020AB/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2021AA (منبع همان تاریخ 2021AB را آورده؛ احتمالاً خطا)",
+          "date": "2021",
+          "url": "kss/2021AA/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2021AB",
+          "date": "2021-11-01",
+          "url": "kss/2021AB/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2022AA",
+          "date": "2022-05-02",
+          "url": "kss/2022AA/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2022AB",
+          "date": "2022-11",
+          "url": "kss/2022AB/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2023AA",
+          "date": "2023-05",
+          "url": "kss/2023AA/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2023AB",
+          "date": "2023-11",
+          "url": "kss/2023AB/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2024AA",
+          "date": "2024-05",
+          "url": "kss/2024AA/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2024AB",
+          "date": "2024-11",
+          "url": "kss/2024AB/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2025AA",
+          "date": "2025-05",
+          "url": "kss/2025AA/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2025AB",
+          "date": "2025-11",
+          "url": "kss/2025AB/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2026AA (آخرین)",
+          "date": "2026-05",
+          "url": "kss/2026AA/",
+          "verified": true,
+          "latest": true
+        },
+        {
+          "version": "2026AB (مورد انتظار)",
+          "date": "2026-11",
+          "url": "—",
+          "verified": true,
+          "latest": false
+        }
+      ]
+    },
+    {
+      "id": "msigdb",
+      "name": "MSigDB",
+      "field": "pathways",
+      "homepage": "https://www.gsea-msigdb.org/gsea/msigdb",
+      "license": "Registration; mostly CC BY 4.0",
+      "summary": "Gene set collections for enrichment analysis.",
+      "latest": "2026.1.Hs / 2026.1.Mm (آخرین تأییدشده)",
+      "latest_date": "2026-01",
+      "versions": [
+        {
+          "version": "v1.0",
+          "date": "2005",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "v2.x تا v7.5.1",
+          "date": "تا 2022",
+          "url": "release/<ver>/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "2022.1.Hs / 2022.1.Mm",
+          "date": "2022",
+          "url": "release/2022.1.Hs/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "2023.1 / 2023.2",
+          "date": "2023",
+          "url": "release/2023.<N>.Hs/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "2024.1",
+          "date": "2024",
+          "url": "release/2024.1.Hs/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "2025.1.Hs",
+          "date": "2025-06",
+          "url": "release/2025.1.Hs/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "2026.1.Hs / 2026.1.Mm (آخرین تأییدشده)",
+          "date": "2026-01",
+          "url": "release/2026.1.Hs/ · 2026.1.Mm/",
+          "verified": true,
+          "latest": true
+        },
+        {
+          "version": "2026.2 (ادعای یک منبع غیررسمی، تأیید نشد)",
+          "date": "2026-10؟",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        }
+      ]
+    },
+    {
+      "id": "corum",
+      "name": "CORUM",
+      "field": "pathways",
+      "homepage": "https://mips.helmholtz-muenchen.de/corum/",
+      "license": "Non-commercial use",
+      "summary": "Mammalian protein complexes.",
+      "latest": "5.0 (آخرین؛ ۷۱۹۳ کمپلکس)",
+      "latest_date": "2024",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2008",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "2.0",
+          "date": "2010",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "3.0",
+          "date": "2019",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "4.0 / 4.1",
+          "date": "2022",
+          "url": "—",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "5.0 (آخرین؛ ۷۱۹۳ کمپلکس)",
+          "date": "2024",
+          "url": "https://mips.helmholtz-muenchen.de/corum/download",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "pathway-commons",
+      "name": "Pathway Commons",
+      "field": "pathways",
+      "homepage": "https://www.pathwaycommons.org/",
+      "license": "Varies by source database",
+      "summary": "Aggregated pathway and interaction data.",
+      "latest": "PC2 v14 (آخرین)",
+      "latest_date": "2024",
+      "versions": [
+        {
+          "version": "PC1",
+          "date": "تا 2016",
+          "url": "https://download.baderlab.org/PathwayCommons/PC1/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "PC2 v1 تا v12",
+          "date": "2012–2019",
+          "url": "https://download.baderlab.org/PathwayCommons/PC2/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "PC2 v13",
+          "date": "2023",
+          "url": "همان",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "PC2 v14 (آخرین)",
+          "date": "2024",
+          "url": "همان",
+          "verified": false,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "chembl",
+      "name": "ChEMBL",
+      "field": "chemistry",
+      "homepage": "https://www.ebi.ac.uk/chembl/",
+      "license": "Open (CC BY-SA 3.0)",
+      "summary": "Bioactive molecules with drug-like properties.",
+      "latest": "chembl_37 (آخرین؛ تاریخ انتشار رسمی 2026-05-01)",
+      "latest_date": "2026-05-29",
+      "versions": [
+        {
+          "version": "chembl_01 تا chembl_20",
+          "date": "تا 2015",
+          "url": "releases/chembl_<NN>/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "chembl_21",
+          "date": "2016-07-14",
+          "url": "releases/chembl_21/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "chembl_22",
+          "date": "2016-11-18",
+          "url": "releases/chembl_22/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "chembl_22_1",
+          "date": "2016-11-15",
+          "url": "releases/chembl_22_1/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "chembl_23",
+          "date": "2017-07-31",
+          "url": "releases/chembl_23/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "chembl_24",
+          "date": "2018-06-18",
+          "url": "releases/chembl_24/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "chembl_24_1",
+          "date": "2018-12-21",
+          "url": "releases/chembl_24_1/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "chembl_25",
+          "date": "2019-03-26",
+          "url": "releases/chembl_25/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "chembl_26",
+          "date": "2020-04-13",
+          "url": "releases/chembl_26/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "chembl_27",
+          "date": "2020-12-03",
+          "url": "releases/chembl_27/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "chembl_28",
+          "date": "2021-06-24",
+          "url": "releases/chembl_28/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "chembl_29",
+          "date": "2021-07-21",
+          "url": "releases/chembl_29/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "chembl_30",
+          "date": "2022-03-10",
+          "url": "releases/chembl_30/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "chembl_31",
+          "date": "2022-08-18",
+          "url": "releases/chembl_31/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "chembl_32",
+          "date": "2023-06-12",
+          "url": "releases/chembl_32/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "chembl_33",
+          "date": "2024-04-15",
+          "url": "releases/chembl_33/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "chembl_34",
+          "date": "2024-12-11",
+          "url": "releases/chembl_34/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "chembl_35",
+          "date": "2025-07-16",
+          "url": "releases/chembl_35/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "chembl_36",
+          "date": "2025-09-24",
+          "url": "releases/chembl_36/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "chembl_37 (آخرین؛ تاریخ انتشار رسمی 2026-05-01)",
+          "date": "2026-05-29",
+          "url": "releases/chembl_37/ · latest/",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "opentargets",
+      "name": "Open Targets Platform",
+      "field": "chemistry",
+      "homepage": "https://platform.opentargets.org/",
+      "license": "Open (CC0)",
+      "summary": "Target-disease evidence for drug discovery.",
+      "latest": "26.09 (آخرین)",
+      "latest_date": "2026-09-24",
+      "versions": [
+        {
+          "version": "16.04, 16.08, 16.12",
+          "date": "2016",
+          "url": "platform/<ver>/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "17.02, 17.04, 17.06, 17.09, 17.12",
+          "date": "2017",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "18.02, 18.04, 18.06, 18.08, 18.10, 18.12",
+          "date": "2018",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "19.02, 19.04, 19.06, 19.09, 19.11",
+          "date": "2019",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20.02, 20.04, 20.06, 20.09, 20.11",
+          "date": "2020",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "21.02, 21.04",
+          "date": "2021",
+          "url": "همان",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "21.06",
+          "date": "2021-06-30",
+          "url": "platform/21.06/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "21.09",
+          "date": "2021-09-30",
+          "url": "platform/21.09/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "21.11",
+          "date": "2021-11-29",
+          "url": "platform/21.11/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "22.02",
+          "date": "2022-02-28",
+          "url": "platform/22.02/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "22.04",
+          "date": "2022-04-28",
+          "url": "platform/22.04/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "22.06",
+          "date": "2022-06-24",
+          "url": "platform/22.06/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "22.09",
+          "date": "2022-09-29",
+          "url": "platform/22.09/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "22.11",
+          "date": "2022-11-24",
+          "url": "platform/22.11/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "23.02",
+          "date": "2023-02-22",
+          "url": "platform/23.02/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "23.06",
+          "date": "2023-06-26",
+          "url": "platform/23.06/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "23.09",
+          "date": "2023-09-21",
+          "url": "platform/23.09/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "23.12",
+          "date": "2023-11-30",
+          "url": "platform/23.12/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "24.03",
+          "date": "2024-03-20",
+          "url": "platform/24.03/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "24.06 (ادغام Genetics)",
+          "date": "2024-06-19",
+          "url": "platform/24.06/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "24.09",
+          "date": "2024-09-18",
+          "url": "platform/24.09/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "25.03 (چیدمان جدید)",
+          "date": "2025-03-19",
+          "url": "platform/25.03/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "25.06",
+          "date": "2025-06-18",
+          "url": "platform/25.06/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "25.09",
+          "date": "2025-09-17",
+          "url": "platform/25.09/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "25.12",
+          "date": "2025-12-10",
+          "url": "platform/25.12/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "26.03",
+          "date": "2026-03-23",
+          "url": "platform/26.03/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "26.06",
+          "date": "2026-06-24",
+          "url": "platform/26.06/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "26.09 (آخرین)",
+          "date": "2026-09-24",
+          "url": "platform/26.09/ · latest/",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "opentargets-genetics",
+      "name": "Open Targets Genetics (retired)",
+      "field": "chemistry",
+      "homepage": "https://genetics.opentargets.org/",
+      "license": "Open (CC0)",
+      "summary": "Variant-to-gene evidence. Stopped at release 22.09.",
+      "latest": "22.02.01",
+      "latest_date": "2022",
+      "versions": [
+        {
+          "version": "190303, 190504, 190505",
+          "date": "2019",
+          "url": "genetics/<ver>/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20022712",
+          "date": "2020",
+          "url": "genetics/20022712/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "210608",
+          "date": "2021",
+          "url": "genetics/210608/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "21.10.01",
+          "date": "2021",
+          "url": "genetics/21.10.01/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "22.02.01",
+          "date": "2022",
+          "url": "genetics/22.02.01/",
+          "verified": true,
+          "latest": true
+        },
+        {
+          "version": "22.09 (آخرین؛ پورتال در 2024-07 بازنشسته شد)",
+          "date": "2022",
+          "url": "genetics/22.09/",
+          "verified": true,
+          "latest": false
+        }
+      ]
+    },
+    {
+      "id": "drugbank",
+      "name": "DrugBank",
+      "field": "chemistry",
+      "homepage": "https://go.drugbank.com/",
+      "license": "CC BY-NC for academics; commercial licence",
+      "summary": "Drug and drug target information.",
+      "latest": "5.1.22 (جدیدترین در خلاصه، ناهمخوان)",
+      "latest_date": "2026-06-27",
+      "versions": [
+        {
+          "version": "5.1.12",
+          "date": "2024-03-14",
+          "url": "releases/5-1-12/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "5.1.13",
+          "date": "2025-01-02",
+          "url": "releases/5-1-13/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "5.1.14",
+          "date": "2026-01-04",
+          "url": "releases/5-1-14/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "5.1.22 (جدیدترین در خلاصه، ناهمخوان)",
+          "date": "2026-06-27",
+          "url": "releases/5-1-22/",
+          "verified": false,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "pdbbind",
+      "name": "PDBbind",
+      "field": "chemistry",
+      "homepage": "https://www.pdbbind-plus.org.cn/",
+      "license": "Registration; recent releases paid",
+      "summary": "Binding affinities for biomolecular complexes in the PDB.",
+      "latest": "v2020 (آخرین نسخه‌ی رایگان)",
+      "latest_date": "2020",
+      "versions": [
+        {
+          "version": "v2007 تا v2019 (رایگان با ثبت‌نام؛ v2016 همراه CASF-2016)",
+          "date": "2007–2019",
+          "url": "legacy http://www.pdbbind.org.cn/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "v2020 (آخرین نسخه‌ی رایگان)",
+          "date": "2020",
+          "url": "همان",
+          "verified": true,
+          "latest": true
+        },
+        {
+          "version": "v2021، v2024 و بعد (PDBbind+، اشتراکی)",
+          "date": "2021–",
+          "url": "https://www.pdbbind-plus.org.cn/",
+          "verified": true,
+          "latest": false
+        }
+      ]
+    },
+    {
+      "id": "hmdb",
+      "name": "HMDB",
+      "field": "chemistry",
+      "homepage": "https://hmdb.ca/",
+      "license": "Free for academic use",
+      "summary": "Human metabolome database.",
+      "latest": "5.0 (آخرین؛ نسخه‌ی 6.0 پیدا نشد)",
+      "latest_date": "2022",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2007",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "2.0 / 2.5",
+          "date": "2009",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "3.0 / 3.6",
+          "date": "2013",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "4.0",
+          "date": "2018",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "5.0 (آخرین؛ نسخه‌ی 6.0 پیدا نشد)",
+          "date": "2022",
+          "url": "https://hmdb.ca/downloads",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "papyrus",
+      "name": "Papyrus",
+      "field": "chemistry",
+      "homepage": "https://github.com/OlivierBeq/Papyrus-scripts",
+      "license": "Open (CC BY-SA 4.0)",
+      "summary": "Large-scale curated bioactivity dataset.",
+      "latest": "05.5 / 05.6 / 05.7",
+      "latest_date": "—",
+      "versions": [
+        {
+          "version": "05.4",
+          "date": "2022-04-04 (اصلاح 2024-04-08)",
+          "url": "https://zenodo.org/records/10943992",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "05.5 / 05.6 / 05.7",
+          "date": "—",
+          "url": "papyrus download -V <ver>",
+          "verified": false,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "jaspar",
+      "name": "JASPAR",
+      "field": "regulation",
+      "homepage": "https://jaspar.elixir.no/",
+      "license": "Open (CC BY 4.0)",
+      "summary": "Transcription factor binding profiles.",
+      "latest": "2026 (آخرین؛ release 11)",
+      "latest_date": "2026-01",
+      "versions": [
+        {
+          "version": "2004 (اولین)",
+          "date": "2004",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "2006",
+          "date": "2006",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "2008",
+          "date": "2008",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "2010",
+          "date": "2010",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "2014",
+          "date": "2014",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "2016",
+          "date": "2016",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "2018",
+          "date": "2018",
+          "url": "Bioconductor JASPAR2018",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "2020",
+          "date": "2020",
+          "url": "jaspar2020.genereg.net · JASPAR2020",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "2022",
+          "date": "2022",
+          "url": "jaspar2022.genereg.net · JASPAR2022",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "2024",
+          "date": "2024",
+          "url": "jaspar2024.genereg.net (پاسخ نداد) · JASPAR2024",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "2026 (آخرین؛ release 11)",
+          "date": "2026-01",
+          "url": "https://jaspar.elixir.no/api/v1/releases/11/",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "hocomoco",
+      "name": "HOCOMOCO",
+      "field": "regulation",
+      "homepage": "https://hocomoco14.autosome.org/",
+      "license": "See site",
+      "summary": "Transcription factor binding models for human and mouse.",
+      "latest": "v14 (آخرین؛ ۱۵۹۵ مدل)",
+      "latest_date": "—",
+      "versions": [
+        {
+          "version": "v9",
+          "date": "2013",
+          "url": "GitHub autosome-ru/hocomoco_v9",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v10",
+          "date": "2015/16",
+          "url": "hocomoco14.autosome.org/downloads_v10",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v11",
+          "date": "2017/18",
+          "url": "hocomoco14.autosome.org/downloads_v11",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v12",
+          "date": "2023",
+          "url": "hocomoco14.autosome.org/downloads_v12",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v13",
+          "date": "2024/25",
+          "url": "hocomoco14.autosome.org/downloads_v13",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v14 (آخرین؛ ۱۵۹۵ مدل)",
+          "date": "—",
+          "url": "hocomoco14.autosome.org/downloads_v14",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "remap",
+      "name": "ReMap",
+      "field": "regulation",
+      "homepage": "https://remap.univ-amu.fr/",
+      "license": "See site",
+      "summary": "Atlas of regulatory regions from ChIP-seq.",
+      "latest": "ReMap 2022 (آخرین تأییدشده)",
+      "latest_date": "2022",
+      "versions": [
+        {
+          "version": "ReMap 2018",
+          "date": "2018",
+          "url": "https://remap2018.univ-amu.fr/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "ReMap 2020",
+          "date": "2020",
+          "url": "https://remap2020.univ-amu.fr/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "ReMap 2022 (آخرین تأییدشده)",
+          "date": "2022",
+          "url": "https://remap2022.univ-amu.fr/",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "encode-ccre",
+      "name": "ENCODE cCRE Registry",
+      "field": "regulation",
+      "homepage": "https://screen.encodeproject.org/",
+      "license": "Open, no restrictions",
+      "summary": "Candidate cis-regulatory elements.",
+      "latest": "V4 (آخرین)",
+      "latest_date": "2024/25",
+      "versions": [
+        {
+          "version": "V1",
+          "date": "2017–18",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "V2",
+          "date": "2020",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "V3",
+          "date": "2022",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "V4 (آخرین)",
+          "date": "2024/25",
+          "url": "https://downloads.wenglab.org/ (مثلاً GRCh38-cCREs.V4.bed)",
+          "verified": false,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "rnacentral",
+      "name": "RNAcentral",
+      "field": "rna",
+      "homepage": "https://rnacentral.org/",
+      "license": "Open (CC0)",
+      "summary": "Non-coding RNA sequences from many databases.",
+      "latest": "Release 28 (آخرین)",
+      "latest_date": "2026-10-19",
+      "versions": [
+        {
+          "version": "Release 1 تا 24",
+          "date": "—",
+          "url": "releases/<N>.0/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "Release 25 (Rfam 15.0)",
+          "date": "2025-06-19",
+          "url": "releases/25.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "Release 26",
+          "date": "2025-10-08",
+          "url": "releases/26.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "Release 27 (Rfam 15.1)",
+          "date": "2026-07-29",
+          "url": "releases/27.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "Release 28 (آخرین)",
+          "date": "2026-10-19",
+          "url": "releases/28.0/ · current_release/",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "rfam",
+      "name": "Rfam",
+      "field": "rna",
+      "homepage": "https://rfam.org/",
+      "license": "Open (CC0)",
+      "summary": "RNA families.",
+      "latest": "15.1 (آخرین؛ ۴۲۲۷ خانواده)",
+      "latest_date": "2026-01",
+      "versions": [
+        {
+          "version": "12.0 تا 12.3",
+          "date": "—",
+          "url": "Rfam/12.<N>/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "13.0",
+          "date": "—",
+          "url": "Rfam/13.0/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "14.0 تا 14.10 (14.9 در AlphaFold 3)",
+          "date": "تا 2023",
+          "url": "Rfam/14.<N>/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "15.0",
+          "date": "2024/2025",
+          "url": "Rfam/15.0/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "15.1 (آخرین؛ ۴۲۲۷ خانواده)",
+          "date": "2026-01",
+          "url": "Rfam/15.1/ · CURRENT/",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "mirbase",
+      "name": "miRBase",
+      "field": "rna",
+      "homepage": "https://www.mirbase.org/",
+      "license": "See site",
+      "summary": "MicroRNA sequences and annotation.",
+      "latest": "22.1 (آخرین؛ نسخه‌ی ۲۳ پیدا نشد)",
+      "latest_date": "2018-10",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2002",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "20",
+          "date": "2013",
+          "url": "download_version_files/miRNA/20/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "21",
+          "date": "2014-06",
+          "url": "download_version_files/miRNA/21/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "22",
+          "date": "2018-03",
+          "url": "download_version_files/miRNA/22/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "22.1 (آخرین؛ نسخه‌ی ۲۳ پیدا نشد)",
+          "date": "2018-10",
+          "url": "download_version_files/miRNA/22.1/",
+          "verified": false,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "mirtarbase",
+      "name": "miRTarBase",
+      "field": "rna",
+      "homepage": "https://mirtarbase.cuhk.edu.cn/",
+      "license": "See site",
+      "summary": "Experimentally validated microRNA-target interactions.",
+      "latest": "10.0 (= miRTarBase 2025، آخرین)",
+      "latest_date": "2024-09-30",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2010",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "6.0",
+          "date": "2016",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "7.0",
+          "date": "2018",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "8.0",
+          "date": "2020",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "9.0",
+          "date": "2022",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "10.0 (= miRTarBase 2025، آخرین)",
+          "date": "2024-09-30",
+          "url": "https://mirtarbase.cuhk.edu.cn/",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "targetscan",
+      "name": "TargetScan",
+      "field": "rna",
+      "homepage": "https://www.targetscan.org/",
+      "license": "See site",
+      "summary": "Predicted microRNA targets.",
+      "latest": "8.0 (آخرین)",
+      "latest_date": "2021-09",
+      "versions": [
+        {
+          "version": "6.2",
+          "date": "2012",
+          "url": "vert_62/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "7.0",
+          "date": "2015",
+          "url": "vert_70/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "7.1",
+          "date": "2016",
+          "url": "vert_71/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "7.2",
+          "date": "2018-03",
+          "url": "vert_72/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "8.0 (آخرین)",
+          "date": "2021-09",
+          "url": "vert_80/vert_80_data_download/",
+          "verified": false,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "silva",
+      "name": "SILVA",
+      "field": "microbiome",
+      "homepage": "https://www.arb-silva.de/",
+      "license": "Open (CC BY 4.0)",
+      "summary": "Ribosomal RNA gene database. SSU and LSU have separate release numbers.",
+      "latest": "144 (آخرین SSU)",
+      "latest_date": "2026-08-14",
+      "versions": [
+        {
+          "version": "102, 104, 106, 108",
+          "date": "قدیمی",
+          "url": "release_<N>/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "111",
+          "date": "2012",
+          "url": "release_111/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "115, 119, 119.1",
+          "date": "—",
+          "url": "release_<N>/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "123 / 123.1",
+          "date": "2015",
+          "url": "release_123/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "128",
+          "date": "2016-09",
+          "url": "release_128/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "132",
+          "date": "2017-12",
+          "url": "release_132/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "138",
+          "date": "2019-12",
+          "url": "release_138/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "138.1",
+          "date": "2020-08",
+          "url": "release_<N>/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "138.2 (آخرین LSU)",
+          "date": "2024-07-11",
+          "url": "SILVA_138.2_SSURef_NR99_03_07_24_opt.arb.gz",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "144 (آخرین SSU)",
+          "date": "2026-08-14",
+          "url": "/current-release · /documentation/release-144",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "gtdb",
+      "name": "GTDB",
+      "field": "microbiome",
+      "homepage": "https://gtdb.ecogenomic.org/",
+      "license": "Open (CC BY-SA 4.0)",
+      "summary": "Genome-based taxonomy for bacteria and archaea.",
+      "latest": "R11-RS232 (آخرین؛ ۹۰۱٬۳۴۱ ژنوم)",
+      "latest_date": "2026-04-15",
+      "versions": [
+        {
+          "version": "R80",
+          "date": "2017-11",
+          "url": "releases/release80/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "R83",
+          "date": "—",
+          "url": "releases/release83/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "R86 / R86.2",
+          "date": "—",
+          "url": "releases/release86/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "R89",
+          "date": "2019-06",
+          "url": "releases/release89/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "R95",
+          "date": "2020-07",
+          "url": "releases/release95/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "R06-RS202",
+          "date": "2021-04",
+          "url": "releases/release202/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "R07-RS207",
+          "date": "2022-04",
+          "url": "releases/release207/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "R08-RS214",
+          "date": "2023-04",
+          "url": "releases/release214/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "R09-RS220",
+          "date": "2024-04",
+          "url": "releases/release220/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "R10-RS226 (۷۳۲٬۴۷۵ ژنوم)",
+          "date": "2025-04",
+          "url": "releases/release226/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "R11-RS232 (آخرین؛ ۹۰۱٬۳۴۱ ژنوم)",
+          "date": "2026-04-15",
+          "url": "releases/release232/232.0/ · releases/latest/",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "kraken2",
+      "name": "Kraken2 prebuilt indexes",
+      "field": "microbiome",
+      "homepage": "https://benlangmead.github.io/aws-indexes/k2",
+      "license": "See site",
+      "summary": "Dated prebuilt Kraken2 databases.",
+      "latest": "20261022 (آخرین؛ Standard/PlusPF/PlusPFP/Viral/MinusB)",
+      "latest_date": "2026-10-22",
+      "versions": [
+        {
+          "version": "20200919",
+          "date": "2020-09-19",
+          "url": "k2_<collection>_20200919.tar.gz",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20201202 / 20210127",
+          "date": "2020–2021",
+          "url": "همان الگو",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20210517",
+          "date": "2021-05-17",
+          "url": "همان الگو",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20220607",
+          "date": "2022-06-07",
+          "url": "همان الگو",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20220908 / 20220926",
+          "date": "2022-09",
+          "url": "همان الگو",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20221209",
+          "date": "2022-12-09",
+          "url": "همان الگو",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20230314",
+          "date": "2023-03-14",
+          "url": "همان الگو",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20230407 (EuPathDB48)",
+          "date": "2023-04-07",
+          "url": "k2_eupathdb48_20230407.tar.gz",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20230502 / 20231129 / 20240530 (full nt، متوقف شد)",
+          "date": "2023–2024",
+          "url": "k2_nt_<date>.tar.gz",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20230605",
+          "date": "2023-06-05",
+          "url": "همان الگو",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20231009",
+          "date": "2023-10-09",
+          "url": "همان الگو",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20240112",
+          "date": "2024-01-12",
+          "url": "همان الگو",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20240605",
+          "date": "2024-06-05",
+          "url": "همان الگو",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20240904",
+          "date": "2024-09-04",
+          "url": "همان الگو",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20241109 (GTDB r220)",
+          "date": "2024-11-09",
+          "url": "همان الگو",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20241228",
+          "date": "2024-12-28",
+          "url": "همان الگو",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20250402",
+          "date": "2025-04-02",
+          "url": "همان الگو",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20250609 (GTDB r226)",
+          "date": "2025-06-09",
+          "url": "k2_gtdb_genome_reps_20250609.tar.gz",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20250714",
+          "date": "2025-07-14",
+          "url": "همان الگو",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20251007 (Pracken NCBI)",
+          "date": "2025-10-07",
+          "url": "همان الگو",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20251015 (core_nt)",
+          "date": "2025-10-15",
+          "url": "k2_core_nt_20251015.tar.gz",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20260226",
+          "date": "2026-02-26",
+          "url": "همان الگو",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20260626",
+          "date": "2026-06-26",
+          "url": "همان الگو",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "20261022 (آخرین؛ Standard/PlusPF/PlusPFP/Viral/MinusB)",
+          "date": "2026-10-22",
+          "url": "k2_standard_20261022.tar.gz",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "unite",
+      "name": "UNITE",
+      "field": "microbiome",
+      "homepage": "https://unite.ut.ee/",
+      "license": "See site",
+      "summary": "Fungal ITS sequences for identification.",
+      "latest": "10.0 (آخرین؛ یک فایل tgz با هر سه clustering)",
+      "latest_date": "2024 یا 2025-02-19 (منابع ناهمخوان)",
+      "versions": [
+        {
+          "version": "7.0، 7.1، 7.2",
+          "date": "2017",
+          "url": "https://unite.ut.ee/repository.php (DOI از PlutoF)",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "8.0",
+          "date": "2018",
+          "url": "همان",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "8.2",
+          "date": "2020",
+          "url": "همان",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "8.3",
+          "date": "2021",
+          "url": "همان",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "9.0",
+          "date": "2022/2023",
+          "url": "همان",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "10.0 (آخرین؛ یک فایل tgz با هر سه clustering)",
+          "date": "2024 یا 2025-02-19 (منابع ناهمخوان)",
+          "url": "همان",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "greengenes",
+      "name": "Greengenes and Greengenes2",
+      "field": "microbiome",
+      "homepage": "https://greengenes2.ucsd.edu/",
+      "license": "See site",
+      "summary": "16S rRNA reference taxonomy.",
+      "latest": "Greengenes2 2024.09 (آخرین)",
+      "latest_date": "2024-09",
+      "versions": [
+        {
+          "version": "Greengenes 13_5 / 13_8 (بازنشسته)",
+          "date": "2013",
+          "url": "از طریق QIIME",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "Greengenes2 2022.10",
+          "date": "2022-10",
+          "url": "https://ftp.microbio.me/greengenes_release/2022.10/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "Greengenes2 2024.09 (آخرین)",
+          "date": "2024-09",
+          "url": "https://ftp.microbio.me/greengenes_release/2024.09/",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "metaphlan",
+      "name": "MetaPhlAn / ChocoPhlAn",
+      "field": "microbiome",
+      "homepage": "https://github.com/biobakery/MetaPhlAn",
+      "license": "See site",
+      "summary": "Marker gene databases for metagenomic profiling.",
+      "latest": "mpa_vJan25_CHOCOPhlAnSGB_202503 (4.2)",
+      "latest_date": "2025",
+      "versions": [
+        {
+          "version": "mpa_v20_m200 (MetaPhlAn 2)",
+          "date": "—",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "mpa_v30 (ChocoPhlAn 201901)",
+          "date": "2019",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "mpa_v31",
+          "date": "—",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "mpa_vJan21",
+          "date": "2021-01",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "mpa_vOct22_CHOCOPhlAnSGB_202212 (MetaPhlAn 4.0)",
+          "date": "2022",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "mpa_vJun23_CHOCOPhlAnSGB_202307 (4.1)",
+          "date": "2023",
+          "url": "—",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "mpa_vJan25_CHOCOPhlAnSGB_202503 (4.2)",
+          "date": "2025",
+          "url": "—",
+          "verified": false,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "proteingym",
+      "name": "ProteinGym",
+      "field": "benchmarks",
+      "homepage": "https://proteingym.org/",
+      "license": "Open (MIT)",
+      "summary": "Benchmarks for protein fitness and variant effect prediction.",
+      "latest": "v1.3 (آخرین)",
+      "latest_date": "—",
+      "versions": [
+        {
+          "version": "v0.1 (اولیه)",
+          "date": "2022",
+          "url": "HF ICML2022/ProteinGym",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "v1.0",
+          "date": "—",
+          "url": "https://doi.org/10.5281/zenodo.13932633",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v1.1",
+          "date": "—",
+          "url": "https://doi.org/10.5281/zenodo.13936340",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v1.2",
+          "date": "—",
+          "url": "https://doi.org/10.5281/zenodo.14997691",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "v1.3 (آخرین)",
+          "date": "—",
+          "url": "https://doi.org/10.5281/zenodo.15293562",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "casp",
+      "name": "CASP",
+      "field": "benchmarks",
+      "homepage": "https://predictioncenter.org/",
+      "license": "Open",
+      "summary": "Critical Assessment of protein Structure Prediction.",
+      "latest": "CASP17 (فصل پیش‌بینی تمام شد؛ کنفرانس دسامبر ۲۰۲۶)",
+      "latest_date": "2026",
+      "versions": [
+        {
+          "version": "CASP1 تا CASP15 (هر دو سال)",
+          "date": "1994–2022",
+          "url": "download_area/CASP<N>/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "CASP16",
+          "date": "2024",
+          "url": "https://predictioncenter.org/casp16/",
+          "verified": true,
+          "latest": false
+        },
+        {
+          "version": "CASP17 (فصل پیش‌بینی تمام شد؛ کنفرانس دسامبر ۲۰۲۶)",
+          "date": "2026",
+          "url": "download_area/CASP17/",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "id": "cafa",
+      "name": "CAFA",
+      "field": "benchmarks",
+      "homepage": "https://biofunctionprediction.org/cafa/",
+      "license": "Open",
+      "summary": "Critical Assessment of Functional Annotation.",
+      "latest": "CAFA6 (Kaggle؛ ارزیابی نهایی حدود مه ۲۰۲۶)",
+      "latest_date": "2025-10",
+      "versions": [
+        {
+          "version": "CAFA1",
+          "date": "2010–11",
+          "url": "https://www.biofunctionprediction.org/cafa/",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "CAFA2",
+          "date": "2013–14",
+          "url": "همان",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "CAFA3",
+          "date": "2016–17",
+          "url": "همان",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "CAFA4",
+          "date": "2019–20",
+          "url": "همان",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "CAFA5 (Kaggle)",
+          "date": "2023",
+          "url": "kaggle.com/competitions/cafa-5-protein-function-prediction",
+          "verified": false,
+          "latest": false
+        },
+        {
+          "version": "CAFA6 (Kaggle؛ ارزیابی نهایی حدود مه ۲۰۲۶)",
+          "date": "2025-10",
+          "url": "kaggle.com/competitions/cafa-6-protein-function-prediction",
+          "verified": true,
+          "latest": true
+        }
+      ]
+    }
+  ]
+}

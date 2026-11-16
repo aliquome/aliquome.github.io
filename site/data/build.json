@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-11-16T18:16:47Z",
+  "engine": "local preview (bootstrap script)",
+  "commit": "local",
+  "mode": "offline",
+  "inputs": {
+    "databases_versions.csv": "d05a89cde74b9598dfd67947204c59dcfb52b552742b7f1c13fa7a98982a2103",
+    "datasets.csv": "a6bbddb828d82d91cb4348402eb6a62e1db2f3927f7c80583e8341ea32393c6a",
+    "registry/fields.toml": "20d5b4477d5a6c51855fd7f90ce4efbe12a0c28d5b2a486924959bac7eca8291",
+    "registry/sources.toml": "045f18bfc6da673aab7aaed1d0f78f73fa6bd4a99bfc703b163c29eb50c66a82"
+  },
+  "counts": {
+    "datasets": 194,
+    "sources": 83,
+    "versions": 794
+  }
+}
