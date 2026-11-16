@@ -159,7 +159,7 @@ function codePanel(url, type, title) {
             .join("")}</div>
            ${tabs
              .map(
-               (t, i) => `<div class="code" data-pane="${id}-${i}" ${i ? "hidden" : ""}><pre>${esc(t[1])}</pre><button class="btn small" type="button" data-copy-pre>Copy</button></div>`
+               (t, i) => `<div class="code" data-pane="${id}-${i}" ${i ? "hidden" : ""}><div class="code-bar"><span>${esc(t[0])}</span><button class="btn small" type="button" data-copy-pre>Copy</button></div><pre>${esc(t[1])}</pre></div>`
              )
              .join("")}`
         : ""
@@ -172,7 +172,7 @@ document.addEventListener("click", (e) => {
   const c = e.target.closest("[data-copy]");
   if (c) return copy(c.dataset.copy);
   const pre = e.target.closest("[data-copy-pre]");
-  if (pre) return copy(pre.parentElement.querySelector("pre").textContent);
+  if (pre) return copy(pre.closest(".code").querySelector("pre").textContent);
   const tab = e.target.closest("[data-tab]");
   if (tab) {
     const panel = tab.closest(".get");
@@ -338,9 +338,14 @@ function paperCard(p, field, open = false) {
     const f = fieldOf(id);
     return `<a class="tag field" style="--dot:${baseVar(f)}" href="#latest/${esc(id)}">${esc(f.label)}</a>`;
   }).join("");
-  return `<article class="paper">
+  return `<article class="paper"><div class="paper-text">
     <h3><a href="${esc(safe(p.url))}" target="_blank" rel="noopener">${esc(p.title)}</a></h3>
     <p class="who">${esc(authors)}</p>
+    ${p.abstract
+      ? `<p class="abstract" lang="en" data-paper="${esc(p.id)}">${esc(open || p.abstract.length <= 420 ? p.abstract : cut(p.abstract))}</p>
+    ${p.abstract.length > 420 ? `<button class="more" type="button" data-more>${open ? "Show less" : "Read the full abstract"}</button>` : ""}`
+      : `<p class="hint">The abstract of this paper is not openly licensed. Read it on the publisher’s page.</p>`}
+    </div><div class="paper-side">
     <p class="meta"><span class="journal">${esc(p.journal || "—")}</span><span>${esc(p.fields ? prettyDate(p.date) : p.year)}</span>${
       p.cited ? `<span>cited ${num(p.cited)}×</span>` : ""}${
       p.license ? `<span>${esc(p.license.toUpperCase())}</span>` : ""
@@ -352,14 +357,10 @@ function paperCard(p, field, open = false) {
             .join("")}</div>`
         : ""
     }
-    ${p.abstract
-      ? `<p class="abstract" lang="en" data-paper="${esc(p.id)}">${esc(open || p.abstract.length <= 420 ? p.abstract : cut(p.abstract))}</p>
-    ${p.abstract.length > 420 ? `<button class="more" type="button" data-more>${open ? "Show less" : "Read the full abstract"}</button>` : ""}`
-      : `<p class="hint">The abstract of this paper is not openly licensed. Read it on the publisher's page.</p>`}
     <div class="links">${safe(p.url) ? `<a class="btn small" href="${esc(p.url)}" target="_blank" rel="noopener">Article</a>` : ""}${
       safe(p.pdf) ? `<a class="btn small" href="${esc(p.pdf)}" target="_blank" rel="noopener">PDF</a>` : ""
     }<button class="btn small" type="button" data-cite="${esc(p.id)}">Cite (BibTeX)</button>${saveBtn("pp", p.id, "Save")}</div>
-  </article>`;
+  </div></article>`;
 }
 document.addEventListener("click", (e) => {
   const c = e.target.closest("[data-cite]");
@@ -423,35 +424,28 @@ async function pageHome() {
       <div><dt>Releases tracked</dt><dd class="num">${num(versions)}</dd></div>
       <div><dt>With a direct link</dt><dd class="num">${num(linked)}</dd></div>
       <div><dt>Datasets</dt><dd class="num">${num(S.datasets.length)}</dd></div>
-      <div><dt>Sources up today</dt>${checked.length ? `<dd class="num">${up} of ${checked.length}</dd>` : `<dd class="text">First check runs on the next daily build</dd>`}</div>
+      ${checked.length ? "" : "<!-- status cell appears after the first daily check -->"}<div ${checked.length ? "" : "hidden"}><dt>Sources up today</dt><dd class="num">${up} of ${checked.length}</dd></div>
     </dl>
   </section>
 
   <section class="section actions">
-    <a class="action" href="#sources" style="--dot:var(--base-a)"><b>Get a database release</b><span>Every version with a link and download code</span></a>
-    <a class="action" href="#datasets" style="--dot:var(--base-c)"><b>Find a dataset</b><span>Benchmarks and training data for your task</span></a>
-    <a class="action" href="#latest" style="--dot:var(--base-g)"><b>Read new papers</b><span>The last 60 days in the leading journals</span></a>
-    <a class="action" href="#benchmarks" style="--dot:var(--base-t)"><b>Compare models</b><span>Published results tables, side by side</span></a>
+    <a class="action" href="#sources" style="--dot:var(--base-a)"><b>Pin a database release</b><span>${num(S.sources.length)} databases, every version with its own link</span></a>
+    <a class="action" href="#datasets" style="--dot:var(--base-c)"><b>Find a training set</b><span>${num(S.datasets.length)} datasets and benchmarks, with download code</span></a>
+    <a class="action" href="#latest" style="--dot:var(--base-g)"><b>Read this month’s methods</b><span>Bioinformatics, NAR, Nature Methods and more</span></a>
+    <a class="action" href="#benchmarks" style="--dot:var(--base-t)"><b>Rank protein models</b><span>ProteinGym results as published</span></a>
   </section>
 
   <section class="section">
-    <div class="section-head"><h2>Explore by field</h2><a href="#sources">All databases</a></div>
-    <div class="fields" id="field-tiles">${S.fields.map((x) => {
-      const nDb = S.sources.filter((s) => s.field === x.id).length;
-      const nDs = S.datasets.filter((d) => d.field === x.id).length;
-      return `<div class="field-tile" style="--dot:${baseVar(x)}">
-        <span class="field-art">${art(x.label, x.id)}</span>
-        <div class="field-body"><h3>${esc(x.label)}</h3>
-          <p class="field-links"><a href="#sources/${esc(x.id)}">${nDb} databases</a><a href="#datasets/${esc(x.id)}">${nDs} datasets</a><a href="#latest/${esc(x.id)}" data-latest-count="${esc(x.id)}">New papers</a></p></div>
-      </div>`;
-    }).join("")}</div>
+    <div class="section-head"><h2>Databases by field</h2><a href="#sources">All databases</a></div>
+    ${gel({ id: "home-gel", counts: Object.fromEntries(S.fields.map((x) => [x.id, S.sources.filter((s) => s.field === x.id).length])), unit: "databases", link: (id) => `#sources/${id}` })}
+    <ul class="field-index">${S.fields.map((x) => `<li style="--dot:${baseVar(x)}"><h3>${esc(x.label)}</h3><p class="field-links"><a href="#sources/${esc(x.id)}">${S.sources.filter((s) => s.field === x.id).length} databases</a><a href="#datasets/${esc(x.id)}">${S.datasets.filter((d) => d.field === x.id).length} datasets</a><a href="#latest/${esc(x.id)}" data-latest-count="${esc(x.id)}">New papers</a></p></li>`).join("")}</ul>
   </section>
 
   <section class="section" id="home-latest"></section>
 
   <section class="section">
     <div class="section-head"><h2>Recently released</h2><a href="#sources">All databases</a></div>
-    <ul class="db-list">${[...S.sources]
+    <ul class="db-list compact">${[...S.sources]
       .filter((s) => /^\d{4}-\d{2}/.test(s.latest_date))
       .sort((a, b) => b.latest_date.localeCompare(a.latest_date))
       .slice(0, 4)
@@ -474,7 +468,7 @@ async function pageHome() {
   if (latest?.papers?.length && lslot) {
     const counts = {};
     latest.papers.forEach((p) => p.fields?.forEach((fid) => (counts[fid] = (counts[fid] || 0) + 1)));
-    document.querySelectorAll("[data-latest-count]").forEach((a) => (a.textContent = `${counts[a.dataset.latestCount] || 0} new papers`));
+    document.querySelectorAll("[data-latest-count]").forEach((el) => (el.textContent = `${counts[el.dataset.latestCount] || 0} new papers`));
     const fresh = latest.papers.filter((p) => p.abstract).slice(0, 4);
     lslot.innerHTML = `<div class="section-head"><h2>New in the journals</h2><a href="#latest">${num(latest.papers.length)} papers in the last ${latest.days} days</a></div>
       <div class="paper-list">${fresh.map((p) => paperCard(p, "")).join("")}</div>`;
@@ -595,7 +589,7 @@ function pageSource(id) {
       <label class="gel-search" for="relq"><svg width="16" height="16" viewBox="0 0 18 18" aria-hidden="true"><circle cx="7.5" cy="7.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 12l4.5 4.5" stroke="currentColor" stroke-width="1.6"/></svg><input id="relq" type="search" placeholder="Find a release, e.g. ${esc(s.versions[0]?.version || "")}"></label>
       <label class="check"><input type="checkbox" id="rellinked"> Only releases with a direct link</label>
     </div>
-    <div class="table-wrap"><table>
+    <div class="table-wrap"><table class="releases">
       <thead><tr><th>Release</th><th>Date</th><th>Status</th><th>Direct link</th><th></th><th>Checked</th></tr></thead>
       <tbody>${rows
         .map((v, i) => {
@@ -678,8 +672,10 @@ function pageDatasets(field, preset) {
     ${gel({ id: "chips", active: field, counts, unit: "datasets", search: { id: "filter", placeholder: "Filter by name or description", value: preset } })}
     <p class="count" id="count"></p>
     <div class="rows" id="rows"></div>
+    <div class="more-row"><button class="btn" type="button" id="dsmore" hidden>Show more datasets</button></div>
   </section></div>`;
   let active = field || "";
+  let shown = 30;
   const rows = document.getElementById("rows");
   const filter = document.getElementById("filter");
   const draw = () => {
@@ -688,9 +684,12 @@ function pageDatasets(field, preset) {
       .filter((d) => (!active || d.field === active) && (!term || d.name.toLowerCase().includes(term) || d.description.toLowerCase().includes(term)))
       .sort((a, b) => (b.stars ?? -1) - (a.stars ?? -1) || (b.paper_count ?? 0) - (a.paper_count ?? 0));
     document.getElementById("count").textContent = `${list.length} of ${S.datasets.length} datasets`;
-    rows.innerHTML = list.length ? list.map(datasetRow).join("") : `<p class="note">No dataset matches this filter.</p>`;
+    rows.innerHTML = list.length ? list.slice(0, shown).map(datasetRow).join("") : `<p class="note">No dataset matches this filter.</p>`;
+    document.getElementById("dsmore").hidden = list.length <= shown;
     armArt();
   };
+  document.getElementById("dsmore").addEventListener("click", () => { shown += 30; draw(); });
+  filter.addEventListener("input", () => { shown = 30; });
   document.getElementById("chips").addEventListener("click", (e) => {
     const b = e.target.closest("button[data-field]");
     if (!b) return;
