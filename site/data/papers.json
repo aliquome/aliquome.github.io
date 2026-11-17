@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T12:53:52Z",
+  "generated_at": "2026-11-17T13:06:03Z",
   "source": "Europe PMC REST API",
   "rule": "For each field, the 30 most cited open-access papers of all time and the 30 most cited of the last 24 months that match the field query. Tasks come from keyword patterns; datasets are databases and datasets named in the title, abstract or keywords.",
   "fields": [
@@ -8152,6 +8152,41 @@
           "url": "https://doi.org/10.1093/bioadv/vbaf060"
         },
         {
+          "id": "MED:40233800",
+          "title": "Emerging frontiers in protein structure prediction following the AlphaFold revolution.",
+          "method": "",
+          "authors": "Rennie ML, Oliver MR.",
+          "journal": "Journal of the Royal Society, Interface",
+          "year": "2025",
+          "date": "2025-04-16",
+          "doi": "10.1098/rsif.2024.0886",
+          "cited": 20,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC11999738?pdf=render",
+          "keywords": [
+            "Conformational changes",
+            "Co-evolution",
+            "Protein Structure Prediction",
+            "Protein–protein Interactions",
+            "Biomolecular Interactions",
+            "Alphafold",
+            "Proteins",
+            "Protein Folding",
+            "Models, Molecular",
+            "Deep Learning"
+          ],
+          "tasks": [
+            "structure",
+            "complexes"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Models of protein structures enable molecular understanding of biological processes. Current protein structure prediction tools lie at the interface of biology, chemistry and computer science. Millions of protein structure models have been generated in a very short space of time through a revolution in protein structure prediction driven by deep learning, led by AlphaFold. This has provided a wealth of new structural information. Interpreting these predictions is critical to determining where and when this information is useful. But proteins are not static nor do they act alone, and structures of proteins interacting with other proteins and other biomolecules are critical to a complete understanding of their biological function at the molecular level. This review focuses on the application of state-of-the-art protein structure prediction to these advanced applications. We also suggest a set of guidelines for reporting AlphaFold predictions.",
+          "url": "https://doi.org/10.1098/rsif.2024.0886"
+        },
+        {
           "id": "MED:40958060",
           "title": "Viro3D: a comprehensive database of virus protein structure predictions.",
           "method": "Viro3D",
@@ -8212,41 +8247,6 @@
           ],
           "abstract": "Motivation Allostery, the process by which binding at one site perturbs a distant site, is being rendered as a key focus in the field of drug development with its substantial impact on protein function. The identification of allosteric pockets (sites) is a challenging task and several techniques have been developed, including Machine Learning to predict allosteric pockets that utilize both static and pocket features. Results Our work, DeepAllo, is the first study that combines fine-tuned protein language model (pLM) with FPocket features and shows an increase in prediction performance of allosteric sites over previous studies. The pLM model was fine-tuned on AlloSteric Database (ASD) in Multitask Learning setting and was further used as a feature extractor to train XGBoost and AutoML models. The best model predicts allosteric pockets with 89.66% F1 score and 90.5% of allosteric pockets in the top 3 positions, outperforming previous results. A case study has been performed on proteins with known allosteric pockets, which shows the proof of our approach. Moreover, an effort was made to explain the pLM by visualizing its attention mechanism among allosteric and non-allosteric residues. Availability and implementation The source code is available on GitHub (https://github.com/MoaazK/deepallo) and archived on Zenodo (DOI: 10.5281/zenodo.15255379). The trained model is hosted on Hugging Face (DOI: 10.57967/hf/5198). The dataset used for training and evaluation is archived on Zenodo (DOI: 10.5281/zenodo.15255437).",
           "url": "https://doi.org/10.1093/bioinformatics/btaf294"
-        },
-        {
-          "id": "MED:40233800",
-          "title": "Emerging frontiers in protein structure prediction following the AlphaFold revolution.",
-          "method": "",
-          "authors": "Rennie ML, Oliver MR.",
-          "journal": "Journal of the Royal Society, Interface",
-          "year": "2025",
-          "date": "2025-04-16",
-          "doi": "10.1098/rsif.2024.0886",
-          "cited": 18,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC11999738?pdf=render",
-          "keywords": [
-            "Conformational changes",
-            "Co-evolution",
-            "Protein Structure Prediction",
-            "Protein–protein Interactions",
-            "Biomolecular Interactions",
-            "Alphafold",
-            "Proteins",
-            "Protein Folding",
-            "Models, Molecular",
-            "Deep Learning"
-          ],
-          "tasks": [
-            "structure",
-            "complexes"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Models of protein structures enable molecular understanding of biological processes. Current protein structure prediction tools lie at the interface of biology, chemistry and computer science. Millions of protein structure models have been generated in a very short space of time through a revolution in protein structure prediction driven by deep learning, led by AlphaFold. This has provided a wealth of new structural information. Interpreting these predictions is critical to determining where and when this information is useful. But proteins are not static nor do they act alone, and structures of proteins interacting with other proteins and other biomolecules are critical to a complete understanding of their biological function at the molecular level. This review focuses on the application of state-of-the-art protein structure prediction to these advanced applications. We also suggest a set of guidelines for reporting AlphaFold predictions.",
-          "url": "https://doi.org/10.1098/rsif.2024.0886"
         },
         {
           "id": "MED:40077608",

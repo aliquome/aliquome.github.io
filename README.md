@@ -1473,9 +1473,9 @@ Everything on [aliquome.github.io](https://aliquome.github.io/), as plain lists.
 - [Harnessing protein language model for structure-based discovery of highly efficient and robust PET hydrolases](https://doi.org/10.1038/s41467-025-61599-z). Wu B et al. *Nature communications*, 2025.
 - [Optimizing enzyme thermostability by combining multiple mutations using protein language model](https://doi.org/10.1002/mlf2.12151). Bian J et al. *mLife*, 2024.
 - [Aggregating residue-level protein language model embeddings with optimal transport](https://doi.org/10.1093/bioadv/vbaf060). NaderiAlizadeh N et al. *Bioinformatics advances*, 2025.
+- [Emerging frontiers in protein structure prediction following the AlphaFold revolution](https://doi.org/10.1098/rsif.2024.0886). Rennie ML et al. *Journal of the Royal Society, Interface*, 2025.
 - [Viro3D: a comprehensive database of virus protein structure predictions](https://doi.org/10.1038/s44320-025-00147-9). Litvin U et al. *Molecular systems biology*, 2025.
 - [DeepAllo: allosteric site prediction using protein language model (pLM) with multitask learning](https://doi.org/10.1093/bioinformatics/btaf294). Khokhar M et al. *Bioinformatics (Oxford, England)*, 2025.
-- [Emerging frontiers in protein structure prediction following the AlphaFold revolution](https://doi.org/10.1098/rsif.2024.0886). Rennie ML et al. *Journal of the Royal Society, Interface*, 2025.
 - [Differential Enzymatic Hydrolysis: A Study on Its Impact on Soy Protein Structure, Function, and Soy Milk Powder Properties](https://doi.org/10.3390/foods14050906). Li Q et al. *Foods (Basel, Switzerland)*, 2025.
 - [Distance-AF improves predicted protein structure models by AlphaFold2 with user-specified distance constraints](https://doi.org/10.1038/s42003-025-08783-5). Zhang Y et al. *Communications biology*, 2025.
 - [Applying computational protein design to therapeutic antibody discovery - current state and perspectives](https://doi.org/10.3389/fimmu.2025.1571371). Bielska W et al. *Frontiers in immunology*, 2025.
