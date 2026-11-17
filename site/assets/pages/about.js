@@ -15,7 +15,7 @@ export function pageAbout() {
       <p><b>Benchmarks.</b> Published results tables are downloaded and shown unchanged.</p>
       <p><b>Status.</b> Every source's website and the download link of its current release are requested once. Results are kept for 30 days.</p>
       <h2>Reproducing a build</h2>
-      <p>Databases, releases and datasets come only from files in the repository, so a commit always gives the same <code>sources.json</code> and <code>datasets.json</code>. The scheduled job builds them twice with <code>atlas build --offline</code> and stops if the two outputs differ. Every build records the commit and the SHA-256 of each input:</p>
+      <p>Databases, releases and datasets come only from files in the repository, so a commit always gives the same <code>sources.json</code> and <code>datasets.json</code>. The scheduled job builds them twice with <code>aliquome build --offline</code> and stops if the two outputs differ. Every build records the commit and the SHA-256 of each input:</p>
       <div class="pre">built      ${esc(b.generated_at || "—")}
 engine     ${esc(b.engine || "—")}
 commit     ${esc(b.commit || "—")}
@@ -26,6 +26,8 @@ ${esc(inputs)}</div>
       <p>Add a block to <code>data/sources.toml</code> and rows to <code>data/database_versions.csv</code>, then open a pull request. No code change is needed.</p>
       <h2>Limits</h2>
       <p>Releases marked “?” come from prior knowledge and were not confirmed against the source. Licence text is a short indication, not legal advice. Task and dataset tags on papers are automatic.</p>
+      <h2>Contact</h2>
+      <p>For questions, corrections or a database to add, write to <a href="mailto:alikianfar0@gmail.com">alikianfar0@gmail.com</a> or open an issue on <a href="https://github.com/aliquome/aliquome.github.io/issues">GitHub</a>.</p>
     </div>
   </section></div>`;
 }

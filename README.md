@@ -19,7 +19,8 @@ Versioned download links, ready-to-run download code, AI-ready datasets, model l
 <a href="#use-it-in-your-code"><b>Use it in code</b></a> |
 <a href="#run-it-locally"><b>Run locally</b></a> |
 <a href="#contribute"><b>Contribute</b></a> |
-<a href="#cite"><b>Cite</b></a>
+<a href="#cite"><b>Cite</b></a> |
+<a href="#contact"><b>Contact</b></a>
 </p>
 
 ---
@@ -27,6 +28,21 @@ Versioned download links, ready-to-run download code, AI-ready datasets, model l
 **Aliquome** (*aliquot* + *-ome*: an exact portion of every dataset) is an open, free catalogue of **bioinformatics databases and datasets with every release version and a direct download link**. Reproducible research needs the exact data: *GRCh38 or T2T-CHM13? Ensembl 113 or 116? gnomAD v3 or v4? UniProt 2026_04?* Aliquome answers that for 83 core resources (reference genomes, variants, cancer genomics, single-cell and expression, protein structures, pathways, drug discovery, epigenomics, RNA and microbiome), and turns each link into ready-to-run download code for **curl, wget, Python, R, `pooch`, AWS CLI and `gcloud`**.
 
 It also gathers **519 machine-learning-ready biology datasets**, **200 benchmark tables with 1,854 published results** to compare models, and the **newest papers from 22 leading bioinformatics and computational biology journals**. A Rust engine rebuilds everything every two days and checks that every source is still online. The site is static, fast and hosted on GitHub Pages at **[aliquome.github.io](https://aliquome.github.io)**.
+
+<p align="center">
+<a href="https://aliquome.github.io">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset=".github/images/home-dark.png">
+  <img alt="Aliquome home page: search every release of 83 bioinformatics databases" src=".github/images/home.png" width="900">
+</picture>
+</a>
+</p>
+
+| A database and its releases | A benchmark table you can re-rank |
+|---|---|
+| <img alt="gnomAD page with its current release, status and download code" src=".github/images/database.png"> | <img alt="BBBP molecular property prediction table ranked by ROC-AUC" src=".github/images/benchmark.png"> |
+| **Datasets for AI in biology** | **A model across every table** |
+| <img alt="Dataset list filtered by field" src=".github/images/datasets.png"> | <img alt="ChemBFN profile with its results on every benchmark" src=".github/images/model.png"> |
 
 ## Why Aliquome
 
@@ -137,6 +153,10 @@ If Aliquome helps your research, please cite it:
   howpublished = {\url{https://aliquome.github.io}}
 }
 ```
+
+## Contact
+
+Questions, corrections or a database you would like added: write to **[alikianfar0@gmail.com](mailto:alikianfar0@gmail.com)** or [open an issue](https://github.com/aliquome/aliquome.github.io/issues).
 
 ## Credits and licence
 
