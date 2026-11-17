@@ -8,7 +8,7 @@ export function pageAbout() {
   view.innerHTML = `<div class="page"><section class="section">
     <h1>How the atlas is built</h1>
     <div class="prose">
-      <p>The site is a set of static pages. A small Rust program, <code>pinomics</code>, reads five files kept in the repository and writes the JSON files these pages load. A GitHub Actions job runs it every two days, commits the new data and publishes the site.</p>
+      <p>The site is a set of static pages. A small Rust program, <code>aliquome</code>, reads five files kept in the repository and writes the JSON files these pages load. A GitHub Actions job runs it every two days, commits the new data and publishes the site.</p>
       <h2>What changes every two days</h2>
       <p><b>Papers.</b> For each field, two Europe PMC queries return the most cited open-access papers of all time and of the last 24 months. Each paper is tagged with tasks, from keyword patterns, and with the databases and datasets it names.</p>
       <p><b>New papers.</b> Every paper published in the last 60 days in the leading bioinformatics and computational biology journals is collected and sorted into fields and tasks. Nature, Science, Cell and Nature Communications are included only for computational papers. Abstracts are shown when the paper is open access or under a Creative Commons licence.</p>

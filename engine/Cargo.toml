@@ -1,12 +1,12 @@
 [package]
-name = "pinomics-engine"
+name = "aliquome-engine"
 version = "0.1.0"
 edition = "2021"
 license = "MIT OR Apache-2.0"
-description = "Builds the data files of Pinomics, the catalogue of versioned bioinformatics databases, datasets, benchmarks and papers."
+description = "Builds the data files of Aliquome, the catalogue of versioned bioinformatics databases, datasets, benchmarks and papers."
 
 [[bin]]
-name = "pinomics"
+name = "aliquome"
 path = "src/main.rs"
 
 [dependencies]

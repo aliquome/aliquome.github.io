@@ -1,6 +1,6 @@
-<h1 align="center">Pinomics</h1>
+<h1 align="center">Aliquome</h1>
 
-<p align="center"><b>Pin the exact release of every bioinformatics database, dataset and benchmark.</b><br>
+<p align="center"><b>An exact aliquot of every bioinformatics database: the precise release, one link away.</b><br>
 Versioned download links, ready-to-run download code, AI-ready datasets, model leaderboards and the newest papers, in one open atlas.</p>
 
 <p align="center">
@@ -13,7 +13,7 @@ Versioned download links, ready-to-run download code, AI-ready datasets, model l
 </p>
 
 <p align="center">
-<a href="#why-pinomics"><b>Why Pinomics</b></a> |
+<a href="#why-aliquome"><b>Why Aliquome</b></a> |
 <a href="#whats-inside"><b>What's inside</b></a> |
 <a href="#use-it-in-your-code"><b>Use it in code</b></a> |
 <a href="#run-it-locally"><b>Run locally</b></a> |
@@ -23,11 +23,11 @@ Versioned download links, ready-to-run download code, AI-ready datasets, model l
 
 ---
 
-**Pinomics** is an open, free catalogue of **bioinformatics databases and datasets with every release version and a direct download link**. Reproducible research needs the exact data: *GRCh38 or T2T-CHM13? Ensembl 113 or 116? gnomAD v3 or v4? UniProt 2026_04?* Pinomics answers that for 83 core resources (reference genomes, variants, cancer genomics, single-cell and expression, protein structures, pathways, drug discovery, epigenomics, RNA and microbiome), and turns each link into ready-to-run download code for **curl, wget, Python, R, `pooch`, AWS CLI and `gcloud`**.
+**Aliquome** (*aliquot* + *-ome*: an exact portion of every dataset) is an open, free catalogue of **bioinformatics databases and datasets with every release version and a direct download link**. Reproducible research needs the exact data: *GRCh38 or T2T-CHM13? Ensembl 113 or 116? gnomAD v3 or v4? UniProt 2026_04?* Aliquome answers that for 83 core resources (reference genomes, variants, cancer genomics, single-cell and expression, protein structures, pathways, drug discovery, epigenomics, RNA and microbiome), and turns each link into ready-to-run download code for **curl, wget, Python, R, `pooch`, AWS CLI and `gcloud`**.
 
 It also gathers **519 machine-learning-ready biology datasets**, **200 benchmark tables with 1,854 published results** to compare models, and the **newest papers from 22 leading bioinformatics and computational biology journals**. A Rust engine rebuilds everything every two days and checks that every source is still online. The site is static, fast and hosted on GitHub Pages.
 
-## Why Pinomics
+## Why Aliquome
 
 - **Every version, one link away.** 794 releases of 83 databases, 733 of them with a direct, versioned URL you can paste into a pipeline, so your analysis can be rerun years later.
 - **Download code for every link.** Files, FTP folders, Zenodo, Figshare, Hugging Face, Kaggle, GEO, Synapse, Dryad, Mendeley Data and GitHub each get the right client command. 75 library loaders (PyTorch Geometric, DeepChem, TDC, OGB, Hugging Face `datasets`, Bioconductor) and official clients for controlled data (UK Biobank, COSMIC, GDC, DepMap).
@@ -83,7 +83,7 @@ The whole catalogue is also plain JSON, so scripts can query it directly:
 | `site/data/benchmarks/*.json` | results tables |
 | `site/data/latest.json`, `papers.json` | new and most cited papers |
 
-On the published site these are served at `https://<user>.github.io/pinomics/data/<file>`.
+On the published site these are served at `https://<user>.github.io/aliquome/data/<file>`.
 
 ## Run it locally
 
@@ -100,7 +100,7 @@ The page loads its data with `fetch`, so open it through a local server, not fro
 
 ```
 data/            plain-text catalogue: databases, releases, datasets, fields, journals, loaders, rankings
-engine/          Rust program `pinomics`: turns data/ into site/data/*.json, fetches papers and
+engine/          Rust program `aliquome`: turns data/ into site/data/*.json, fetches papers and
                  benchmark tables, checks every source (layers: domain, steps, infra)
 site/            static website: HTML, CSS and ES modules (domain, core, ui, pages), three.js figures
 .github/         build and deploy every two days; ranking approvals; reader suggestions; tests
@@ -110,7 +110,7 @@ tests/           end-to-end test of sign-in, suggestions, review and table updat
 
 ### Publish your own copy
 
-1. Push to a public repository named `pinomics`, on `main`.
+1. Push to a public repository named `aliquome`, on `main`.
 2. **Settings → Pages → Source:** GitHub Actions. **Settings → Actions → Workflow permissions:** read and write.
 3. Run **Build and deploy** once from the Actions tab. It then runs every two days.
 4. Optional: email sign-in for reader suggestions, see [docs/SUBMISSIONS.md](docs/SUBMISSIONS.md) (about 15 minutes).
@@ -126,20 +126,20 @@ No code change is needed for any of these. Open a pull request or an issue.
 
 ## Cite
 
-If Pinomics helps your research, please cite it:
+If Aliquome helps your research, please cite it:
 
 ```bibtex
-@misc{pinomics2026,
-  title  = {Pinomics: versioned bioinformatics databases, datasets and benchmarks},
+@misc{aliquome2026,
+  title  = {Aliquome: versioned bioinformatics databases, datasets and benchmarks},
   year   = {2026},
   note   = {Open catalogue with direct release links and download code},
-  howpublished = {\url{https://github.com/<user>/pinomics}}
+  howpublished = {\url{https://github.com/<user>/aliquome}}
 }
 ```
 
 ## Credits and licence
 
-Code: `MIT OR Apache-2.0` ([LICENSE-MIT](LICENSE-MIT), [LICENSE-APACHE](LICENSE-APACHE)). Pinomics links to data and hosts none of it; each source keeps its own licence, shown on its page.
+Code: `MIT OR Apache-2.0` ([LICENSE-MIT](LICENSE-MIT), [LICENSE-APACHE](LICENSE-APACHE)). Aliquome links to data and hosts none of it; each source keeps its own licence, shown on its page.
 
 326 dataset entries (ids starting with `pwc-`) and the 200 results tables are selected from the final Papers with Code archive on Hugging Face, [pwc-archive/datasets](https://huggingface.co/datasets/pwc-archive/datasets) and [pwc-archive/evaluation-tables](https://huggingface.co/datasets/pwc-archive/evaluation-tables) (snapshot of 28 July 2025, CC BY-SA 4.0). Papers come from [Europe PMC](https://europepmc.org); leaderboards from [ProteinGym](https://proteingym.org).
 

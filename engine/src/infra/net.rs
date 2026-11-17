@@ -4,9 +4,9 @@ use std::env;
 use std::time::Duration;
 
 pub(crate) const USER_AGENT: &str = concat!(
-    "pinomics-engine/",
+    "aliquome-engine/",
     env!("CARGO_PKG_VERSION"),
-    " (Pinomics bioinformatics catalogue; link and literature check)"
+    " (Aliquome bioinformatics catalogue; link and literature check)"
 );
 
 pub(crate) fn percent_encode(text: &str) -> String {

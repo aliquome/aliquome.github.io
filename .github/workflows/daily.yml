@@ -42,13 +42,13 @@ jobs:
 
       - name: Check that offline builds are reproducible
         run: |
-          ./engine/target/release/pinomics build --offline
+          ./engine/target/release/aliquome build --offline
           sha256sum site/data/sources.json site/data/datasets.json > /tmp/first.sha
-          ./engine/target/release/pinomics build --offline
+          ./engine/target/release/aliquome build --offline
           sha256sum -c /tmp/first.sha
 
       - name: Fetch papers and benchmarks, check sources and links
-        run: ./engine/target/release/pinomics build
+        run: ./engine/target/release/aliquome build
 
       - name: Commit the new data
         run: |

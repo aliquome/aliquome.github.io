@@ -1,4 +1,4 @@
-//! pinomics: builds the JSON files that the static site reads.
+//! aliquome: builds the JSON files that the static site reads.
 //!
 //! Inputs (all in data/, so a build is repeatable):
 //!   sources.toml            one block per database
@@ -15,7 +15,7 @@
 //!   status.json         reachability of sources and links    (network)
 //!   build.json          time, commit, input hashes, counts
 //!
-//! Usage:  pinomics build [--root DIR] [--offline]
+//! Usage:  aliquome build [--root DIR] [--offline]
 //! `--offline` makes no network call and leaves the network files untouched,
 //! so the same inputs always produce byte-identical deterministic outputs.
 
@@ -30,7 +30,7 @@ use std::path::PathBuf;
 /// The result type every fallible function of the engine returns.
 pub(crate) type Res<T> = Result<T, Box<dyn Error>>;
 
-/// Command line: `pinomics build [--root DIR] [--offline]`. Returns None for --help.
+/// Command line: `aliquome build [--root DIR] [--offline]`. Returns None for --help.
 fn parse_args() -> Res<Option<(PathBuf, bool)>> {
     let args: Vec<String> = std::env::args().skip(1).collect();
     let mut root = PathBuf::from(".");
@@ -45,7 +45,7 @@ fn parse_args() -> Res<Option<(PathBuf, bool)>> {
                 root = PathBuf::from(args.get(i).ok_or("--root needs a directory")?);
             }
             "-h" | "--help" => {
-                println!("pinomics build [--root DIR] [--offline]");
+                println!("aliquome build [--root DIR] [--offline]");
                 return Ok(None);
             }
             other if !other.starts_with('-') => command = other.to_string(),
