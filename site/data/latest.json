@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T13:06:39Z",
+  "generated_at": "2026-11-17T13:12:57Z",
   "since": "2026-09-18",
   "until": "2026-11-17",
   "days": 60,
@@ -22864,7 +22864,7 @@
       "year": "2026",
       "date": "2026-10-01",
       "doi": "10.1093/bioinformatics/btag708",
-      "cited": 0,
+      "cited": 1,
       "license": "cc by",
       "pdf": "https://europepmc.org/articles/PMC13674355?pdf=render",
       "keywords": [
