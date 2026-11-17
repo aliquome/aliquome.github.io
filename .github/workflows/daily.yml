@@ -50,11 +50,14 @@ jobs:
       - name: Fetch papers and benchmarks, check sources and links
         run: ./engine/target/release/aliquome build
 
+      - name: Write the full catalogue into README.md and PAPERS.md
+        run: node scripts/readme-catalog.mjs
+
       - name: Commit the new data
         run: |
           git config user.name "akianfar"
           git config user.email "48835477+akianfar@users.noreply.github.com"
-          git add site/data
+          git add site/data README.md PAPERS.md
           if git diff --cached --quiet; then
             echo "No data changes."
           else
