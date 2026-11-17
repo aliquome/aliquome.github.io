@@ -17,7 +17,7 @@
         "Organismal fitness",
         "Stability"
       ],
-      "fetched_at": "2026-11-17T11:27:12Z",
+      "fetched_at": "2026-11-17T11:31:57Z",
       "rows": [
         {
           "rank": 1,
@@ -1492,7 +1492,7 @@
         "Organismal fitness",
         "Stability"
       ],
-      "fetched_at": "2026-11-17T11:27:12Z",
+      "fetched_at": "2026-11-17T11:31:57Z",
       "rows": [
         {
           "rank": 1,
@@ -1847,7 +1847,7 @@
         "Modulo split",
         "Contiguous split"
       ],
-      "fetched_at": "2026-11-17T11:27:13Z",
+      "fetched_at": "2026-11-17T11:31:57Z",
       "rows": [
         {
           "rank": 1,
@@ -2005,7 +2005,7 @@
       "metric_label": "AUC (mean)",
       "higher": true,
       "columns": [],
-      "fetched_at": "2026-11-17T11:27:13Z",
+      "fetched_at": "2026-11-17T11:31:57Z",
       "rows": [
         {
           "rank": 1,
