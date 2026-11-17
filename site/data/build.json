@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T08:08:02Z",
+  "generated_at": "2026-11-17T08:25:55Z",
   "engine": "local preview",
   "commit": "local",
   "mode": "offline",
@@ -9,6 +9,7 @@
     "data/fields.toml": "09860e0f713aecbd7e4caa22fffe3d396a76573012813e42191e76f5bf1c6295",
     "data/leaderboards.toml": "2fc493a21c026d478fa329984f5b920de7794c45f673bcafd67215b4a38cacad",
     "data/loaders.toml": "e2af1a3595495f897d3254506a6c7df718f31907f6c7284fc16cb5140ee9897f",
+    "data/rankings.toml": "60705c70bbb452147626de6c49d01295ff4a5a217d78583a18ad99b3f7227f30",
     "data/sources.toml": "a60d05a7421762d97245c689dec478514c9456a65ac5379a089980abedbda2b5"
   },
   "counts": {

@@ -408,6 +408,36 @@ fn percent_encode(text: &str) -> String {
     out
 }
 
+/// Results tables (data/benchmarks/*.json) are copied unchanged to
+/// site/data/benchmarks/. Approved ranking changes (data/rankings.toml) are
+/// written as site/data/rankings.json; the site applies them to the tables.
+fn build_benchmarks(root: &Path, out: &Path) -> Res<usize> {
+    let dir = root.join("data/benchmarks");
+    let dest = out.join("benchmarks");
+    fs::create_dir_all(&dest)?;
+    let mut files: Vec<PathBuf> = Vec::new();
+    if dir.is_dir() {
+        for entry in fs::read_dir(&dir)? {
+            let p = entry?.path();
+            if p.extension().map_or(false, |x| x == "json") {
+                files.push(p);
+            }
+        }
+    }
+    files.sort();
+    for p in &files {
+        if let Some(name) = p.file_name() {
+            fs::copy(p, dest.join(name))?;
+        }
+    }
+    let rankings: toml::Value = match fs::read_to_string(root.join("data/rankings.toml")) {
+        Ok(text) => toml::from_str(&text)?,
+        Err(_) => toml::Value::Table(Default::default()),
+    };
+    write_json(&out.join("rankings.json"), &rankings)?;
+    Ok(files.len())
+}
+
 fn write_json<T: Serialize>(path: &Path, value: &T) -> Res<()> {
     let mut text = serde_json::to_string_pretty(value)?;
     text.push('\n');
@@ -1154,11 +1184,13 @@ fn run() -> Res<()> {
     }
     write_json(&out.join("sources.json"), &sources)?;
     write_json(&out.join("datasets.json"), &datasets)?;
+    let benchmark_files = build_benchmarks(&root, &out)?;
 
     let mut counts = BTreeMap::new();
     counts.insert("sources".to_string(), sources.sources.len());
     counts.insert("versions".to_string(), sources.sources.iter().map(|s| s.versions.len()).sum());
     counts.insert("datasets".to_string(), datasets.datasets.len());
+    counts.insert("benchmark_files".to_string(), benchmark_files);
 
     if offline {
         println!("offline: papers, leaderboards and status left unchanged");
@@ -1191,6 +1223,7 @@ fn run() -> Res<()> {
         "data/database_versions.csv",
         "data/datasets.csv",
         "data/loaders.toml",
+        "data/rankings.toml",
     ] {
         inputs.insert(name.to_string(), sha256_file(&root.join(name))?);
     }

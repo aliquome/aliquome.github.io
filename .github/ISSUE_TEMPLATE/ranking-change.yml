@@ -1,0 +1,41 @@
+name: Ranking change
+description: Propose a different ranking for a benchmark table. It takes effect after a maintainer approves it.
+title: "Ranking: "
+labels: ["ranking"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The **Propose this ranking** button on a table page fills this form for you.
+        A maintainer reviews the proposal. When they add the `approved` label, a workflow
+        checks it, writes it to `data/rankings.toml` and republishes the site.
+  - type: input
+    id: table
+    attributes:
+      label: Table id
+      description: The part after `#benchmarks/` in the table's address.
+      placeholder: drug-discovery-tox21
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed ranking
+      description: |
+        One `[[table]]` block. Allowed keys: `id`, `metric`, `higher`, `exclude` (model names),
+        `note`, and `[[table.add]]` blocks with `model`, `paper`, `url`, `code` and `values`.
+      render: toml
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why
+      description: What is wrong with the current ranking, or what the new results show.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Papers, preprints or result files that support the change. Added results need a public source.

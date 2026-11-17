@@ -638,6 +638,10 @@ function buildIndex() {
     idx.push({ kind: "Dataset", title: d.name, sub: d.category, href: `#datasets/${d.field}/${encodeURIComponent(d.name)}`,
       text: `${d.name} ${d.description}`.toLowerCase() });
   }
+  for (const t of S.tables || []) {
+    idx.push({ kind: "Benchmark", title: `${t.task} on ${t.dataset}`, sub: `${t.rows.length} results, ranked by ${approvedView(t).metric}`, href: `#benchmarks/${t.id}`,
+      text: `${t.task} ${t.dataset} ${t.rows.map((r) => r.model).join(" ")}`.toLowerCase() });
+  }
   for (const p of S.latest?.papers || []) {
     paperIndex.set(p.id, p);
     idx.push({ kind: "Paper", title: p.title, sub: `${p.journal}, ${prettyDate(p.date)}`, href: `#latest/${p.fields?.[0] || ""}/${encodeURIComponent(p.title.slice(0, 60).replace(/[/%]/g, " "))}`,
@@ -1021,17 +1025,228 @@ function boardTable(b, rows, full = true) {
   </table></div>`;
 }
 
-async function pageBenchmarks(id) {
+// ---------- benchmarks ----------
+// Two kinds of results tables: boards that benchmark maintainers publish
+// (leaderboards.json, fetched daily) and tables from the Papers with Code
+// archive (data/benchmarks/*.json). Approved ranking changes from
+// data/rankings.toml (rankings.json) are applied on top of the archive tables.
+async function needTables() {
+  if (S.tables) return S.tables;
+  const files = await Promise.all(S.fields.map((f) => load(`benchmarks/pwc-${f.id}`).catch(() => null)));
+  const rk = await load("rankings").catch(() => ({}));
+  const approved = new Map((rk?.table || []).map((t) => [t.id, t]));
+  S.tables = files.filter(Boolean).flatMap((f) => f.tables.map((t) => ({ ...t, source_name: f.source, source_url: f.url, license: f.license, snapshot: f.snapshot, approved: approved.get(t.id) || null })));
+  searchIndex = null;
+  return S.tables;
+}
+const numOf = (v) => {
+  if (v == null) return null;
+  const x = parseFloat(String(v).replace(/[%,\s]/g, "").replace(/±.*$/, ""));
+  return Number.isFinite(x) ? x : null;
+};
+function approvedView(t) {
+  const a = t.approved || {};
+  const metric = a.metric && t.metrics.some((m) => m.name === a.metric) ? a.metric : t.metric;
+  const higher = typeof a.higher === "boolean" ? a.higher : t.metrics.find((m) => m.name === metric)?.higher ?? true;
+  return { metric, higher, exclude: new Set(a.exclude || []) };
+}
+// Rank the rows of a table under a view { metric, higher, exclude }; equal scores share a rank.
+function rankRows(t, v) {
+  const added = (t.approved?.add || []).map((a) => ({ ...a, values: Object.fromEntries(Object.entries(a.values || {}).map(([k, x]) => [k, String(x)])), added: true }));
+  const scored = [...t.rows, ...added].map((r) => ({ r, s: numOf(r.values[v.metric]), out: v.exclude.has(r.model) }));
+  scored.sort((a, b) => a.out - b.out || (a.s == null) - (b.s == null) || (v.higher ? b.s - a.s : a.s - b.s) || a.r.model.localeCompare(b.r.model));
+  let rank = 0, prev = null, n = 0;
+  return scored.map((x) => {
+    if (x.out || x.s == null) return { ...x, rank: null };
+    n++;
+    if (x.s !== prev) { rank = n; prev = x.s; }
+    return { ...x, rank };
+  });
+}
+// The repository that takes proposals: a <meta name="atlas-repo"> override,
+// otherwise derived from the GitHub Pages address.
+function repoUrl() {
+  const meta = document.querySelector('meta[name="atlas-repo"]')?.content?.trim();
+  if (meta) return meta.replace(/\/$/, "");
+  const m = location.hostname.match(/^([\w-]+)\.github\.io$/i);
+  if (!m) return "";
+  const first = location.pathname.split("/").filter(Boolean)[0];
+  return `https://github.com/${m[1]}/${first || `${m[1]}.github.io`}`;
+}
+function proposalToml(t, v, note) {
+  const q = JSON.stringify;
+  const lines = ["[[table]]", `id = ${q(t.id)}`, `metric = ${q(v.metric)}`, `higher = ${v.higher}`];
+  if (v.exclude.size) lines.push(`exclude = [${[...v.exclude].map(q).join(", ")}]`);
+  if (note.trim()) lines.push(`note = ${q(note.trim())}`);
+  lines.push("", "# To add a published result, remove the # signs and fill in:", "# [[table.add]]", '# model = "Model name"', '# paper = "Paper title"',
+    '# url = "https://doi.org/..."', `# values = { ${q(v.metric)} = 0.0 }`);
+  return lines.join("\n");
+}
+
+async function pageBenchmarks(a, b) {
   view.innerHTML = `<div class="page"><p class="loading">Loading benchmarks…</p></div>`;
-  const data = await need("boards");
-  if (!data?.boards?.length) return (view.innerHTML = `<div class="page"><p class="note">No benchmark table has been fetched yet. The daily job fills this page.</p></div>`);
-  const b = data.boards.find((x) => x.id === id) || data.boards[0];
-  const kinds = [...new Set(b.rows.map((r) => r.kind).filter(Boolean))].sort();
+  const [data, tables] = await Promise.all([need("boards"), needTables()]);
+  const boards = data?.boards || [];
+  if (a && boards.some((x) => x.id === a)) return pageBoard(boards, a);
+  const t = tables.find((x) => x.id === a);
+  if (t) return pageTable(t);
+  return pageBenchIndex(boards, tables, S.fields.some((f) => f.id === a) ? a : "", b || "");
+}
+
+function pageBenchIndex(boards, tables, field, preset) {
+  const counts = {};
+  tables.forEach((t) => (counts[t.field] = (counts[t.field] || 0) + 1));
   view.innerHTML = `<div class="page"><section class="section">
     <h1>Benchmarks</h1>
-    <p class="lede">Model comparisons copied daily from the results tables that benchmark maintainers publish. Scores are shown exactly as published.</p>
-    <div class="chips">${data.boards.map((x) => `<a class="chip" style="--dot:${baseVar(fieldOf(x.field))}" href="#benchmarks/${esc(x.id)}" aria-pressed="${x.id === b.id}">${esc(x.title.replace(/^[^:]+:\s*/, ""))}</a>`).join("")}</div>
-    <div class="section-head"><h2>${esc(b.title)}</h2><span class="hint">${b.rows.length} models, ${b.higher ? "higher is better" : "lower is better"}</span></div>
+    <p class="lede">Published results, ranked. Open a table to rank it by another metric. Anyone can propose a different ranking, and it goes live once a maintainer approves it.</p>
+    ${boards.length ? `<div class="section-head"><h2>Maintained boards</h2><span class="hint">Copied daily from the benchmark maintainers</span></div>
+    <ul class="board-list">${boards.map((x) => `<li><a href="#benchmarks/${esc(x.id)}"><b>${esc(x.title)}</b><span class="hint">${x.rows.length} models, ranked by ${esc(x.metric_label)}</span></a></li>`).join("")}</ul>` : ""}
+    <div class="section-head"><h2>Results tables</h2><span class="hint">${tables.length} tables from the Papers with Code archive</span></div>
+    ${gel({ id: "bgel", active: field, counts, unit: "tables", search: { id: "bq", placeholder: "Filter by task, dataset, metric or model", value: preset } })}
+    <p class="count" id="bcount"></p>
+    <div class="table-wrap"><table class="bench-index">
+      <thead><tr><th>Task</th><th>Dataset</th><th>Ranked by</th><th>Models</th><th>Leader</th></tr></thead>
+      <tbody id="brows"></tbody>
+    </table></div>
+    <div class="more-row"><button class="btn" type="button" id="bmore" hidden>Show more tables</button></div>
+  </section></div>`;
+  let active = field, shown = 40;
+  const q = document.getElementById("bq");
+  const draw = () => {
+    const term = q.value.trim().toLowerCase();
+    const list = tables.filter((t) => (!active || t.field === active) && (!term ||
+      `${t.task} ${t.dataset} ${t.path.join(" ")} ${t.metrics.map((m) => m.name).join(" ")} ${t.rows.map((r) => r.model).join(" ")}`.toLowerCase().includes(term)));
+    document.getElementById("bcount").textContent = `${list.length} of ${tables.length} tables`;
+    document.getElementById("brows").innerHTML = list.slice(0, shown).map((t) => {
+      const v = approvedView(t);
+      const top = rankRows(t, v).find((x) => x.rank === 1);
+      return `<tr><td><a href="#benchmarks/${esc(t.id)}"><b>${esc(t.task)}</b></a></td><td>${esc(t.dataset)}</td>
+        <td>${esc(v.metric)} <span class="hint">${v.higher ? "higher is better" : "lower is better"}</span></td><td class="num">${t.rows.length}</td>
+        <td>${top ? `${esc(top.r.model)} <span class="mono hint">${esc(top.r.values[v.metric])}</span>` : "—"}</td></tr>`;
+    }).join("") || `<tr><td colspan="5" class="note">No table matches this filter.</td></tr>`;
+    document.getElementById("bmore").hidden = list.length <= shown;
+  };
+  q.addEventListener("input", () => { shown = 40; draw(); });
+  document.getElementById("bmore").addEventListener("click", () => { shown += 40; draw(); });
+  document.getElementById("bgel").addEventListener("click", (e) => {
+    const btn = e.target.closest("button[data-field]");
+    if (!btn) return;
+    active = btn.dataset.field;
+    replaceHash(active ? `#benchmarks/${active}` : "#benchmarks");
+    document.querySelectorAll("#bgel button").forEach((x) => x.setAttribute("aria-pressed", String(x === btn)));
+    shown = 40;
+    draw();
+  });
+  draw();
+}
+
+function pageTable(t) {
+  const f = fieldOf(t.field);
+  const base = approvedView(t);
+  const v = { metric: base.metric, higher: base.higher, exclude: new Set(base.exclude) };
+  const ds = t.dataset_id ? S.datasets.find((d) => d.id === t.dataset_id) : null;
+  const shownMetrics = () => t.metrics.map((m) => m.name).filter((m) => m !== v.metric).slice(0, 6);
+  view.innerHTML = `<div class="page"><section class="section">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="#benchmarks">Benchmarks</a><span aria-hidden="true">/</span><a href="#benchmarks/${esc(t.field)}">${esc(f.label)}</a><span aria-hidden="true">/</span><span aria-current="page">${esc(t.task)}</span></nav>
+    <h1>${esc(t.task)}</h1>
+    <p class="lede">On ${ds ? `<a href="#datasets/${esc(ds.field)}/${encodeURIComponent(ds.name)}">${esc(t.dataset)}</a>` : esc(t.dataset)}. ${t.rows.length} published results.</p>
+    ${t.path.length > 1 ? `<p class="hint">${esc(t.path.join(" / "))}</p>` : ""}
+    <div class="controls">
+      <div class="control"><label for="tm">Rank by</label><select class="input" id="tm">${t.metrics.map((m) => `<option ${m.name === v.metric ? "selected" : ""}>${esc(m.name)}</option>`).join("")}</select></div>
+      <div class="control"><label for="th">Order</label><select class="input" id="th"><option value="1">Higher is better</option><option value="0">Lower is better</option></select></div>
+      <div class="control"><label for="tq">Model</label><input class="input" id="tq" type="search" placeholder="Filter models"></div>
+      <div class="control"><label class="check"><input type="checkbox" id="tedit"> Choose rows to leave out</label></div>
+    </div>
+    <div class="bench-status" id="tstatus" aria-live="polite"></div>
+    <div id="tout"></div>
+    <div class="proposal" id="tprop" hidden>
+      <h2>Propose this ranking</h2>
+      <p>Your proposal goes to the maintainers as a GitHub issue. Nothing changes on the site until they approve it.</p>
+      <label for="tnote">Why this ranking is better</label>
+      <textarea class="input" id="tnote" rows="3" placeholder="For example: the paper reports results on a different split."></textarea>
+      <div class="code"><div class="code-bar"><span>Proposal</span><button class="btn small" type="button" data-copy-pre>Copy</button></div><pre id="ttoml"></pre></div>
+      <div class="export-actions" id="tsend"></div>
+    </div>
+    <p class="note">Results as published in the papers, from the ${esc(t.source_name)} (snapshot ${esc(t.snapshot)}, ${esc(t.license)}). Rows marked “extra data” were trained with additional data.${t.approved?.note ? ` Approved note: ${esc(t.approved.note)}` : ""}</p>
+  </section></div>`;
+  document.getElementById("th").value = v.higher ? "1" : "0";
+  const repo = repoUrl();
+  const differs = () => v.metric !== base.metric || v.higher !== base.higher || v.exclude.size !== base.exclude.size || [...v.exclude].some((m) => !base.exclude.has(m));
+  const draw = () => {
+    const q = document.getElementById("tq").value.trim().toLowerCase();
+    const edit = document.getElementById("tedit").checked;
+    const ranked = rankRows(t, v).filter((x) => !q || x.r.model.toLowerCase().includes(q));
+    const vals = ranked.map((x) => x.s).filter((s) => s != null);
+    const lo = Math.min(...vals), hi = Math.max(...vals);
+    const bar = (s) => (s == null || hi === lo ? 45 : 8 + 82 * (v.higher ? (s - lo) / (hi - lo) : (hi - s) / (hi - lo)));
+    const others = shownMetrics();
+    document.getElementById("tout").innerHTML = `<div class="table-wrap"><table class="bench">
+      <thead><tr>${edit ? "<th>Leave out</th>" : ""}<th>#</th><th>Model</th><th>${esc(v.metric)}</th>${others.map((m) => `<th>${esc(m)}</th>`).join("")}<th>Paper</th><th>Code</th></tr></thead>
+      <tbody>${ranked.map((x) => `<tr class="${x.out ? "out" : ""}">
+        ${edit ? `<td><input type="checkbox" data-out="${esc(x.r.model)}" ${x.out ? "checked" : ""} aria-label="Leave out ${esc(x.r.model)}"></td>` : ""}
+        <td class="num">${x.out ? "out" : x.rank ?? "—"}</td>
+        <td><b>${esc(x.r.model)}</b>${x.r.extra ? ' <span class="tag">extra data</span>' : ""}${x.r.added ? ' <span class="tag">added</span>' : ""}</td>
+        <td class="num">${x.s == null ? `<span class="muted">${esc(x.r.values[v.metric] || "—")}</span>` : `<span class="bar"><i style="width:${bar(x.s).toFixed(0)}px"></i>${esc(x.r.values[v.metric])}</span>`}</td>
+        ${others.map((m) => `<td class="num">${esc(x.r.values[m] ?? "—")}</td>`).join("")}
+        <td>${safe(x.r.url) ? `<a href="${esc(x.r.url)}" target="_blank" rel="noopener" title="${esc(x.r.paper)}">${esc((x.r.paper || "Paper").slice(0, 60))}${(x.r.paper || "").length > 60 ? "…" : ""}</a>` : esc(x.r.paper || "—")}${x.r.date ? ` <span class="hint">${esc(x.r.date.slice(0, 4))}</span>` : ""}</td>
+        <td>${safe(x.r.code) ? `<a href="${esc(x.r.code)}" target="_blank" rel="noopener">Code</a>` : ""}</td></tr>`).join("")}</tbody>
+    </table></div>`;
+    const a = t.approved;
+    document.getElementById("tstatus").innerHTML = differs()
+      ? `<p><b>Your view differs from the approved ranking</b> (${esc(base.metric)}, ${base.higher ? "higher" : "lower"} is better${base.exclude.size ? `, ${base.exclude.size} left out` : ""}).</p>
+         <div class="export-actions"><button class="btn solid" type="button" id="tpropose">Propose this ranking</button><button class="btn" type="button" id="treset">Back to the approved ranking</button></div>`
+      : `<p>${a ? `Ranking approved in ${esc(a.approved || "a reviewed proposal")}.` : "Ranked by the table’s main metric, as published."} Change the metric, the order or the rows to propose a different ranking.</p>`;
+    document.getElementById("tpropose")?.addEventListener("click", openProposal);
+    document.getElementById("treset")?.addEventListener("click", () => {
+      v.metric = base.metric; v.higher = base.higher; v.exclude = new Set(base.exclude);
+      document.getElementById("tm").value = v.metric; document.getElementById("th").value = v.higher ? "1" : "0";
+      document.getElementById("tprop").hidden = true;
+      draw();
+    });
+    if (!document.getElementById("tprop").hidden) fillProposal();
+  };
+  const fillProposal = () => {
+    const toml = proposalToml(t, v, document.getElementById("tnote").value);
+    document.getElementById("ttoml").textContent = toml;
+    const title = `Ranking: ${t.task} on ${t.dataset}`.slice(0, 120);
+    const url = repo && `${repo}/issues/new?template=ranking-change.yml&labels=ranking&title=${encodeURIComponent(title)}&table=${encodeURIComponent(t.id)}&proposal=${encodeURIComponent(toml)}&reason=${encodeURIComponent(document.getElementById("tnote").value)}`;
+    document.getElementById("tsend").innerHTML = url
+      ? `<a class="btn solid" href="${esc(url)}" target="_blank" rel="noopener">Open the proposal on GitHub</a>`
+      : `<p class="hint">This copy of the site is not linked to a GitHub repository. Copy the proposal and open an issue in the repository that publishes the atlas.</p>`;
+  };
+  const openProposal = () => {
+    document.getElementById("tprop").hidden = false;
+    fillProposal();
+    document.getElementById("tprop").scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+  document.getElementById("tnote").addEventListener("input", fillProposal);
+  document.getElementById("tm").addEventListener("change", (e) => {
+    v.metric = e.target.value;
+    v.higher = t.metrics.find((m) => m.name === v.metric)?.higher ?? true;
+    document.getElementById("th").value = v.higher ? "1" : "0";
+    draw();
+  });
+  document.getElementById("th").addEventListener("change", (e) => { v.higher = e.target.value === "1"; draw(); });
+  document.getElementById("tq").addEventListener("input", draw);
+  document.getElementById("tedit").addEventListener("change", draw);
+  document.getElementById("tout").addEventListener("change", (e) => {
+    const c = e.target.closest("[data-out]");
+    if (!c) return;
+    c.checked ? v.exclude.add(c.dataset.out) : v.exclude.delete(c.dataset.out);
+    draw();
+  });
+  draw();
+}
+
+function pageBoard(boards, id) {
+  const b = boards.find((x) => x.id === id);
+  const kinds = [...new Set(b.rows.map((r) => r.kind).filter(Boolean))].sort();
+  view.innerHTML = `<div class="page"><section class="section">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="#benchmarks">Benchmarks</a><span aria-hidden="true">/</span><span aria-current="page">${esc(b.title)}</span></nav>
+    <h1>${esc(b.title)}</h1>
+    <p class="lede">Copied daily from the results table the benchmark maintainers publish, and shown exactly as published.</p>
+    <div class="chips">${boards.map((x) => `<a class="chip" style="--dot:${baseVar(fieldOf(x.field))}" href="#benchmarks/${esc(x.id)}" aria-pressed="${x.id === b.id}">${esc(x.title.replace(/^[^:]+:\s*/, ""))}</a>`).join("")}</div>
+    <div class="section-head"><h2>Ranking</h2><span class="hint">${b.rows.length} models, ${b.higher ? "higher is better" : "lower is better"}</span></div>
     <div class="controls">
       <div class="control"><label for="bq">Model</label><input class="input" id="bq" type="search" placeholder="Filter models"></div>
       <div class="control"><label for="bk">Family</label><select class="input" id="bk"><option value="">All families</option>${kinds.map((k) => `<option>${esc(k)}</option>`).join("")}</select></div>
@@ -1157,7 +1372,7 @@ function route() {
   const nav = { source: "sources", latest: "papers" }[page] || page;
   document.querySelectorAll(".nav a").forEach((x) => (x.dataset.nav === nav ? x.setAttribute("aria-current", "page") : x.removeAttribute("aria-current")));
   const pages = { home: pageHome, latest: () => pageLatest(a, b), saved: pageSaved, sources: () => pageSources(a), source: () => pageSource(a), datasets: () => pageDatasets(a, b),
-    papers: () => pagePapers(a), benchmarks: () => pageBenchmarks(a), status: pageStatus, about: pageAbout };
+    papers: () => pagePapers(a), benchmarks: () => pageBenchmarks(a, b), status: pageStatus, about: pageAbout };
   const render = pages[page] || (() => notFound("That page does not exist."));
   const go = () => { render(); armArt(); window.scrollTo({ top: 0, behavior: "instant" }); };
   if (document.startViewTransition && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.startViewTransition(go);
@@ -1205,6 +1420,7 @@ async function start() {
   route();
   // Load papers in the background so search covers them too.
   setTimeout(() => need("latest").then(() => palette.refresh()), 1200);
+  setTimeout(() => needTables().then(() => palette.refresh()).catch(() => {}), 2500);
 }
 
 // Back to top, shown after the reader scrolls a screen.

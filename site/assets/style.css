@@ -398,3 +398,20 @@ details.note p { margin-top: var(--space-xs); max-width: 75ch; }
   .page, .palette[open] .pal-box { animation: none; }
   .band, .toast, .lane, .btn, .chip { transition: none; }
 }
+
+/* Benchmarks: index, results table, ranking proposal */
+.board-list { list-style: none; margin: 0 0 var(--space-xl); padding: 0; display: grid; grid-template-columns: minmax(0, 1fr); border-top: var(--rule-hair) solid var(--color-rule); }
+.board-list a { display: grid; gap: var(--space-3xs); padding-block: var(--space-sm); border-bottom: var(--rule-hair) solid var(--color-rule); color: var(--color-ink); text-decoration: none; }
+.board-list a:hover b { color: var(--color-accent); }
+.board-list a:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+.bench-index td:first-child a { color: var(--color-ink); text-decoration: none; }
+.bench-index td:first-child a:hover { color: var(--color-accent); text-decoration: underline; }
+.bench tr.out td { color: var(--color-muted); }
+.bench tr.out b { text-decoration: line-through; }
+.bench td:nth-child(n+3) { white-space: nowrap; }
+.bench-status { margin-block: var(--space-md); padding: var(--space-sm) var(--space-md); border-left: 3px solid var(--color-accent); background: var(--color-surface); display: grid; gap: var(--space-xs); }
+.bench-status p { margin: 0; }
+.proposal { margin-top: var(--space-xl); padding: var(--space-lg); border: var(--rule-hair) solid var(--color-rule); border-radius: var(--radius-card); background: var(--color-surface); display: grid; gap: var(--space-sm); grid-template-columns: minmax(0, 1fr); }
+.proposal h2 { margin: 0; }
+.proposal p { margin: 0; max-width: 64ch; }
+.proposal textarea { width: 100%; min-height: 80px; resize: vertical; font: inherit; padding: var(--space-xs) var(--space-sm); }
