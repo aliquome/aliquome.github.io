@@ -11,3 +11,13 @@ tests/package-lock.json
 # research and design notes: kept locally, not part of the site
 docs/*
 !docs/SUBMISSIONS.md
+
+# local tooling and operating-system files
+node_modules/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
