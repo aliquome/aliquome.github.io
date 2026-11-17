@@ -2,7 +2,8 @@
 import { view, esc, num, safe, replaceHash } from "../core/dom.js";
 import { S, need, needTables } from "../core/store.js";
 import { fieldOf, baseVar, taskLabel } from "../core/catalog.js";
-import { approvedView, rankRows } from "../domain/ranking.js";
+import { approvedView, rankRows, towardBest } from "../domain/ranking.js";
+import { stripHead, stripCell } from "../ui/strip.js";
 import { benchIdx, paperName, buildBenchIndex, modelHref, paperHref, datasetHref, entryHref, placeText, summarize } from "../domain/bench-index.js";
 import { gel } from "../ui/gel.js";
 import { boardTable } from "../ui/cards.js";
@@ -249,17 +250,17 @@ export function pageTable(t) {
     const q = document.getElementById("tq").value.trim().toLowerCase();
     const edit = document.getElementById("tedit").checked;
     const ranked = rankRows(t, v).filter((x) => !q || x.r.model.toLowerCase().includes(q));
-    const vals = ranked.map((x) => x.s).filter((s) => s != null);
+    const vals = ranked.filter((x) => !x.out).map((x) => x.s).filter((s) => s != null);
     const lo = Math.min(...vals), hi = Math.max(...vals);
-    const bar = (s) => (s == null || hi === lo ? 45 : 8 + 82 * (v.higher ? (s - lo) / (hi - lo) : (hi - s) / (hi - lo)));
     const others = shownMetrics();
     document.getElementById("tout").innerHTML = `<div class="table-wrap"><table class="bench">
-      <thead><tr>${edit ? "<th>Leave out</th>" : ""}<th>#</th><th>Model</th><th>${esc(v.metric)}</th>${others.map((m) => `<th>${esc(m)}</th>`).join("")}<th>Paper</th><th>Code</th></tr></thead>
+      <thead><tr>${edit ? "<th>Leave out</th>" : ""}<th class="num">#</th><th>Model</th><th class="num">${esc(v.metric)}</th>${stripHead()}${others.map((m) => `<th class="num">${esc(m)}</th>`).join("")}<th>Paper</th><th>Code</th></tr></thead>
       <tbody>${ranked.map((x) => `<tr class="${x.out ? "out" : ""}">
         ${edit ? `<td><input type="checkbox" data-out="${esc(x.r.model)}" ${x.out ? "checked" : ""} aria-label="Leave out ${esc(x.r.model)}"></td>` : ""}
         <td class="num">${x.out ? "out" : x.rank ?? "—"}</td>
         <td><a href="${modelHref(x.r.model)}"><b>${esc(x.r.model)}</b></a>${x.r.extra ? ' <span class="tag">extra data</span>' : ""}${x.r.added ? ' <span class="tag">added</span>' : ""}${x.r.fixed ? ` <a class="tag" href="${esc(x.r.fixed)}" target="_blank" rel="noopener" title="Source of the corrected values">corrected</a>` : ""}</td>
-        <td class="num">${x.s == null ? `<span class="muted">${esc(x.r.values[v.metric] || "—")}</span>` : `<span class="bar"><i style="width:${bar(x.s).toFixed(0)}px"></i>${esc(x.r.values[v.metric])}</span>`}</td>
+        <td class="num score">${x.s == null ? `<span class="muted">${esc(x.r.values[v.metric] || "—")}</span>` : esc(x.r.values[v.metric])}</td>
+        ${stripCell(x.out ? null : towardBest(x.s, lo, hi, v.higher), x.rank === 1)}
         ${others.map((m) => `<td class="num">${esc(x.r.values[m] ?? "—")}</td>`).join("")}
         <td>${paperName(x.r.paper) ? `<a href="${paperHref(paperName(x.r.paper))}" title="${esc(x.r.paper)}">${esc(x.r.paper.slice(0, 60))}${x.r.paper.length > 60 ? "…" : ""}</a>` : "—"}${x.r.date ? ` <span class="hint">${esc(x.r.date.slice(0, 4))}</span>` : ""}</td>
         <td>${safe(x.r.code) ? `<a href="${esc(x.r.code)}" target="_blank" rel="noopener">Code</a>` : ""}</td></tr>`).join("")}</tbody>

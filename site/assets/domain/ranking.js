@@ -40,3 +40,11 @@ export function metricRanks(rows, metric, higher, exclude) {
   vals.forEach((x, i) => { if (x.s !== prev) { rank = i + 1; prev = x.s; } ranks.set(x.r, rank); });
   return { ranks, of: vals.length };
 }
+
+// Where a score sits between the worst (0) and the best (1) result of a table,
+// whichever direction the metric runs.
+export function towardBest(s, lo, hi, higher) {
+  if (s == null || !Number.isFinite(s)) return null;
+  if (hi === lo) return 1;
+  return higher ? (s - lo) / (hi - lo) : (hi - s) / (hi - lo);
+}

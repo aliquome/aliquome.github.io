@@ -9,6 +9,8 @@ import { loaderLink } from "./code-panel.js";
 import { saveBtn } from "./save.js";
 import { trace } from "../visuals/glyph.js";
 import { bibtex } from "../services/library.js";
+import { towardBest } from "../domain/ranking.js";
+import { stripHead, stripCell } from "./strip.js";
 
 export function sourceCard(s) {
   return `<li class="db-row">
@@ -90,11 +92,12 @@ export function datasetRow(d) {
 }
 
 export function boardTable(b, rows, full = true) {
-  const max = Math.max(...b.rows.map((r) => r.score));
-  return `<div class="table-wrap"><table>
-    <thead><tr><th>#</th><th>Model</th><th>Family</th><th>${esc(b.metric_label)}</th>${full ? b.columns.map((c) => `<th>${esc(c)}</th>`).join("") + "<th>Paper</th>" : ""}</tr></thead>
+  const scores = b.rows.map((r) => r.score);
+  const lo = Math.min(...scores), hi = Math.max(...scores);
+  return `<div class="table-wrap"><table class="board">
+    <thead><tr><th class="num">#</th><th>Model</th><th>Family</th><th class="num">${esc(b.metric_label)}</th>${stripHead()}${full ? b.columns.map((c) => `<th class="num">${esc(c)}</th>`).join("") + "<th>Paper</th>" : ""}</tr></thead>
     <tbody>${rows.map((r) => `<tr><td class="num">${r.rank}</td><td>${benchIdx?.modelKey.has(r.model) ? `<a href="${modelHref(r.model)}"><b>${esc(r.model)}</b></a>` : `<b>${esc(r.model)}</b>`}</td><td class="muted">${esc(r.kind)}</td>
-      <td class="num"><span class="bar"><i style="width:${Math.max(2, (r.score / max) * 90).toFixed(0)}px"></i>${r.score.toFixed(3)}</span></td>
+      <td class="num score">${r.score.toFixed(3)}</td>${stripCell(towardBest(r.score, lo, hi, b.higher), r.rank === 1)}
       ${full ? r.values.map((v) => `<td class="num">${v == null ? "—" : v.toFixed(3)}</td>`).join("") +
         `<td class="nowrap">${safe(r.paper_url) ? `<a href="${esc(r.paper_url)}" target="_blank" rel="noopener" title="${esc(r.paper)}">${esc(shortCite(r.paper))}</a>` : "—"}</td>` : ""}</tr>`).join("")}</tbody>
   </table></div>`;
