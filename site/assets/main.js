@@ -1,4 +1,4 @@
-// Bioinformatics Data Atlas: entry point. Layers, from the bottom up:
+// Pinomics: entry point. Layers, from the bottom up:
 //   domain/   pure logic (links, ranking, formatting), no DOM
 //   core/     data store, catalogue lookups, DOM helpers, search
 //   app/      router and theme, on top of the pages

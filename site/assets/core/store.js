@@ -15,7 +15,7 @@ export async function need(name) {
 }
 
 // Two kinds of results tables: boards that benchmark maintainers publish
-// (leaderboards.json, fetched daily) and tables from the Papers with Code
+// (leaderboards.json, fetched every two days) and tables from the Papers with Code
 // archive (data/benchmarks/*.json). Approved ranking changes from
 // data/rankings.toml (rankings.json) are applied on top of the archive tables.
 export async function needTables() {

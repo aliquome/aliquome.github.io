@@ -1,12 +1,12 @@
 [package]
-name = "atlas-engine"
+name = "pinomics-engine"
 version = "0.1.0"
 edition = "2021"
 license = "MIT OR Apache-2.0"
-description = "Builds the data files of the Bioinformatics Data Atlas site: sources, versions, datasets, papers and source status."
+description = "Builds the data files of Pinomics, the catalogue of versioned bioinformatics databases, datasets, benchmarks and papers."
 
 [[bin]]
-name = "atlas"
+name = "pinomics"
 path = "src/main.rs"
 
 [dependencies]

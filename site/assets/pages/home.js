@@ -19,7 +19,7 @@ export async function pageHome() {
   const checked = Object.values(S.status?.sources || {});
   const up = checked.filter((s) => s.state !== "down").length;
   const figures = coverage(S.sources, S.datasets);
-  if (checked.length) figures.push({ id: "up", label: "Sources up today", value: up, share: up / checked.length, note: "answered the daily check", href: "#status" });
+  if (checked.length) figures.push({ id: "up", label: "Sources up today", value: up, share: up / checked.length, note: "answered the last check", href: "#status" });
 
   view.innerHTML = `<div class="page">
   <section class="section hero">

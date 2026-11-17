@@ -48,7 +48,7 @@ export function pageBenchIndex(boards, tables, field, preset, dataset) {
     <h1>Benchmarks</h1>
     <p class="lede">Published results, ranked. Open a table to rank it by another metric, or a model or paper to see every ranking it appears in. Anyone can propose a different ranking, and it goes live once a maintainer approves it.</p>
     ${benchTabs("tables", benchIdx, tables.length)}
-    ${boards.length ? `<div class="section-head"><h2>Maintained boards</h2><span class="hint">Copied daily from the benchmark maintainers</span></div>
+    ${boards.length ? `<div class="section-head"><h2>Maintained boards</h2><span class="hint">Copied every two days from the benchmark maintainers</span></div>
     <ul class="board-list">${boards.map((x) => `<li><a href="#benchmarks/${esc(x.id)}"><b>${esc(x.title)}</b><span class="hint">${x.rows.length} models, ranked by ${esc(x.metric_label)}</span></a></li>`).join("")}</ul>` : ""}
     <div class="section-head"><h2>Results tables</h2><span class="hint">${tables.length} tables from the Papers with Code archive</span></div>
     ${gel({ id: "bgel", active: field, counts, unit: "tables", search: { id: "bq", placeholder: "Filter by task, dataset, metric or model", value: preset } })}
@@ -304,7 +304,7 @@ export function pageBoard(boards, id) {
   view.innerHTML = `<div class="page"><section class="section">
     <nav class="crumbs" aria-label="Breadcrumb"><a href="#benchmarks">Benchmarks</a><span aria-hidden="true">/</span><span aria-current="page">${esc(b.title)}</span></nav>
     <h1>${esc(b.title)}</h1>
-    <p class="lede">Copied daily from the results table the benchmark maintainers publish, and shown exactly as published.</p>
+    <p class="lede">Copied every two days from the results table the benchmark maintainers publish, and shown exactly as published.</p>
     <div class="chips">${boards.map((x) => `<a class="chip" style="--dot:${baseVar(fieldOf(x.field))}" href="#benchmarks/${esc(x.id)}" aria-pressed="${x.id === b.id}">${esc(x.title.replace(/^[^:]+:\s*/, ""))}</a>`).join("")}</div>
     <div class="section-head"><h2>Ranking</h2><span class="hint">${b.rows.length} models, ${b.higher ? "higher is better" : "lower is better"}</span></div>
     <div class="controls">

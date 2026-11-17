@@ -11,7 +11,7 @@ export const paperTabs = (on) => `<nav class="tabbar" aria-label="Paper views"><
 export async function pageLatest(fieldId, preset = "") {
   view.innerHTML = `<div class="page"><p class="loading">Loading new papers…</p></div>`;
   const data = await need("latest");
-  if (!data?.papers?.length) return (view.innerHTML = `<div class="page"><p class="note">New papers have not been fetched yet. The daily job fills this page.</p></div>`);
+  if (!data?.papers?.length) return (view.innerHTML = `<div class="page"><p class="note">New papers have not been fetched yet. The scheduled job fills this page.</p></div>`);
   const all = data.papers;
   const counts = {};
   all.forEach((p) => p.fields?.forEach((f) => (counts[f] = (counts[f] || 0) + 1)));
@@ -99,7 +99,7 @@ export async function pageLatest(fieldId, preset = "") {
 export async function pagePapers(fieldId) {
   view.innerHTML = `<div class="page"><p class="loading">Loading papers…</p></div>`;
   const papers = await need("papers");
-  if (!papers?.fields?.length) return (view.innerHTML = `<div class="page"><p class="note">Papers have not been fetched yet. The daily job fills this page.</p></div>`);
+  if (!papers?.fields?.length) return (view.innerHTML = `<div class="page"><p class="note">Papers have not been fetched yet. The scheduled job fills this page.</p></div>`);
   const current = papers.fields.find((x) => x.id === fieldId) || papers.fields[0];
   const f = fieldOf(current.id);
   const list = current.papers;
@@ -111,7 +111,7 @@ export async function pagePapers(fieldId) {
   view.innerHTML = `<div class="page"><section class="section">
     <h1>Papers</h1>
     ${paperTabs("top")}
-    <p class="lede">Open-access papers ranked by citations, refreshed daily from Europe PMC. Filter by task, dataset, year and venue, then switch to the comparison table to set methods side by side.</p>
+    <p class="lede">Open-access papers ranked by citations, refreshed every two days from Europe PMC. Filter by task, dataset, year and venue, then switch to the comparison table to set methods side by side.</p>
     ${gel({ id: "pfields", active: current.id, counts: Object.fromEntries(papers.fields.map((x) => [x.id, x.papers.length])), unit: "papers", link: (id) => `#papers/${id}` })}
     <div class="chips" id="tasks"><button class="chip plain" type="button" data-task="" aria-pressed="true">All tasks</button>${(f.tasks || [])
       .filter((t) => taskCount[t.id])

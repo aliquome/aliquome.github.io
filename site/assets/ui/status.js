@@ -11,7 +11,7 @@ export function dot(id) {
 export function history(id) {
   const s = statusOf(id);
   if (!s?.history?.length) return `<span class="muted">No checks yet</span>`;
-  return `<span class="history" role="img" aria-label="Daily checks, oldest first">${s.history
+  return `<span class="history" role="img" aria-label="Recent checks, oldest first">${s.history
     .map((h) => `<i class="${esc(h.s)}" title="${esc(h.d)}: ${esc(STATE_LABEL[h.s] || h.s)}"></i>`)
     .join("")}</span>`;
 }

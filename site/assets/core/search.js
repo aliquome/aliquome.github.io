@@ -20,7 +20,7 @@ export function buildIndex() {
     ["Most cited papers", "By field, all time and last 24 months", "#papers"],
     ["Benchmarks", "Published model comparisons", "#benchmarks"],
     ["Saved items", "Your reading list and data manifest", "#saved"],
-    ["Source status", "Daily reachability checks", "#status"],
+    ["Source status", "Reachability checks every two days", "#status"],
     ["How the atlas is built", "Reproducibility and citation", "#about"],
   ].map(([title, sub, href]) => ({ kind: "Page", title, sub, href, text: title.toLowerCase() }));
   for (const s of S.sources) {

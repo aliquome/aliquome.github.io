@@ -91,7 +91,7 @@ pub(crate) fn run(root: &Path, offline: bool) -> Res<()> {
         &out.join("build.json"),
         &BuildOut {
             generated_at: now(),
-            engine: format!("atlas-engine {}", env!("CARGO_PKG_VERSION")),
+            engine: format!("pinomics-engine {}", env!("CARGO_PKG_VERSION")),
             commit: env::var("GITHUB_SHA").unwrap_or_else(|_| "local".to_string()),
             mode: if offline { "offline" } else { "online" }.to_string(),
             inputs,

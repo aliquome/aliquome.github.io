@@ -1,85 +1,146 @@
-# Bioinformatics Data Atlas
+<h1 align="center">Pinomics</h1>
 
-Find the exact release of the data your analysis needs.
+<p align="center"><b>Pin the exact release of every bioinformatics database, dataset and benchmark.</b><br>
+Versioned download links, ready-to-run download code, AI-ready datasets, model leaderboards and the newest papers, in one open atlas.</p>
 
-The atlas is a static website, rebuilt every day, that brings together:
+<p align="center">
+<img alt="Databases" src="https://img.shields.io/badge/databases-83-2e7d6b">
+<img alt="Releases" src="https://img.shields.io/badge/releases-794-2e7d6b">
+<img alt="Datasets" src="https://img.shields.io/badge/datasets-519-3b6fb6">
+<img alt="Benchmark tables" src="https://img.shields.io/badge/benchmark%20tables-200-b07d2b">
+<img alt="Updated" src="https://img.shields.io/badge/updated-every%202%20days-6b6b6b">
+<img alt="License" src="https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-blue">
+</p>
 
-- **Databases.** Every release of 83 core bioinformatics databases (Ensembl, GENCODE, UniProt, PDB, AlphaFold DB, gnomAD, ClinVar, GDC, ChEMBL, STRING and more): 794 releases, 732 with a direct link you can paste into code, with ready-made `curl`, `wget`, Python, `pooch`, R, AWS CLI and `gcloud` snippets.
-- **Datasets.** 520 public datasets and benchmarks with repository, paper and download links: 194 collected from repositories, papers and challenges, and 326 bioinformatics datasets selected from the final Papers with Code archive.
-- **New papers.** Every paper from the last 60 days in the leading bioinformatics and computational biology journals (about 1,400), sorted into fields and tasks, with filters by journal, task and period.
-- **Top papers.** The most cited open-access papers in 11 fields, of all time and of the last 24 months, with abstracts, tagged by task and by the datasets they name. Filter them and compare methods side by side.
-- **Benchmarks.** 202 results tables for bioinformatics tasks (1,858 published results: molecular property prediction, protein function and structure, biomedical text mining, histopathology, cell segmentation and more), plus the ProteinGym boards copied daily. Any table can be re-ranked by another metric, and anyone can propose a new ranking, which goes live after a maintainer approves it.
-- **Status.** A daily check of every source's website and of the download link of its current release.
+<p align="center">
+<a href="#why-pinomics"><b>Why Pinomics</b></a> |
+<a href="#whats-inside"><b>What's inside</b></a> |
+<a href="#use-it-in-your-code"><b>Use it in code</b></a> |
+<a href="#run-it-locally"><b>Run locally</b></a> |
+<a href="#contribute"><b>Contribute</b></a> |
+<a href="#cite"><b>Cite</b></a>
+</p>
 
-Every database and dataset has its own 3D figure and chromatogram trace, both generated from its name.
+---
 
-## Repository layout
+**Pinomics** is an open, free catalogue of **bioinformatics databases and datasets with every release version and a direct download link**. Reproducible research needs the exact data: *GRCh38 or T2T-CHM13? Ensembl 113 or 116? gnomAD v3 or v4? UniProt 2026_04?* Pinomics answers that for 83 core resources (reference genomes, variants, cancer genomics, single-cell and expression, protein structures, pathways, drug discovery, epigenomics, RNA and microbiome), and turns each link into ready-to-run download code for **curl, wget, Python, R, `pooch`, AWS CLI and `gcloud`**.
 
-| Path | Contents |
+It also gathers **519 machine-learning-ready biology datasets**, **200 benchmark tables with 1,854 published results** to compare models, and the **newest papers from 22 leading bioinformatics and computational biology journals**. A Rust engine rebuilds everything every two days and checks that every source is still online. The site is static, fast and hosted on GitHub Pages.
+
+## Why Pinomics
+
+- **Every version, one link away.** 794 releases of 83 databases, 733 of them with a direct, versioned URL you can paste into a pipeline, so your analysis can be rerun years later.
+- **Download code for every link.** Files, FTP folders, Zenodo, Figshare, Hugging Face, Kaggle, GEO, Synapse, Dryad, Mendeley Data and GitHub each get the right client command. 75 library loaders (PyTorch Geometric, DeepChem, TDC, OGB, Hugging Face `datasets`, Bioconductor) and official clients for controlled data (UK Biobank, COSMIC, GDC, DepMap).
+- **Datasets for AI in biology.** 519 datasets for protein, molecule, single-cell, genomics, histopathology, microscopy and biomedical text tasks; 89% come with download code.
+- **Benchmarks you can rank yourself.** 200 results tables (molecular property prediction, protein function, drug–target interaction, retrosynthesis, biomedical NER, nucleus segmentation and more) plus the ProteinGym leaderboards. Re-rank by any metric, open a model or paper to see every ranking it appears in.
+- **Community updates, reviewed.** Readers sign in with a one-time email code and suggest a ranking, add a result from their own paper or correct a value; nothing changes until a maintainer approves it.
+- **New papers, sorted.** The last 60 days of Bioinformatics, Nucleic Acids Research, Genome Biology, Nature Methods, Nature Biotechnology and more, tagged by field and task, with open abstracts.
+- **Reproducible by design.** All catalogue data lives in plain files in `data/`; offline builds are byte-identical, and every build records the SHA-256 of its inputs.
+- **Free and open.** No account, no tracking, no server. Code under `MIT OR Apache-2.0`.
+
+## What's inside
+
+| Section | What you get | Size |
+|---|---|---|
+| **Databases** | Every release with date, status, direct link and download code | 83 databases, 794 releases |
+| **Datasets** | Description, licence, paper, repository, loaders and download code | 519 datasets |
+| **Benchmarks** | Results tables to filter by task and dataset; model and paper profiles | 200 tables, 951 models, 4 ProteinGym boards |
+| **Papers** | New papers from leading journals, and the most cited open-access papers per field | ~1,350 new, 651 top papers |
+| **Status** | Reachability of every source and of its current download link | checked every two days |
+
+**Fields:** genomes and annotation · variants and population genetics · cancer genomics · expression and single-cell · proteins and structures · pathways, networks and ontologies · chemistry and drug discovery · epigenomics and regulation · RNA · microbiome and metagenomics · benchmarks and machine learning.
+
+**Some of the databases:** GRCh37, GRCh38, T2T-CHM13, Ensembl, GENCODE, RefSeq, MANE, dbSNP, ClinVar, gnomAD, 1000 Genomes, UK Biobank, GDC/TCGA, COSMIC, DepMap, GTEx, CELLxGENE Census, Human Protein Atlas, UniProt, PDB, AlphaFold DB, Pfam, InterPro, CATH, KEGG, Reactome, Gene Ontology, ChEMBL, PubChem, DrugBank, ENCODE, JASPAR, RNAcentral, Rfam, GTDB and more.
+
+## Use it in your code
+
+Each database page gives a versioned link and code. For example, to fetch one release and record its checksum:
+
+```python
+import pooch  # downloads once, caches, and records the SHA-256
+
+path = pooch.retrieve(
+    url="https://ftp.ebi.ac.uk/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz",
+    known_hash=None,
+)
+print(pooch.file_hash(path))  # keep this next to your results
+```
+
+Datasets show the library call that loads them:
+
+```python
+from tdc.multi_pred import DTI   # pip install PyTDC
+data = DTI(name="DAVIS")
+split = data.get_split()
+```
+
+The whole catalogue is also plain JSON, so scripts can query it directly:
+
+| File | Contents |
 |---|---|
-| `data/` | All inputs. `sources.toml` (databases), `database_versions.csv` (releases and links), `datasets.csv`, `fields.toml` (fields, tasks, paper queries), `latest.toml` (journals for new papers), `leaderboards.toml` (benchmark tables), `loaders.toml` (library calls and official client commands that fetch a dataset or database) |
-| `engine/` | `atlas`, a Rust program that turns `data/` into the JSON files under `site/data/`, fetches papers and benchmark tables, and checks sources |
-| `site/` | The website: HTML, CSS and JavaScript, with three.js for the 3D figures |
-| `.github/workflows/daily.yml` | Daily build: compile, reproducibility check, data refresh, commit, deploy to GitHub Pages |
-| `docs/SUBMISSIONS.md` | Setting up email sign-in and reader suggestions (Supabase and GitHub) |
+| `site/data/sources.json` | databases, every release, links and loaders |
+| `site/data/datasets.json` | datasets, links, licences and loaders |
+| `site/data/benchmarks/*.json` | results tables |
+| `site/data/latest.json`, `papers.json` | new and most cited papers |
 
-## Run it
+On the published site these are served at `https://<user>.github.io/pinomics/data/<file>`.
+
+## Run it locally
 
 ```bash
-# build the data (needs Rust)
-cargo run --release --manifest-path engine/Cargo.toml -- build
-# rebuild without any network call; same inputs give the same output
+# build the data (needs Rust); --offline makes no network call
 cargo run --release --manifest-path engine/Cargo.toml -- build --offline
-# serve the site
+# serve the site, then open http://localhost:3000
 npx serve site
 ```
 
-Opening `site/index.html` straight from disk does not work, because the page loads its data with `fetch`.
+The page loads its data with `fetch`, so open it through a local server, not from disk.
 
-## Publish on GitHub Pages
+## How it works
 
-1. Push this folder to a public repository, on the `main` branch.
-2. **Settings → Pages → Source:** GitHub Actions.
-3. **Settings → Actions → General → Workflow permissions:** Read and write.
-4. Run **Daily build and deploy** once from the Actions tab.
+```
+data/            plain-text catalogue: databases, releases, datasets, fields, journals, loaders, rankings
+engine/          Rust program `pinomics`: turns data/ into site/data/*.json, fetches papers and
+                 benchmark tables, checks every source (layers: domain, steps, infra)
+site/            static website: HTML, CSS and ES modules (domain, core, ui, pages), three.js figures
+.github/         build and deploy every two days; ranking approvals; reader suggestions; tests
+supabase/        database rules for email sign-in and reader suggestions
+tests/           end-to-end test of sign-in, suggestions, review and table updates
+```
 
-## Reproducibility
+### Publish your own copy
 
-- Databases, releases and datasets come only from files in `data/`. The daily job builds them twice offline and stops if the outputs differ.
-- `site/data/build.json` records the commit, engine version and SHA-256 of every input.
-- Papers, benchmark tables and status depend on the day; each version is kept in the git history.
-- For your own work, copy the release link from a database page and record its checksum. The `pooch` snippet on each page does both.
+1. Push to a public repository named `pinomics`, on `main`.
+2. **Settings → Pages → Source:** GitHub Actions. **Settings → Actions → Workflow permissions:** read and write.
+3. Run **Build and deploy** once from the Actions tab. It then runs every two days.
+4. Optional: email sign-in for reader suggestions, see [docs/SUBMISSIONS.md](docs/SUBMISSIONS.md) (about 15 minutes).
 
-## Contributing
+## Contribute
 
-To add a database, add a `[[source]]` block to `data/sources.toml` and its releases to `data/database_versions.csv`. To add a benchmark table, add a `[[board]]` block to `data/leaderboards.toml`. No code change is needed.
+- **Add a database:** a `[[source]]` block in `data/sources.toml` and its releases in `data/database_versions.csv`.
+- **Add a dataset:** a row in `data/datasets.csv`; a library call in `data/loaders.toml`.
+- **Add a benchmark board:** a `[[board]]` block in `data/leaderboards.toml`.
+- **Change a ranking or add your paper's results:** use *Suggest a change* on any benchmark table.
 
-## Licence
+No code change is needed for any of these. Open a pull request or an issue.
 
-Code: `MIT OR Apache-2.0` (see `LICENSE-MIT` and `LICENSE-APACHE`). The atlas links to data and hosts none of it; each source keeps its own licence, shown on its page.
+## Cite
 
-## Changing a ranking
+If Pinomics helps your research, please cite it:
 
-Rankings of the results tables follow `data/rankings.toml`, and only the repository owner can change it:
+```bibtex
+@misc{pinomics2026,
+  title  = {Pinomics: versioned bioinformatics databases, datasets and benchmarks},
+  year   = {2026},
+  note   = {Open catalogue with direct release links and download code},
+  howpublished = {\url{https://github.com/<user>/pinomics}}
+}
+```
 
-1. On a table page, a reader picks another metric, flips the order or leaves out rows, then presses **Propose this ranking**. This opens a GitHub issue from the *Ranking change* form with the proposal as a TOML block.
-2. The owner reviews the issue and adds the `approved` label. The workflow `.github/workflows/rankings.yml` runs only when the person adding the label is the repository owner.
-3. `scripts/apply-ranking.mjs` checks the proposal against the table (known metric and models, https sources, allowed keys only), writes it to `data/rankings.toml`, starts the site build and closes the issue. A proposal that fails a check gets a comment and loses the label.
+## Credits and licence
 
-Create the labels `ranking` and `approved` once in the repository. On a custom domain, set the repository in `<meta name="atlas-repo">` in `site/index.html`.
+Code: `MIT OR Apache-2.0` ([LICENSE-MIT](LICENSE-MIT), [LICENSE-APACHE](LICENSE-APACHE)). Pinomics links to data and hosts none of it; each source keeps its own licence, shown on its page.
 
-## Reader suggestions with email sign-in
+326 dataset entries (ids starting with `pwc-`) and the 200 results tables are selected from the final Papers with Code archive on Hugging Face, [pwc-archive/datasets](https://huggingface.co/datasets/pwc-archive/datasets) and [pwc-archive/evaluation-tables](https://huggingface.co/datasets/pwc-archive/evaluation-tables) (snapshot of 28 July 2025, CC BY-SA 4.0). Papers come from [Europe PMC](https://europepmc.org); leaderboards from [ProteinGym](https://proteingym.org).
 
-Readers can suggest a ranking, add a result from their own paper (with a link or an uploaded PDF) or correct a published value, after signing in with a one-time code sent to their email. GitHub Pages serves only static files, so sign-in, suggestions and PDFs live in a Supabase project; review stays on GitHub:
-
-1. `site/assets/submit.js` and `site/assets/suggest.js`: sign-in and the "Suggest a change" panel, using the public key of the project. Row-level security in `supabase/migrations/` lets a reader create only their own pending suggestions and read only their own.
-2. `.github/workflows/submissions.yml` (every 15 minutes): `scripts/sync-submissions.mjs` checks each suggestion with `scripts/ranking-lib.mjs`, opens a GitHub issue for valid ones (without the email address) and rejects the rest with a reason.
-3. The owner adds the `approved` label; `rankings.yml` merges the change into `data/rankings.toml` and rebuilds the site. The next sync shows the reader "Applied" or "Not applied".
-
-Setup takes about 15 minutes: see [docs/SUBMISSIONS.md](docs/SUBMISSIONS.md). Without Supabase, the panel opens a GitHub issue instead. `tests/submissions.test.mjs` runs the whole path against local stand-ins for Supabase and GitHub, and runs on every push (`.github/workflows/tests.yml`).
-
-## Credits
-
-326 dataset entries (ids starting with `pwc-` in `data/datasets.csv`) are selected from the final Papers with Code archive, [pwc-archive/datasets](https://huggingface.co/datasets/pwc-archive/datasets) on Hugging Face (snapshot of 28 July 2025, licensed CC BY-SA 4.0). Of its 15,008 datasets, those about sequences, structures, molecules, cells, tissue images and biomedical text were kept. Medical imaging, clinical records and general machine-learning sets were left out. Names, descriptions, links and paper counts are taken from the archive; descriptions are shortened.
-
-The 202 results tables in `data/benchmarks/` are selected from the Papers with Code archive, [pwc-archive/evaluation-tables](https://huggingface.co/datasets/pwc-archive/evaluation-tables) (snapshot of 28 July 2025, CC BY-SA 4.0): of its 21,225 tables, those on bioinformatics datasets and tasks. Scores are copied as published.
+<sub>Keywords: bioinformatics database versions, reproducible bioinformatics, genome reference download, GRCh38, T2T-CHM13, Ensembl release, UniProt release, AlphaFold DB, gnomAD, ClinVar, ChEMBL, single-cell datasets, protein datasets, drug discovery datasets, machine learning benchmarks for biology, leaderboards, computational biology papers.</sub>

@@ -49,7 +49,7 @@ GitHub Action «Sync reader submissions»  (هر ۱۵ دقیقه)
 3. در **Authentication → Providers → Email**، گزینه‌ی Email را روشن کنید.
 4. در **Authentication → Email Templates**، در دو قالب **Magic Link** و **Confirm signup** متن را طوری بنویسید که کد را نشان بدهد. مثلاً:
    ```html
-   <h2>کد ورود به Bioinformatics Data Atlas</h2>
+   <h2>کد ورود به Pinomics</h2>
    <p>کد شما: <strong>{{ .Token }}</strong></p>
    <p>این کد یک ساعت اعتبار دارد.</p>
    ```
