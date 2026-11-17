@@ -668,7 +668,7 @@ function pageDatasets(field, preset) {
   S.datasets.forEach((d) => (counts[d.field] = (counts[d.field] || 0) + 1));
   view.innerHTML = `<div class="page"><section class="section">
     <h1>Datasets and benchmarks</h1>
-    <p class="lede">Public datasets from repositories, papers and challenges. Press “code” next to a link to get a download snippet for your language.</p>
+    <p class="lede">Public datasets from repositories, papers, challenges and the <a href="https://huggingface.co/datasets/pwc-archive/datasets" target="_blank" rel="noopener">Papers with Code archive</a>. Press “code” next to a link to get a download snippet for your language.</p>
     ${gel({ id: "chips", active: field, counts, unit: "datasets", search: { id: "filter", placeholder: "Filter by name or description", value: preset } })}
     <p class="count" id="count"></p>
     <div class="rows" id="rows"></div>
@@ -958,6 +958,8 @@ commit     ${esc(b.commit || "—")}
 mode       ${esc(b.mode || "—")}
 ${esc(inputs)}</div>
       <p>For your own analyses, pin the exact release link from a database page and record its checksum. The “pooch” code tab does both.</p>
+      <h2>Where the datasets come from</h2>
+      <p>Most dataset entries were collected by hand from GitHub repositories, papers and challenges. 326 more were selected from the final Papers with Code archive (<a href="https://huggingface.co/datasets/pwc-archive/datasets" target="_blank" rel="noopener">pwc-archive/datasets</a>, 28 July 2025, CC BY-SA 4.0): of its 15,008 datasets, those about sequences, structures, molecules, cells, tissue images and biomedical text. Their paper counts are the archive’s and stop at that date.</p>
       <h2>Adding or fixing an entry</h2>
       <p>Add a block to <code>data/sources.toml</code> and rows to <code>data/database_versions.csv</code>, then open a pull request. No code change is needed.</p>
       <h2>Limits</h2>

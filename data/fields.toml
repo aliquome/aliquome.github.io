@@ -7,6 +7,15 @@
 #   tasks  each paper is tagged with every task whose pattern matches its
 #          title, abstract or keywords (case-insensitive regular expression)
 
+# Dataset names that are also ordinary words or concepts. Papers are not
+# tagged with a dataset when only one of these names appears.
+mention_stoplist = [
+  "PPI", "PTC", "AIDS", "HIV", "DDI", "Bio", "HOC", "TCGA", "PLOS", "eLife", "BLUE", "BCI", "UMLS",
+  "Yeast", "Ecoli", "Kumar", "Sachs", "ADE", "CDR", "Cell", "GDA", "GAD", "PGR", "AGAR", "WDBC",
+  "BACH", "BACE", "Lipophilicity", "Photoswitch", "Toxicity", "Mutagenicity", "LKS", "U2OS", "ADORE",
+  "hERG", "QTL", "L1000", "FMD", "PECAN", "Phee", "SuMe", "ALFI", "Durian", "Bento",
+]
+
 [[field]]
 id = "genomes"
 label = "Genomes and annotation"
@@ -232,3 +241,19 @@ field = "benchmarks"
 [[category]]
 prefix = "New benchmarks"
 field = "benchmarks"
+
+[[category]]
+prefix = "Molecules"
+field = "chemistry"
+
+[[category]]
+prefix = "Variants"
+field = "variants"
+
+[[category]]
+prefix = "Epigenomics"
+field = "regulation"
+
+[[category]]
+prefix = "Cell and microscopy"
+field = "expression"

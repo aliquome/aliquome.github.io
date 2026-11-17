@@ -5,7 +5,7 @@ Find the exact release of the data your analysis needs.
 The atlas is a static website, rebuilt every day, that brings together:
 
 - **Databases.** Every release of 83 core bioinformatics databases (Ensembl, GENCODE, UniProt, PDB, AlphaFold DB, gnomAD, ClinVar, GDC, ChEMBL, STRING and more): 794 releases, 732 with a direct link you can paste into code, with ready-made `curl`, `wget`, Python, `pooch`, R, AWS CLI and `gcloud` snippets.
-- **Datasets.** 194 public datasets and benchmarks with repository and download links.
+- **Datasets.** 520 public datasets and benchmarks with repository, paper and download links: 194 collected from repositories, papers and challenges, and 326 bioinformatics datasets selected from the final Papers with Code archive.
 - **New papers.** Every paper from the last 60 days in the leading bioinformatics and computational biology journals (about 1,400), sorted into fields and tasks, with filters by journal, task and period.
 - **Top papers.** The most cited open-access papers in 11 fields, of all time and of the last 24 months, with abstracts, tagged by task and by the datasets they name. Filter them and compare methods side by side.
 - **Benchmarks.** Published model comparison tables (currently ProteinGym), copied daily and shown exactly as published.
@@ -57,3 +57,7 @@ To add a database, add a `[[source]]` block to `data/sources.toml` and its relea
 ## Licence
 
 Code: `MIT OR Apache-2.0` (see `LICENSE-MIT` and `LICENSE-APACHE`). The atlas links to data and hosts none of it; each source keeps its own licence, shown on its page.
+
+## Credits
+
+326 dataset entries (ids starting with `pwc-` in `data/datasets.csv`) are selected from the final Papers with Code archive, [pwc-archive/datasets](https://huggingface.co/datasets/pwc-archive/datasets) on Hugging Face (snapshot of 28 July 2025, licensed CC BY-SA 4.0). Of its 15,008 datasets, those about sequences, structures, molecules, cells, tissue images and biomedical text were kept. Medical imaging, clinical records and general machine-learning sets were left out. Names, descriptions, links and paper counts are taken from the archive; descriptions are shortened.

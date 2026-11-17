@@ -66,6 +66,9 @@ struct SourceDef {
 
 #[derive(Deserialize)]
 struct FieldsFile {
+    /// Dataset names too generic to tag papers by (Cell, HIV, PPI, ...).
+    #[serde(default)]
+    mention_stoplist: Vec<String>,
     field: Vec<FieldDef>,
     #[serde(default)]
     category: Vec<CategoryDef>,
@@ -517,7 +520,7 @@ fn mention_needles(name: &str) -> Vec<String> {
     out
 }
 
-fn build_mentions(sources: &[SourceDef], datasets: &DatasetsOut) -> Vec<Mention> {
+fn build_mentions(sources: &[SourceDef], datasets: &DatasetsOut, stoplist: &[String]) -> Vec<Mention> {
     let mut items: Vec<(String, String)> = Vec::new();
     for s in sources {
         for n in mention_needles(&s.name) {
@@ -529,6 +532,9 @@ fn build_mentions(sources: &[SourceDef], datasets: &DatasetsOut) -> Vec<Mention>
     }
     for d in &datasets.datasets {
         for n in mention_needles(&d.name) {
+            if stoplist.iter().any(|s| s.eq_ignore_ascii_case(&n)) {
+                continue;
+            }
             items.push((format!("ds:{}", d.id), n));
         }
     }
@@ -1106,7 +1112,7 @@ fn run() -> Res<()> {
     if offline {
         println!("offline: papers, leaderboards and status left unchanged");
     } else {
-        let mentions = build_mentions(&sources_file.source, &datasets);
+        let mentions = build_mentions(&sources_file.source, &datasets, &fields_file.mention_stoplist);
         let papers = build_papers(&fields_file.field, &mentions, read_json(&out.join("papers.json")));
         counts.insert("papers".to_string(), papers.fields.iter().map(|f| f.papers.len()).sum());
         write_json(&out.join("papers.json"), &papers)?;
