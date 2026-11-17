@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T11:39:04Z",
+  "generated_at": "2026-11-17T12:28:43Z",
   "since": "2026-09-18",
   "until": "2026-11-17",
   "days": 60,
@@ -746,6 +746,301 @@
       "lists": [],
       "abstract": "Interpretation of rare-disease genomes remains constrained by variant-centric analytical frameworks that insufficiently capture the cumulative impact of multiple variants within a gene. GenePy provides an individual-level, gene-based burden metric that integrates variant consequence, allele frequency, and zygosity into a unified quantitative score, enabling a transition from discrete variant annotation to aggregated gene-level interpretation. In the context of Genomics England (GEL), this formulation supports a panel-agnostic, genotype-to-phenotype diagnostic strategy for unresolved monogenic disorders by prioritizing genes with elevated mutational burden per individual. Here, we present a fully automated, containerized GenePy workflow deployed through Nextflow and integrated within the GEL Research Environment via the Lifebit CloudOS platform. This implementation provides scalable, secure, and governance-compliant computation of gene-level burden scores across population-scale cohorts. The workflow harmonizes variant annotation, quality control, and chunked data aggregation within modular, reproducible processes designed for high-throughput execution on cloud-native infrastructure. By enabling robust, portable, and auditable gene-level scoring across large rare-disease sequencing datasets, this framework enhances analytical resolution and supports downstream statistical prioritization, integrative phenotype matching, and hypothesis generation within genotype-to-phenotype diagnostic workflows.",
       "url": "https://doi.org/10.1093/nargab/lqag113"
+    },
+    {
+      "id": "MED:43040071",
+      "title": "A CD7-targeted AAV variant enables efficient T and NK cell engineering in vivo.",
+      "method": "",
+      "authors": "Hong L, Chen G, Liu Y, Cao Y, Li X, Li W, Pan Y, Wang H, Ru G, Yang S, Cheng M, Lv T, Zhu Y, Huang S, Nian X, Ou H, Wang C, Gu SX, Lek M, Ye L.",
+      "journal": "Nature biotechnology",
+      "year": "2026",
+      "date": "2026-11-16",
+      "doi": "10.1038/s41587-026-03344-5",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [],
+      "tasks": [
+        "cancer:heterogeneity"
+      ],
+      "datasets": [],
+      "lists": [],
+      "fields": [
+        "cancer"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1038/s41587-026-03344-5"
+    },
+    {
+      "id": "MED:43040036",
+      "title": "Echidna: a Bayesian framework for integrative inference of copy number alterations impacting phenotypic plasticity.",
+      "method": "Echidna",
+      "authors": "Fan JL, Zhang M, O'Brien W, Myers JD, Chatterjee S, Hoffer-Hawlik K, Beltran-Velez N, Preau A, Arora I, Melms JC, Biermann J, D'Souza E, Tagore S, Olsen T, Li S, Sims PA, Izar B, Azizi E.",
+      "journal": "Nature methods",
+      "year": "2026",
+      "date": "2026-11-16",
+      "doi": "10.1038/s41592-026-03279-4",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [],
+      "tasks": [
+        "cancer:heterogeneity",
+        "cancer:drug-response"
+      ],
+      "datasets": [],
+      "lists": [],
+      "fields": [
+        "cancer"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1038/s41592-026-03279-4"
+    },
+    {
+      "id": "MED:43040035",
+      "title": "Joint single-cell capture of Cas9 edits and transcriptomes reveals on- and off-target effects on gene expression.",
+      "method": "",
+      "authors": "Lorenzini MH, Balderson B, Lavalle SN, Sajeev K, Ho AJ, Light M, Usman OH, Kurgan G, McVicker G.",
+      "journal": "Nature methods",
+      "year": "2026",
+      "date": "2026-11-16",
+      "doi": "10.1038/s41592-026-03319-z",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [],
+      "tasks": [
+        "expression:integration",
+        "expression:perturbation"
+      ],
+      "datasets": [],
+      "lists": [],
+      "fields": [
+        "expression"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1038/s41592-026-03319-z"
+    },
+    {
+      "id": "MED:43040034",
+      "title": "Tracing the genetic roots of cellular identity in tumors.",
+      "method": "",
+      "authors": "Lawson NM, Mitchell T, Akdemir KC.",
+      "journal": "Nature methods",
+      "year": "2026",
+      "date": "2026-11-16",
+      "doi": "10.1038/s41592-026-03291-8",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [],
+      "tasks": [],
+      "datasets": [],
+      "lists": [],
+      "fields": [
+        "cancer"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1038/s41592-026-03291-8"
+    },
+    {
+      "id": "MED:43040009",
+      "title": "Cognitive grounding improves LLM simulation of collective human behavior.",
+      "method": "",
+      "authors": "Zhu H, Heydari B.",
+      "journal": "Nature computational science",
+      "year": "2026",
+      "date": "2026-11-16",
+      "doi": "10.1038/s43588-026-01080-z",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [],
+      "tasks": [
+        "benchmarks:foundation-eval",
+        "benchmarks:llm"
+      ],
+      "datasets": [],
+      "lists": [],
+      "fields": [
+        "benchmarks"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1038/s43588-026-01080-z"
+    },
+    {
+      "id": "MED:43039959",
+      "title": "High-quality pig pan-genome resources illuminate centromere evolution and enhance genotype-phenotype mapping.",
+      "method": "",
+      "authors": "Feng Y, Du H, Zhang J, Ma Y, Lu S, Ni R, Liu Z, Ma S, An Z, Jin W, Tong S, Gao Z, Lu J, Wu J, Zhang H, Yin Z, Bao W, Wang H, Zheng X, Li B, Song J, Zhou S, Zhao Y, Zhou L, Zhang R, Liu J.",
+      "journal": "Nature genetics",
+      "year": "2026",
+      "date": "2026-11-16",
+      "doi": "10.1038/s41588-026-02829-y",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [],
+      "tasks": [
+        "genomes:assembly",
+        "genomes:pangenome"
+      ],
+      "datasets": [],
+      "lists": [],
+      "fields": [
+        "genomes"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1038/s41588-026-02829-y"
+    },
+    {
+      "id": "MED:43039958",
+      "title": "Principles and assumptions underlying domain detection in spatial transcriptomics.",
+      "method": "",
+      "authors": "Panwar P, Chen C, Ding S, Ameen F, Shen M, Kim D, Jayakumar R, Woollard M, Chuah J, Liang X, Yang J, Patrick E, Yang P, Hicks SC, Ghazanfar S.",
+      "journal": "Nature genetics",
+      "year": "2026",
+      "date": "2026-11-16",
+      "doi": "10.1038/s41588-026-02812-7",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [],
+      "tasks": [
+        "expression:clustering",
+        "expression:spatial"
+      ],
+      "datasets": [],
+      "lists": [],
+      "fields": [
+        "expression"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1038/s41588-026-02812-7"
+    },
+    {
+      "id": "MED:43038299",
+      "title": "Robust parametric estimation of avian cranial morphology.",
+      "method": "",
+      "authors": "Lau K, Choi GPT.",
+      "journal": "PLoS computational biology",
+      "year": "2026",
+      "date": "2026-11-16",
+      "doi": "10.1371/journal.pcbi.1014941",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [],
+      "tasks": [],
+      "datasets": [],
+      "lists": [],
+      "abstract": "",
+      "url": "https://doi.org/10.1371/journal.pcbi.1014941"
+    },
+    {
+      "id": "MED:43038295",
+      "title": "A flexible agent-based modelling framework of multi-serotype pneumococcal carriage to evaluate vaccine strategies in large populations.",
+      "method": "",
+      "authors": "Tellioglu N, Price DJ, Chen X, Spirkoska V, Wang CY, Moss R, Carvalho N, Carville KS, Campbell PT, McVernon J.",
+      "journal": "PLoS computational biology",
+      "year": "2026",
+      "date": "2026-11-16",
+      "doi": "10.1371/journal.pcbi.1014946",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [],
+      "tasks": [],
+      "datasets": [],
+      "lists": [],
+      "fields": [
+        "microbiome"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1371/journal.pcbi.1014946"
+    },
+    {
+      "id": "MED:43038293",
+      "title": "Epidemic control under incomplete observations through mechanistic state reconstruction and multi-agent learning.",
+      "method": "",
+      "authors": "Wang S, Luo Y, Cui Y, Zhang M, Kang M, Yin L.",
+      "journal": "PLoS computational biology",
+      "year": "2026",
+      "date": "2026-11-16",
+      "doi": "10.1371/journal.pcbi.1014955",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [],
+      "tasks": [],
+      "datasets": [],
+      "lists": [],
+      "abstract": "",
+      "url": "https://doi.org/10.1371/journal.pcbi.1014955"
+    },
+    {
+      "id": "MED:43038276",
+      "title": "Neuronal XOR computation requires temporally activated synaptic information.",
+      "method": "",
+      "authors": "Li Y, Sun X, Zang Y.",
+      "journal": "PLoS computational biology",
+      "year": "2026",
+      "date": "2026-11-16",
+      "doi": "10.1371/journal.pcbi.1014971",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [],
+      "tasks": [],
+      "datasets": [],
+      "lists": [],
+      "abstract": "",
+      "url": "https://doi.org/10.1371/journal.pcbi.1014971"
+    },
+    {
+      "id": "MED:43038221",
+      "title": "Ten simple rules for creating and maintaining FAIR competency frameworks.",
+      "method": "",
+      "authors": "Bianco D, Sokolova D, Forshaw M, Ramirez Marengo C, Karoune E, Gurwitz KT, Matser V.",
+      "journal": "PLoS computational biology",
+      "year": "2026",
+      "date": "2026-11-16",
+      "doi": "10.1371/journal.pcbi.1014922",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [
+        "Professional Competence"
+      ],
+      "tasks": [],
+      "datasets": [],
+      "lists": [],
+      "abstract": "",
+      "url": "https://doi.org/10.1371/journal.pcbi.1014922"
+    },
+    {
+      "id": "MED:43038109",
+      "title": "CN-RNN: a deep learning framework for copy number variants detection with exome sequencing data.",
+      "method": "CN-RNN",
+      "authors": "Wang D, Qin F, Bao W, Bacher R, Chung D, Lu Q, Efron PA, Cai G, Xiao F.",
+      "journal": "Briefings in bioinformatics",
+      "year": "2026",
+      "date": "2026-11-01",
+      "doi": "10.1093/bib/bbag644",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [
+        "DNA Copy Number Variations",
+        "Exome",
+        "Deep Learning",
+        "Exome Sequencing"
+      ],
+      "tasks": [],
+      "datasets": [],
+      "lists": [],
+      "abstract": "",
+      "url": "https://doi.org/10.1093/bib/bbag644"
     },
     {
       "id": "MED:43037092",
@@ -12945,6 +13240,172 @@
       ],
       "abstract": "",
       "url": "https://doi.org/10.1101/gr.280579.125"
+    },
+    {
+      "id": "MED:43039955",
+      "title": "De novo design of lipopeptides with antimicrobial potency enabled by a chain-as-prompt deep learning framework.",
+      "method": "",
+      "authors": "Zhang F, Yu X, Wu Y, Li L.",
+      "journal": "Nature communications",
+      "year": "2026",
+      "date": "2026-10-17",
+      "doi": "10.1038/s41467-026-78763-8",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [
+        "Anti-Bacterial Agents",
+        "Drug Design",
+        "Lipopeptides",
+        "Deep Learning",
+        "Antimicrobial Peptides"
+      ],
+      "tasks": [
+        "proteins:design",
+        "microbiome:resistance"
+      ],
+      "datasets": [],
+      "lists": [],
+      "fields": [
+        "microbiome",
+        "proteins"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1038/s41467-026-78763-8"
+    },
+    {
+      "id": "MED:43039926",
+      "title": "Permeability heterogeneity controls fluid migration and microseismicity evolution in The Geysers geothermal field, California.",
+      "method": "",
+      "authors": "Li L, Zeng X, McBrearty IW, Cui X, Tan X, Mao S, Beroza GC, Tan J, Liu J, Segall P, Ellsworth WL.",
+      "journal": "Nature communications",
+      "year": "2026",
+      "date": "2026-10-17",
+      "doi": "10.1038/s41467-026-78210-8",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [],
+      "tasks": [],
+      "datasets": [],
+      "lists": [],
+      "fields": [
+        "pathways"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1038/s41467-026-78210-8"
+    },
+    {
+      "id": "MED:43039908",
+      "title": "Accounting for longitudinal peak quality metrics with MSstats+ enhances differential analysis in proteomic experiments with data-independent acquisition.",
+      "method": "",
+      "authors": "Kohler D, Dogu E, Bhattacharya M, Karayel O, Magana M, Wu A, Anania VG, Vitek O.",
+      "journal": "Nature communications",
+      "year": "2026",
+      "date": "2026-10-17",
+      "doi": "10.1038/s41467-026-78591-w",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [
+        "Proteome",
+        "Proteomics",
+        "Mass Spectrometry"
+      ],
+      "tasks": [
+        "benchmarks:benchmark"
+      ],
+      "datasets": [],
+      "lists": [],
+      "fields": [
+        "benchmarks"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1038/s41467-026-78591-w"
+    },
+    {
+      "id": "MED:43039905",
+      "title": "Rapid assessment of chemical complementarity of ligands for protein design.",
+      "method": "",
+      "authors": "Petrenas R, Ożga K, Chubb JJ, Romanyuk AV, Alibhai D, McManus JJ, Leggett GJ, Scrutton NS, Oliver TAA, Woolfson DN.",
+      "journal": "Nature communications",
+      "year": "2026",
+      "date": "2026-10-19",
+      "doi": "10.1038/s41467-026-78764-7",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [
+        "Proteins",
+        "Protein Engineering"
+      ],
+      "tasks": [
+        "proteins:design",
+        "chemistry:generation",
+        "chemistry:affinity"
+      ],
+      "datasets": [],
+      "lists": [],
+      "fields": [
+        "proteins",
+        "chemistry"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1038/s41467-026-78764-7"
+    },
+    {
+      "id": "MED:43039891",
+      "title": "Developing and benchmarking one health genomic surveillance tools for influenza A virus in wastewater.",
+      "method": "",
+      "authors": "Jiang M, Wang ALW, Thissen JB, Nelson KL, Pipes L, Kantor RS.",
+      "journal": "Nature communications",
+      "year": "2026",
+      "date": "2026-10-17",
+      "doi": "10.1038/s41467-026-78683-7",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [
+        "Influenza A virus",
+        "Genomics",
+        "Influenza, Human",
+        "Wastewater"
+      ],
+      "tasks": [
+        "benchmarks:benchmark"
+      ],
+      "datasets": [],
+      "lists": [],
+      "fields": [
+        "benchmarks"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1038/s41467-026-78683-7"
+    },
+    {
+      "id": "MED:43038988",
+      "title": "The Drosophila melanogaster Genetic Reference Panel version 3.",
+      "method": "",
+      "authors": "Lyman RF, Shankar V, Lyman RA, Sunkara L, Nazario Yepiz NO, Adonay ME, Brooks J, Lyman RL, Huang Y, Huang W, Anholt RRH, Mackay TFC.",
+      "journal": "Cell genomics",
+      "year": "2026",
+      "date": "2026-10-20",
+      "doi": "10.1016/j.xgen.2026.101399",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [],
+      "tasks": [
+        "variants:gwas"
+      ],
+      "datasets": [],
+      "lists": [],
+      "fields": [
+        "genomes",
+        "variants"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1016/j.xgen.2026.101399"
     },
     {
       "id": "MED:43035544",

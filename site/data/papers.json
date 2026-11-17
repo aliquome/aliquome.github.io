@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T11:38:53Z",
+  "generated_at": "2026-11-17T12:28:31Z",
   "source": "Europe PMC REST API",
   "rule": "For each field, the 30 most cited open-access papers of all time and the 30 most cited of the last 24 months that match the field query. Tasks come from keyword patterns; datasets are databases and datasets named in the title, abstract or keywords.",
   "fields": [
@@ -5887,6 +5887,31 @@
           "url": "https://doi.org/10.1093/bioinformatics/btw777"
         },
         {
+          "id": "MED:31597160",
+          "title": "Resolving the fibrotic niche of human liver cirrhosis at single-cell level.",
+          "method": "",
+          "authors": "Ramachandran P, Dobie R, Wilson-Kanamori JR, Dora EF, Henderson BEP, Luu NT, Portman JR, Matchett KP, Brice M, Marwick JA, Taylor RS, Efremova M, Vento-Tormo R, Carragher NO, Kendall TJ, Fallowfield JA, Harrison EM, Mole DJ, Wigmore SJ, Newsome PN, Weston CJ, Iredale JP, Tacke F, Pollard JW, Ponting CP, Marioni JC, Teichmann SA, Henderson NC.",
+          "journal": "Nature",
+          "year": "2019",
+          "date": "2019-10-09",
+          "doi": "10.1038/s41586-019-1631-3",
+          "cited": 1707,
+          "license": "",
+          "pdf": "https://europepmc.org/articles/PMC6876711?pdf=render",
+          "keywords": [
+            "Single-Cell Analysis"
+          ],
+          "tasks": [
+            "trajectory"
+          ],
+          "datasets": [],
+          "lists": [
+            "classic"
+          ],
+          "abstract": "Liver cirrhosis is a major cause of death worldwide and is characterized by extensive fibrosis. There are currently no effective antifibrotic therapies available. To obtain a better understanding of the cellular and molecular mechanisms involved in disease pathogenesis and enable the discovery of therapeutic targets, here we profile the transcriptomes of more than 100,000 single human cells, yielding molecular definitions for non-parenchymal cell types that are found in healthy and cirrhotic human liver. We identify a scar-associated TREM2 + CD9 + subpopulation of macrophages, which expands in liver fibrosis, differentiates from circulating monocytes and is pro-fibrogenic. We also define ACKR1 + and PLVAP + endothelial cells that expand in cirrhosis, are topographically restricted to the fibrotic niche and enhance the transmigration of leucocytes. Multi-lineage modelling of ligand and receptor interactions between the scar-associated macrophages, endothelial cells and PDGFRα + collagen-producing mesenchymal cells reveals intra-scar activity of several pro-fibrogenic pathways including TNFRSF12A, PDGFR and NOTCH signalling. Our work dissects unanticipated aspects of the cellular and molecular basis of human organ fibrosis at a single-cell level, and provides a conceptual framework for the discovery of rational therapeutic targets in liver cirrhosis.",
+          "url": "https://doi.org/10.1038/s41586-019-1631-3"
+        },
+        {
           "id": "MED:34321199",
           "title": "A single-cell type transcriptomics map of human tissues.",
           "method": "",
@@ -5912,27 +5937,6 @@
           ],
           "abstract": "Advances in molecular profiling have opened up the possibility to map the expression of genes in cells, tissues, and organs in the human body. Here, we combined single-cell transcriptomics analysis with spatial antibody-based protein profiling to create a high-resolution single-cell type map of human tissues. An open access atlas has been launched to allow researchers to explore the expression of human protein-coding genes in 192 individual cell type clusters. An expression specificity classification was performed to determine the number of genes elevated in each cell type, allowing comparisons with bulk transcriptomics data. The analysis highlights distinct expression clusters corresponding to cell types sharing similar functions, both within the same organs and between organs.",
           "url": "https://doi.org/10.1126/sciadv.abh2169"
-        },
-        {
-          "id": "MED:28114287",
-          "title": "Single-cell mRNA quantification and differential analysis with Census.",
-          "method": "Census",
-          "authors": "Qiu X, Hill A, Packer J, Lin D, Ma YA, Trapnell C.",
-          "journal": "Nature methods",
-          "year": "2017",
-          "date": "2017-01-23",
-          "doi": "10.1038/nmeth.4150",
-          "cited": 1684,
-          "license": "",
-          "pdf": "https://europepmc.org/articles/PMC5330805?pdf=render",
-          "keywords": [],
-          "tasks": [],
-          "datasets": [],
-          "lists": [
-            "classic"
-          ],
-          "abstract": "Single-cell gene expression studies promise to reveal rare cell types and cryptic states, but the high variability of single-cell RNA-seq measurements frustrates efforts to assay transcriptional differences between cells. We introduce the Census algorithm to convert relative RNA-seq expression levels into relative transcript counts without the need for experimental spike-in controls. Analyzing changes in relative transcript counts led to dramatic improvements in accuracy compared to normalized read counts and enabled new statistical tests for identifying developmentally regulated genes. Census counts can be analyzed with widely used regression techniques to reveal changes in cell-fate-dependent gene expression, splicing patterns and allelic imbalances. We reanalyzed single-cell data from several developmental and disease studies, and demonstrate that Census enabled robust analysis at multiple layers of gene regulation. Census is freely available through our updated single-cell analysis toolkit, Monocle 2.",
-          "url": "https://doi.org/10.1038/nmeth.4150"
         },
         {
           "id": "MED:39607691",
