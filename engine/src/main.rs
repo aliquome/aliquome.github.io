@@ -646,7 +646,7 @@ fn fetch_papers(agent: &ureq::Agent, query: &str, tags: &Regex) -> Res<Vec<Paper
     let json: Value = serde_json::from_str(&agent.get(&url).call()?.into_string()?)?;
     let mut papers = Vec::new();
     for r in results_of(&json) {
-        if let Some(p) = parse_record(r, tags, true) {
+        if let Some(p) = parse_record(&r, tags, true) {
             papers.push(p);
             if papers.len() == PAPERS_PER_LIST {
                 break;
@@ -678,8 +678,8 @@ fn unescape(text: &str) -> String {
 
 fn parse_record(r: &Value, tags: &Regex, need_abstract: bool) -> Option<Paper> {
     let title = tags.replace_all(&unescape(&text_of(r, "title")), "").trim().to_string();
-    let abstract_text = tags.replace_all(&unescape(&text_of(r, "abstractText")), " ");
-    let mut abstract_text = abstract_text.split_whitespace().collect::<Vec<_>>().join(" ");
+    let raw_abstract = unescape(&text_of(r, "abstractText"));
+    let mut abstract_text = tags.replace_all(&raw_abstract, " ").split_whitespace().collect::<Vec<_>>().join(" ");
     if title.is_empty() || (need_abstract && abstract_text.is_empty()) {
         return None;
     }

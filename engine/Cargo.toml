@@ -17,7 +17,7 @@ csv = "1"
 ureq = "2"
 sha2 = "0.10"
 regex = "1"
-chrono = { version = "0.4", default-features = false, features = ["clock", "std"] }
+chrono = { version = "0.4.35", default-features = false, features = ["now", "std"] }
 
 [profile.release]
 opt-level = 2

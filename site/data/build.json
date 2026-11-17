@@ -1,20 +1,22 @@
 {
-  "generated_at": "2026-11-17T08:36:36Z",
-  "engine": "local preview",
+  "generated_at": "2026-11-17T09:45:34Z",
+  "engine": "atlas-engine 0.1.0",
   "commit": "local",
   "mode": "offline",
   "inputs": {
     "data/database_versions.csv": "69a91fc7558f0bdfe9b62c9558dc321f4b450c3a92f1636f88ed05a628fe9bee",
     "data/datasets.csv": "3d8f8b29177ee619dd358895c67bf226e2133b6bb5f95b6b548a7551aaa9e9fa",
     "data/fields.toml": "09860e0f713aecbd7e4caa22fffe3d396a76573012813e42191e76f5bf1c6295",
+    "data/latest.toml": "f816c3387aed208ac851f6891a2853dc2eb99ade7321552a6508befb8e705fb8",
     "data/leaderboards.toml": "2fc493a21c026d478fa329984f5b920de7794c45f673bcafd67215b4a38cacad",
     "data/loaders.toml": "e2af1a3595495f897d3254506a6c7df718f31907f6c7284fc16cb5140ee9897f",
     "data/rankings.toml": "60705c70bbb452147626de6c49d01295ff4a5a217d78583a18ad99b3f7227f30",
     "data/sources.toml": "a60d05a7421762d97245c689dec478514c9456a65ac5379a089980abedbda2b5"
   },
   "counts": {
+    "benchmark_files": 8,
+    "datasets": 519,
     "sources": 83,
-    "versions": 794,
-    "datasets": 519
+    "versions": 794
   }
 }
