@@ -1,5 +1,1303 @@
 {
-  "checked_at": "",
-  "sources": {},
-  "links": {}
+  "checked_at": "2026-11-17T11:28:59Z",
+  "sources": {
+    "1000genomes": {
+      "state": "ok",
+      "code": 200,
+      "ms": 223,
+      "url": "https://www.internationalgenome.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "allen-brain": {
+      "state": "ok",
+      "code": 200,
+      "ms": 444,
+      "url": "https://portal.brain-map.org/atlases-and-data/bkp/abc-atlas",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "allofus": {
+      "state": "ok",
+      "code": 200,
+      "ms": 856,
+      "url": "https://www.researchallofus.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "alphafold": {
+      "state": "ok",
+      "code": 200,
+      "ms": 479,
+      "url": "https://alphafold.ebi.ac.uk/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "archs4": {
+      "state": "ok",
+      "code": 200,
+      "ms": 389,
+      "url": "https://archs4.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "biogrid": {
+      "state": "ok",
+      "code": 200,
+      "ms": 284,
+      "url": "https://thebiogrid.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "cadd": {
+      "state": "ok",
+      "code": 200,
+      "ms": 307,
+      "url": "https://cadd.gs.washington.edu/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "cafa": {
+      "state": "ok",
+      "code": 200,
+      "ms": 492,
+      "url": "https://biofunctionprediction.org/cafa/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "casp": {
+      "state": "ok",
+      "code": 200,
+      "ms": 290,
+      "url": "https://predictioncenter.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "cath": {
+      "state": "ok",
+      "code": 200,
+      "ms": 479,
+      "url": "https://www.cathdb.info/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "cdd": {
+      "state": "ok",
+      "code": 200,
+      "ms": 308,
+      "url": "https://www.ncbi.nlm.nih.gov/cdd/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "cellxgene-census": {
+      "state": "ok",
+      "code": 200,
+      "ms": 155,
+      "url": "https://cellxgene.cziscience.com/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "chembl": {
+      "state": "ok",
+      "code": 200,
+      "ms": 159,
+      "url": "https://www.ebi.ac.uk/chembl/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "clinvar": {
+      "state": "ok",
+      "code": 200,
+      "ms": 28,
+      "url": "https://www.ncbi.nlm.nih.gov/clinvar/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "corum": {
+      "state": "down",
+      "code": 0,
+      "ms": 960,
+      "url": "https://mips.helmholtz-muenchen.de/corum/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "down"
+        }
+      ]
+    },
+    "cosmic": {
+      "state": "ok",
+      "code": 200,
+      "ms": 1169,
+      "url": "https://cancer.sanger.ac.uk/cosmic",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "dbnsfp": {
+      "state": "ok",
+      "code": 200,
+      "ms": 83,
+      "url": "https://www.dbnsfp.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "dbsnp": {
+      "state": "ok",
+      "code": 200,
+      "ms": 419,
+      "url": "https://www.ncbi.nlm.nih.gov/snp/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "depmap": {
+      "state": "ok",
+      "code": 200,
+      "ms": 327,
+      "url": "https://depmap.org/portal/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "drugbank": {
+      "state": "blocked",
+      "code": 403,
+      "ms": 90,
+      "url": "https://go.drugbank.com/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "blocked"
+        }
+      ]
+    },
+    "eggnog": {
+      "state": "ok",
+      "code": 200,
+      "ms": 752,
+      "url": "http://eggnog5.embl.de/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "encode-ccre": {
+      "state": "ok",
+      "code": 200,
+      "ms": 294,
+      "url": "https://screen.encodeproject.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "ensembl": {
+      "state": "ok",
+      "code": 200,
+      "ms": 1403,
+      "url": "https://www.ensembl.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "ensembl-genomes": {
+      "state": "ok",
+      "code": 200,
+      "ms": 913,
+      "url": "https://ensemblgenomes.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "eqtl-catalogue": {
+      "state": "ok",
+      "code": 200,
+      "ms": 453,
+      "url": "https://www.ebi.ac.uk/eqtl/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "esm-atlas": {
+      "state": "ok",
+      "code": 200,
+      "ms": 308,
+      "url": "https://esmatlas.com/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "expression-atlas": {
+      "state": "ok",
+      "code": 200,
+      "ms": 227,
+      "url": "https://www.ebi.ac.uk/gxa/home",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "finngen": {
+      "state": "ok",
+      "code": 200,
+      "ms": 594,
+      "url": "https://www.finngen.fi/en/access_results",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "gdc": {
+      "state": "ok",
+      "code": 200,
+      "ms": 301,
+      "url": "https://portal.gdc.cancer.gov/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "genbank": {
+      "state": "ok",
+      "code": 200,
+      "ms": 150,
+      "url": "https://www.ncbi.nlm.nih.gov/genbank/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "gencode": {
+      "state": "ok",
+      "code": 200,
+      "ms": 1420,
+      "url": "https://www.gencodegenes.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "gnomad": {
+      "state": "ok",
+      "code": 200,
+      "ms": 211,
+      "url": "https://gnomad.broadinstitute.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "go": {
+      "state": "ok",
+      "code": 200,
+      "ms": 418,
+      "url": "https://geneontology.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "grch37": {
+      "state": "ok",
+      "code": 200,
+      "ms": 384,
+      "url": "https://www.ncbi.nlm.nih.gov/grc/human",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "grch38": {
+      "state": "ok",
+      "code": 200,
+      "ms": 441,
+      "url": "https://www.ncbi.nlm.nih.gov/grc/human",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "greengenes": {
+      "state": "ok",
+      "code": 200,
+      "ms": 150,
+      "url": "https://greengenes2.ucsd.edu/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "gtdb": {
+      "state": "ok",
+      "code": 200,
+      "ms": 286,
+      "url": "https://gtdb.ecogenomic.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "gtex": {
+      "state": "ok",
+      "code": 200,
+      "ms": 789,
+      "url": "https://gtexportal.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "hmdb": {
+      "state": "blocked",
+      "code": 403,
+      "ms": 81,
+      "url": "https://hmdb.ca/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "blocked"
+        }
+      ]
+    },
+    "hocomoco": {
+      "state": "ok",
+      "code": 200,
+      "ms": 910,
+      "url": "https://hocomoco14.autosome.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "hpa": {
+      "state": "ok",
+      "code": 200,
+      "ms": 704,
+      "url": "https://www.proteinatlas.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "hpo": {
+      "state": "ok",
+      "code": 200,
+      "ms": 95,
+      "url": "https://hpo.jax.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "icgc": {
+      "state": "ok",
+      "code": 200,
+      "ms": 2498,
+      "url": "https://platform.icgc-argo.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "interpro": {
+      "state": "ok",
+      "code": 200,
+      "ms": 147,
+      "url": "https://www.ebi.ac.uk/interpro/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "jaspar": {
+      "state": "ok",
+      "code": 200,
+      "ms": 1841,
+      "url": "https://jaspar.elixir.no/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "kegg": {
+      "state": "ok",
+      "code": 200,
+      "ms": 835,
+      "url": "https://www.kegg.jp/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "kofam": {
+      "state": "ok",
+      "code": 200,
+      "ms": 4276,
+      "url": "https://www.genome.jp/tools/kofamkoala/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "kraken2": {
+      "state": "ok",
+      "code": 200,
+      "ms": 146,
+      "url": "https://benlangmead.github.io/aws-indexes/k2",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "mane": {
+      "state": "ok",
+      "code": 200,
+      "ms": 449,
+      "url": "https://www.ncbi.nlm.nih.gov/refseq/MANE/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "metaphlan": {
+      "state": "ok",
+      "code": 200,
+      "ms": 405,
+      "url": "https://github.com/biobakery/MetaPhlAn",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "mgnify-proteins": {
+      "state": "ok",
+      "code": 200,
+      "ms": 141,
+      "url": "https://www.ebi.ac.uk/metagenomics/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "mirbase": {
+      "state": "ok",
+      "code": 200,
+      "ms": 673,
+      "url": "https://www.mirbase.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "mirtarbase": {
+      "state": "down",
+      "code": 0,
+      "ms": 2018,
+      "url": "https://mirtarbase.cuhk.edu.cn/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "down"
+        }
+      ]
+    },
+    "model-organisms": {
+      "state": "ok",
+      "code": 200,
+      "ms": 260,
+      "url": "https://www.alliancegenome.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "mondo": {
+      "state": "ok",
+      "code": 200,
+      "ms": 202,
+      "url": "https://mondo.monarchinitiative.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "msigdb": {
+      "state": "ok",
+      "code": 200,
+      "ms": 287,
+      "url": "https://www.gsea-msigdb.org/gsea/msigdb",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "opentargets": {
+      "state": "ok",
+      "code": 200,
+      "ms": 266,
+      "url": "https://platform.opentargets.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "opentargets-genetics": {
+      "state": "ok",
+      "code": 200,
+      "ms": 483,
+      "url": "https://genetics.opentargets.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "orthodb": {
+      "state": "ok",
+      "code": 200,
+      "ms": 408,
+      "url": "https://www.orthodb.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "papyrus": {
+      "state": "ok",
+      "code": 200,
+      "ms": 440,
+      "url": "https://github.com/OlivierBeq/Papyrus-scripts",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "pathway-commons": {
+      "state": "ok",
+      "code": 200,
+      "ms": 475,
+      "url": "https://www.pathwaycommons.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "pdb": {
+      "state": "ok",
+      "code": 200,
+      "ms": 270,
+      "url": "https://www.rcsb.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "pdbbind": {
+      "state": "ok",
+      "code": 200,
+      "ms": 1683,
+      "url": "https://www.pdbbind-plus.org.cn/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "pfam": {
+      "state": "ok",
+      "code": 200,
+      "ms": 141,
+      "url": "https://www.ebi.ac.uk/interpro/entry/pfam/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "prosite": {
+      "state": "ok",
+      "code": 200,
+      "ms": 1037,
+      "url": "https://prosite.expasy.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "proteingym": {
+      "state": "ok",
+      "code": 200,
+      "ms": 444,
+      "url": "https://proteingym.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "reactome": {
+      "state": "ok",
+      "code": 200,
+      "ms": 323,
+      "url": "https://reactome.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "refseq": {
+      "state": "ok",
+      "code": 200,
+      "ms": 304,
+      "url": "https://www.ncbi.nlm.nih.gov/refseq/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "remap": {
+      "state": "ok",
+      "code": 200,
+      "ms": 2185,
+      "url": "https://remap.univ-amu.fr/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "rfam": {
+      "state": "ok",
+      "code": 200,
+      "ms": 616,
+      "url": "https://rfam.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "rnacentral": {
+      "state": "ok",
+      "code": 200,
+      "ms": 686,
+      "url": "https://rnacentral.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "scope": {
+      "state": "ok",
+      "code": 200,
+      "ms": 369,
+      "url": "https://scop.berkeley.edu/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "silva": {
+      "state": "ok",
+      "code": 200,
+      "ms": 787,
+      "url": "https://www.arb-silva.de/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "string": {
+      "state": "ok",
+      "code": 200,
+      "ms": 220,
+      "url": "https://string-db.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "t2t-hprc": {
+      "state": "ok",
+      "code": 200,
+      "ms": 225,
+      "url": "https://humanpangenome.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "tabula-sapiens": {
+      "state": "ok",
+      "code": 200,
+      "ms": 231,
+      "url": "https://tabula-sapiens.sf.czbiohub.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "targetscan": {
+      "state": "ok",
+      "code": 200,
+      "ms": 2081,
+      "url": "https://www.targetscan.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "ucsc": {
+      "state": "ok",
+      "code": 200,
+      "ms": 558,
+      "url": "https://genome.ucsc.edu/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "ukbiobank": {
+      "state": "blocked",
+      "code": 403,
+      "ms": 185,
+      "url": "https://www.ukbiobank.ac.uk/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "blocked"
+        }
+      ]
+    },
+    "umls": {
+      "state": "ok",
+      "code": 200,
+      "ms": 277,
+      "url": "https://www.nlm.nih.gov/research/umls/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "uniprot": {
+      "state": "ok",
+      "code": 200,
+      "ms": 651,
+      "url": "https://www.uniprot.org/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "uniref30": {
+      "state": "ok",
+      "code": 200,
+      "ms": 475,
+      "url": "https://uniclust.mmseqs.com/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    },
+    "unite": {
+      "state": "ok",
+      "code": 200,
+      "ms": 1480,
+      "url": "https://unite.ut.ee/",
+      "history": [
+        {
+          "d": "2026-11-17",
+          "s": "ok"
+        }
+      ]
+    }
+  },
+  "links": {
+    "1000genomes": {
+      "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000G_2504_high_coverage/working/20220422_3202_phased_SNV_INDEL_SV/",
+      "state": "ok",
+      "code": 200
+    },
+    "alphafold": {
+      "url": "https://ftp.ebi.ac.uk/pub/databases/alphafold/v6/",
+      "state": "ok",
+      "code": 200
+    },
+    "archs4": {
+      "url": "https://s3.dev.maayanlab.cloud/archs4/files/human_gene_v2.5.h5",
+      "state": "ok",
+      "code": 200
+    },
+    "biogrid": {
+      "url": "https://downloads.thebiogrid.org/BioGRID/Release-Archive/BIOGRID-5.0.263/",
+      "state": "ok",
+      "code": 200
+    },
+    "cadd": {
+      "url": "https://kircherlab.bihealth.org/download/CADD/v1.7/GRCh38/whole_genome_SNVs.tsv.gz",
+      "state": "ok",
+      "code": 200
+    },
+    "casp": {
+      "url": "https://predictioncenter.org/download_area/CASP17/",
+      "state": "ok",
+      "code": 200
+    },
+    "cath": {
+      "url": "https://download.cathdb.info/cath/releases/all-releases/v4_4_0/",
+      "state": "ok",
+      "code": 200
+    },
+    "cdd": {
+      "url": "https://ftp.ncbi.nih.gov/pub/mmdb/cdd/cdd.tar.gz",
+      "state": "ok",
+      "code": 200
+    },
+    "chembl": {
+      "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_37/",
+      "state": "ok",
+      "code": 200
+    },
+    "clinvar": {
+      "url": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/clinvar_20261108.vcf.gz",
+      "state": "down",
+      "code": 404
+    },
+    "corum": {
+      "url": "https://mips.helmholtz-muenchen.de/fastapi-corum/public/file/download_current_file?file_id=human&file_format=txt",
+      "state": "down",
+      "code": 0
+    },
+    "dbsnp": {
+      "url": "https://ftp.ncbi.nlm.nih.gov/snp/archive/b157/",
+      "state": "ok",
+      "code": 200
+    },
+    "drugbank": {
+      "url": "https://go.drugbank.com/releases/5-1-22/downloads/all-full-database",
+      "state": "blocked",
+      "code": 403
+    },
+    "eggnog": {
+      "url": "http://eggnog6.embl.de/download/eggnog_6.0/",
+      "state": "ok",
+      "code": 200
+    },
+    "encode-ccre": {
+      "url": "https://downloads.wenglab.org/Registry-V4/GRCh38-cCREs.bed",
+      "state": "ok",
+      "code": 200
+    },
+    "ensembl": {
+      "url": "https://ftp.ensembl.org/pub/release-116/",
+      "state": "ok",
+      "code": 200
+    },
+    "eqtl-catalogue": {
+      "url": "https://ftp.ebi.ac.uk/pub/databases/spot/eQTL/",
+      "state": "ok",
+      "code": 200
+    },
+    "esm-atlas": {
+      "url": "https://dl.fbaipublicfiles.com/esmatlas/v2023_02/",
+      "state": "blocked",
+      "code": 403
+    },
+    "expression-atlas": {
+      "url": "https://ftp.ebi.ac.uk/pub/databases/microarray/data/atlas/experiments/",
+      "state": "ok",
+      "code": 200
+    },
+    "gdc": {
+      "url": "https://api.gdc.cancer.gov/",
+      "state": "down",
+      "code": 404
+    },
+    "genbank": {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genbank/",
+      "state": "ok",
+      "code": 200
+    },
+    "gencode": {
+      "url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/",
+      "state": "ok",
+      "code": 200
+    },
+    "go": {
+      "url": "https://release.geneontology.org/2026-08-05/",
+      "state": "ok",
+      "code": 200
+    },
+    "grch37": {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.14_GRCh37.p13/",
+      "state": "ok",
+      "code": 200
+    },
+    "grch38": {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.29_GRCh38.p14/",
+      "state": "ok",
+      "code": 200
+    },
+    "greengenes": {
+      "url": "https://ftp.microbio.me/greengenes_release/2024.09/",
+      "state": "ok",
+      "code": 200
+    },
+    "gtdb": {
+      "url": "https://data.gtdb.aau.ecogenomic.org/releases/release232/232.0/",
+      "state": "ok",
+      "code": 200
+    },
+    "gtex": {
+      "url": "https://gtexportal.org/api/v2/metadata/dataset?datasetId=gtex_v11",
+      "state": "ok",
+      "code": 200
+    },
+    "hpa": {
+      "url": "https://www.proteinatlas.org/download/proteinatlas.tsv.zip",
+      "state": "ok",
+      "code": 200
+    },
+    "hpo": {
+      "url": "https://github.com/obophenotype/human-phenotype-ontology/releases/download/v2026-09-01/hp.obo",
+      "state": "ok",
+      "code": 200
+    },
+    "interpro": {
+      "url": "https://ftp.ebi.ac.uk/pub/databases/interpro/releases/111.0/",
+      "state": "ok",
+      "code": 200
+    },
+    "jaspar": {
+      "url": "https://jaspar.elixir.no/api/v1/releases/11/",
+      "state": "ok",
+      "code": 200
+    },
+    "kegg": {
+      "url": "https://rest.kegg.jp/info/kegg",
+      "state": "ok",
+      "code": 200
+    },
+    "kofam": {
+      "url": "https://www.genome.jp/ftp/db/kofam/profiles.tar.gz",
+      "state": "ok",
+      "code": 200
+    },
+    "kraken2": {
+      "url": "https://genome-idx.s3.amazonaws.com/kraken/k2_standard_20261022.tar.gz",
+      "state": "ok",
+      "code": 200
+    },
+    "mane": {
+      "url": "https://ftp.ncbi.nlm.nih.gov/refseq/MANE/MANE_human/current/",
+      "state": "ok",
+      "code": 200
+    },
+    "metaphlan": {
+      "url": "http://cmprod1.cibio.unitn.it/biobakery4/metaphlan_databases/",
+      "state": "ok",
+      "code": 200
+    },
+    "mgnify-proteins": {
+      "url": "https://ftp.ebi.ac.uk/pub/databases/metagenomics/peptide_database/current_release/",
+      "state": "ok",
+      "code": 200
+    },
+    "mirbase": {
+      "url": "https://www.mirbase.org/download_version_files/miRNA/22.1/",
+      "state": "down",
+      "code": 404
+    },
+    "model-organisms": {
+      "url": "https://ftp.flybase.net/releases/FB2026_03/",
+      "state": "down",
+      "code": 0
+    },
+    "mondo": {
+      "url": "https://github.com/monarch-initiative/mondo/releases/download/v2026-11-03/mondo.obo",
+      "state": "ok",
+      "code": 200
+    },
+    "msigdb": {
+      "url": "https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2026.1.Hs/",
+      "state": "ok",
+      "code": 200
+    },
+    "opentargets": {
+      "url": "https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/26.09/",
+      "state": "ok",
+      "code": 200
+    },
+    "opentargets-genetics": {
+      "url": "https://ftp.ebi.ac.uk/pub/databases/opentargets/genetics/22.09/",
+      "state": "ok",
+      "code": 200
+    },
+    "orthodb": {
+      "url": "https://data.orthodb.org/v12-1/download/",
+      "state": "ok",
+      "code": 200
+    },
+    "pathway-commons": {
+      "url": "https://download.baderlab.org/PathwayCommons/PC2/",
+      "state": "ok",
+      "code": 200
+    },
+    "pdb": {
+      "url": "https://snapshots.pdbj.org/20260415/",
+      "state": "ok",
+      "code": 200
+    },
+    "pfam": {
+      "url": "https://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam39.0/",
+      "state": "ok",
+      "code": 200
+    },
+    "prosite": {
+      "url": "https://ftp.expasy.org/databases/prosite/prosite.dat",
+      "state": "ok",
+      "code": 200
+    },
+    "reactome": {
+      "url": "https://reactome.org/download/current/",
+      "state": "ok",
+      "code": 200
+    },
+    "refseq": {
+      "url": "https://ftp.ncbi.nlm.nih.gov/refseq/release/",
+      "state": "ok",
+      "code": 200
+    },
+    "remap": {
+      "url": "https://remap.univ-amu.fr/storage/remap2022/hg38/MACS2/remap2022_all_macs2_hg38_v1_0.bed.gz",
+      "state": "ok",
+      "code": 200
+    },
+    "rfam": {
+      "url": "https://ftp.ebi.ac.uk/pub/databases/Rfam/15.1/",
+      "state": "ok",
+      "code": 200
+    },
+    "rnacentral": {
+      "url": "https://ftp.ebi.ac.uk/pub/databases/RNAcentral/releases/28.0/",
+      "state": "ok",
+      "code": 200
+    },
+    "scope": {
+      "url": "https://scop.berkeley.edu/downloads/parse/dir.cla.scope.2.08-stable.txt",
+      "state": "ok",
+      "code": 200
+    },
+    "targetscan": {
+      "url": "https://www.targetscan.org/vert_80/vert_80_data_download/",
+      "state": "blocked",
+      "code": 403
+    },
+    "ucsc": {
+      "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hs1/",
+      "state": "ok",
+      "code": 200
+    },
+    "umls": {
+      "url": "https://download.nlm.nih.gov/umls/kss/2026AA/umls-2026AA-full.zip",
+      "state": "ok",
+      "code": 200
+    },
+    "uniprot": {
+      "url": "https://ftp.uniprot.org/pub/databases/uniprot/current_release/",
+      "state": "ok",
+      "code": 200
+    },
+    "uniref30": {
+      "url": "https://wwwuser.gwdg.de/~compbiol/uniclust/2023_02/",
+      "state": "ok",
+      "code": 200
+    }
+  }
 }

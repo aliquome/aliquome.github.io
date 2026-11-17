@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T19:19:43Z",
+  "generated_at": "2026-11-17T11:26:58Z",
   "source": "Europe PMC REST API",
   "rule": "For each field, the 30 most cited open-access papers of all time and the 30 most cited of the last 24 months that match the field query. Tasks come from keyword patterns; datasets are databases and datasets named in the title, abstract or keywords.",
   "fields": [
@@ -919,7 +919,7 @@
           "year": "2025",
           "date": "2025-04-07",
           "doi": "10.1038/s41588-025-02137-x",
-          "cited": 63,
+          "cited": 67,
           "license": "cc by-nc-nd",
           "pdf": "https://europepmc.org/articles/PMC11985340?pdf=render",
           "keywords": [
@@ -1285,6 +1285,7 @@
             "Extremities",
             "Salamandridae",
             "RNA, Untranslated",
+            "Regeneration",
             "Repetitive Sequences, Nucleic Acid"
           ],
           "tasks": [
@@ -1318,6 +1319,7 @@
             "Genome Mining",
             "Pangenome Analysis",
             "Biosynthetic Gene Clusters",
+            "Streptomyces",
             "Genome, Bacterial",
             "Biosynthetic Pathways"
           ],
@@ -1378,7 +1380,8 @@
             "Low-coverage Sequencing",
             "Graph-Based Pangenome",
             "Goats",
-            "Genome"
+            "Genome",
+            "Domestication"
           ],
           "tasks": [
             "assembly",
@@ -1646,6 +1649,7 @@
             "Evolutionary Biology",
             "Lineages",
             "Pangenome",
+            "Mycobacterium tuberculosis",
             "Genome, Bacterial",
             "Genetic Variation"
           ],
@@ -1762,7 +1766,7 @@
           "year": "2016",
           "date": "2016-08-01",
           "doi": "10.1038/nature19057",
-          "cited": 8624,
+          "cited": 8680,
           "license": "cc by",
           "pdf": "https://europepmc.org/articles/PMC5018207?pdf=render",
           "keywords": [],
@@ -2340,7 +2344,7 @@
           "year": "2013",
           "date": "2013-08-25",
           "doi": "10.1038/ng.2742",
-          "cited": 1239,
+          "cited": 1244,
           "license": "",
           "pdf": "https://europepmc.org/articles/PMC3827979?pdf=render",
           "keywords": [
@@ -2779,6 +2783,35 @@
           "url": "https://doi.org/10.1186/s13059-025-03575-w"
         },
         {
+          "id": "MED:40113603",
+          "title": "Critical assessment of missense variant effect predictors on disease-relevant variant data.",
+          "method": "",
+          "authors": "Rastogi R, Chung R, Li S, Li C, Lee K, Woo J, Kim DW, Keum C, Babbi G, Martelli PL, Savojardo C, Casadio R, Chennen K, Weber T, Poch O, Ancien F, Cia G, Pucci F, Raimondi D, Vranken W, Rooman M, Marquet C, Olenyi T, Rost B, Andreoletti G, Kamandula A, Peng Y, Bakolitsa C, Mort M, Cooper DN, Bergquist T, Pejaver V, Liu X, Radivojac P, Brenner SE, Ioannidis NM.",
+          "journal": "Human genetics",
+          "year": "2025",
+          "date": "2025-03-21",
+          "doi": "10.1007/s00439-025-02732-2",
+          "cited": 43,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC11976771?pdf=render",
+          "keywords": [
+            "Genetic Predisposition to Disease",
+            "Computational Biology",
+            "Mutation, Missense"
+          ],
+          "tasks": [
+            "variant-effect"
+          ],
+          "datasets": [
+            "ds:cagi"
+          ],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Regular, systematic, and independent assessments of computational tools that are used to predict the pathogenicity of missense variants are necessary to evaluate their clinical and research utility and guide future improvements. The Critical Assessment of Genome Interpretation (CAGI) conducts the ongoing Annotate-All-Missense (Missense Marathon) challenge, in which missense variant effect predictors (also called variant impact predictors) are evaluated on missense variants added to disease-relevant databases following the prediction submission deadline. Here we assess predictors submitted to the CAGI 6 Annotate-All-Missense challenge, predictors commonly used in clinical genetics, and recently developed deep learning methods. We examine performance across a range of settings relevant for clinical and research applications, focusing on different subsets of the evaluation data as well as high-specificity and high-sensitivity regimes. Our evaluations reveal notable advances in current methods relative to older, well-cited tools in the field. While meta-predictors tend to outperform their constituent individual predictors, several newer individual predictors perform comparably to commonly used meta-predictors. Predictor performance varies between high-specificity and high-sensitivity regimes, highlighting that different methods may be optimal for different use cases. We also characterize two potential sources of bias. Predictors that incorporate allele frequency as a predictive feature tend to have reduced performance when distinguishing pathogenic variants from very rare benign variants, and predictors trained on pathogenicity labels from curated variant databases often inherit gene-level label imbalances. Our findings help illuminate the clinical and research utility of modern missense variant effect predictors and identify potential areas for future development.",
+          "url": "https://doi.org/10.1007/s00439-025-02732-2"
+        },
+        {
           "id": "MED:40789919",
           "title": "Genetic variation at transcription factor binding sites largely explains phenotypic heritability in maize.",
           "method": "",
@@ -2804,35 +2837,6 @@
           ],
           "abstract": "Comprehensive maps of functional variation at transcription factor (TF) binding sites (cis-elements) are crucial for elucidating how genotype shapes phenotype. Here, we report the construction of a pan-cistrome of the maize leaf under well-watered and drought conditions. We quantified haplotype-specific TF footprints across a pan-genome of 25 maize hybrids and mapped over 200,000 variants, genetic, epigenetic, or both (termed binding quantitative trait loci (bQTL)), linked to cis-element occupancy. Three lines of evidence support the functional significance of bQTL: (1) coincidence with causative loci that regulate traits, including vgt1, ZmTRE1 and the MITE transposon near ZmNAC111 under drought; (2) bQTL allelic bias is shared between inbred parents and matches chromatin immunoprecipitation sequencing results; and (3) partitioning genetic variation across genomic regions demonstrates that bQTL capture the majority of heritable trait variation across ~72% of 143 phenotypes. Our study provides an auspicious approach to make functional cis-variation accessible at scale for genetic studies and targeted engineering of complex traits.",
           "url": "https://doi.org/10.1038/s41588-025-02246-7"
-        },
-        {
-          "id": "MED:40113603",
-          "title": "Critical assessment of missense variant effect predictors on disease-relevant variant data.",
-          "method": "",
-          "authors": "Rastogi R, Chung R, Li S, Li C, Lee K, Woo J, Kim DW, Keum C, Babbi G, Martelli PL, Savojardo C, Casadio R, Chennen K, Weber T, Poch O, Ancien F, Cia G, Pucci F, Raimondi D, Vranken W, Rooman M, Marquet C, Olenyi T, Rost B, Andreoletti G, Kamandula A, Peng Y, Bakolitsa C, Mort M, Cooper DN, Bergquist T, Pejaver V, Liu X, Radivojac P, Brenner SE, Ioannidis NM.",
-          "journal": "Human genetics",
-          "year": "2025",
-          "date": "2025-03-21",
-          "doi": "10.1007/s00439-025-02732-2",
-          "cited": 39,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC11976771?pdf=render",
-          "keywords": [
-            "Genetic Predisposition to Disease",
-            "Computational Biology",
-            "Mutation, Missense"
-          ],
-          "tasks": [
-            "variant-effect"
-          ],
-          "datasets": [
-            "ds:cagi"
-          ],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Regular, systematic, and independent assessments of computational tools that are used to predict the pathogenicity of missense variants are necessary to evaluate their clinical and research utility and guide future improvements. The Critical Assessment of Genome Interpretation (CAGI) conducts the ongoing Annotate-All-Missense (Missense Marathon) challenge, in which missense variant effect predictors (also called variant impact predictors) are evaluated on missense variants added to disease-relevant databases following the prediction submission deadline. Here we assess predictors submitted to the CAGI 6 Annotate-All-Missense challenge, predictors commonly used in clinical genetics, and recently developed deep learning methods. We examine performance across a range of settings relevant for clinical and research applications, focusing on different subsets of the evaluation data as well as high-specificity and high-sensitivity regimes. Our evaluations reveal notable advances in current methods relative to older, well-cited tools in the field. While meta-predictors tend to outperform their constituent individual predictors, several newer individual predictors perform comparably to commonly used meta-predictors. Predictor performance varies between high-specificity and high-sensitivity regimes, highlighting that different methods may be optimal for different use cases. We also characterize two potential sources of bias. Predictors that incorporate allele frequency as a predictive feature tend to have reduced performance when distinguishing pathogenic variants from very rare benign variants, and predictors trained on pathogenicity labels from curated variant databases often inherit gene-level label imbalances. Our findings help illuminate the clinical and research utility of modern missense variant effect predictors and identify potential areas for future development.",
-          "url": "https://doi.org/10.1007/s00439-025-02732-2"
         },
         {
           "id": "MED:40399555",
@@ -2882,7 +2886,8 @@
             "Genetics, Population",
             "Genomics",
             "Genome, Human",
-            "Metagenomics"
+            "Metagenomics",
+            "Whole Genome Sequencing"
           ],
           "tasks": [
             "ancestry"
@@ -2980,6 +2985,35 @@
           ],
           "abstract": "Principal component analysis (PCA) is widely used to control for population structure in genome-wide association studies (GWAS). Top principal components (PCs) typically reflect population structure, but challenges arise in deciding how many PCs are needed and ensuring that PCs do not capture other artifacts such as regions with atypical linkage disequilibrium (LD). In response to the latter, many groups suggest performing LD pruning or excluding known high LD regions prior to PCA. However, these suggestions are not universally implemented and the implications for GWAS are not fully understood, especially in the context of admixed populations. In this paper, we investigate the impact of pre-processing and the number of PCs included in GWAS models in African American samples from the Women's Health Initiative SNP Health Association Resource and two Trans-Omics for Precision Medicine Whole Genome Sequencing Project contributing studies (Jackson Heart Study and Genetic Epidemiology of Chronic Obstructive Pulmonary Disease Study). In all three samples, we find the first PC is highly correlated with genome-wide ancestry whereas later PCs often capture local genomic features. The pattern of which, and how many, genetic variants are highly correlated with individual PCs differs from what has been observed in prior studies focused on European populations and leads to distinct downstream consequences: adjusting for such PCs yields biased effect size estimates and elevated rates of spurious associations due to the phenomenon of collider bias. Excluding high LD regions identified in previous studies does not resolve these issues. LD pruning proves more effective, but the optimal choice of thresholds varies across datasets. Altogether, our work highlights unique issues that arise when using PCA to control for ancestral heterogeneity in admixed populations and demonstrates the importance of careful pre-processing and diagnostics to ensure that PCs capturing multiple local genomic features are not included in GWAS models.",
           "url": "https://doi.org/10.1371/journal.pgen.1011242"
+        },
+        {
+          "id": "MED:42237039",
+          "title": "Consensus meta-analysis of genome-wide association studies for Alzheimer's disease and related dementias.",
+          "method": "",
+          "authors": "EADB, EADI, Bonn, ADGC, CHARGE, FinnGen, GERAD, GR@ACE/DEGESCO, PGC-ALZ.",
+          "journal": "Nature genetics",
+          "year": "2026",
+          "date": "2026-06-03",
+          "doi": "10.1038/s41588-026-02583-1",
+          "cited": 31,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC13263136?pdf=render",
+          "keywords": [
+            "Dementia",
+            "Alzheimer Disease",
+            "Genome-Wide Association Study"
+          ],
+          "tasks": [
+            "gwas",
+            "ancestry",
+            "polygenic"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "To better characterize the genetic architecture underlying Alzheimer's disease (AD) and related dementias (ADRD), we performed a meta-analysis of European-ancestry genome-wide association studies in 128,681 cases or proxy cases of ADRD and 849,833 (proxy) controls. We identified 91 genetic loci associated with ADRD risk, of which 16 are new and 56 are specifically detected in clinically diagnosed AD cases. We also provide a list of 18 loci (15 new) requiring further external validation. A polygenic score combining the effects of ADRD loci other than APOE was primarily associated with AD rather than non-AD pathology. Individuals in the tenth decile of the score exhibited a twofold increased risk of presenting with Braak neurofibrillary tangles stage of >4 and moderate-to-severe neuritic amyloid plaque pathology at death compared to individuals in the median score group. In conclusion, our study validated a large number of loci associated with the risk of clinically diagnosed AD, while further investigations are required to confirm the impact of the other loci on AD clinical diagnosis and of each locus on AD pathology.",
+          "url": "https://doi.org/10.1038/s41588-026-02583-1"
         },
         {
           "id": "MED:39987793",
@@ -3149,35 +3183,6 @@
           "url": "https://doi.org/10.1038/s41588-025-02109-1"
         },
         {
-          "id": "MED:42237039",
-          "title": "Consensus meta-analysis of genome-wide association studies for Alzheimer's disease and related dementias.",
-          "method": "",
-          "authors": "EADB, EADI, Bonn, ADGC, CHARGE, FinnGen, GERAD, GR@ACE/DEGESCO, PGC-ALZ.",
-          "journal": "Nature genetics",
-          "year": "2026",
-          "date": "2026-06-03",
-          "doi": "10.1038/s41588-026-02583-1",
-          "cited": 24,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC13263136?pdf=render",
-          "keywords": [
-            "Dementia",
-            "Alzheimer Disease",
-            "Genome-Wide Association Study"
-          ],
-          "tasks": [
-            "gwas",
-            "ancestry",
-            "polygenic"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "To better characterize the genetic architecture underlying Alzheimer's disease (AD) and related dementias (ADRD), we performed a meta-analysis of European-ancestry genome-wide association studies in 128,681 cases or proxy cases of ADRD and 849,833 (proxy) controls. We identified 91 genetic loci associated with ADRD risk, of which 16 are new and 56 are specifically detected in clinically diagnosed AD cases. We also provide a list of 18 loci (15 new) requiring further external validation. A polygenic score combining the effects of ADRD loci other than APOE was primarily associated with AD rather than non-AD pathology. Individuals in the tenth decile of the score exhibited a twofold increased risk of presenting with Braak neurofibrillary tangles stage of >4 and moderate-to-severe neuritic amyloid plaque pathology at death compared to individuals in the median score group. In conclusion, our study validated a large number of loci associated with the risk of clinically diagnosed AD, while further investigations are required to confirm the impact of the other loci on AD clinical diagnosis and of each locus on AD pathology.",
-          "url": "https://doi.org/10.1038/s41588-026-02583-1"
-        },
-        {
           "id": "MED:41310232",
           "title": "A genome-wide association study of mass spectrometry proteomics using a nanoparticle enrichment platform.",
           "method": "",
@@ -3310,6 +3315,7 @@
             "Chk2",
             "Deep Mutational Scanning",
             "Variant Effect Mapping",
+            "Saccharomyces cerevisiae",
             "Mutation, Missense",
             "Checkpoint Kinase 2"
           ],
@@ -3543,7 +3549,7 @@
           "year": "2013",
           "date": "2013-10-01",
           "doi": "10.1038/ng.2760",
-          "cited": 1627,
+          "cited": 1632,
           "license": "cc by-nc-sa",
           "pdf": "https://europepmc.org/articles/PMC3966983?pdf=render",
           "keywords": [
@@ -4041,6 +4047,40 @@
           "url": "https://doi.org/10.1084/jem.171.1.265"
         },
         {
+          "id": "MED:33831375",
+          "title": "Characterizing genetic intra-tumor heterogeneity across 2,658 human cancer genomes.",
+          "method": "",
+          "authors": "Dentro SC, Leshchiner I, Haase K, Tarabichi M, Wintersinger J, Deshwar AG, Yu K, Rubanova Y, Macintyre G, Demeulemeester J, Vázquez-García I, Kleinheinz K, Livitz DG, Malikic S, Donmez N, Sengupta S, Anur P, Jolly C, Cmero M, Rosebrock D, Schumacher SE, Fan Y, Fittall M, Drews RM, Yao X, Watkins TBK, Lee J, Schlesner M, Zhu H, Adams DJ, McGranahan N, Swanton C, Getz G, Boutros PC, Imielinski M, Beroukhim R, Sahinalp SC, Ji Y, Peifer M, Martincorena I, Markowetz F, Mustonen V, Yuan K, Gerstung M, Spellman PT, Wang W, Morris QD, Wedge DC, Van Loo P, PCAWG Evolution and Heterogeneity Working Group and the PCAWG Consortium.",
+          "journal": "Cell",
+          "year": "2021",
+          "date": "2021-04-07",
+          "doi": "10.1016/j.cell.2021.03.009",
+          "cited": 503,
+          "license": "cc by",
+          "pdf": "",
+          "keywords": [
+            "Whole-genome Sequencing",
+            "Intra-tumor Heterogeneity",
+            "Cancer Evolution",
+            "Subclonal Reconstruction",
+            "Pan-cancer Genomics",
+            "Branching Evolution",
+            "Cancer Driver Genes",
+            "Tumor Phylogeny",
+            "Genetic Heterogeneity"
+          ],
+          "tasks": [
+            "heterogeneity",
+            "drug-response"
+          ],
+          "datasets": [],
+          "lists": [
+            "classic"
+          ],
+          "abstract": "Intra-tumor heterogeneity (ITH) is a mechanism of therapeutic resistance and therefore an important clinical challenge. However, the extent, origin, and drivers of ITH across cancer types are poorly understood. To address this, we extensively characterize ITH across whole-genome sequences of 2,658 cancer samples spanning 38 cancer types. Nearly all informative samples (95.1%) contain evidence of distinct subclonal expansions with frequent branching relationships between subclones. We observe positive selection of subclonal driver mutations across most cancer types and identify cancer type-specific subclonal patterns of driver gene mutations, fusions, structural variants, and copy number alterations as well as dynamic changes in mutational processes between subclonal expansions. Our results underline the importance of ITH and its drivers in tumor evolution and provide a pan-cancer resource of comprehensively annotated subclonal events from whole-genome sequencing data.",
+          "url": "https://doi.org/10.1016/j.cell.2021.03.009"
+        },
+        {
           "id": "MED:36333338",
           "title": "Pan-cancer single-cell analysis reveals the heterogeneity and plasticity of cancer-associated fibroblasts in the tumor microenvironment.",
           "method": "",
@@ -4066,40 +4106,6 @@
           ],
           "abstract": "Cancer-associated fibroblasts (CAFs) are the predominant components of the tumor microenvironment (TME) and influence cancer hallmarks, but without systematic investigation on their ubiquitous characteristics across different cancer types. Here, we perform pan-cancer analysis on 226 samples across 10 solid cancer types to profile the TME at single-cell resolution, illustrating the commonalities/plasticity of heterogenous CAFs. Activation trajectory of the major CAF types is divided into three states, exhibiting distinct interactions with other cell components, and relating to prognosis of immunotherapy. Moreover, minor CAF components represent the alternative origin from other TME components (e.g., endothelia and macrophages). Particularly, the ubiquitous presentation of endothelial-to-mesenchymal transition CAF, which may interact with proximal SPP1 + tumor-associated macrophages, is implicated in endothelial-to-mesenchymal transition and survival stratifications. Our study comprehensively profiles the shared characteristics and dynamics of CAFs, and highlight their heterogeneity and plasticity across different cancer types. Browser of integrated pan-cancer single-cell information is available at https://gist-fgl.github.io/sc-caf-atlas/ .",
           "url": "https://doi.org/10.1038/s41467-022-34395-2"
-        },
-        {
-          "id": "MED:33831375",
-          "title": "Characterizing genetic intra-tumor heterogeneity across 2,658 human cancer genomes.",
-          "method": "",
-          "authors": "Dentro SC, Leshchiner I, Haase K, Tarabichi M, Wintersinger J, Deshwar AG, Yu K, Rubanova Y, Macintyre G, Demeulemeester J, Vázquez-García I, Kleinheinz K, Livitz DG, Malikic S, Donmez N, Sengupta S, Anur P, Jolly C, Cmero M, Rosebrock D, Schumacher SE, Fan Y, Fittall M, Drews RM, Yao X, Watkins TBK, Lee J, Schlesner M, Zhu H, Adams DJ, McGranahan N, Swanton C, Getz G, Boutros PC, Imielinski M, Beroukhim R, Sahinalp SC, Ji Y, Peifer M, Martincorena I, Markowetz F, Mustonen V, Yuan K, Gerstung M, Spellman PT, Wang W, Morris QD, Wedge DC, Van Loo P, PCAWG Evolution and Heterogeneity Working Group and the PCAWG Consortium.",
-          "journal": "Cell",
-          "year": "2021",
-          "date": "2021-04-07",
-          "doi": "10.1016/j.cell.2021.03.009",
-          "cited": 489,
-          "license": "cc by",
-          "pdf": "",
-          "keywords": [
-            "Whole-genome Sequencing",
-            "Intra-tumor Heterogeneity",
-            "Cancer Evolution",
-            "Branching Evolution",
-            "Cancer Driver Genes",
-            "Tumor Phylogeny",
-            "Pan-cancer Genomics",
-            "Subclonal Reconstruction",
-            "Genetic Heterogeneity"
-          ],
-          "tasks": [
-            "heterogeneity",
-            "drug-response"
-          ],
-          "datasets": [],
-          "lists": [
-            "classic"
-          ],
-          "abstract": "Intra-tumor heterogeneity (ITH) is a mechanism of therapeutic resistance and therefore an important clinical challenge. However, the extent, origin, and drivers of ITH across cancer types are poorly understood. To address this, we extensively characterize ITH across whole-genome sequences of 2,658 cancer samples spanning 38 cancer types. Nearly all informative samples (95.1%) contain evidence of distinct subclonal expansions with frequent branching relationships between subclones. We observe positive selection of subclonal driver mutations across most cancer types and identify cancer type-specific subclonal patterns of driver gene mutations, fusions, structural variants, and copy number alterations as well as dynamic changes in mutational processes between subclonal expansions. Our results underline the importance of ITH and its drivers in tumor evolution and provide a pan-cancer resource of comprehensively annotated subclonal events from whole-genome sequencing data.",
-          "url": "https://doi.org/10.1016/j.cell.2021.03.009"
         },
         {
           "id": "MED:31815659",
@@ -4259,6 +4265,7 @@
             "Tumor Heterogeneity",
             "Single-cell Sequencing",
             "Neoplasms",
+            "Immunotherapy",
             "Genomics",
             "Single-Cell Analysis",
             "Precision Medicine"
@@ -4273,6 +4280,33 @@
           ],
           "abstract": "Cancer immunotherapy has revolutionized clinical oncology; however, the inherent complexity and heterogeneity of cancer present substantial challenges to achieving broad therapeutic efficacy. Tumor heterogeneity manifests not only among different patients but also within individual tumors, further complicating personalized treatment approaches. Single-cell sequencing technologies encompassing genomics, transcriptomics, epigenomics, proteomics, and spatial omics have significantly enhanced our ability to dissect tumor heterogeneity at single-cell resolution with multi-layered depth. These approaches have illuminated tumor biology, immune escape mechanisms, treatment resistance, and patient-specific immune response mechanisms, thereby substantially advancing precision oncology strategies. This review systematically examines recent advances in single-cell multi-omics technologies across various cancer research areas, emphasizing their transformative impacts on understanding tumor heterogeneity, immunotherapy, minimal residual disease monitoring, and neoantigen discovery. Additionally, we discuss current technical and analytical limitations and unresolved questions associated with single-cell technologies. We anticipate single-cell multi-omics technologies will become central to precision oncology, facilitating truly personalized therapeutic interventions.",
           "url": "https://doi.org/10.1186/s12943-025-02426-3"
+        },
+        {
+          "id": "MED:40108450",
+          "title": "The somatic mutation landscape of normal gastric epithelium.",
+          "method": "",
+          "authors": "Coorens THH, Collord G, Jung H, Wang Y, Moore L, Hooks Y, Mahbubani K, Law SYK, Yan HHN, Yuen ST, Saeb-Parsy K, Campbell PJ, Martincorena I, Leung SY, Stratton MR.",
+          "journal": "Nature",
+          "year": "2025",
+          "date": "2025-03-19",
+          "doi": "10.1038/s41586-025-08708-6",
+          "cited": 67,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC11981919?pdf=render",
+          "keywords": [
+            "Gastric Mucosa",
+            "Mutation"
+          ],
+          "tasks": [
+            "somatic",
+            "heterogeneity"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "The landscapes of somatic mutation in normal cells inform us about the processes of mutation and selection operative throughout life, providing insight into normal ageing and the earliest stages of cancer development 1 . Here, by whole-genome sequencing of 238 microdissections 2 from 30 individuals, including 18 with gastric cancer, we elucidate the developmental trajectories of normal and malignant gastric epithelium. We find that gastric glands are units of monoclonal cell populations that accrue roughly 28 somatic single-nucleotide variants per year, predominantly attributable to endogenous mutational processes. In individuals with gastric cancer, metaplastic glands often show elevated mutation burdens due to acceleration of mutational processes linked to proliferation and oxidative damage. Unusually for normal cells, gastric epithelial cells often carry recurrent trisomies of specific chromosomes, which are highly enriched in a subset of individuals. Surveying 829 polyclonal gastric microbiopsies by targeted sequencing, we find somatic 'driver' mutations in a distinctive repertoire of known cancer genes, including ARID1A, ARID1B, ARID2, CTNNB1 and KDM6A. The prevalence of mutant clones increases with age to occupy roughly 8% of the gastric epithelial lining by age 60 years and is significantly increased by the presence of severe chronic inflammation. Our findings provide insights into intrinsic and extrinsic influences on somatic evolution in the gastric epithelium in healthy, precancerous and malignant states.",
+          "url": "https://doi.org/10.1038/s41586-025-08708-6"
         },
         {
           "id": "MED:41062696",
@@ -4301,33 +4335,6 @@
           ],
           "abstract": "As we age, many tissues become colonized by microscopic clones carrying somatic driver mutations 1-7 . Some of these clones represent a first step towards cancer whereas others may contribute to ageing and other diseases. However, our understanding of this phenomenon remains limited due to the challenge of detecting mutations in small clones. Here we introduce a new version of nanorate sequencing (NanoSeq) 8 , a duplex sequencing method with an error rate lower than five errors per billion base pairs, which is compatible with whole-exome and targeted capture. Deep sequencing of polyclonal samples with single-molecule sensitivity simultaneously profiles large numbers of clones, providing accurate mutation rates, signatures and driver frequencies in any tissue. Applying targeted NanoSeq to 1,042 non-invasive samples of oral epithelium and 371 blood samples from a twin cohort, we report an extremely rich selection landscape, with 46 genes under positive selection in oral epithelium, more than 62,000 driver mutations and evidence of negative selection in essential genes. High-resolution maps of selection across coding and non-coding sites are obtained for many genes: a form of in vivo saturation mutagenesis. Multivariate regression models enable mutational epidemiology studies on how exposures and cancer risk factors, such as age, tobacco or alcohol, alter the acquisition or selection of somatic mutations. Accurate single-molecule sequencing provides a powerful tool to study early carcinogenesis, cancer prevention and the role of somatic mutations in ageing and disease.",
           "url": "https://doi.org/10.1038/s41586-025-09584-w"
-        },
-        {
-          "id": "MED:40108450",
-          "title": "The somatic mutation landscape of normal gastric epithelium.",
-          "method": "",
-          "authors": "Coorens THH, Collord G, Jung H, Wang Y, Moore L, Hooks Y, Mahbubani K, Law SYK, Yan HHN, Yuen ST, Saeb-Parsy K, Campbell PJ, Martincorena I, Leung SY, Stratton MR.",
-          "journal": "Nature",
-          "year": "2025",
-          "date": "2025-03-19",
-          "doi": "10.1038/s41586-025-08708-6",
-          "cited": 61,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC11981919?pdf=render",
-          "keywords": [
-            "Gastric Mucosa",
-            "Mutation"
-          ],
-          "tasks": [
-            "somatic",
-            "heterogeneity"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "The landscapes of somatic mutation in normal cells inform us about the processes of mutation and selection operative throughout life, providing insight into normal ageing and the earliest stages of cancer development 1 . Here, by whole-genome sequencing of 238 microdissections 2 from 30 individuals, including 18 with gastric cancer, we elucidate the developmental trajectories of normal and malignant gastric epithelium. We find that gastric glands are units of monoclonal cell populations that accrue roughly 28 somatic single-nucleotide variants per year, predominantly attributable to endogenous mutational processes. In individuals with gastric cancer, metaplastic glands often show elevated mutation burdens due to acceleration of mutational processes linked to proliferation and oxidative damage. Unusually for normal cells, gastric epithelial cells often carry recurrent trisomies of specific chromosomes, which are highly enriched in a subset of individuals. Surveying 829 polyclonal gastric microbiopsies by targeted sequencing, we find somatic 'driver' mutations in a distinctive repertoire of known cancer genes, including ARID1A, ARID1B, ARID2, CTNNB1 and KDM6A. The prevalence of mutant clones increases with age to occupy roughly 8% of the gastric epithelial lining by age 60 years and is significantly increased by the presence of severe chronic inflammation. Our findings provide insights into intrinsic and extrinsic influences on somatic evolution in the gastric epithelium in healthy, precancerous and malignant states.",
-          "url": "https://doi.org/10.1038/s41586-025-08708-6"
         },
         {
           "id": "MED:39885364",
@@ -4446,9 +4453,11 @@
             "Patient-derived Organoids",
             "Stat3-parn Axis",
             "Single-cell Omics",
+            "Glioblastoma",
             "Brain Neoplasms",
             "Drug Resistance, Neoplasm",
-            "Neoplastic Stem Cells"
+            "Neoplastic Stem Cells",
+            "Immune Evasion"
           ],
           "tasks": [
             "heterogeneity",
@@ -4847,7 +4856,8 @@
             "db:go",
             "db:gtex",
             "db:kegg",
-            "db:string"
+            "db:string",
+            "ds:pwc-string"
           ],
           "lists": [
             "recent"
@@ -5061,7 +5071,8 @@
             "Self-supervised Learning",
             "Cancer Survival Prediction",
             "Neoplasms",
-            "Genomics"
+            "Genomics",
+            "Deep Learning"
           ],
           "tasks": [
             "prognosis"
@@ -5094,7 +5105,8 @@
             "Neoplasms",
             "Immunotherapy",
             "Microsatellite Instability",
-            "Biomarkers, Tumor"
+            "Biomarkers, Tumor",
+            "Immune Checkpoint Inhibitors"
           ],
           "tasks": [
             "heterogeneity",
@@ -5127,6 +5139,7 @@
             "Individualized Precise Treatment",
             "Breast Neoplasms",
             "Gene Expression Profiling",
+            "Tumor Microenvironment",
             "Transcriptome",
             "Precision Medicine"
           ],
@@ -6351,35 +6364,6 @@
           "url": "https://doi.org/10.1038/s41586-025-09010-1"
         },
         {
-          "id": "MED:39550375",
-          "title": "Single cell and spatial transcriptomics highlight the interaction of club-like cells with immunosuppressive myeloid cells in prostate cancer.",
-          "method": "",
-          "authors": "Kiviaho A, Eerola SK, Kallio HML, Andersen MK, Hoikka M, Tiihonen AM, Salonen I, Spotbeen X, Giesen A, Parker CTA, Taavitsainen S, Hantula O, Marttinen M, Hermelo I, Ismail M, Midtbust E, Wess M, Devlies W, Sharma A, Krossa S, Häkkinen T, Afyounian E, Vandereyken K, Kint S, Kesseli J, Tolonen T, Tammela TLJ, Viset T, Størkersen Ø, Giskeødegård GF, Rye MB, Murtola T, Erickson A, Latonen L, Bova GS, Mills IG, Joniau S, Swinnen JV, Voet T, Mirtti T, Attard G, Claessens F, Visakorpi T, Rautajoki KJ, Tessem MB, Urbanucci A, Nykter M.",
-          "journal": "Nature communications",
-          "year": "2024",
-          "date": "2024-11-16",
-          "doi": "10.1038/s41467-024-54364-1",
-          "cited": 94,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC11569175?pdf=render",
-          "keywords": [
-            "Myeloid Cells",
-            "Prostatic Neoplasms",
-            "Single-Cell Analysis",
-            "Tumor Microenvironment",
-            "Transcriptome"
-          ],
-          "tasks": [
-            "spatial"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Prostate cancer treatment resistance is a significant challenge facing the field. Genomic and transcriptomic profiling have partially elucidated the mechanisms through which cancer cells escape treatment, but their relation toward the tumor microenvironment (TME) remains elusive. Here we present a comprehensive transcriptomic landscape of the prostate TME at multiple points in the standard treatment timeline employing single-cell RNA-sequencing and spatial transcriptomics data from 120 patients. We identify club-like cells as a key epithelial cell subtype that acts as an interface between the prostate and the immune system. Tissue areas enriched with club-like cells have depleted androgen signaling and upregulated expression of luminal progenitor cell markers. Club-like cells display a senescence-associated secretory phenotype and their presence is linked to increased polymorphonuclear myeloid-derived suppressor cell (PMN-MDSC) activity. Our results indicate that club-like cells are associated with myeloid inflammation previously linked to androgen deprivation therapy resistance, providing a rationale for their therapeutic targeting.",
-          "url": "https://doi.org/10.1038/s41467-024-54364-1"
-        },
-        {
           "id": "MED:40294241",
           "title": "Single-cell Transcriptional Atlas of Human Hematopoiesis Reveals Genetic and Hierarchy-Based Determinants of Aberrant AML Differentiation.",
           "method": "",
@@ -6491,7 +6475,8 @@
             "Gene Expression Profiling",
             "Sequence Analysis, RNA",
             "Biomedical Research",
-            "Single-Cell Analysis"
+            "Single-Cell Analysis",
+            "Transcriptome"
           ],
           "tasks": [
             "spatial"
@@ -6760,6 +6745,7 @@
             "Tumor Heterogeneity",
             "Single-cell Sequencing",
             "Neoplasms",
+            "Immunotherapy",
             "Genomics",
             "Single-Cell Analysis",
             "Precision Medicine"
@@ -6801,6 +6787,37 @@
           ],
           "abstract": "The gut microbiota crucially regulates the efficacy of immune checkpoint inhibitor (ICI) based immunotherapy, but the underlying mechanisms remain unclear at the single-cell resolution. Using single-cell RNA sequencing and subsequent validations, we investigate gut microbiota-ICI synergy by profiling the tumor microenvironment (TME) and elucidating critical cellular interactions in mouse models. Our findings reveal that intact gut microbiota combined with ICIs may synergistically increase the proportions of CD8 + , CD4 + , and γδ T cells, reduce glycolysis metabolism, and reverse exhausted CD8 + T cells into memory/effector CD8 + T cells, enhancing antitumor response. This synergistic effect also induces macrophage reprogramming from M2 protumor Spp1 + tumor-associated macrophages (TAMs) to Cd74 + TAMs, which act as antigen-presenting cells (APCs). These macrophage subtypes show a negative correlation within tumors, particularly during fecal microbiota transplantation. Depleting Spp1 + TAMs in Spp1 conditional knockout mice boosts ICI efficacy and T cell infiltration, regardless of gut microbiota status, suggesting a potential upstream role of the gut microbiota and highlighting the crucial negative impact of Spp1 + TAMs during macrophage reprogramming on immunotherapy outcomes. Mechanistically, we propose a γδ T cell-APC-CD8 + T cell axis, where gut microbiota and ICIs enhance Cd40lg expression on γδ T cells, activating Cd40 overexpressing APCs (e.g., Cd74 + TAMs) through CD40-CD40L-related NF-κB signaling and boosting CD8 + T cell responses via CD86-CD28 interactions. These findings highlight the potential importance of γδ T cells and SPP1-related macrophage reprogramming in activating CD8 + T cells, as well as the synergistic effect of gut microbiota and ICIs in immunotherapy through modulating the TME.",
           "url": "https://doi.org/10.1038/s41392-025-02226-7"
+        },
+        {
+          "id": "MED:40830271",
+          "title": "A single-cell, spatial transcriptomic atlas of the Arabidopsis life cycle.",
+          "method": "",
+          "authors": "Lee TA, Illouz-Eliaz N, Nobori T, Xu J, Jow B, Nery JR, Ecker JR.",
+          "journal": "Nature plants",
+          "year": "2025",
+          "date": "2025-08-19",
+          "doi": "10.1038/s41477-025-02072-z",
+          "cited": 64,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC12416547?pdf=render",
+          "keywords": [
+            "Arabidopsis",
+            "Gene Expression Regulation, Plant",
+            "Transcriptome",
+            "Single-Cell Gene Expression Analysis"
+          ],
+          "tasks": [
+            "integration",
+            "clustering",
+            "spatial",
+            "perturbation"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Arabidopsis has been pivotal in uncovering fundamental principles of plant biology, yet a comprehensive, high-resolution understanding of its cellular identities throughout the entire life cycle remains incomplete. Here we present a single-nucleus and spatial transcriptomic atlas spanning ten developmental stages, encompassing over 400,000 nuclei from all organ systems and tissues-from seeds to developing siliques. Leveraging paired single-nucleus and spatial transcriptomic datasets, we annotate 75% of identified cell clusters, revealing striking molecular diversity in cell types and states across development. Our integrated approach identified conserved transcriptional signatures among recurrent cell types, organ-specific heterogeneity and previously uncharacterized cell-type-specific markers validated spatially. Moreover, we uncover dynamic transcriptional programs governing secondary metabolite production and differential growth patterns, exemplified by detailed spatial profiling of the compact yet complex apical hook structure; this profiling revealed transient cellular states linked to developmental progression and hormonal regulation, highlighting the hidden complexity underlying plant morphogenesis. Functional validation of genes uniquely expressed within specific cell contexts confirmed their essential developmental roles, underscoring the predictive power of our atlas. Collectively, this comprehensive resource provides an invaluable foundation for exploring cellular differentiation, environmental responses and genetic perturbations at high resolution, advancing our understanding of plant biology.",
+          "url": "https://doi.org/10.1038/s41477-025-02072-z"
         }
       ]
     },
@@ -6905,7 +6922,7 @@
           "year": "2024",
           "date": "2023-05-08",
           "doi": "10.1038/s41587-023-01773-0",
-          "cited": 2745,
+          "cited": 2837,
           "license": "cc by",
           "pdf": "https://europepmc.org/articles/PMC10869269?pdf=render",
           "keywords": [
@@ -8623,7 +8640,8 @@
             "enrichment"
           ],
           "datasets": [
-            "db:string"
+            "db:string",
+            "ds:pwc-string"
           ],
           "lists": [
             "classic"
@@ -8786,7 +8804,8 @@
             "enrichment"
           ],
           "datasets": [
-            "db:string"
+            "db:string",
+            "ds:pwc-string"
           ],
           "lists": [
             "classic"
@@ -9418,7 +9437,7 @@
           "year": "2026",
           "date": "2026-01-01",
           "doi": "10.1093/nar/gkaf1292",
-          "cited": 275,
+          "cited": 337,
           "license": "cc by",
           "pdf": "https://europepmc.org/articles/PMC12807639?pdf=render",
           "keywords": [
@@ -9500,6 +9519,40 @@
           "url": "https://doi.org/10.1093/jamia/ocaf059"
         },
         {
+          "id": "MED:40195117",
+          "title": "Recent progress and future challenges in structure-based protein-protein interaction prediction.",
+          "method": "",
+          "authors": "Yuan R, Zhang J, Zhou J, Cong Q.",
+          "journal": "Molecular therapy : the journal of the American Society of Gene Therapy",
+          "year": "2025",
+          "date": "2025-04-06",
+          "doi": "10.1016/j.ymthe.2025.04.003",
+          "cited": 21,
+          "license": "cc by-nc-nd",
+          "pdf": "https://europepmc.org/articles/PMC12126802?pdf=render",
+          "keywords": [
+            "Artificial intelligence",
+            "Drug design",
+            "Coevolution",
+            "Protein-protein interaction",
+            "Protein-protein Docking",
+            "Casp",
+            "Alphafold",
+            "Proteins",
+            "Protein Interaction Mapping",
+            "Computational Biology"
+          ],
+          "tasks": [
+            "ppi"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Protein-protein interactions (PPIs) play a fundamental role in cellular processes, and understanding these interactions is crucial for advances in both basic biological science and biomedical applications. This review presents an overview of recent progress in computational methods for modeling protein complexes and predicting PPIs based on 3D structures, focusing on the transformative role of artificial intelligence-based approaches. We further discuss the expanding biomedical applications of PPI research, including the elucidation of disease mechanisms, drug discovery, and therapeutic design. Despite these advances, significant challenges remain in predicting host-pathogen interactions, interactions between intrinsically disordered regions, and interactions related to immune responses. These challenges are worthwhile for future explorations and represent the frontier of research in this field.",
+          "url": "https://doi.org/10.1016/j.ymthe.2025.04.003"
+        },
+        {
           "id": "MED:39695169",
           "title": "Petagraph: A large-scale unifying knowledge graph framework for integrating biomolecular and biomedical data.",
           "method": "Petagraph",
@@ -9526,40 +9579,6 @@
           "url": "https://doi.org/10.1038/s41597-024-04070-w"
         },
         {
-          "id": "MED:40195117",
-          "title": "Recent progress and future challenges in structure-based protein-protein interaction prediction.",
-          "method": "",
-          "authors": "Yuan R, Zhang J, Zhou J, Cong Q.",
-          "journal": "Molecular therapy : the journal of the American Society of Gene Therapy",
-          "year": "2025",
-          "date": "2025-04-06",
-          "doi": "10.1016/j.ymthe.2025.04.003",
-          "cited": 20,
-          "license": "cc by-nc-nd",
-          "pdf": "https://europepmc.org/articles/PMC12126802?pdf=render",
-          "keywords": [
-            "Artificial intelligence",
-            "Drug design",
-            "Coevolution",
-            "Protein-protein interaction",
-            "Protein-protein Docking",
-            "Casp",
-            "Alphafold",
-            "Proteins",
-            "Protein Interaction Mapping",
-            "Computational Biology"
-          ],
-          "tasks": [
-            "ppi"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Protein-protein interactions (PPIs) play a fundamental role in cellular processes, and understanding these interactions is crucial for advances in both basic biological science and biomedical applications. This review presents an overview of recent progress in computational methods for modeling protein complexes and predicting PPIs based on 3D structures, focusing on the transformative role of artificial intelligence-based approaches. We further discuss the expanding biomedical applications of PPI research, including the elucidation of disease mechanisms, drug discovery, and therapeutic design. Despite these advances, significant challenges remain in predicting host-pathogen interactions, interactions between intrinsically disordered regions, and interactions related to immune responses. These challenges are worthwhile for future explorations and represent the frontier of research in this field.",
-          "url": "https://doi.org/10.1016/j.ymthe.2025.04.003"
-        },
-        {
           "id": "MED:40146985",
           "title": "Large Language Model-Driven Knowledge Graph Construction in Sepsis Care Using Multicenter Clinical Databases: Development and Usability Study.",
           "method": "",
@@ -9578,6 +9597,7 @@
             "Prompt Engineering",
             "Large Language Models",
             "Gpt-4.0",
+            "Sepsis",
             "Databases, Factual"
           ],
           "tasks": [
@@ -9641,6 +9661,7 @@
             "Pancreatic Neoplasms",
             "F-Box Proteins",
             "Retinal Dehydrogenase",
+            "Ferroptosis",
             "Aldehyde Dehydrogenase 1 Family"
           ],
           "tasks": [],
@@ -9737,7 +9758,9 @@
             "Structure Representations",
             "Proteins",
             "Protein Interaction Mapping",
-            "Computational Biology"
+            "Computational Biology",
+            "Machine Learning",
+            "Deep Learning"
           ],
           "tasks": [
             "ppi"
@@ -9823,7 +9846,8 @@
             "enrichment"
           ],
           "datasets": [
-            "db:gdc"
+            "db:gdc",
+            "ds:pwc-metabric"
           ],
           "lists": [
             "recent"
@@ -9880,7 +9904,8 @@
           ],
           "tasks": [],
           "datasets": [
-            "db:string"
+            "db:string",
+            "ds:pwc-string"
           ],
           "lists": [
             "recent"
@@ -10186,7 +10211,9 @@
           "tasks": [
             "ppi"
           ],
-          "datasets": [],
+          "datasets": [
+            "ds:pwc-tcr-pmhc"
+          ],
           "lists": [
             "recent"
           ],
@@ -10447,7 +10474,7 @@
           "year": "2014",
           "date": "2013-12-25",
           "doi": "10.1038/nature12873",
-          "cited": 1955,
+          "cited": 1961,
           "license": "",
           "pdf": "https://europepmc.org/articles/PMC3944098?pdf=render",
           "keywords": [
@@ -10908,7 +10935,8 @@
             "Quantitative Structure–activity Relationship",
             "Deep Learning",
             "Drug Design And Discovery",
-            "Artificial Intelligence"
+            "Artificial Intelligence",
+            "Deep Learning"
           ],
           "tasks": [
             "generation",
@@ -11638,40 +11666,6 @@
           "url": "https://doi.org/10.3389/fphar.2025.1547131"
         },
         {
-          "id": "MED:39550439",
-          "title": "Deep learning pipeline for accelerating virtual screening in drug discovery.",
-          "method": "",
-          "authors": "Noor F, Junaid M, Almalki AH, Almaghrabi M, Ghazanfar S, Tahir Ul Qamar M.",
-          "journal": "Scientific reports",
-          "year": "2024",
-          "date": "2024-11-16",
-          "doi": "10.1038/s41598-024-79799-w",
-          "cited": 34,
-          "license": "cc by-nc-nd",
-          "pdf": "https://europepmc.org/articles/PMC11569207?pdf=render",
-          "keywords": [
-            "drug discovery",
-            "Python",
-            "pipeline",
-            "Deep Learning (Dl)",
-            "Graph Neural Network (Gnn)",
-            "Virtudockdl",
-            "Drug Discovery",
-            "Deep Learning"
-          ],
-          "tasks": [
-            "generation",
-            "affinity",
-            "docking"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "In the race to combat ever-evolving diseases, the drug discovery process often faces the hurdles of high-cost and time-consuming procedures. To tackle these challenges and enhance the efficiency of identifying new therapeutic agents, we introduce VirtuDockDL, which is a streamlined Python-based web platform utilizing deep learning for drug discovery. This pipeline employs a Graph Neural Network to analyze and predict the effectiveness of various compounds as potential drug candidates. During the validation phase, VirtuDockDL was instrumental in identifying non-covalent inhibitors against the VP35 protein of the Marburg virus, a critical target given the virus's high fatality rate and limited treatment options. Further, in benchmarking, VirtuDockDL achieved 99% accuracy, an F1 score of 0.992, and an AUC of 0.99 on the HER2 dataset, surpassing DeepChem (89% accuracy) and AutoDock Vina (82% accuracy). Compared to RosettaVS, MzDOCK, and PyRMD, VirtuDockDL outperformed them by combining both ligand- and structure-based screening with deep learning. While RosettaVS excels in accurate docking but lacks high-throughput screening, and PyRMD focuses on ligand-based methods without AI integration, VirtuDockDL offers superior predictive accuracy and full automation for large-scale datasets, making it ideal for comprehensive drug discovery workflows. These results underscore the tool's capability to identify high-affinity inhibitors accurately across various targets, including the HER2 protein for cancer therapy, TEM-1 beta-lactamase for bacterial infections, and the CYP51 enzyme for fungal infections like Candidiasis. To sum up, VirtuDockDL combines user-friendly interface design with powerful computational capabilities to facilitate rapid, cost-effective drug discovery and development. The integration of AI in drug discovery could potentially transform the landscape of pharmaceutical research, providing faster responses to global health challenges. The VirtuDockDL is available at https://github.com/FatimaNoor74/VirtuDockDL .",
-          "url": "https://doi.org/10.1038/s41598-024-79799-w"
-        },
-        {
           "id": "MED:40698059",
           "title": "Recent advances in AI-based toxicity prediction for drug discovery.",
           "method": "",
@@ -11813,7 +11807,8 @@
             "Graph Neural Networks",
             "Quantitative Structure-Activity Relationship",
             "Artificial Intelligence",
-            "Drug Discovery"
+            "Drug Discovery",
+            "Deep Learning"
           ],
           "tasks": [
             "property",
@@ -11942,7 +11937,8 @@
             "Artificial Intelligence (Ai)",
             "Artificial Intelligence",
             "Small Molecule Libraries",
-            "Drug Discovery"
+            "Drug Discovery",
+            "Polypharmacology"
           ],
           "tasks": [
             "generation",
@@ -12039,6 +12035,36 @@
           ],
           "abstract": "The integration of large language models (LLMs) into the drug discovery and development field marks a significant paradigm shift, offering novel methodologies for understanding disease mechanisms, facilitating de novo drug discovery, and optimizing clinical trial processes. This review highlights the expanding role of LLMs in revolutionizing various stages of the drug development pipeline. We investigate how these advanced computational models can uncover target-disease linkage, interpret complex biomedical data, enhance drug molecule design, predict drug efficacy and safety profiles, and facilitate clinical trial processes. In this paper, we aim to provide a comprehensive overview for researchers and practitioners in computational biology, pharmacology, and AI4Science by offering insights into the potential transformative impact of LLMs on drug discovery and development.",
           "url": "https://doi.org/10.1016/j.patter.2025.101346"
+        },
+        {
+          "id": "MED:40585410",
+          "title": "Leveraging machine learning models in evaluating ADMET properties for drug discovery and development.",
+          "method": "",
+          "authors": "Venkataraman M, Rao GC, Madavareddi JK, Maddi SR.",
+          "journal": "ADMET & DMPK",
+          "year": "2025",
+          "date": "2025-06-07",
+          "doi": "10.5599/admet.2772",
+          "cited": 29,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC12205928?pdf=render",
+          "keywords": [
+            "Pharmacokinetics",
+            "Computational Toxicology",
+            "Molecular Descriptors",
+            "Admet Prediction",
+            "Ai/Ml"
+          ],
+          "tasks": [
+            "property",
+            "docking"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Background and purpose The evaluation of ADMET properties remains a critical bottleneck in drug discovery and development, contributing significantly to the high attrition rate of drug candidates. Traditional experimental approaches are often time-consuming, cost-intensive, and limited in scalability. This review aims to investigate how recent advances in machine learning (ML) models are revolutionizing ADMET prediction by enhancing accuracy, reducing experimental burden, and accelerating decision-making during early-stage drug development. Experimental approach This article systematically examines the current landscape of ML applications in ADMET prediction, including the types of algorithms employed, common molecular descriptors and datasets used, and model development workflows. It also explores public databases, model evaluation metrics, and regulatory considerations relevant to computational toxicology. Emphasis is placed on supervised and deep learning techniques, model validation strategies, and the challenges of data imbalance and model interpretability. Key results ML-based models have demonstrated significant promise in predicting key ADMET endpoints, outperforming some traditional quantitative structure - activity relationship (QSAR) models. These approaches provide rapid, cost-effective, and reproducible alternatives that integrate seamlessly with existing drug discovery pipelines. Case studies discussed in this review illustrate the successful deployment of ML models for solubility, permeability, metabolism, and toxicity predictions. Conclusion Machine learning has emerged as a transformative tool in ADMET prediction, offering new opportunities for early risk assessment and compound prioritization. While challenges such as data quality, algorithm transparency, and regulatory acceptance persist, continued integration of ML with experimental pharmacology holds the potential to substantially improve drug development efficiency and reduce late-stage failures.",
+          "url": "https://doi.org/10.5599/admet.2772"
         }
       ]
     },
@@ -14966,6 +14992,7 @@
             "MicroRNA",
             "Single‐cell Sequencing",
             "Plant‐derived Exosomes",
+            "Colitis",
             "Colitis, Ulcerative",
             "MicroRNAs",
             "Exosomes",
@@ -15007,6 +15034,7 @@
             "Extremities",
             "Salamandridae",
             "RNA, Untranslated",
+            "Regeneration",
             "Repetitive Sequences, Nucleic Acid"
           ],
           "tasks": [
@@ -15160,6 +15188,67 @@
           "url": "https://doi.org/10.1038/s41467-025-60374-4"
         },
         {
+          "id": "MED:41131153",
+          "title": "RNA structure modulates Cas13 activity and enables mismatch detection.",
+          "method": "",
+          "authors": "Larsen BB, Kimchi O, Dunkley ORS, Grimm MS, Siegers JY, Huang Y, Vandavasi VG, Nguyen LT, Lamb CH, Aranovich I, Eggink D, Meijer A, Jalal H, Notterman DA, Karlsson EA, Te Velthuis AJW, Myhrvold C.",
+          "journal": "Nature biotechnology",
+          "year": "2026",
+          "date": "2025-10-23",
+          "doi": "10.1038/s41587-025-02868-6",
+          "cited": 22,
+          "license": "cc by-nc-nd",
+          "pdf": "https://europepmc.org/articles/PMC12584110?pdf=render",
+          "keywords": [
+            "RNA",
+            "Base Pair Mismatch",
+            "CRISPR-Associated Proteins"
+          ],
+          "tasks": [
+            "rna-structure",
+            "mirna"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Cas13 is activated by the hybridization of a CRISPR RNA to a complementary single-stranded RNA protospacer in a target RNA. While Cas13 is not activated by double-stranded RNA in vitro, it robustly targets RNA in cellular environments where RNAs are highly structured. The mechanism by which Cas13 targets structured RNAs remains unknown. Here, we systematically probe the effects of secondary structure on Cas13. We find that secondary structure in the protospacer and 3' to it inhibits Cas13 activity and quantitatively explains the former effect through a strand displacement framework. We then harness strand displacement to generate an 'occluded' Cas13, which enhances mismatch discrimination up to 50-fold and enables sequence-agnostic mutation identification at low (<1%) allele frequencies. Using occluded Cas13, we identify human-adaptive mutations in SARS-CoV-2 and human and avian influenza A viruses, as well as oncogenic mutations in KRAS. Our work leverages improved mechanistic understanding of Cas13 to expand the scope of RNA diagnostics and enable structure-informed Cas13 approaches.",
+          "url": "https://doi.org/10.1038/s41587-025-02868-6"
+        },
+        {
+          "id": "MED:40563429",
+          "title": "Alternative Splicing in Tumorigenesis and Cancer Therapy.",
+          "method": "",
+          "authors": "Chen H, Tang J, Xiang J.",
+          "journal": "Biomolecules",
+          "year": "2025",
+          "date": "2025-05-29",
+          "doi": "10.3390/biom15060789",
+          "cited": 22,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC12190615?pdf=render",
+          "keywords": [
+            "Cancer",
+            "Immunotherapy",
+            "Alternative splicing",
+            "Innovative Technologies",
+            "Neoantigens",
+            "Neoplasms",
+            "Alternative Splicing",
+            "Carcinogenesis"
+          ],
+          "tasks": [
+            "mirna",
+            "splicing"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Alternative splicing (AS) is a pivotal post-transcriptional mechanism that expands the functional diversity of the proteome by enabling a single gene to generate multiple mRNA and protein isoforms. This process, which involves the differential inclusion or exclusion of exons and introns, is tightly regulated by splicing factors (SFs), such as serine/arginine-rich proteins (SRs), heterogeneous nuclear ribonucleoproteins (hnRNPs), and RNA-binding motif (RBM) proteins. These factors recognize specific sequences, including 5' and 3' splice sites and branch points, to ensure precise splicing. While AS is essential for normal cellular function, its dysregulation is increasingly implicated in cancer pathogenesis. Aberrant splicing can lead to the production of oncogenic isoforms that promote tumorigenesis, metastasis, and resistance to therapy. Furthermore, such abnormalities can cause the loss of tumor-suppressing activity, thereby contributing to cancer development. Importantly, abnormal AS events can generate neoantigens, which are presented on tumor cell surfaces via major histocompatibility complex (MHC) molecules, suggesting novel targets for cancer immunotherapy. Additionally, splice-switching oligonucleotides (SSOs) have shown promise as therapeutic agents because they modulate splicing patterns to restore normal gene function or induce tumor-suppressive isoforms. This review explores the mechanisms of AS dysregulation in cancer, its role in tumor progression, and its potential as a therapeutic target. We also discuss innovative technologies, such as high-throughput sequencing and computational approaches, that are revolutionizing the study of AS in cancer. Finally, we address the challenges and future prospects of targeting AS for personalized cancer therapies, emphasizing its potential in precision medicine.",
+          "url": "https://doi.org/10.3390/biom15060789"
+        },
+        {
           "id": "MED:39836502",
           "title": "HPV E6/E7-Induced Acetylation of a Peptide Encoded by a Long Non-Coding RNA Inhibits Ferroptosis to Promote the Malignancy of Cervical Cancer.",
           "method": "",
@@ -15181,7 +15270,8 @@
             "Oncogene Proteins, Viral",
             "Uterine Cervical Neoplasms",
             "Papillomavirus E7 Proteins",
-            "RNA, Long Noncoding"
+            "RNA, Long Noncoding",
+            "Ferroptosis"
           ],
           "tasks": [
             "mirna",
@@ -15219,7 +15309,8 @@
             "Mrna Inhibition",
             "In Vivo Administration",
             "Ex Vivo Manipulation",
-            "MicroRNAs"
+            "MicroRNAs",
+            "Nobel Prize"
           ],
           "tasks": [
             "mirna"
@@ -15230,34 +15321,6 @@
           ],
           "abstract": "MicroRNAs (miRNAs) maintain cellular homeostasis by blocking mRNAs by binding with them to fine-tune the expression of genes across numerous biological pathways. The 2024 Nobel Prize in Medicine and Physiology for discovering miRNAs was long overdue. We anticipate a deluge of research work involving miRNAs to repeat the history of prizes awarded for research on other RNAs. Although miRNA therapies are included for several complex diseases, the realization that miRNAs regulate genes and their roles in addressing therapies for hundreds of diseases are expected; but with advancement in drug discovery tools, we anticipate even faster entry of new drugs. To promote this, we provide details of the current science, logic, intellectual property, formulations, and regulatory process with anticipation that many more researchers will introduce novel therapies based on the discussion and advice provided in this paper.",
           "url": "https://doi.org/10.3390/ijms252312883"
-        },
-        {
-          "id": "MED:41131153",
-          "title": "RNA structure modulates Cas13 activity and enables mismatch detection.",
-          "method": "",
-          "authors": "Larsen BB, Kimchi O, Dunkley ORS, Grimm MS, Siegers JY, Huang Y, Vandavasi VG, Nguyen LT, Lamb CH, Aranovich I, Eggink D, Meijer A, Jalal H, Notterman DA, Karlsson EA, Te Velthuis AJW, Myhrvold C.",
-          "journal": "Nature biotechnology",
-          "year": "2026",
-          "date": "2025-10-23",
-          "doi": "10.1038/s41587-025-02868-6",
-          "cited": 21,
-          "license": "cc by-nc-nd",
-          "pdf": "https://europepmc.org/articles/PMC12584110?pdf=render",
-          "keywords": [
-            "RNA",
-            "Base Pair Mismatch",
-            "CRISPR-Associated Proteins"
-          ],
-          "tasks": [
-            "rna-structure",
-            "mirna"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Cas13 is activated by the hybridization of a CRISPR RNA to a complementary single-stranded RNA protospacer in a target RNA. While Cas13 is not activated by double-stranded RNA in vitro, it robustly targets RNA in cellular environments where RNAs are highly structured. The mechanism by which Cas13 targets structured RNAs remains unknown. Here, we systematically probe the effects of secondary structure on Cas13. We find that secondary structure in the protospacer and 3' to it inhibits Cas13 activity and quantitatively explains the former effect through a strand displacement framework. We then harness strand displacement to generate an 'occluded' Cas13, which enhances mismatch discrimination up to 50-fold and enables sequence-agnostic mutation identification at low (<1%) allele frequencies. Using occluded Cas13, we identify human-adaptive mutations in SARS-CoV-2 and human and avian influenza A viruses, as well as oncogenic mutations in KRAS. Our work leverages improved mechanistic understanding of Cas13 to expand the scope of RNA diagnostics and enable structure-informed Cas13 approaches.",
-          "url": "https://doi.org/10.1038/s41587-025-02868-6"
         },
         {
           "id": "MED:39815331",
@@ -15429,6 +15492,7 @@
             "M6a Modification",
             "Heterogeneous-Nuclear Ribonucleoprotein Group C",
             "Adenosine",
+            "Meiosis",
             "Alternative Splicing",
             "ELAV-Like Protein 1"
           ],
@@ -15471,34 +15535,6 @@
           ],
           "abstract": "Long-read sequencing boosts alternative splicing analysis but faces technical and computational barriers in single-cell and spatial settings. High Nanopore error rates compromise cell barcode and UMI recovery, while read truncation and misalignment undermine isoform quantification. Downstream, a statistical framework to assess splicing variation within and between cells or spatial spots is lacking. We introduce Longcell, a statistical and computational pipeline for isoform quantification from single-cell and spatially barcoded Nanopore long reads. Longcell efficiently recovers cell barcodes and UMIs, corrects sequencing errors, and models splicing diversity within and between cells or spots. Applied across multiple datasets, Longcell allows accurate identification of spatial isoform switching. Longcell also reveals widespread high intra-cell isoform heterogeneity for highly expressed genes. Finally, on a perturbation experiment for 9 splicing factors, Longcell identifies regulatory targets that are validated by targeted sequencing.",
           "url": "https://doi.org/10.1038/s41467-025-60902-2"
-        },
-        {
-          "id": "MED:39814719",
-          "title": "Training data diversity enhances the basecalling of novel RNA modification-induced nanopore sequencing readouts.",
-          "method": "",
-          "authors": "Wang Z, Liu Z, Fang Y, Zhang HH, Sun X, Hao N, Que J, Ding H.",
-          "journal": "Nature communications",
-          "year": "2025",
-          "date": "2025-01-15",
-          "doi": "10.1038/s41467-025-55974-z",
-          "cited": 19,
-          "license": "cc by-nc-nd",
-          "pdf": "https://europepmc.org/articles/PMC11735843?pdf=render",
-          "keywords": [
-            "RNA",
-            "Sequence Analysis, RNA",
-            "Computational Biology",
-            "Nanopore Sequencing"
-          ],
-          "tasks": [
-            "modification"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Accurately basecalling sequence backbones in the presence of nucleotide modifications remains a substantial challenge in nanopore sequencing bioinformatics. It has been extensively demonstrated that state-of-the-art basecallers are less compatible with modification-induced sequencing signals. A precise basecalling, on the other hand, serves as the prerequisite for virtually all the downstream analyses. Here, we report that basecallers exposed to diverse training modifications gain the generalizability to analyze novel modifications. With synthesized oligos as the model system, we precisely basecall various out-of-sample RNA modifications. From the representation learning perspective, we attribute this generalizability to basecaller representation space expanded by diverse training modifications. Taken together, we conclude increasing the training data diversity as a paradigm for building modification-tolerant nanopore sequencing basecallers.",
-          "url": "https://doi.org/10.1038/s41467-025-55974-z"
         }
       ]
     },
@@ -15626,7 +15662,7 @@
           "year": "2013",
           "date": "2013-08-25",
           "doi": "10.1038/nbt.2676",
-          "cited": 6666,
+          "cited": 6720,
           "license": "",
           "pdf": "https://europepmc.org/articles/PMC3819121?pdf=render",
           "keywords": [],
@@ -15976,6 +16012,8 @@
             "Health",
             "Microbiota",
             "Microbiome",
+            "Diet",
+            "Health",
             "Gastrointestinal Microbiome"
           ],
           "tasks": [
@@ -16430,6 +16468,35 @@
           "url": "https://doi.org/10.3390/nu17050859"
         },
         {
+          "id": "MED:40158196",
+          "title": "Plant exudates-driven microbiome recruitment and assembly facilitates plant health management.",
+          "method": "",
+          "authors": "Yang CX, Chen SJ, Hong XY, Wang LZ, Wu HM, Tang YY, Gao YY, Hao GF.",
+          "journal": "FEMS microbiology reviews",
+          "year": "2025",
+          "date": "2025-01-01",
+          "doi": "10.1093/femsre/fuaf008",
+          "cited": 111,
+          "license": "cc by-nc-nd",
+          "pdf": "https://europepmc.org/articles/PMC12007450?pdf=render",
+          "keywords": [
+            "Plant Health",
+            "Plant Exudate",
+            "Plant–microbiome Interaction",
+            "Microbial Community Recruitment",
+            "Plants",
+            "Plant Exudates",
+            "Microbiota"
+          ],
+          "tasks": [],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Plant-microbiome symbiotic interactions play a crucial role in regulating plant health and productivity. To establish symbiotic relationships, the plant secretes a variety of substances to facilitate microbial community recruitment and assembly. In recent years, important progress has been made in studying how plant exudates attract beneficial microorganisms and regulate plant health. However, the mechanisms of plant exudates-mediated microbial community recruitment and assembly and their effects on plant health are no comprehensive review. Here, we summarize the interaction mechanisms among plant exudates, microbial community recruitment and assembly, and plant health. First, we systematically evaluate the type and distribution of plant exudates, as well as their role in microbiome recruitment and assembly. Second, we summarize the mechanisms of plant exudates in terms of microbiome recruitment, diversity regulation and chemotaxis. Finally, we list some typical examples for elucidating the importance of plant exudates in promoting plant health and development. This review contributes to utilizing plant exudate or beneficial microbiome resources to manage plant health and productivity.",
+          "url": "https://doi.org/10.1093/femsre/fuaf008"
+        },
+        {
           "id": "MED:38950910",
           "title": "Interplay between gut microbiome, host genetic and epigenetic modifications in MASLD and MASLD-related hepatocellular carcinoma.",
           "method": "",
@@ -16459,35 +16526,6 @@
           ],
           "abstract": "Metabolic dysfunction-associated steatotic liver disease (MASLD) encompasses a wide spectrum of liver injuries, ranging from hepatic steatosis, metabolic dysfunction-associated steatohepatitis (MASH), fibrosis, cirrhosis to MASLD-associated hepatocellular carcinoma (MASLD-HCC). Recent studies have highlighted the bidirectional impacts between host genetics/epigenetics and the gut microbial community. Host genetics influence the composition of gut microbiome, while the gut microbiota and their derived metabolites can induce host epigenetic modifications to affect the development of MASLD. The exploration of the intricate relationship between the gut microbiome and the genetic/epigenetic makeup of the host is anticipated to yield promising avenues for therapeutic interventions targeting MASLD and its associated conditions. In this review, we summarise the effects of gut microbiome, host genetics and epigenetic alterations in MASLD and MASLD-HCC. We further discuss research findings demonstrating the bidirectional impacts between gut microbiome and host genetics/epigenetics, emphasising the significance of this interconnection in MASLD prevention and treatment.",
           "url": "https://doi.org/10.1136/gutjnl-2024-332398"
-        },
-        {
-          "id": "MED:40158196",
-          "title": "Plant exudates-driven microbiome recruitment and assembly facilitates plant health management.",
-          "method": "",
-          "authors": "Yang CX, Chen SJ, Hong XY, Wang LZ, Wu HM, Tang YY, Gao YY, Hao GF.",
-          "journal": "FEMS microbiology reviews",
-          "year": "2025",
-          "date": "2025-01-01",
-          "doi": "10.1093/femsre/fuaf008",
-          "cited": 104,
-          "license": "cc by-nc-nd",
-          "pdf": "https://europepmc.org/articles/PMC12007450?pdf=render",
-          "keywords": [
-            "Plant Health",
-            "Plant Exudate",
-            "Plant–microbiome Interaction",
-            "Microbial Community Recruitment",
-            "Plants",
-            "Plant Exudates",
-            "Microbiota"
-          ],
-          "tasks": [],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Plant-microbiome symbiotic interactions play a crucial role in regulating plant health and productivity. To establish symbiotic relationships, the plant secretes a variety of substances to facilitate microbial community recruitment and assembly. In recent years, important progress has been made in studying how plant exudates attract beneficial microorganisms and regulate plant health. However, the mechanisms of plant exudates-mediated microbial community recruitment and assembly and their effects on plant health are no comprehensive review. Here, we summarize the interaction mechanisms among plant exudates, microbial community recruitment and assembly, and plant health. First, we systematically evaluate the type and distribution of plant exudates, as well as their role in microbiome recruitment and assembly. Second, we summarize the mechanisms of plant exudates in terms of microbiome recruitment, diversity regulation and chemotaxis. Finally, we list some typical examples for elucidating the importance of plant exudates in promoting plant health and development. This review contributes to utilizing plant exudate or beneficial microbiome resources to manage plant health and productivity.",
-          "url": "https://doi.org/10.1093/femsre/fuaf008"
         },
         {
           "id": "MED:40166938",
@@ -17153,6 +17191,7 @@
             "Gut Microbiota",
             "Dysbiosis",
             "Metabolic Profile",
+            "Obesity",
             "Diet, High-Fat",
             "Gastrointestinal Microbiome"
           ],
@@ -17482,7 +17521,9 @@
             "foundation-eval",
             "llm"
           ],
-          "datasets": [],
+          "datasets": [
+            "ds:pwc-blurb"
+          ],
           "lists": [
             "classic"
           ],
@@ -17564,6 +17605,7 @@
             "Genome Assembly",
             "Benchmarking",
             "Telomere-to-telomere",
+            "Genomics",
             "Diploidy",
             "Genome, Human"
           ],
@@ -17761,7 +17803,9 @@
           "tasks": [
             "benchmark"
           ],
-          "datasets": [],
+          "datasets": [
+            "ds:pwc-causalbench"
+          ],
           "lists": [
             "classic",
             "recent"
