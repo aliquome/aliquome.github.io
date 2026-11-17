@@ -370,8 +370,8 @@ details.note p { margin-top: var(--space-xs); max-width: 75ch; }
   .figures { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .actions { grid-template-columns: minmax(0, 1fr); }
   .action, .action + .action { padding: var(--space-md) 0; border-right: 0; border-bottom: var(--rule-hair) solid var(--color-rule); }
-  .nav { margin-left: 0; order: 3; width: 100%; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
-  .nav a { text-align: center; padding-inline: var(--space-2xs); font-size: var(--text-sm); white-space: nowrap; }
+  .nav { margin-left: 0; order: 3; width: 100%; display: flex; justify-content: space-between; gap: 0; }
+  .nav a { text-align: center; padding-inline: 0; font-size: var(--text-sm); white-space: nowrap; }
   .paper { grid-template-columns: minmax(0, 1fr); }
   .releases thead { display: none; }
   .releases, .releases tbody { display: block; }
