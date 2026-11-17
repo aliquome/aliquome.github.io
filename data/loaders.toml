@@ -261,7 +261,7 @@ tasks, (train, valid, test), transformers = dc.molnet.load_pcba(featurizer="ECFP
 '''
 
 [[loader]]
-targets = ["ds:moleculenet", "ds:moleculenet-2"]
+targets = ["ds:moleculenet"]
 label = "DeepChem (all MoleculeNet sets)"
 docs = "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html"
 code = '''
@@ -274,7 +274,7 @@ tasks, (train, valid, test), transformers = dc.molnet.load_bbbp(featurizer="ECFP
 '''
 
 [[loader]]
-targets = ["ds:moleculenet", "ds:moleculenet-2"]
+targets = ["ds:moleculenet"]
 label = "PyTorch Geometric"
 docs = "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.MoleculeNet.html"
 code = '''

@@ -6,7 +6,7 @@ Versioned download links, ready-to-run download code, AI-ready datasets, model l
 <p align="center">
 <img alt="Databases" src="https://img.shields.io/badge/databases-83-2e7d6b">
 <img alt="Releases" src="https://img.shields.io/badge/releases-794-2e7d6b">
-<img alt="Datasets" src="https://img.shields.io/badge/datasets-519-3b6fb6">
+<img alt="Datasets" src="https://img.shields.io/badge/datasets-505-3b6fb6">
 <img alt="Benchmark tables" src="https://img.shields.io/badge/benchmark%20tables-200-b07d2b">
 <img alt="Updated" src="https://img.shields.io/badge/updated-every%202%20days-6b6b6b">
 <img alt="License" src="https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-blue">
@@ -28,7 +28,7 @@ Versioned download links, ready-to-run download code, AI-ready datasets, model l
 
 **Aliquome** (*aliquot* + *-ome*: an exact portion of every dataset) is an open, free catalogue of **bioinformatics databases and datasets with every release version and a direct download link**. Reproducible research needs the exact data: *GRCh38 or T2T-CHM13? Ensembl 113 or 116? gnomAD v3 or v4? UniProt 2026_04?* Aliquome answers that for 83 core resources (reference genomes, variants, cancer genomics, single-cell and expression, protein structures, pathways, drug discovery, epigenomics, RNA and microbiome), and turns each link into ready-to-run download code for **curl, wget, Python, R, `pooch`, AWS CLI and `gcloud`**.
 
-It also gathers **519 machine-learning-ready biology datasets**, **200 benchmark tables with 1,854 published results** to compare models, and the **newest papers from 22 leading bioinformatics and computational biology journals**. A Rust engine rebuilds everything every two days and checks that every source is still online. The site is static, fast and hosted on GitHub Pages at **[aliquome.github.io](https://aliquome.github.io)**.
+It also gathers **505 machine-learning-ready biology datasets**, **200 benchmark tables with 1,854 published results** to compare models, and the **newest papers from 22 leading bioinformatics and computational biology journals**. A Rust engine rebuilds everything every two days and checks that every source is still online. The site is static, fast and hosted on GitHub Pages at **[aliquome.github.io](https://aliquome.github.io)**.
 
 <p align="center">
 <a href="https://aliquome.github.io">
@@ -49,7 +49,7 @@ It also gathers **519 machine-learning-ready biology datasets**, **200 benchmark
 
 - **Every version, one link away.** 794 releases of 83 databases, 733 of them with a direct, versioned URL you can paste into a pipeline, so your analysis can be rerun years later.
 - **Download code for every link.** Files, FTP folders, Zenodo, Figshare, Hugging Face, Kaggle, GEO, Synapse, Dryad, Mendeley Data and GitHub each get the right client command. 75 library loaders (PyTorch Geometric, DeepChem, TDC, OGB, Hugging Face `datasets`, Bioconductor) and official clients for controlled data (UK Biobank, COSMIC, GDC, DepMap).
-- **Datasets for AI in biology.** 519 datasets for protein, molecule, single-cell, genomics, histopathology, microscopy and biomedical text tasks; 89% come with download code.
+- **Datasets for AI in biology.** 505 datasets for protein, molecule, single-cell, genomics, histopathology, microscopy and biomedical text tasks; 88% come with download code.
 - **Benchmarks you can rank yourself.** 200 results tables (molecular property prediction, protein function, drug–target interaction, retrosynthesis, biomedical NER, nucleus segmentation and more) plus the ProteinGym leaderboards. Re-rank by any metric, open a model or paper to see every ranking it appears in.
 - **Community updates, reviewed.** Readers sign in with a one-time email code and suggest a ranking, add a result from their own paper or correct a value; nothing changes until a maintainer approves it.
 - **New papers, sorted.** The last 60 days of Bioinformatics, Nucleic Acids Research, Genome Biology, Nature Methods, Nature Biotechnology and more, tagged by field and task, with open abstracts.
@@ -61,7 +61,7 @@ It also gathers **519 machine-learning-ready biology datasets**, **200 benchmark
 | Section | What you get | Size |
 |---|---|---|
 | **Databases** | Every release with date, status, direct link and download code | 83 databases, 794 releases |
-| **Datasets** | Description, licence, paper, repository, loaders and download code | 519 datasets |
+| **Datasets** | Description, licence, paper, repository, loaders and download code | 505 datasets |
 | **Benchmarks** | Results tables to filter by task and dataset; model and paper profiles | 200 tables, 951 models, 4 ProteinGym boards |
 | **Papers** | New papers from leading journals, and the most cited open-access papers per field | ~1,350 new, 651 top papers |
 | **Status** | Reachability of every source and of its current download link | checked every two days |
@@ -321,7 +321,7 @@ Everything on [aliquome.github.io](https://aliquome.github.io/), as plain lists.
 
 </details>
 
-### Datasets for machine learning in biology (519)
+### Datasets for machine learning in biology (505)
 
 <details>
 <summary><b>Genomes and annotation</b> (22 datasets)</summary>
@@ -563,7 +563,7 @@ Everything on [aliquome.github.io](https://aliquome.github.io/), as plain lists.
 - **[FLIP -- AAV, Designed vs mutant](https://aliquome.github.io/datasets/flip-aav-designed-vs-mutant/)**: FLIP includes several benchmark datasets that contain a variety of protein sequences, each with a real-valued label indicating its "fitness" (how well the protein…
 - **[MegaScale](https://aliquome.github.io/datasets/megascale/)**: Results of a high-throughput biological assay measuring the stability of proteins From the paper "Here we present cDNA display proteolysis, a method for measuring…
 - **[MIPE](https://aliquome.github.io/datasets/mipe/)**: Datasets. From the publicly accessible Structural Antibody Database (SAbDab), we collected a total of 7571 antibodyantigen complexes, with the sequence data in FASTA…
-- **[Mol-Instructions](https://aliquome.github.io/datasets/mol-instructions-2/)**: Instruction dataset spanning molecules, proteins and biomolecular text for training language models.
+- **[Mol-Instructions](https://aliquome.github.io/datasets/mol-instructions/)**: Instruction dataset spanning molecules, proteins and biomolecular text for training language models.
 - **[Paragraph Expanded](https://aliquome.github.io/datasets/paragraph-expanded/)**: To take advantage of the ever-increasing amount of structural data now available, we also trained Paragraph on a larger dataset.
 - **[PECAN](https://aliquome.github.io/datasets/pecan/)**: The PECAN dataset provides structural data for antibody-antigen interactions, specifically curated for paratope and epitope binding site prediction.
 - **[PEER](https://aliquome.github.io/datasets/peer/)**: Protein understanding benchmark with 17 tasks covering function, localization, structure, PPI and protein–ligand interaction.
@@ -600,7 +600,7 @@ Everything on [aliquome.github.io](https://aliquome.github.io/), as plain lists.
 </details>
 
 <details>
-<summary><b>Chemistry and drug discovery</b> (142 datasets)</summary>
+<summary><b>Chemistry and drug discovery</b> (128 datasets)</summary>
 
 - **[TDC (Therapeutics Data Commons)](https://aliquome.github.io/datasets/tdc-therapeutics-data-commons/)**: Collection of more than 60 datasets for ADMET, drug–target interaction, molecule generation and other therapeutic tasks.
 - **[DeepPurpose datasets](https://aliquome.github.io/datasets/deeppurpose-datasets/)**: Drug–target interaction datasets including DAVIS, KIBA, BindingDB and antiviral data.
@@ -635,8 +635,7 @@ Everything on [aliquome.github.io](https://aliquome.github.io/), as plain lists.
 - **[DAVIS](https://aliquome.github.io/datasets/davis/)**: Kinase inhibitor binding affinities for drug–target interaction prediction.
 - **[DAVIS-DTA](https://aliquome.github.io/datasets/davis-dta/)**: Dataset Description: The interaction of 72 kinase inhibitors with 442 kinases covering &gt;80% of the human catalytic protein kinome.
 - **[DEKOIS 2.0](https://aliquome.github.io/datasets/dekois-2-0/)**: Benchmark sets of actives and decoys for evaluating docking.
-- **[DOCKSTRING](https://aliquome.github.io/datasets/dockstring-2/)**: Docking-score benchmark for molecular property prediction and optimization.
-- **[DOCKSTRING](https://aliquome.github.io/datasets/dockstring-2/)**: Docking scores for molecules against protein targets for benchmarking.
+- **[DOCKSTRING](https://aliquome.github.io/datasets/dockstring/)**: Docking-score benchmark for molecular property prediction and optimization.
 - **[Drug Combination Extraction Dataset](https://aliquome.github.io/datasets/drug-combination-extraction-dataset/)**: This dataset consists of 1634 biomedical abstracts, expert-annotated for the purpose of extracting information about the efficacy of drug combinations from the scientiﬁc…
 - **[DrugBank](https://aliquome.github.io/datasets/drugbank/)**: Drug and drug–target database with chemical, pharmacological and target data.
 - **[DrugComb](https://aliquome.github.io/datasets/drugcomb/)**: DrugComb is an open-access, community-driven data portal where the results of drug combination screening studies for a large variety of cancer cell lines are…
@@ -648,11 +647,9 @@ Everything on [aliquome.github.io](https://aliquome.github.io/), as plain lists.
 - **[FreeSolv (Free Solvation)](https://aliquome.github.io/datasets/freesolv-free-solvation/)**: The FreeSolv database offers a curated collection of experimental and calculated hydration-free energies for small molecules in water. It includes both experimental…
 - **[GDB-11/13/17/20](https://aliquome.github.io/datasets/gdb-11-13-17-20/)**: Enumerated chemical universe databases of small organic molecules.
 - **[GDSC](https://aliquome.github.io/datasets/gdsc/)**: Drug sensitivity of cancer cell lines.
-- **[GEOM](https://aliquome.github.io/datasets/geom-2/)**: 3D conformer ensembles for drug-like molecules (GEOM-Drugs) and small molecules (GEOM-QM9).
-- **[GEOM](https://aliquome.github.io/datasets/geom-2/)**: Conformer ensembles for drug-like (Drugs) and small (QM9) molecules.
+- **[GEOM](https://aliquome.github.io/datasets/geom/)**: 3D conformer ensembles for drug-like molecules (GEOM-Drugs) and small molecules (GEOM-QM9).
 - **[GEOM-DRUGS](https://aliquome.github.io/datasets/geom-drugs/)**: GEOM-DRUGS is a dataset of 430,000 large organic molecules of up to 180 atoms from Axelrod and Gómez-Bombarelli, Nature Scientific Data, 2022.
-- **[GuacaMol](https://aliquome.github.io/datasets/guacamol-2/)**: Molecular design benchmark with about 1.6 million SMILES from ChEMBL 24 with 25 tasks.
-- **[GuacaMol](https://aliquome.github.io/datasets/guacamol-2/)**: Benchmark suite for de novo molecular design based on ChEMBL.
+- **[GuacaMol](https://aliquome.github.io/datasets/guacamol/)**: Molecular design benchmark with about 1.6 million SMILES from ChEMBL 24 with 25 tasks.
 - **[hERG](https://aliquome.github.io/datasets/herg/)**: HERG is a large-scale biophysics federated molecular dataset related to cardiac toxicity. It consists of 10,572 compounds, with an average of 29.39 nodes and 94.09 edges…
 - **[HIV (Human Immunodeficiency Virus)](https://aliquome.github.io/datasets/hiv-human-immunodeficiency-virus/)**: The HIV dataset was introduced by the Drug Therapeutics Program (DTP) AIDS Antiviral Screen, which tested the ability to inhibit HIV replication for over 40,000…
 - **[HT Docking](https://aliquome.github.io/datasets/ht-docking/)**: HT Docking is a dataset consisting of 200 million 3D complex structures and 2D structure scores across a consistent set of 13 million \`\`in-stock'' molecules over 15…
@@ -665,24 +662,18 @@ Everything on [aliquome.github.io](https://aliquome.github.io/), as plain lists.
 - **[LigBoundConf 2.0](https://aliquome.github.io/datasets/ligboundconf-2-0/)**: LigBoundConf is a set of high-quality drug-like bound ligand structures in the Protein Data Bank (PDB). The original set contains three sets of structures: "raw”…
 - **[LINCS L1000](https://aliquome.github.io/datasets/lincs-l1000/)**: Gene expression signatures of cells under chemical and genetic perturbations.
 - **[Lipophilicity (logd74)](https://aliquome.github.io/datasets/lipophilicity-logd74/)**: The lipophilicity database refers to a collection of information related to the lipophilic properties of various molecules. Lipophilicity, also known as hydrophobicity,…
-- **[LIT-PCBA](https://aliquome.github.io/datasets/lit-pcba-2/)**: Unbiased virtual screening benchmark built from PubChem assays.
-- **[MARCEL](https://aliquome.github.io/datasets/marcel-2/)**: Benchmark for learning from conformer ensembles (Drugs-75K, Kraken, BDE, EE).
-- **[MARCEL](https://aliquome.github.io/datasets/marcel-2/)**: Benchmark for learning on molecular conformer ensembles.
+- **[MARCEL](https://aliquome.github.io/datasets/marcel/)**: Benchmark for learning from conformer ensembles (Drugs-75K, Kraken, BDE, EE).
 - **[MassSpecGym](https://aliquome.github.io/datasets/massspecgym/)**: MassSpecGym provides three challenges for benchmarking the discovery and identification of new molecules from MS/MS spectra:
 - **[Materials Project / MP-20](https://aliquome.github.io/datasets/materials-project-mp-20/)**: Inorganic crystal structures; MP-20 is a standard benchmark for crystal generation.
-- **[Mol-Instructions](https://aliquome.github.io/datasets/mol-instructions-2/)**: Biomolecular instruction dataset for language models.
-- **[MolData](https://aliquome.github.io/datasets/moldata-2/)**: Molecular benchmark of 1,255 bioassay tasks.
-- **[MolData](https://aliquome.github.io/datasets/moldata-2/)**: Bioassay benchmark for molecular machine learning.
+- **[MolData](https://aliquome.github.io/datasets/moldata/)**: Molecular benchmark of 1,255 bioassay tasks.
 - **[Molecular dynamics trajectories of pYEEI:SH2 recognition, unbiased, at all-atom resolution.](https://aliquome.github.io/datasets/molecular-dynamics-trajectories-of-pyeei-sh2-recognition-unbiased-at-a/)**: Click to add a brief description of the dataset (Markdown and LaTeX enabled).
 - **[Molecule3D](https://aliquome.github.io/datasets/molecule3d/)**: Molecule3D is a new benchmark that includes a dataset with precise ground-state geometries of approximately 4 million molecules derived from density functional theory…
 - **[Molecule3D / Drugs-75K](https://aliquome.github.io/datasets/molecule3d-drugs-75k/)**: Large sets of molecular 3D geometries for geometry prediction and generation.
 - **[MoleculeCLA](https://aliquome.github.io/datasets/moleculecla/)**: We present MoleculeCLA: a large-scale dataset consisting of approximately 140,000 small molecules derived from computational ligand-target binding analysis, providing…
-- **[MoleculeNet](https://aliquome.github.io/datasets/moleculenet-2/)**: Benchmark collection for molecular property prediction.
 - **[MolGrapher-Synthetic-300K](https://aliquome.github.io/datasets/molgrapher-synthetic-300k/)**: The set is created using molecule SMILES retrieved from the database PubChem. Images are then generated from SMILES using the molecule drawing library RDKit. The…
 - **[MolOpt](https://aliquome.github.io/datasets/molopt/)**: Open-source benchmark for Practical Molecular Optimization (PMO), to facilitate the transparent and reproducible evaluation of algorithmic advances in molecular…
 - **[MolParser-7M](https://aliquome.github.io/datasets/molparser-7m/)**: A large scale OCSR dataset, proposed in paper “MolParser: End-to-end Visual Recognition of Molecule Structures in the Wild“ MolParser-7M contains nearly 8 million paired…
-- **[MOSES](https://aliquome.github.io/datasets/moses-2/)**: Molecule generation benchmark with about 1.9 million SMILES from ZINC.
-- **[MOSES](https://aliquome.github.io/datasets/moses-2/)**: Benchmark platform and dataset for molecule generation.
+- **[MOSES](https://aliquome.github.io/datasets/moses/)**: Molecule generation benchmark with about 1.9 million SMILES from ZINC.
 - **[Multi-Labelled SMILES Odors dataset](https://aliquome.github.io/datasets/multi-labelled-smiles-odors-dataset/)**: This dataset is a multi-labelled SMILES odor dataset with 138 odor descriptors. This dataset was created for replicating the paper: A principal odor map unifies diverse…
 - **[Multimodal-spectroscopic-dataset](https://aliquome.github.io/datasets/multimodal-spectroscopic-dataset/)**: Spectroscopic techniques are essential tools for determining the structure of molecules. Different spectroscopic techniques, such as Nuclear magnetic resonance (NMR),…
 - **[MUTAG](https://aliquome.github.io/datasets/mutag/)**: In particular, MUTAG is a collection of nitroaromatic compounds and the goal is to predict their mutagenicity on Salmonella typhimurium.
@@ -693,8 +684,7 @@ Everything on [aliquome.github.io](https://aliquome.github.io/), as plain lists.
 - **[NSIDES](https://aliquome.github.io/datasets/nsides/)**: Drug side effects and drug-drug interactions were mined from publicly available data. Offsides is a database of drug side-effects that were found, but are not listed on…
 - **[OAS](https://aliquome.github.io/datasets/oas/)**: Observed Antibody Space: large collection of antibody repertoire sequences.
 - **[OpenREACT-CHON-EFH](https://aliquome.github.io/datasets/openreact-chon-efh/)**: RTP Dataset (Reactant–Transition State–Product Dataset) The RTP dataset forms the core training and evaluation set and consists of 35,087 molecular geometries sampled…
-- **[Papyrus](https://aliquome.github.io/datasets/papyrus-2/)**: About 60 million curated bioactivity data points for drug discovery modelling.
-- **[Papyrus](https://aliquome.github.io/datasets/papyrus-2/)**: Curated large-scale bioactivity dataset for drug discovery.
+- **[Papyrus](https://aliquome.github.io/datasets/papyrus/)**: About 60 million curated bioactivity data points for drug discovery modelling.
 - **[PaRoutes](https://aliquome.github.io/datasets/paroutes/)**: We introduce a framework for benchmarking multi-step retrosynthesis methods, i.e. route predictions, called PaRoutes. The framework consists of two sets of 10 000…
 - **[PCBA](https://aliquome.github.io/datasets/pcba/)**: PubChem BioAssay subset of 128 assays for multitask activity prediction.
 - **[PCQM4Mv2-LSC](https://aliquome.github.io/datasets/pcqm4mv2-lsc/)**: PCQM4Mv2 is a quantum chemistry dataset originally curated under the PubChemQC project. Based on the PubChemQC, we define a meaningful ML task of predicting…
@@ -702,14 +692,11 @@ Everything on [aliquome.github.io](https://aliquome.github.io/), as plain lists.
 - **[PepBDB](https://aliquome.github.io/datasets/pepbdb/)**: Database of peptide–protein complex structures.
 - **[Perov-5](https://aliquome.github.io/datasets/perov-5/)**: Perovskite crystal structures used as a crystal-generation benchmark.
 - **[Photoswitch](https://aliquome.github.io/datasets/photoswitch/)**: A benchmark for molecular machine learning where improvements in model performance can be immediately observed in the throughput of promising molecules synthesized in…
-- **[PMO / mol\_opt](https://aliquome.github.io/datasets/pmo-mol-opt-2/)**: Practical molecular optimization benchmark with 23 oracle tasks.
-- **[PMO / mol\_opt](https://aliquome.github.io/datasets/pmo-mol-opt-2/)**: Practical molecular optimization benchmark with oracle-budgeted tasks.
+- **[PMO / mol\_opt](https://aliquome.github.io/datasets/pmo-mol-opt/)**: Practical molecular optimization benchmark with 23 oracle tasks.
 - **[Polaris](https://aliquome.github.io/datasets/polaris/)**: Benchmarking platform for drug discovery datasets, including the ASAP Antiviral 2025 challenge.
-- **[PoseBusters](https://aliquome.github.io/datasets/posebusters-2/)**: Benchmark for checking the physical validity of predicted protein–ligand poses (V1: 428, V2: 308 complexes).
-- **[PoseBusters](https://aliquome.github.io/datasets/posebusters-2/)**: Benchmark set for physical validity of docked and generated poses.
+- **[PoseBusters](https://aliquome.github.io/datasets/posebusters/)**: Benchmark for checking the physical validity of predicted protein–ligand poses (V1: 428, V2: 308 complexes).
 - **[PoseBusters Benchmark](https://aliquome.github.io/datasets/posebusters-benchmark/)**: These are the protein-ligand complexes of the PoseBusters Benchmark set as described in the paper "PoseBusters: AI-based docking methods fail to generate physically…
-- **[PoseCheck](https://aliquome.github.io/datasets/posecheck-2/)**: Tool and benchmark for evaluating generated protein–ligand poses.
-- **[PoseCheck](https://aliquome.github.io/datasets/posecheck-2/)**: Benchmark for evaluating poses from structure-based generative models.
+- **[PoseCheck](https://aliquome.github.io/datasets/posecheck/)**: Tool and benchmark for evaluating generated protein–ligand poses.
 - **[PseudoMD-1M](https://aliquome.github.io/datasets/pseudomd-1m/)**: Pre-training dataset used in paper "From Artificially Real to Real: Leveraging Pseudo Data from Large Language Models for Low-Resource Molecule Discovery" (AAAI 2024)
 - **[PTC](https://aliquome.github.io/datasets/ptc/)**: PTC is a collection of 344 chemical compounds represented as graphs which report the carcinogenicity for rats. There are 19 node labels for each node.
 - **[PubChem](https://aliquome.github.io/datasets/pubchem/)**: Public repository of chemical structures and bioassay results.
@@ -729,8 +716,7 @@ Everything on [aliquome.github.io](https://aliquome.github.io/), as plain lists.
 - **[SKEMPI 2.0](https://aliquome.github.io/datasets/skempi-2-0/)**: Binding free-energy changes upon mutation in protein–protein complexes.
 - **[SolProp](https://aliquome.github.io/datasets/solprop/)**: The SolProp dataset is a valuable resource for predicting the solubility limits of organic solutes in various solvents and at different temperatures. It estimates the…
 - **[SureChEMBL](https://aliquome.github.io/datasets/surechembl/)**: Chemical structures extracted from patent documents.
-- **[Tartarus](https://aliquome.github.io/datasets/tartarus-2/)**: Benchmark for inverse design of molecules and materials.
-- **[Tartarus](https://aliquome.github.io/datasets/tartarus-2/)**: Inverse molecular design benchmark suite.
+- **[Tartarus](https://aliquome.github.io/datasets/tartarus/)**: Benchmark for inverse design of molecules and materials.
 - **[TDC](https://aliquome.github.io/datasets/tdc/)**: Therapeutics Data Commons datasets and benchmarks for drug discovery.
 - **[TOMG-Bench](https://aliquome.github.io/datasets/tomg-bench/)**: In this paper, we propose Text-based Open Molecule Generation Benchmark (TOMG-Bench), the first benchmark to evaluate the open-domain molecule generation capability of…
 - **[Tox21](https://aliquome.github.io/datasets/tox21/)**: Toxicity measurements for compounds across 12 assays.
@@ -848,14 +834,14 @@ Everything on [aliquome.github.io](https://aliquome.github.io/), as plain lists.
 - **[LAB-Bench](https://aliquome.github.io/datasets/lab-bench/)**: About 2,400 multiple-choice questions for evaluating biology research agents.
 - **[LABBench2](https://aliquome.github.io/datasets/labbench2/)**: 1,892 tasks in 11 categories for evaluating AI on biology research.
 - **[LINNAEUS](https://aliquome.github.io/datasets/linnaeus/)**: LINNAEUS is a general-purpose dictionary matching software, capable of processing multiple types of document formats in the biomedical domain (MEDLINE, PMC, BMC, OTMI,…
-- **[LIT-PCBA](https://aliquome.github.io/datasets/lit-pcba-2/)**: Virtual screening benchmark of 15 targets from PubChem; data leakage has been reported.
+- **[LIT-PCBA](https://aliquome.github.io/datasets/lit-pcba/)**: Virtual screening benchmark of 15 targets from PubChem; data leakage has been reported.
 - **[LIVECell](https://aliquome.github.io/datasets/livecell/)**: Label-free cell segmentation dataset with about 1.6 million annotated cells.
 - **[mdCATH](https://aliquome.github.io/datasets/mdcath/)**: Molecular dynamics of 5,398 CATH domains at 5 temperatures with 5 replicas each (about 3 TB).
 - **[MedHop](https://aliquome.github.io/datasets/medhop/)**: With the same format as WikiHop, the MedHop dataset is based on research paper abstracts from PubMed, and the queries are about interactions between pairs of drugs. The…
 - **[MedMentions](https://aliquome.github.io/datasets/medmentions/)**: MedMentions is a new manually annotated resource for the recognition of biomedical concepts. What distinguishes MedMentions from other annotated biomedical corpora is…
 - **[MedQA](https://aliquome.github.io/datasets/medqa/)**: USMLE-style medical exam questions for question answering.
 - **[MeSHup](https://aliquome.github.io/datasets/meshup/)**: Contains 1,342,667 full text articles in English, together with the associated MeSH labels and metadata, authors, and publication venues that are collected from the…
-- **[MoleculeNet](https://aliquome.github.io/datasets/moleculenet-2/)**: Molecular property benchmark: QM7/8/9, ESOL, FreeSolv, Lipophilicity, PCBA, HIV, BACE, BBBP, Tox21, ToxCast, SIDER and ClinTox.
+- **[MoleculeNet](https://aliquome.github.io/datasets/moleculenet/)**: Molecular property benchmark: QM7/8/9, ESOL, FreeSolv, Lipophilicity, PCBA, HIV, BACE, BBBP, Tox21, ToxCast, SIDER and ClinTox.
 - **[MolGenBench](https://aliquome.github.io/datasets/molgenbench/)**: Benchmark for structure-based drug design, from de novo design to lead optimization.
 - **[MoNuSeg and PanNuke](https://aliquome.github.io/datasets/monuseg-and-pannuke/)**: Nuclear segmentation datasets; PanNuke has 7,904 patches from 19 tissues.
 - **[MS^2](https://aliquome.github.io/datasets/ms-2/)**: MS^2 (Multi-Document Summarization of Medical Studies) is a dataset of over 470k documents and 20k summaries derived from the scientific literature.

@@ -332,12 +332,16 @@
         {
           "label": "Hugging Face",
           "url": "https://huggingface.co/datasets/zjunlp/Mol-Instructions"
+        },
+        {
+          "label": "zjunlp/Mol-Instructions",
+          "url": "https://github.com/zjunlp/Mol-Instructions"
         }
       ],
       "access": "load_dataset(\"zjunlp/Mol-Instructions\", \"Protein-oriented Instructions\")",
-      "license": "",
-      "versions": "",
-      "paper_count": null
+      "license": "CC BY 4.0",
+      "versions": "v1 / v2",
+      "paper_count": 5
     },
     {
       "id": "tdc-therapeutics-data-commons",
@@ -553,12 +557,16 @@
         {
           "label": "Figshare",
           "url": "https://figshare.com/projects/GuacaMol/56639"
+        },
+        {
+          "label": "BenevolentAI/guacamol",
+          "url": "https://github.com/BenevolentAI/guacamol"
         }
       ],
       "access": "",
-      "license": "",
-      "versions": "",
-      "paper_count": null
+      "license": "MIT (code)",
+      "versions": "v1 (ChEMBL 24)",
+      "paper_count": 30
     },
     {
       "id": "moses",
@@ -568,11 +576,16 @@
       "category": "Protein–ligand and drug discovery",
       "stars": null,
       "repo": "https://github.com/molecularsets/moses",
-      "links": [],
+      "links": [
+        {
+          "label": "molecularsets/moses",
+          "url": "https://github.com/molecularsets/moses"
+        }
+      ],
       "access": "Included in the repository; see README",
-      "license": "",
-      "versions": "",
-      "paper_count": null
+      "license": "MIT",
+      "versions": "Single release",
+      "paper_count": 47
     },
     {
       "id": "geom",
@@ -589,9 +602,9 @@
         }
       ],
       "access": "",
-      "license": "",
-      "versions": "",
-      "paper_count": null
+      "license": "CC0",
+      "versions": "drugs (107 uses), qm9 (9)",
+      "paper_count": 34
     },
     {
       "id": "posebusters",
@@ -605,12 +618,16 @@
         {
           "label": "Zenodo 8278563",
           "url": "https://zenodo.org/records/8278563"
+        },
+        {
+          "label": "maabuu/posebusters",
+          "url": "https://github.com/maabuu/posebusters"
         }
       ],
       "access": "pip install posebusters",
-      "license": "",
-      "versions": "",
-      "paper_count": null
+      "license": "BSD-3-Clause",
+      "versions": "Benchmark set (428)",
+      "paper_count": 12
     },
     {
       "id": "pmo-mol-opt",
@@ -620,11 +637,16 @@
       "category": "Protein–ligand and drug discovery",
       "stars": null,
       "repo": "https://github.com/wenhao-gao/mol_opt",
-      "links": [],
+      "links": [
+        {
+          "label": "wenhao-gao/mol_opt",
+          "url": "https://github.com/wenhao-gao/mol_opt"
+        }
+      ],
       "access": "Included in the repository",
-      "license": "",
-      "versions": "",
-      "paper_count": null
+      "license": "MIT",
+      "versions": "NeurIPS 2022",
+      "paper_count": 7
     },
     {
       "id": "papyrus",
@@ -641,9 +663,9 @@
         }
       ],
       "access": "pip install papyrus-scripts, then papyrus download -V latest",
-      "license": "",
-      "versions": "",
-      "paper_count": null
+      "license": "CC BY 4.0 (data)",
+      "versions": "05.5 / 05.6",
+      "paper_count": 1
     },
     {
       "id": "polaris",
@@ -667,11 +689,16 @@
       "category": "Protein–ligand and drug discovery",
       "stars": null,
       "repo": "https://github.com/aspuru-guzik-group/Tartarus",
-      "links": [],
+      "links": [
+        {
+          "label": "aspuru-guzik-group/Tartarus",
+          "url": "https://github.com/aspuru-guzik-group/Tartarus"
+        }
+      ],
       "access": "Included in the repository",
-      "license": "",
-      "versions": "",
-      "paper_count": null
+      "license": "MIT",
+      "versions": "2022/2023",
+      "paper_count": 2
     },
     {
       "id": "dockstring",
@@ -685,12 +712,16 @@
         {
           "label": "Figshare",
           "url": "https://figshare.com/s/95f2fed733dec170b998"
+        },
+        {
+          "label": "dockstring/dockstring",
+          "url": "https://github.com/dockstring/dockstring"
         }
       ],
       "access": "",
-      "license": "",
-      "versions": "",
-      "paper_count": null
+      "license": "MIT (code)",
+      "versions": "2022",
+      "paper_count": 2
     },
     {
       "id": "marcel",
@@ -700,11 +731,16 @@
       "category": "Protein–ligand and drug discovery",
       "stars": null,
       "repo": "https://github.com/SXKDZ/MARCEL",
-      "links": [],
+      "links": [
+        {
+          "label": "SXKDZ/MARCEL",
+          "url": "https://github.com/SXKDZ/MARCEL"
+        }
+      ],
       "access": "See README",
-      "license": "",
-      "versions": "",
-      "paper_count": null
+      "license": "MIT",
+      "versions": "2023",
+      "paper_count": 3
     },
     {
       "id": "moldata",
@@ -714,11 +750,16 @@
       "category": "Protein–ligand and drug discovery",
       "stars": null,
       "repo": "https://github.com/LumosBio/MolData",
-      "links": [],
+      "links": [
+        {
+          "label": "LumosBio/MolData",
+          "url": "https://github.com/LumosBio/MolData"
+        }
+      ],
       "access": "Included in the repository",
-      "license": "",
-      "versions": "",
-      "paper_count": null
+      "license": "MIT",
+      "versions": "2022",
+      "paper_count": 2
     },
     {
       "id": "posecheck",
@@ -728,11 +769,16 @@
       "category": "Protein–ligand and drug discovery",
       "stars": null,
       "repo": "https://github.com/cch1999/posecheck",
-      "links": [],
+      "links": [
+        {
+          "label": "cch1999/posecheck",
+          "url": "https://github.com/cch1999/posecheck"
+        }
+      ],
       "access": "See README",
-      "license": "",
-      "versions": "",
-      "paper_count": null
+      "license": "MIT",
+      "versions": "2023",
+      "paper_count": 5
     },
     {
       "id": "pinder",
@@ -1793,9 +1839,9 @@
         }
       ],
       "access": "deepchem.molnet.load_*",
-      "license": "",
+      "license": "MIT",
       "versions": "latest: 2018 (maintained in DeepChem)",
-      "paper_count": null,
+      "paper_count": 6,
       "loaders": [
         {
           "label": "DeepChem (all MoleculeNet sets)",
@@ -1873,9 +1919,9 @@
         }
       ],
       "access": "",
-      "license": "",
+      "license": "Academic",
       "versions": "latest: 2020",
-      "paper_count": null
+      "paper_count": 4
     },
     {
       "id": "pdbbind-casf-2016",
@@ -2428,63 +2474,6 @@
       ]
     },
     {
-      "id": "moses-2",
-      "name": "MOSES",
-      "description": "Benchmark platform and dataset for molecule generation.",
-      "field": "chemistry",
-      "category": "Molecular design datasets",
-      "stars": null,
-      "repo": "https://github.com/molecularsets/moses",
-      "links": [
-        {
-          "label": "molecularsets/moses",
-          "url": "https://github.com/molecularsets/moses"
-        }
-      ],
-      "access": "",
-      "license": "MIT",
-      "versions": "Single release",
-      "paper_count": 47
-    },
-    {
-      "id": "geom-2",
-      "name": "GEOM",
-      "description": "Conformer ensembles for drug-like (Drugs) and small (QM9) molecules.",
-      "field": "chemistry",
-      "category": "Molecular design datasets",
-      "stars": null,
-      "repo": "",
-      "links": [
-        {
-          "label": "Dataverse",
-          "url": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/JNGTDF"
-        }
-      ],
-      "access": "",
-      "license": "CC0",
-      "versions": "drugs (107 uses), qm9 (9)",
-      "paper_count": 34
-    },
-    {
-      "id": "guacamol-2",
-      "name": "GuacaMol",
-      "description": "Benchmark suite for de novo molecular design based on ChEMBL.",
-      "field": "chemistry",
-      "category": "Molecular design datasets",
-      "stars": null,
-      "repo": "https://github.com/BenevolentAI/guacamol",
-      "links": [
-        {
-          "label": "BenevolentAI/guacamol",
-          "url": "https://github.com/BenevolentAI/guacamol"
-        }
-      ],
-      "access": "",
-      "license": "MIT (code)",
-      "versions": "v1 (ChEMBL 24)",
-      "paper_count": 30
-    },
-    {
       "id": "pdbbind",
       "name": "PDBbind",
       "description": "Experimental binding affinities for protein–ligand complexes in the PDB.",
@@ -2560,25 +2549,6 @@
       "paper_count": 14
     },
     {
-      "id": "posebusters-2",
-      "name": "PoseBusters",
-      "description": "Benchmark set for physical validity of docked and generated poses.",
-      "field": "chemistry",
-      "category": "Molecular design datasets",
-      "stars": null,
-      "repo": "https://github.com/maabuu/posebusters",
-      "links": [
-        {
-          "label": "maabuu/posebusters",
-          "url": "https://github.com/maabuu/posebusters"
-        }
-      ],
-      "access": "",
-      "license": "BSD-3-Clause",
-      "versions": "Benchmark set (428)",
-      "paper_count": 12
-    },
-    {
       "id": "binding-moad",
       "name": "Binding MOAD",
       "description": "High-quality protein–ligand complexes with binding data.",
@@ -2648,25 +2618,6 @@
       "access": "",
       "license": "Academic",
       "versions": "GDB-20 (2026, trillion scale)",
-      "paper_count": 7
-    },
-    {
-      "id": "pmo-mol-opt-2",
-      "name": "PMO / mol_opt",
-      "description": "Practical molecular optimization benchmark with oracle-budgeted tasks.",
-      "field": "chemistry",
-      "category": "Molecular design datasets",
-      "stars": null,
-      "repo": "https://github.com/wenhao-gao/mol_opt",
-      "links": [
-        {
-          "label": "wenhao-gao/mol_opt",
-          "url": "https://github.com/wenhao-gao/mol_opt"
-        }
-      ],
-      "access": "",
-      "license": "MIT",
-      "versions": "NeurIPS 2022",
       "paper_count": 7
     },
     {
@@ -2764,37 +2715,6 @@
       "paper_count": 6
     },
     {
-      "id": "moleculenet-2",
-      "name": "MoleculeNet",
-      "description": "Benchmark collection for molecular property prediction.",
-      "field": "chemistry",
-      "category": "Molecular design datasets",
-      "stars": null,
-      "repo": "",
-      "links": [
-        {
-          "label": "moleculenet.org",
-          "url": "https://moleculenet.org/"
-        }
-      ],
-      "access": "",
-      "license": "MIT",
-      "versions": "2018",
-      "paper_count": 6,
-      "loaders": [
-        {
-          "label": "DeepChem (all MoleculeNet sets)",
-          "docs": "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html",
-          "code": "import deepchem as dc\n\n# one loader per dataset: load_qm9, load_esol (load_delaney), load_freesolv,\n# load_lipo, load_bace_classification, load_bbbp, load_hiv, load_tox21,\n# load_toxcast, load_sider, load_clintox, load_muv, load_pcba, load_pdbbind\ntasks, (train, valid, test), transformers = dc.molnet.load_bbbp(featurizer=\"ECFP\", splitter=\"scaffold\")"
-        },
-        {
-          "label": "PyTorch Geometric",
-          "docs": "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.MoleculeNet.html",
-          "code": "from torch_geometric.datasets import MoleculeNet\n\ndataset = MoleculeNet(root=\"data/MoleculeNet\", name=\"BBBP\")\nprint(dataset)"
-        }
-      ]
-    },
-    {
       "id": "pcba",
       "name": "PCBA",
       "description": "PubChem BioAssay subset of 128 assays for multitask activity prediction.",
@@ -2880,44 +2800,6 @@
       "access": "",
       "license": "CC BY-SA 4.0",
       "versions": "v2",
-      "paper_count": 5
-    },
-    {
-      "id": "posecheck-2",
-      "name": "PoseCheck",
-      "description": "Benchmark for evaluating poses from structure-based generative models.",
-      "field": "chemistry",
-      "category": "Molecular design datasets",
-      "stars": null,
-      "repo": "https://github.com/cch1999/posecheck",
-      "links": [
-        {
-          "label": "cch1999/posecheck",
-          "url": "https://github.com/cch1999/posecheck"
-        }
-      ],
-      "access": "",
-      "license": "MIT",
-      "versions": "2023",
-      "paper_count": 5
-    },
-    {
-      "id": "mol-instructions-2",
-      "name": "Mol-Instructions",
-      "description": "Biomolecular instruction dataset for language models.",
-      "field": "chemistry",
-      "category": "Molecular design datasets",
-      "stars": null,
-      "repo": "https://github.com/zjunlp/Mol-Instructions",
-      "links": [
-        {
-          "label": "zjunlp/Mol-Instructions",
-          "url": "https://github.com/zjunlp/Mol-Instructions"
-        }
-      ],
-      "access": "",
-      "license": "CC BY 4.0",
-      "versions": "v1 / v2",
       "paper_count": 5
     },
     {
@@ -3022,48 +2904,6 @@
       "paper_count": 4
     },
     {
-      "id": "lit-pcba-2",
-      "name": "LIT-PCBA",
-      "description": "Unbiased virtual screening benchmark built from PubChem assays.",
-      "field": "chemistry",
-      "category": "Molecular design datasets",
-      "stars": null,
-      "repo": "",
-      "links": [
-        {
-          "label": "drugdesign.unistra.fr",
-          "url": "https://drugdesign.unistra.fr/LIT-PCBA/"
-        },
-        {
-          "label": "full_data.tgz",
-          "url": "https://drugdesign.unistra.fr/LIT-PCBA/Files/full_data.tgz"
-        }
-      ],
-      "access": "",
-      "license": "Academic",
-      "versions": "2020",
-      "paper_count": 4
-    },
-    {
-      "id": "marcel-2",
-      "name": "MARCEL",
-      "description": "Benchmark for learning on molecular conformer ensembles.",
-      "field": "chemistry",
-      "category": "Molecular design datasets",
-      "stars": null,
-      "repo": "https://github.com/SXKDZ/MARCEL",
-      "links": [
-        {
-          "label": "SXKDZ/MARCEL",
-          "url": "https://github.com/SXKDZ/MARCEL"
-        }
-      ],
-      "access": "",
-      "license": "MIT",
-      "versions": "2023",
-      "paper_count": 3
-    },
-    {
       "id": "qmugs",
       "name": "QMugs",
       "description": "Quantum-mechanical properties of drug-like molecules.",
@@ -3132,25 +2972,6 @@
       ]
     },
     {
-      "id": "dockstring-2",
-      "name": "DOCKSTRING",
-      "description": "Docking scores for molecules against protein targets for benchmarking.",
-      "field": "chemistry",
-      "category": "Molecular design datasets",
-      "stars": null,
-      "repo": "https://github.com/dockstring/dockstring",
-      "links": [
-        {
-          "label": "dockstring/dockstring",
-          "url": "https://github.com/dockstring/dockstring"
-        }
-      ],
-      "access": "",
-      "license": "MIT (code)",
-      "versions": "2022",
-      "paper_count": 2
-    },
-    {
       "id": "kiba",
       "name": "KIBA",
       "description": "Kinase inhibitor bioactivity scores for drug–target interaction prediction.",
@@ -3175,25 +2996,6 @@
           "code": "from tdc.multi_pred import DTI   # pip install PyTDC\n\ndata = DTI(name=\"KIBA\")\nsplit = data.get_split()"
         }
       ]
-    },
-    {
-      "id": "moldata-2",
-      "name": "MolData",
-      "description": "Bioassay benchmark for molecular machine learning.",
-      "field": "chemistry",
-      "category": "Molecular design datasets",
-      "stars": null,
-      "repo": "https://github.com/LumosBio/MolData",
-      "links": [
-        {
-          "label": "LumosBio/MolData",
-          "url": "https://github.com/LumosBio/MolData"
-        }
-      ],
-      "access": "",
-      "license": "MIT",
-      "versions": "2022",
-      "paper_count": 2
     },
     {
       "id": "molecule3d-drugs-75k",
@@ -3311,25 +3113,6 @@
       "access": "",
       "license": "CC BY-SA 3.0",
       "versions": "Continuous",
-      "paper_count": 2
-    },
-    {
-      "id": "tartarus-2",
-      "name": "Tartarus",
-      "description": "Inverse molecular design benchmark suite.",
-      "field": "chemistry",
-      "category": "Molecular design datasets",
-      "stars": null,
-      "repo": "https://github.com/aspuru-guzik-group/Tartarus",
-      "links": [
-        {
-          "label": "aspuru-guzik-group/Tartarus",
-          "url": "https://github.com/aspuru-guzik-group/Tartarus"
-        }
-      ],
-      "access": "",
-      "license": "MIT",
-      "versions": "2022/2023",
       "paper_count": 2
     },
     {
@@ -3474,25 +3257,6 @@
       "access": "",
       "license": "Academic",
       "versions": "2021 rebuild",
-      "paper_count": 1
-    },
-    {
-      "id": "papyrus-2",
-      "name": "Papyrus",
-      "description": "Curated large-scale bioactivity dataset for drug discovery.",
-      "field": "chemistry",
-      "category": "Molecular design datasets",
-      "stars": null,
-      "repo": "",
-      "links": [
-        {
-          "label": "Zenodo",
-          "url": "https://zenodo.org/records/7377161"
-        }
-      ],
-      "access": "",
-      "license": "CC BY 4.0 (data)",
-      "versions": "05.5 / 05.6",
       "paper_count": 1
     },
     {
