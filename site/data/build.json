@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-17T13:14:51Z",
+  "generated_at": "2026-11-17T13:58:14Z",
   "engine": "aliquome-engine 0.1.0",
-  "commit": "1bf7ac5e70179ffd607a2a17a1723417fe3d7e8a",
+  "commit": "1409acacc7a4b1cf522d84180fd3fd04104b7f26",
   "mode": "online",
   "inputs": {
     "data/database_versions.csv": "69a91fc7558f0bdfe9b62c9558dc321f4b450c3a92f1636f88ed05a628fe9bee",
@@ -10,7 +10,7 @@
     "data/latest.toml": "f816c3387aed208ac851f6891a2853dc2eb99ade7321552a6508befb8e705fb8",
     "data/leaderboards.toml": "2fc493a21c026d478fa329984f5b920de7794c45f673bcafd67215b4a38cacad",
     "data/loaders.toml": "e2af1a3595495f897d3254506a6c7df718f31907f6c7284fc16cb5140ee9897f",
-    "data/rankings.toml": "60705c70bbb452147626de6c49d01295ff4a5a217d78583a18ad99b3f7227f30",
+    "data/rankings.toml": "97e7e5a4e879af84892e9705ac9be29bcc2563a29e50f4f6f32ea618b81c7896",
     "data/sources.toml": "a60d05a7421762d97245c689dec478514c9456a65ac5379a089980abedbda2b5"
   },
   "counts": {
