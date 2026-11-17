@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T13:53:39Z",
+  "generated_at": "2026-11-17T14:07:32Z",
   "since": "2026-09-18",
   "until": "2026-11-17",
   "days": 60,
@@ -3147,7 +3147,7 @@
       "year": "2026",
       "date": "2026-11-01",
       "doi": "10.1016/j.cell.2026.09.014",
-      "cited": 0,
+      "cited": 1,
       "license": "cc by",
       "pdf": "",
       "keywords": [
