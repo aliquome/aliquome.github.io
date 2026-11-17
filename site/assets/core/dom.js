@@ -10,12 +10,12 @@ export const safe = (u) => (/^(https?|ftp):\/\//i.test(u || "") ? u : "");
 
 export const BLANK = "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==";
 
-export function toast(text) {
+export function toast(text, ms = 1600) {
   const t = document.getElementById("toast");
   t.textContent = text;
   t.classList.add("show");
   clearTimeout(toast.timer);
-  toast.timer = setTimeout(() => t.classList.remove("show"), 1600);
+  toast.timer = setTimeout(() => t.classList.remove("show"), ms);
 }
 
 export async function copy(text) {

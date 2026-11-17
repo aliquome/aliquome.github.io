@@ -1,4 +1,5 @@
-// Sign-in with a one-time code sent by email, and reader submissions.
+// Sign-in by email (a one-time link, or a code when the email template shows
+// one), and reader submissions.
 // Talks to a Supabase project over its public REST endpoints; the project URL
 // and the public (anon) key come from <meta name="atlas-supabase-url"> and
 // <meta name="atlas-supabase-key"> in index.html. No secret lives in the site:
@@ -40,11 +41,39 @@ async function request(path, { method = "GET", body, token, headers = {}, raw } 
 }
 
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+// The link in the email brings the reader back to this page without its route
+// (Supabase adds the session after "#"), so the route is kept here meanwhile.
+const RETURN = "atlas-return-v1";
+const home = () => location.origin + location.pathname;
+
 export async function sendCode(email) {
   email = String(email || "").trim().toLowerCase();
   if (!EMAIL.test(email)) throw new ApiError("Enter a valid email address.");
-  await request("/auth/v1/otp", { method: "POST", body: { email, create_user: true } });
+  try { localStorage.setItem(RETURN, location.hash || "#home"); } catch { /* private window */ }
+  await request(`/auth/v1/otp?redirect_to=${encodeURIComponent(home())}`, { method: "POST", body: { email, create_user: true } });
   return email;
+}
+
+const claims = (jwt) => {
+  try { return JSON.parse(atob(jwt.split(".")[1].replace(/-/g, "+").replace(/_/g, "/"))); } catch { return null; }
+};
+
+// Run before the router: finishes a sign-in from the emailed link and puts the
+// reader back on the page they asked from. Returns a message to show, or "".
+export function completeLinkSignIn() {
+  const h = location.hash.replace(/^#/, "");
+  if (!/(^|&)(access_token|error_code|error)=/.test(h)) return "";
+  const p = new URLSearchParams(h);
+  let back = "#home";
+  try { back = localStorage.getItem(RETURN) || "#home"; localStorage.removeItem(RETURN); } catch { /* private window */ }
+  history.replaceState(null, "", home() + back);
+  if (p.get("error") || p.get("error_code")) {
+    return p.get("error_code") === "otp_expired" ? "The sign-in link has expired or was already used. Ask for a new one." : `Sign-in failed: ${p.get("error_description") || p.get("error")}.`;
+  }
+  const c = claims(p.get("access_token") || "");
+  if (!c?.sub) return "Sign-in failed: the link was not valid.";
+  save({ access_token: p.get("access_token"), refresh_token: p.get("refresh_token"), expires_at: Number(p.get("expires_at")) || c.exp, user: { id: c.sub, email: c.email } });
+  return `Signed in as ${c.email}.`;
 }
 
 export async function verifyCode(email, code) {

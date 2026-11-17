@@ -7,7 +7,8 @@
 //   features/ the suggestion panel
 //   pages/    one module per route
 //   visuals/  3D figures and the cell animation
-import { view, esc } from "./core/dom.js";
+import { view, esc, toast } from "./core/dom.js";
+import { completeLinkSignIn } from "./services/submit.js";
 import { S, need, needTables, load } from "./core/store.js";
 import { prettyDate } from "./domain/format.js";
 import { buildBenchIndex } from "./domain/bench-index.js";
@@ -18,6 +19,7 @@ import { initTheme } from "./app/theme.js";
 
 async function start() {
   initTheme();
+  const signedIn = completeLinkSignIn();
   try {
     const [sources, datasets] = await Promise.all([load("sources"), load("datasets")]);
     S.fields = sources.fields;
@@ -34,6 +36,7 @@ async function start() {
   window.addEventListener("hashchange", route);
   updateSavedCount();
   route();
+  if (signedIn) toast(signedIn, 5000);
   // Load papers in the background so search covers them too.
   setTimeout(() => need("latest").then(() => palette.refresh()), 1200);
   setTimeout(() => Promise.all([needTables(), need("boards")]).then(([t, b]) => { buildBenchIndex(t, b?.boards || []); palette.refresh(); }).catch(() => {}), 2500);

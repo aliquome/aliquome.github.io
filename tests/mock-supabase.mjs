@@ -1,6 +1,6 @@
 // A small stand-in for the Supabase endpoints the site and the sync script use,
 // with the same rules as supabase/migrations/*.sql:
-//   POST /auth/v1/otp, /auth/v1/verify, /auth/v1/token?grant_type=refresh_token, /auth/v1/logout
+//   POST /auth/v1/otp, /auth/v1/verify, GET /auth/v1/verify (the emailed link), /auth/v1/token?grant_type=refresh_token, /auth/v1/logout
 //   POST|GET|PATCH /rest/v1/submissions   (row-level security as in the SQL)
 //   POST /storage/v1/object/papers/<uid>/<uuid>.pdf, GET /storage/v1/object/public/papers/...
 // Sent codes land in an outbox instead of an inbox: GET /__outbox?email=...
@@ -23,7 +23,9 @@ export function startMockSupabase({ port = 0, anonKey = "anon-test-key", service
   };
   const body = (req) => new Promise((ok) => { const c = []; req.on("data", (d) => c.push(d)); req.on("end", () => ok(Buffer.concat(c))); });
   const issue = (user) => {
-    const access = crypto.randomBytes(24).toString("hex"), ref = crypto.randomBytes(24).toString("hex");
+    // shaped like a JWT, as the site reads the user from the token of an emailed link
+    const b64 = (o) => Buffer.from(JSON.stringify(o)).toString("base64url");
+    const access = `${b64({ alg: "HS256", typ: "JWT" })}.${b64({ sub: user.id, email: user.email, exp: Math.floor(Date.now() / 1000) + 3600, role: "authenticated" })}.${crypto.randomBytes(24).toString("base64url")}`, ref = crypto.randomBytes(24).toString("hex");
     sessions.set(access, { user, expires: Date.now() + 3600e3 });
     refresh.set(ref, user);
     return { access_token: access, token_type: "bearer", expires_in: 3600, expires_at: Math.floor(Date.now() / 1000) + 3600, refresh_token: ref, user: { id: user.id, email: user.email, aud: "authenticated" } };
@@ -60,6 +62,18 @@ export function startMockSupabase({ port = 0, anonKey = "anon-test-key", service
       res.writeHead(200, { "Content-Type": "application/pdf", "Access-Control-Allow-Origin": "*" });
       return res.end(f);
     }
+    // the link in the email: opened in the browser, so it carries no API key
+    if (url.pathname === "/auth/v1/verify" && req.method === "GET") {
+      const email = url.searchParams.get("email"), c = codes.get(email), to = url.searchParams.get("redirect_to") || "http://localhost/";
+      if (url.searchParams.get("type") !== "magiclink" || !c || c.expires < Date.now() || c.code !== url.searchParams.get("token")) {
+        res.writeHead(303, { Location: `${to}#error=access_denied&error_code=otp_expired&error_description=Email+link+is+invalid+or+has+expired` });
+        return res.end();
+      }
+      codes.delete(email);
+      const s = issue(users.get(email));
+      res.writeHead(303, { Location: `${to}#access_token=${s.access_token}&expires_at=${s.expires_at}&expires_in=3600&refresh_token=${s.refresh_token}&token_type=bearer&type=magiclink` });
+      return res.end();
+    }
     if (who.bad) return send(res, 401, { message: "Invalid API key" });
 
     // ---- auth ----
@@ -71,7 +85,8 @@ export function startMockSupabase({ port = 0, anonKey = "anon-test-key", service
       if (!users.has(email)) { if (!create_user) return send(res, 422, { msg: "Signups not allowed for otp" }); users.set(email, { id: crypto.randomUUID(), email }); }
       const code = String(crypto.randomInt(0, 1e6)).padStart(6, "0");
       codes.set(email, { code, expires: Date.now() + 3600e3, tries: 0 });
-      outbox.push({ email, code, at: Date.now() });
+      const link = `http://${req.headers.host}/auth/v1/verify?type=magiclink&token=${code}&email=${encodeURIComponent(email)}&redirect_to=${encodeURIComponent(url.searchParams.get("redirect_to") || "")}`;
+      outbox.push({ email, code, link, at: Date.now() });
       return send(res, 200, {});
     }
     if (url.pathname === "/auth/v1/verify" && req.method === "POST") {

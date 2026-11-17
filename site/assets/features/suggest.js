@@ -138,16 +138,16 @@ export function mountSuggest(el, { t, view, base, repo, esc }) {
     }
     if (step === "email") {
       a.innerHTML = `<div class="suggest-grid"><div class="control"><label for="sg-email">Your email</label><input class="input" id="sg-email" type="email" autocomplete="email" value="${esc(email)}" placeholder="name@university.edu"></div></div>
-        <div class="export-actions"><button class="btn" type="button" id="sg-codebtn">Email me a sign-in code</button></div>`;
+        <div class="export-actions"><button class="btn" type="button" id="sg-codebtn">Email me a sign-in link</button></div>`;
       $("sg-codebtn").addEventListener("click", async () => {
         if (busy) return;
-        busy = true; say("Sending the code…");
-        try { email = await api.sendCode($("sg-email").value); step = "code"; auth(); say(`We sent a code to ${email}. It may take a minute; check your spam folder too.`); $("sg-otp")?.focus(); }
+        busy = true; say("Sending the email…");
+        try { email = await api.sendCode($("sg-email").value); step = "code"; auth(); say(`We sent an email to ${email}. Open its link in this browser and you will come back here signed in. It may take a minute; check your spam folder too.`); $("sg-otp")?.focus(); }
         catch (e) { say(e.message, true); }
         busy = false;
       });
     } else {
-      a.innerHTML = `<div class="suggest-grid"><div class="control"><label for="sg-otp">Code from the email sent to ${esc(email)}</label><input class="input" id="sg-otp" inputmode="numeric" autocomplete="one-time-code" maxlength="10" placeholder="123456"></div></div>
+      a.innerHTML = `<div class="suggest-grid"><div class="control"><label for="sg-otp">If the email to ${esc(email)} shows a code, enter it here</label><input class="input" id="sg-otp" inputmode="numeric" autocomplete="one-time-code" maxlength="10" placeholder="12345678"></div></div>
         <div class="export-actions"><button class="btn solid" type="button" id="sg-verify">Sign in</button><button class="btn" type="button" id="sg-back">Use another email</button></div>`;
       $("sg-back").addEventListener("click", () => { step = "email"; auth(); say(""); });
       const verify = async () => {

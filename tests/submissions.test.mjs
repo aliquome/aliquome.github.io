@@ -49,8 +49,9 @@ const supa = await startMockSupabase();
 const gh = await startMockGitHub();
 const html = path.join(WORK, "site/index.html");
 fs.writeFileSync(html, fs.readFileSync(html, "utf8")
-  .replace('<meta name="atlas-supabase-url" content="">', `<meta name="atlas-supabase-url" content="${supa.url}">`)
-  .replace('<meta name="atlas-supabase-key" content="">', `<meta name="atlas-supabase-key" content="${supa.anonKey}">`)
+  // point the site at the stand-in server, whatever project the real site uses
+  .replace(/<meta name="atlas-supabase-url" content="[^"]*">/, `<meta name="atlas-supabase-url" content="${supa.url}">`)
+  .replace(/<meta name="atlas-supabase-key" content="[^"]*">/, `<meta name="atlas-supabase-key" content="${supa.anonKey}">`)
   .replace('<meta name="atlas-repo" content="">', `<meta name="atlas-repo" content="https://github.com/${gh.repo}">`));
 
 // static server for the site copy
@@ -106,7 +107,7 @@ try {
   ok(await waitMsg(/valid email/), `an invalid email is refused before any request (${await msg()})`);
   await setValue("#sg-email", "Reader.One@Example.org");
   await page.$eval("#sg-codebtn", (b) => b.click());
-  ok(await waitMsg(/We sent a code to reader\.one@example\.org/), "a code is sent (email lower-cased)");
+  ok(await waitMsg(/We sent an email to reader\.one@example\.org/), "the email is sent (address lower-cased)");
   ok(supa.outbox.length === 1 && /^\d{6}$/.test(supa.outbox[0].code), "the email holds a six-digit code");
   await setValue("#sg-otp", "000000" === supa.lastCode("reader.one@example.org") ? "111111" : "000000");
   await page.$eval("#sg-verify", (b) => b.click());
@@ -116,6 +117,30 @@ try {
   ok(await waitMsg(/Signed in/), "the right code signs the reader in");
   ok((await page.$eval("#sg-auth", (e) => e.textContent)).includes("reader.one@example.org"), "the panel shows who is signed in");
   const readerOne = [...supa.users.values()].find((u) => u.email === "reader.one@example.org");
+
+  // ---------------------------------------------------------------
+  step("1b. Sign in with the link in the email");
+  {
+    const ctx = await browser.createBrowserContext();
+    const p2 = await ctx.newPage();
+    p2.on("pageerror", (e) => pageErrors.push(e.message));
+    await p2.goto(`${SITE}/?t=${Date.now()}#benchmarks/${TABLE}`, { waitUntil: "domcontentloaded" });
+    await p2.waitForSelector("#sg-email", { timeout: 60000 });
+    await p2.$eval("#sg-email", (e) => { e.value = "reader.link@example.org"; e.dispatchEvent(new Event("input", { bubbles: true })); });
+    await p2.$eval("#sg-codebtn", (b) => b.click());
+    await p2.waitForFunction(() => /We sent an email/.test(document.querySelector("#sg-msg")?.textContent || ""), { timeout: 15000 }).catch(() => {});
+    const mail = supa.outbox.at(-1);
+    ok(mail?.email === "reader.link@example.org" && mail.link.includes(`redirect_to=${encodeURIComponent(SITE + "/")}`), "the email holds a sign-in link back to the site");
+    await p2.goto(mail.link, { waitUntil: "domcontentloaded" });
+    const inLink = await p2.waitForFunction(() => /reader\.link@example\.org/.test(document.querySelector("#sg-auth")?.textContent || ""), { timeout: 60000 }).then(() => true, () => false);
+    ok(inLink, "opening the link signs the reader in");
+    ok(p2.url().endsWith(`#benchmarks/${TABLE}`), `the reader is back on the same table (${p2.url().replace(SITE, "")})`);
+    ok(!p2.url().includes("access_token"), "the session is not left in the address bar");
+    await p2.goto(mail.link, { waitUntil: "domcontentloaded" });
+    ok(await p2.waitForFunction(() => /expired or was already used/.test(document.getElementById("toast")?.textContent || ""), { timeout: 60000 }).then(() => true, () => false), "a used link is refused with a clear message");
+    ok(!p2.url().includes("error"), "the error is not left in the address bar");
+    await ctx.close();
+  }
 
   // ---------------------------------------------------------------
   step("2. Suggest a ranking, add a result with a PDF, correct a value");
