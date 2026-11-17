@@ -7,3 +7,7 @@ engine/target/
 tests/node_modules/
 tests/package-lock.json
 .ranking-result
+
+# research and design notes: kept locally, not part of the site
+docs/*
+!docs/SUBMISSIONS.md
