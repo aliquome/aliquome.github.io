@@ -21,3 +21,11 @@ Thumbs.db
 *.log
 .env
 .env.*
+
+# written by scripts/static-pages.mjs during the build
+/site/db/
+/site/datasets/
+/site/benchmarks/
+/site/models/
+/site/sitemap.xml
+/site/robots.txt

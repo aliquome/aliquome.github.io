@@ -27,7 +27,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # a queued run starts from the latest commit, not the one that queued it
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
 
       - name: Install Rust
         uses: dtolnay/rust-toolchain@stable
@@ -53,6 +56,9 @@ jobs:
       - name: Write the full catalogue into README.md and PAPERS.md
         run: node scripts/readme-catalog.mjs
 
+      - name: Write one page per database, dataset, benchmark table and model, and the sitemap
+        run: node scripts/static-pages.mjs
+
       - name: Commit the new data
         run: |
           git config user.name "akianfar"
@@ -64,7 +70,9 @@ jobs:
             git commit -m "data: daily update $(date -u +%Y-%m-%d)"
             # someone may have pushed while the build ran: replay on top and retry
             for attempt in 1 2 3 4 5; do
-              if git pull --rebase --quiet && git push; then exit 0; fi
+              # the data files are generated: on a conflict this newer build wins
+              if git pull --rebase --quiet -X theirs && git push; then exit 0; fi
+              git rebase --abort 2>/dev/null || true
               sleep $((attempt * 5))
             done
             echo "Could not push the new data." && exit 1
