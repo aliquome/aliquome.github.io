@@ -2,9 +2,11 @@
 import { setStop } from "../core/lifecycle.js";
 import { view, esc, num } from "../core/dom.js";
 import { S, need } from "../core/store.js";
-import { fieldOf, baseVar } from "../core/catalog.js";
+import { fieldOf } from "../core/catalog.js";
 import { armArt } from "../ui/art.js";
-import { gel } from "../ui/gel.js";
+import { browserPanel } from "../ui/tracks.js";
+import { fieldHeatmap } from "../ui/heatmap.js";
+import { coverage, fieldMatrix } from "../domain/coverage.js";
 import { sourceCard, paperCard, boardTable } from "../ui/cards.js";
 import { palette } from "../core/search.js";
 import { mountLive } from "../visuals/glyph.js";
@@ -16,8 +18,8 @@ export async function pageHome() {
   const f = fieldOf(featured.field);
   const checked = Object.values(S.status?.sources || {});
   const up = checked.filter((s) => s.state !== "down").length;
-  const versions = S.sources.reduce((a, s) => a + s.versions.length, 0);
-  const linked = S.sources.reduce((a, s) => a + s.versions.filter((v) => /^(https?|ftp|s3|gs):/.test(v.url)).length, 0);
+  const figures = coverage(S.sources, S.datasets);
+  if (checked.length) figures.push({ id: "up", label: "Sources up today", value: up, share: up / checked.length, note: "answered the daily check", href: "#status" });
 
   view.innerHTML = `<div class="page">
   <section class="section hero">
@@ -43,13 +45,8 @@ export async function pageHome() {
   </section>
 
   <section class="section ledger" aria-label="The atlas today">
-    <dl class="figures">
-      <div><dt>Databases</dt><dd class="num">${num(S.sources.length)}</dd></div>
-      <div><dt>Releases tracked</dt><dd class="num">${num(versions)}</dd></div>
-      <div><dt>With a direct link</dt><dd class="num">${num(linked)}</dd></div>
-      <div><dt>Datasets</dt><dd class="num">${num(S.datasets.length)}</dd></div>
-      ${checked.length ? "" : "<!-- status cell appears after the first daily check -->"}<div ${checked.length ? "" : "hidden"}><dt>Sources up today</dt><dd class="num">${up} of ${checked.length}</dd></div>
-    </dl>
+    <div class="section-head"><h2>The atlas today</h2><span class="hint">Each track is covered up to the share you can fetch straight from code</span></div>
+    ${browserPanel(figures)}
   </section>
 
   <section class="section actions">
@@ -60,9 +57,8 @@ export async function pageHome() {
   </section>
 
   <section class="section">
-    <div class="section-head"><h2>Databases by field</h2><a href="#sources">All databases</a></div>
-    ${gel({ id: "home-gel", counts: Object.fromEntries(S.fields.map((x) => [x.id, S.sources.filter((s) => s.field === x.id).length])), unit: "databases", link: (id) => `#sources/${id}` })}
-    <ul class="field-index">${S.fields.map((x) => `<li style="--dot:${baseVar(x)}"><h3>${esc(x.label)}</h3><p class="field-links"><a href="#sources/${esc(x.id)}">${S.sources.filter((s) => s.field === x.id).length} databases</a><a href="#datasets/${esc(x.id)}">${S.datasets.filter((d) => d.field === x.id).length} datasets</a><a href="#latest/${esc(x.id)}" data-latest-count="${esc(x.id)}">New papers</a></p></li>`).join("")}</ul>
+    <div class="section-head"><h2>Browse by field</h2><a href="#sources">All databases</a></div>
+    <div id="home-plate">${fieldHeatmap(fieldMatrix(S.fields, S.sources, S.datasets, null))}</div>
   </section>
 
   <section class="section" id="home-latest"></section>
@@ -92,7 +88,8 @@ export async function pageHome() {
   if (latest?.papers?.length && lslot) {
     const counts = {};
     latest.papers.forEach((p) => p.fields?.forEach((fid) => (counts[fid] = (counts[fid] || 0) + 1)));
-    document.querySelectorAll("[data-latest-count]").forEach((el) => (el.textContent = `${counts[el.dataset.latestCount] || 0} new papers`));
+    const plate = document.getElementById("home-plate");
+    if (plate) plate.innerHTML = fieldHeatmap(fieldMatrix(S.fields, S.sources, S.datasets, counts));
     const fresh = latest.papers.filter((p) => p.abstract).slice(0, 4);
     lslot.innerHTML = `<div class="section-head"><h2>New in the journals</h2><a href="#latest">${num(latest.papers.length)} papers in the last ${latest.days} days</a></div>
       <div class="paper-list">${fresh.map((p) => paperCard(p, "")).join("")}</div>`;
