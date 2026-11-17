@@ -68,6 +68,16 @@ Rankings of the results tables follow `data/rankings.toml`, and only the reposit
 
 Create the labels `ranking` and `approved` once in the repository. On a custom domain, set the repository in `<meta name="atlas-repo">` in `site/index.html`.
 
+## Reader suggestions with email sign-in
+
+Readers can suggest a ranking, add a result from their own paper (with a link or an uploaded PDF) or correct a published value, after signing in with a one-time code sent to their email. GitHub Pages serves only static files, so sign-in, suggestions and PDFs live in a Supabase project; review stays on GitHub:
+
+1. `site/assets/submit.js` and `site/assets/suggest.js`: sign-in and the "Suggest a change" panel, using the public key of the project. Row-level security in `supabase/migrations/` lets a reader create only their own pending suggestions and read only their own.
+2. `.github/workflows/submissions.yml` (every 15 minutes): `scripts/sync-submissions.mjs` checks each suggestion with `scripts/ranking-lib.mjs`, opens a GitHub issue for valid ones (without the email address) and rejects the rest with a reason.
+3. The owner adds the `approved` label; `rankings.yml` merges the change into `data/rankings.toml` and rebuilds the site. The next sync shows the reader "Applied" or "Not applied".
+
+Setup takes about 15 minutes: see [docs/SUBMISSIONS.md](docs/SUBMISSIONS.md). Without Supabase, the panel opens a GitHub issue instead. `tests/submissions.test.mjs` runs the whole path against local stand-ins for Supabase and GitHub, and runs on every push (`.github/workflows/tests.yml`).
+
 ## Credits
 
 326 dataset entries (ids starting with `pwc-` in `data/datasets.csv`) are selected from the final Papers with Code archive, [pwc-archive/datasets](https://huggingface.co/datasets/pwc-archive/datasets) on Hugging Face (snapshot of 28 July 2025, licensed CC BY-SA 4.0). Of its 15,008 datasets, those about sequences, structures, molecules, cells, tissue images and biomedical text were kept. Medical imaging, clinical records and general machine-learning sets were left out. Names, descriptions, links and paper counts are taken from the archive; descriptions are shortened.

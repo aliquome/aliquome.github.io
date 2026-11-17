@@ -1,0 +1,27 @@
+name: Tests
+
+# End-to-end test of reader sign-in, suggestions, review and table updates,
+# against local stand-ins for Supabase and GitHub (see tests/).
+on:
+  push:
+    paths: ["scripts/**", "site/**", "tests/**", "data/benchmarks/**", ".github/workflows/tests.yml"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  submissions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install test dependencies
+        run: npm install --prefix tests --no-audit --no-fund
+      - name: Run the end-to-end test
+        env:
+          CHROME_PATH: /usr/bin/google-chrome
+        run: node tests/submissions.test.mjs

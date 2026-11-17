@@ -1,0 +1,45 @@
+name: Sync reader submissions
+
+# Readers sign in on the site with a one-time email code (Supabase) and suggest
+# changes to the results tables. This job turns valid suggestions into GitHub
+# issues, rejects invalid ones with a reason, and records which issues were
+# approved. Approval itself is the `approved` label (see rankings.yml).
+#
+# Needs two repository secrets: SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY.
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Apply approved ranking changes"]
+    types: [completed]
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: submissions
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install the TOML parser
+        run: npm install --no-save --no-package-lock smol-toml@1.3.1
+
+      - name: Sync
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
+        run: node scripts/sync-submissions.mjs

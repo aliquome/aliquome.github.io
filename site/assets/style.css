@@ -431,3 +431,21 @@ details.note p { margin-top: var(--space-xs); max-width: 75ch; }
 .profile-facts a { overflow-wrap: anywhere; }
 h1.paper-title { font-size: var(--text-3xl); max-width: 32ch; }
 .bench-index.profile td:last-child { min-width: 260px; }
+
+/* Reader suggestions: sign-in with an email code, three kinds of change */
+.suggest label { font-size: var(--text-sm); color: var(--color-ink-2); }
+.suggest-body { display: grid; gap: var(--space-sm); grid-template-columns: minmax(0, 1fr); }
+.suggest-grid { display: grid; gap: var(--space-sm); grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); }
+.suggest-grid .control { display: grid; gap: var(--space-2xs); }
+.suggest-grid input[type="file"] { padding-block: var(--space-xs); }
+.suggest-preview { margin: 0; padding: var(--space-sm) var(--space-md); background: var(--color-code); color: var(--color-code-ink); border-radius: var(--radius-card); font: 400 var(--text-sm) / 1.6 var(--font-mono); overflow-x: auto; }
+.suggest-auth { padding-top: var(--space-sm); border-top: var(--rule-hair) solid var(--color-rule); display: grid; gap: var(--space-sm); grid-template-columns: minmax(0, 1fr); }
+.suggest-msg { min-height: 1.5em; color: var(--color-ink-2); }
+.suggest-msg.bad { color: var(--color-error); }
+.suggest h3 { margin: var(--space-md) 0 var(--space-xs); font: 500 var(--text-lg) var(--font-display); }
+.suggest-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: minmax(0, 1fr); border-top: var(--rule-hair) solid var(--color-rule); }
+.suggest-list li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-2xs) var(--space-md); padding-block: var(--space-xs); border-bottom: var(--rule-hair) solid var(--color-rule); font-size: var(--text-sm); }
+.suggest-list li.st-applied .status-text { color: var(--color-success); }
+.suggest-list li.st-rejected .status-text { color: var(--color-error); }
+.linkish { border: 0; background: none; padding: 0; color: var(--color-accent); text-decoration: underline; font: inherit; cursor: pointer; }
+.linkish:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }

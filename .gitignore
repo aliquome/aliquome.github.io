@@ -2,3 +2,8 @@ research_notes/
 reports/
 engine/target/
 .hallmark/
+
+# test dependencies and the generated lock file
+tests/node_modules/
+tests/package-lock.json
+.ranking-result

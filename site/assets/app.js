@@ -4,6 +4,7 @@
 import { trace, requestThumb, mountLive, clearThumbs } from "./glyph.js";
 import { mountCells } from "./cells.js";
 import { saved, bibtex, manifest, downloadText, mountPalette } from "./library.js";
+import { mountSuggest } from "./suggest.js";
 
 const view = document.getElementById("view");
 const S = { fields: [], sources: [], datasets: [], papers: null, boards: null, status: null, build: null };
@@ -1062,7 +1063,12 @@ function approvedView(t) {
 // Rank the rows of a table under a view { metric, higher, exclude }; equal scores share a rank.
 function rankRows(t, v) {
   const added = (t.approved?.add || []).map((a) => ({ ...a, values: Object.fromEntries(Object.entries(a.values || {}).map(([k, x]) => [k, String(x)])), added: true }));
-  const scored = [...t.rows, ...added].map((r) => ({ r, s: numOf(r.values[v.metric]), out: v.exclude.has(r.model) }));
+  const fixes = new Map((t.approved?.fix || []).map((f) => [f.model, f]));
+  const rows = t.rows.map((r) => {
+    const f = fixes.get(r.model);
+    return f ? { ...r, values: { ...r.values, ...Object.fromEntries(Object.entries(f.values || {}).map(([k, x]) => [k, String(x)])) }, fixed: f.source } : r;
+  });
+  const scored = [...rows, ...added].map((r) => ({ r, s: numOf(r.values[v.metric]), out: v.exclude.has(r.model) }));
   scored.sort((a, b) => a.out - b.out || (a.s == null) - (b.s == null) || (v.higher ? b.s - a.s : a.s - b.s) || a.r.model.localeCompare(b.r.model));
   let rank = 0, prev = null, n = 0;
   return scored.map((x) => {
@@ -1082,16 +1088,6 @@ function repoUrl() {
   const first = location.pathname.split("/").filter(Boolean)[0];
   return `https://github.com/${m[1]}/${first || `${m[1]}.github.io`}`;
 }
-function proposalToml(t, v, note) {
-  const q = JSON.stringify;
-  const lines = ["[[table]]", `id = ${q(t.id)}`, `metric = ${q(v.metric)}`, `higher = ${v.higher}`];
-  if (v.exclude.size) lines.push(`exclude = [${[...v.exclude].map(q).join(", ")}]`);
-  if (note.trim()) lines.push(`note = ${q(note.trim())}`);
-  lines.push("", "# To add a published result, remove the # signs and fill in:", "# [[table.add]]", '# model = "Model name"', '# paper = "Paper title"',
-    '# url = "https://doi.org/..."', `# values = { ${q(v.metric)} = 0.0 }`);
-  return lines.join("\n");
-}
-
 // Every result of every table and board, indexed by model, paper and dataset.
 // Each result carries its rank under the approved ranking and its rank on
 // every numeric metric of its table.
@@ -1387,15 +1383,8 @@ function pageTable(t) {
     </div>
     <div class="bench-status" id="tstatus" aria-live="polite"></div>
     <div id="tout"></div>
-    <div class="proposal" id="tprop" hidden>
-      <h2>Propose this ranking</h2>
-      <p>Your proposal goes to the maintainers as a GitHub issue. Nothing changes on the site until they approve it.</p>
-      <label for="tnote">Why this ranking is better</label>
-      <textarea class="input" id="tnote" rows="3" placeholder="For example: the paper reports results on a different split."></textarea>
-      <div class="code"><div class="code-bar"><span>Proposal</span><button class="btn small" type="button" data-copy-pre>Copy</button></div><pre id="ttoml"></pre></div>
-      <div class="export-actions" id="tsend"></div>
-    </div>
-    <p class="note">Results as published in the papers, from the ${esc(t.source_name)} (snapshot ${esc(t.snapshot)}, ${esc(t.license)}). Rows marked “extra data” were trained with additional data.${t.approved?.note ? ` Approved note: ${esc(t.approved.note)}` : ""}</p>
+    <section class="proposal suggest" id="suggest" aria-label="Suggest a change"></section>
+    <p class="note">Results as published in the papers, from the ${esc(t.source_name)} (snapshot ${esc(t.snapshot)}, ${esc(t.license)}). Rows marked “extra data” were trained with additional data; “added” and “corrected” rows come from approved reader suggestions.${t.approved?.note ? ` Approved note: ${esc(t.approved.note)}` : ""}</p>
   </section></div>`;
   document.getElementById("th").value = v.higher ? "1" : "0";
   const repo = repoUrl();
@@ -1413,7 +1402,7 @@ function pageTable(t) {
       <tbody>${ranked.map((x) => `<tr class="${x.out ? "out" : ""}">
         ${edit ? `<td><input type="checkbox" data-out="${esc(x.r.model)}" ${x.out ? "checked" : ""} aria-label="Leave out ${esc(x.r.model)}"></td>` : ""}
         <td class="num">${x.out ? "out" : x.rank ?? "—"}</td>
-        <td><a href="${modelHref(x.r.model)}"><b>${esc(x.r.model)}</b></a>${x.r.extra ? ' <span class="tag">extra data</span>' : ""}${x.r.added ? ' <span class="tag">added</span>' : ""}</td>
+        <td><a href="${modelHref(x.r.model)}"><b>${esc(x.r.model)}</b></a>${x.r.extra ? ' <span class="tag">extra data</span>' : ""}${x.r.added ? ' <span class="tag">added</span>' : ""}${x.r.fixed ? ` <a class="tag" href="${esc(x.r.fixed)}" target="_blank" rel="noopener" title="Source of the corrected values">corrected</a>` : ""}</td>
         <td class="num">${x.s == null ? `<span class="muted">${esc(x.r.values[v.metric] || "—")}</span>` : `<span class="bar"><i style="width:${bar(x.s).toFixed(0)}px"></i>${esc(x.r.values[v.metric])}</span>`}</td>
         ${others.map((m) => `<td class="num">${esc(x.r.values[m] ?? "—")}</td>`).join("")}
         <td>${paperName(x.r.paper) ? `<a href="${paperHref(paperName(x.r.paper))}" title="${esc(x.r.paper)}">${esc(x.r.paper.slice(0, 60))}${x.r.paper.length > 60 ? "…" : ""}</a>` : "—"}${x.r.date ? ` <span class="hint">${esc(x.r.date.slice(0, 4))}</span>` : ""}</td>
@@ -1423,31 +1412,16 @@ function pageTable(t) {
     document.getElementById("tstatus").innerHTML = differs()
       ? `<p><b>Your view differs from the approved ranking</b> (${esc(base.metric)}, ${base.higher ? "higher" : "lower"} is better${base.exclude.size ? `, ${base.exclude.size} left out` : ""}).</p>
          <div class="export-actions"><button class="btn solid" type="button" id="tpropose">Propose this ranking</button><button class="btn" type="button" id="treset">Back to the approved ranking</button></div>`
-      : `<p>${a ? `Ranking approved in ${esc(a.approved || "a reviewed proposal")}.` : "Ranked by the table’s main metric, as published."} Change the metric, the order or the rows to propose a different ranking.</p>`;
-    document.getElementById("tpropose")?.addEventListener("click", openProposal);
+      : `<p>${a?.approved ? `Last change approved in ${esc([].concat(a.approved).at(-1))}.` : "Ranked by the table’s main metric, as published."} Change the metric, the order or the rows to propose a different ranking.</p>`;
+    document.getElementById("tpropose")?.addEventListener("click", () => suggest.open("ranking"));
     document.getElementById("treset")?.addEventListener("click", () => {
       v.metric = base.metric; v.higher = base.higher; v.exclude = new Set(base.exclude);
       document.getElementById("tm").value = v.metric; document.getElementById("th").value = v.higher ? "1" : "0";
-      document.getElementById("tprop").hidden = true;
       draw();
     });
-    if (!document.getElementById("tprop").hidden) fillProposal();
+    suggest?.refresh();
   };
-  const fillProposal = () => {
-    const toml = proposalToml(t, v, document.getElementById("tnote").value);
-    document.getElementById("ttoml").textContent = toml;
-    const title = `Ranking: ${t.task} on ${t.dataset}`.slice(0, 120);
-    const url = repo && `${repo}/issues/new?template=ranking-change.yml&labels=ranking&title=${encodeURIComponent(title)}&table=${encodeURIComponent(t.id)}&proposal=${encodeURIComponent(toml)}&reason=${encodeURIComponent(document.getElementById("tnote").value)}`;
-    document.getElementById("tsend").innerHTML = url
-      ? `<a class="btn solid" href="${esc(url)}" target="_blank" rel="noopener">Open the proposal on GitHub</a>`
-      : `<p class="hint">This copy of the site is not linked to a GitHub repository. Copy the proposal and open an issue in the repository that publishes the atlas.</p>`;
-  };
-  const openProposal = () => {
-    document.getElementById("tprop").hidden = false;
-    fillProposal();
-    document.getElementById("tprop").scrollIntoView({ behavior: "smooth", block: "start" });
-  };
-  document.getElementById("tnote").addEventListener("input", fillProposal);
+  let suggest = null;
   document.getElementById("tm").addEventListener("change", (e) => {
     v.metric = e.target.value;
     v.higher = t.metrics.find((m) => m.name === v.metric)?.higher ?? true;
@@ -1463,6 +1437,7 @@ function pageTable(t) {
     c.checked ? v.exclude.add(c.dataset.out) : v.exclude.delete(c.dataset.out);
     draw();
   });
+  suggest = mountSuggest(document.getElementById("suggest"), { t, view: v, base, repo, esc });
   draw();
 }
 

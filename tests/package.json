@@ -1,0 +1,13 @@
+{
+  "name": "atlas-tests",
+  "private": true,
+  "type": "module",
+  "description": "End-to-end tests for reader sign-in, suggestions and table updates",
+  "scripts": {
+    "test": "node submissions.test.mjs"
+  },
+  "devDependencies": {
+    "puppeteer-core": "25.17.0",
+    "smol-toml": "1.3.1"
+  }
+}
