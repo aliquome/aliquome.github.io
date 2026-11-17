@@ -1,5 +1,5 @@
 // #latest[/field] and #papers[/field]
-import { view, esc, num, safe, replaceHash } from "../core/dom.js";
+import { view, esc, num, safe, replaceHash, showLoading } from "../core/dom.js";
 import { S, need } from "../core/store.js";
 import { fieldOf, baseVar, dsName, dsHref, uniqueByName, taskLabel } from "../core/catalog.js";
 import { prettyDate, cut } from "../domain/format.js";
@@ -9,7 +9,7 @@ import { paperCard } from "../ui/cards.js";
 export const paperTabs = (on) => `<nav class="tabbar" aria-label="Paper views"><a href="#latest" ${on === "latest" ? "aria-current=\"page\"" : ""}>New papers <small>last 60 days</small></a><a href="#papers" ${on === "top" ? "aria-current=\"page\"" : ""}>Most cited <small>all time and recent</small></a></nav>`;
 
 export async function pageLatest(fieldId, preset = "") {
-  view.innerHTML = `<div class="page"><p class="loading">Loading new papers…</p></div>`;
+  showLoading("Loading new papers…");
   const data = await need("latest");
   if (!data?.papers?.length) return (view.innerHTML = `<div class="page"><p class="note">New papers have not been fetched yet. The scheduled job fills this page.</p></div>`);
   const all = data.papers;
@@ -97,7 +97,7 @@ export async function pageLatest(fieldId, preset = "") {
 }
 
 export async function pagePapers(fieldId) {
-  view.innerHTML = `<div class="page"><p class="loading">Loading papers…</p></div>`;
+  showLoading("Loading papers…");
   const papers = await need("papers");
   if (!papers?.fields?.length) return (view.innerHTML = `<div class="page"><p class="note">Papers have not been fetched yet. The scheduled job fills this page.</p></div>`);
   const current = papers.fields.find((x) => x.id === fieldId) || papers.fields[0];

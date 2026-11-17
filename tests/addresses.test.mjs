@@ -41,9 +41,14 @@ const errors = [];
 p.on("pageerror", (e) => errors.push(`${p.url()}: ${e.message}`));
 p.on("console", (m) => { if (m.type() === "error" && !/favicon|fonts\.g/.test(m.text())) errors.push(`${p.url()}: ${m.text()}`); });
 await p.setViewport({ width: 1280, height: 900 });
+// notes whether a loading placeholder ever replaced the content written into the page
+await p.evaluateOnNewDocument(() => {
+  new MutationObserver(() => { if (document.querySelector("#view .loading") && !document.querySelector("#view > .static-page")) window.__sawLoading = true; })
+    .observe(document, { subtree: true, childList: true });
+});
 
 const h1 = () => p.$eval("#view h1", (e) => e.textContent.trim()).catch(() => "");
-const ready = async () => { await p.waitForFunction(() => !document.querySelector("#view .loading") && document.querySelector("#view h1, #view .hero"), { timeout: 30000 }).catch(() => {}); await wait(400); };
+const ready = async () => { await p.waitForFunction(() => !document.querySelector("#view .loading, #view > .static-page") && document.querySelector("#view h1, #view .hero"), { timeout: 60000 }).catch(() => {}); await wait(400); };
 const here = () => p.evaluate(() => location.pathname + location.search + location.hash);
 const routeLinks = () => p.evaluate(() => [...document.querySelectorAll('a[href^="#"]')].map((a) => a.getAttribute("href")).filter((h) => /^#(home|sources|source|datasets|latest|papers|benchmarks|status|about|saved)\b/.test(h)));
 const internal = () => p.evaluate(() => [...new Set([...document.querySelectorAll("a[href]")].map((a) => a.getAttribute("href")).filter((h) => h.startsWith("/") && !h.startsWith("//")))]);
@@ -63,6 +68,7 @@ for (const [url, want] of direct) {
   const head = await h1();
   ok(res.status() === 200, `${url} answers 200`);
   ok((await here()) === url, `${url} keeps its address (${await here()})`);
+  if (url !== "/") ok(!(await p.evaluate(() => window.__sawLoading)), `${url}: the content stays in place while the page loads (no loading flash)`);
   ok(!want || head.includes(want), `${url} shows “${head.slice(0, 50)}”`);
   ok(url === "/" ? /^Aliquome/.test(title) : / \| Aliquome$/.test(title), `${url} title “${title.slice(0, 60)}”`);
   const canon = await p.$eval('link[rel="canonical"]', (e) => e.href);

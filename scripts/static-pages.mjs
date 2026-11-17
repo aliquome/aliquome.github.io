@@ -68,7 +68,7 @@ function page({ url, title, description, h1, crumb = [], body, schema = [], inde
   html = sub(html, /<meta property="og:title" content="[^"]*">/, () => `<meta property="og:title" content="${esc(title)}">`);
   html = sub(html, /<meta property="og:description" content="[^"]*">/, () => `<meta property="og:description" content="${esc(clip(description, 200))}">`);
   html = sub(html, /<script type="application\/ld\+json">[\s\S]*?<\/script>/, () => [...breadcrumbLd, ...schema].map(ld).join("\n  "));
-  html = sub(html, /(<main id="view"[^>]*>)[\s\S]*?(<\/main>)/, (_, open, close) => `${open}\n<div class="page static-page">\n${crumbs}\n<h1>${esc(h1)}</h1>\n${body}\n</div>\n  ${close}`);
+  html = sub(html, /(<main id="view"[^>]*>)[\s\S]*?(<\/main>)/, (_, open, close) => `${open}\n<div class="page static-page" data-for="${esc(url.endsWith(".html") ? "" : url)}">\n${crumbs}\n<h1>${esc(h1)}</h1>\n${body}\n</div>\n  ${close}`);
   pages.push({ url, html, index });
 }
 

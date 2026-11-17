@@ -35,6 +35,13 @@ export async function copy(text) {
 
 // Update the address for a filter change without a new history entry. Takes a
 // route ("#datasets/proteins") and writes its path ("/datasets/?field=proteins").
+// A placeholder while a page loads its data. On the page a visitor landed on,
+// the same content is already there (written into the HTML), so it stays.
+export function showLoading(text) {
+  if (view.querySelector(`:scope > .static-page[data-for="${CSS.escape(location.pathname)}"]`)) return;
+  view.innerHTML = `<div class="page"><p class="loading">${esc(text)}</p></div>`;
+}
+
 export function replaceHash(route) {
   try { window.history.replaceState(null, "", toPath(route) ?? route); } catch (e) { /* sandboxed */ }
 }

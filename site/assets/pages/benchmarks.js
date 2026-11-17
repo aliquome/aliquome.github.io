@@ -1,5 +1,5 @@
 // #benchmarks: tables, models, papers, one table, one board.
-import { view, esc, num, safe, replaceHash } from "../core/dom.js";
+import { view, esc, num, safe, replaceHash, showLoading } from "../core/dom.js";
 import { S, need, needTables } from "../core/store.js";
 import { fieldOf, baseVar, taskLabel } from "../core/catalog.js";
 import { approvedView, rankRows, towardBest } from "../domain/ranking.js";
@@ -27,7 +27,7 @@ export const benchTabs = (on, idx, nTables) => `<nav class="tabbar" aria-label="
 </nav>`;
 
 export async function pageBenchmarks(a, b) {
-  view.innerHTML = `<div class="page"><p class="loading">Loading benchmarks…</p></div>`;
+  showLoading("Loading benchmarks…");
   const [data, tables] = await Promise.all([need("boards"), needTables()]);
   const boards = data?.boards || [];
   const idx = buildBenchIndex(tables, boards);
