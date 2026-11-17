@@ -59,7 +59,12 @@ jobs:
             echo "No data changes."
           else
             git commit -m "data: daily update $(date -u +%Y-%m-%d)"
-            git push
+            # someone may have pushed while the build ran: replay on top and retry
+            for attempt in 1 2 3 4 5; do
+              if git pull --rebase --quiet && git push; then exit 0; fi
+              sleep $((attempt * 5))
+            done
+            echo "Could not push the new data." && exit 1
           fi
 
       - uses: actions/configure-pages@v5
