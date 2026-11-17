@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T12:28:31Z",
+  "generated_at": "2026-11-17T12:35:15Z",
   "source": "Europe PMC REST API",
   "rule": "For each field, the 30 most cited open-access papers of all time and the 30 most cited of the last 24 months that match the field query. Tasks come from keyword patterns; datasets are databases and datasets named in the title, abstract or keywords.",
   "fields": [
