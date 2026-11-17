@@ -13,7 +13,7 @@ body:
     id: table
     attributes:
       label: Table id
-      description: The part after `#benchmarks/` in the table's address.
+      description: The part after `/benchmarks/` in the table's address.
       placeholder: drug-discovery-tox21
     validations:
       required: true

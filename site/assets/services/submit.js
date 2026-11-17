@@ -41,15 +41,15 @@ async function request(path, { method = "GET", body, token, headers = {}, raw } 
 }
 
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-// The link in the email brings the reader back to this page without its route
-// (Supabase adds the session after "#"), so the route is kept here meanwhile.
+// The link in the email brings the reader back to the home address (Supabase
+// adds the session after "#"), so the page they asked from is kept meanwhile.
 const RETURN = "atlas-return-v1";
-const home = () => location.origin + location.pathname;
+const home = () => `${location.origin}/`;
 
 export async function sendCode(email) {
   email = String(email || "").trim().toLowerCase();
   if (!EMAIL.test(email)) throw new ApiError("Enter a valid email address.");
-  try { localStorage.setItem(RETURN, location.hash || "#home"); } catch { /* private window */ }
+  try { localStorage.setItem(RETURN, location.pathname + location.search); } catch { /* private window */ }
   await request(`/auth/v1/otp?redirect_to=${encodeURIComponent(home())}`, { method: "POST", body: { email, create_user: true } });
   return email;
 }
@@ -64,9 +64,10 @@ export function completeLinkSignIn() {
   const h = location.hash.replace(/^#/, "");
   if (!/(^|&)(access_token|error_code|error)=/.test(h)) return "";
   const p = new URLSearchParams(h);
-  let back = "#home";
-  try { back = localStorage.getItem(RETURN) || "#home"; localStorage.removeItem(RETURN); } catch { /* private window */ }
-  history.replaceState(null, "", home() + back);
+  let back = "/";
+  try { back = localStorage.getItem(RETURN) || "/"; localStorage.removeItem(RETURN); } catch { /* private window */ }
+  // an address kept before clean paths starts with "#"; the router moves it
+  history.replaceState(null, "", back.startsWith("#") ? `/${back}` : back);
   if (p.get("error") || p.get("error_code")) {
     return p.get("error_code") === "otp_expired" ? "The sign-in link has expired or was already used. Ask for a new one." : `Sign-in failed: ${p.get("error_description") || p.get("error")}.`;
   }

@@ -1,4 +1,5 @@
 // DOM helpers shared by every layer: the main view, escaping, copy and toast.
+import { toPath } from "../domain/paths.js";
 export const view = document.getElementById("view");
 
 export const esc = (s) =>
@@ -32,6 +33,8 @@ export async function copy(text) {
   }
 }
 
-export function replaceHash(hash) {
-  try { window.history.replaceState(null, "", hash); } catch (e) { /* sandboxed */ }
+// Update the address for a filter change without a new history entry. Takes a
+// route ("#datasets/proteins") and writes its path ("/datasets/?field=proteins").
+export function replaceHash(route) {
+  try { window.history.replaceState(null, "", toPath(route) ?? route); } catch (e) { /* sandboxed */ }
 }

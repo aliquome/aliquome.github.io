@@ -1,5 +1,6 @@
 // Shared helpers: the reader's saved items, citation export and the
 // site-wide search palette. Saved items live in this browser only.
+import { go } from "../core/nav.js";
 
 const KEY = "atlas-saved-v1";
 const listeners = new Set();
@@ -127,7 +128,7 @@ export function mountPalette(getIndex, esc) {
   input.addEventListener("keydown", (e) => {
     if (e.key === "ArrowDown") { e.preventDefault(); move(1); }
     else if (e.key === "ArrowUp") { e.preventDefault(); move(-1); }
-    else if (e.key === "Enter" && hits[pos]) { e.preventDefault(); location.hash = hits[pos].href.slice(1); close(); }
+    else if (e.key === "Enter" && hits[pos]) { e.preventDefault(); go(hits[pos].href); close(); }
   });
   list.addEventListener("click", (e) => { if (e.target.closest("a")) close(); });
   dlg.addEventListener("click", (e) => { if (e.target === dlg) close(); });

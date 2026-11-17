@@ -20,7 +20,9 @@ export async function need(name) {
 // data/rankings.toml (rankings.json) are applied on top of the archive tables.
 export async function needTables() {
   if (S.tables) return S.tables;
-  const files = await Promise.all(S.fields.map((f) => load(`benchmarks/pwc-${f.id}`).catch(() => null)));
+  // the list of table files, written with the pages; without it, try every field
+  const names = await load("benchmarks/index").then((j) => j.files).catch(() => S.fields.map((f) => `pwc-${f.id}`));
+  const files = await Promise.all(names.map((n) => load(`benchmarks/${n}`).catch(() => null)));
   const rk = await load("rankings").catch(() => ({}));
   const approved = new Map((rk?.table || []).map((t) => [t.id, t]));
   S.tables = files.filter(Boolean).flatMap((f) => f.tables.map((t) => ({ ...t, source_name: f.source, source_url: f.url, license: f.license, snapshot: f.snapshot, approved: approved.get(t.id) || null })));
@@ -29,7 +31,7 @@ export async function needTables() {
 }
 
 export async function load(name) {
-  const res = await fetch(`data/${name}.json`, { cache: "no-cache" });
+  const res = await fetch(`/data/${name}.json`, { cache: "no-cache" });
   if (!res.ok) throw new Error(`${name}.json: HTTP ${res.status}`);
   return res.json();
 }

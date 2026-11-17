@@ -1,6 +1,6 @@
 # New bioinformatics and computational biology papers
 
-Every paper published from 2026-09-18 to 2026-11-17 in the leading bioinformatics and computational biology journals, sorted by field, newest first. Updated every two days by [Aliquome](https://aliquome.github.io/); browse them with abstracts, tasks and filters at [aliquome.github.io](https://aliquome.github.io/#latest).
+Every paper published from 2026-09-18 to 2026-11-17 in the leading bioinformatics and computational biology journals, sorted by field, newest first. Updated every two days by [Aliquome](https://aliquome.github.io/); browse them with abstracts, tasks and filters at [aliquome.github.io/papers](https://aliquome.github.io/papers/).
 
 From Bioinformatics, Nucleic Acids Res, Genome Biol, Nat Methods, Nat Biotechnol, Brief Bioinform, PLoS Comput Biol, Genome Res, Nat Genet, Cell Syst, Cell Genom, Nat Comput Sci, Genome Med, Mol Syst Biol, Gigascience, NAR Genom Bioinform, Bioinform Adv, BMC Bioinformatics, Nature (computational papers only), Science (computational papers only), Cell (computational papers only), Nat Commun (computational papers only).
 

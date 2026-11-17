@@ -175,149 +175,149 @@ Everything on [aliquome.github.io](https://aliquome.github.io/), as plain lists.
 <details>
 <summary><b>Genomes and annotation</b> (11 databases)</summary>
 
-- **[GRCh37 (hg19)](https://aliquome.github.io/#source/grch37)**: Human reference assembly GRCh37 with all patch releases. Releases: GRCh37, GRCh37.p1, GRCh37.p2, GRCh37.p3, GRCh37.p4, GRCh37.p5, GRCh37.p6, GRCh37.p7, GRCh37.p8, GRCh37.p9, GRCh37.p10, GRCh37.p11, GRCh37.p12, GRCh37.p13, hs37d5, NCBI36 / hg18 and earlier.
-- **[GRCh38 (hg38)](https://aliquome.github.io/#source/grch38)**: Current human reference assembly with patch releases p1 to p14. Releases: GRCh38, GRCh38.p1, GRCh38.p2, GRCh38.p3, GRCh38.p4, GRCh38.p5, GRCh38.p6, GRCh38.p7, GRCh38.p8, GRCh38.p9, GRCh38.p10, GRCh38.p11, GRCh38.p12, GRCh38.p13, GRCh38.p14.
-- **[T2T-CHM13 and HPRC pangenome](https://aliquome.github.io/#source/t2t-hprc)**: Telomere-to-telomere human assembly and the Human Pangenome Reference Consortium releases. Releases: CHM13 draft v0.4–v0.9, CHM13 v1.0, CHM13 v1.1, CHM13 v2.0, HPRC Release 1, HPRC Release 2.
-- **[UCSC Genome Browser](https://aliquome.github.io/#source/ucsc)**: Genome builds, tracks and download server for many species. Releases: hg4–hg8, hg10–hg13, hg15–hg18, hg19, hg38, hs1, mm9, mm10, mm39, rn6 / rn7 / rn8, danRer10 / danRer11, dm3 / dm6, ce10 / ce11, sacCer3.
-- **[GenBank](https://aliquome.github.io/#source/genbank)**: NIH genetic sequence database, part of INSDC. Releases: 270, 271, 272, 273, 274.0.
-- **[RefSeq](https://aliquome.github.io/#source/refseq)**: Curated reference sequences and the NCBI human annotation releases. Releases: 238, 105.20190906 / 105.20201022 / 105.20220307, 109 and 109.20190607–109.20211119, 110, GCF\_000001405.40-RS\_2023\_03, GCF\_000001405.40-RS\_2023\_10, GCF\_000001405.40-RS\_2024\_08, GCF\_000001405.40-RS\_2025\_08, GCF\_000001405.25-RS\_2024\_09, GCF\_009914755.1-RS\_2023\_03 / RS\_2023\_10.
-- **[MANE](https://aliquome.github.io/#source/mane)**: Matched Annotation from NCBI and EMBL-EBI: one agreed transcript per human gene. Releases: 0.5–0.95, 1.0, 1.1–1.4, 1.5.
-- **[Ensembl](https://aliquome.github.io/#source/ensembl)**: Genome annotation for vertebrates. Release 116 is the last numbered release. Releases: 54, 75, 76, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, Rapid Release, Ensembl beta / Ensembl Organisms.
-- **[Ensembl Genomes](https://aliquome.github.io/#source/ensembl-genomes)**: Ensembl annotation for plants, fungi, bacteria, metazoa and protists. Releases: 1, 2–62, 63.
-- **[GENCODE](https://aliquome.github.io/#source/gencode)**: Reference gene annotation for human and mouse. Releases: 1–18, v19, v20, v44 / M33, v45 / M34, v46 / M35, v47 / M36, v48 / M37, v49 / M38, v50 / M39.
-- **[Model organism databases](https://aliquome.github.io/#source/model-organisms)**: FlyBase, WormBase, SGD, MGI, ZFIN, RGD, TAIR and related resources. Releases: FlyBase FB2026\_01, FlyBase FB2026\_02, FlyBase FB2026\_03, FlyBase FB2026\_04, WormBase WS298, SGD R64-1-1, SGD R64-2-1, SGD R64-3-1, SGD R64-4-1, PomBase monthly, VEuPathDB.
+- **[GRCh37 (hg19)](https://aliquome.github.io/db/grch37/)**: Human reference assembly GRCh37 with all patch releases. Releases: GRCh37, GRCh37.p1, GRCh37.p2, GRCh37.p3, GRCh37.p4, GRCh37.p5, GRCh37.p6, GRCh37.p7, GRCh37.p8, GRCh37.p9, GRCh37.p10, GRCh37.p11, GRCh37.p12, GRCh37.p13, hs37d5, NCBI36 / hg18 and earlier.
+- **[GRCh38 (hg38)](https://aliquome.github.io/db/grch38/)**: Current human reference assembly with patch releases p1 to p14. Releases: GRCh38, GRCh38.p1, GRCh38.p2, GRCh38.p3, GRCh38.p4, GRCh38.p5, GRCh38.p6, GRCh38.p7, GRCh38.p8, GRCh38.p9, GRCh38.p10, GRCh38.p11, GRCh38.p12, GRCh38.p13, GRCh38.p14.
+- **[T2T-CHM13 and HPRC pangenome](https://aliquome.github.io/db/t2t-hprc/)**: Telomere-to-telomere human assembly and the Human Pangenome Reference Consortium releases. Releases: CHM13 draft v0.4–v0.9, CHM13 v1.0, CHM13 v1.1, CHM13 v2.0, HPRC Release 1, HPRC Release 2.
+- **[UCSC Genome Browser](https://aliquome.github.io/db/ucsc/)**: Genome builds, tracks and download server for many species. Releases: hg4–hg8, hg10–hg13, hg15–hg18, hg19, hg38, hs1, mm9, mm10, mm39, rn6 / rn7 / rn8, danRer10 / danRer11, dm3 / dm6, ce10 / ce11, sacCer3.
+- **[GenBank](https://aliquome.github.io/db/genbank/)**: NIH genetic sequence database, part of INSDC. Releases: 270, 271, 272, 273, 274.0.
+- **[RefSeq](https://aliquome.github.io/db/refseq/)**: Curated reference sequences and the NCBI human annotation releases. Releases: 238, 105.20190906 / 105.20201022 / 105.20220307, 109 and 109.20190607–109.20211119, 110, GCF\_000001405.40-RS\_2023\_03, GCF\_000001405.40-RS\_2023\_10, GCF\_000001405.40-RS\_2024\_08, GCF\_000001405.40-RS\_2025\_08, GCF\_000001405.25-RS\_2024\_09, GCF\_009914755.1-RS\_2023\_03 / RS\_2023\_10.
+- **[MANE](https://aliquome.github.io/db/mane/)**: Matched Annotation from NCBI and EMBL-EBI: one agreed transcript per human gene. Releases: 0.5–0.95, 1.0, 1.1–1.4, 1.5.
+- **[Ensembl](https://aliquome.github.io/db/ensembl/)**: Genome annotation for vertebrates. Release 116 is the last numbered release. Releases: 54, 75, 76, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, Rapid Release, Ensembl beta / Ensembl Organisms.
+- **[Ensembl Genomes](https://aliquome.github.io/db/ensembl-genomes/)**: Ensembl annotation for plants, fungi, bacteria, metazoa and protists. Releases: 1, 2–62, 63.
+- **[GENCODE](https://aliquome.github.io/db/gencode/)**: Reference gene annotation for human and mouse. Releases: 1–18, v19, v20, v44 / M33, v45 / M34, v46 / M35, v47 / M36, v48 / M37, v49 / M38, v50 / M39.
+- **[Model organism databases](https://aliquome.github.io/db/model-organisms/)**: FlyBase, WormBase, SGD, MGI, ZFIN, RGD, TAIR and related resources. Releases: FlyBase FB2026\_01, FlyBase FB2026\_02, FlyBase FB2026\_03, FlyBase FB2026\_04, WormBase WS298, SGD R64-1-1, SGD R64-2-1, SGD R64-3-1, SGD R64-4-1, PomBase monthly, VEuPathDB.
 
 </details>
 
 <details>
 <summary><b>Variants and population genetics</b> (9 databases)</summary>
 
-- **[dbSNP](https://aliquome.github.io/#source/dbsnp)**: Catalogue of short genetic variants, by build. Releases: b151, b152, b153, b154, b155, b156, b157.
-- **[ClinVar](https://aliquome.github.io/#source/clinvar)**: Clinical significance of human variants, with weekly and monthly archives. Releases: archive\_1.0, Weekly VCF 2017–2025, Weekly VCF 2026, clinvar\_20261108, Monthly XML 2025-01–2026-11, XML 2026-11.
-- **[gnomAD](https://aliquome.github.io/#source/gnomad)**: Aggregated exome and genome variant frequencies. Releases: ExAC r0.3 / r0.3.1, 2.0.1 / 2.0.2, 2.1, 2.1.1, 3.0, 3.0.1, 3.1, 3.1.1, 3.1.2, 3.1.3, 4.0, 4.1, 4.1.1, 4.1.2, lr 0.1, 4.2 / 5.0.
-- **[1000 Genomes](https://aliquome.github.io/#source/1000genomes)**: Human variation across populations, from the pilot to the 30x high-coverage data. Releases: Pilot, Phase 1, Phase 3, Phase 3 on GRCh38, 30x NYGC, 30x NYGC phased SNV/INDEL/SV.
-- **[CADD](https://aliquome.github.io/#source/cadd)**: Deleteriousness scores for human variants. Releases: 1.0, 1.3, 1.4, 1.5, 1.6, 1.7.
-- **[dbNSFP](https://aliquome.github.io/#source/dbnsfp)**: Functional predictions and annotations for non-synonymous variants. Releases: 2.x, 3.x, 4.0–4.9, 5.0 / 5.1 / 5.2.
-- **[FinnGen](https://aliquome.github.io/#source/finngen)**: GWAS summary statistics from Finnish biobank data freezes. Releases: R2–R4, R5, R6, R7, R8, R9, R10, R11, R12, R13.
-- **[All of Us](https://aliquome.github.io/#source/allofus)**: US cohort data, released as curated data repository versions. Releases: CDR v3 / v4, CDR v5, CDR v6, CDR v7, CDR v8.
-- **[UK Biobank](https://aliquome.github.io/#source/ukbiobank)**: Genetic and health data for 500,000 participants. Releases: Genotyping interim 150k, Imputed v3, Exome 50k / 200k / 300k / 470k, WGS 200k interim, WGS 500k.
+- **[dbSNP](https://aliquome.github.io/db/dbsnp/)**: Catalogue of short genetic variants, by build. Releases: b151, b152, b153, b154, b155, b156, b157.
+- **[ClinVar](https://aliquome.github.io/db/clinvar/)**: Clinical significance of human variants, with weekly and monthly archives. Releases: archive\_1.0, Weekly VCF 2017–2025, Weekly VCF 2026, clinvar\_20261108, Monthly XML 2025-01–2026-11, XML 2026-11.
+- **[gnomAD](https://aliquome.github.io/db/gnomad/)**: Aggregated exome and genome variant frequencies. Releases: ExAC r0.3 / r0.3.1, 2.0.1 / 2.0.2, 2.1, 2.1.1, 3.0, 3.0.1, 3.1, 3.1.1, 3.1.2, 3.1.3, 4.0, 4.1, 4.1.1, 4.1.2, lr 0.1, 4.2 / 5.0.
+- **[1000 Genomes](https://aliquome.github.io/db/1000genomes/)**: Human variation across populations, from the pilot to the 30x high-coverage data. Releases: Pilot, Phase 1, Phase 3, Phase 3 on GRCh38, 30x NYGC, 30x NYGC phased SNV/INDEL/SV.
+- **[CADD](https://aliquome.github.io/db/cadd/)**: Deleteriousness scores for human variants. Releases: 1.0, 1.3, 1.4, 1.5, 1.6, 1.7.
+- **[dbNSFP](https://aliquome.github.io/db/dbnsfp/)**: Functional predictions and annotations for non-synonymous variants. Releases: 2.x, 3.x, 4.0–4.9, 5.0 / 5.1 / 5.2.
+- **[FinnGen](https://aliquome.github.io/db/finngen/)**: GWAS summary statistics from Finnish biobank data freezes. Releases: R2–R4, R5, R6, R7, R8, R9, R10, R11, R12, R13.
+- **[All of Us](https://aliquome.github.io/db/allofus/)**: US cohort data, released as curated data repository versions. Releases: CDR v3 / v4, CDR v5, CDR v6, CDR v7, CDR v8.
+- **[UK Biobank](https://aliquome.github.io/db/ukbiobank/)**: Genetic and health data for 500,000 participants. Releases: Genotyping interim 150k, Imputed v3, Exome 50k / 200k / 300k / 470k, WGS 200k interim, WGS 500k.
 
 </details>
 
 <details>
 <summary><b>Cancer genomics</b> (4 databases)</summary>
 
-- **[Genomic Data Commons](https://aliquome.github.io/#source/gdc)**: TCGA, TARGET, CPTAC and other cancer programs, by data release. Releases: DR 46.0, DR 45.0, DR 44.0, DR 43.0, DR 42.0, DR 41.0, DR 40.0, DR 39.0, DR 38.0, DR 37.0, DR 36.0, DR 35.0, DR 34.0, DR 33.1, DR 33.0, DR 32.0, DR 31.0, DR 30.0, DR 29.0, DR 28.0, DR 27.0-fix, DR 27.0, DR 26.0, DR 25.0, DR 24.0, DR 23.0, DR 22.0, DR 21.0, DR 20.0, DR 19.1, DR 19.0, DR 18.0, DR 17.1, DR 17.0, DR 16.0, DR 15.0, DR 14.0, DR 13.0, DR 12.0, DR 11.0, DR 10.1, DR 10.0, DR 9.0, DR 8.0, DR 7.0, DR 6.0, DR 5.0, DR 4.0, DR 3.0, DR 2.0, DR 1.0.
-- **[COSMIC](https://aliquome.github.io/#source/cosmic)**: Catalogue of somatic mutations in cancer. Releases: v90, v91, v92, v94, v95, v96, v97, v98, v99, v100, v101, v102, v103, v104.
-- **[DepMap](https://aliquome.github.io/#source/depmap)**: Cancer dependency map: CRISPR screens and cell line omics, by quarterly release. Releases: 18Q3–21Q4, 22Q1 / 22Q2 / 22Q4, 23Q2 / 23Q4, 24Q2, 24Q4, 25Q2, 25Q3, 26Q1, 26Q3.
-- **[ICGC ARGO and ICGC 25K](https://aliquome.github.io/#source/icgc)**: International cancer genome data. The 25K portal was retired in 2024. Releases: ICGC 25K Release 1–28, ARGO DR9.0, ARGO DR10.0.
+- **[Genomic Data Commons](https://aliquome.github.io/db/gdc/)**: TCGA, TARGET, CPTAC and other cancer programs, by data release. Releases: DR 46.0, DR 45.0, DR 44.0, DR 43.0, DR 42.0, DR 41.0, DR 40.0, DR 39.0, DR 38.0, DR 37.0, DR 36.0, DR 35.0, DR 34.0, DR 33.1, DR 33.0, DR 32.0, DR 31.0, DR 30.0, DR 29.0, DR 28.0, DR 27.0-fix, DR 27.0, DR 26.0, DR 25.0, DR 24.0, DR 23.0, DR 22.0, DR 21.0, DR 20.0, DR 19.1, DR 19.0, DR 18.0, DR 17.1, DR 17.0, DR 16.0, DR 15.0, DR 14.0, DR 13.0, DR 12.0, DR 11.0, DR 10.1, DR 10.0, DR 9.0, DR 8.0, DR 7.0, DR 6.0, DR 5.0, DR 4.0, DR 3.0, DR 2.0, DR 1.0.
+- **[COSMIC](https://aliquome.github.io/db/cosmic/)**: Catalogue of somatic mutations in cancer. Releases: v90, v91, v92, v94, v95, v96, v97, v98, v99, v100, v101, v102, v103, v104.
+- **[DepMap](https://aliquome.github.io/db/depmap/)**: Cancer dependency map: CRISPR screens and cell line omics, by quarterly release. Releases: 18Q3–21Q4, 22Q1 / 22Q2 / 22Q4, 23Q2 / 23Q4, 24Q2, 24Q4, 25Q2, 25Q3, 26Q1, 26Q3.
+- **[ICGC ARGO and ICGC 25K](https://aliquome.github.io/db/icgc/)**: International cancer genome data. The 25K portal was retired in 2024. Releases: ICGC 25K Release 1–28, ARGO DR9.0, ARGO DR10.0.
 
 </details>
 
 <details>
 <summary><b>Expression and single-cell</b> (8 databases)</summary>
 
-- **[GTEx](https://aliquome.github.io/#source/gtex)**: Gene expression and eQTLs across human tissues. Releases: v3, v4, v6 / v6p, v7, v8, v10, v11.
-- **[ARCHS4](https://aliquome.github.io/#source/archs4)**: Uniformly processed RNA-seq from GEO and SRA. Releases: v1.11, v2.2, v2.3, v2.4, v2.5.
-- **[eQTL Catalogue](https://aliquome.github.io/#source/eqtl-catalogue)**: Uniformly processed QTL summary statistics. Releases: r1, r2–r6, r7, r8 pre-release, r8 pre-release, updated, r8.
-- **[Human Protein Atlas](https://aliquome.github.io/#source/hpa)**: Protein and RNA expression across human tissues and cells. Releases: v20, v21, v22, v23, v24, v25, v25.1.
-- **[Expression Atlas](https://aliquome.github.io/#source/expression-atlas)**: Curated bulk and single-cell expression experiments. Releases: Expression Atlas r42, Expression Atlas r43, SCXA 202103 / 202105 / 202109 / 202110, SCXA 202203 / 202212, SCXA 202303, SCXA 202409, SCXA 202509.
-- **[CELLxGENE Census](https://aliquome.github.io/#source/cellxgene-census)**: Tens of millions of single cells, released as dated builds. Releases: 2023-05-15, 2023-07-25, 2023-12-15, 2024-05-20, 2024-07-01, 2025-01-30, 2025-11-04, 2025-11-08, 2025-11-10.
-- **[Allen Brain Cell Atlas](https://aliquome.github.io/#source/allen-brain)**: Whole-brain single-cell and spatial atlases, by dated release. Releases: 20230630, 20230830, 20231215, 20240330, 20240831, 20241115, 20241130, 20250131, 20250331, 20250531, 20250930, 20251031, 20260131, 20260228, 20260331, 20260415, 20260711, 20261031, 20261101, 20261130.
-- **[Tabula Sapiens](https://aliquome.github.io/#source/tabula-sapiens)**: Human multi-organ single-cell atlas. Releases: v1, v2.
+- **[GTEx](https://aliquome.github.io/db/gtex/)**: Gene expression and eQTLs across human tissues. Releases: v3, v4, v6 / v6p, v7, v8, v10, v11.
+- **[ARCHS4](https://aliquome.github.io/db/archs4/)**: Uniformly processed RNA-seq from GEO and SRA. Releases: v1.11, v2.2, v2.3, v2.4, v2.5.
+- **[eQTL Catalogue](https://aliquome.github.io/db/eqtl-catalogue/)**: Uniformly processed QTL summary statistics. Releases: r1, r2–r6, r7, r8 pre-release, r8 pre-release, updated, r8.
+- **[Human Protein Atlas](https://aliquome.github.io/db/hpa/)**: Protein and RNA expression across human tissues and cells. Releases: v20, v21, v22, v23, v24, v25, v25.1.
+- **[Expression Atlas](https://aliquome.github.io/db/expression-atlas/)**: Curated bulk and single-cell expression experiments. Releases: Expression Atlas r42, Expression Atlas r43, SCXA 202103 / 202105 / 202109 / 202110, SCXA 202203 / 202212, SCXA 202303, SCXA 202409, SCXA 202509.
+- **[CELLxGENE Census](https://aliquome.github.io/db/cellxgene-census/)**: Tens of millions of single cells, released as dated builds. Releases: 2023-05-15, 2023-07-25, 2023-12-15, 2024-05-20, 2024-07-01, 2025-01-30, 2025-11-04, 2025-11-08, 2025-11-10.
+- **[Allen Brain Cell Atlas](https://aliquome.github.io/db/allen-brain/)**: Whole-brain single-cell and spatial atlases, by dated release. Releases: 20230630, 20230830, 20231215, 20240330, 20240831, 20241115, 20241130, 20250131, 20250331, 20250531, 20250930, 20251031, 20260131, 20260228, 20260331, 20260415, 20260711, 20261031, 20261101, 20261130.
+- **[Tabula Sapiens](https://aliquome.github.io/db/tabula-sapiens/)**: Human multi-organ single-cell atlas. Releases: v1, v2.
 
 </details>
 
 <details>
 <summary><b>Proteins and structures</b> (15 databases)</summary>
 
-- **[UniProt](https://aliquome.github.io/#source/uniprot)**: Protein sequence and function knowledgebase. Releases: release 1.0–15.0, 2010\_01–2020\_01, 2021\_01 / 2021\_02 / 2021\_03, 2021\_04, 2022\_01, 2022\_02, 2022\_03, 2022\_04, 2022\_05, 2023\_01, 2023\_02, 2023\_03, 2023\_04, 2023\_05, 2024\_01, 2024\_02, 2024\_03, 2024\_04, 2024\_05, 2024\_06, 2025\_01, 2025\_02, 2025\_03, 2025\_04, 2026\_01, 2026\_02, 2026\_03, 2026\_04.
-- **[Protein Data Bank](https://aliquome.github.io/#source/pdb)**: Experimental 3D structures, with yearly snapshots. Releases: 20050106, 20060103, 20070102, 20070731, 20080107, 20090105, 20090316, 20100104, 20110103, 20110707, 20120102, 20130101, 20140102, 20141203, 20150102, 20160101, 20160302, 20170101, 20170308, 20170710, 20180101, 20180321, 20190101, 20200101, 20200610, 20200722, 20200916, 20210105, 20220103, 20230102, 20240101, 20250101, 20260101, 20260415.
-- **[AlphaFold DB](https://aliquome.github.io/#source/alphafold)**: Predicted protein structures, versions v1 to v6. Releases: v1, v2, v3, v4, v5, v6.
-- **[ESM Metagenomic Atlas](https://aliquome.github.io/#source/esm-atlas)**: Predicted structures for metagenomic proteins. Releases: v0, v2023\_02.
-- **[Pfam](https://aliquome.github.io/#source/pfam)**: Protein families as hidden Markov models. Releases: 1.0, 4.0–4.4, 5.0–5.5, 6.0–6.6, 7.0–7.8, 8.0, 9.0, 10.0–33.0, 33.1, 34.0, 35.0, 36.0 / 37.0, 37.1, 37.2, 37.3, 37.4, 38.0, 38.1 / 38.2, 39.0, Pfam\_SARS-CoV-2 1.0 / 2.0.
-- **[InterPro](https://aliquome.github.io/#source/interpro)**: Integrated protein family, domain and site annotation. Releases: 1.0–23.1, 24.0–72.0, 73.0, 74.0, 75.0, 76.0, 78.0, 79.0, 80.0, 81.0, 82.0, 83.0, 84.0 / 85.0, 86.0, 87.0, 88.0, 89.0–97.0, 98.0, 99.0, 100.0, 101.0, 102.0, 103.0, 104.0, 105.0, 106.0, 107.0, 108.0, 109.0, 110.0, 111.0.
-- **[CATH](https://aliquome.github.io/#source/cath)**: Hierarchical classification of protein domain structures. Releases: 3.x, v4.0.0, v4.1.0, v4.2.0, v4.3.0, v4.4.0, daily.
-- **[SCOPe and SCOP](https://aliquome.github.io/#source/scope)**: Structural classification of proteins. Releases: SCOP 1.75, SCOPe 2.01, SCOPe 2.02, SCOPe 2.03, SCOPe 2.04, SCOPe 2.05, SCOPe 2.06, SCOPe 2.07, SCOPe 2.08.
-- **[PROSITE](https://aliquome.github.io/#source/prosite)**: Protein domains, families and functional sites. Releases: 06\_1, 07\_01, 08\_0, 10\_0–17\_0, 19\_0, 19\_19, 19\_29, 2017\_01–2026\_03, 2026\_04.
-- **[NCBI CDD](https://aliquome.github.io/#source/cdd)**: Conserved domain database. Releases: 3.20, 3.21, 3.22.
-- **[eggNOG](https://aliquome.github.io/#source/eggnog)**: Orthologous groups and functional annotation. Releases: 1.0, 2.0, 3.0, 4.0, 4.1, 4.5, 5.0, emapperdb 4.5.0, 4.5.1, 5.0.0, 5.0.1, 5.0.2, 6.0, novel\_fams 1.0.1.
-- **[OrthoDB](https://aliquome.github.io/#source/orthodb)**: Hierarchical catalogue of orthologs. Releases: v10.1, v11, v12.
-- **[KOfam](https://aliquome.github.io/#source/kofam)**: HMM profiles for KEGG orthologs. Releases: 2019–2024, 2025-01-01–2025-12-01, 2026-01-01–2026-06-01, 2026-07-02, 2026-08-02, 2026-09-01, current.
-- **[MGnify protein database](https://aliquome.github.io/#source/mgnify-proteins)**: Protein sequences predicted from metagenomic assemblies. Releases: 2017\_08, 2017\_11, 2018\_02, 2018\_03, 2018\_04, 2018\_05, 2018\_06, 2018\_09, 2018\_11, 2018\_12, 2019\_05, 2022\_05, 2023\_02, 2024\_04, 2026\_06, 2026\_07.
-- **[UniClust30 / UniRef30](https://aliquome.github.io/#source/uniref30)**: Clustered sequence databases in HH-suite format, used for MSAs. Releases: 2016\_03, 2016\_09, 2017\_02, 2017\_04, 2017\_07, 2017\_10, 2018\_08, 2019\_11, 2020\_01, 2020\_02, 2020\_03, 2020\_06, 2021\_03, 2022\_02, 2023\_01, 2023\_02.
+- **[UniProt](https://aliquome.github.io/db/uniprot/)**: Protein sequence and function knowledgebase. Releases: release 1.0–15.0, 2010\_01–2020\_01, 2021\_01 / 2021\_02 / 2021\_03, 2021\_04, 2022\_01, 2022\_02, 2022\_03, 2022\_04, 2022\_05, 2023\_01, 2023\_02, 2023\_03, 2023\_04, 2023\_05, 2024\_01, 2024\_02, 2024\_03, 2024\_04, 2024\_05, 2024\_06, 2025\_01, 2025\_02, 2025\_03, 2025\_04, 2026\_01, 2026\_02, 2026\_03, 2026\_04.
+- **[Protein Data Bank](https://aliquome.github.io/db/pdb/)**: Experimental 3D structures, with yearly snapshots. Releases: 20050106, 20060103, 20070102, 20070731, 20080107, 20090105, 20090316, 20100104, 20110103, 20110707, 20120102, 20130101, 20140102, 20141203, 20150102, 20160101, 20160302, 20170101, 20170308, 20170710, 20180101, 20180321, 20190101, 20200101, 20200610, 20200722, 20200916, 20210105, 20220103, 20230102, 20240101, 20250101, 20260101, 20260415.
+- **[AlphaFold DB](https://aliquome.github.io/db/alphafold/)**: Predicted protein structures, versions v1 to v6. Releases: v1, v2, v3, v4, v5, v6.
+- **[ESM Metagenomic Atlas](https://aliquome.github.io/db/esm-atlas/)**: Predicted structures for metagenomic proteins. Releases: v0, v2023\_02.
+- **[Pfam](https://aliquome.github.io/db/pfam/)**: Protein families as hidden Markov models. Releases: 1.0, 4.0–4.4, 5.0–5.5, 6.0–6.6, 7.0–7.8, 8.0, 9.0, 10.0–33.0, 33.1, 34.0, 35.0, 36.0 / 37.0, 37.1, 37.2, 37.3, 37.4, 38.0, 38.1 / 38.2, 39.0, Pfam\_SARS-CoV-2 1.0 / 2.0.
+- **[InterPro](https://aliquome.github.io/db/interpro/)**: Integrated protein family, domain and site annotation. Releases: 1.0–23.1, 24.0–72.0, 73.0, 74.0, 75.0, 76.0, 78.0, 79.0, 80.0, 81.0, 82.0, 83.0, 84.0 / 85.0, 86.0, 87.0, 88.0, 89.0–97.0, 98.0, 99.0, 100.0, 101.0, 102.0, 103.0, 104.0, 105.0, 106.0, 107.0, 108.0, 109.0, 110.0, 111.0.
+- **[CATH](https://aliquome.github.io/db/cath/)**: Hierarchical classification of protein domain structures. Releases: 3.x, v4.0.0, v4.1.0, v4.2.0, v4.3.0, v4.4.0, daily.
+- **[SCOPe and SCOP](https://aliquome.github.io/db/scope/)**: Structural classification of proteins. Releases: SCOP 1.75, SCOPe 2.01, SCOPe 2.02, SCOPe 2.03, SCOPe 2.04, SCOPe 2.05, SCOPe 2.06, SCOPe 2.07, SCOPe 2.08.
+- **[PROSITE](https://aliquome.github.io/db/prosite/)**: Protein domains, families and functional sites. Releases: 06\_1, 07\_01, 08\_0, 10\_0–17\_0, 19\_0, 19\_19, 19\_29, 2017\_01–2026\_03, 2026\_04.
+- **[NCBI CDD](https://aliquome.github.io/db/cdd/)**: Conserved domain database. Releases: 3.20, 3.21, 3.22.
+- **[eggNOG](https://aliquome.github.io/db/eggnog/)**: Orthologous groups and functional annotation. Releases: 1.0, 2.0, 3.0, 4.0, 4.1, 4.5, 5.0, emapperdb 4.5.0, 4.5.1, 5.0.0, 5.0.1, 5.0.2, 6.0, novel\_fams 1.0.1.
+- **[OrthoDB](https://aliquome.github.io/db/orthodb/)**: Hierarchical catalogue of orthologs. Releases: v10.1, v11, v12.
+- **[KOfam](https://aliquome.github.io/db/kofam/)**: HMM profiles for KEGG orthologs. Releases: 2019–2024, 2025-01-01–2025-12-01, 2026-01-01–2026-06-01, 2026-07-02, 2026-08-02, 2026-09-01, current.
+- **[MGnify protein database](https://aliquome.github.io/db/mgnify-proteins/)**: Protein sequences predicted from metagenomic assemblies. Releases: 2017\_08, 2017\_11, 2018\_02, 2018\_03, 2018\_04, 2018\_05, 2018\_06, 2018\_09, 2018\_11, 2018\_12, 2019\_05, 2022\_05, 2023\_02, 2024\_04, 2026\_06, 2026\_07.
+- **[UniClust30 / UniRef30](https://aliquome.github.io/db/uniref30/)**: Clustered sequence databases in HH-suite format, used for MSAs. Releases: 2016\_03, 2016\_09, 2017\_02, 2017\_04, 2017\_07, 2017\_10, 2018\_08, 2019\_11, 2020\_01, 2020\_02, 2020\_03, 2020\_06, 2021\_03, 2022\_02, 2023\_01, 2023\_02.
 
 </details>
 
 <details>
 <summary><b>Pathways, networks and ontologies</b> (11 databases)</summary>
 
-- **[KEGG](https://aliquome.github.io/#source/kegg)**: Pathways, genomes, compounds and orthologs. Releases: 113.0, 114.0, 115.0, 115.1, 116.0, 116.1, 117.0, 118.0, 118.1, 118.2, 119.0, 120.0.
-- **[Reactome](https://aliquome.github.io/#source/reactome)**: Curated, peer-reviewed pathway database. Releases: V73, V74, V75, V76, V77, V78, V79, V80, V81, V82, V83, V84, V85, V86, V87, V88, V89, V90, V91, V92, V93, V94, V95, V96, V97, V98.
-- **[STRING](https://aliquome.github.io/#source/string)**: Protein-protein association networks. Releases: 3.0, 4.0, 5.1, 6.0, 6.2, 6.3, 7.0, 7.1, 8.0, 8.1, 8.2, 8.3, 9.0, 9.05, 9.1, 10.0a, 10.0, 10.5, 11.0, 11.0b, 11.5, 12.0, 12.5.
-- **[BioGRID](https://aliquome.github.io/#source/biogrid)**: Curated protein, genetic and chemical interactions. Releases: 2.0.17, 2.0.x–4.4.x, 4.4.249, 5.0.249–5.0.262, 5.0.263.
-- **[Gene Ontology](https://aliquome.github.io/#source/go)**: Ontology and annotations for gene function. Releases: 2004-03-01–2024, 2025-02-06, 2025-03-16, 2025-06-01, 2025-07-22, 2025-10-10, 2026-01-23, 2026-03-25, 2026-05-19, 2026-06-19, 2026-08-05.
-- **[Human Phenotype Ontology](https://aliquome.github.io/#source/hpo)**: Standard vocabulary of human phenotypic abnormalities. Releases: v2025-05-06, v2025-08-11, v2025-09-01, v2025-10-22, v2025-11-24, v2026-01-08, v2026-02-16, v2026-06-06, v2026-06-23, v2026-09-01.
-- **[MONDO](https://aliquome.github.io/#source/mondo)**: Unified disease ontology. Releases: v2026-02-03, v2026-03-03, v2026-04-07, v2026-05-05, v2026-06-02, v2026-07-06, v2026-08-04, v2026-09-01, v2026-10-06, v2026-11-03.
-- **[UMLS](https://aliquome.github.io/#source/umls)**: Unified Medical Language System metathesaurus. Releases: 2002AA–2003AC, 2004AA, 2004AB–2015AB, 2016AA, 2016AB, 2017AA, 2017AB, 2018AA, 2018AB, 2019AA, 2019AB, 2020AA, 2020AB, 2021AA, 2021AB, 2022AA, 2022AB, 2023AA, 2023AB, 2024AA, 2024AB, 2025AA, 2025AB, 2026AA, 2026AB.
-- **[MSigDB](https://aliquome.github.io/#source/msigdb)**: Gene set collections for enrichment analysis. Releases: v1.0, v2.x–v7.5.1, 2022.1.Hs / 2022.1.Mm, 2023.1 / 2023.2, 2024.1, 2025.1.Hs, 2026.1.Hs / 2026.1.Mm, 2026.2.
-- **[CORUM](https://aliquome.github.io/#source/corum)**: Mammalian protein complexes. Releases: 1.0, 2.0, 3.0, 4.0 / 4.1, 5.0.
-- **[Pathway Commons](https://aliquome.github.io/#source/pathway-commons)**: Aggregated pathway and interaction data. Releases: PC1, PC2 v1–v12, PC2 v13, PC2 v14.
+- **[KEGG](https://aliquome.github.io/db/kegg/)**: Pathways, genomes, compounds and orthologs. Releases: 113.0, 114.0, 115.0, 115.1, 116.0, 116.1, 117.0, 118.0, 118.1, 118.2, 119.0, 120.0.
+- **[Reactome](https://aliquome.github.io/db/reactome/)**: Curated, peer-reviewed pathway database. Releases: V73, V74, V75, V76, V77, V78, V79, V80, V81, V82, V83, V84, V85, V86, V87, V88, V89, V90, V91, V92, V93, V94, V95, V96, V97, V98.
+- **[STRING](https://aliquome.github.io/db/string/)**: Protein-protein association networks. Releases: 3.0, 4.0, 5.1, 6.0, 6.2, 6.3, 7.0, 7.1, 8.0, 8.1, 8.2, 8.3, 9.0, 9.05, 9.1, 10.0a, 10.0, 10.5, 11.0, 11.0b, 11.5, 12.0, 12.5.
+- **[BioGRID](https://aliquome.github.io/db/biogrid/)**: Curated protein, genetic and chemical interactions. Releases: 2.0.17, 2.0.x–4.4.x, 4.4.249, 5.0.249–5.0.262, 5.0.263.
+- **[Gene Ontology](https://aliquome.github.io/db/go/)**: Ontology and annotations for gene function. Releases: 2004-03-01–2024, 2025-02-06, 2025-03-16, 2025-06-01, 2025-07-22, 2025-10-10, 2026-01-23, 2026-03-25, 2026-05-19, 2026-06-19, 2026-08-05.
+- **[Human Phenotype Ontology](https://aliquome.github.io/db/hpo/)**: Standard vocabulary of human phenotypic abnormalities. Releases: v2025-05-06, v2025-08-11, v2025-09-01, v2025-10-22, v2025-11-24, v2026-01-08, v2026-02-16, v2026-06-06, v2026-06-23, v2026-09-01.
+- **[MONDO](https://aliquome.github.io/db/mondo/)**: Unified disease ontology. Releases: v2026-02-03, v2026-03-03, v2026-04-07, v2026-05-05, v2026-06-02, v2026-07-06, v2026-08-04, v2026-09-01, v2026-10-06, v2026-11-03.
+- **[UMLS](https://aliquome.github.io/db/umls/)**: Unified Medical Language System metathesaurus. Releases: 2002AA–2003AC, 2004AA, 2004AB–2015AB, 2016AA, 2016AB, 2017AA, 2017AB, 2018AA, 2018AB, 2019AA, 2019AB, 2020AA, 2020AB, 2021AA, 2021AB, 2022AA, 2022AB, 2023AA, 2023AB, 2024AA, 2024AB, 2025AA, 2025AB, 2026AA, 2026AB.
+- **[MSigDB](https://aliquome.github.io/db/msigdb/)**: Gene set collections for enrichment analysis. Releases: v1.0, v2.x–v7.5.1, 2022.1.Hs / 2022.1.Mm, 2023.1 / 2023.2, 2024.1, 2025.1.Hs, 2026.1.Hs / 2026.1.Mm, 2026.2.
+- **[CORUM](https://aliquome.github.io/db/corum/)**: Mammalian protein complexes. Releases: 1.0, 2.0, 3.0, 4.0 / 4.1, 5.0.
+- **[Pathway Commons](https://aliquome.github.io/db/pathway-commons/)**: Aggregated pathway and interaction data. Releases: PC1, PC2 v1–v12, PC2 v13, PC2 v14.
 
 </details>
 
 <details>
 <summary><b>Chemistry and drug discovery</b> (7 databases)</summary>
 
-- **[ChEMBL](https://aliquome.github.io/#source/chembl)**: Bioactive molecules with drug-like properties. Releases: chembl\_01–chembl\_20, chembl\_21, chembl\_22, chembl\_22\_1, chembl\_23, chembl\_24, chembl\_24\_1, chembl\_25, chembl\_26, chembl\_27, chembl\_28, chembl\_29, chembl\_30, chembl\_31, chembl\_32, chembl\_33, chembl\_34, chembl\_35, chembl\_36, chembl\_37.
-- **[Open Targets Platform](https://aliquome.github.io/#source/opentargets)**: Target-disease evidence for drug discovery. Releases: 16.04, 16.08, 16.12, 17.02, 17.04, 17.06, 17.09, 17.12, 18.02, 18.04, 18.06, 18.08, 18.10, 18.12, 19.02, 19.04, 19.06, 19.09, 19.11, 20.02, 20.04, 20.06, 20.09, 20.11, 21.02, 21.04, 21.06, 21.09, 21.11, 22.02, 22.04, 22.06, 22.09, 22.11, 23.02, 23.06, 23.09, 23.12, 24.03, 24.06, 24.09, 25.03, 25.06, 25.09, 25.12, 26.03, 26.06, 26.09.
-- **[Open Targets Genetics (retired)](https://aliquome.github.io/#source/opentargets-genetics)**: Variant-to-gene evidence. Stopped at release 22.09. Releases: 190303, 190504, 190505, 20022712, 210608, 21.10.01, 22.02.01, 22.09.
-- **[DrugBank](https://aliquome.github.io/#source/drugbank)**: Drug and drug target information. Releases: 5.1.12, 5.1.13, 5.1.14, 5.1.22.
-- **[PDBbind](https://aliquome.github.io/#source/pdbbind)**: Binding affinities for biomolecular complexes in the PDB. Releases: v2007–v2019, v2020, v2021, v2024 and later.
-- **[HMDB](https://aliquome.github.io/#source/hmdb)**: Human metabolome database. Releases: 1.0, 2.0 / 2.5, 3.0 / 3.6, 4.0, 5.0.
-- **[Papyrus](https://aliquome.github.io/#source/papyrus)**: Large-scale curated bioactivity dataset. Releases: 05.4, 05.5 / 05.6 / 05.7.
+- **[ChEMBL](https://aliquome.github.io/db/chembl/)**: Bioactive molecules with drug-like properties. Releases: chembl\_01–chembl\_20, chembl\_21, chembl\_22, chembl\_22\_1, chembl\_23, chembl\_24, chembl\_24\_1, chembl\_25, chembl\_26, chembl\_27, chembl\_28, chembl\_29, chembl\_30, chembl\_31, chembl\_32, chembl\_33, chembl\_34, chembl\_35, chembl\_36, chembl\_37.
+- **[Open Targets Platform](https://aliquome.github.io/db/opentargets/)**: Target-disease evidence for drug discovery. Releases: 16.04, 16.08, 16.12, 17.02, 17.04, 17.06, 17.09, 17.12, 18.02, 18.04, 18.06, 18.08, 18.10, 18.12, 19.02, 19.04, 19.06, 19.09, 19.11, 20.02, 20.04, 20.06, 20.09, 20.11, 21.02, 21.04, 21.06, 21.09, 21.11, 22.02, 22.04, 22.06, 22.09, 22.11, 23.02, 23.06, 23.09, 23.12, 24.03, 24.06, 24.09, 25.03, 25.06, 25.09, 25.12, 26.03, 26.06, 26.09.
+- **[Open Targets Genetics (retired)](https://aliquome.github.io/db/opentargets-genetics/)**: Variant-to-gene evidence. Stopped at release 22.09. Releases: 190303, 190504, 190505, 20022712, 210608, 21.10.01, 22.02.01, 22.09.
+- **[DrugBank](https://aliquome.github.io/db/drugbank/)**: Drug and drug target information. Releases: 5.1.12, 5.1.13, 5.1.14, 5.1.22.
+- **[PDBbind](https://aliquome.github.io/db/pdbbind/)**: Binding affinities for biomolecular complexes in the PDB. Releases: v2007–v2019, v2020, v2021, v2024 and later.
+- **[HMDB](https://aliquome.github.io/db/hmdb/)**: Human metabolome database. Releases: 1.0, 2.0 / 2.5, 3.0 / 3.6, 4.0, 5.0.
+- **[Papyrus](https://aliquome.github.io/db/papyrus/)**: Large-scale curated bioactivity dataset. Releases: 05.4, 05.5 / 05.6 / 05.7.
 
 </details>
 
 <details>
 <summary><b>Epigenomics and regulation</b> (4 databases)</summary>
 
-- **[JASPAR](https://aliquome.github.io/#source/jaspar)**: Transcription factor binding profiles. Releases: 2004, 2006, 2008, 2010, 2014, 2016, 2018, 2020, 2022, 2024, 2026.
-- **[HOCOMOCO](https://aliquome.github.io/#source/hocomoco)**: Transcription factor binding models for human and mouse. Releases: v9, v10, v11, v12, v13, v14.
-- **[ReMap](https://aliquome.github.io/#source/remap)**: Atlas of regulatory regions from ChIP-seq. Releases: ReMap 2018, ReMap 2020, ReMap 2022.
-- **[ENCODE cCRE Registry](https://aliquome.github.io/#source/encode-ccre)**: Candidate cis-regulatory elements. Releases: V1, V2, V3, V4.
+- **[JASPAR](https://aliquome.github.io/db/jaspar/)**: Transcription factor binding profiles. Releases: 2004, 2006, 2008, 2010, 2014, 2016, 2018, 2020, 2022, 2024, 2026.
+- **[HOCOMOCO](https://aliquome.github.io/db/hocomoco/)**: Transcription factor binding models for human and mouse. Releases: v9, v10, v11, v12, v13, v14.
+- **[ReMap](https://aliquome.github.io/db/remap/)**: Atlas of regulatory regions from ChIP-seq. Releases: ReMap 2018, ReMap 2020, ReMap 2022.
+- **[ENCODE cCRE Registry](https://aliquome.github.io/db/encode-ccre/)**: Candidate cis-regulatory elements. Releases: V1, V2, V3, V4.
 
 </details>
 
 <details>
 <summary><b>RNA</b> (5 databases)</summary>
 
-- **[RNAcentral](https://aliquome.github.io/#source/rnacentral)**: Non-coding RNA sequences from many databases. Releases: 1–24, 25, 26, 27, 28.
-- **[Rfam](https://aliquome.github.io/#source/rfam)**: RNA families. Releases: 12.0–12.3, 13.0, 14.0–14.10, 15.0, 15.1.
-- **[miRBase](https://aliquome.github.io/#source/mirbase)**: MicroRNA sequences and annotation. Releases: 1.0, 20, 21, 22, 22.1.
-- **[miRTarBase](https://aliquome.github.io/#source/mirtarbase)**: Experimentally validated microRNA-target interactions. Releases: 1.0, 6.0, 7.0, 8.0, 9.0, 10.0.
-- **[TargetScan](https://aliquome.github.io/#source/targetscan)**: Predicted microRNA targets. Releases: 6.2, 7.0, 7.1, 7.2, 8.0.
+- **[RNAcentral](https://aliquome.github.io/db/rnacentral/)**: Non-coding RNA sequences from many databases. Releases: 1–24, 25, 26, 27, 28.
+- **[Rfam](https://aliquome.github.io/db/rfam/)**: RNA families. Releases: 12.0–12.3, 13.0, 14.0–14.10, 15.0, 15.1.
+- **[miRBase](https://aliquome.github.io/db/mirbase/)**: MicroRNA sequences and annotation. Releases: 1.0, 20, 21, 22, 22.1.
+- **[miRTarBase](https://aliquome.github.io/db/mirtarbase/)**: Experimentally validated microRNA-target interactions. Releases: 1.0, 6.0, 7.0, 8.0, 9.0, 10.0.
+- **[TargetScan](https://aliquome.github.io/db/targetscan/)**: Predicted microRNA targets. Releases: 6.2, 7.0, 7.1, 7.2, 8.0.
 
 </details>
 
 <details>
 <summary><b>Microbiome and metagenomics</b> (6 databases)</summary>
 
-- **[SILVA](https://aliquome.github.io/#source/silva)**: Ribosomal RNA gene database. SSU and LSU have separate release numbers. Releases: 102, 104, 106, 108, 111, 115, 119, 119.1, 123 / 123.1, 128, 132, 138, 138.1, 138.2, 144.
-- **[GTDB](https://aliquome.github.io/#source/gtdb)**: Genome-based taxonomy for bacteria and archaea. Releases: R80, R83, R86, R89, R95, R06-RS202, R07-RS207, R08-RS214, R09-RS220, R10-RS226, R11-RS232.
-- **[Kraken2 prebuilt indexes](https://aliquome.github.io/#source/kraken2)**: Dated prebuilt Kraken2 databases. Releases: 20200919, 20201202 / 20210127, 20210517, 20220607, 20220908 / 20220926, 20221209, 20230314, 20230407, 20230502 / 20231129 / 20240530, 20230605, 20231009, 20240112, 20240605, 20240904, 20241109, 20241228, 20250402, 20250609, 20250714, 20251007, 20251015, 20260226, 20260626, 20261022.
-- **[UNITE](https://aliquome.github.io/#source/unite)**: Fungal ITS sequences for identification. Releases: 7.0, 7.1, 7.2, 8.0, 8.2, 8.3, 9.0, 10.0.
-- **[Greengenes and Greengenes2](https://aliquome.github.io/#source/greengenes)**: 16S rRNA reference taxonomy. Releases: Greengenes 13\_5 / 13\_8, Greengenes2 2022.10, Greengenes2 2024.09.
-- **[MetaPhlAn / ChocoPhlAn](https://aliquome.github.io/#source/metaphlan)**: Marker gene databases for metagenomic profiling. Releases: mpa\_v20\_m200, mpa\_v30, mpa\_v31, mpa\_vJan21, mpa\_vOct22\_CHOCOPhlAnSGB\_202212, mpa\_vJun23\_CHOCOPhlAnSGB\_202307, mpa\_vJan25\_CHOCOPhlAnSGB\_202503.
+- **[SILVA](https://aliquome.github.io/db/silva/)**: Ribosomal RNA gene database. SSU and LSU have separate release numbers. Releases: 102, 104, 106, 108, 111, 115, 119, 119.1, 123 / 123.1, 128, 132, 138, 138.1, 138.2, 144.
+- **[GTDB](https://aliquome.github.io/db/gtdb/)**: Genome-based taxonomy for bacteria and archaea. Releases: R80, R83, R86, R89, R95, R06-RS202, R07-RS207, R08-RS214, R09-RS220, R10-RS226, R11-RS232.
+- **[Kraken2 prebuilt indexes](https://aliquome.github.io/db/kraken2/)**: Dated prebuilt Kraken2 databases. Releases: 20200919, 20201202 / 20210127, 20210517, 20220607, 20220908 / 20220926, 20221209, 20230314, 20230407, 20230502 / 20231129 / 20240530, 20230605, 20231009, 20240112, 20240605, 20240904, 20241109, 20241228, 20250402, 20250609, 20250714, 20251007, 20251015, 20260226, 20260626, 20261022.
+- **[UNITE](https://aliquome.github.io/db/unite/)**: Fungal ITS sequences for identification. Releases: 7.0, 7.1, 7.2, 8.0, 8.2, 8.3, 9.0, 10.0.
+- **[Greengenes and Greengenes2](https://aliquome.github.io/db/greengenes/)**: 16S rRNA reference taxonomy. Releases: Greengenes 13\_5 / 13\_8, Greengenes2 2022.10, Greengenes2 2024.09.
+- **[MetaPhlAn / ChocoPhlAn](https://aliquome.github.io/db/metaphlan/)**: Marker gene databases for metagenomic profiling. Releases: mpa\_v20\_m200, mpa\_v30, mpa\_v31, mpa\_vJan21, mpa\_vOct22\_CHOCOPhlAnSGB\_202212, mpa\_vJun23\_CHOCOPhlAnSGB\_202307, mpa\_vJan25\_CHOCOPhlAnSGB\_202503.
 
 </details>
 
 <details>
 <summary><b>Benchmarks and machine learning</b> (3 databases)</summary>
 
-- **[ProteinGym](https://aliquome.github.io/#source/proteingym)**: Benchmarks for protein fitness and variant effect prediction. Releases: v0.1, v1.0, v1.1, v1.2, v1.3.
-- **[CASP](https://aliquome.github.io/#source/casp)**: Critical Assessment of protein Structure Prediction. Releases: CASP1–CASP15, CASP16, CASP17.
-- **[CAFA](https://aliquome.github.io/#source/cafa)**: Critical Assessment of Functional Annotation. Releases: CAFA1, CAFA2, CAFA3, CAFA4, CAFA5, CAFA6.
+- **[ProteinGym](https://aliquome.github.io/db/proteingym/)**: Benchmarks for protein fitness and variant effect prediction. Releases: v0.1, v1.0, v1.1, v1.2, v1.3.
+- **[CASP](https://aliquome.github.io/db/casp/)**: Critical Assessment of protein Structure Prediction. Releases: CASP1–CASP15, CASP16, CASP17.
+- **[CAFA](https://aliquome.github.io/db/cafa/)**: Critical Assessment of Functional Annotation. Releases: CAFA1, CAFA2, CAFA3, CAFA4, CAFA5, CAFA6.
 
 </details>
 
@@ -326,585 +326,585 @@ Everything on [aliquome.github.io](https://aliquome.github.io/), as plain lists.
 <details>
 <summary><b>Genomes and annotation</b> (22 datasets)</summary>
 
-- **[Genomic Benchmarks](https://aliquome.github.io/#datasets/genomes/Genomic%20Benchmarks)**: Collection of genomic sequence classification datasets.
-- **[Genomic-FM](https://aliquome.github.io/#datasets/genomes/Genomic-FM)**: Large dataset for benchmarking genomic foundation models.
-- **[AFGR](https://aliquome.github.io/#datasets/genomes/AFGR)**: African Functional Genomics Resource of genomic and expression data from African populations.
-- **[Basenji2 / Enformer / Borzoi](https://aliquome.github.io/#datasets/genomes/Basenji2%20%2F%20Enformer%20%2F%20Borzoi)**: Training data for sequence-to-function models predicting genomic tracks.
-- **[BEND](https://aliquome.github.io/#datasets/genomes/BEND)**: DNA language model benchmark with 7 tasks: genes, enhancers, chromatin accessibility, methylation and variant effects.
-- **[BIOSCAN-5M](https://aliquome.github.io/#datasets/genomes/BIOSCAN-5M)**: As part of an ongoing worldwide effort to comprehend and monitor insect biodiversity, we present the BIOSCAN-5M Insect dataset to the machine learning community.
-- **[Cellcycle Funcat](https://aliquome.github.io/#datasets/genomes/Cellcycle%20Funcat)**: Hierarchical multi-label classification dataset for functional genomics
-- **[DART-Eval](https://aliquome.github.io/#datasets/genomes/DART-Eval)**: Benchmark for regulatory DNA models across five levels of difficulty.
-- **[Derisi Funcat](https://aliquome.github.io/#datasets/genomes/Derisi%20Funcat)**: Hierarchical-multilabel classification dataset for functional genomics
-- **[Eisen Funcat](https://aliquome.github.io/#datasets/genomes/Eisen%20Funcat)**: Hierarchical-multilabel classification dataset for functional genomics
-- **[Expr Funcat](https://aliquome.github.io/#datasets/genomes/Expr%20Funcat)**: Hierarchical-multilabel classification dataset for functional genomics
-- **[Gasch1 Funcat](https://aliquome.github.io/#datasets/genomes/Gasch1%20Funcat)**: Hierarchical-multilabel classification dataset for functional genomics
-- **[Gasch2 Funcat](https://aliquome.github.io/#datasets/genomes/Gasch2%20Funcat)**: Hierarchical-multilabel classification dataset for functional genomics
-- **[GenoAdv](https://aliquome.github.io/#datasets/genomes/GenoAdv)**: Genomics Adversarial Attack Sample dataset
-- **[gReLU](https://aliquome.github.io/#datasets/genomes/gReLU)**: Framework and model zoo for DNA sequence models.
-- **[GUE / GUE+](https://aliquome.github.io/#datasets/genomes/GUE%20%2F%20GUE%2B)**: Genome Understanding Evaluation from DNABERT-2: 28 datasets across 7 tasks and 4 species.
-- **[latent-dna-diffusion](https://aliquome.github.io/#datasets/genomes/latent-dna-diffusion)**: Click to add a brief description of the dataset (Markdown and LaTeX enabled).
-- **[Multi-species DNA](https://aliquome.github.io/#datasets/genomes/Multi-species%20DNA)**: Latent DNA Diffusion Dataset
-- **[NCBI Datasets](https://aliquome.github.io/#datasets/genomes/NCBI%20Datasets)**: NCBI Datasets is a valuable resource that simplifies the process of gathering data from various NCBI databases. Whether you’re a researcher, scientist, or…
-- **[riboflavin](https://aliquome.github.io/#datasets/genomes/riboflavin)**: The dataset contains 71 samples with (normalized) expression data for 4,088 genes. The response variable is the riboflavin production rate in Bacilluss subtilis. It may…
-- **[Seq Funcat](https://aliquome.github.io/#datasets/genomes/Seq%20Funcat)**: Hierarchical-multilabel classification dataset for functional genomics
-- **[Spo Funcat](https://aliquome.github.io/#datasets/genomes/Spo%20Funcat)**: Hierarchical-multilabel classification dataset for functional genomics
+- **[Genomic Benchmarks](https://aliquome.github.io/datasets/genomic-benchmarks/)**: Collection of genomic sequence classification datasets.
+- **[Genomic-FM](https://aliquome.github.io/datasets/genomic-fm/)**: Large dataset for benchmarking genomic foundation models.
+- **[AFGR](https://aliquome.github.io/datasets/afgr/)**: African Functional Genomics Resource of genomic and expression data from African populations.
+- **[Basenji2 / Enformer / Borzoi](https://aliquome.github.io/datasets/basenji2-enformer-borzoi/)**: Training data for sequence-to-function models predicting genomic tracks.
+- **[BEND](https://aliquome.github.io/datasets/bend/)**: DNA language model benchmark with 7 tasks: genes, enhancers, chromatin accessibility, methylation and variant effects.
+- **[BIOSCAN-5M](https://aliquome.github.io/datasets/bioscan-5m/)**: As part of an ongoing worldwide effort to comprehend and monitor insect biodiversity, we present the BIOSCAN-5M Insect dataset to the machine learning community.
+- **[Cellcycle Funcat](https://aliquome.github.io/datasets/cellcycle-funcat/)**: Hierarchical multi-label classification dataset for functional genomics
+- **[DART-Eval](https://aliquome.github.io/datasets/dart-eval/)**: Benchmark for regulatory DNA models across five levels of difficulty.
+- **[Derisi Funcat](https://aliquome.github.io/datasets/derisi-funcat/)**: Hierarchical-multilabel classification dataset for functional genomics
+- **[Eisen Funcat](https://aliquome.github.io/datasets/eisen-funcat/)**: Hierarchical-multilabel classification dataset for functional genomics
+- **[Expr Funcat](https://aliquome.github.io/datasets/expr-funcat/)**: Hierarchical-multilabel classification dataset for functional genomics
+- **[Gasch1 Funcat](https://aliquome.github.io/datasets/gasch1-funcat/)**: Hierarchical-multilabel classification dataset for functional genomics
+- **[Gasch2 Funcat](https://aliquome.github.io/datasets/gasch2-funcat/)**: Hierarchical-multilabel classification dataset for functional genomics
+- **[GenoAdv](https://aliquome.github.io/datasets/genoadv/)**: Genomics Adversarial Attack Sample dataset
+- **[gReLU](https://aliquome.github.io/datasets/grelu/)**: Framework and model zoo for DNA sequence models.
+- **[GUE / GUE+](https://aliquome.github.io/datasets/gue-gue/)**: Genome Understanding Evaluation from DNABERT-2: 28 datasets across 7 tasks and 4 species.
+- **[latent-dna-diffusion](https://aliquome.github.io/datasets/latent-dna-diffusion/)**: Click to add a brief description of the dataset (Markdown and LaTeX enabled).
+- **[Multi-species DNA](https://aliquome.github.io/datasets/multi-species-dna/)**: Latent DNA Diffusion Dataset
+- **[NCBI Datasets](https://aliquome.github.io/datasets/ncbi-datasets/)**: NCBI Datasets is a valuable resource that simplifies the process of gathering data from various NCBI databases. Whether you’re a researcher, scientist, or…
+- **[riboflavin](https://aliquome.github.io/datasets/riboflavin/)**: The dataset contains 71 samples with (normalized) expression data for 4,088 genes. The response variable is the riboflavin production rate in Bacilluss subtilis. It may…
+- **[Seq Funcat](https://aliquome.github.io/datasets/seq-funcat/)**: Hierarchical-multilabel classification dataset for functional genomics
+- **[Spo Funcat](https://aliquome.github.io/datasets/spo-funcat/)**: Hierarchical-multilabel classification dataset for functional genomics
 
 </details>
 
 <details>
 <summary><b>Variants and population genetics</b> (3 datasets)</summary>
 
-- **[DNA mutations](https://aliquome.github.io/#datasets/variants/DNA%20mutations)**: In bioinformatics, the issue of mutation discovery and type determination remains a significant concern. The problem is divided by the researchers into binary…
-- **[QTL](https://aliquome.github.io/#datasets/variants/QTL)**: We present QTL, a real-life DS-NER application in the animal science domain. The entity type to recognize is “trait”, an important task in the construction of…
-- **[Summaries of genetic variation](https://aliquome.github.io/#datasets/variants/Summaries%20of%20genetic%20variation)**: The dataset represents data generated from a commonly used model in population genetics. It comprises a matrix of 1,000,000 rows and 9 columns, representing parameters…
+- **[DNA mutations](https://aliquome.github.io/datasets/dna-mutations/)**: In bioinformatics, the issue of mutation discovery and type determination remains a significant concern. The problem is divided by the researchers into binary…
+- **[QTL](https://aliquome.github.io/datasets/qtl/)**: We present QTL, a real-life DS-NER application in the animal science domain. The entity type to recognize is “trait”, an important task in the construction of…
+- **[Summaries of genetic variation](https://aliquome.github.io/datasets/summaries-of-genetic-variation/)**: The dataset represents data generated from a commonly used model in population genetics. It comprises a matrix of 1,000,000 rows and 9 columns, representing parameters…
 
 </details>
 
 <details>
 <summary><b>Cancer genomics</b> (75 datasets)</summary>
 
-- **[cBioPortal DataHub](https://aliquome.github.io/#datasets/cancer/cBioPortal%20DataHub)**: Hundreds of cancer genomics studies, including TCGA, in cBioPortal format.
-- **[BCSS](https://aliquome.github.io/#datasets/cancer/BCSS)**: Breast Cancer Semantic Segmentation dataset of annotated TCGA histology regions.
-- **[BSCCM](https://aliquome.github.io/#datasets/cancer/BSCCM)**: Berkeley Single Cell Computational Microscopy dataset of multi-contrast white blood cell images.
-- **[cancer\_data](https://aliquome.github.io/#datasets/cancer/cancer_data)**: Unified downloader for DepMap/CCLE, GTEx and TCGA data.
-- **[TCGA BRCA PAM50](https://aliquome.github.io/#datasets/cancer/TCGA%20BRCA%20PAM50)**: TCGA breast cancer data with PAM50 subtype analysis.
-- **[Oncology trial failures](https://aliquome.github.io/#datasets/cancer/Oncology%20trial%20failures)**: About 23,000 terminated or halted oncology clinical trials.
-- **[AI-ready multiplex IHC-IF dataset](https://aliquome.github.io/#datasets/cancer/AI-ready%20multiplex%20IHC-IF%20dataset)**: We introduce a new AI-ready computational pathology dataset containing restained and co-registered digitized images from eight head-and-neck squamous cell carcinoma…
-- **[BACH](https://aliquome.github.io/#datasets/cancer/BACH)**: Breast cancer is the most common invasive cancer in women, affecting more than 10% of women worldwide. Microscopic analysis of a biopsy remains one of the most important…
-- **[BCI](https://aliquome.github.io/#datasets/cancer/BCI)**: The evaluation of human epidermal growth factor receptor 2 (HER2) expression is essential to formulate a precise treatment for breast cancer. The routine evaluation of…
-- **[BCNB](https://aliquome.github.io/#datasets/cancer/BCNB)**: Breast cancer (BC) has become the greatest threat to women’s health worldwide. Clinically, identification of axillary lymph node (ALN) metastasis and other tumor…
-- **[bcTCGA](https://aliquome.github.io/#datasets/cancer/bcTCGA)**: This data set comes from breast cancer tissue samples deposited to The Cancer Genome Atlas (TCGA) project. TCGA contains data on tumour samples were assayed on several…
-- **[Bio](https://aliquome.github.io/#datasets/cancer/Bio)**: This corpus includes annotations of cancer-related PubMed articles, covering 3 full papers (PMID:24651010, PMID:11777939, PMID:15630473) as well as the result sections…
-- **[BRACS](https://aliquome.github.io/#datasets/cancer/BRACS)**: BReAst Carcinoma Subtyping (BRACS) dataset, a large cohort of annotated Hematoxylin & Eosin (H&E)-stained images to facilitate the characterization of breast lesions.…
-- **[BreakHis](https://aliquome.github.io/#datasets/cancer/BreakHis)**: The Breast Cancer Histopathological Image Classification (BreakHis) is composed of 9,109 microscopic images of breast tumor tissue collected from 82 patients using…
-- **[CAMELYON16](https://aliquome.github.io/#datasets/cancer/CAMELYON16)**: The dataset consists of 400 whole-slide images (WSIs) of lymph node sections stained with hematoxylin and eosin (H&E), collected from two medical centers in the…
-- **[Cell](https://aliquome.github.io/#datasets/cancer/Cell)**: The CELL benchmark is made of fluorescence microscopy images of cell.
-- **[Chaoyang](https://aliquome.github.io/#datasets/cancer/Chaoyang)**: Chaoyang dataset contains 1111 normal, 842 serrated, 1404 adenocarcinoma, 664 adenoma, and 705 normal, 321 serrated, 840 adenocarcinoma, 273 adenoma samples for training…
-- **[CoCaHis](https://aliquome.github.io/#datasets/cancer/CoCaHis)**: Highlights
-- **[Colorectal Adenoma](https://aliquome.github.io/#datasets/cancer/Colorectal%20Adenoma)**: Colorectal Adenoma contains 177 whole slide images (156 contain adenoma) gathered and labelled by pathologists from the Department of Pathology, The Chinese PLA General…
-- **[CoNSeP](https://aliquome.github.io/#datasets/cancer/CoNSeP)**: The colorectal nuclear segmentation and phenotypes (CoNSeP) dataset consists of 41 H&E stained image tiles, each of size 1,000×1,000 pixels at 40× objective…
-- **[CRC100K](https://aliquome.github.io/#datasets/cancer/CRC100K)**: This is a set of 100,000 non-overlapping image patches from hematoxylin & eosin (H&E) stained histological images of human colorectal cancer (CRC) and normal tissue. All…
-- **[CRCDX](https://aliquome.github.io/#datasets/cancer/CRCDX)**: Histological images of colorectal cancer, derived from the TCGA database
-- **[CryoNuSeg](https://aliquome.github.io/#datasets/cancer/CryoNuSeg)**: CryoNuSeg is a fully annotated FS-derived cryosectioned and H&E-stained nuclei instance segmentation dataset. The dataset contains images from 10 human organs that were…
-- **[Data on: Cell Signaling and Targeted Drug Therapy of Cancer](https://aliquome.github.io/#datasets/cancer/Data%20on%3A%20Cell%20Signaling%20and%20Targeted%20Drug%20Therapy%20of%20Cancer)**: The landmark Cancer Genomics Program launched in 2006 has contributed immensely to the awareness of the importance of cancer genomics in our understanding of cancer over…
-- **[Dataset for ZAugNet](https://aliquome.github.io/#datasets/cancer/Dataset%20for%20ZAugNet)**: Dataset used to train ZAugNet, a neural network for Z-slice augmentation, that encompasses a variety of shapes, textures, and microscopy techniques, as described below:…
-- **[DiagSet](https://aliquome.github.io/#datasets/cancer/DiagSet)**: DiagSet is a histopathological dataset for prostate cancer detection. The proposed dataset consists of over 2.6 million tissue patches extracted from 430 fully annotated…
-- **[DigestPath](https://aliquome.github.io/#datasets/cancer/DigestPath)**: Introduced by Da et al. in DigestPath: a Benchmark Dataset with Challenge Review for the Pathological Detection and Segmentation of Digestive-System
-- **[Fluo-C3DH-A549-SIM](https://aliquome.github.io/#datasets/cancer/Fluo-C3DH-A549-SIM)**: Simulated GFP-actin-stained A549 Lung Cancer cells embedded in a Matrigel matrix
-- **[Fluo-N2DH-SIM+](https://aliquome.github.io/#datasets/cancer/Fluo-N2DH-SIM%2B)**: Simulated nuclei of HL60 cells stained with Hoescht
-- **[FocusPath](https://aliquome.github.io/#datasets/cancer/FocusPath)**: FocusPath is a dataset compiled from diverse Whole Slide Image (WSI) scans in different focus (z-) levels. Images are naturally blurred by out-of-focus lens provided…
-- **[Fraunhofer Portugal AICOS EDoF Dataset](https://aliquome.github.io/#datasets/cancer/Fraunhofer%20Portugal%20AICOS%20EDoF%20Dataset)**: The Fraunhofer Portugal AICOS EDoF Dataset was produced within the TAMI project and is composed of images of microscopic fields of view (FOV) of Liquid-based Cervical…
-- **[GasHisSDB](https://aliquome.github.io/#datasets/cancer/GasHisSDB)**: Four pathologists from Longhua Hospital Shanghai University of Traditional Chinese Medicine provide 600 images of gastric cancer pathology images at size…
-- **[GlaS](https://aliquome.github.io/#datasets/cancer/GlaS)**: The dataset used in this challenge consists of 165 images derived from 16 H&E stained histological sections of stage T3 or T42 colorectal adenocarcinoma. Each section…
-- **[H01](https://aliquome.github.io/#datasets/cancer/H01)**: The H01 dataset is a 1.4 petabyte rendering of a small sample of human brain tissue, released by a collaboration between the Lichtman Laboratory at Harvard University…
-- **[HistGen WSI-Report Dataset](https://aliquome.github.io/#datasets/cancer/HistGen%20WSI-Report%20Dataset)**: This dataset is composed of 7,753 pairs of whole slide images and their corresponding diagnostic reports, extracted from the TCGA platform and refined with large…
-- **[HistoArtifacts](https://aliquome.github.io/#datasets/cancer/HistoArtifacts)**: This dataset contains five notable histological artifacts: blur, blood (hemorrhage), air bubbles, folded tissue, and damaged tissue. This dataset is used in the…
-- **[Human Protein Atlas](https://aliquome.github.io/#datasets/cancer/Human%20Protein%20Atlas)**: The Human Protein Atlas contains images of histological sections from normal and cancer tissues obtained by immunohistochemistry. Antibodies are labeled with DAB…
-- **[ICIAR 2018 Grand Challenge on Breast Cancer Histology Images](https://aliquome.github.io/#datasets/cancer/ICIAR%202018%20Grand%20Challenge%20on%20Breast%20Cancer%20Histology%20Images)**: The dataset is composed of Hematoxylin and eosin (H&E) stained breast histology microscopy and whole-slide images. Challenge participants should evaluate the performance…
-- **[Immunocto](https://aliquome.github.io/#datasets/cancer/Immunocto)**: As a first step towards building models that can recognise immune cells in WSIs, we introduce Immunocto, a high-resolution (40 x magnification) massive database of…
-- **[JUMP-CP (cpg0016)](https://aliquome.github.io/#datasets/cancer/JUMP-CP%20(cpg0016))**: Cell Painting images and profiles for about 116,000 compounds and genetic perturbations.
-- **[Kumar](https://aliquome.github.io/#datasets/cancer/Kumar)**: The Kumar dataset contains 30 1,000×1,000 image tiles from seven organs (6 breast, 6 liver, 6 kidney, 6 prostate, 2 bladder, 2 colon and 2 stomach) of The Cancer Genome…
-- **[LC25000](https://aliquome.github.io/#datasets/cancer/LC25000)**: The LC25000 dataset contains 25,000 color images with 5 classes of 5,000 images each. All images are 768 x 768 pixels in size and are in jpeg file format. The 5 classes…
-- **[LeukemiaAttri](https://aliquome.github.io/#datasets/cancer/LeukemiaAttri)**: The LeukemiaAttri dataset is a large-scale, multi-domain collection of microscopy images derived from leukemia patient samples, enriched with detailed morphological…
-- **[LKS](https://aliquome.github.io/#datasets/cancer/LKS)**: LKS is a dataset of 684 Liver-Kidney-Stomach immunofluorescence whole slide images (WSIs) used in the investigation of autoimmune liver disease.
-- **[METABRIC](https://aliquome.github.io/#datasets/cancer/METABRIC)**: 
-- **[MHIST](https://aliquome.github.io/#datasets/cancer/MHIST)**: The minimalist histopathology image analysis dataset (MHIST) is a binary classification dataset of 3,152 fixed-size images of colorectal polyps, each with a…
-- **[MICCAI'2015 Gland Segmentation Challenge Contest Dataset](https://aliquome.github.io/#datasets/cancer/MICCAI'2015%20Gland%20Segmentation%20Challenge%20Contest%20Dataset)**: MICCAI'2015 Gland Segmentation Challenge Contest Dataset Welcome to the challenge on gland segmentation in histology images. This challenge was held in conjuction with…
-- **[Microscopy Image Dataset of Pulmonary Vascular Changes](https://aliquome.github.io/#datasets/cancer/Microscopy%20Image%20Dataset%20of%20Pulmonary%20Vascular%20Changes)**: Pulmonary hypertension (PH) is a syndrome complex that accompanies a number of diseases of different etiologies, associated with basic mechanisms of structural and…
-- **[Microscopy Images of Drosophila Wing](https://aliquome.github.io/#datasets/cancer/Microscopy%20Images%20of%20Drosophila%20Wing)**: Microscopy Images of the Drosophila Wing dataset are divided into two folders, Tumor/ No Tumor. The tumor folder has images of different stages of cancer, including both…
-- **[MITOS\_WSI\_CMC](https://aliquome.github.io/#datasets/cancer/MITOS_WSI_CMC)**: A dataset of 21 WSIs of CMC completely annotated for MF. For this, a pathologist screened all WSIs for potential MF and structures with a similar appearance.
-- **[MoNuSAC](https://aliquome.github.io/#datasets/cancer/MoNuSAC)**: Different types of cells play a vital role in the initiation, development, invasion, metastasis and therapeutic response of tumors of various organs.
-- **[MoNuSeg](https://aliquome.github.io/#datasets/cancer/MoNuSeg)**: The dataset for this challenge was obtained by carefully annotating tissue images of several patients with tumors of different organs and who were diagnosed at multiple…
-- **[MuCeD](https://aliquome.github.io/#datasets/cancer/MuCeD)**: MuCeD, a dataset that is carefully curated and validated by expert pathologists from the All India Institute of Medical Science (AIIMS), Delhi, India.
-- **[NAFLD pathology and healthy tissue samples](https://aliquome.github.io/#datasets/cancer/NAFLD%20pathology%20and%20healthy%20tissue%20samples)**: The dataset contains tiles extracted from Whole Slide Images (WSI) of stained tissue samples.
-- **[NCT-CRC-HE-100K](https://aliquome.github.io/#datasets/cancer/NCT-CRC-HE-100K)**: The NCT-CRC-HE-100K dataset is a set of 100,000 non-overlapping image patches extracted from 86 H$\\&$E stained human cancer tissue slides and normal tissue from the NCT…
-- **[NIH3T3](https://aliquome.github.io/#datasets/cancer/NIH3T3)**: The archive contains original images from NIH3T3 cells stained with Hoechst 33342 as PNG files. It also contains images (as Photoshop and GIMP files) showing…
-- **[NSCLC-Radiogenomics](https://aliquome.github.io/#datasets/cancer/NSCLC-Radiogenomics)**: Unique radiogenomic dataset from a Non-Small Cell Lung Cancer (NSCLC) cohort of 211 subjects. The dataset comprises Computed Tomography (CT), Positron Emission…
-- **[NuCLS](https://aliquome.github.io/#datasets/cancer/NuCLS)**: The NuCLS dataset contains over 220,000 labeled nuclei from breast cancer images from TCGA. These nuclei were annotated through the collaborative effort of pathologists,…
-- **[NucMM](https://aliquome.github.io/#datasets/cancer/NucMM)**: NucMM is a dataset for segmenting 3D cell nuclei from microscopy image volumes that pushes the task forward to the sub-cubic millimeter scale. It consists of two fully…
-- **[PanCancer Multimodal](https://aliquome.github.io/#datasets/cancer/PanCancer%20Multimodal)**: Dataset Card for The Cancer Genome Atlas (TCGA) Multimodal Dataset &lt;!-- Provide a quick summary of the dataset. --&gt;
-- **[PanNuke](https://aliquome.github.io/#datasets/cancer/PanNuke)**: PanNuke is a semi automatically generated nuclei instance segmentation and classification dataset with exhaustive nuclei labels across 19 different tissue types.
-- **[PCam](https://aliquome.github.io/#datasets/cancer/PCam)**: PatchCamelyon is an image classification dataset. It consists of 327.680 color images (96 x 96px) extracted from histopathologic scans of lymph node sections. Each image…
-- **[PCam200](https://aliquome.github.io/#datasets/cancer/PCam200)**: PCam200 is a public pathological H&E image dataset from Patch Camelyon in 200 microns by 512 px made in the same manner from Camelyon2016 challenge dataset.
-- **[Penson et al.'s dataset derived from the MSK-IMPACT dataset](https://aliquome.github.io/#datasets/cancer/Penson%20et%20al.'s%20dataset%20derived%20from%20the%20MSK-IMPACT%20dataset)**: The dataset is derived from the MSK-IMPACT dataset designed and published by Zehir using the code published by Penson et al.. The derivation process is described in…
-- **[PRECOG](https://aliquome.github.io/#datasets/cancer/PRECOG)**: The PREdiction of Clinical Outcomes from Genomic profiles (or PRECOG) encompasses 166 cancer expression data sets, including overall survival data for ~18,000 patients…
-- **[PTCGA200](https://aliquome.github.io/#datasets/cancer/PTCGA200)**: PTCGA200 is a public pathological H&E image datasets from Patch TCGA in 200 microns by 512 px.
-- **[QUILT-1M](https://aliquome.github.io/#datasets/cancer/QUILT-1M)**: Recent accelerations in multi-modal applications have been made possible with the plethora of image and text data available online. However, the scarcity of similar data…
-- **[SegPANDA200](https://aliquome.github.io/#datasets/cancer/SegPANDA200)**: SegPANDA200 is a public pathological H&E image dataset from segmentation task on PANDA challenge in 200 microns by 512px made in the same manner from PANDA challenge…
-- **[SICAPv2](https://aliquome.github.io/#datasets/cancer/SICAPv2)**: SICAPv2 is a database containing prostate histology whole slide images with both annotations of global Gleason scores and path-level Gleason grades.
-- **[Stain Transfer](https://aliquome.github.io/#datasets/cancer/Stain%20Transfer)**: The dataset contains 256x256 tiles extracted from Whole Slide Images (WSI) of mouse liver tissue stained with H&E and Masson's Trichrome.
-- **[Stain Transfer in Histopathology](https://aliquome.github.io/#datasets/cancer/Stain%20Transfer%20in%20Histopathology)**: The dataset contains 256x256 tiles extracted from Whole Slide Images (WSI) of mouse liver tissue stained with H&E and Masson's Trichrome.
-- **[TCGA](https://aliquome.github.io/#datasets/cancer/TCGA)**: 
-- **[U2OS](https://aliquome.github.io/#datasets/cancer/U2OS)**: The archive contains original images from U2OS cells stained with Hoechst 33342 as PNG files. It also contains images (as Photoshop and GIMP files) showing…
-- **[UNITOPATHO](https://aliquome.github.io/#datasets/cancer/UNITOPATHO)**: Histopathological characterization of colorectal polyps allows to tailor patients' management and follow up with the ultimate aim of avoiding or promptly detecting an…
-- **[WDBC](https://aliquome.github.io/#datasets/cancer/WDBC)**: Features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass. They describe characteristics of the cell nuclei present in the image. 569…
+- **[cBioPortal DataHub](https://aliquome.github.io/datasets/cbioportal-datahub/)**: Hundreds of cancer genomics studies, including TCGA, in cBioPortal format.
+- **[BCSS](https://aliquome.github.io/datasets/bcss/)**: Breast Cancer Semantic Segmentation dataset of annotated TCGA histology regions.
+- **[BSCCM](https://aliquome.github.io/datasets/bsccm/)**: Berkeley Single Cell Computational Microscopy dataset of multi-contrast white blood cell images.
+- **[cancer\_data](https://aliquome.github.io/datasets/cancer-data/)**: Unified downloader for DepMap/CCLE, GTEx and TCGA data.
+- **[TCGA BRCA PAM50](https://aliquome.github.io/datasets/tcga-brca-pam50/)**: TCGA breast cancer data with PAM50 subtype analysis.
+- **[Oncology trial failures](https://aliquome.github.io/datasets/oncology-trial-failures/)**: About 23,000 terminated or halted oncology clinical trials.
+- **[AI-ready multiplex IHC-IF dataset](https://aliquome.github.io/datasets/ai-ready-multiplex-ihc-if-dataset/)**: We introduce a new AI-ready computational pathology dataset containing restained and co-registered digitized images from eight head-and-neck squamous cell carcinoma…
+- **[BACH](https://aliquome.github.io/datasets/bach/)**: Breast cancer is the most common invasive cancer in women, affecting more than 10% of women worldwide. Microscopic analysis of a biopsy remains one of the most important…
+- **[BCI](https://aliquome.github.io/datasets/bci/)**: The evaluation of human epidermal growth factor receptor 2 (HER2) expression is essential to formulate a precise treatment for breast cancer. The routine evaluation of…
+- **[BCNB](https://aliquome.github.io/datasets/bcnb/)**: Breast cancer (BC) has become the greatest threat to women’s health worldwide. Clinically, identification of axillary lymph node (ALN) metastasis and other tumor…
+- **[bcTCGA](https://aliquome.github.io/datasets/bctcga/)**: This data set comes from breast cancer tissue samples deposited to The Cancer Genome Atlas (TCGA) project. TCGA contains data on tumour samples were assayed on several…
+- **[Bio](https://aliquome.github.io/datasets/bio/)**: This corpus includes annotations of cancer-related PubMed articles, covering 3 full papers (PMID:24651010, PMID:11777939, PMID:15630473) as well as the result sections…
+- **[BRACS](https://aliquome.github.io/datasets/bracs/)**: BReAst Carcinoma Subtyping (BRACS) dataset, a large cohort of annotated Hematoxylin & Eosin (H&E)-stained images to facilitate the characterization of breast lesions.…
+- **[BreakHis](https://aliquome.github.io/datasets/breakhis/)**: The Breast Cancer Histopathological Image Classification (BreakHis) is composed of 9,109 microscopic images of breast tumor tissue collected from 82 patients using…
+- **[CAMELYON16](https://aliquome.github.io/datasets/camelyon16/)**: The dataset consists of 400 whole-slide images (WSIs) of lymph node sections stained with hematoxylin and eosin (H&E), collected from two medical centers in the…
+- **[Cell](https://aliquome.github.io/datasets/cell/)**: The CELL benchmark is made of fluorescence microscopy images of cell.
+- **[Chaoyang](https://aliquome.github.io/datasets/chaoyang/)**: Chaoyang dataset contains 1111 normal, 842 serrated, 1404 adenocarcinoma, 664 adenoma, and 705 normal, 321 serrated, 840 adenocarcinoma, 273 adenoma samples for training…
+- **[CoCaHis](https://aliquome.github.io/datasets/cocahis/)**: Highlights
+- **[Colorectal Adenoma](https://aliquome.github.io/datasets/colorectal-adenoma/)**: Colorectal Adenoma contains 177 whole slide images (156 contain adenoma) gathered and labelled by pathologists from the Department of Pathology, The Chinese PLA General…
+- **[CoNSeP](https://aliquome.github.io/datasets/consep/)**: The colorectal nuclear segmentation and phenotypes (CoNSeP) dataset consists of 41 H&E stained image tiles, each of size 1,000×1,000 pixels at 40× objective…
+- **[CRC100K](https://aliquome.github.io/datasets/crc100k/)**: This is a set of 100,000 non-overlapping image patches from hematoxylin & eosin (H&E) stained histological images of human colorectal cancer (CRC) and normal tissue. All…
+- **[CRCDX](https://aliquome.github.io/datasets/crcdx/)**: Histological images of colorectal cancer, derived from the TCGA database
+- **[CryoNuSeg](https://aliquome.github.io/datasets/cryonuseg/)**: CryoNuSeg is a fully annotated FS-derived cryosectioned and H&E-stained nuclei instance segmentation dataset. The dataset contains images from 10 human organs that were…
+- **[Data on: Cell Signaling and Targeted Drug Therapy of Cancer](https://aliquome.github.io/datasets/data-on-cell-signaling-and-targeted-drug-therapy-of-cancer/)**: The landmark Cancer Genomics Program launched in 2006 has contributed immensely to the awareness of the importance of cancer genomics in our understanding of cancer over…
+- **[Dataset for ZAugNet](https://aliquome.github.io/datasets/dataset-for-zaugnet/)**: Dataset used to train ZAugNet, a neural network for Z-slice augmentation, that encompasses a variety of shapes, textures, and microscopy techniques, as described below:…
+- **[DiagSet](https://aliquome.github.io/datasets/diagset/)**: DiagSet is a histopathological dataset for prostate cancer detection. The proposed dataset consists of over 2.6 million tissue patches extracted from 430 fully annotated…
+- **[DigestPath](https://aliquome.github.io/datasets/digestpath/)**: Introduced by Da et al. in DigestPath: a Benchmark Dataset with Challenge Review for the Pathological Detection and Segmentation of Digestive-System
+- **[Fluo-C3DH-A549-SIM](https://aliquome.github.io/datasets/fluo-c3dh-a549-sim/)**: Simulated GFP-actin-stained A549 Lung Cancer cells embedded in a Matrigel matrix
+- **[Fluo-N2DH-SIM+](https://aliquome.github.io/datasets/fluo-n2dh-sim/)**: Simulated nuclei of HL60 cells stained with Hoescht
+- **[FocusPath](https://aliquome.github.io/datasets/focuspath/)**: FocusPath is a dataset compiled from diverse Whole Slide Image (WSI) scans in different focus (z-) levels. Images are naturally blurred by out-of-focus lens provided…
+- **[Fraunhofer Portugal AICOS EDoF Dataset](https://aliquome.github.io/datasets/fraunhofer-portugal-aicos-edof-dataset/)**: The Fraunhofer Portugal AICOS EDoF Dataset was produced within the TAMI project and is composed of images of microscopic fields of view (FOV) of Liquid-based Cervical…
+- **[GasHisSDB](https://aliquome.github.io/datasets/gashissdb/)**: Four pathologists from Longhua Hospital Shanghai University of Traditional Chinese Medicine provide 600 images of gastric cancer pathology images at size…
+- **[GlaS](https://aliquome.github.io/datasets/glas/)**: The dataset used in this challenge consists of 165 images derived from 16 H&E stained histological sections of stage T3 or T42 colorectal adenocarcinoma. Each section…
+- **[H01](https://aliquome.github.io/datasets/h01/)**: The H01 dataset is a 1.4 petabyte rendering of a small sample of human brain tissue, released by a collaboration between the Lichtman Laboratory at Harvard University…
+- **[HistGen WSI-Report Dataset](https://aliquome.github.io/datasets/histgen-wsi-report-dataset/)**: This dataset is composed of 7,753 pairs of whole slide images and their corresponding diagnostic reports, extracted from the TCGA platform and refined with large…
+- **[HistoArtifacts](https://aliquome.github.io/datasets/histoartifacts/)**: This dataset contains five notable histological artifacts: blur, blood (hemorrhage), air bubbles, folded tissue, and damaged tissue. This dataset is used in the…
+- **[Human Protein Atlas](https://aliquome.github.io/datasets/human-protein-atlas/)**: The Human Protein Atlas contains images of histological sections from normal and cancer tissues obtained by immunohistochemistry. Antibodies are labeled with DAB…
+- **[ICIAR 2018 Grand Challenge on Breast Cancer Histology Images](https://aliquome.github.io/datasets/iciar-2018-grand-challenge-on-breast-cancer-histology-images/)**: The dataset is composed of Hematoxylin and eosin (H&E) stained breast histology microscopy and whole-slide images. Challenge participants should evaluate the performance…
+- **[Immunocto](https://aliquome.github.io/datasets/immunocto/)**: As a first step towards building models that can recognise immune cells in WSIs, we introduce Immunocto, a high-resolution (40 x magnification) massive database of…
+- **[JUMP-CP (cpg0016)](https://aliquome.github.io/datasets/jump-cp-cpg0016/)**: Cell Painting images and profiles for about 116,000 compounds and genetic perturbations.
+- **[Kumar](https://aliquome.github.io/datasets/kumar/)**: The Kumar dataset contains 30 1,000×1,000 image tiles from seven organs (6 breast, 6 liver, 6 kidney, 6 prostate, 2 bladder, 2 colon and 2 stomach) of The Cancer Genome…
+- **[LC25000](https://aliquome.github.io/datasets/lc25000/)**: The LC25000 dataset contains 25,000 color images with 5 classes of 5,000 images each. All images are 768 x 768 pixels in size and are in jpeg file format. The 5 classes…
+- **[LeukemiaAttri](https://aliquome.github.io/datasets/leukemiaattri/)**: The LeukemiaAttri dataset is a large-scale, multi-domain collection of microscopy images derived from leukemia patient samples, enriched with detailed morphological…
+- **[LKS](https://aliquome.github.io/datasets/lks/)**: LKS is a dataset of 684 Liver-Kidney-Stomach immunofluorescence whole slide images (WSIs) used in the investigation of autoimmune liver disease.
+- **[METABRIC](https://aliquome.github.io/datasets/metabric/)**: 
+- **[MHIST](https://aliquome.github.io/datasets/mhist/)**: The minimalist histopathology image analysis dataset (MHIST) is a binary classification dataset of 3,152 fixed-size images of colorectal polyps, each with a…
+- **[MICCAI'2015 Gland Segmentation Challenge Contest Dataset](https://aliquome.github.io/datasets/miccai-2015-gland-segmentation-challenge-contest-dataset/)**: MICCAI'2015 Gland Segmentation Challenge Contest Dataset Welcome to the challenge on gland segmentation in histology images. This challenge was held in conjuction with…
+- **[Microscopy Image Dataset of Pulmonary Vascular Changes](https://aliquome.github.io/datasets/microscopy-image-dataset-of-pulmonary-vascular-changes/)**: Pulmonary hypertension (PH) is a syndrome complex that accompanies a number of diseases of different etiologies, associated with basic mechanisms of structural and…
+- **[Microscopy Images of Drosophila Wing](https://aliquome.github.io/datasets/microscopy-images-of-drosophila-wing/)**: Microscopy Images of the Drosophila Wing dataset are divided into two folders, Tumor/ No Tumor. The tumor folder has images of different stages of cancer, including both…
+- **[MITOS\_WSI\_CMC](https://aliquome.github.io/datasets/mitos-wsi-cmc/)**: A dataset of 21 WSIs of CMC completely annotated for MF. For this, a pathologist screened all WSIs for potential MF and structures with a similar appearance.
+- **[MoNuSAC](https://aliquome.github.io/datasets/monusac/)**: Different types of cells play a vital role in the initiation, development, invasion, metastasis and therapeutic response of tumors of various organs.
+- **[MoNuSeg](https://aliquome.github.io/datasets/monuseg/)**: The dataset for this challenge was obtained by carefully annotating tissue images of several patients with tumors of different organs and who were diagnosed at multiple…
+- **[MuCeD](https://aliquome.github.io/datasets/muced/)**: MuCeD, a dataset that is carefully curated and validated by expert pathologists from the All India Institute of Medical Science (AIIMS), Delhi, India.
+- **[NAFLD pathology and healthy tissue samples](https://aliquome.github.io/datasets/nafld-pathology-and-healthy-tissue-samples/)**: The dataset contains tiles extracted from Whole Slide Images (WSI) of stained tissue samples.
+- **[NCT-CRC-HE-100K](https://aliquome.github.io/datasets/nct-crc-he-100k/)**: The NCT-CRC-HE-100K dataset is a set of 100,000 non-overlapping image patches extracted from 86 H$\\&$E stained human cancer tissue slides and normal tissue from the NCT…
+- **[NIH3T3](https://aliquome.github.io/datasets/nih3t3/)**: The archive contains original images from NIH3T3 cells stained with Hoechst 33342 as PNG files. It also contains images (as Photoshop and GIMP files) showing…
+- **[NSCLC-Radiogenomics](https://aliquome.github.io/datasets/nsclc-radiogenomics/)**: Unique radiogenomic dataset from a Non-Small Cell Lung Cancer (NSCLC) cohort of 211 subjects. The dataset comprises Computed Tomography (CT), Positron Emission…
+- **[NuCLS](https://aliquome.github.io/datasets/nucls/)**: The NuCLS dataset contains over 220,000 labeled nuclei from breast cancer images from TCGA. These nuclei were annotated through the collaborative effort of pathologists,…
+- **[NucMM](https://aliquome.github.io/datasets/nucmm/)**: NucMM is a dataset for segmenting 3D cell nuclei from microscopy image volumes that pushes the task forward to the sub-cubic millimeter scale. It consists of two fully…
+- **[PanCancer Multimodal](https://aliquome.github.io/datasets/pancancer-multimodal/)**: Dataset Card for The Cancer Genome Atlas (TCGA) Multimodal Dataset &lt;!-- Provide a quick summary of the dataset. --&gt;
+- **[PanNuke](https://aliquome.github.io/datasets/pannuke/)**: PanNuke is a semi automatically generated nuclei instance segmentation and classification dataset with exhaustive nuclei labels across 19 different tissue types.
+- **[PCam](https://aliquome.github.io/datasets/pcam/)**: PatchCamelyon is an image classification dataset. It consists of 327.680 color images (96 x 96px) extracted from histopathologic scans of lymph node sections. Each image…
+- **[PCam200](https://aliquome.github.io/datasets/pcam200/)**: PCam200 is a public pathological H&E image dataset from Patch Camelyon in 200 microns by 512 px made in the same manner from Camelyon2016 challenge dataset.
+- **[Penson et al.'s dataset derived from the MSK-IMPACT dataset](https://aliquome.github.io/datasets/penson-et-al-s-dataset-derived-from-the-msk-impact-dataset/)**: The dataset is derived from the MSK-IMPACT dataset designed and published by Zehir using the code published by Penson et al.. The derivation process is described in…
+- **[PRECOG](https://aliquome.github.io/datasets/precog/)**: The PREdiction of Clinical Outcomes from Genomic profiles (or PRECOG) encompasses 166 cancer expression data sets, including overall survival data for ~18,000 patients…
+- **[PTCGA200](https://aliquome.github.io/datasets/ptcga200/)**: PTCGA200 is a public pathological H&E image datasets from Patch TCGA in 200 microns by 512 px.
+- **[QUILT-1M](https://aliquome.github.io/datasets/quilt-1m/)**: Recent accelerations in multi-modal applications have been made possible with the plethora of image and text data available online. However, the scarcity of similar data…
+- **[SegPANDA200](https://aliquome.github.io/datasets/segpanda200/)**: SegPANDA200 is a public pathological H&E image dataset from segmentation task on PANDA challenge in 200 microns by 512px made in the same manner from PANDA challenge…
+- **[SICAPv2](https://aliquome.github.io/datasets/sicapv2/)**: SICAPv2 is a database containing prostate histology whole slide images with both annotations of global Gleason scores and path-level Gleason grades.
+- **[Stain Transfer](https://aliquome.github.io/datasets/stain-transfer/)**: The dataset contains 256x256 tiles extracted from Whole Slide Images (WSI) of mouse liver tissue stained with H&E and Masson's Trichrome.
+- **[Stain Transfer in Histopathology](https://aliquome.github.io/datasets/stain-transfer-in-histopathology/)**: The dataset contains 256x256 tiles extracted from Whole Slide Images (WSI) of mouse liver tissue stained with H&E and Masson's Trichrome.
+- **[TCGA](https://aliquome.github.io/datasets/tcga/)**: 
+- **[U2OS](https://aliquome.github.io/datasets/u2os/)**: The archive contains original images from U2OS cells stained with Hoechst 33342 as PNG files. It also contains images (as Photoshop and GIMP files) showing…
+- **[UNITOPATHO](https://aliquome.github.io/datasets/unitopatho/)**: Histopathological characterization of colorectal polyps allows to tailor patients' management and follow up with the ultimate aim of avoiding or promptly detecting an…
+- **[WDBC](https://aliquome.github.io/datasets/wdbc/)**: Features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass. They describe characteristics of the cell nuclei present in the image. 569…
 
 </details>
 
 <details>
 <summary><b>Expression and single-cell</b> (75 datasets)</summary>
 
-- **[Open Problems in Single-Cell](https://aliquome.github.io/#datasets/expression/Open%20Problems%20in%20Single-Cell)**: Benchmark datasets and tasks for single-cell analysis methods.
-- **[Tabula Muris](https://aliquome.github.io/#datasets/expression/Tabula%20Muris)**: Single-cell transcriptomic atlas of the mouse across organs (FACS and droplet).
-- **[sc-pert](https://aliquome.github.io/#datasets/expression/sc-pert)**: Single-cell perturbation datasets (Norman, Dixit, Frangieh, McFarland and others).
-- **[Lung adenocarcinoma single-cell](https://aliquome.github.io/#datasets/expression/Lung%20adenocarcinoma%20single-cell)**: Single-cell RNA-seq data of lung adenocarcinoma.
-- **[CELLxGENE Census](https://aliquome.github.io/#datasets/expression/CELLxGENE%20Census)**: Tens of millions of human and mouse single cells with harmonized metadata, accessible through an API.
-- **[COVID-19 scRNA-seq and immune repertoire](https://aliquome.github.io/#datasets/expression/COVID-19%20scRNA-seq%20and%20immune%20repertoire)**: Curated list of COVID-19 single-cell and immune repertoire datasets.
-- **[st\_datasets](https://aliquome.github.io/#datasets/expression/st_datasets)**: Annotated spatial transcriptomics datasets.
-- **[TENxVisiumData](https://aliquome.github.io/#datasets/expression/TENxVisiumData)**: Bioconductor package of 10x Visium spatial transcriptomics datasets.
-- **[st-visium-datasets](https://aliquome.github.io/#datasets/expression/st-visium-datasets)**: 10x Visium data packaged as Hugging Face datasets.
-- **[ACCT Data Repository](https://aliquome.github.io/#datasets/expression/ACCT%20Data%20Repository)**: This dataset is a collection of fluorescent images from mice in order to test an automatic cell counting tool that we developed. 62 images viewed from 2 or 3 different…
-- **[ALFI](https://aliquome.github.io/#datasets/expression/ALFI)**: ALFI (Annotations for Label-Free Images) is a dataset of images and annotations for label-free microscopy imaging. It consists of 29 time-lapse image sequences with…
-- **[BBBC005](https://aliquome.github.io/#datasets/expression/BBBC005)**: Since robust foreground/background separation and segmentation of cellular objects (i.e.,identification of which pixels below to which objects) strongly depends on image…
-- **[BBBC039](https://aliquome.github.io/#datasets/expression/BBBC039)**: This image set is part of a high-throughput chemical screen on U2OS cells, with examples of 200 bioactive compounds. The effect of the treatments was originally imaged…
-- **[BBBC041](https://aliquome.github.io/#datasets/expression/BBBC041)**: P. vivax (malaria) infected human blood smears with bounding box annotations. The data consists of two classes of uninfected cells (RBCs and leukocytes) and four classes…
-- **[Biase et al](https://aliquome.github.io/#datasets/expression/Biase%20et%20al)**: 
-- **[bladderbatch](https://aliquome.github.io/#datasets/expression/bladderbatch)**: Microarray gene expression data on 57 bladder samples from 5 batches.
-- **[Blood cell detection dataset](https://aliquome.github.io/#datasets/expression/Blood%20cell%20detection%20dataset)**: T(BCD) dataset consisted of a total of 364 blood smear images with annotations. The dataset is labeled three groups: “RBC”, “WBC”, and “Platelets”. There are 364 images…
-- **[BPAEC](https://aliquome.github.io/#datasets/expression/BPAEC)**: This dataset contains the confocal fluorescence microscopy images of nucleus, actin and mitochondria, where each clear image corresponds to 6 out-of-focus images with…
-- **[Brightfield vs Fluorescent Staining Dataset](https://aliquome.github.io/#datasets/expression/Brightfield%20vs%20Fluorescent%20Staining%20Dataset)**: Differential fluorescent staining is an effective tool widely adopted for the visualization, segmentation and quantification of cells and cellular substructures as a…
-- **[CausalBench](https://aliquome.github.io/#datasets/expression/CausalBench)**: CausalBench is a comprehensive benchmark suite for evaluating network inference methods on large-scale perturbational single-cell gene expression data.
-- **[Cell-200](https://aliquome.github.io/#datasets/expression/Cell-200)**: Cell-200 is a a dataset of synthetic fluorescence microscopy images with cell populations generated by SIMCEP. The Cell-200 dataset consists of 200,000 $64\\times 64$…
-- **[CHAMMI](https://aliquome.github.io/#datasets/expression/CHAMMI)**: We present a cellular microscopic image dataset for investigating channel-adaptive models. We collected and pre-processed images from three publicly available sources:…
-- **[CREMI](https://aliquome.github.io/#datasets/expression/CREMI)**: MICCAI Challenge on Circuit Reconstruction from Electron Microscopy Images.
-- **[CytoImage Net Dataset](https://aliquome.github.io/#datasets/expression/CytoImage%20Net%20Dataset)**: Description: CytoImageNet is an extensive collection of microscopy images, carefully curated to aid in the development of fast and automated methods for analyzing…
-- **[CytoImageNet](https://aliquome.github.io/#datasets/expression/CytoImageNet)**: CytoImageNet is a large-scale pretraining dataset of microscopy images (890K, 894 classes). In the paper, CytoImageNet pretraining yielded features competitive to and…
-- **[cz-benchmarks](https://aliquome.github.io/#datasets/expression/cz-benchmarks)**: CZI benchmark suite for virtual cell models.
-- **[DAPlankton](https://aliquome.github.io/#datasets/expression/DAPlankton)**: The DAPlankton dataset consists of over 110k expert-labeled plankton images. The data is divided into two subsets: DAPlankton\_LAB and DAPlankton\_SEA.
-- **[Datasets for 3D shape reconstruction from 2D microscopy images](https://aliquome.github.io/#datasets/expression/Datasets%20for%203D%20shape%20reconstruction%20from%202D%20microscopy%20images)**: Two single cell datsets for 3D shape reconstruction from 2D microscopy images used for our three previous publication’s, together with the respective model predictions.
-- **[Deng et al](https://aliquome.github.io/#datasets/expression/Deng%20et%20al)**: 
-- **[DIC-C2DH-HeLa](https://aliquome.github.io/#datasets/expression/DIC-C2DH-HeLa)**: HeLa cells on a flat glass Dr. G. van Cappellen. Erasmus Medical Center, Rotterdam, The Netherlands
-- **[Drosophila Immunity Time-Course Data](https://aliquome.github.io/#datasets/expression/Drosophila%20Immunity%20Time-Course%20Data)**: The data used for all results in this paper can be found here. This directory contains:
-- **[Electron Microscopy Dataset](https://aliquome.github.io/#datasets/expression/Electron%20Microscopy%20Dataset)**: The dataset available for download on this webpage represents a 5x5x5µm section taken from the CA1 hippocampus region of the brain, corresponding to a 1065x2048x1536…
-- **[Engineered Cardiac Microbundle Time-Lapse Microscopy Image Dataset](https://aliquome.github.io/#datasets/expression/Engineered%20Cardiac%20Microbundle%20Time-Lapse%20Microscopy%20Image%20Dataset)**: The "Microbundle Time-lapse Dataset" contains 24 experimental time-lapse images of cardiac microbundles using three distinct types of experimental testbed of beating lab…
-- **[EVICAN](https://aliquome.github.io/#datasets/expression/EVICAN)**: Deep learning use for quantitative image analysis is exponentially increasing. However, training accurate, widely deployable deep learning algorithms requires a plethora…
-- **[FibroTUG platforms: Time-lapse microscopy dataset of engineered cardiac microbundles](https://aliquome.github.io/#datasets/expression/FibroTUG%20platforms%3A%20Time-lapse%20microscopy%20dataset%20of%20engineered%20cardiac%20microbundles)**: This dataset is a "part II" extension of the "Engineered cardiac microbundle time-lapse microscopy image dataset" and contains 808 experimental time-lapse image…
-- **[Fluo-C3DL-MDA231](https://aliquome.github.io/#datasets/expression/Fluo-C3DL-MDA231)**: MDA231 human breast carcinoma cells infected with a pMSCV vector including the GFP sequence, embedded in a collagen matrix
-- **[Fluo-N2DH-GOWT1](https://aliquome.github.io/#datasets/expression/Fluo-N2DH-GOWT1)**: GFP-GOWT1 mouse stem cells
-- **[Fluo-N2DL-HeLa](https://aliquome.github.io/#datasets/expression/Fluo-N2DL-HeLa)**: HeLa cells stably expressing H2b-GFP
-- **[Fluo-N3DL-TRIC](https://aliquome.github.io/#datasets/expression/Fluo-N3DL-TRIC)**: Developing Tribolium Castaneum embryo (3D cartographic projection)
-- **[fluocells](https://aliquome.github.io/#datasets/expression/fluocells)**: By releasing this dataset, we aim at providing a new testbed for computer vision techniques using Deep Learning. The main peculiarity is the shift from the domain of…
-- **[FMD](https://aliquome.github.io/#datasets/expression/FMD)**: The Fluorescence Microscopy Denoising (FMD) dataset is dedicated to Poisson-Gaussian denoising. The dataset consists of 12,000 real fluorescence microscopy images…
-- **[Full-Spectral Autofluorescence Lifetime Microscopic Images](https://aliquome.github.io/#datasets/expression/Full-Spectral%20Autofluorescence%20Lifetime%20Microscopic%20Images)**: The dataset contains full-spectral autofluorescence lifetime microscopic images (FS-FLIM) acquired on unstained ex-vivo human lung tissue, where 100 4D hypercubes of…
-- **[GenoTEX](https://aliquome.github.io/#datasets/expression/GenoTEX)**: GenoTEX (Genomics Data Automatic Exploration Benchmark) is a benchmark dataset for the automated analysis of gene expression data to identify disease-associated genes…
-- **[HuTu 80](https://aliquome.github.io/#datasets/expression/HuTu%2080)**: The image set contains 180 high-resolution color microscopic images of human duodenum adenocarcinoma HuTu 80 cell populations obtained in an in vitro scratch assay (for…
-- **[IDRCell-100k](https://aliquome.github.io/#datasets/expression/IDRCell-100k)**: We introduce the IDRCell100K image dataset, a collection of biological images, purposefully curated from the extensive and varied Image Data Resource platform.
-- **[Immobilized fluorescently stained zebrafish through the eXtended Field of view Light Field Microscope 2D-3D dataset](https://aliquome.github.io/#datasets/expression/Immobilized%20fluorescently%20stained%20zebrafish%20through%20the%20eXtended%20Field%20of%20view%20Light%20Field%20Microscope%202D-3D%20dataset)**: This dataset comprises three immobilized fluorescently stained zebrafish imaged through the eXtended Field of view Light Field Microscope (XLFM, also known as Fourier…
-- **[L1000](https://aliquome.github.io/#datasets/expression/L1000)**: The L1000 dataset consists of ~1,400,000 gene-expression profiles on the responses of ~50 human cell lines to one of ~20,000 compounds across a range of concentrations.…
-- **[LED Array Microscopy Frog Blood Dataset](https://aliquome.github.io/#datasets/expression/LED%20Array%20Microscopy%20Frog%20Blood%20Dataset)**: Images collected on an LED array microscope (also known as a Fourier ptychographic microscope) on 172 fields-of-view of frog blood smears.
-- **[Leishmania parasite dataset](https://aliquome.github.io/#datasets/expression/Leishmania%20parasite%20dataset)**: This dataset includes sharp-blur pairs of Leishmania image, which is a protozoan parasite microscopy image dataset of Leishmania, obtained from the preserved slides…
-- **[M5-Malaria Dataset](https://aliquome.github.io/#datasets/expression/M5-Malaria%20Dataset)**: In this project, we tried to make malaria detection easily possible at a low cost. We present M5-malaria Dataset which is the first-ever dataset that is across…
-- **[Malaria Dataset](https://aliquome.github.io/#datasets/expression/Malaria%20Dataset)**: The dataset contains a total of 27,558 cell images with equal instances of parasitized and uninfected cells.
-- **[Marine Microalgae Detection in Microscopy Images](https://aliquome.github.io/#datasets/expression/Marine%20Microalgae%20Detection%20in%20Microscopy%20Images)**: Marine Microalgae Detection in Microscopy Images dataset contains a total number of images in the dataset is 937 and all the objects in these images were annotated. The…
-- **[MiSCS](https://aliquome.github.io/#datasets/expression/MiSCS)**: Microscopy images of shrub cross sections for instance segmentation of tree rings.
-- **[NeuB1](https://aliquome.github.io/#datasets/expression/NeuB1)**: NeuB1 is a microscopic neuronal image dataset for retinal vessel segmentation, which contains 112 images of size 512 x 152. The train/test split is 37/75. Image
-- **[neuronIO](https://aliquome.github.io/#datasets/expression/neuronIO)**: Single cortical neurons as deep artificial neural networks This dataset contains training and testing subsets of the input/output relationship of a single cortical layer…
-- **[NIH 3T3 microtubule cell dataset](https://aliquome.github.io/#datasets/expression/NIH%203T3%20microtubule%20cell%20dataset)**: The data consists of 21 images of microtubules in PFA-fixed NIH 3T3 mouse embryonic fibroblasts (DSMZ: ACC59) labeled with a mouse anti-alpha-tubulin monoclonal IgG1…
-- **[Parasitic Egg Detection and Classification in Microscopic Images](https://aliquome.github.io/#datasets/expression/Parasitic%20Egg%20Detection%20and%20Classification%20in%20Microscopic%20Images)**: Parasitic infections have been recognized as one of the most significant causes of illnesses by WHO. Most infected persons shed cysts or eggs in their living…
-- **[PhC-C2DH-U373](https://aliquome.github.io/#datasets/expression/PhC-C2DH-U373)**: Glioblastoma-astrocytoma U373 cells on a polyacrylamide substrate
-- **[Pollen et al](https://aliquome.github.io/#datasets/expression/Pollen%20et%20al)**: TPM values together with cell type annotations that were obtained from Alex Pollen on 15/10/15
-- **[RxRx1](https://aliquome.github.io/#datasets/expression/RxRx1)**: RxRx1 is a biological dataset designed specifically for the systematic study of batch effect correction methods. The dataset consists of 125,510 high-resolution…
-- **[scGPT corpus](https://aliquome.github.io/#datasets/expression/scGPT%20corpus)**: Pretraining corpus of about 33 million cells from CELLxGENE used for scGPT.
-- **[SR-CACO-2](https://aliquome.github.io/#datasets/expression/SR-CACO-2)**: Confocal fluorescence microscopy is one of the most accessible and widely used imaging techniques for the study of biological processes at the cellular and subcellular…
-- **[ssTEM](https://aliquome.github.io/#datasets/expression/ssTEM)**: We provide two image stacks where each contains 20 sections from serial section Transmission Electron Microscopy (ssTEM) of the Drosophila melanogaster third instar…
-- **[Stained mice brain blood vessels. Confocal-LFM](https://aliquome.github.io/#datasets/expression/Stained%20mice%20brain%20blood%20vessels.%20Confocal-LFM)**: 3D confocal stacks with corresponding 2D Light-field microscope images
-- **[Strain gauge platforms: Time-lapse microscopy dataset of engineered cardiac microbundles](https://aliquome.github.io/#datasets/expression/Strain%20gauge%20platforms%3A%20Time-lapse%20microscopy%20dataset%20of%20engineered%20cardiac%20microbundles)**: This dataset is a "part I" extension of the "Engineered cardiac microbundle time-lapse microscopy image dataset" and contains 732 experimental time-lapse image sequences…
-- **[Supporting data for "Multi-Stage Malaria Parasites Recognition by Deep Learning"](https://aliquome.github.io/#datasets/expression/Supporting%20data%20for%20%22Multi-Stage%20Malaria%20Parasites%20Recognition%20by%20Deep%20Learning%22)**: Malaria, a mosquito-borne infectious disease affecting humans and other animals, is widespread in the tropical and subtropical regions. Microscopy is the most common…
-- **[Tabula Sapiens](https://aliquome.github.io/#datasets/expression/Tabula%20Sapiens)**: Human single-cell atlas.
-- **[TCB-DS](https://aliquome.github.io/#datasets/expression/TCB-DS)**: The TCB-DS dataset is a specialized collection of microscopic images focusing on the automatic recognition of cyanobacteria genera.
-- **[Treutlein et al](https://aliquome.github.io/#datasets/expression/Treutlein%20et%20al)**: 
-- **[TXL-PBC dataset](https://aliquome.github.io/#datasets/expression/TXL-PBC%20dataset)**: The TXL-PBC Dataset is a comprehensive collection of re-annotated and integrated cell images from multiple cell datasets. The main objective of this study is to perform…
-- **[TYC Dataset](https://aliquome.github.io/#datasets/expression/TYC%20Dataset)**: We introduce the trapped yeast cell (TYC) dataset, a novel dataset for understanding instance-level semantics and motions of cells in microstructures. We release $105$…
-- **[WHOI-Plankton](https://aliquome.github.io/#datasets/expression/WHOI-Plankton)**: WHOI-Plankton is a collection of annotated plankton images. It contains &gt; 3.5 million images of microscopic marine plankton, organized according to category labels…
-- **[Yan et al](https://aliquome.github.io/#datasets/expression/Yan%20et%20al)**: 
-- **[YIM Dataset](https://aliquome.github.io/#datasets/expression/YIM%20Dataset)**: An instance segmentation dataset of yeast cells in microstructures. The dataset includes 493 densely annotated microscopy images. For more information see the paper "An…
-- **[ZooScanNet](https://aliquome.github.io/#datasets/expression/ZooScanNet)**: Plankton was sampled with various nets, from bottom or 500m depth to the surface, in many oceans of the world. Samples were imaged with a ZooScan.
+- **[Open Problems in Single-Cell](https://aliquome.github.io/datasets/open-problems-in-single-cell/)**: Benchmark datasets and tasks for single-cell analysis methods.
+- **[Tabula Muris](https://aliquome.github.io/datasets/tabula-muris/)**: Single-cell transcriptomic atlas of the mouse across organs (FACS and droplet).
+- **[sc-pert](https://aliquome.github.io/datasets/sc-pert/)**: Single-cell perturbation datasets (Norman, Dixit, Frangieh, McFarland and others).
+- **[Lung adenocarcinoma single-cell](https://aliquome.github.io/datasets/lung-adenocarcinoma-single-cell/)**: Single-cell RNA-seq data of lung adenocarcinoma.
+- **[CELLxGENE Census](https://aliquome.github.io/datasets/cellxgene-census/)**: Tens of millions of human and mouse single cells with harmonized metadata, accessible through an API.
+- **[COVID-19 scRNA-seq and immune repertoire](https://aliquome.github.io/datasets/covid-19-scrna-seq-and-immune-repertoire/)**: Curated list of COVID-19 single-cell and immune repertoire datasets.
+- **[st\_datasets](https://aliquome.github.io/datasets/st-datasets/)**: Annotated spatial transcriptomics datasets.
+- **[TENxVisiumData](https://aliquome.github.io/datasets/tenxvisiumdata/)**: Bioconductor package of 10x Visium spatial transcriptomics datasets.
+- **[st-visium-datasets](https://aliquome.github.io/datasets/st-visium-datasets/)**: 10x Visium data packaged as Hugging Face datasets.
+- **[ACCT Data Repository](https://aliquome.github.io/datasets/acct-data-repository/)**: This dataset is a collection of fluorescent images from mice in order to test an automatic cell counting tool that we developed. 62 images viewed from 2 or 3 different…
+- **[ALFI](https://aliquome.github.io/datasets/alfi/)**: ALFI (Annotations for Label-Free Images) is a dataset of images and annotations for label-free microscopy imaging. It consists of 29 time-lapse image sequences with…
+- **[BBBC005](https://aliquome.github.io/datasets/bbbc005/)**: Since robust foreground/background separation and segmentation of cellular objects (i.e.,identification of which pixels below to which objects) strongly depends on image…
+- **[BBBC039](https://aliquome.github.io/datasets/bbbc039/)**: This image set is part of a high-throughput chemical screen on U2OS cells, with examples of 200 bioactive compounds. The effect of the treatments was originally imaged…
+- **[BBBC041](https://aliquome.github.io/datasets/bbbc041/)**: P. vivax (malaria) infected human blood smears with bounding box annotations. The data consists of two classes of uninfected cells (RBCs and leukocytes) and four classes…
+- **[Biase et al](https://aliquome.github.io/datasets/biase-et-al/)**: 
+- **[bladderbatch](https://aliquome.github.io/datasets/bladderbatch/)**: Microarray gene expression data on 57 bladder samples from 5 batches.
+- **[Blood cell detection dataset](https://aliquome.github.io/datasets/blood-cell-detection-dataset/)**: T(BCD) dataset consisted of a total of 364 blood smear images with annotations. The dataset is labeled three groups: “RBC”, “WBC”, and “Platelets”. There are 364 images…
+- **[BPAEC](https://aliquome.github.io/datasets/bpaec/)**: This dataset contains the confocal fluorescence microscopy images of nucleus, actin and mitochondria, where each clear image corresponds to 6 out-of-focus images with…
+- **[Brightfield vs Fluorescent Staining Dataset](https://aliquome.github.io/datasets/brightfield-vs-fluorescent-staining-dataset/)**: Differential fluorescent staining is an effective tool widely adopted for the visualization, segmentation and quantification of cells and cellular substructures as a…
+- **[CausalBench](https://aliquome.github.io/datasets/causalbench/)**: CausalBench is a comprehensive benchmark suite for evaluating network inference methods on large-scale perturbational single-cell gene expression data.
+- **[Cell-200](https://aliquome.github.io/datasets/cell-200/)**: Cell-200 is a a dataset of synthetic fluorescence microscopy images with cell populations generated by SIMCEP. The Cell-200 dataset consists of 200,000 $64\\times 64$…
+- **[CHAMMI](https://aliquome.github.io/datasets/chammi/)**: We present a cellular microscopic image dataset for investigating channel-adaptive models. We collected and pre-processed images from three publicly available sources:…
+- **[CREMI](https://aliquome.github.io/datasets/cremi/)**: MICCAI Challenge on Circuit Reconstruction from Electron Microscopy Images.
+- **[CytoImage Net Dataset](https://aliquome.github.io/datasets/cytoimage-net-dataset/)**: Description: CytoImageNet is an extensive collection of microscopy images, carefully curated to aid in the development of fast and automated methods for analyzing…
+- **[CytoImageNet](https://aliquome.github.io/datasets/cytoimagenet/)**: CytoImageNet is a large-scale pretraining dataset of microscopy images (890K, 894 classes). In the paper, CytoImageNet pretraining yielded features competitive to and…
+- **[cz-benchmarks](https://aliquome.github.io/datasets/cz-benchmarks/)**: CZI benchmark suite for virtual cell models.
+- **[DAPlankton](https://aliquome.github.io/datasets/daplankton/)**: The DAPlankton dataset consists of over 110k expert-labeled plankton images. The data is divided into two subsets: DAPlankton\_LAB and DAPlankton\_SEA.
+- **[Datasets for 3D shape reconstruction from 2D microscopy images](https://aliquome.github.io/datasets/datasets-for-3d-shape-reconstruction-from-2d-microscopy-images/)**: Two single cell datsets for 3D shape reconstruction from 2D microscopy images used for our three previous publication’s, together with the respective model predictions.
+- **[Deng et al](https://aliquome.github.io/datasets/deng-et-al/)**: 
+- **[DIC-C2DH-HeLa](https://aliquome.github.io/datasets/dic-c2dh-hela/)**: HeLa cells on a flat glass Dr. G. van Cappellen. Erasmus Medical Center, Rotterdam, The Netherlands
+- **[Drosophila Immunity Time-Course Data](https://aliquome.github.io/datasets/drosophila-immunity-time-course-data/)**: The data used for all results in this paper can be found here. This directory contains:
+- **[Electron Microscopy Dataset](https://aliquome.github.io/datasets/electron-microscopy-dataset/)**: The dataset available for download on this webpage represents a 5x5x5µm section taken from the CA1 hippocampus region of the brain, corresponding to a 1065x2048x1536…
+- **[Engineered Cardiac Microbundle Time-Lapse Microscopy Image Dataset](https://aliquome.github.io/datasets/engineered-cardiac-microbundle-time-lapse-microscopy-image-dataset/)**: The "Microbundle Time-lapse Dataset" contains 24 experimental time-lapse images of cardiac microbundles using three distinct types of experimental testbed of beating lab…
+- **[EVICAN](https://aliquome.github.io/datasets/evican/)**: Deep learning use for quantitative image analysis is exponentially increasing. However, training accurate, widely deployable deep learning algorithms requires a plethora…
+- **[FibroTUG platforms: Time-lapse microscopy dataset of engineered cardiac microbundles](https://aliquome.github.io/datasets/fibrotug-platforms-time-lapse-microscopy-dataset-of-engineered-cardiac/)**: This dataset is a "part II" extension of the "Engineered cardiac microbundle time-lapse microscopy image dataset" and contains 808 experimental time-lapse image…
+- **[Fluo-C3DL-MDA231](https://aliquome.github.io/datasets/fluo-c3dl-mda231/)**: MDA231 human breast carcinoma cells infected with a pMSCV vector including the GFP sequence, embedded in a collagen matrix
+- **[Fluo-N2DH-GOWT1](https://aliquome.github.io/datasets/fluo-n2dh-gowt1/)**: GFP-GOWT1 mouse stem cells
+- **[Fluo-N2DL-HeLa](https://aliquome.github.io/datasets/fluo-n2dl-hela/)**: HeLa cells stably expressing H2b-GFP
+- **[Fluo-N3DL-TRIC](https://aliquome.github.io/datasets/fluo-n3dl-tric/)**: Developing Tribolium Castaneum embryo (3D cartographic projection)
+- **[fluocells](https://aliquome.github.io/datasets/fluocells/)**: By releasing this dataset, we aim at providing a new testbed for computer vision techniques using Deep Learning. The main peculiarity is the shift from the domain of…
+- **[FMD](https://aliquome.github.io/datasets/fmd/)**: The Fluorescence Microscopy Denoising (FMD) dataset is dedicated to Poisson-Gaussian denoising. The dataset consists of 12,000 real fluorescence microscopy images…
+- **[Full-Spectral Autofluorescence Lifetime Microscopic Images](https://aliquome.github.io/datasets/full-spectral-autofluorescence-lifetime-microscopic-images/)**: The dataset contains full-spectral autofluorescence lifetime microscopic images (FS-FLIM) acquired on unstained ex-vivo human lung tissue, where 100 4D hypercubes of…
+- **[GenoTEX](https://aliquome.github.io/datasets/genotex/)**: GenoTEX (Genomics Data Automatic Exploration Benchmark) is a benchmark dataset for the automated analysis of gene expression data to identify disease-associated genes…
+- **[HuTu 80](https://aliquome.github.io/datasets/hutu-80/)**: The image set contains 180 high-resolution color microscopic images of human duodenum adenocarcinoma HuTu 80 cell populations obtained in an in vitro scratch assay (for…
+- **[IDRCell-100k](https://aliquome.github.io/datasets/idrcell-100k/)**: We introduce the IDRCell100K image dataset, a collection of biological images, purposefully curated from the extensive and varied Image Data Resource platform.
+- **[Immobilized fluorescently stained zebrafish through the eXtended Field of view Light Field Microscope 2D-3D dataset](https://aliquome.github.io/datasets/immobilized-fluorescently-stained-zebrafish-through-the-extended-field/)**: This dataset comprises three immobilized fluorescently stained zebrafish imaged through the eXtended Field of view Light Field Microscope (XLFM, also known as Fourier…
+- **[L1000](https://aliquome.github.io/datasets/l1000/)**: The L1000 dataset consists of ~1,400,000 gene-expression profiles on the responses of ~50 human cell lines to one of ~20,000 compounds across a range of concentrations.…
+- **[LED Array Microscopy Frog Blood Dataset](https://aliquome.github.io/datasets/led-array-microscopy-frog-blood-dataset/)**: Images collected on an LED array microscope (also known as a Fourier ptychographic microscope) on 172 fields-of-view of frog blood smears.
+- **[Leishmania parasite dataset](https://aliquome.github.io/datasets/leishmania-parasite-dataset/)**: This dataset includes sharp-blur pairs of Leishmania image, which is a protozoan parasite microscopy image dataset of Leishmania, obtained from the preserved slides…
+- **[M5-Malaria Dataset](https://aliquome.github.io/datasets/m5-malaria-dataset/)**: In this project, we tried to make malaria detection easily possible at a low cost. We present M5-malaria Dataset which is the first-ever dataset that is across…
+- **[Malaria Dataset](https://aliquome.github.io/datasets/malaria-dataset/)**: The dataset contains a total of 27,558 cell images with equal instances of parasitized and uninfected cells.
+- **[Marine Microalgae Detection in Microscopy Images](https://aliquome.github.io/datasets/marine-microalgae-detection-in-microscopy-images/)**: Marine Microalgae Detection in Microscopy Images dataset contains a total number of images in the dataset is 937 and all the objects in these images were annotated. The…
+- **[MiSCS](https://aliquome.github.io/datasets/miscs/)**: Microscopy images of shrub cross sections for instance segmentation of tree rings.
+- **[NeuB1](https://aliquome.github.io/datasets/neub1/)**: NeuB1 is a microscopic neuronal image dataset for retinal vessel segmentation, which contains 112 images of size 512 x 152. The train/test split is 37/75. Image
+- **[neuronIO](https://aliquome.github.io/datasets/neuronio/)**: Single cortical neurons as deep artificial neural networks This dataset contains training and testing subsets of the input/output relationship of a single cortical layer…
+- **[NIH 3T3 microtubule cell dataset](https://aliquome.github.io/datasets/nih-3t3-microtubule-cell-dataset/)**: The data consists of 21 images of microtubules in PFA-fixed NIH 3T3 mouse embryonic fibroblasts (DSMZ: ACC59) labeled with a mouse anti-alpha-tubulin monoclonal IgG1…
+- **[Parasitic Egg Detection and Classification in Microscopic Images](https://aliquome.github.io/datasets/parasitic-egg-detection-and-classification-in-microscopic-images/)**: Parasitic infections have been recognized as one of the most significant causes of illnesses by WHO. Most infected persons shed cysts or eggs in their living…
+- **[PhC-C2DH-U373](https://aliquome.github.io/datasets/phc-c2dh-u373/)**: Glioblastoma-astrocytoma U373 cells on a polyacrylamide substrate
+- **[Pollen et al](https://aliquome.github.io/datasets/pollen-et-al/)**: TPM values together with cell type annotations that were obtained from Alex Pollen on 15/10/15
+- **[RxRx1](https://aliquome.github.io/datasets/rxrx1/)**: RxRx1 is a biological dataset designed specifically for the systematic study of batch effect correction methods. The dataset consists of 125,510 high-resolution…
+- **[scGPT corpus](https://aliquome.github.io/datasets/scgpt-corpus/)**: Pretraining corpus of about 33 million cells from CELLxGENE used for scGPT.
+- **[SR-CACO-2](https://aliquome.github.io/datasets/sr-caco-2/)**: Confocal fluorescence microscopy is one of the most accessible and widely used imaging techniques for the study of biological processes at the cellular and subcellular…
+- **[ssTEM](https://aliquome.github.io/datasets/sstem/)**: We provide two image stacks where each contains 20 sections from serial section Transmission Electron Microscopy (ssTEM) of the Drosophila melanogaster third instar…
+- **[Stained mice brain blood vessels. Confocal-LFM](https://aliquome.github.io/datasets/stained-mice-brain-blood-vessels-confocal-lfm/)**: 3D confocal stacks with corresponding 2D Light-field microscope images
+- **[Strain gauge platforms: Time-lapse microscopy dataset of engineered cardiac microbundles](https://aliquome.github.io/datasets/strain-gauge-platforms-time-lapse-microscopy-dataset-of-engineered-car/)**: This dataset is a "part I" extension of the "Engineered cardiac microbundle time-lapse microscopy image dataset" and contains 732 experimental time-lapse image sequences…
+- **[Supporting data for "Multi-Stage Malaria Parasites Recognition by Deep Learning"](https://aliquome.github.io/datasets/supporting-data-for-multi-stage-malaria-parasites-recognition-by-deep-/)**: Malaria, a mosquito-borne infectious disease affecting humans and other animals, is widespread in the tropical and subtropical regions. Microscopy is the most common…
+- **[Tabula Sapiens](https://aliquome.github.io/datasets/tabula-sapiens/)**: Human single-cell atlas.
+- **[TCB-DS](https://aliquome.github.io/datasets/tcb-ds/)**: The TCB-DS dataset is a specialized collection of microscopic images focusing on the automatic recognition of cyanobacteria genera.
+- **[Treutlein et al](https://aliquome.github.io/datasets/treutlein-et-al/)**: 
+- **[TXL-PBC dataset](https://aliquome.github.io/datasets/txl-pbc-dataset/)**: The TXL-PBC Dataset is a comprehensive collection of re-annotated and integrated cell images from multiple cell datasets. The main objective of this study is to perform…
+- **[TYC Dataset](https://aliquome.github.io/datasets/tyc-dataset/)**: We introduce the trapped yeast cell (TYC) dataset, a novel dataset for understanding instance-level semantics and motions of cells in microstructures. We release $105$…
+- **[WHOI-Plankton](https://aliquome.github.io/datasets/whoi-plankton/)**: WHOI-Plankton is a collection of annotated plankton images. It contains &gt; 3.5 million images of microscopic marine plankton, organized according to category labels…
+- **[Yan et al](https://aliquome.github.io/datasets/yan-et-al/)**: 
+- **[YIM Dataset](https://aliquome.github.io/datasets/yim-dataset/)**: An instance segmentation dataset of yeast cells in microstructures. The dataset includes 493 densely annotated microscopy images. For more information see the paper "An…
+- **[ZooScanNet](https://aliquome.github.io/datasets/zooscannet/)**: Plankton was sampled with various nets, from bottom or 500m depth to the surface, in many oceans of the world. Samples were imaged with a ZooScan.
 
 </details>
 
 <details>
 <summary><b>Proteins and structures</b> (55 datasets)</summary>
 
-- **[TAPE](https://aliquome.github.io/#datasets/proteins/TAPE)**: Protein representation-learning benchmark with five tasks: Pfam, secondary structure, remote homology, fluorescence and stability.
-- **[ProteinGym](https://aliquome.github.io/#datasets/proteins/ProteinGym)**: Benchmark of deep mutational scanning (DMS) assays for predicting the fitness effects of protein variants; latest release v1.3.
-- **[SidechainNet](https://aliquome.github.io/#datasets/proteins/SidechainNet)**: All-atom protein structures, including side chains, extending ProteinNet for machine learning.
-- **[FoldBench](https://aliquome.github.io/#datasets/proteins/FoldBench)**: Low-homology benchmark for structure prediction of proteins, nucleic acids and ligands.
-- **[PINDER](https://aliquome.github.io/#datasets/proteins/PINDER)**: Protein INteraction Dataset and Evaluation Resource for protein–protein docking and complex prediction.
-- **[FLIP](https://aliquome.github.io/#datasets/proteins/FLIP)**: Benchmark of protein fitness landscapes with curated train/test splits for fitness prediction.
-- **[PIPR / seq\_ppi](https://aliquome.github.io/#datasets/proteins/PIPR%20%2F%20seq_ppi)**: Sequence-based protein–protein interaction datasets.
-- **[ProteinShake](https://aliquome.github.io/#datasets/proteins/ProteinShake)**: Ready-to-use protein structure datasets and tasks for machine learning.
-- **[PPIRef](https://aliquome.github.io/#datasets/proteins/PPIRef)**: Dataset of 3D protein–protein interactions.
-- **[CPSea](https://aliquome.github.io/#datasets/proteins/CPSea)**: Cyclic peptide–protein complexes derived from the AlphaFold Database (AFDB).
-- **[DIPS-Plus](https://aliquome.github.io/#datasets/proteins/DIPS-Plus)**: Interacting protein structures for predicting protein interfaces.
-- **[Prop3D](https://aliquome.github.io/#datasets/proteins/Prop3D)**: 3D protein structures paired with biophysical properties for structure-based learning.
-- **[CBH21 Protein Solubility](https://aliquome.github.io/#datasets/proteins/CBH21%20Protein%20Solubility)**: Protein solubility dataset from the CBH21 challenge.
-- **[PS4](https://aliquome.github.io/#datasets/proteins/PS4)**: Largest open dataset for predicting protein secondary structure from single sequences.
-- **[CB513](https://aliquome.github.io/#datasets/proteins/CB513)**: Classic benchmark set for protein secondary-structure prediction.
-- **[ProteinConformers](https://aliquome.github.io/#datasets/proteins/ProteinConformers)**: Benchmark of protein conformational landscapes for evaluating ensemble generation.
-- **[OPI](https://aliquome.github.io/#datasets/proteins/OPI)**: Open Protein Instructions: an instruction-tuning dataset for protein-focused large language models.
-- **[MHC peptides](https://aliquome.github.io/#datasets/proteins/MHC%20peptides)**: About 86,000 peptides with measured MHC binding affinities.
-- **[MPLID](https://aliquome.github.io/#datasets/proteins/MPLID)**: Dataset of membrane protein–lipid interactions.
-- **[AADB2021](https://aliquome.github.io/#datasets/proteins/AADB2021)**: We present a data set from a first-principles study of amino-methylated and acetylated (capped) dipeptides of the 20 proteinogenic amino acids – including alternative…
-- **[AADB2021Ontology](https://aliquome.github.io/#datasets/proteins/AADB2021Ontology)**: This onotology is populated with the data from AADB2021 ( Details can be found in the related article on arXiv.org:
-- **[approved\_drug\_target](https://aliquome.github.io/#datasets/proteins/approved_drug_target)**: This dataset provides a curated collection of approved drug Simplified Molecular Input Line Entry System (SMILES) strings and their associated protein sequences.
-- **[AsEP](https://aliquome.github.io/#datasets/proteins/AsEP)**: AsEP is a protein structure dataset that includes 1723 filtered antibody-antigen complexes from abYbank/AbDb.
-- **[ATOM3D](https://aliquome.github.io/#datasets/proteins/ATOM3D)**: ATOM3D is a unified collection of datasets concerning the three-dimensional structure of biomolecules, including proteins, small molecules, and nucleic acids.
-- **[ATUE](https://aliquome.github.io/#datasets/proteins/ATUE)**: ATUE is an antibody study benchmark with four real-world supervised tasks covering therapeutic antibody engineering, B cell analysis, and antibody discovery.
-- **[BACE (β-secretase enzyme)](https://aliquome.github.io/#datasets/proteins/BACE%20(%CE%B2-secretase%20enzyme))**: The BACE dataset focuses on inhibitors of human beta-secretase 1 (BACE-1). It includes both quantitative (IC50 values) and qualitative (binary labels) binding results.
-- **[BioGRID](https://aliquome.github.io/#datasets/proteins/BioGRID)**: BioGRID is a biomedical interaction repository with data compiled through comprehensive curation efforts. The current index is version 4.2.192 and searches 75,868…
-- **[CASP13 MQA](https://aliquome.github.io/#datasets/proteins/CASP13%20MQA)**: CASP13 MQA is a dataset that contains predicted models for CASP13 targets and their scores.
-- **[CATH 4.2](https://aliquome.github.io/#datasets/proteins/CATH%204.2)**: The CATH (Class, Architecture, Topology, Homology) \[65\] database is a comprehensive resource for protein structure classification that hierarchical group proteins based…
-- **[CATH 4.3](https://aliquome.github.io/#datasets/proteins/CATH%204.3)**: The CATH (Class, Architecture, Topology, Homology) \[65\] database is a comprehensive resource for protein structure classification that hierarchical group proteins based…
-- **[CREMP](https://aliquome.github.io/#datasets/proteins/CREMP)**: CREMP is a resource generated for the rapid development and evaluation of machine learning models for macrocyclic peptides. CREMP contains 36,198 unique macrocyclical…
-- **[cryoPPP](https://aliquome.github.io/#datasets/proteins/cryoPPP)**: The CryoPPP dataset consists of 34 ground truth data and metadata for 335 EMPIAR IDs. The ground truth data is comprised of a variety of 9893 Micrographs (~300 cryo-EM…
-- **[DPPIN](https://aliquome.github.io/#datasets/proteins/DPPIN)**: DPPIN is a collection of dynamic networks, which consists of twelve generated dynamic protein-protein interaction networks of yeast cells, stored in twelve folders.
-- **[Ecoli](https://aliquome.github.io/#datasets/proteins/Ecoli)**: The Ecoli dataset is a dataset for protein localization. It contains 336 E.coli proteins split into 8 different classes.
-- **[ENZYMES](https://aliquome.github.io/#datasets/proteins/ENZYMES)**: ENZYMES is a dataset of 600 protein tertiary structures obtained from the BRENDA enzyme database. The ENZYMES dataset contains 6 enzymes.
-- **[FLIP -- AAV, Designed vs mutant](https://aliquome.github.io/#datasets/proteins/FLIP%20--%20AAV%2C%20Designed%20vs%20mutant)**: FLIP includes several benchmark datasets that contain a variety of protein sequences, each with a real-valued label indicating its "fitness" (how well the protein…
-- **[MegaScale](https://aliquome.github.io/#datasets/proteins/MegaScale)**: Results of a high-throughput biological assay measuring the stability of proteins From the paper "Here we present cDNA display proteolysis, a method for measuring…
-- **[MIPE](https://aliquome.github.io/#datasets/proteins/MIPE)**: Datasets. From the publicly accessible Structural Antibody Database (SAbDab), we collected a total of 7571 antibodyantigen complexes, with the sequence data in FASTA…
-- **[Mol-Instructions](https://aliquome.github.io/#datasets/proteins/Mol-Instructions)**: Instruction dataset spanning molecules, proteins and biomolecular text for training language models.
-- **[Paragraph Expanded](https://aliquome.github.io/#datasets/proteins/Paragraph%20Expanded)**: To take advantage of the ever-increasing amount of structural data now available, we also trained Paragraph on a larger dataset.
-- **[PECAN](https://aliquome.github.io/#datasets/proteins/PECAN)**: The PECAN dataset provides structural data for antibody-antigen interactions, specifically curated for paratope and epitope binding site prediction.
-- **[PEER](https://aliquome.github.io/#datasets/proteins/PEER)**: Protein understanding benchmark with 17 tasks covering function, localization, structure, PPI and protein–ligand interaction.
-- **[PETA-Protein](https://aliquome.github.io/#datasets/proteins/PETA-Protein)**: PETA: Evaluating the Impact of Protein Transfer Learning with Sub-word Tokenization on Downstream Applications
-- **[PPI](https://aliquome.github.io/#datasets/proteins/PPI)**: Protein roles—in terms of their cellular functions from gene ontology—in various protein-protein interaction (PPI) graphs, with each graph corresponding to a different…
-- **[Protein structures Ingraham](https://aliquome.github.io/#datasets/proteins/Protein%20structures%20Ingraham)**: A data set introduced for training on the protein design task.
-- **[ProteinKG25](https://aliquome.github.io/#datasets/proteins/ProteinKG25)**: ProteinKG25 is a large-scale KG dataset with aligned descriptions and protein sequences respectively to GO terms and proteins entities.
-- **[ProteinNet](https://aliquome.github.io/#datasets/proteins/ProteinNet)**: Standardized protein structure dataset with splits based on CASP7 to CASP12.
-- **[PROTEINS](https://aliquome.github.io/#datasets/proteins/PROTEINS)**: PROTEINS is a dataset of proteins that are classified as enzymes or non-enzymes. Nodes represent the amino acids and two nodes are connected by an edge if they are less…
-- **[Sachs](https://aliquome.github.io/#datasets/proteins/Sachs)**: Sachs dataset measures the expression level of different proteins and phospholipids in human cells. It includes the simultaneous measurements of 11 phosphorylated…
-- **[STRING](https://aliquome.github.io/#datasets/proteins/STRING)**: STRING is a collection of protein-protein interaction (PPI) networks.
-- **[TCR-CMV](https://aliquome.github.io/#datasets/proteins/TCR-CMV)**: Adaptive Biotechnologies' dataset of sequenced T cell repertoires labelled by patient age, HLA type, and CMV serostatus
-- **[TCR-pMHC](https://aliquome.github.io/#datasets/proteins/TCR-pMHC)**: 10x Genomics dataset of sequenced TCRs barcoded by a panel of pMHCs (arranged on a dextramer)
-- **[TLFM dataset](https://aliquome.github.io/#datasets/proteins/TLFM%20dataset)**: TLFM dataset structured in sequences of at least nine timesteps. The dataset includes 9696 images of both brightfield and green fluorescent protein channels at a…
-- **[Uniref90](https://aliquome.github.io/#datasets/proteins/Uniref90)**: UniRef90 is generated by clustering UniRef100 seed sequences.
-- **[Yeast](https://aliquome.github.io/#datasets/proteins/Yeast)**: Yeast dataset consists of a protein-protein interaction network. Interaction detection methods have led to the discovery of thousands of interactions between proteins,…
+- **[TAPE](https://aliquome.github.io/datasets/tape/)**: Protein representation-learning benchmark with five tasks: Pfam, secondary structure, remote homology, fluorescence and stability.
+- **[ProteinGym](https://aliquome.github.io/datasets/proteingym/)**: Benchmark of deep mutational scanning (DMS) assays for predicting the fitness effects of protein variants; latest release v1.3.
+- **[SidechainNet](https://aliquome.github.io/datasets/sidechainnet/)**: All-atom protein structures, including side chains, extending ProteinNet for machine learning.
+- **[FoldBench](https://aliquome.github.io/datasets/foldbench/)**: Low-homology benchmark for structure prediction of proteins, nucleic acids and ligands.
+- **[PINDER](https://aliquome.github.io/datasets/pinder/)**: Protein INteraction Dataset and Evaluation Resource for protein–protein docking and complex prediction.
+- **[FLIP](https://aliquome.github.io/datasets/flip/)**: Benchmark of protein fitness landscapes with curated train/test splits for fitness prediction.
+- **[PIPR / seq\_ppi](https://aliquome.github.io/datasets/pipr-seq-ppi/)**: Sequence-based protein–protein interaction datasets.
+- **[ProteinShake](https://aliquome.github.io/datasets/proteinshake/)**: Ready-to-use protein structure datasets and tasks for machine learning.
+- **[PPIRef](https://aliquome.github.io/datasets/ppiref/)**: Dataset of 3D protein–protein interactions.
+- **[CPSea](https://aliquome.github.io/datasets/cpsea/)**: Cyclic peptide–protein complexes derived from the AlphaFold Database (AFDB).
+- **[DIPS-Plus](https://aliquome.github.io/datasets/dips-plus/)**: Interacting protein structures for predicting protein interfaces.
+- **[Prop3D](https://aliquome.github.io/datasets/prop3d/)**: 3D protein structures paired with biophysical properties for structure-based learning.
+- **[CBH21 Protein Solubility](https://aliquome.github.io/datasets/cbh21-protein-solubility/)**: Protein solubility dataset from the CBH21 challenge.
+- **[PS4](https://aliquome.github.io/datasets/ps4/)**: Largest open dataset for predicting protein secondary structure from single sequences.
+- **[CB513](https://aliquome.github.io/datasets/cb513/)**: Classic benchmark set for protein secondary-structure prediction.
+- **[ProteinConformers](https://aliquome.github.io/datasets/proteinconformers/)**: Benchmark of protein conformational landscapes for evaluating ensemble generation.
+- **[OPI](https://aliquome.github.io/datasets/opi/)**: Open Protein Instructions: an instruction-tuning dataset for protein-focused large language models.
+- **[MHC peptides](https://aliquome.github.io/datasets/mhc-peptides/)**: About 86,000 peptides with measured MHC binding affinities.
+- **[MPLID](https://aliquome.github.io/datasets/mplid/)**: Dataset of membrane protein–lipid interactions.
+- **[AADB2021](https://aliquome.github.io/datasets/aadb2021/)**: We present a data set from a first-principles study of amino-methylated and acetylated (capped) dipeptides of the 20 proteinogenic amino acids – including alternative…
+- **[AADB2021Ontology](https://aliquome.github.io/datasets/aadb2021ontology/)**: This onotology is populated with the data from AADB2021 ( Details can be found in the related article on arXiv.org:
+- **[approved\_drug\_target](https://aliquome.github.io/datasets/approved-drug-target/)**: This dataset provides a curated collection of approved drug Simplified Molecular Input Line Entry System (SMILES) strings and their associated protein sequences.
+- **[AsEP](https://aliquome.github.io/datasets/asep/)**: AsEP is a protein structure dataset that includes 1723 filtered antibody-antigen complexes from abYbank/AbDb.
+- **[ATOM3D](https://aliquome.github.io/datasets/atom3d/)**: ATOM3D is a unified collection of datasets concerning the three-dimensional structure of biomolecules, including proteins, small molecules, and nucleic acids.
+- **[ATUE](https://aliquome.github.io/datasets/atue/)**: ATUE is an antibody study benchmark with four real-world supervised tasks covering therapeutic antibody engineering, B cell analysis, and antibody discovery.
+- **[BACE (β-secretase enzyme)](https://aliquome.github.io/datasets/bace-secretase-enzyme/)**: The BACE dataset focuses on inhibitors of human beta-secretase 1 (BACE-1). It includes both quantitative (IC50 values) and qualitative (binary labels) binding results.
+- **[BioGRID](https://aliquome.github.io/datasets/biogrid/)**: BioGRID is a biomedical interaction repository with data compiled through comprehensive curation efforts. The current index is version 4.2.192 and searches 75,868…
+- **[CASP13 MQA](https://aliquome.github.io/datasets/casp13-mqa/)**: CASP13 MQA is a dataset that contains predicted models for CASP13 targets and their scores.
+- **[CATH 4.2](https://aliquome.github.io/datasets/cath-4-2/)**: The CATH (Class, Architecture, Topology, Homology) \[65\] database is a comprehensive resource for protein structure classification that hierarchical group proteins based…
+- **[CATH 4.3](https://aliquome.github.io/datasets/cath-4-3/)**: The CATH (Class, Architecture, Topology, Homology) \[65\] database is a comprehensive resource for protein structure classification that hierarchical group proteins based…
+- **[CREMP](https://aliquome.github.io/datasets/cremp/)**: CREMP is a resource generated for the rapid development and evaluation of machine learning models for macrocyclic peptides. CREMP contains 36,198 unique macrocyclical…
+- **[cryoPPP](https://aliquome.github.io/datasets/cryoppp/)**: The CryoPPP dataset consists of 34 ground truth data and metadata for 335 EMPIAR IDs. The ground truth data is comprised of a variety of 9893 Micrographs (~300 cryo-EM…
+- **[DPPIN](https://aliquome.github.io/datasets/dppin/)**: DPPIN is a collection of dynamic networks, which consists of twelve generated dynamic protein-protein interaction networks of yeast cells, stored in twelve folders.
+- **[Ecoli](https://aliquome.github.io/datasets/ecoli/)**: The Ecoli dataset is a dataset for protein localization. It contains 336 E.coli proteins split into 8 different classes.
+- **[ENZYMES](https://aliquome.github.io/datasets/enzymes/)**: ENZYMES is a dataset of 600 protein tertiary structures obtained from the BRENDA enzyme database. The ENZYMES dataset contains 6 enzymes.
+- **[FLIP -- AAV, Designed vs mutant](https://aliquome.github.io/datasets/flip-aav-designed-vs-mutant/)**: FLIP includes several benchmark datasets that contain a variety of protein sequences, each with a real-valued label indicating its "fitness" (how well the protein…
+- **[MegaScale](https://aliquome.github.io/datasets/megascale/)**: Results of a high-throughput biological assay measuring the stability of proteins From the paper "Here we present cDNA display proteolysis, a method for measuring…
+- **[MIPE](https://aliquome.github.io/datasets/mipe/)**: Datasets. From the publicly accessible Structural Antibody Database (SAbDab), we collected a total of 7571 antibodyantigen complexes, with the sequence data in FASTA…
+- **[Mol-Instructions](https://aliquome.github.io/datasets/mol-instructions-2/)**: Instruction dataset spanning molecules, proteins and biomolecular text for training language models.
+- **[Paragraph Expanded](https://aliquome.github.io/datasets/paragraph-expanded/)**: To take advantage of the ever-increasing amount of structural data now available, we also trained Paragraph on a larger dataset.
+- **[PECAN](https://aliquome.github.io/datasets/pecan/)**: The PECAN dataset provides structural data for antibody-antigen interactions, specifically curated for paratope and epitope binding site prediction.
+- **[PEER](https://aliquome.github.io/datasets/peer/)**: Protein understanding benchmark with 17 tasks covering function, localization, structure, PPI and protein–ligand interaction.
+- **[PETA-Protein](https://aliquome.github.io/datasets/peta-protein/)**: PETA: Evaluating the Impact of Protein Transfer Learning with Sub-word Tokenization on Downstream Applications
+- **[PPI](https://aliquome.github.io/datasets/ppi/)**: Protein roles—in terms of their cellular functions from gene ontology—in various protein-protein interaction (PPI) graphs, with each graph corresponding to a different…
+- **[Protein structures Ingraham](https://aliquome.github.io/datasets/protein-structures-ingraham/)**: A data set introduced for training on the protein design task.
+- **[ProteinKG25](https://aliquome.github.io/datasets/proteinkg25/)**: ProteinKG25 is a large-scale KG dataset with aligned descriptions and protein sequences respectively to GO terms and proteins entities.
+- **[ProteinNet](https://aliquome.github.io/datasets/proteinnet/)**: Standardized protein structure dataset with splits based on CASP7 to CASP12.
+- **[PROTEINS](https://aliquome.github.io/datasets/proteins/)**: PROTEINS is a dataset of proteins that are classified as enzymes or non-enzymes. Nodes represent the amino acids and two nodes are connected by an edge if they are less…
+- **[Sachs](https://aliquome.github.io/datasets/sachs/)**: Sachs dataset measures the expression level of different proteins and phospholipids in human cells. It includes the simultaneous measurements of 11 phosphorylated…
+- **[STRING](https://aliquome.github.io/datasets/string/)**: STRING is a collection of protein-protein interaction (PPI) networks.
+- **[TCR-CMV](https://aliquome.github.io/datasets/tcr-cmv/)**: Adaptive Biotechnologies' dataset of sequenced T cell repertoires labelled by patient age, HLA type, and CMV serostatus
+- **[TCR-pMHC](https://aliquome.github.io/datasets/tcr-pmhc/)**: 10x Genomics dataset of sequenced TCRs barcoded by a panel of pMHCs (arranged on a dextramer)
+- **[TLFM dataset](https://aliquome.github.io/datasets/tlfm-dataset/)**: TLFM dataset structured in sequences of at least nine timesteps. The dataset includes 9696 images of both brightfield and green fluorescent protein channels at a…
+- **[Uniref90](https://aliquome.github.io/datasets/uniref90/)**: UniRef90 is generated by clustering UniRef100 seed sequences.
+- **[Yeast](https://aliquome.github.io/datasets/yeast/)**: Yeast dataset consists of a protein-protein interaction network. Interaction detection methods have led to the discovery of thousands of interactions between proteins,…
 
 </details>
 
 <details>
 <summary><b>Pathways, networks and ontologies</b> (10 datasets)</summary>
 
-- **[OGB](https://aliquome.github.io/#datasets/pathways/OGB)**: Open Graph Benchmark, including ogbn-proteins, ogbl-biokg, ogbl-ppa, ogbl-ddi and ogbg-molhiv.
-- **[PrimeKG](https://aliquome.github.io/#datasets/pathways/PrimeKG)**: Precision medicine knowledge graph linking diseases, drugs, genes and phenotypes.
-- **[DRKG](https://aliquome.github.io/#datasets/pathways/DRKG)**: Drug repurposing knowledge graph of genes, compounds, diseases and their relations.
-- **[Hetionet](https://aliquome.github.io/#datasets/pathways/Hetionet)**: Heterogeneous biomedical network with 47,000 nodes and 2.2 million edges.
-- **[BioNEV](https://aliquome.github.io/#datasets/pathways/BioNEV)**: Biomedical networks for benchmarking graph embedding methods.
-- **[CROssBAR](https://aliquome.github.io/#datasets/pathways/CROssBAR)**: Integrated biomedical knowledge graph built from multiple databases.
-- **[Decagon](https://aliquome.github.io/#datasets/pathways/Decagon)**: Bio-decagon is a dataset for polypharmacy side effect identification problem framed as a multirelational link prediction problem in a two-layer multimodal graph/network…
-- **[GO21](https://aliquome.github.io/#datasets/pathways/GO21)**: GO21 is a biomedical knowledge graph that models genes, proteins, drugs, and the hierarchy of the biological processes they participate in. It consists of 806,136…
-- **[PKG sample](https://aliquome.github.io/#datasets/pathways/PKG%20sample)**: A random sample from Pubmed Knowledge Graph.
-- **[SIB bioinformatics SPARQL queries](https://aliquome.github.io/#datasets/pathways/SIB%20bioinformatics%20SPARQL%20queries)**: A large collection of human-written natural language questions and their corresponding SPARQL queries over federated bioinformatics knowledge graphs (KGs) collected for…
+- **[OGB](https://aliquome.github.io/datasets/ogb/)**: Open Graph Benchmark, including ogbn-proteins, ogbl-biokg, ogbl-ppa, ogbl-ddi and ogbg-molhiv.
+- **[PrimeKG](https://aliquome.github.io/datasets/primekg/)**: Precision medicine knowledge graph linking diseases, drugs, genes and phenotypes.
+- **[DRKG](https://aliquome.github.io/datasets/drkg/)**: Drug repurposing knowledge graph of genes, compounds, diseases and their relations.
+- **[Hetionet](https://aliquome.github.io/datasets/hetionet/)**: Heterogeneous biomedical network with 47,000 nodes and 2.2 million edges.
+- **[BioNEV](https://aliquome.github.io/datasets/bionev/)**: Biomedical networks for benchmarking graph embedding methods.
+- **[CROssBAR](https://aliquome.github.io/datasets/crossbar/)**: Integrated biomedical knowledge graph built from multiple databases.
+- **[Decagon](https://aliquome.github.io/datasets/decagon/)**: Bio-decagon is a dataset for polypharmacy side effect identification problem framed as a multirelational link prediction problem in a two-layer multimodal graph/network…
+- **[GO21](https://aliquome.github.io/datasets/go21/)**: GO21 is a biomedical knowledge graph that models genes, proteins, drugs, and the hierarchy of the biological processes they participate in. It consists of 806,136…
+- **[PKG sample](https://aliquome.github.io/datasets/pkg-sample/)**: A random sample from Pubmed Knowledge Graph.
+- **[SIB bioinformatics SPARQL queries](https://aliquome.github.io/datasets/sib-bioinformatics-sparql-queries/)**: A large collection of human-written natural language questions and their corresponding SPARQL queries over federated bioinformatics knowledge graphs (KGs) collected for…
 
 </details>
 
 <details>
 <summary><b>Chemistry and drug discovery</b> (142 datasets)</summary>
 
-- **[TDC (Therapeutics Data Commons)](https://aliquome.github.io/#datasets/chemistry/TDC%20(Therapeutics%20Data%20Commons))**: Collection of more than 60 datasets for ADMET, drug–target interaction, molecule generation and other therapeutic tasks.
-- **[DeepPurpose datasets](https://aliquome.github.io/#datasets/chemistry/DeepPurpose%20datasets)**: Drug–target interaction datasets including DAVIS, KIBA, BindingDB and antiviral data.
-- **[PLINDER](https://aliquome.github.io/#datasets/chemistry/PLINDER)**: Large curated dataset of protein–ligand interactions with leakage-aware splits for training and evaluation.
-- **[Protein-Ligand Benchmark (OpenFF)](https://aliquome.github.io/#datasets/chemistry/Protein-Ligand%20Benchmark%20(OpenFF))**: Curated benchmark of protein–ligand systems for free-energy calculations.
-- **[FS-Mol](https://aliquome.github.io/#datasets/chemistry/FS-Mol)**: Few-shot learning benchmark for molecular property prediction.
-- **[Runs N' Poses](https://aliquome.github.io/#datasets/chemistry/Runs%20N'%20Poses)**: Benchmark for protein–ligand co-folding methods.
-- **[HiQBind](https://aliquome.github.io/#datasets/chemistry/HiQBind)**: High-quality protein–ligand complexes with binding affinities.
-- **[BigBind / BayesBind](https://aliquome.github.io/#datasets/chemistry/BigBind%20%2F%20BayesBind)**: Large protein–ligand activity dataset (BigBind) with a companion virtual-screening benchmark (BayesBind).
-- **[PROTAC degradation](https://aliquome.github.io/#datasets/chemistry/PROTAC%20degradation)**: Targeted protein degradation data for predicting PROTAC activity.
-- **[SIU](https://aliquome.github.io/#datasets/chemistry/SIU)**: About one million structural small molecule–protein interactions.
-- **[PLUMB](https://aliquome.github.io/#datasets/chemistry/PLUMB)**: Benchmark for force fields and binding free-energy calculations.
-- **[ADORE](https://aliquome.github.io/#datasets/chemistry/ADORE)**: ADORE is a benchmark dataset for machine learning for ecotixicology, covering acute aquatic toxicity in three relevant taxonomic groups (fish, crustaceans, and algae).
-- **[AIDS](https://aliquome.github.io/#datasets/chemistry/AIDS)**: AIDS is a graph dataset. It consists of 2000 graphs representing molecular compounds which are constructed from the AIDS Antiviral Screen Database of Active Compounds.…
-- **[AIDS Antiviral Screen](https://aliquome.github.io/#datasets/chemistry/AIDS%20Antiviral%20Screen)**: The AIDS Antiviral Screen dataset is a dataset of screens checking tens of thousands of compounds for evidence of anti-HIV activity. The available screen results are…
-- **[Alex-MP-20 / Alexandria](https://aliquome.github.io/#datasets/chemistry/Alex-MP-20%20%2F%20Alexandria)**: Inorganic crystal structures computed with DFT for materials generation.
-- **[AlphaFold DB](https://aliquome.github.io/#datasets/chemistry/AlphaFold%20DB)**: Predicted protein structures from AlphaFold.
-- **[ApisTox](https://aliquome.github.io/#datasets/chemistry/ApisTox)**: ApisTox contains molecules in SMILES format for predicting pesticides toxicity to honey bees.
-- **[ATC-GRAPH](https://aliquome.github.io/#datasets/chemistry/ATC-GRAPH)**: ATC-GRAPH is the most extensive ATC benchmark dataset. All drugs in the benchmarks are linked to their Mol files instead of the SMILES sequences utilized in earlier…
-- **[ATC-SMILES](https://aliquome.github.io/#datasets/chemistry/ATC-SMILES)**: The benchmark ATC-SMILES is built for ATC classification. ATC-SMILES consists of 4545 compounds/drugs and their SMILES sequences. The benchmark is with the maximum…
-- **[B-XAIC](https://aliquome.github.io/#datasets/chemistry/B-XAIC)**: B-XAIC consists of 50K small molecules represented as graphs and includes 7 graph classification tasks, each with ground truth labels and corresponding explanations.
-- **[BBBP (Blood-Brain Barrier Penetration)](https://aliquome.github.io/#datasets/chemistry/BBBP%20(Blood-Brain%20Barrier%20Penetration))**: The BBBP dataset comes from a study focused on modeling and predicting the permeability of the blood-brain barrier. The BBBP dataset contains binary labels indicating…
-- **[Binding MOAD](https://aliquome.github.io/#datasets/chemistry/Binding%20MOAD)**: High-quality protein–ligand complexes with binding data.
-- **[BindingDB](https://aliquome.github.io/#datasets/chemistry/BindingDB)**: Measured binding affinities between proteins and small molecules.
-- **[CASF-2016](https://aliquome.github.io/#datasets/chemistry/CASF-2016)**: Benchmark for evaluating scoring functions on protein–ligand complexes.
-- **[CATH](https://aliquome.github.io/#datasets/chemistry/CATH)**: Hierarchical classification of protein domain structures.
-- **[ChEBI-20](https://aliquome.github.io/#datasets/chemistry/ChEBI-20)**: Dataset contains 33,010 molecule-description pairs split into 80\\%/10\\%/10\\% train/val/test splits. The goal of the task is to retrieve the relevant molecule for a…
-- **[ChEBI-20 / L+M-24](https://aliquome.github.io/#datasets/chemistry/ChEBI-20%20%2F%20L%2BM-24)**: Paired molecules and text descriptions for molecule–language translation.
-- **[ChEMBL](https://aliquome.github.io/#datasets/chemistry/ChEMBL)**: Manually curated bioactivity data for drug-like molecules, widely used to train generative and property models.
-- **[clintox](https://aliquome.github.io/#datasets/chemistry/clintox)**: The ClinTox dataset compares drugs approved by the FDA and drugs that have failed clinical trials for toxicity reasons. The dataset includes two classification tasks for…
-- **[CrossDocked2020](https://aliquome.github.io/#datasets/chemistry/CrossDocked2020)**: Docked protein–ligand poses used to train and evaluate structure-based molecule generation.
-- **[DAVIS](https://aliquome.github.io/#datasets/chemistry/DAVIS)**: Kinase inhibitor binding affinities for drug–target interaction prediction.
-- **[DAVIS-DTA](https://aliquome.github.io/#datasets/chemistry/DAVIS-DTA)**: Dataset Description: The interaction of 72 kinase inhibitors with 442 kinases covering &gt;80% of the human catalytic protein kinome.
-- **[DEKOIS 2.0](https://aliquome.github.io/#datasets/chemistry/DEKOIS%202.0)**: Benchmark sets of actives and decoys for evaluating docking.
-- **[DOCKSTRING](https://aliquome.github.io/#datasets/chemistry/DOCKSTRING)**: Docking-score benchmark for molecular property prediction and optimization.
-- **[DOCKSTRING](https://aliquome.github.io/#datasets/chemistry/DOCKSTRING)**: Docking scores for molecules against protein targets for benchmarking.
-- **[Drug Combination Extraction Dataset](https://aliquome.github.io/#datasets/chemistry/Drug%20Combination%20Extraction%20Dataset)**: This dataset consists of 1634 biomedical abstracts, expert-annotated for the purpose of extracting information about the efficacy of drug combinations from the scientiﬁc…
-- **[DrugBank](https://aliquome.github.io/#datasets/chemistry/DrugBank)**: Drug and drug–target database with chemical, pharmacological and target data.
-- **[DrugComb](https://aliquome.github.io/#datasets/chemistry/DrugComb)**: DrugComb is an open-access, community-driven data portal where the results of drug combination screening studies for a large variety of cancer cell lines are…
-- **[DUD-E](https://aliquome.github.io/#datasets/chemistry/DUD-E)**: Directory of useful decoys for benchmarking virtual screening.
-- **[Enamine REAL](https://aliquome.github.io/#datasets/chemistry/Enamine%20REAL)**: Make-on-demand chemical space for virtual screening.
-- **[EquiBind data](https://aliquome.github.io/#datasets/chemistry/EquiBind%20data)**: The protein-ligand complexes of PDBBind v2020 preprocessed as described in the paper "EquiBind: Geometric Deep Learning for Drug Binding Structure Prediction" with…
-- **[ESOL (Estimated SOLubility)](https://aliquome.github.io/#datasets/chemistry/ESOL%20(Estimated%20SOLubility))**: ESOL is a water solubility prediction dataset consisting of 1128 samples.
-- **[ExCAPE-DB](https://aliquome.github.io/#datasets/chemistry/ExCAPE-DB)**: Integrated large-scale chemogenomics dataset for bioactivity modelling.
-- **[FreeSolv (Free Solvation)](https://aliquome.github.io/#datasets/chemistry/FreeSolv%20(Free%20Solvation))**: The FreeSolv database offers a curated collection of experimental and calculated hydration-free energies for small molecules in water. It includes both experimental…
-- **[GDB-11/13/17/20](https://aliquome.github.io/#datasets/chemistry/GDB-11%2F13%2F17%2F20)**: Enumerated chemical universe databases of small organic molecules.
-- **[GDSC](https://aliquome.github.io/#datasets/chemistry/GDSC)**: Drug sensitivity of cancer cell lines.
-- **[GEOM](https://aliquome.github.io/#datasets/chemistry/GEOM)**: 3D conformer ensembles for drug-like molecules (GEOM-Drugs) and small molecules (GEOM-QM9).
-- **[GEOM](https://aliquome.github.io/#datasets/chemistry/GEOM)**: Conformer ensembles for drug-like (Drugs) and small (QM9) molecules.
-- **[GEOM-DRUGS](https://aliquome.github.io/#datasets/chemistry/GEOM-DRUGS)**: GEOM-DRUGS is a dataset of 430,000 large organic molecules of up to 180 atoms from Axelrod and Gómez-Bombarelli, Nature Scientific Data, 2022.
-- **[GuacaMol](https://aliquome.github.io/#datasets/chemistry/GuacaMol)**: Molecular design benchmark with about 1.6 million SMILES from ChEMBL 24 with 25 tasks.
-- **[GuacaMol](https://aliquome.github.io/#datasets/chemistry/GuacaMol)**: Benchmark suite for de novo molecular design based on ChEMBL.
-- **[hERG](https://aliquome.github.io/#datasets/chemistry/hERG)**: HERG is a large-scale biophysics federated molecular dataset related to cardiac toxicity. It consists of 10,572 compounds, with an average of 29.39 nodes and 94.09 edges…
-- **[HIV (Human Immunodeficiency Virus)](https://aliquome.github.io/#datasets/chemistry/HIV%20(Human%20Immunodeficiency%20Virus))**: The HIV dataset was introduced by the Drug Therapeutics Program (DTP) AIDS Antiviral Screen, which tested the ability to inhibit HIV replication for over 40,000…
-- **[HT Docking](https://aliquome.github.io/#datasets/chemistry/HT%20Docking)**: HT Docking is a dataset consisting of 200 million 3D complex structures and 2D structure scores across a consistent set of 13 million \`\`in-stock'' molecules over 15…
-- **[ImDrug](https://aliquome.github.io/#datasets/chemistry/ImDrug)**: ImDrug is a comprehensive benchmark with an open-source Python library which consists of 4 imbalance settings, 11 AI-ready datasets, 54 learning tasks and 16 baseline…
-- **[IZA zeolite](https://aliquome.github.io/#datasets/chemistry/IZA%20zeolite)**: Database of zeolite framework structures.
-- **[KIBA](https://aliquome.github.io/#datasets/chemistry/KIBA)**: Kinase inhibitor bioactivity scores for drug–target interaction prediction.
-- **[L+M-24](https://aliquome.github.io/#datasets/chemistry/L%2BM-24)**: Language-molecule models have emerged as an exciting direction for molecular discovery and understanding. However, training these models is challenging due to the…
-- **[Large-Scale Chemical Language Representations Capture Molecular Structure and Properties](https://aliquome.github.io/#datasets/chemistry/Large-Scale%20Chemical%20Language%20Representations%20Capture%20Molecular%20Structure%20and%20Properties)**: Got "pubchem\_smiles\_canonical.zip" from
-- **[LIDDI](https://aliquome.github.io/#datasets/chemistry/LIDDI)**: LInked Drug-Drug Interactions (LIDDI) is a public nanopublication-based RDF dataset with trusty URIs that encompasses some of the most cited prediction methods and…
-- **[LigBoundConf 2.0](https://aliquome.github.io/#datasets/chemistry/LigBoundConf%202.0)**: LigBoundConf is a set of high-quality drug-like bound ligand structures in the Protein Data Bank (PDB). The original set contains three sets of structures: "raw”…
-- **[LINCS L1000](https://aliquome.github.io/#datasets/chemistry/LINCS%20L1000)**: Gene expression signatures of cells under chemical and genetic perturbations.
-- **[Lipophilicity (logd74)](https://aliquome.github.io/#datasets/chemistry/Lipophilicity%20(logd74))**: The lipophilicity database refers to a collection of information related to the lipophilic properties of various molecules. Lipophilicity, also known as hydrophobicity,…
-- **[LIT-PCBA](https://aliquome.github.io/#datasets/chemistry/LIT-PCBA)**: Unbiased virtual screening benchmark built from PubChem assays.
-- **[MARCEL](https://aliquome.github.io/#datasets/chemistry/MARCEL)**: Benchmark for learning from conformer ensembles (Drugs-75K, Kraken, BDE, EE).
-- **[MARCEL](https://aliquome.github.io/#datasets/chemistry/MARCEL)**: Benchmark for learning on molecular conformer ensembles.
-- **[MassSpecGym](https://aliquome.github.io/#datasets/chemistry/MassSpecGym)**: MassSpecGym provides three challenges for benchmarking the discovery and identification of new molecules from MS/MS spectra:
-- **[Materials Project / MP-20](https://aliquome.github.io/#datasets/chemistry/Materials%20Project%20%2F%20MP-20)**: Inorganic crystal structures; MP-20 is a standard benchmark for crystal generation.
-- **[Mol-Instructions](https://aliquome.github.io/#datasets/chemistry/Mol-Instructions)**: Biomolecular instruction dataset for language models.
-- **[MolData](https://aliquome.github.io/#datasets/chemistry/MolData)**: Molecular benchmark of 1,255 bioassay tasks.
-- **[MolData](https://aliquome.github.io/#datasets/chemistry/MolData)**: Bioassay benchmark for molecular machine learning.
-- **[Molecular dynamics trajectories of pYEEI:SH2 recognition, unbiased, at all-atom resolution.](https://aliquome.github.io/#datasets/chemistry/Molecular%20dynamics%20trajectories%20of%20pYEEI%3ASH2%20recognition%2C%20unbiased%2C%20at%20all-atom%20resolution.)**: Click to add a brief description of the dataset (Markdown and LaTeX enabled).
-- **[Molecule3D](https://aliquome.github.io/#datasets/chemistry/Molecule3D)**: Molecule3D is a new benchmark that includes a dataset with precise ground-state geometries of approximately 4 million molecules derived from density functional theory…
-- **[Molecule3D / Drugs-75K](https://aliquome.github.io/#datasets/chemistry/Molecule3D%20%2F%20Drugs-75K)**: Large sets of molecular 3D geometries for geometry prediction and generation.
-- **[MoleculeCLA](https://aliquome.github.io/#datasets/chemistry/MoleculeCLA)**: We present MoleculeCLA: a large-scale dataset consisting of approximately 140,000 small molecules derived from computational ligand-target binding analysis, providing…
-- **[MoleculeNet](https://aliquome.github.io/#datasets/chemistry/MoleculeNet)**: Benchmark collection for molecular property prediction.
-- **[MolGrapher-Synthetic-300K](https://aliquome.github.io/#datasets/chemistry/MolGrapher-Synthetic-300K)**: The set is created using molecule SMILES retrieved from the database PubChem. Images are then generated from SMILES using the molecule drawing library RDKit. The…
-- **[MolOpt](https://aliquome.github.io/#datasets/chemistry/MolOpt)**: Open-source benchmark for Practical Molecular Optimization (PMO), to facilitate the transparent and reproducible evaluation of algorithmic advances in molecular…
-- **[MolParser-7M](https://aliquome.github.io/#datasets/chemistry/MolParser-7M)**: A large scale OCSR dataset, proposed in paper “MolParser: End-to-end Visual Recognition of Molecule Structures in the Wild“ MolParser-7M contains nearly 8 million paired…
-- **[MOSES](https://aliquome.github.io/#datasets/chemistry/MOSES)**: Molecule generation benchmark with about 1.9 million SMILES from ZINC.
-- **[MOSES](https://aliquome.github.io/#datasets/chemistry/MOSES)**: Benchmark platform and dataset for molecule generation.
-- **[Multi-Labelled SMILES Odors dataset](https://aliquome.github.io/#datasets/chemistry/Multi-Labelled%20SMILES%20Odors%20dataset)**: This dataset is a multi-labelled SMILES odor dataset with 138 odor descriptors. This dataset was created for replicating the paper: A principal odor map unifies diverse…
-- **[Multimodal-spectroscopic-dataset](https://aliquome.github.io/#datasets/chemistry/Multimodal-spectroscopic-dataset)**: Spectroscopic techniques are essential tools for determining the structure of molecules. Different spectroscopic techniques, such as Nuclear magnetic resonance (NMR),…
-- **[MUTAG](https://aliquome.github.io/#datasets/chemistry/MUTAG)**: In particular, MUTAG is a collection of nitroaromatic compounds and the goal is to predict their mutagenicity on Salmonella typhimurium.
-- **[Mutagenicity](https://aliquome.github.io/#datasets/chemistry/Mutagenicity)**: Mutagenicity is a chemical compound dataset of drugs, which can be categorized into two classes: mutagen and non-mutagen.
-- **[MUV](https://aliquome.github.io/#datasets/chemistry/MUV)**: The Maximum Unbiased Validation (MUV) dataset is a benchmark dataset selected from PubChem BioAssay. It was created by applying a refined nearest-neighbor analysis. The…
-- **[NCI1](https://aliquome.github.io/#datasets/chemistry/NCI1)**: The NCI1 dataset comes from the cheminformatics domain, where each input graph is used as representation of a chemical compound: each vertex stands for an atom of the…
-- **[NIST / MassBank / GNPS](https://aliquome.github.io/#datasets/chemistry/NIST%20%2F%20MassBank%20%2F%20GNPS)**: Mass spectral libraries for metabolite and small-molecule identification.
-- **[NSIDES](https://aliquome.github.io/#datasets/chemistry/NSIDES)**: Drug side effects and drug-drug interactions were mined from publicly available data. Offsides is a database of drug side-effects that were found, but are not listed on…
-- **[OAS](https://aliquome.github.io/#datasets/chemistry/OAS)**: Observed Antibody Space: large collection of antibody repertoire sequences.
-- **[OpenREACT-CHON-EFH](https://aliquome.github.io/#datasets/chemistry/OpenREACT-CHON-EFH)**: RTP Dataset (Reactant–Transition State–Product Dataset) The RTP dataset forms the core training and evaluation set and consists of 35,087 molecular geometries sampled…
-- **[Papyrus](https://aliquome.github.io/#datasets/chemistry/Papyrus)**: About 60 million curated bioactivity data points for drug discovery modelling.
-- **[Papyrus](https://aliquome.github.io/#datasets/chemistry/Papyrus)**: Curated large-scale bioactivity dataset for drug discovery.
-- **[PaRoutes](https://aliquome.github.io/#datasets/chemistry/PaRoutes)**: We introduce a framework for benchmarking multi-step retrosynthesis methods, i.e. route predictions, called PaRoutes. The framework consists of two sets of 10 000…
-- **[PCBA](https://aliquome.github.io/#datasets/chemistry/PCBA)**: PubChem BioAssay subset of 128 assays for multitask activity prediction.
-- **[PCQM4Mv2-LSC](https://aliquome.github.io/#datasets/chemistry/PCQM4Mv2-LSC)**: PCQM4Mv2 is a quantum chemistry dataset originally curated under the PubChemQC project. Based on the PubChemQC, we define a meaningful ML task of predicting…
-- **[PDBbind](https://aliquome.github.io/#datasets/chemistry/PDBbind)**: Experimental binding affinities for protein–ligand complexes in the PDB.
-- **[PepBDB](https://aliquome.github.io/#datasets/chemistry/PepBDB)**: Database of peptide–protein complex structures.
-- **[Perov-5](https://aliquome.github.io/#datasets/chemistry/Perov-5)**: Perovskite crystal structures used as a crystal-generation benchmark.
-- **[Photoswitch](https://aliquome.github.io/#datasets/chemistry/Photoswitch)**: A benchmark for molecular machine learning where improvements in model performance can be immediately observed in the throughput of promising molecules synthesized in…
-- **[PMO / mol\_opt](https://aliquome.github.io/#datasets/chemistry/PMO%20%2F%20mol_opt)**: Practical molecular optimization benchmark with 23 oracle tasks.
-- **[PMO / mol\_opt](https://aliquome.github.io/#datasets/chemistry/PMO%20%2F%20mol_opt)**: Practical molecular optimization benchmark with oracle-budgeted tasks.
-- **[Polaris](https://aliquome.github.io/#datasets/chemistry/Polaris)**: Benchmarking platform for drug discovery datasets, including the ASAP Antiviral 2025 challenge.
-- **[PoseBusters](https://aliquome.github.io/#datasets/chemistry/PoseBusters)**: Benchmark for checking the physical validity of predicted protein–ligand poses (V1: 428, V2: 308 complexes).
-- **[PoseBusters](https://aliquome.github.io/#datasets/chemistry/PoseBusters)**: Benchmark set for physical validity of docked and generated poses.
-- **[PoseBusters Benchmark](https://aliquome.github.io/#datasets/chemistry/PoseBusters%20Benchmark)**: These are the protein-ligand complexes of the PoseBusters Benchmark set as described in the paper "PoseBusters: AI-based docking methods fail to generate physically…
-- **[PoseCheck](https://aliquome.github.io/#datasets/chemistry/PoseCheck)**: Tool and benchmark for evaluating generated protein–ligand poses.
-- **[PoseCheck](https://aliquome.github.io/#datasets/chemistry/PoseCheck)**: Benchmark for evaluating poses from structure-based generative models.
-- **[PseudoMD-1M](https://aliquome.github.io/#datasets/chemistry/PseudoMD-1M)**: Pre-training dataset used in paper "From Artificially Real to Real: Leveraging Pseudo Data from Large Language Models for Low-Resource Molecule Discovery" (AAAI 2024)
-- **[PTC](https://aliquome.github.io/#datasets/chemistry/PTC)**: PTC is a collection of 344 chemical compounds represented as graphs which report the carcinogenicity for rats. There are 19 node labels for each node.
-- **[PubChem](https://aliquome.github.io/#datasets/chemistry/PubChem)**: Public repository of chemical structures and bioassay results.
-- **[PubChem: Antagonist of Human D 1 Dopamine Receptor: qHTS](https://aliquome.github.io/#datasets/chemistry/PubChem%3A%20Antagonist%20of%20Human%20D%201%20Dopamine%20Receptor%3A%20qHTS)**: He goal of this project is to use high throughput screening approaches to identify and develop novel, highly selective small molecule allosteric modulators of the D1 DAR…
-- **[PubChem18](https://aliquome.github.io/#datasets/chemistry/PubChem18)**: A.2.1 AN OPEN, LARGE-SCALE DATASET FOR ZERO-SHOT DRUG DISCOVERY DERIVED FROM PUBCHEM We constructed a large public dataset extracted from PubChem (Kim et al., 2019;…
-- **[PubChemQC](https://aliquome.github.io/#datasets/chemistry/PubChemQC)**: Quantum chemistry calculations on PubChem molecules.
-- **[QM7](https://aliquome.github.io/#datasets/chemistry/QM7)**: QM7 dataset is a subset of the GDB-13 database. GDB-13 contains nearly 1 billion stable and synthetically accessible organic molecules. In the QM7 subset, only molecules…
-- **[QM8](https://aliquome.github.io/#datasets/chemistry/QM8)**: QM8 dataset is a collection of molecular data used for studying quantum mechanical calculations of electronic spectra and excited state energy of small molecules. The…
-- **[QM9](https://aliquome.github.io/#datasets/chemistry/QM9)**: Quantum-chemical properties of about 134,000 small organic molecules.
-- **[QMugs](https://aliquome.github.io/#datasets/chemistry/QMugs)**: Quantum-mechanical properties of drug-like molecules.
-- **[QTautobase](https://aliquome.github.io/#datasets/chemistry/QTautobase)**: Equilibrium structures of the tautobase(reference) optimized at the level of theory of popular quantum chemical databases (QM9,PC9 and ANI-E). The structures were…
-- **[RAbD / IgFold](https://aliquome.github.io/#datasets/chemistry/RAbD%20%2F%20IgFold)**: Antibody design benchmark (RAbD) and antibody structure prediction resources (IgFold).
-- **[RCSB PDB](https://aliquome.github.io/#datasets/chemistry/RCSB%20PDB)**: Experimentally determined 3D structures of biological macromolecules.
-- **[SAbDab](https://aliquome.github.io/#datasets/chemistry/SAbDab)**: Structural antibody database of antibody structures from the PDB.
-- **[SIDER](https://aliquome.github.io/#datasets/chemistry/SIDER)**: SIDER contains information on marketed medicines and their recorded adverse drug reactions. The information is extracted from public documents and package inserts.
-- **[sim-combi](https://aliquome.github.io/#datasets/chemistry/sim-combi)**: Data simulator for polypharmacies / drug combinations TL;DR python create\_dataset.py \[--config path/to/config.json --seed your\_seed\]
-- **[SKEMPI 2.0](https://aliquome.github.io/#datasets/chemistry/SKEMPI%202.0)**: Binding free-energy changes upon mutation in protein–protein complexes.
-- **[SolProp](https://aliquome.github.io/#datasets/chemistry/SolProp)**: The SolProp dataset is a valuable resource for predicting the solubility limits of organic solutes in various solvents and at different temperatures. It estimates the…
-- **[SureChEMBL](https://aliquome.github.io/#datasets/chemistry/SureChEMBL)**: Chemical structures extracted from patent documents.
-- **[Tartarus](https://aliquome.github.io/#datasets/chemistry/Tartarus)**: Benchmark for inverse design of molecules and materials.
-- **[Tartarus](https://aliquome.github.io/#datasets/chemistry/Tartarus)**: Inverse molecular design benchmark suite.
-- **[TDC](https://aliquome.github.io/#datasets/chemistry/TDC)**: Therapeutics Data Commons datasets and benchmarks for drug discovery.
-- **[TOMG-Bench](https://aliquome.github.io/#datasets/chemistry/TOMG-Bench)**: In this paper, we propose Text-based Open Molecule Generation Benchmark (TOMG-Bench), the first benchmark to evaluate the open-domain molecule generation capability of…
-- **[Tox21](https://aliquome.github.io/#datasets/chemistry/Tox21)**: Toxicity measurements for compounds across 12 assays.
-- **[ToxCast (Toxicity Forecaster)](https://aliquome.github.io/#datasets/chemistry/ToxCast%20(Toxicity%20Forecaster))**: ToxCast is an initiative by the U.S. Environmental Protection Agency (EPA) aimed at predicting the potential toxicity of various chemical compounds. It involves…
-- **[Toxicity](https://aliquome.github.io/#datasets/chemistry/Toxicity)**: Classification dataset of 171 molecules according to its toxicity from the UCI Machine Learning Repository.
-- **[UniProt / Swiss-Prot](https://aliquome.github.io/#datasets/chemistry/UniProt%20%2F%20Swiss-Prot)**: Reviewed protein sequences and functional annotation.
-- **[USPTO](https://aliquome.github.io/#datasets/chemistry/USPTO)**: Chemical reactions extracted from US patents for reaction prediction and retrosynthesis.
-- **[USPTO-190](https://aliquome.github.io/#datasets/chemistry/USPTO-190)**: A chemical synthesis route dataset constructed from the USPTO reaction dataset (1976-Sep2016) and a list of commercially available building blocks from eMolecules…
-- **[USPTO-30K](https://aliquome.github.io/#datasets/chemistry/USPTO-30K)**: We introduce USPTO-30K, a large-scale benchmark dataset of annotated molecule images, which overcomes these limitations. It is created using the pairs of images and…
-- **[USPTO-50k](https://aliquome.github.io/#datasets/chemistry/USPTO-50k)**: Subset and preprocessed version of Chemical reactions from US patents (1976-Sep2016) by Daniel Lowe. It includes 50K randomly selected reactions that was later…
-- **[Vis-CheBI20](https://aliquome.github.io/#datasets/chemistry/Vis-CheBI20)**: Molecules represent tokens of the language of chemistry, which underlies not only chemistry itself, but also scientific fields that use chemical information such as…
-- **[ZINC](https://aliquome.github.io/#datasets/chemistry/ZINC)**: Commercially available compounds for virtual screening; ZINC250k is the common generative-model training set.
-- **[ZINC22](https://aliquome.github.io/#datasets/chemistry/ZINC22)**: Multi-billion-scale library of make-on-demand compounds for virtual screening.
+- **[TDC (Therapeutics Data Commons)](https://aliquome.github.io/datasets/tdc-therapeutics-data-commons/)**: Collection of more than 60 datasets for ADMET, drug–target interaction, molecule generation and other therapeutic tasks.
+- **[DeepPurpose datasets](https://aliquome.github.io/datasets/deeppurpose-datasets/)**: Drug–target interaction datasets including DAVIS, KIBA, BindingDB and antiviral data.
+- **[PLINDER](https://aliquome.github.io/datasets/plinder/)**: Large curated dataset of protein–ligand interactions with leakage-aware splits for training and evaluation.
+- **[Protein-Ligand Benchmark (OpenFF)](https://aliquome.github.io/datasets/protein-ligand-benchmark-openff/)**: Curated benchmark of protein–ligand systems for free-energy calculations.
+- **[FS-Mol](https://aliquome.github.io/datasets/fs-mol/)**: Few-shot learning benchmark for molecular property prediction.
+- **[Runs N' Poses](https://aliquome.github.io/datasets/runs-n-poses/)**: Benchmark for protein–ligand co-folding methods.
+- **[HiQBind](https://aliquome.github.io/datasets/hiqbind/)**: High-quality protein–ligand complexes with binding affinities.
+- **[BigBind / BayesBind](https://aliquome.github.io/datasets/bigbind-bayesbind/)**: Large protein–ligand activity dataset (BigBind) with a companion virtual-screening benchmark (BayesBind).
+- **[PROTAC degradation](https://aliquome.github.io/datasets/protac-degradation/)**: Targeted protein degradation data for predicting PROTAC activity.
+- **[SIU](https://aliquome.github.io/datasets/siu/)**: About one million structural small molecule–protein interactions.
+- **[PLUMB](https://aliquome.github.io/datasets/plumb/)**: Benchmark for force fields and binding free-energy calculations.
+- **[ADORE](https://aliquome.github.io/datasets/adore/)**: ADORE is a benchmark dataset for machine learning for ecotixicology, covering acute aquatic toxicity in three relevant taxonomic groups (fish, crustaceans, and algae).
+- **[AIDS](https://aliquome.github.io/datasets/aids/)**: AIDS is a graph dataset. It consists of 2000 graphs representing molecular compounds which are constructed from the AIDS Antiviral Screen Database of Active Compounds.…
+- **[AIDS Antiviral Screen](https://aliquome.github.io/datasets/aids-antiviral-screen/)**: The AIDS Antiviral Screen dataset is a dataset of screens checking tens of thousands of compounds for evidence of anti-HIV activity. The available screen results are…
+- **[Alex-MP-20 / Alexandria](https://aliquome.github.io/datasets/alex-mp-20-alexandria/)**: Inorganic crystal structures computed with DFT for materials generation.
+- **[AlphaFold DB](https://aliquome.github.io/datasets/alphafold-db/)**: Predicted protein structures from AlphaFold.
+- **[ApisTox](https://aliquome.github.io/datasets/apistox/)**: ApisTox contains molecules in SMILES format for predicting pesticides toxicity to honey bees.
+- **[ATC-GRAPH](https://aliquome.github.io/datasets/atc-graph/)**: ATC-GRAPH is the most extensive ATC benchmark dataset. All drugs in the benchmarks are linked to their Mol files instead of the SMILES sequences utilized in earlier…
+- **[ATC-SMILES](https://aliquome.github.io/datasets/atc-smiles/)**: The benchmark ATC-SMILES is built for ATC classification. ATC-SMILES consists of 4545 compounds/drugs and their SMILES sequences. The benchmark is with the maximum…
+- **[B-XAIC](https://aliquome.github.io/datasets/b-xaic/)**: B-XAIC consists of 50K small molecules represented as graphs and includes 7 graph classification tasks, each with ground truth labels and corresponding explanations.
+- **[BBBP (Blood-Brain Barrier Penetration)](https://aliquome.github.io/datasets/bbbp-blood-brain-barrier-penetration/)**: The BBBP dataset comes from a study focused on modeling and predicting the permeability of the blood-brain barrier. The BBBP dataset contains binary labels indicating…
+- **[Binding MOAD](https://aliquome.github.io/datasets/binding-moad/)**: High-quality protein–ligand complexes with binding data.
+- **[BindingDB](https://aliquome.github.io/datasets/bindingdb/)**: Measured binding affinities between proteins and small molecules.
+- **[CASF-2016](https://aliquome.github.io/datasets/casf-2016/)**: Benchmark for evaluating scoring functions on protein–ligand complexes.
+- **[CATH](https://aliquome.github.io/datasets/cath/)**: Hierarchical classification of protein domain structures.
+- **[ChEBI-20](https://aliquome.github.io/datasets/chebi-20/)**: Dataset contains 33,010 molecule-description pairs split into 80\\%/10\\%/10\\% train/val/test splits. The goal of the task is to retrieve the relevant molecule for a…
+- **[ChEBI-20 / L+M-24](https://aliquome.github.io/datasets/chebi-20-l-m-24/)**: Paired molecules and text descriptions for molecule–language translation.
+- **[ChEMBL](https://aliquome.github.io/datasets/chembl/)**: Manually curated bioactivity data for drug-like molecules, widely used to train generative and property models.
+- **[clintox](https://aliquome.github.io/datasets/clintox/)**: The ClinTox dataset compares drugs approved by the FDA and drugs that have failed clinical trials for toxicity reasons. The dataset includes two classification tasks for…
+- **[CrossDocked2020](https://aliquome.github.io/datasets/crossdocked2020/)**: Docked protein–ligand poses used to train and evaluate structure-based molecule generation.
+- **[DAVIS](https://aliquome.github.io/datasets/davis/)**: Kinase inhibitor binding affinities for drug–target interaction prediction.
+- **[DAVIS-DTA](https://aliquome.github.io/datasets/davis-dta/)**: Dataset Description: The interaction of 72 kinase inhibitors with 442 kinases covering &gt;80% of the human catalytic protein kinome.
+- **[DEKOIS 2.0](https://aliquome.github.io/datasets/dekois-2-0/)**: Benchmark sets of actives and decoys for evaluating docking.
+- **[DOCKSTRING](https://aliquome.github.io/datasets/dockstring-2/)**: Docking-score benchmark for molecular property prediction and optimization.
+- **[DOCKSTRING](https://aliquome.github.io/datasets/dockstring-2/)**: Docking scores for molecules against protein targets for benchmarking.
+- **[Drug Combination Extraction Dataset](https://aliquome.github.io/datasets/drug-combination-extraction-dataset/)**: This dataset consists of 1634 biomedical abstracts, expert-annotated for the purpose of extracting information about the efficacy of drug combinations from the scientiﬁc…
+- **[DrugBank](https://aliquome.github.io/datasets/drugbank/)**: Drug and drug–target database with chemical, pharmacological and target data.
+- **[DrugComb](https://aliquome.github.io/datasets/drugcomb/)**: DrugComb is an open-access, community-driven data portal where the results of drug combination screening studies for a large variety of cancer cell lines are…
+- **[DUD-E](https://aliquome.github.io/datasets/dud-e/)**: Directory of useful decoys for benchmarking virtual screening.
+- **[Enamine REAL](https://aliquome.github.io/datasets/enamine-real/)**: Make-on-demand chemical space for virtual screening.
+- **[EquiBind data](https://aliquome.github.io/datasets/equibind-data/)**: The protein-ligand complexes of PDBBind v2020 preprocessed as described in the paper "EquiBind: Geometric Deep Learning for Drug Binding Structure Prediction" with…
+- **[ESOL (Estimated SOLubility)](https://aliquome.github.io/datasets/esol-estimated-solubility/)**: ESOL is a water solubility prediction dataset consisting of 1128 samples.
+- **[ExCAPE-DB](https://aliquome.github.io/datasets/excape-db/)**: Integrated large-scale chemogenomics dataset for bioactivity modelling.
+- **[FreeSolv (Free Solvation)](https://aliquome.github.io/datasets/freesolv-free-solvation/)**: The FreeSolv database offers a curated collection of experimental and calculated hydration-free energies for small molecules in water. It includes both experimental…
+- **[GDB-11/13/17/20](https://aliquome.github.io/datasets/gdb-11-13-17-20/)**: Enumerated chemical universe databases of small organic molecules.
+- **[GDSC](https://aliquome.github.io/datasets/gdsc/)**: Drug sensitivity of cancer cell lines.
+- **[GEOM](https://aliquome.github.io/datasets/geom-2/)**: 3D conformer ensembles for drug-like molecules (GEOM-Drugs) and small molecules (GEOM-QM9).
+- **[GEOM](https://aliquome.github.io/datasets/geom-2/)**: Conformer ensembles for drug-like (Drugs) and small (QM9) molecules.
+- **[GEOM-DRUGS](https://aliquome.github.io/datasets/geom-drugs/)**: GEOM-DRUGS is a dataset of 430,000 large organic molecules of up to 180 atoms from Axelrod and Gómez-Bombarelli, Nature Scientific Data, 2022.
+- **[GuacaMol](https://aliquome.github.io/datasets/guacamol-2/)**: Molecular design benchmark with about 1.6 million SMILES from ChEMBL 24 with 25 tasks.
+- **[GuacaMol](https://aliquome.github.io/datasets/guacamol-2/)**: Benchmark suite for de novo molecular design based on ChEMBL.
+- **[hERG](https://aliquome.github.io/datasets/herg/)**: HERG is a large-scale biophysics federated molecular dataset related to cardiac toxicity. It consists of 10,572 compounds, with an average of 29.39 nodes and 94.09 edges…
+- **[HIV (Human Immunodeficiency Virus)](https://aliquome.github.io/datasets/hiv-human-immunodeficiency-virus/)**: The HIV dataset was introduced by the Drug Therapeutics Program (DTP) AIDS Antiviral Screen, which tested the ability to inhibit HIV replication for over 40,000…
+- **[HT Docking](https://aliquome.github.io/datasets/ht-docking/)**: HT Docking is a dataset consisting of 200 million 3D complex structures and 2D structure scores across a consistent set of 13 million \`\`in-stock'' molecules over 15…
+- **[ImDrug](https://aliquome.github.io/datasets/imdrug/)**: ImDrug is a comprehensive benchmark with an open-source Python library which consists of 4 imbalance settings, 11 AI-ready datasets, 54 learning tasks and 16 baseline…
+- **[IZA zeolite](https://aliquome.github.io/datasets/iza-zeolite/)**: Database of zeolite framework structures.
+- **[KIBA](https://aliquome.github.io/datasets/kiba/)**: Kinase inhibitor bioactivity scores for drug–target interaction prediction.
+- **[L+M-24](https://aliquome.github.io/datasets/l-m-24/)**: Language-molecule models have emerged as an exciting direction for molecular discovery and understanding. However, training these models is challenging due to the…
+- **[Large-Scale Chemical Language Representations Capture Molecular Structure and Properties](https://aliquome.github.io/datasets/large-scale-chemical-language-representations-capture-molecular-struct/)**: Got "pubchem\_smiles\_canonical.zip" from
+- **[LIDDI](https://aliquome.github.io/datasets/liddi/)**: LInked Drug-Drug Interactions (LIDDI) is a public nanopublication-based RDF dataset with trusty URIs that encompasses some of the most cited prediction methods and…
+- **[LigBoundConf 2.0](https://aliquome.github.io/datasets/ligboundconf-2-0/)**: LigBoundConf is a set of high-quality drug-like bound ligand structures in the Protein Data Bank (PDB). The original set contains three sets of structures: "raw”…
+- **[LINCS L1000](https://aliquome.github.io/datasets/lincs-l1000/)**: Gene expression signatures of cells under chemical and genetic perturbations.
+- **[Lipophilicity (logd74)](https://aliquome.github.io/datasets/lipophilicity-logd74/)**: The lipophilicity database refers to a collection of information related to the lipophilic properties of various molecules. Lipophilicity, also known as hydrophobicity,…
+- **[LIT-PCBA](https://aliquome.github.io/datasets/lit-pcba-2/)**: Unbiased virtual screening benchmark built from PubChem assays.
+- **[MARCEL](https://aliquome.github.io/datasets/marcel-2/)**: Benchmark for learning from conformer ensembles (Drugs-75K, Kraken, BDE, EE).
+- **[MARCEL](https://aliquome.github.io/datasets/marcel-2/)**: Benchmark for learning on molecular conformer ensembles.
+- **[MassSpecGym](https://aliquome.github.io/datasets/massspecgym/)**: MassSpecGym provides three challenges for benchmarking the discovery and identification of new molecules from MS/MS spectra:
+- **[Materials Project / MP-20](https://aliquome.github.io/datasets/materials-project-mp-20/)**: Inorganic crystal structures; MP-20 is a standard benchmark for crystal generation.
+- **[Mol-Instructions](https://aliquome.github.io/datasets/mol-instructions-2/)**: Biomolecular instruction dataset for language models.
+- **[MolData](https://aliquome.github.io/datasets/moldata-2/)**: Molecular benchmark of 1,255 bioassay tasks.
+- **[MolData](https://aliquome.github.io/datasets/moldata-2/)**: Bioassay benchmark for molecular machine learning.
+- **[Molecular dynamics trajectories of pYEEI:SH2 recognition, unbiased, at all-atom resolution.](https://aliquome.github.io/datasets/molecular-dynamics-trajectories-of-pyeei-sh2-recognition-unbiased-at-a/)**: Click to add a brief description of the dataset (Markdown and LaTeX enabled).
+- **[Molecule3D](https://aliquome.github.io/datasets/molecule3d/)**: Molecule3D is a new benchmark that includes a dataset with precise ground-state geometries of approximately 4 million molecules derived from density functional theory…
+- **[Molecule3D / Drugs-75K](https://aliquome.github.io/datasets/molecule3d-drugs-75k/)**: Large sets of molecular 3D geometries for geometry prediction and generation.
+- **[MoleculeCLA](https://aliquome.github.io/datasets/moleculecla/)**: We present MoleculeCLA: a large-scale dataset consisting of approximately 140,000 small molecules derived from computational ligand-target binding analysis, providing…
+- **[MoleculeNet](https://aliquome.github.io/datasets/moleculenet-2/)**: Benchmark collection for molecular property prediction.
+- **[MolGrapher-Synthetic-300K](https://aliquome.github.io/datasets/molgrapher-synthetic-300k/)**: The set is created using molecule SMILES retrieved from the database PubChem. Images are then generated from SMILES using the molecule drawing library RDKit. The…
+- **[MolOpt](https://aliquome.github.io/datasets/molopt/)**: Open-source benchmark for Practical Molecular Optimization (PMO), to facilitate the transparent and reproducible evaluation of algorithmic advances in molecular…
+- **[MolParser-7M](https://aliquome.github.io/datasets/molparser-7m/)**: A large scale OCSR dataset, proposed in paper “MolParser: End-to-end Visual Recognition of Molecule Structures in the Wild“ MolParser-7M contains nearly 8 million paired…
+- **[MOSES](https://aliquome.github.io/datasets/moses-2/)**: Molecule generation benchmark with about 1.9 million SMILES from ZINC.
+- **[MOSES](https://aliquome.github.io/datasets/moses-2/)**: Benchmark platform and dataset for molecule generation.
+- **[Multi-Labelled SMILES Odors dataset](https://aliquome.github.io/datasets/multi-labelled-smiles-odors-dataset/)**: This dataset is a multi-labelled SMILES odor dataset with 138 odor descriptors. This dataset was created for replicating the paper: A principal odor map unifies diverse…
+- **[Multimodal-spectroscopic-dataset](https://aliquome.github.io/datasets/multimodal-spectroscopic-dataset/)**: Spectroscopic techniques are essential tools for determining the structure of molecules. Different spectroscopic techniques, such as Nuclear magnetic resonance (NMR),…
+- **[MUTAG](https://aliquome.github.io/datasets/mutag/)**: In particular, MUTAG is a collection of nitroaromatic compounds and the goal is to predict their mutagenicity on Salmonella typhimurium.
+- **[Mutagenicity](https://aliquome.github.io/datasets/mutagenicity/)**: Mutagenicity is a chemical compound dataset of drugs, which can be categorized into two classes: mutagen and non-mutagen.
+- **[MUV](https://aliquome.github.io/datasets/muv/)**: The Maximum Unbiased Validation (MUV) dataset is a benchmark dataset selected from PubChem BioAssay. It was created by applying a refined nearest-neighbor analysis. The…
+- **[NCI1](https://aliquome.github.io/datasets/nci1/)**: The NCI1 dataset comes from the cheminformatics domain, where each input graph is used as representation of a chemical compound: each vertex stands for an atom of the…
+- **[NIST / MassBank / GNPS](https://aliquome.github.io/datasets/nist-massbank-gnps/)**: Mass spectral libraries for metabolite and small-molecule identification.
+- **[NSIDES](https://aliquome.github.io/datasets/nsides/)**: Drug side effects and drug-drug interactions were mined from publicly available data. Offsides is a database of drug side-effects that were found, but are not listed on…
+- **[OAS](https://aliquome.github.io/datasets/oas/)**: Observed Antibody Space: large collection of antibody repertoire sequences.
+- **[OpenREACT-CHON-EFH](https://aliquome.github.io/datasets/openreact-chon-efh/)**: RTP Dataset (Reactant–Transition State–Product Dataset) The RTP dataset forms the core training and evaluation set and consists of 35,087 molecular geometries sampled…
+- **[Papyrus](https://aliquome.github.io/datasets/papyrus-2/)**: About 60 million curated bioactivity data points for drug discovery modelling.
+- **[Papyrus](https://aliquome.github.io/datasets/papyrus-2/)**: Curated large-scale bioactivity dataset for drug discovery.
+- **[PaRoutes](https://aliquome.github.io/datasets/paroutes/)**: We introduce a framework for benchmarking multi-step retrosynthesis methods, i.e. route predictions, called PaRoutes. The framework consists of two sets of 10 000…
+- **[PCBA](https://aliquome.github.io/datasets/pcba/)**: PubChem BioAssay subset of 128 assays for multitask activity prediction.
+- **[PCQM4Mv2-LSC](https://aliquome.github.io/datasets/pcqm4mv2-lsc/)**: PCQM4Mv2 is a quantum chemistry dataset originally curated under the PubChemQC project. Based on the PubChemQC, we define a meaningful ML task of predicting…
+- **[PDBbind](https://aliquome.github.io/datasets/pdbbind/)**: Experimental binding affinities for protein–ligand complexes in the PDB.
+- **[PepBDB](https://aliquome.github.io/datasets/pepbdb/)**: Database of peptide–protein complex structures.
+- **[Perov-5](https://aliquome.github.io/datasets/perov-5/)**: Perovskite crystal structures used as a crystal-generation benchmark.
+- **[Photoswitch](https://aliquome.github.io/datasets/photoswitch/)**: A benchmark for molecular machine learning where improvements in model performance can be immediately observed in the throughput of promising molecules synthesized in…
+- **[PMO / mol\_opt](https://aliquome.github.io/datasets/pmo-mol-opt-2/)**: Practical molecular optimization benchmark with 23 oracle tasks.
+- **[PMO / mol\_opt](https://aliquome.github.io/datasets/pmo-mol-opt-2/)**: Practical molecular optimization benchmark with oracle-budgeted tasks.
+- **[Polaris](https://aliquome.github.io/datasets/polaris/)**: Benchmarking platform for drug discovery datasets, including the ASAP Antiviral 2025 challenge.
+- **[PoseBusters](https://aliquome.github.io/datasets/posebusters-2/)**: Benchmark for checking the physical validity of predicted protein–ligand poses (V1: 428, V2: 308 complexes).
+- **[PoseBusters](https://aliquome.github.io/datasets/posebusters-2/)**: Benchmark set for physical validity of docked and generated poses.
+- **[PoseBusters Benchmark](https://aliquome.github.io/datasets/posebusters-benchmark/)**: These are the protein-ligand complexes of the PoseBusters Benchmark set as described in the paper "PoseBusters: AI-based docking methods fail to generate physically…
+- **[PoseCheck](https://aliquome.github.io/datasets/posecheck-2/)**: Tool and benchmark for evaluating generated protein–ligand poses.
+- **[PoseCheck](https://aliquome.github.io/datasets/posecheck-2/)**: Benchmark for evaluating poses from structure-based generative models.
+- **[PseudoMD-1M](https://aliquome.github.io/datasets/pseudomd-1m/)**: Pre-training dataset used in paper "From Artificially Real to Real: Leveraging Pseudo Data from Large Language Models for Low-Resource Molecule Discovery" (AAAI 2024)
+- **[PTC](https://aliquome.github.io/datasets/ptc/)**: PTC is a collection of 344 chemical compounds represented as graphs which report the carcinogenicity for rats. There are 19 node labels for each node.
+- **[PubChem](https://aliquome.github.io/datasets/pubchem/)**: Public repository of chemical structures and bioassay results.
+- **[PubChem: Antagonist of Human D 1 Dopamine Receptor: qHTS](https://aliquome.github.io/datasets/pubchem-antagonist-of-human-d-1-dopamine-receptor-qhts/)**: He goal of this project is to use high throughput screening approaches to identify and develop novel, highly selective small molecule allosteric modulators of the D1 DAR…
+- **[PubChem18](https://aliquome.github.io/datasets/pubchem18/)**: A.2.1 AN OPEN, LARGE-SCALE DATASET FOR ZERO-SHOT DRUG DISCOVERY DERIVED FROM PUBCHEM We constructed a large public dataset extracted from PubChem (Kim et al., 2019;…
+- **[PubChemQC](https://aliquome.github.io/datasets/pubchemqc/)**: Quantum chemistry calculations on PubChem molecules.
+- **[QM7](https://aliquome.github.io/datasets/qm7/)**: QM7 dataset is a subset of the GDB-13 database. GDB-13 contains nearly 1 billion stable and synthetically accessible organic molecules. In the QM7 subset, only molecules…
+- **[QM8](https://aliquome.github.io/datasets/qm8/)**: QM8 dataset is a collection of molecular data used for studying quantum mechanical calculations of electronic spectra and excited state energy of small molecules. The…
+- **[QM9](https://aliquome.github.io/datasets/qm9/)**: Quantum-chemical properties of about 134,000 small organic molecules.
+- **[QMugs](https://aliquome.github.io/datasets/qmugs/)**: Quantum-mechanical properties of drug-like molecules.
+- **[QTautobase](https://aliquome.github.io/datasets/qtautobase/)**: Equilibrium structures of the tautobase(reference) optimized at the level of theory of popular quantum chemical databases (QM9,PC9 and ANI-E). The structures were…
+- **[RAbD / IgFold](https://aliquome.github.io/datasets/rabd-igfold/)**: Antibody design benchmark (RAbD) and antibody structure prediction resources (IgFold).
+- **[RCSB PDB](https://aliquome.github.io/datasets/rcsb-pdb/)**: Experimentally determined 3D structures of biological macromolecules.
+- **[SAbDab](https://aliquome.github.io/datasets/sabdab/)**: Structural antibody database of antibody structures from the PDB.
+- **[SIDER](https://aliquome.github.io/datasets/sider/)**: SIDER contains information on marketed medicines and their recorded adverse drug reactions. The information is extracted from public documents and package inserts.
+- **[sim-combi](https://aliquome.github.io/datasets/sim-combi/)**: Data simulator for polypharmacies / drug combinations TL;DR python create\_dataset.py \[--config path/to/config.json --seed your\_seed\]
+- **[SKEMPI 2.0](https://aliquome.github.io/datasets/skempi-2-0/)**: Binding free-energy changes upon mutation in protein–protein complexes.
+- **[SolProp](https://aliquome.github.io/datasets/solprop/)**: The SolProp dataset is a valuable resource for predicting the solubility limits of organic solutes in various solvents and at different temperatures. It estimates the…
+- **[SureChEMBL](https://aliquome.github.io/datasets/surechembl/)**: Chemical structures extracted from patent documents.
+- **[Tartarus](https://aliquome.github.io/datasets/tartarus-2/)**: Benchmark for inverse design of molecules and materials.
+- **[Tartarus](https://aliquome.github.io/datasets/tartarus-2/)**: Inverse molecular design benchmark suite.
+- **[TDC](https://aliquome.github.io/datasets/tdc/)**: Therapeutics Data Commons datasets and benchmarks for drug discovery.
+- **[TOMG-Bench](https://aliquome.github.io/datasets/tomg-bench/)**: In this paper, we propose Text-based Open Molecule Generation Benchmark (TOMG-Bench), the first benchmark to evaluate the open-domain molecule generation capability of…
+- **[Tox21](https://aliquome.github.io/datasets/tox21/)**: Toxicity measurements for compounds across 12 assays.
+- **[ToxCast (Toxicity Forecaster)](https://aliquome.github.io/datasets/toxcast-toxicity-forecaster/)**: ToxCast is an initiative by the U.S. Environmental Protection Agency (EPA) aimed at predicting the potential toxicity of various chemical compounds. It involves…
+- **[Toxicity](https://aliquome.github.io/datasets/toxicity/)**: Classification dataset of 171 molecules according to its toxicity from the UCI Machine Learning Repository.
+- **[UniProt / Swiss-Prot](https://aliquome.github.io/datasets/uniprot-swiss-prot/)**: Reviewed protein sequences and functional annotation.
+- **[USPTO](https://aliquome.github.io/datasets/uspto/)**: Chemical reactions extracted from US patents for reaction prediction and retrosynthesis.
+- **[USPTO-190](https://aliquome.github.io/datasets/uspto-190/)**: A chemical synthesis route dataset constructed from the USPTO reaction dataset (1976-Sep2016) and a list of commercially available building blocks from eMolecules…
+- **[USPTO-30K](https://aliquome.github.io/datasets/uspto-30k/)**: We introduce USPTO-30K, a large-scale benchmark dataset of annotated molecule images, which overcomes these limitations. It is created using the pairs of images and…
+- **[USPTO-50k](https://aliquome.github.io/datasets/uspto-50k/)**: Subset and preprocessed version of Chemical reactions from US patents (1976-Sep2016) by Daniel Lowe. It includes 50K randomly selected reactions that was later…
+- **[Vis-CheBI20](https://aliquome.github.io/datasets/vis-chebi20/)**: Molecules represent tokens of the language of chemistry, which underlies not only chemistry itself, but also scientific fields that use chemical information such as…
+- **[ZINC](https://aliquome.github.io/datasets/zinc/)**: Commercially available compounds for virtual screening; ZINC250k is the common generative-model training set.
+- **[ZINC22](https://aliquome.github.io/datasets/zinc22/)**: Multi-billion-scale library of make-on-demand compounds for virtual screening.
 
 </details>
 
 <details>
 <summary><b>Epigenomics and regulation</b> (2 datasets)</summary>
 
-- **[GUE](https://aliquome.github.io/#datasets/regulation/GUE)**: A collection of $28$ datasets across $7$ tasks constructed for genome language model evaluation. Contains seven tasks: promoter prediction.
-- **[Multi-omics mRNA, miRNA, and DNA Methylation Dataset](https://aliquome.github.io/#datasets/regulation/Multi-omics%20mRNA%2C%20miRNA%2C%20and%20DNA%20Methylation%20Dataset)**: The dataset contains multi-omics data, incuding mRNA, miRNA, and DNA methylation. The dataset comprises 8,464 samples involving 2,794 omics features and covers 31 cancer…
+- **[GUE](https://aliquome.github.io/datasets/gue/)**: A collection of $28$ datasets across $7$ tasks constructed for genome language model evaluation. Contains seven tasks: promoter prediction.
+- **[Multi-omics mRNA, miRNA, and DNA Methylation Dataset](https://aliquome.github.io/datasets/multi-omics-mrna-mirna-and-dna-methylation-dataset/)**: The dataset contains multi-omics data, incuding mRNA, miRNA, and DNA methylation. The dataset comprises 8,464 samples involving 2,794 omics features and covers 31 cancer…
 
 </details>
 
 <details>
 <summary><b>RNA</b> (7 datasets)</summary>
 
-- **[ncRNA-deep](https://aliquome.github.io/#datasets/rna/ncRNA-deep)**: Classification datasets for non-coding RNAs.
-- **[siRNA data grabber](https://aliquome.github.io/#datasets/rna/siRNA%20data%20grabber)**: More than 18,000 siRNA knockdown efficacy records from 10 sources.
-- **[lncRNA homologs](https://aliquome.github.io/#datasets/rna/lncRNA%20homologs)**: Dataset of lncRNA homologs across species.
-- **[Genome-wide miRNA detection](https://aliquome.github.io/#datasets/rna/Genome-wide%20miRNA%20detection)**: We've made available several genome-wide datasets, which can be used for training microRNA (miRNA) classifiers. The hairpin sequences available are from the genomes of:…
-- **[RNA-Puzzles](https://aliquome.github.io/#datasets/rna/RNA-Puzzles)**: RNA-Puzzles is a collective experiment for blind RNA structure prediction. The sequence of a solved RNA structure is confidentially communicated to participating…
-- **[RNADesign](https://aliquome.github.io/#datasets/rna/RNADesign)**: An environment for RNA design given structure constraints with structures from different datasets to choose from.
-- **[siRNA Endosomal Escape](https://aliquome.github.io/#datasets/rna/siRNA%20Endosomal%20Escape)**: Click to add a brief description of the dataset (Markdown and LaTeX enabled).
+- **[ncRNA-deep](https://aliquome.github.io/datasets/ncrna-deep/)**: Classification datasets for non-coding RNAs.
+- **[siRNA data grabber](https://aliquome.github.io/datasets/sirna-data-grabber/)**: More than 18,000 siRNA knockdown efficacy records from 10 sources.
+- **[lncRNA homologs](https://aliquome.github.io/datasets/lncrna-homologs/)**: Dataset of lncRNA homologs across species.
+- **[Genome-wide miRNA detection](https://aliquome.github.io/datasets/genome-wide-mirna-detection/)**: We've made available several genome-wide datasets, which can be used for training microRNA (miRNA) classifiers. The hairpin sequences available are from the genomes of:…
+- **[RNA-Puzzles](https://aliquome.github.io/datasets/rna-puzzles/)**: RNA-Puzzles is a collective experiment for blind RNA structure prediction. The sequence of a solved RNA structure is confidentially communicated to participating…
+- **[RNADesign](https://aliquome.github.io/datasets/rnadesign/)**: An environment for RNA design given structure constraints with structures from different datasets to choose from.
+- **[siRNA Endosomal Escape](https://aliquome.github.io/datasets/sirna-endosomal-escape/)**: Click to add a brief description of the dataset (Markdown and LaTeX enabled).
 
 </details>
 
 <details>
 <summary><b>Microbiome and metagenomics</b> (8 datasets)</summary>
 
-- **[GRUMP](https://aliquome.github.io/#datasets/microbiome/GRUMP)**: Global rRNA universal metabarcoding of plankton across ocean samples.
-- **[AGAR](https://aliquome.github.io/#datasets/microbiome/AGAR)**: The Annotated Germs for Automated Recognition (AGAR) dataset is an image database of microbial colonies cultured on an agar plate. It contains 18000 photos of five…
-- **[Artificial fluorescent bacteria dataset](https://aliquome.github.io/#datasets/microbiome/Artificial%20fluorescent%20bacteria%20dataset)**: These images consist of a series of bacteria of the type Bacillus Subtilis that are suspended and captured by a digital microscope. The fluorescent bacteria dataset can…
-- **[BB-norm-habitat](https://aliquome.github.io/#datasets/microbiome/BB-norm-habitat)**: In the BB-norm modality of this task, participant systems had to normalize textual entity mentions according to the OntoBiotope ontology for habitats. See BB-dataset for…
-- **[BB-norm-phenotype](https://aliquome.github.io/#datasets/microbiome/BB-norm-phenotype)**: In the BB-norm modality of this task, participant systems had to normalize textual entity mentions according to the OntoBiotope ontology for phenotypes. See BB-dataset…
-- **[BPCIS](https://aliquome.github.io/#datasets/microbiome/BPCIS)**: BPCIS is collection of 364 bacterial phase contrast images and corresponding label matrices for instance segmentation. Labels were made according to fluorescence…
-- **[Full16S sewage](https://aliquome.github.io/#datasets/microbiome/Full16S%20sewage)**: Full-length 16S rRNA sequences from wastewater with ASV counts and taxonomy.
-- **[Real Bacteria Dataset](https://aliquome.github.io/#datasets/microbiome/Real%20Bacteria%20Dataset)**: A genomics dataset for OOD detection that allows other researchers to benchmark progress on this important problem.
+- **[GRUMP](https://aliquome.github.io/datasets/grump/)**: Global rRNA universal metabarcoding of plankton across ocean samples.
+- **[AGAR](https://aliquome.github.io/datasets/agar/)**: The Annotated Germs for Automated Recognition (AGAR) dataset is an image database of microbial colonies cultured on an agar plate. It contains 18000 photos of five…
+- **[Artificial fluorescent bacteria dataset](https://aliquome.github.io/datasets/artificial-fluorescent-bacteria-dataset/)**: These images consist of a series of bacteria of the type Bacillus Subtilis that are suspended and captured by a digital microscope. The fluorescent bacteria dataset can…
+- **[BB-norm-habitat](https://aliquome.github.io/datasets/bb-norm-habitat/)**: In the BB-norm modality of this task, participant systems had to normalize textual entity mentions according to the OntoBiotope ontology for habitats. See BB-dataset for…
+- **[BB-norm-phenotype](https://aliquome.github.io/datasets/bb-norm-phenotype/)**: In the BB-norm modality of this task, participant systems had to normalize textual entity mentions according to the OntoBiotope ontology for phenotypes. See BB-dataset…
+- **[BPCIS](https://aliquome.github.io/datasets/bpcis/)**: BPCIS is collection of 364 bacterial phase contrast images and corresponding label matrices for instance segmentation. Labels were made according to fluorescence…
+- **[Full16S sewage](https://aliquome.github.io/datasets/full16s-sewage/)**: Full-length 16S rRNA sequences from wastewater with ASV counts and taxonomy.
+- **[Real Bacteria Dataset](https://aliquome.github.io/datasets/real-bacteria-dataset/)**: A genomics dataset for OOD detection that allows other researchers to benchmark progress on this important problem.
 
 </details>
 
 <details>
 <summary><b>Benchmarks and machine learning</b> (120 datasets)</summary>
 
-- **[IMCS-21](https://aliquome.github.io/#datasets/benchmarks/IMCS-21)**: Benchmark for automated medical consultation dialogue.
-- **[BioCoder](https://aliquome.github.io/#datasets/benchmarks/BioCoder)**: Benchmark for bioinformatics code generation.
-- **[bioTaskBench](https://aliquome.github.io/#datasets/benchmarks/bioTaskBench)**: Benchmark of bioinformatics tasks for evaluating AI agents.
-- **[1D, 2D and 3D SBDD benchmark (Beyond Affinity)](https://aliquome.github.io/#datasets/benchmarks/1D%2C%202D%20and%203D%20SBDD%20benchmark%20(Beyond%20Affinity))**: Benchmark comparing 1D, 2D and 3D structure-based drug design methods beyond binding affinity.
-- **[Adverse Drug Events (ADE) Corpus](https://aliquome.github.io/#datasets/benchmarks/Adverse%20Drug%20Events%20(ADE)%20Corpus)**: Development of a benchmark corpus to support the automatic extraction of drug-related adverse effects from medical case reports.
-- **[Antibody Watch](https://aliquome.github.io/#datasets/benchmarks/Antibody%20Watch)**: Antibody Watch is a dataset of text snippets extracted from over 2000 PubMed articles with annotations denoting specificity of antibodies.
-- **[ASAP Discovery × Polaris Antiviral 2025](https://aliquome.github.io/#datasets/benchmarks/ASAP%20Discovery%20%C3%97%20Polaris%20Antiviral%202025)**: Antiviral challenge data for ADMET, potency and ligand pose prediction.
-- **[ATLAS MD](https://aliquome.github.io/#datasets/benchmarks/ATLAS%20MD)**: Molecular dynamics of about 1,390 protein chains, 3 × 100 ns each.
-- **[BB](https://aliquome.github.io/#datasets/benchmarks/BB)**: The Bacteria Biotope (BB) Task is part of the BioNLP Open Shared Tasks and meets the BioNLP-OST standards of quality, originality and data formats. Manually annotated…
-- **[BC2GM](https://aliquome.github.io/#datasets/benchmarks/BC2GM)**: Created by Smith et al. at 2008, the BioCreative II Gene Mention Recognition (BC2GM) Dataset contains data where participants are asked to identify a gene mention in a…
-- **[BC4CHEMD](https://aliquome.github.io/#datasets/benchmarks/BC4CHEMD)**: Introduced by Krallinger et al. in The CHEMDNER corpus of chemicals and drugs and its annotation principles
-- **[BC5CDR](https://aliquome.github.io/#datasets/benchmarks/BC5CDR)**: BC5CDR corpus consists of 1500 PubMed articles with 4409 annotated chemicals, 5818 diseases and 3116 chemical-disease interactions.
-- **[BC7 NLM-Chem](https://aliquome.github.io/#datasets/benchmarks/BC7%20NLM-Chem)**: Full-text chemical identification and indexing in PubMed articles.
-- **[BELKA](https://aliquome.github.io/#datasets/benchmarks/BELKA)**: Leash Bio DNA-encoded library dataset of about 133 million molecules for binding prediction.
-- **[Bento](https://aliquome.github.io/#datasets/benchmarks/Bento)**: Benchmark for protein–ligand docking.
-- **[BigBio](https://aliquome.github.io/#datasets/benchmarks/BigBio)**: More than 126 biomedical NLP datasets with unified schemas.
-- **[BioASQ](https://aliquome.github.io/#datasets/benchmarks/BioASQ)**: BioASQ is a question answering dataset. Instances in the BioASQ dataset are composed of a question (Q), human-annotated answers (A), and the relevant contexts (C) (also…
-- **[BioLAMA](https://aliquome.github.io/#datasets/benchmarks/BioLAMA)**: BioLAMA is a benchmark comprised of 49K biomedical factual knowledge triples for probing biomedical Language Models. It is used to assess the capabilities of Language…
-- **[BioLeaflets](https://aliquome.github.io/#datasets/benchmarks/BioLeaflets)**: BioLeaflets is a biomedical dataset for Data2Text generation. It is a corpus of 1,336 package leaflets of medicines authorised in Europe, which were obtained by scraping…
-- **[BioLiP2](https://aliquome.github.io/#datasets/benchmarks/BioLiP2)**: Weekly-updated database of biologically relevant ligand–protein binding sites.
-- **[BIOMRC](https://aliquome.github.io/#datasets/benchmarks/BIOMRC)**: A large-scale cloze-style biomedical MRC dataset. Care was taken to reduce noise, compared to the previous BIOREAD dataset of Pappas et al. (2018).
-- **[BioNLI](https://aliquome.github.io/#datasets/benchmarks/BioNLI)**: BioNLI is a dataset in biomedical natural language inference. This dataset contains abstracts from biomedical literature and mechanistic premises generated with nine…
-- **[BioProBench](https://aliquome.github.io/#datasets/benchmarks/BioProBench)**: Benchmark for understanding and reasoning over laboratory protocols.
-- **[BioRED](https://aliquome.github.io/#datasets/benchmarks/BioRED)**: BioRED is a first-of-its-kind biomedical relation extraction dataset with multiple entity types (e.g. gene/protein, disease, chemical) and relation pairs (e.g.…
-- **[BIOSSES](https://aliquome.github.io/#datasets/benchmarks/BIOSSES)**: The BIOSSES data set comprises total 100 sentence pairs all of which were selected from the "TAC2 Biomedical Summarization Track Training Data Set" .
-- **[BixBench](https://aliquome.github.io/#datasets/benchmarks/BixBench)**: More than 50 analysis scenarios and about 300 questions for evaluating bioinformatics AI agents.
-- **[BLUE](https://aliquome.github.io/#datasets/benchmarks/BLUE)**: The BLUE benchmark consists of five different biomedicine text-mining tasks with ten corpora. These tasks cover a diverse range of text genres (biomedical literature and…
-- **[BLURB](https://aliquome.github.io/#datasets/benchmarks/BLURB)**: BLURB is a collection of resources for biomedical natural language processing. In general domains such as newswire and the Web, comprehensive benchmarks and leaderboards…
-- **[CAFA](https://aliquome.github.io/#datasets/benchmarks/CAFA)**: Critical assessment of protein function prediction using GO terms.
-- **[CAGI](https://aliquome.github.io/#datasets/benchmarks/CAGI)**: Critical Assessment of Genome Interpretation challenges (CAGI1 to CAGI7).
-- **[CAMELYON16/17](https://aliquome.github.io/#datasets/benchmarks/CAMELYON16%2F17)**: Whole-slide images of lymph node metastases for detection and staging.
-- **[CAMEO](https://aliquome.github.io/#datasets/benchmarks/CAMEO)**: Continuous weekly blind assessment of 3D structure, quality estimation and ligand prediction.
-- **[CASP](https://aliquome.github.io/#datasets/benchmarks/CASP)**: Biennial blind assessment of protein structure prediction methods.
-- **[CDR](https://aliquome.github.io/#datasets/benchmarks/CDR)**: The BioCreative V CDR task corpus is manually annotated for chemicals, diseases and chemical-induced disease (CID) relations. It contains the titles and abstracts of…
-- **[Chem-FINESE](https://aliquome.github.io/#datasets/benchmarks/Chem-FINESE)**: The dataset contains two few-shot chemical fine-grained entity extraction datasets, based on human-annotated ChemNER+ and CHEMET. For each dataset, we randomly sample a…
-- **[ChemProt](https://aliquome.github.io/#datasets/benchmarks/ChemProt)**: ChemProt consists of 1,820 PubMed abstracts with chemical-protein interactions annotated by domain experts and was used in the BioCreative VI text mining…
-- **[COMETA](https://aliquome.github.io/#datasets/benchmarks/COMETA)**: Consists of 20k English biomedical entity mentions from Reddit expert-annotated with links to SNOMED CT, a widely-used medical knowledge graph.
-- **[CoNECo](https://aliquome.github.io/#datasets/benchmarks/CoNECo)**: Complex Named Entity Corpus (CoNECo) is an annotated corpus for NER and NEN of protein-containing complexes. CoNECo comprises 1,621 documents with 2,052 entities, 1,976…
-- **[ConGen dataset](https://aliquome.github.io/#datasets/benchmarks/ConGen%20dataset)**: Dataset for multi-constraint molecule generation.
-- **[CoWeSe](https://aliquome.github.io/#datasets/benchmarks/CoWeSe)**: CoWeSe is a Spanish biomedical corpus consisting of 4.5GB (about 750M tokens) of clean plain text. CoWeSe is the result of a massive crawler on 3000 Spanish domains…
-- **[Dataset: Relationship extraction for knowledge graph creation from biomedical literature (Gene-Disease relationships)](https://aliquome.github.io/#datasets/benchmarks/Dataset%3A%20Relationship%20extraction%20for%20knowledge%20graph%20creation%20from%20biomedical%20literature%20(Gene-Disease%20relationships))**: This is the dataset used for classifying Gene-Disease relationship types from sentences. The dataset consists of 3 files:
-- **[DDI](https://aliquome.github.io/#datasets/benchmarks/DDI)**: The DDIExtraction 2013 task relies on the DDI corpus which contains MedLine abstracts on drug-drug interactions as well as documents describing drug-drug interactions…
-- **[DeepSEA / Sei](https://aliquome.github.io/#datasets/benchmarks/DeepSEA%20%2F%20Sei)**: Chromatin-profile prediction data: 919 features in DeepSEA and 21,907 in Sei.
-- **[DREAM Challenges](https://aliquome.github.io/#datasets/benchmarks/DREAM%20Challenges)**: Crowdsourced biomedical challenges, e.g. Random Promoter DREAM 2022 with about 6.7 million promoters.
-- **[DrugProt](https://aliquome.github.io/#datasets/benchmarks/DrugProt)**: DrugProt corpus, where domain experts have exhaustively labeled:(a) all chemical and gene mentions, and (b) all binary relationships between them corresponding to a…
-- **[DUD-E and DEKOIS 2.0](https://aliquome.github.io/#datasets/benchmarks/DUD-E%20and%20DEKOIS%202.0)**: Virtual screening benchmarks with actives and decoys: DUD-E (102 targets) and DEKOIS 2.0 (81 targets).
-- **[Durian](https://aliquome.github.io/#datasets/benchmarks/Durian)**: Benchmark for structure-based 3D molecule generation.
-- **[eLife](https://aliquome.github.io/#datasets/benchmarks/eLife)**: This dataset contains 4,828 full biomedical articles paired with non-technical lay summaries derived from the eLife scientific journal.
-- **[EU-ADR](https://aliquome.github.io/#datasets/benchmarks/EU-ADR)**: The EU-ADR corpus is a biomedical relation extraction dataset that contains 100 abstracts, with relations between drug, disorder, and targets.
-- **[Evidence Inference 2.0](https://aliquome.github.io/#datasets/benchmarks/Evidence%20Inference%202.0)**: The dataset consists of biomedical articles describing randomized control trials (RCTs) that compare multiple treatments. Each of these articles will have multiple…
-- **[GAD](https://aliquome.github.io/#datasets/benchmarks/GAD)**: GAD, or Gene Associations Database, is a corpus of gene-disease associations curated from genetic association studies.
-- **[GDA](https://aliquome.github.io/#datasets/benchmarks/GDA)**: The gene-disease associations corpus contains 30,192 titles and abstracts from PubMed articles that have been automatically labelled for genes, diseases and gene-disease…
-- **[GDB-13s](https://aliquome.github.io/#datasets/benchmarks/GDB-13s)**: Chemical space of fragments derived from bioactive molecules.
-- **[GDB-20](https://aliquome.github.io/#datasets/benchmarks/GDB-20)**: Trillion-scale database of drug-like molecules.
-- **[Genecorpus-30M](https://aliquome.github.io/#datasets/benchmarks/Genecorpus-30M)**: Pretraining corpus of about 30 million single-cell transcriptomes used for Geneformer.
-- **[GENIA](https://aliquome.github.io/#datasets/benchmarks/GENIA)**: The GENIA corpus is the primary collection of biomedical literature compiled and annotated within the scope of the GENIA project. The corpus was created to support the…
-- **[Genomics Long-Range Benchmark (LRB)](https://aliquome.github.io/#datasets/benchmarks/Genomics%20Long-Range%20Benchmark%20(LRB))**: Genomics benchmark with input sequences of up to about 100 kb.
-- **[HOC](https://aliquome.github.io/#datasets/benchmarks/HOC)**: The Hallmarks of Cancer (\*HOC) corpus consists of 1852 PubMed publication abstracts manually annotated by experts according to the Hallmarks of Cancer taxonomy. The…
-- **[JNLPBA](https://aliquome.github.io/#datasets/benchmarks/JNLPBA)**: JNLPBA is a biomedical dataset that comes from the GENIA version 3.02 corpus (Kim et al., 2003). It was created with a controlled search on MEDLINE. From this search…
-- **[Kaggle biology competitions](https://aliquome.github.io/#datasets/benchmarks/Kaggle%20biology%20competitions)**: Biology competitions such as Stanford RNA 3D Folding Part 2 (2026), Ribonanza, Novozymes enzyme stability, Open Problems, CZII cryo-ET, HuBMAP and HPA.
-- **[LAB-Bench](https://aliquome.github.io/#datasets/benchmarks/LAB-Bench)**: About 2,400 multiple-choice questions for evaluating biology research agents.
-- **[LABBench2](https://aliquome.github.io/#datasets/benchmarks/LABBench2)**: 1,892 tasks in 11 categories for evaluating AI on biology research.
-- **[LINNAEUS](https://aliquome.github.io/#datasets/benchmarks/LINNAEUS)**: LINNAEUS is a general-purpose dictionary matching software, capable of processing multiple types of document formats in the biomedical domain (MEDLINE, PMC, BMC, OTMI,…
-- **[LIT-PCBA](https://aliquome.github.io/#datasets/benchmarks/LIT-PCBA)**: Virtual screening benchmark of 15 targets from PubChem; data leakage has been reported.
-- **[LIVECell](https://aliquome.github.io/#datasets/benchmarks/LIVECell)**: Label-free cell segmentation dataset with about 1.6 million annotated cells.
-- **[mdCATH](https://aliquome.github.io/#datasets/benchmarks/mdCATH)**: Molecular dynamics of 5,398 CATH domains at 5 temperatures with 5 replicas each (about 3 TB).
-- **[MedHop](https://aliquome.github.io/#datasets/benchmarks/MedHop)**: With the same format as WikiHop, the MedHop dataset is based on research paper abstracts from PubMed, and the queries are about interactions between pairs of drugs. The…
-- **[MedMentions](https://aliquome.github.io/#datasets/benchmarks/MedMentions)**: MedMentions is a new manually annotated resource for the recognition of biomedical concepts. What distinguishes MedMentions from other annotated biomedical corpora is…
-- **[MedQA](https://aliquome.github.io/#datasets/benchmarks/MedQA)**: USMLE-style medical exam questions for question answering.
-- **[MeSHup](https://aliquome.github.io/#datasets/benchmarks/MeSHup)**: Contains 1,342,667 full text articles in English, together with the associated MeSH labels and metadata, authors, and publication venues that are collected from the…
-- **[MoleculeNet](https://aliquome.github.io/#datasets/benchmarks/MoleculeNet)**: Molecular property benchmark: QM7/8/9, ESOL, FreeSolv, Lipophilicity, PCBA, HIV, BACE, BBBP, Tox21, ToxCast, SIDER and ClinTox.
-- **[MolGenBench](https://aliquome.github.io/#datasets/benchmarks/MolGenBench)**: Benchmark for structure-based drug design, from de novo design to lead optimization.
-- **[MoNuSeg and PanNuke](https://aliquome.github.io/#datasets/benchmarks/MoNuSeg%20and%20PanNuke)**: Nuclear segmentation datasets; PanNuke has 7,904 patches from 19 tissues.
-- **[MS^2](https://aliquome.github.io/#datasets/benchmarks/MS%5E2)**: MS^2 (Multi-Document Summarization of Medical Studies) is a dataset of over 470k documents and 20k summaries derived from the scientific literature.
-- **[Multi-target compounds dataset](https://aliquome.github.io/#datasets/benchmarks/Multi-target%20compounds%20dataset)**: Dataset of compounds for multi-target molecular design with REINVENT.
-- **[NCBI Disease](https://aliquome.github.io/#datasets/benchmarks/NCBI%20Disease)**: The NCBI Disease corpus consists of 793 PubMed abstracts, which are separated into training (593), development (100) and test (100) subsets. The NCBI Disease corpus is…
-- **[NEREL-BIO](https://aliquome.github.io/#datasets/benchmarks/NEREL-BIO)**: NEREL-BIO is an annotation scheme and corpus of PubMed abstracts in Russian and English. It contains annotations for 700+ Russian and 100+ English abstracts. All English…
-- **[Nucleotide Transformer downstream tasks (revised)](https://aliquome.github.io/#datasets/benchmarks/Nucleotide%20Transformer%20downstream%20tasks%20(revised))**: 18 genomics tasks with about 532,000 rows; the revised version is recommended over the original.
-- **[OpenADMET ExpansionRx Blind Challenge](https://aliquome.github.io/#datasets/benchmarks/OpenADMET%20ExpansionRx%20Blind%20Challenge)**: Blind ADMET challenge with more than 7,000 molecules and 9 endpoints.
-- **[PanCan-RE](https://aliquome.github.io/#datasets/benchmarks/PanCan-RE)**: Corpus of biomedical relations for pancreatic cancer.
-- **[PANDA](https://aliquome.github.io/#datasets/benchmarks/PANDA)**: About 11,000 prostate whole-slide images for Gleason grading.
-- **[PDBbind / CASF-2016](https://aliquome.github.io/#datasets/benchmarks/PDBbind%20%2F%20CASF-2016)**: Protein–ligand binding affinity data; CASF-2016 core set of 285 complexes for scoring-function evaluation.
-- **[PGR](https://aliquome.github.io/#datasets/benchmarks/PGR)**: Phenotype-Gene Relations (PGR) is a corpus that consists of 1712 abstracts, 5676 human phenotype annotations, 13835 gene annotations, and 4283 relations.
-- **[Phee](https://aliquome.github.io/#datasets/benchmarks/Phee)**: Phee is a dataset for pharmacovigilance comprising over 5000 annotated events from medical case reports and biomedical literature. It is designed for biomedical event…
-- **[PLABA](https://aliquome.github.io/#datasets/benchmarks/PLABA)**: Plain Language Adaptation of Biomedical Abstracts (PLABA) is a dataset designed for automatic adaptation that is both document- and sentence-aligned. The dataset…
-- **[PLOS](https://aliquome.github.io/#datasets/benchmarks/PLOS)**: This dataset contains 27,525 full biomedical articles paired with non-technical lay summaries derived from various journals published by the Public Library of Science…
-- **[Polymer inverse design benchmark](https://aliquome.github.io/#datasets/benchmarks/Polymer%20inverse%20design%20benchmark)**: Benchmark of generative models for polymer inverse design.
-- **[PQAref](https://aliquome.github.io/#datasets/benchmarks/PQAref)**: The PQAref dataset is a dataset for fine-tuning large language models for referenced question-answering in biomedical domain.
-- **[ProNCI](https://aliquome.github.io/#datasets/benchmarks/ProNCI)**: ProNCI consists of 22.5K proper noun compounds along with their free-form semantic interpretations. ProNCI is 60 times larger than prior noun compound datasets and also…
-- **[Protein-Instructions-OOD](https://aliquome.github.io/#datasets/benchmarks/Protein-Instructions-OOD)**: OOD split of the Mol-Instructions Dataset about Protein Annotation.
-- **[PubChemQA](https://aliquome.github.io/#datasets/benchmarks/PubChemQA)**: PubChemQA consists of molecules and their corresponding textual descriptions from PubChem. It contains a single type of question, i.e., please describe the molecule. We…
-- **[PubMed Paper Reading Dataset](https://aliquome.github.io/#datasets/benchmarks/PubMed%20Paper%20Reading%20Dataset)**: This dataset gathers 14,857 entities, 133 relations, and entities corresponding tokenized text from PubMed. It contains 875,698 training pairs, 109,462 development…
-- **[PubMed PICO Element Detection Dataset](https://aliquome.github.io/#datasets/benchmarks/PubMed%20PICO%20Element%20Detection%20Dataset)**: PICO is a framework to formulate a well-defined focused clinical question. This framework identifies the sentences in a given medical text that belong to the four…
-- **[PubMed RCT](https://aliquome.github.io/#datasets/benchmarks/PubMed%20RCT)**: PubMed 200k RCT is new dataset based on PubMed for sequential sentence classification. The dataset consists of approximately 200,000 abstracts of randomized controlled…
-- **[PubMed Term, Abstract, Conclusion, Title Dataset](https://aliquome.github.io/#datasets/benchmarks/PubMed%20Term%2C%20Abstract%2C%20Conclusion%2C%20Title%20Dataset)**: This dataset gathers three types of pairs: Title-to-Abstract (Training: 22,811/Development: 2095/Test: 2095), Abstract-to-Conclusion and Future work (Training:…
-- **[PubMedCite](https://aliquome.github.io/#datasets/benchmarks/PubMedCite)**: PubMedCite is a domain-specific dataset with about 192K biomedical scientific papers and a large citation graph preserving 917K citation relationships between them.
-- **[PubMedQA, BLURB and BioASQ](https://aliquome.github.io/#datasets/benchmarks/PubMedQA%2C%20BLURB%20and%20BioASQ)**: Biomedical question answering and language understanding benchmarks.
-- **[PyMolGen](https://aliquome.github.io/#datasets/benchmarks/PyMolGen)**: Database of generated compounds.
-- **[RediscMol](https://aliquome.github.io/#datasets/benchmarks/RediscMol)**: Benchmark testing whether generative models rediscover known active molecules.
-- **[Replogle 2022 (State-Replogle-Filtered)](https://aliquome.github.io/#datasets/benchmarks/Replogle%202022%20(State-Replogle-Filtered))**: Genome-scale CRISPRi Perturb-seq data in K562 and RPE1 cells.
-- **[RxRx1 / RxRx2 / RxRx3 / RxRx3-core](https://aliquome.github.io/#datasets/benchmarks/RxRx1%20%2F%20RxRx2%20%2F%20RxRx3%20%2F%20RxRx3-core)**: Recursion cellular imaging datasets of genetic and chemical perturbations.
-- **[SAbDab and OAS](https://aliquome.github.io/#datasets/benchmarks/SAbDab%20and%20OAS)**: Structural antibody database (SAbDab) and Observed Antibody Space repertoire sequences (OAS).
-- **[SBDD benchmark 2024 (Do 3D Methods Really Dominate?)](https://aliquome.github.io/#datasets/benchmarks/SBDD%20benchmark%202024%20(Do%203D%20Methods%20Really%20Dominate%3F))**: Benchmark testing whether 3D methods outperform simpler approaches in structure-based drug design.
-- **[scPerturb](https://aliquome.github.io/#datasets/benchmarks/scPerturb)**: 44 harmonized single-cell perturbation datasets in h5ad format.
-- **[ScrambleBench](https://aliquome.github.io/#datasets/benchmarks/ScrambleBench)**: Control benchmark for structure-based design using scrambled binding pockets.
-- **[smina docking benchmark](https://aliquome.github.io/#datasets/benchmarks/smina%20docking%20benchmark)**: Docking-based benchmark for molecule generation using smina.
-- **[SoMeSci](https://aliquome.github.io/#datasets/benchmarks/SoMeSci)**: Knowledge about software used in scientific investigations is important for several reasons, for instance, to enable an understanding of provenance and methods involved…
-- **[SourceData-NLP](https://aliquome.github.io/#datasets/benchmarks/SourceData-NLP)**: Introduction: The scientific publishing landscape is expanding rapidly, creating challenges for researchers to stay up-to-date with the evolution of the literature.
-- **[Species-800](https://aliquome.github.io/#datasets/benchmarks/Species-800)**: Species-800 is a corpus for species entities, which is based on manually annotated abstracts. It comprises 800 PubMed abstracts that contain identified organism mentions.
-- **[SuMe](https://aliquome.github.io/#datasets/benchmarks/SuMe)**: Can language models read biomedical texts and explain the biomedical mechanisms discussed? In this work we introduce a biomedical mechanism summarization task.
-- **[Tahoe-100M](https://aliquome.github.io/#datasets/benchmarks/Tahoe-100M)**: More than 100 million single cells across 50 cell lines and about 1,100 drug perturbations.
-- **[The BioScope Corpus](https://aliquome.github.io/#datasets/benchmarks/The%20BioScope%20Corpus)**: It is a freely available resource for research on handling negation and uncertainty in biomedical texts . The corpus consists of three parts, namely medical free…
-- **[The EMBO SourceData-NLP dataset](https://aliquome.github.io/#datasets/benchmarks/The%20EMBO%20SourceData-NLP%20dataset)**: We present the SourceData-NLP dataset produced through the routine curation of papers during the publication process. A unique feature of this dataset is its emphasis on…
-- **[The QUAERO French Medical Corpus](https://aliquome.github.io/#datasets/benchmarks/The%20QUAERO%20French%20Medical%20Corpus)**: A vast amount of information in the biomedical domain is available as natural language free text. An increasing number of documents in the field are written in languages…
-- **[TREC-COVID](https://aliquome.github.io/#datasets/benchmarks/TREC-COVID)**: TREC-COVID is a community evaluation designed to build a test collection that captures the information needs of biomedical researchers using the scientific literature…
-- **[UMLS](https://aliquome.github.io/#datasets/benchmarks/UMLS)**: The Unified Medical Language System (UMLS) is a comprehensive resource that integrates and disseminates essential terminology, classification standards, and coding…
-- **[UniProtQA](https://aliquome.github.io/#datasets/benchmarks/UniProtQA)**: UniProtQA consists of proteins and textual queries about their functions and properties. The dataset is constructed from UniProt, and consists 4 types of questions with…
-- **[Virtual Cell Challenge](https://aliquome.github.io/#datasets/benchmarks/Virtual%20Cell%20Challenge)**: Arc Institute challenge: 2025 used H1 hESC Perturb-seq (about 300,000 cells); 2026 is zero-shot across 6 cell lines with no training data.
-- **[WMT 2016 Biomedical](https://aliquome.github.io/#datasets/benchmarks/WMT%202016%20Biomedical)**: The Biomedical Translation Shared Task was first introduced at the First Conference of Machine Translation. The task aims to evaluate systems for the translation of…
-- **[XL-BEL](https://aliquome.github.io/#datasets/benchmarks/XL-BEL)**: XL-BEL is a benchmark for cross-lingual biomedical entity linking (XL-BEL). The benchmark spans 10 typologically diverse languages.
+- **[IMCS-21](https://aliquome.github.io/datasets/imcs-21/)**: Benchmark for automated medical consultation dialogue.
+- **[BioCoder](https://aliquome.github.io/datasets/biocoder/)**: Benchmark for bioinformatics code generation.
+- **[bioTaskBench](https://aliquome.github.io/datasets/biotaskbench/)**: Benchmark of bioinformatics tasks for evaluating AI agents.
+- **[1D, 2D and 3D SBDD benchmark (Beyond Affinity)](https://aliquome.github.io/datasets/1d-2d-and-3d-sbdd-benchmark-beyond-affinity/)**: Benchmark comparing 1D, 2D and 3D structure-based drug design methods beyond binding affinity.
+- **[Adverse Drug Events (ADE) Corpus](https://aliquome.github.io/datasets/adverse-drug-events-ade-corpus/)**: Development of a benchmark corpus to support the automatic extraction of drug-related adverse effects from medical case reports.
+- **[Antibody Watch](https://aliquome.github.io/datasets/antibody-watch/)**: Antibody Watch is a dataset of text snippets extracted from over 2000 PubMed articles with annotations denoting specificity of antibodies.
+- **[ASAP Discovery × Polaris Antiviral 2025](https://aliquome.github.io/datasets/asap-discovery-polaris-antiviral-2025/)**: Antiviral challenge data for ADMET, potency and ligand pose prediction.
+- **[ATLAS MD](https://aliquome.github.io/datasets/atlas-md/)**: Molecular dynamics of about 1,390 protein chains, 3 × 100 ns each.
+- **[BB](https://aliquome.github.io/datasets/bb/)**: The Bacteria Biotope (BB) Task is part of the BioNLP Open Shared Tasks and meets the BioNLP-OST standards of quality, originality and data formats. Manually annotated…
+- **[BC2GM](https://aliquome.github.io/datasets/bc2gm/)**: Created by Smith et al. at 2008, the BioCreative II Gene Mention Recognition (BC2GM) Dataset contains data where participants are asked to identify a gene mention in a…
+- **[BC4CHEMD](https://aliquome.github.io/datasets/bc4chemd/)**: Introduced by Krallinger et al. in The CHEMDNER corpus of chemicals and drugs and its annotation principles
+- **[BC5CDR](https://aliquome.github.io/datasets/bc5cdr/)**: BC5CDR corpus consists of 1500 PubMed articles with 4409 annotated chemicals, 5818 diseases and 3116 chemical-disease interactions.
+- **[BC7 NLM-Chem](https://aliquome.github.io/datasets/bc7-nlm-chem/)**: Full-text chemical identification and indexing in PubMed articles.
+- **[BELKA](https://aliquome.github.io/datasets/belka/)**: Leash Bio DNA-encoded library dataset of about 133 million molecules for binding prediction.
+- **[Bento](https://aliquome.github.io/datasets/bento/)**: Benchmark for protein–ligand docking.
+- **[BigBio](https://aliquome.github.io/datasets/bigbio/)**: More than 126 biomedical NLP datasets with unified schemas.
+- **[BioASQ](https://aliquome.github.io/datasets/bioasq/)**: BioASQ is a question answering dataset. Instances in the BioASQ dataset are composed of a question (Q), human-annotated answers (A), and the relevant contexts (C) (also…
+- **[BioLAMA](https://aliquome.github.io/datasets/biolama/)**: BioLAMA is a benchmark comprised of 49K biomedical factual knowledge triples for probing biomedical Language Models. It is used to assess the capabilities of Language…
+- **[BioLeaflets](https://aliquome.github.io/datasets/bioleaflets/)**: BioLeaflets is a biomedical dataset for Data2Text generation. It is a corpus of 1,336 package leaflets of medicines authorised in Europe, which were obtained by scraping…
+- **[BioLiP2](https://aliquome.github.io/datasets/biolip2/)**: Weekly-updated database of biologically relevant ligand–protein binding sites.
+- **[BIOMRC](https://aliquome.github.io/datasets/biomrc/)**: A large-scale cloze-style biomedical MRC dataset. Care was taken to reduce noise, compared to the previous BIOREAD dataset of Pappas et al. (2018).
+- **[BioNLI](https://aliquome.github.io/datasets/bionli/)**: BioNLI is a dataset in biomedical natural language inference. This dataset contains abstracts from biomedical literature and mechanistic premises generated with nine…
+- **[BioProBench](https://aliquome.github.io/datasets/bioprobench/)**: Benchmark for understanding and reasoning over laboratory protocols.
+- **[BioRED](https://aliquome.github.io/datasets/biored/)**: BioRED is a first-of-its-kind biomedical relation extraction dataset with multiple entity types (e.g. gene/protein, disease, chemical) and relation pairs (e.g.…
+- **[BIOSSES](https://aliquome.github.io/datasets/biosses/)**: The BIOSSES data set comprises total 100 sentence pairs all of which were selected from the "TAC2 Biomedical Summarization Track Training Data Set" .
+- **[BixBench](https://aliquome.github.io/datasets/bixbench/)**: More than 50 analysis scenarios and about 300 questions for evaluating bioinformatics AI agents.
+- **[BLUE](https://aliquome.github.io/datasets/blue/)**: The BLUE benchmark consists of five different biomedicine text-mining tasks with ten corpora. These tasks cover a diverse range of text genres (biomedical literature and…
+- **[BLURB](https://aliquome.github.io/datasets/blurb/)**: BLURB is a collection of resources for biomedical natural language processing. In general domains such as newswire and the Web, comprehensive benchmarks and leaderboards…
+- **[CAFA](https://aliquome.github.io/datasets/cafa/)**: Critical assessment of protein function prediction using GO terms.
+- **[CAGI](https://aliquome.github.io/datasets/cagi/)**: Critical Assessment of Genome Interpretation challenges (CAGI1 to CAGI7).
+- **[CAMELYON16/17](https://aliquome.github.io/datasets/camelyon16-17/)**: Whole-slide images of lymph node metastases for detection and staging.
+- **[CAMEO](https://aliquome.github.io/datasets/cameo/)**: Continuous weekly blind assessment of 3D structure, quality estimation and ligand prediction.
+- **[CASP](https://aliquome.github.io/datasets/casp/)**: Biennial blind assessment of protein structure prediction methods.
+- **[CDR](https://aliquome.github.io/datasets/cdr/)**: The BioCreative V CDR task corpus is manually annotated for chemicals, diseases and chemical-induced disease (CID) relations. It contains the titles and abstracts of…
+- **[Chem-FINESE](https://aliquome.github.io/datasets/chem-finese/)**: The dataset contains two few-shot chemical fine-grained entity extraction datasets, based on human-annotated ChemNER+ and CHEMET. For each dataset, we randomly sample a…
+- **[ChemProt](https://aliquome.github.io/datasets/chemprot/)**: ChemProt consists of 1,820 PubMed abstracts with chemical-protein interactions annotated by domain experts and was used in the BioCreative VI text mining…
+- **[COMETA](https://aliquome.github.io/datasets/cometa/)**: Consists of 20k English biomedical entity mentions from Reddit expert-annotated with links to SNOMED CT, a widely-used medical knowledge graph.
+- **[CoNECo](https://aliquome.github.io/datasets/coneco/)**: Complex Named Entity Corpus (CoNECo) is an annotated corpus for NER and NEN of protein-containing complexes. CoNECo comprises 1,621 documents with 2,052 entities, 1,976…
+- **[ConGen dataset](https://aliquome.github.io/datasets/congen-dataset/)**: Dataset for multi-constraint molecule generation.
+- **[CoWeSe](https://aliquome.github.io/datasets/cowese/)**: CoWeSe is a Spanish biomedical corpus consisting of 4.5GB (about 750M tokens) of clean plain text. CoWeSe is the result of a massive crawler on 3000 Spanish domains…
+- **[Dataset: Relationship extraction for knowledge graph creation from biomedical literature (Gene-Disease relationships)](https://aliquome.github.io/datasets/dataset-relationship-extraction-for-knowledge-graph-creation-from-biom/)**: This is the dataset used for classifying Gene-Disease relationship types from sentences. The dataset consists of 3 files:
+- **[DDI](https://aliquome.github.io/datasets/ddi/)**: The DDIExtraction 2013 task relies on the DDI corpus which contains MedLine abstracts on drug-drug interactions as well as documents describing drug-drug interactions…
+- **[DeepSEA / Sei](https://aliquome.github.io/datasets/deepsea-sei/)**: Chromatin-profile prediction data: 919 features in DeepSEA and 21,907 in Sei.
+- **[DREAM Challenges](https://aliquome.github.io/datasets/dream-challenges/)**: Crowdsourced biomedical challenges, e.g. Random Promoter DREAM 2022 with about 6.7 million promoters.
+- **[DrugProt](https://aliquome.github.io/datasets/drugprot/)**: DrugProt corpus, where domain experts have exhaustively labeled:(a) all chemical and gene mentions, and (b) all binary relationships between them corresponding to a…
+- **[DUD-E and DEKOIS 2.0](https://aliquome.github.io/datasets/dud-e-and-dekois-2-0/)**: Virtual screening benchmarks with actives and decoys: DUD-E (102 targets) and DEKOIS 2.0 (81 targets).
+- **[Durian](https://aliquome.github.io/datasets/durian/)**: Benchmark for structure-based 3D molecule generation.
+- **[eLife](https://aliquome.github.io/datasets/elife/)**: This dataset contains 4,828 full biomedical articles paired with non-technical lay summaries derived from the eLife scientific journal.
+- **[EU-ADR](https://aliquome.github.io/datasets/eu-adr/)**: The EU-ADR corpus is a biomedical relation extraction dataset that contains 100 abstracts, with relations between drug, disorder, and targets.
+- **[Evidence Inference 2.0](https://aliquome.github.io/datasets/evidence-inference-2-0/)**: The dataset consists of biomedical articles describing randomized control trials (RCTs) that compare multiple treatments. Each of these articles will have multiple…
+- **[GAD](https://aliquome.github.io/datasets/gad/)**: GAD, or Gene Associations Database, is a corpus of gene-disease associations curated from genetic association studies.
+- **[GDA](https://aliquome.github.io/datasets/gda/)**: The gene-disease associations corpus contains 30,192 titles and abstracts from PubMed articles that have been automatically labelled for genes, diseases and gene-disease…
+- **[GDB-13s](https://aliquome.github.io/datasets/gdb-13s/)**: Chemical space of fragments derived from bioactive molecules.
+- **[GDB-20](https://aliquome.github.io/datasets/gdb-20/)**: Trillion-scale database of drug-like molecules.
+- **[Genecorpus-30M](https://aliquome.github.io/datasets/genecorpus-30m/)**: Pretraining corpus of about 30 million single-cell transcriptomes used for Geneformer.
+- **[GENIA](https://aliquome.github.io/datasets/genia/)**: The GENIA corpus is the primary collection of biomedical literature compiled and annotated within the scope of the GENIA project. The corpus was created to support the…
+- **[Genomics Long-Range Benchmark (LRB)](https://aliquome.github.io/datasets/genomics-long-range-benchmark-lrb/)**: Genomics benchmark with input sequences of up to about 100 kb.
+- **[HOC](https://aliquome.github.io/datasets/hoc/)**: The Hallmarks of Cancer (\*HOC) corpus consists of 1852 PubMed publication abstracts manually annotated by experts according to the Hallmarks of Cancer taxonomy. The…
+- **[JNLPBA](https://aliquome.github.io/datasets/jnlpba/)**: JNLPBA is a biomedical dataset that comes from the GENIA version 3.02 corpus (Kim et al., 2003). It was created with a controlled search on MEDLINE. From this search…
+- **[Kaggle biology competitions](https://aliquome.github.io/datasets/kaggle-biology-competitions/)**: Biology competitions such as Stanford RNA 3D Folding Part 2 (2026), Ribonanza, Novozymes enzyme stability, Open Problems, CZII cryo-ET, HuBMAP and HPA.
+- **[LAB-Bench](https://aliquome.github.io/datasets/lab-bench/)**: About 2,400 multiple-choice questions for evaluating biology research agents.
+- **[LABBench2](https://aliquome.github.io/datasets/labbench2/)**: 1,892 tasks in 11 categories for evaluating AI on biology research.
+- **[LINNAEUS](https://aliquome.github.io/datasets/linnaeus/)**: LINNAEUS is a general-purpose dictionary matching software, capable of processing multiple types of document formats in the biomedical domain (MEDLINE, PMC, BMC, OTMI,…
+- **[LIT-PCBA](https://aliquome.github.io/datasets/lit-pcba-2/)**: Virtual screening benchmark of 15 targets from PubChem; data leakage has been reported.
+- **[LIVECell](https://aliquome.github.io/datasets/livecell/)**: Label-free cell segmentation dataset with about 1.6 million annotated cells.
+- **[mdCATH](https://aliquome.github.io/datasets/mdcath/)**: Molecular dynamics of 5,398 CATH domains at 5 temperatures with 5 replicas each (about 3 TB).
+- **[MedHop](https://aliquome.github.io/datasets/medhop/)**: With the same format as WikiHop, the MedHop dataset is based on research paper abstracts from PubMed, and the queries are about interactions between pairs of drugs. The…
+- **[MedMentions](https://aliquome.github.io/datasets/medmentions/)**: MedMentions is a new manually annotated resource for the recognition of biomedical concepts. What distinguishes MedMentions from other annotated biomedical corpora is…
+- **[MedQA](https://aliquome.github.io/datasets/medqa/)**: USMLE-style medical exam questions for question answering.
+- **[MeSHup](https://aliquome.github.io/datasets/meshup/)**: Contains 1,342,667 full text articles in English, together with the associated MeSH labels and metadata, authors, and publication venues that are collected from the…
+- **[MoleculeNet](https://aliquome.github.io/datasets/moleculenet-2/)**: Molecular property benchmark: QM7/8/9, ESOL, FreeSolv, Lipophilicity, PCBA, HIV, BACE, BBBP, Tox21, ToxCast, SIDER and ClinTox.
+- **[MolGenBench](https://aliquome.github.io/datasets/molgenbench/)**: Benchmark for structure-based drug design, from de novo design to lead optimization.
+- **[MoNuSeg and PanNuke](https://aliquome.github.io/datasets/monuseg-and-pannuke/)**: Nuclear segmentation datasets; PanNuke has 7,904 patches from 19 tissues.
+- **[MS^2](https://aliquome.github.io/datasets/ms-2/)**: MS^2 (Multi-Document Summarization of Medical Studies) is a dataset of over 470k documents and 20k summaries derived from the scientific literature.
+- **[Multi-target compounds dataset](https://aliquome.github.io/datasets/multi-target-compounds-dataset/)**: Dataset of compounds for multi-target molecular design with REINVENT.
+- **[NCBI Disease](https://aliquome.github.io/datasets/ncbi-disease/)**: The NCBI Disease corpus consists of 793 PubMed abstracts, which are separated into training (593), development (100) and test (100) subsets. The NCBI Disease corpus is…
+- **[NEREL-BIO](https://aliquome.github.io/datasets/nerel-bio/)**: NEREL-BIO is an annotation scheme and corpus of PubMed abstracts in Russian and English. It contains annotations for 700+ Russian and 100+ English abstracts. All English…
+- **[Nucleotide Transformer downstream tasks (revised)](https://aliquome.github.io/datasets/nucleotide-transformer-downstream-tasks-revised/)**: 18 genomics tasks with about 532,000 rows; the revised version is recommended over the original.
+- **[OpenADMET ExpansionRx Blind Challenge](https://aliquome.github.io/datasets/openadmet-expansionrx-blind-challenge/)**: Blind ADMET challenge with more than 7,000 molecules and 9 endpoints.
+- **[PanCan-RE](https://aliquome.github.io/datasets/pancan-re/)**: Corpus of biomedical relations for pancreatic cancer.
+- **[PANDA](https://aliquome.github.io/datasets/panda/)**: About 11,000 prostate whole-slide images for Gleason grading.
+- **[PDBbind / CASF-2016](https://aliquome.github.io/datasets/pdbbind-casf-2016/)**: Protein–ligand binding affinity data; CASF-2016 core set of 285 complexes for scoring-function evaluation.
+- **[PGR](https://aliquome.github.io/datasets/pgr/)**: Phenotype-Gene Relations (PGR) is a corpus that consists of 1712 abstracts, 5676 human phenotype annotations, 13835 gene annotations, and 4283 relations.
+- **[Phee](https://aliquome.github.io/datasets/phee/)**: Phee is a dataset for pharmacovigilance comprising over 5000 annotated events from medical case reports and biomedical literature. It is designed for biomedical event…
+- **[PLABA](https://aliquome.github.io/datasets/plaba/)**: Plain Language Adaptation of Biomedical Abstracts (PLABA) is a dataset designed for automatic adaptation that is both document- and sentence-aligned. The dataset…
+- **[PLOS](https://aliquome.github.io/datasets/plos/)**: This dataset contains 27,525 full biomedical articles paired with non-technical lay summaries derived from various journals published by the Public Library of Science…
+- **[Polymer inverse design benchmark](https://aliquome.github.io/datasets/polymer-inverse-design-benchmark/)**: Benchmark of generative models for polymer inverse design.
+- **[PQAref](https://aliquome.github.io/datasets/pqaref/)**: The PQAref dataset is a dataset for fine-tuning large language models for referenced question-answering in biomedical domain.
+- **[ProNCI](https://aliquome.github.io/datasets/pronci/)**: ProNCI consists of 22.5K proper noun compounds along with their free-form semantic interpretations. ProNCI is 60 times larger than prior noun compound datasets and also…
+- **[Protein-Instructions-OOD](https://aliquome.github.io/datasets/protein-instructions-ood/)**: OOD split of the Mol-Instructions Dataset about Protein Annotation.
+- **[PubChemQA](https://aliquome.github.io/datasets/pubchemqa/)**: PubChemQA consists of molecules and their corresponding textual descriptions from PubChem. It contains a single type of question, i.e., please describe the molecule. We…
+- **[PubMed Paper Reading Dataset](https://aliquome.github.io/datasets/pubmed-paper-reading-dataset/)**: This dataset gathers 14,857 entities, 133 relations, and entities corresponding tokenized text from PubMed. It contains 875,698 training pairs, 109,462 development…
+- **[PubMed PICO Element Detection Dataset](https://aliquome.github.io/datasets/pubmed-pico-element-detection-dataset/)**: PICO is a framework to formulate a well-defined focused clinical question. This framework identifies the sentences in a given medical text that belong to the four…
+- **[PubMed RCT](https://aliquome.github.io/datasets/pubmed-rct/)**: PubMed 200k RCT is new dataset based on PubMed for sequential sentence classification. The dataset consists of approximately 200,000 abstracts of randomized controlled…
+- **[PubMed Term, Abstract, Conclusion, Title Dataset](https://aliquome.github.io/datasets/pubmed-term-abstract-conclusion-title-dataset/)**: This dataset gathers three types of pairs: Title-to-Abstract (Training: 22,811/Development: 2095/Test: 2095), Abstract-to-Conclusion and Future work (Training:…
+- **[PubMedCite](https://aliquome.github.io/datasets/pubmedcite/)**: PubMedCite is a domain-specific dataset with about 192K biomedical scientific papers and a large citation graph preserving 917K citation relationships between them.
+- **[PubMedQA, BLURB and BioASQ](https://aliquome.github.io/datasets/pubmedqa-blurb-and-bioasq/)**: Biomedical question answering and language understanding benchmarks.
+- **[PyMolGen](https://aliquome.github.io/datasets/pymolgen/)**: Database of generated compounds.
+- **[RediscMol](https://aliquome.github.io/datasets/rediscmol/)**: Benchmark testing whether generative models rediscover known active molecules.
+- **[Replogle 2022 (State-Replogle-Filtered)](https://aliquome.github.io/datasets/replogle-2022-state-replogle-filtered/)**: Genome-scale CRISPRi Perturb-seq data in K562 and RPE1 cells.
+- **[RxRx1 / RxRx2 / RxRx3 / RxRx3-core](https://aliquome.github.io/datasets/rxrx1-rxrx2-rxrx3-rxrx3-core/)**: Recursion cellular imaging datasets of genetic and chemical perturbations.
+- **[SAbDab and OAS](https://aliquome.github.io/datasets/sabdab-and-oas/)**: Structural antibody database (SAbDab) and Observed Antibody Space repertoire sequences (OAS).
+- **[SBDD benchmark 2024 (Do 3D Methods Really Dominate?)](https://aliquome.github.io/datasets/sbdd-benchmark-2024-do-3d-methods-really-dominate/)**: Benchmark testing whether 3D methods outperform simpler approaches in structure-based drug design.
+- **[scPerturb](https://aliquome.github.io/datasets/scperturb/)**: 44 harmonized single-cell perturbation datasets in h5ad format.
+- **[ScrambleBench](https://aliquome.github.io/datasets/scramblebench/)**: Control benchmark for structure-based design using scrambled binding pockets.
+- **[smina docking benchmark](https://aliquome.github.io/datasets/smina-docking-benchmark/)**: Docking-based benchmark for molecule generation using smina.
+- **[SoMeSci](https://aliquome.github.io/datasets/somesci/)**: Knowledge about software used in scientific investigations is important for several reasons, for instance, to enable an understanding of provenance and methods involved…
+- **[SourceData-NLP](https://aliquome.github.io/datasets/sourcedata-nlp/)**: Introduction: The scientific publishing landscape is expanding rapidly, creating challenges for researchers to stay up-to-date with the evolution of the literature.
+- **[Species-800](https://aliquome.github.io/datasets/species-800/)**: Species-800 is a corpus for species entities, which is based on manually annotated abstracts. It comprises 800 PubMed abstracts that contain identified organism mentions.
+- **[SuMe](https://aliquome.github.io/datasets/sume/)**: Can language models read biomedical texts and explain the biomedical mechanisms discussed? In this work we introduce a biomedical mechanism summarization task.
+- **[Tahoe-100M](https://aliquome.github.io/datasets/tahoe-100m/)**: More than 100 million single cells across 50 cell lines and about 1,100 drug perturbations.
+- **[The BioScope Corpus](https://aliquome.github.io/datasets/the-bioscope-corpus/)**: It is a freely available resource for research on handling negation and uncertainty in biomedical texts . The corpus consists of three parts, namely medical free…
+- **[The EMBO SourceData-NLP dataset](https://aliquome.github.io/datasets/the-embo-sourcedata-nlp-dataset/)**: We present the SourceData-NLP dataset produced through the routine curation of papers during the publication process. A unique feature of this dataset is its emphasis on…
+- **[The QUAERO French Medical Corpus](https://aliquome.github.io/datasets/the-quaero-french-medical-corpus/)**: A vast amount of information in the biomedical domain is available as natural language free text. An increasing number of documents in the field are written in languages…
+- **[TREC-COVID](https://aliquome.github.io/datasets/trec-covid/)**: TREC-COVID is a community evaluation designed to build a test collection that captures the information needs of biomedical researchers using the scientific literature…
+- **[UMLS](https://aliquome.github.io/datasets/umls/)**: The Unified Medical Language System (UMLS) is a comprehensive resource that integrates and disseminates essential terminology, classification standards, and coding…
+- **[UniProtQA](https://aliquome.github.io/datasets/uniprotqa/)**: UniProtQA consists of proteins and textual queries about their functions and properties. The dataset is constructed from UniProt, and consists 4 types of questions with…
+- **[Virtual Cell Challenge](https://aliquome.github.io/datasets/virtual-cell-challenge/)**: Arc Institute challenge: 2025 used H1 hESC Perturb-seq (about 300,000 cells); 2026 is zero-shot across 6 cell lines with no training data.
+- **[WMT 2016 Biomedical](https://aliquome.github.io/datasets/wmt-2016-biomedical/)**: The Biomedical Translation Shared Task was first introduced at the First Conference of Machine Translation. The task aims to evaluate systems for the translation of…
+- **[XL-BEL](https://aliquome.github.io/datasets/xl-bel/)**: XL-BEL is a benchmark for cross-lingual biomedical entity linking (XL-BEL). The benchmark spans 10 typologically diverse languages.
 
 </details>
 
@@ -913,248 +913,248 @@ Everything on [aliquome.github.io](https://aliquome.github.io/), as plain lists.
 <details>
 <summary><b>Genomes and annotation</b> (8 tables)</summary>
 
-- [Hierarchical Multi-label Classification on Cellcycle Funcat](https://aliquome.github.io/#benchmarks/hierarchical-multi-label-classification-cellcycle-funcat): 2 results, ranked by AU(PRC)
-- [Hierarchical Multi-label Classification on Derisi Funcat](https://aliquome.github.io/#benchmarks/hierarchical-multi-label-classification-derisi-funcat): 2 results, ranked by AU(PRC)
-- [Hierarchical Multi-label Classification on Eisen Funcat](https://aliquome.github.io/#benchmarks/hierarchical-multi-label-classification-eisen-funcat): 2 results, ranked by AU(PRC)
-- [Hierarchical Multi-label Classification on Expr Funcat](https://aliquome.github.io/#benchmarks/hierarchical-multi-label-classification-expr-funcat): 2 results, ranked by AU(PRC)
-- [Hierarchical Multi-label Classification on Gasch1 Funcat](https://aliquome.github.io/#benchmarks/hierarchical-multi-label-classification-gasch1-funcat): 2 results, ranked by AU(PRC)
-- [Hierarchical Multi-label Classification on Gasch2 Funcat](https://aliquome.github.io/#benchmarks/hierarchical-multi-label-classification-gasch2-funcat): 2 results, ranked by AU(PRC)
-- [Hierarchical Multi-label Classification on Seq Funcat](https://aliquome.github.io/#benchmarks/hierarchical-multi-label-classification-seq-funcat): 2 results, ranked by AU(PRC)
-- [Hierarchical Multi-label Classification on Spo Funcat](https://aliquome.github.io/#benchmarks/hierarchical-multi-label-classification-spo-funcat): 2 results, ranked by AU(PRC)
+- [Hierarchical Multi-label Classification on Cellcycle Funcat](https://aliquome.github.io/benchmarks/hierarchical-multi-label-classification-cellcycle-funcat/): 2 results, ranked by AU(PRC)
+- [Hierarchical Multi-label Classification on Derisi Funcat](https://aliquome.github.io/benchmarks/hierarchical-multi-label-classification-derisi-funcat/): 2 results, ranked by AU(PRC)
+- [Hierarchical Multi-label Classification on Eisen Funcat](https://aliquome.github.io/benchmarks/hierarchical-multi-label-classification-eisen-funcat/): 2 results, ranked by AU(PRC)
+- [Hierarchical Multi-label Classification on Expr Funcat](https://aliquome.github.io/benchmarks/hierarchical-multi-label-classification-expr-funcat/): 2 results, ranked by AU(PRC)
+- [Hierarchical Multi-label Classification on Gasch1 Funcat](https://aliquome.github.io/benchmarks/hierarchical-multi-label-classification-gasch1-funcat/): 2 results, ranked by AU(PRC)
+- [Hierarchical Multi-label Classification on Gasch2 Funcat](https://aliquome.github.io/benchmarks/hierarchical-multi-label-classification-gasch2-funcat/): 2 results, ranked by AU(PRC)
+- [Hierarchical Multi-label Classification on Seq Funcat](https://aliquome.github.io/benchmarks/hierarchical-multi-label-classification-seq-funcat/): 2 results, ranked by AU(PRC)
+- [Hierarchical Multi-label Classification on Spo Funcat](https://aliquome.github.io/benchmarks/hierarchical-multi-label-classification-spo-funcat/): 2 results, ranked by AU(PRC)
 
 </details>
 
 <details>
 <summary><b>Cancer genomics</b> (18 tables)</summary>
 
-- [Artifact Detection on HistoArtifacts](https://aliquome.github.io/#benchmarks/artifact-detection-histoartifacts): 5 results, ranked by MCC
-- [Breast Cancer Detection on BreakHis](https://aliquome.github.io/#benchmarks/breast-cancer-detection-breakhis): 2 results, ranked by 1:1 Accuracy
-- [Breast Cancer Histology Image Classification on BreakHis](https://aliquome.github.io/#benchmarks/breast-cancer-histology-image-classification-breakhis): 5 results, ranked by Accuracy (%)
-- [Breast Tumour Classification on PCam](https://aliquome.github.io/#benchmarks/breast-tumour-classification-pcam): 16 results, ranked by AUC
-- [Cell Segmentation on Fluo-N2DH-SIM+](https://aliquome.github.io/#benchmarks/cell-segmentation-fluo-n2dh-sim): 2 results, ranked by SEG (~Mean IoU)
-- [Classification on MHIST](https://aliquome.github.io/#benchmarks/classification-mhist): 9 results, ranked by Accuracy
-- [Colorectal Gland Segmentation: on CRAG](https://aliquome.github.io/#benchmarks/colorectal-gland-segmentation-crag): 15 results, ranked by Dice
-- [Image Classification on BreakHis](https://aliquome.github.io/#benchmarks/image-classification-breakhis): 3 results, ranked by Average Test Accuracy over all magnifications
-- [Image Classification on GasHisSDB](https://aliquome.github.io/#benchmarks/image-classification-gashissdb): 8 results, ranked by Accuracy
-- [Image-to-Image Translation on BCI](https://aliquome.github.io/#benchmarks/image-to-image-translation-bci): 4 results, ranked by Average PSNR
-- [Medical Image Classification on NCT-CRC-HE-100K](https://aliquome.github.io/#benchmarks/medical-image-classification-nct-crc-he-100k): 7 results, ranked by Accuracy (%)
-- [Medical Image Segmentation on GlaS](https://aliquome.github.io/#benchmarks/medical-image-segmentation-glas): 10 results, ranked by F1
-- [Medical Image Segmentation on MoNuSeg](https://aliquome.github.io/#benchmarks/medical-image-segmentation-monuseg): 15 results, ranked by F1
-- [Multi-tissue Nucleus Segmentation on CoNSeP](https://aliquome.github.io/#benchmarks/multi-tissue-nucleus-segmentation-consep): 4 results, ranked by Dice
-- [Multi-tissue Nucleus Segmentation on Kumar](https://aliquome.github.io/#benchmarks/multi-tissue-nucleus-segmentation-kumar): 18 results, ranked by Dice
-- [Multiple Instance Learning on CAMELYON16](https://aliquome.github.io/#benchmarks/multiple-instance-learning-camelyon16): 14 results, ranked by AUC
-- [Multiple Instance Learning on TCGA](https://aliquome.github.io/#benchmarks/multiple-instance-learning-tcga): 8 results, ranked by ACC
-- [Panoptic Segmentation on PanNuke](https://aliquome.github.io/#benchmarks/panoptic-segmentation-pannuke): 4 results, ranked by PQ
+- [Artifact Detection on HistoArtifacts](https://aliquome.github.io/benchmarks/artifact-detection-histoartifacts/): 5 results, ranked by MCC
+- [Breast Cancer Detection on BreakHis](https://aliquome.github.io/benchmarks/breast-cancer-detection-breakhis/): 2 results, ranked by 1:1 Accuracy
+- [Breast Cancer Histology Image Classification on BreakHis](https://aliquome.github.io/benchmarks/breast-cancer-histology-image-classification-breakhis/): 5 results, ranked by Accuracy (%)
+- [Breast Tumour Classification on PCam](https://aliquome.github.io/benchmarks/breast-tumour-classification-pcam/): 16 results, ranked by AUC
+- [Cell Segmentation on Fluo-N2DH-SIM+](https://aliquome.github.io/benchmarks/cell-segmentation-fluo-n2dh-sim/): 2 results, ranked by SEG (~Mean IoU)
+- [Classification on MHIST](https://aliquome.github.io/benchmarks/classification-mhist/): 9 results, ranked by Accuracy
+- [Colorectal Gland Segmentation: on CRAG](https://aliquome.github.io/benchmarks/colorectal-gland-segmentation-crag/): 15 results, ranked by Dice
+- [Image Classification on BreakHis](https://aliquome.github.io/benchmarks/image-classification-breakhis/): 3 results, ranked by Average Test Accuracy over all magnifications
+- [Image Classification on GasHisSDB](https://aliquome.github.io/benchmarks/image-classification-gashissdb/): 8 results, ranked by Accuracy
+- [Image-to-Image Translation on BCI](https://aliquome.github.io/benchmarks/image-to-image-translation-bci/): 4 results, ranked by Average PSNR
+- [Medical Image Classification on NCT-CRC-HE-100K](https://aliquome.github.io/benchmarks/medical-image-classification-nct-crc-he-100k/): 7 results, ranked by Accuracy (%)
+- [Medical Image Segmentation on GlaS](https://aliquome.github.io/benchmarks/medical-image-segmentation-glas/): 10 results, ranked by F1
+- [Medical Image Segmentation on MoNuSeg](https://aliquome.github.io/benchmarks/medical-image-segmentation-monuseg/): 15 results, ranked by F1
+- [Multi-tissue Nucleus Segmentation on CoNSeP](https://aliquome.github.io/benchmarks/multi-tissue-nucleus-segmentation-consep/): 4 results, ranked by Dice
+- [Multi-tissue Nucleus Segmentation on Kumar](https://aliquome.github.io/benchmarks/multi-tissue-nucleus-segmentation-kumar/): 18 results, ranked by Dice
+- [Multiple Instance Learning on CAMELYON16](https://aliquome.github.io/benchmarks/multiple-instance-learning-camelyon16/): 14 results, ranked by AUC
+- [Multiple Instance Learning on TCGA](https://aliquome.github.io/benchmarks/multiple-instance-learning-tcga/): 8 results, ranked by ACC
+- [Panoptic Segmentation on PanNuke](https://aliquome.github.io/benchmarks/panoptic-segmentation-pannuke/): 4 results, ranked by PQ
 
 </details>
 
 <details>
 <summary><b>Expression and single-cell</b> (9 tables)</summary>
 
-- [Cell Detection on Fluo-N2DH-GOWT1](https://aliquome.github.io/#benchmarks/cell-detection-fluo-n2dh-gowt1): 2 results, ranked by DET
-- [Cell Detection on Fluo-N2DL-HeLa](https://aliquome.github.io/#benchmarks/cell-detection-fluo-n2dl-hela): 2 results, ranked by DET
-- [Cell Detection on PhC-C2DH-U373](https://aliquome.github.io/#benchmarks/cell-detection-phc-c2dh-u373): 2 results, ranked by DET
-- [Cell Segmentation on DIC-C2DH-HeLa](https://aliquome.github.io/#benchmarks/cell-segmentation-dic-c2dh-hela): 2 results, ranked by SEG (~Mean IoU)
-- [Cell Segmentation on EVICAN](https://aliquome.github.io/#benchmarks/cell-segmentation-evican): 2 results, ranked by mask AP
-- [Cell Segmentation on Fluo-N2DH-GOWT1](https://aliquome.github.io/#benchmarks/cell-segmentation-fluo-n2dh-gowt1): 2 results, ranked by SEG (~Mean IoU)
-- [Cell Segmentation on Fluo-N2DL-HeLa](https://aliquome.github.io/#benchmarks/cell-segmentation-fluo-n2dl-hela): 3 results, ranked by SEG (~Mean IoU)
-- [Image Classification on Malaria Dataset](https://aliquome.github.io/#benchmarks/image-classification-malaria-dataset): 3 results, ranked by Acc. (test)
-- [Image Segmentation on HuTu 80](https://aliquome.github.io/#benchmarks/image-segmentation-hutu-80): 2 results, ranked by Dice
+- [Cell Detection on Fluo-N2DH-GOWT1](https://aliquome.github.io/benchmarks/cell-detection-fluo-n2dh-gowt1/): 2 results, ranked by DET
+- [Cell Detection on Fluo-N2DL-HeLa](https://aliquome.github.io/benchmarks/cell-detection-fluo-n2dl-hela/): 2 results, ranked by DET
+- [Cell Detection on PhC-C2DH-U373](https://aliquome.github.io/benchmarks/cell-detection-phc-c2dh-u373/): 2 results, ranked by DET
+- [Cell Segmentation on DIC-C2DH-HeLa](https://aliquome.github.io/benchmarks/cell-segmentation-dic-c2dh-hela/): 2 results, ranked by SEG (~Mean IoU)
+- [Cell Segmentation on EVICAN](https://aliquome.github.io/benchmarks/cell-segmentation-evican/): 2 results, ranked by mask AP
+- [Cell Segmentation on Fluo-N2DH-GOWT1](https://aliquome.github.io/benchmarks/cell-segmentation-fluo-n2dh-gowt1/): 2 results, ranked by SEG (~Mean IoU)
+- [Cell Segmentation on Fluo-N2DL-HeLa](https://aliquome.github.io/benchmarks/cell-segmentation-fluo-n2dl-hela/): 3 results, ranked by SEG (~Mean IoU)
+- [Image Classification on Malaria Dataset](https://aliquome.github.io/benchmarks/image-classification-malaria-dataset/): 3 results, ranked by Acc. (test)
+- [Image Segmentation on HuTu 80](https://aliquome.github.io/benchmarks/image-segmentation-hutu-80/): 2 results, ranked by Dice
 
 </details>
 
 <details>
 <summary><b>Proteins and structures</b> (26 tables)</summary>
 
-- [Antibody-antigen binding prediction on Antibody sequences against Sars-Cov-2 and Omicron BA.1](https://aliquome.github.io/#benchmarks/antibody-antigen-binding-prediction-antibody-sequences-against-sars-cov-2-and-omicron-ba-1): 3 results, ranked by Accuracy (5-fold)
-- [Antibody-antigen binding prediction on MIPE](https://aliquome.github.io/#benchmarks/antibody-antigen-binding-prediction-mipe): 7 results, ranked by AUC-PR
-- [Antibody-antigen binding prediction on Paragraph Expanded](https://aliquome.github.io/#benchmarks/antibody-antigen-binding-prediction-paragraph-expanded): 2 results, ranked by AUC-PR
-- [Antibody-antigen binding prediction on PECAN](https://aliquome.github.io/#benchmarks/antibody-antigen-binding-prediction-pecan): 5 results, ranked by AUC-PR
-- [Drug Discovery on BACE](https://aliquome.github.io/#benchmarks/drug-discovery-bace): 6 results, ranked by AUC
-- [Graph Classification on BACE](https://aliquome.github.io/#benchmarks/graph-classification-bace): 2 results, ranked by ROC-AUC
-- [Graph Classification on ENZYMES](https://aliquome.github.io/#benchmarks/graph-classification-enzymes): 54 results, ranked by Accuracy
-- [Graph Classification on PROTEINS](https://aliquome.github.io/#benchmarks/graph-classification-proteins): 103 results, ranked by Accuracy
-- [Link Property Prediction on ogbl-ppa](https://aliquome.github.io/#benchmarks/link-property-prediction-ogbl-ppa): 26 results, ranked by Test Hits@100
-- [Molecular Property Prediction on BACE](https://aliquome.github.io/#benchmarks/molecular-property-prediction-bace): 20 results, ranked by ROC-AUC
-- [Node Classification on PPI](https://aliquome.github.io/#benchmarks/node-classification-ppi): 24 results, ranked by F1
-- [Node Property Prediction on ogbn-proteins](https://aliquome.github.io/#benchmarks/node-property-prediction-ogbn-proteins): 26 results, ranked by Test ROC-AUC
-- [Protein Design on CATH 4.2](https://aliquome.github.io/#benchmarks/protein-design-cath-4-2): 8 results, ranked by Perplexity
-- [Protein Design on CATH 4.3](https://aliquome.github.io/#benchmarks/protein-design-cath-4-3): 2 results, ranked by Perplexity
-- [Protein Function Prediction on CASPSimSeq](https://aliquome.github.io/#benchmarks/protein-function-prediction-caspsimseq): 5 results, ranked by ROUGE-L
-- [Protein Function Prediction on PaenSeq](https://aliquome.github.io/#benchmarks/protein-function-prediction-paenseq): 5 results, ranked by ROUGE-L
-- [Protein Function Prediction on UniProtSeq](https://aliquome.github.io/#benchmarks/protein-function-prediction-uniprotseq): 5 results, ranked by ROUGE-L
-- [Protein Secondary Structure Prediction on CASP12](https://aliquome.github.io/#benchmarks/protein-secondary-structure-prediction-casp12): 4 results, ranked by Q3
-- [Protein Secondary Structure Prediction on CB513](https://aliquome.github.io/#benchmarks/protein-secondary-structure-prediction-cb513): 10 results, ranked by Q8
-- [Protein Secondary Structure Prediction on PS4](https://aliquome.github.io/#benchmarks/protein-secondary-structure-prediction-ps4): 2 results, ranked by Q8
-- [Protein Secondary Structure Prediction on TS115](https://aliquome.github.io/#benchmarks/protein-secondary-structure-prediction-ts115): 4 results, ranked by Q3
-- [Protein Structure Prediction on CASPSeq](https://aliquome.github.io/#benchmarks/protein-structure-prediction-caspseq): 5 results, ranked by Validation perplexity
-- [Protein Structure Prediction on CASPSimSeq](https://aliquome.github.io/#benchmarks/protein-structure-prediction-caspsimseq): 5 results, ranked by Validation perplexity
-- [Protein Structure Prediction on PaenSeq](https://aliquome.github.io/#benchmarks/protein-structure-prediction-paenseq): 5 results, ranked by Validation perplexity
-- [Protein Structure Prediction on UniProtSeq](https://aliquome.github.io/#benchmarks/protein-structure-prediction-uniprotseq): 5 results, ranked by Validation perplexity
-- [Protein-Ligand Affinity Prediction on CSAR-HiQ](https://aliquome.github.io/#benchmarks/protein-ligand-affinity-prediction-csar-hiq): 3 results, ranked by RMSE
+- [Antibody-antigen binding prediction on Antibody sequences against Sars-Cov-2 and Omicron BA.1](https://aliquome.github.io/benchmarks/antibody-antigen-binding-prediction-antibody-sequences-against-sars-cov-2-and-omicron-ba-1/): 3 results, ranked by Accuracy (5-fold)
+- [Antibody-antigen binding prediction on MIPE](https://aliquome.github.io/benchmarks/antibody-antigen-binding-prediction-mipe/): 7 results, ranked by AUC-PR
+- [Antibody-antigen binding prediction on Paragraph Expanded](https://aliquome.github.io/benchmarks/antibody-antigen-binding-prediction-paragraph-expanded/): 2 results, ranked by AUC-PR
+- [Antibody-antigen binding prediction on PECAN](https://aliquome.github.io/benchmarks/antibody-antigen-binding-prediction-pecan/): 5 results, ranked by AUC-PR
+- [Drug Discovery on BACE](https://aliquome.github.io/benchmarks/drug-discovery-bace/): 6 results, ranked by AUC
+- [Graph Classification on BACE](https://aliquome.github.io/benchmarks/graph-classification-bace/): 2 results, ranked by ROC-AUC
+- [Graph Classification on ENZYMES](https://aliquome.github.io/benchmarks/graph-classification-enzymes/): 54 results, ranked by Accuracy
+- [Graph Classification on PROTEINS](https://aliquome.github.io/benchmarks/graph-classification-proteins/): 103 results, ranked by Accuracy
+- [Link Property Prediction on ogbl-ppa](https://aliquome.github.io/benchmarks/link-property-prediction-ogbl-ppa/): 26 results, ranked by Test Hits@100
+- [Molecular Property Prediction on BACE](https://aliquome.github.io/benchmarks/molecular-property-prediction-bace/): 20 results, ranked by ROC-AUC
+- [Node Classification on PPI](https://aliquome.github.io/benchmarks/node-classification-ppi/): 24 results, ranked by F1
+- [Node Property Prediction on ogbn-proteins](https://aliquome.github.io/benchmarks/node-property-prediction-ogbn-proteins/): 26 results, ranked by Test ROC-AUC
+- [Protein Design on CATH 4.2](https://aliquome.github.io/benchmarks/protein-design-cath-4-2/): 8 results, ranked by Perplexity
+- [Protein Design on CATH 4.3](https://aliquome.github.io/benchmarks/protein-design-cath-4-3/): 2 results, ranked by Perplexity
+- [Protein Function Prediction on CASPSimSeq](https://aliquome.github.io/benchmarks/protein-function-prediction-caspsimseq/): 5 results, ranked by ROUGE-L
+- [Protein Function Prediction on PaenSeq](https://aliquome.github.io/benchmarks/protein-function-prediction-paenseq/): 5 results, ranked by ROUGE-L
+- [Protein Function Prediction on UniProtSeq](https://aliquome.github.io/benchmarks/protein-function-prediction-uniprotseq/): 5 results, ranked by ROUGE-L
+- [Protein Secondary Structure Prediction on CASP12](https://aliquome.github.io/benchmarks/protein-secondary-structure-prediction-casp12/): 4 results, ranked by Q3
+- [Protein Secondary Structure Prediction on CB513](https://aliquome.github.io/benchmarks/protein-secondary-structure-prediction-cb513/): 10 results, ranked by Q8
+- [Protein Secondary Structure Prediction on PS4](https://aliquome.github.io/benchmarks/protein-secondary-structure-prediction-ps4/): 2 results, ranked by Q8
+- [Protein Secondary Structure Prediction on TS115](https://aliquome.github.io/benchmarks/protein-secondary-structure-prediction-ts115/): 4 results, ranked by Q3
+- [Protein Structure Prediction on CASPSeq](https://aliquome.github.io/benchmarks/protein-structure-prediction-caspseq/): 5 results, ranked by Validation perplexity
+- [Protein Structure Prediction on CASPSimSeq](https://aliquome.github.io/benchmarks/protein-structure-prediction-caspsimseq/): 5 results, ranked by Validation perplexity
+- [Protein Structure Prediction on PaenSeq](https://aliquome.github.io/benchmarks/protein-structure-prediction-paenseq/): 5 results, ranked by Validation perplexity
+- [Protein Structure Prediction on UniProtSeq](https://aliquome.github.io/benchmarks/protein-structure-prediction-uniprotseq/): 5 results, ranked by Validation perplexity
+- [Protein-Ligand Affinity Prediction on CSAR-HiQ](https://aliquome.github.io/benchmarks/protein-ligand-affinity-prediction-csar-hiq/): 3 results, ranked by RMSE
 
 </details>
 
 <details>
 <summary><b>Pathways, networks and ontologies</b> (1 tables)</summary>
 
-- [Link Prediction on Decagon](https://aliquome.github.io/#benchmarks/link-prediction-decagon): 2 results, ranked by AUROC
+- [Link Prediction on Decagon](https://aliquome.github.io/benchmarks/link-prediction-decagon/): 2 results, ranked by AUROC
 
 </details>
 
 <details>
 <summary><b>Chemistry and drug discovery</b> (93 tables)</summary>
 
-- [3D Geometry Prediction on Molecule3D test](https://aliquome.github.io/#benchmarks/3d-geometry-prediction-molecule3d-test): 2 results, ranked by MAE
-- [3D Geometry Prediction on Molecule3D val](https://aliquome.github.io/#benchmarks/3d-geometry-prediction-molecule3d-val): 2 results, ranked by MAE
-- [Blind Docking on PDBbind](https://aliquome.github.io/#benchmarks/blind-docking-pdbbind): 4 results, ranked by Top-1 RMSD (%&lt;2)
-- [Blind Docking on PDBBind](https://aliquome.github.io/#benchmarks/blind-docking-pdbbind-2): 14 results, ranked by Top-1 RMSD (%&lt;2)
-- [Cross-Modal Retrieval on ChEBI-20](https://aliquome.github.io/#benchmarks/cross-modal-retrieval-chebi-20): 9 results, ranked by Hits@1
-- [De novo molecule generation from MS/MS spectrum on MassSpecGym](https://aliquome.github.io/#benchmarks/de-novo-molecule-generation-from-ms-ms-spectrum-massspecgym): 3 results, ranked by Top-1 Accuracy
-- [De novo molecule generation from MS/MS spectrum (bonus chemical formulae) on MassSpecGym](https://aliquome.github.io/#benchmarks/de-novo-molecule-generation-from-ms-ms-spectrum-bonus-chemical-formulae-massspecgym): 9 results, ranked by Top-1 Accuracy
-- [Description-guided molecule generation on TOMG-Bench](https://aliquome.github.io/#benchmarks/description-guided-molecule-generation-tomg-bench): 25 results, ranked by wAcc
-- [Drug ATC Classification on ATC-GRAPH](https://aliquome.github.io/#benchmarks/drug-atc-classification-atc-graph): 2 results, ranked by Absolute False
-- [Drug ATC Classification on ATC-SMILES](https://aliquome.github.io/#benchmarks/drug-atc-classification-atc-smiles): 2 results, ranked by Absolute False
-- [Drug Discovery on BBBP](https://aliquome.github.io/#benchmarks/drug-discovery-bbbp): 4 results, ranked by AUC
-- [Drug Discovery on BindingDB](https://aliquome.github.io/#benchmarks/drug-discovery-bindingdb): 4 results, ranked by AUC
-- [Drug Discovery on BindingDB IC50](https://aliquome.github.io/#benchmarks/drug-discovery-bindingdb-ic50): 2 results, ranked by Pearson Correlation
-- [Drug Discovery on clintox](https://aliquome.github.io/#benchmarks/drug-discovery-clintox): 4 results, ranked by AUC
-- [Drug Discovery on DAVIS-DTA](https://aliquome.github.io/#benchmarks/drug-discovery-davis-dta): 4 results, ranked by CI
-- [Drug Discovery on HIV dataset](https://aliquome.github.io/#benchmarks/drug-discovery-hiv-dataset): 5 results, ranked by AUC
-- [Drug Discovery on KIBA](https://aliquome.github.io/#benchmarks/drug-discovery-kiba): 4 results, ranked by CI
-- [Drug Discovery on LIT-PCBA(ALDH1)](https://aliquome.github.io/#benchmarks/drug-discovery-lit-pcba-aldh1): 4 results, ranked by AUC
-- [Drug Discovery on LIT-PCBA(ESR1\_ant)](https://aliquome.github.io/#benchmarks/drug-discovery-lit-pcba-esr1-ant): 3 results, ranked by AUC
-- [Drug Discovery on LIT-PCBA(KAT2A)](https://aliquome.github.io/#benchmarks/drug-discovery-lit-pcba-kat2a): 4 results, ranked by AUC
-- [Drug Discovery on LIT-PCBA(MAPK1)](https://aliquome.github.io/#benchmarks/drug-discovery-lit-pcba-mapk1): 4 results, ranked by AUC
-- [Drug Discovery on MUV](https://aliquome.github.io/#benchmarks/drug-discovery-muv): 5 results, ranked by AUC
-- [Drug Discovery on PCBA](https://aliquome.github.io/#benchmarks/drug-discovery-pcba): 2 results, ranked by AUC
-- [Drug Discovery on QM9](https://aliquome.github.io/#benchmarks/drug-discovery-qm9): 11 results, ranked by Error ratio
-- [Drug Discovery on SIDER](https://aliquome.github.io/#benchmarks/drug-discovery-sider): 4 results, ranked by AUC
-- [Drug Discovery on Tox21](https://aliquome.github.io/#benchmarks/drug-discovery-tox21): 11 results, ranked by AUC
-- [Drug Discovery on ToxCast](https://aliquome.github.io/#benchmarks/drug-discovery-toxcast): 5 results, ranked by AUC
-- [Drug–drug Interaction Extraction on DDI extraction 2013 corpus](https://aliquome.github.io/#benchmarks/drug-drug-interaction-extraction-ddi-extraction-2013-corpus): 10 results, ranked by F1
-- [Drug–drug Interaction Extraction on Drug Combination Extraction Dataset](https://aliquome.github.io/#benchmarks/drug-drug-interaction-extraction-drug-combination-extraction-dataset): 2 results, ranked by Exact Match F1 ("Any Combination")
-- [Drug–drug Interaction Extraction on DrugBank](https://aliquome.github.io/#benchmarks/drug-drug-interaction-extraction-drugbank): 3 results, ranked by AUROC
-- [Formation Energy on QM9](https://aliquome.github.io/#benchmarks/formation-energy-qm9): 18 results, ranked by MAE
-- [Forward reaction prediction on Mol-Instruction](https://aliquome.github.io/#benchmarks/forward-reaction-prediction-mol-instruction): 2 results, ranked by Exact
-- [Graph Classification on AIDS](https://aliquome.github.io/#benchmarks/graph-classification-aids): 2 results, ranked by Accuracy
-- [Graph Classification on BBBP](https://aliquome.github.io/#benchmarks/graph-classification-bbbp): 3 results, ranked by ROC-AUC
-- [Graph Classification on clintox](https://aliquome.github.io/#benchmarks/graph-classification-clintox): 2 results, ranked by ROC-AUC
-- [Graph Classification on HIV](https://aliquome.github.io/#benchmarks/graph-classification-hiv): 3 results, ranked by ROC-AUC
-- [Graph Classification on MUTAG](https://aliquome.github.io/#benchmarks/graph-classification-mutag): 74 results, ranked by Accuracy
-- [Graph Classification on Mutagenicity](https://aliquome.github.io/#benchmarks/graph-classification-mutagenicity): 5 results, ranked by Accuracy
-- [Graph Classification on MUV](https://aliquome.github.io/#benchmarks/graph-classification-muv): 2 results, ranked by ROC-AUC
-- [Graph Classification on NCI1](https://aliquome.github.io/#benchmarks/graph-classification-nci1): 69 results, ranked by Accuracy
-- [Graph Classification on PTC](https://aliquome.github.io/#benchmarks/graph-classification-ptc): 37 results, ranked by Accuracy
-- [Graph Classification on SIDER](https://aliquome.github.io/#benchmarks/graph-classification-sider): 2 results, ranked by ROC-AUC
-- [Graph Classification on Tox21](https://aliquome.github.io/#benchmarks/graph-classification-tox21): 3 results, ranked by ROC-AUC
-- [Graph Classification on ToxCast](https://aliquome.github.io/#benchmarks/graph-classification-toxcast): 3 results, ranked by ROC-AUC
-- [Graph Property Prediction on ogbg-molhiv](https://aliquome.github.io/#benchmarks/graph-property-prediction-ogbg-molhiv): 43 results, ranked by Test ROC-AUC
-- [Graph Property Prediction on ogbg-molpcba](https://aliquome.github.io/#benchmarks/graph-property-prediction-ogbg-molpcba): 36 results, ranked by Test AP
-- [Graph Property Prediction on QM9](https://aliquome.github.io/#benchmarks/graph-property-prediction-qm9): 10 results, ranked by Standardized MAE
-- [Graph Ranking on ogbg-molesol](https://aliquome.github.io/#benchmarks/graph-ranking-ogbg-molesol): 4 results, ranked by Kendall's Tau
-- [Graph Ranking on ogbg-molfreesolv](https://aliquome.github.io/#benchmarks/graph-ranking-ogbg-molfreesolv): 4 results, ranked by Kendall's Tau
-- [Graph Ranking on ogbg-mollipo](https://aliquome.github.io/#benchmarks/graph-ranking-ogbg-mollipo): 4 results, ranked by Kendall's Tau
-- [Graph Ranking on ZINC](https://aliquome.github.io/#benchmarks/graph-ranking-zinc): 4 results, ranked by Kendall's Tau
-- [Graph Regression on Lipophilicity](https://aliquome.github.io/#benchmarks/graph-regression-lipophilicity): 23 results, ranked by RMSE
-- [Graph Regression on PCQM4M-LSC](https://aliquome.github.io/#benchmarks/graph-regression-pcqm4m-lsc): 11 results, ranked by Test MAE
-- [Graph Regression on PCQM4Mv2-LSC](https://aliquome.github.io/#benchmarks/graph-regression-pcqm4mv2-lsc): 20 results, ranked by Validation MAE
-- [Graph Regression on Tox21](https://aliquome.github.io/#benchmarks/graph-regression-tox21): 3 results, ranked by AUC@80%Train
-- [Graph Regression on ZINC](https://aliquome.github.io/#benchmarks/graph-regression-zinc): 27 results, ranked by MAE
-- [Link Prediction on PCQM-Contact](https://aliquome.github.io/#benchmarks/link-prediction-pcqm-contact): 18 results, ranked by Hits@1
-- [Link Property Prediction on ogbl-biokg](https://aliquome.github.io/#benchmarks/link-property-prediction-ogbl-biokg): 16 results, ranked by Test MRR
-- [Link Property Prediction on ogbl-ddi](https://aliquome.github.io/#benchmarks/link-property-prediction-ogbl-ddi): 31 results, ranked by Test Hits@20
-- [Molecular Property Prediction on BBBP](https://aliquome.github.io/#benchmarks/molecular-property-prediction-bbbp): 29 results, ranked by ROC-AUC
-- [Molecular Property Prediction on Clearance](https://aliquome.github.io/#benchmarks/molecular-property-prediction-clearance): 2 results, ranked by RMSE
-- [Molecular Property Prediction on clintox](https://aliquome.github.io/#benchmarks/molecular-property-prediction-clintox): 20 results, ranked by ROC-AUC
-- [Molecular Property Prediction on ESOL](https://aliquome.github.io/#benchmarks/molecular-property-prediction-esol): 20 results, ranked by RMSE
-- [Molecular Property Prediction on FreeSolv](https://aliquome.github.io/#benchmarks/molecular-property-prediction-freesolv): 22 results, ranked by RMSE
-- [Molecular Property Prediction on HIV](https://aliquome.github.io/#benchmarks/molecular-property-prediction-hiv): 4 results, ranked by ROC-AUC
-- [Molecular Property Prediction on HIV dataset](https://aliquome.github.io/#benchmarks/molecular-property-prediction-hiv-dataset): 11 results, ranked by AUC
-- [Molecular Property Prediction on Lipophilicity](https://aliquome.github.io/#benchmarks/molecular-property-prediction-lipophilicity): 13 results, ranked by RMSE
-- [Molecular Property Prediction on MoleculeNet](https://aliquome.github.io/#benchmarks/molecular-property-prediction-moleculenet): 5 results, ranked by AUC
-- [Molecular Property Prediction on MUV](https://aliquome.github.io/#benchmarks/molecular-property-prediction-muv): 5 results, ranked by ROC-AUC
-- [Molecular Property Prediction on PCBA](https://aliquome.github.io/#benchmarks/molecular-property-prediction-pcba): 2 results, ranked by ROC-AUC
-- [Molecular Property Prediction on QM7](https://aliquome.github.io/#benchmarks/molecular-property-prediction-qm7): 8 results, ranked by MAE
-- [Molecular Property Prediction on QM8](https://aliquome.github.io/#benchmarks/molecular-property-prediction-qm8): 8 results, ranked by MAE
-- [Molecular Property Prediction on QM9](https://aliquome.github.io/#benchmarks/molecular-property-prediction-qm9): 8 results, ranked by MAE
-- [Molecular Property Prediction on SIDER](https://aliquome.github.io/#benchmarks/molecular-property-prediction-sider): 19 results, ranked by ROC-AUC
-- [Molecular Property Prediction on Tox21](https://aliquome.github.io/#benchmarks/molecular-property-prediction-tox21): 20 results, ranked by ROC-AUC
-- [Molecular Property Prediction on ToxCast](https://aliquome.github.io/#benchmarks/molecular-property-prediction-toxcast): 8 results, ranked by ROC-AUC
-- [Molecule Captioning on ChEBI-20](https://aliquome.github.io/#benchmarks/molecule-captioning-chebi-20): 33 results, ranked by BLEU-2
-- [Molecule Captioning on L+M-24](https://aliquome.github.io/#benchmarks/molecule-captioning-l-m-24): 6 results, ranked by BLEU-2
-- [Molecule retrieval from MS/MS spectrum on MassSpecGym](https://aliquome.github.io/#benchmarks/molecule-retrieval-from-ms-ms-spectrum-massspecgym): 8 results, ranked by Hit rate @ 1
-- [Molecule retrieval from MS/MS spectrum (bonus chemical formulae) on MassSpecGym](https://aliquome.github.io/#benchmarks/molecule-retrieval-from-ms-ms-spectrum-bonus-chemical-formulae-massspecgym): 8 results, ranked by Hit rate @ 1
-- [MS/MS spectrum simulation on MassSpecGym](https://aliquome.github.io/#benchmarks/ms-ms-spectrum-simulation-massspecgym): 4 results, ranked by Cosine Similarity
-- [MS/MS spectrum simulation (bonus chemical formulae) on MassSpecGym](https://aliquome.github.io/#benchmarks/ms-ms-spectrum-simulation-bonus-chemical-formulae-massspecgym): 4 results, ranked by Hit Rate @ 1
-- [Multi-step retrosynthesis on USPTO-190](https://aliquome.github.io/#benchmarks/multi-step-retrosynthesis-uspto-190): 5 results, ranked by Success Rate (100 model calls)
-- [Multi-Task Learning on QM9](https://aliquome.github.io/#benchmarks/multi-task-learning-qm9): 5 results, ranked by ∆m%
-- [NMR J-coupling on QM9](https://aliquome.github.io/#benchmarks/nmr-j-coupling-qm9): 2 results, ranked by avg. log MAE
-- [Node Classification on MUTAG](https://aliquome.github.io/#benchmarks/node-classification-mutag): 6 results, ranked by Accuracy
-- [Prediction on QM9](https://aliquome.github.io/#benchmarks/prediction-qm9): 4 results, ranked by Edit Distance
-- [Protein-Ligand Affinity Prediction on PDBbind](https://aliquome.github.io/#benchmarks/protein-ligand-affinity-prediction-pdbbind): 7 results, ranked by RMSE
-- [Retrosynthesis on Mol-Instruction](https://aliquome.github.io/#benchmarks/retrosynthesis-mol-instruction): 2 results, ranked by Exact
-- [Single-step retrosynthesis on USPTO-50k](https://aliquome.github.io/#benchmarks/single-step-retrosynthesis-uspto-50k): 35 results, ranked by Top-1 accuracy
-- [TDC ADMET Benchmarking Group on tdcommons](https://aliquome.github.io/#benchmarks/tdc-admet-benchmarking-group-tdcommons): 12 results, ranked by TDC.Caco2\_Wang
-- [Unconditional Molecule Generation on GEOM-DRUGS](https://aliquome.github.io/#benchmarks/unconditional-molecule-generation-geom-drugs): 5 results, ranked by PoseBusters Validity
-- [Unconditional Molecule Generation on QM9](https://aliquome.github.io/#benchmarks/unconditional-molecule-generation-qm9): 4 results, ranked by Validity
+- [3D Geometry Prediction on Molecule3D test](https://aliquome.github.io/benchmarks/3d-geometry-prediction-molecule3d-test/): 2 results, ranked by MAE
+- [3D Geometry Prediction on Molecule3D val](https://aliquome.github.io/benchmarks/3d-geometry-prediction-molecule3d-val/): 2 results, ranked by MAE
+- [Blind Docking on PDBbind](https://aliquome.github.io/benchmarks/blind-docking-pdbbind/): 4 results, ranked by Top-1 RMSD (%&lt;2)
+- [Blind Docking on PDBBind](https://aliquome.github.io/benchmarks/blind-docking-pdbbind-2/): 14 results, ranked by Top-1 RMSD (%&lt;2)
+- [Cross-Modal Retrieval on ChEBI-20](https://aliquome.github.io/benchmarks/cross-modal-retrieval-chebi-20/): 9 results, ranked by Hits@1
+- [De novo molecule generation from MS/MS spectrum on MassSpecGym](https://aliquome.github.io/benchmarks/de-novo-molecule-generation-from-ms-ms-spectrum-massspecgym/): 3 results, ranked by Top-1 Accuracy
+- [De novo molecule generation from MS/MS spectrum (bonus chemical formulae) on MassSpecGym](https://aliquome.github.io/benchmarks/de-novo-molecule-generation-from-ms-ms-spectrum-bonus-chemical-formulae-massspecgym/): 9 results, ranked by Top-1 Accuracy
+- [Description-guided molecule generation on TOMG-Bench](https://aliquome.github.io/benchmarks/description-guided-molecule-generation-tomg-bench/): 25 results, ranked by wAcc
+- [Drug ATC Classification on ATC-GRAPH](https://aliquome.github.io/benchmarks/drug-atc-classification-atc-graph/): 2 results, ranked by Absolute False
+- [Drug ATC Classification on ATC-SMILES](https://aliquome.github.io/benchmarks/drug-atc-classification-atc-smiles/): 2 results, ranked by Absolute False
+- [Drug Discovery on BBBP](https://aliquome.github.io/benchmarks/drug-discovery-bbbp/): 4 results, ranked by AUC
+- [Drug Discovery on BindingDB](https://aliquome.github.io/benchmarks/drug-discovery-bindingdb/): 4 results, ranked by AUC
+- [Drug Discovery on BindingDB IC50](https://aliquome.github.io/benchmarks/drug-discovery-bindingdb-ic50/): 2 results, ranked by Pearson Correlation
+- [Drug Discovery on clintox](https://aliquome.github.io/benchmarks/drug-discovery-clintox/): 4 results, ranked by AUC
+- [Drug Discovery on DAVIS-DTA](https://aliquome.github.io/benchmarks/drug-discovery-davis-dta/): 4 results, ranked by CI
+- [Drug Discovery on HIV dataset](https://aliquome.github.io/benchmarks/drug-discovery-hiv-dataset/): 5 results, ranked by AUC
+- [Drug Discovery on KIBA](https://aliquome.github.io/benchmarks/drug-discovery-kiba/): 4 results, ranked by CI
+- [Drug Discovery on LIT-PCBA(ALDH1)](https://aliquome.github.io/benchmarks/drug-discovery-lit-pcba-aldh1/): 4 results, ranked by AUC
+- [Drug Discovery on LIT-PCBA(ESR1\_ant)](https://aliquome.github.io/benchmarks/drug-discovery-lit-pcba-esr1-ant/): 3 results, ranked by AUC
+- [Drug Discovery on LIT-PCBA(KAT2A)](https://aliquome.github.io/benchmarks/drug-discovery-lit-pcba-kat2a/): 4 results, ranked by AUC
+- [Drug Discovery on LIT-PCBA(MAPK1)](https://aliquome.github.io/benchmarks/drug-discovery-lit-pcba-mapk1/): 4 results, ranked by AUC
+- [Drug Discovery on MUV](https://aliquome.github.io/benchmarks/drug-discovery-muv/): 5 results, ranked by AUC
+- [Drug Discovery on PCBA](https://aliquome.github.io/benchmarks/drug-discovery-pcba/): 2 results, ranked by AUC
+- [Drug Discovery on QM9](https://aliquome.github.io/benchmarks/drug-discovery-qm9/): 11 results, ranked by Error ratio
+- [Drug Discovery on SIDER](https://aliquome.github.io/benchmarks/drug-discovery-sider/): 4 results, ranked by AUC
+- [Drug Discovery on Tox21](https://aliquome.github.io/benchmarks/drug-discovery-tox21/): 11 results, ranked by AUC
+- [Drug Discovery on ToxCast](https://aliquome.github.io/benchmarks/drug-discovery-toxcast/): 5 results, ranked by AUC
+- [Drug–drug Interaction Extraction on DDI extraction 2013 corpus](https://aliquome.github.io/benchmarks/drug-drug-interaction-extraction-ddi-extraction-2013-corpus/): 10 results, ranked by F1
+- [Drug–drug Interaction Extraction on Drug Combination Extraction Dataset](https://aliquome.github.io/benchmarks/drug-drug-interaction-extraction-drug-combination-extraction-dataset/): 2 results, ranked by Exact Match F1 ("Any Combination")
+- [Drug–drug Interaction Extraction on DrugBank](https://aliquome.github.io/benchmarks/drug-drug-interaction-extraction-drugbank/): 3 results, ranked by AUROC
+- [Formation Energy on QM9](https://aliquome.github.io/benchmarks/formation-energy-qm9/): 18 results, ranked by MAE
+- [Forward reaction prediction on Mol-Instruction](https://aliquome.github.io/benchmarks/forward-reaction-prediction-mol-instruction/): 2 results, ranked by Exact
+- [Graph Classification on AIDS](https://aliquome.github.io/benchmarks/graph-classification-aids/): 2 results, ranked by Accuracy
+- [Graph Classification on BBBP](https://aliquome.github.io/benchmarks/graph-classification-bbbp/): 3 results, ranked by ROC-AUC
+- [Graph Classification on clintox](https://aliquome.github.io/benchmarks/graph-classification-clintox/): 2 results, ranked by ROC-AUC
+- [Graph Classification on HIV](https://aliquome.github.io/benchmarks/graph-classification-hiv/): 3 results, ranked by ROC-AUC
+- [Graph Classification on MUTAG](https://aliquome.github.io/benchmarks/graph-classification-mutag/): 74 results, ranked by Accuracy
+- [Graph Classification on Mutagenicity](https://aliquome.github.io/benchmarks/graph-classification-mutagenicity/): 5 results, ranked by Accuracy
+- [Graph Classification on MUV](https://aliquome.github.io/benchmarks/graph-classification-muv/): 2 results, ranked by ROC-AUC
+- [Graph Classification on NCI1](https://aliquome.github.io/benchmarks/graph-classification-nci1/): 69 results, ranked by Accuracy
+- [Graph Classification on PTC](https://aliquome.github.io/benchmarks/graph-classification-ptc/): 37 results, ranked by Accuracy
+- [Graph Classification on SIDER](https://aliquome.github.io/benchmarks/graph-classification-sider/): 2 results, ranked by ROC-AUC
+- [Graph Classification on Tox21](https://aliquome.github.io/benchmarks/graph-classification-tox21/): 3 results, ranked by ROC-AUC
+- [Graph Classification on ToxCast](https://aliquome.github.io/benchmarks/graph-classification-toxcast/): 3 results, ranked by ROC-AUC
+- [Graph Property Prediction on ogbg-molhiv](https://aliquome.github.io/benchmarks/graph-property-prediction-ogbg-molhiv/): 43 results, ranked by Test ROC-AUC
+- [Graph Property Prediction on ogbg-molpcba](https://aliquome.github.io/benchmarks/graph-property-prediction-ogbg-molpcba/): 36 results, ranked by Test AP
+- [Graph Property Prediction on QM9](https://aliquome.github.io/benchmarks/graph-property-prediction-qm9/): 10 results, ranked by Standardized MAE
+- [Graph Ranking on ogbg-molesol](https://aliquome.github.io/benchmarks/graph-ranking-ogbg-molesol/): 4 results, ranked by Kendall's Tau
+- [Graph Ranking on ogbg-molfreesolv](https://aliquome.github.io/benchmarks/graph-ranking-ogbg-molfreesolv/): 4 results, ranked by Kendall's Tau
+- [Graph Ranking on ogbg-mollipo](https://aliquome.github.io/benchmarks/graph-ranking-ogbg-mollipo/): 4 results, ranked by Kendall's Tau
+- [Graph Ranking on ZINC](https://aliquome.github.io/benchmarks/graph-ranking-zinc/): 4 results, ranked by Kendall's Tau
+- [Graph Regression on Lipophilicity](https://aliquome.github.io/benchmarks/graph-regression-lipophilicity/): 23 results, ranked by RMSE
+- [Graph Regression on PCQM4M-LSC](https://aliquome.github.io/benchmarks/graph-regression-pcqm4m-lsc/): 11 results, ranked by Test MAE
+- [Graph Regression on PCQM4Mv2-LSC](https://aliquome.github.io/benchmarks/graph-regression-pcqm4mv2-lsc/): 20 results, ranked by Validation MAE
+- [Graph Regression on Tox21](https://aliquome.github.io/benchmarks/graph-regression-tox21/): 3 results, ranked by AUC@80%Train
+- [Graph Regression on ZINC](https://aliquome.github.io/benchmarks/graph-regression-zinc/): 27 results, ranked by MAE
+- [Link Prediction on PCQM-Contact](https://aliquome.github.io/benchmarks/link-prediction-pcqm-contact/): 18 results, ranked by Hits@1
+- [Link Property Prediction on ogbl-biokg](https://aliquome.github.io/benchmarks/link-property-prediction-ogbl-biokg/): 16 results, ranked by Test MRR
+- [Link Property Prediction on ogbl-ddi](https://aliquome.github.io/benchmarks/link-property-prediction-ogbl-ddi/): 31 results, ranked by Test Hits@20
+- [Molecular Property Prediction on BBBP](https://aliquome.github.io/benchmarks/molecular-property-prediction-bbbp/): 29 results, ranked by ROC-AUC
+- [Molecular Property Prediction on Clearance](https://aliquome.github.io/benchmarks/molecular-property-prediction-clearance/): 2 results, ranked by RMSE
+- [Molecular Property Prediction on clintox](https://aliquome.github.io/benchmarks/molecular-property-prediction-clintox/): 20 results, ranked by ROC-AUC
+- [Molecular Property Prediction on ESOL](https://aliquome.github.io/benchmarks/molecular-property-prediction-esol/): 20 results, ranked by RMSE
+- [Molecular Property Prediction on FreeSolv](https://aliquome.github.io/benchmarks/molecular-property-prediction-freesolv/): 22 results, ranked by RMSE
+- [Molecular Property Prediction on HIV](https://aliquome.github.io/benchmarks/molecular-property-prediction-hiv/): 4 results, ranked by ROC-AUC
+- [Molecular Property Prediction on HIV dataset](https://aliquome.github.io/benchmarks/molecular-property-prediction-hiv-dataset/): 11 results, ranked by AUC
+- [Molecular Property Prediction on Lipophilicity](https://aliquome.github.io/benchmarks/molecular-property-prediction-lipophilicity/): 13 results, ranked by RMSE
+- [Molecular Property Prediction on MoleculeNet](https://aliquome.github.io/benchmarks/molecular-property-prediction-moleculenet/): 5 results, ranked by AUC
+- [Molecular Property Prediction on MUV](https://aliquome.github.io/benchmarks/molecular-property-prediction-muv/): 5 results, ranked by ROC-AUC
+- [Molecular Property Prediction on PCBA](https://aliquome.github.io/benchmarks/molecular-property-prediction-pcba/): 2 results, ranked by ROC-AUC
+- [Molecular Property Prediction on QM7](https://aliquome.github.io/benchmarks/molecular-property-prediction-qm7/): 8 results, ranked by MAE
+- [Molecular Property Prediction on QM8](https://aliquome.github.io/benchmarks/molecular-property-prediction-qm8/): 8 results, ranked by MAE
+- [Molecular Property Prediction on QM9](https://aliquome.github.io/benchmarks/molecular-property-prediction-qm9/): 8 results, ranked by MAE
+- [Molecular Property Prediction on SIDER](https://aliquome.github.io/benchmarks/molecular-property-prediction-sider/): 19 results, ranked by ROC-AUC
+- [Molecular Property Prediction on Tox21](https://aliquome.github.io/benchmarks/molecular-property-prediction-tox21/): 20 results, ranked by ROC-AUC
+- [Molecular Property Prediction on ToxCast](https://aliquome.github.io/benchmarks/molecular-property-prediction-toxcast/): 8 results, ranked by ROC-AUC
+- [Molecule Captioning on ChEBI-20](https://aliquome.github.io/benchmarks/molecule-captioning-chebi-20/): 33 results, ranked by BLEU-2
+- [Molecule Captioning on L+M-24](https://aliquome.github.io/benchmarks/molecule-captioning-l-m-24/): 6 results, ranked by BLEU-2
+- [Molecule retrieval from MS/MS spectrum on MassSpecGym](https://aliquome.github.io/benchmarks/molecule-retrieval-from-ms-ms-spectrum-massspecgym/): 8 results, ranked by Hit rate @ 1
+- [Molecule retrieval from MS/MS spectrum (bonus chemical formulae) on MassSpecGym](https://aliquome.github.io/benchmarks/molecule-retrieval-from-ms-ms-spectrum-bonus-chemical-formulae-massspecgym/): 8 results, ranked by Hit rate @ 1
+- [MS/MS spectrum simulation on MassSpecGym](https://aliquome.github.io/benchmarks/ms-ms-spectrum-simulation-massspecgym/): 4 results, ranked by Cosine Similarity
+- [MS/MS spectrum simulation (bonus chemical formulae) on MassSpecGym](https://aliquome.github.io/benchmarks/ms-ms-spectrum-simulation-bonus-chemical-formulae-massspecgym/): 4 results, ranked by Hit Rate @ 1
+- [Multi-step retrosynthesis on USPTO-190](https://aliquome.github.io/benchmarks/multi-step-retrosynthesis-uspto-190/): 5 results, ranked by Success Rate (100 model calls)
+- [Multi-Task Learning on QM9](https://aliquome.github.io/benchmarks/multi-task-learning-qm9/): 5 results, ranked by ∆m%
+- [NMR J-coupling on QM9](https://aliquome.github.io/benchmarks/nmr-j-coupling-qm9/): 2 results, ranked by avg. log MAE
+- [Node Classification on MUTAG](https://aliquome.github.io/benchmarks/node-classification-mutag/): 6 results, ranked by Accuracy
+- [Prediction on QM9](https://aliquome.github.io/benchmarks/prediction-qm9/): 4 results, ranked by Edit Distance
+- [Protein-Ligand Affinity Prediction on PDBbind](https://aliquome.github.io/benchmarks/protein-ligand-affinity-prediction-pdbbind/): 7 results, ranked by RMSE
+- [Retrosynthesis on Mol-Instruction](https://aliquome.github.io/benchmarks/retrosynthesis-mol-instruction/): 2 results, ranked by Exact
+- [Single-step retrosynthesis on USPTO-50k](https://aliquome.github.io/benchmarks/single-step-retrosynthesis-uspto-50k/): 35 results, ranked by Top-1 accuracy
+- [TDC ADMET Benchmarking Group on tdcommons](https://aliquome.github.io/benchmarks/tdc-admet-benchmarking-group-tdcommons/): 12 results, ranked by TDC.Caco2\_Wang
+- [Unconditional Molecule Generation on GEOM-DRUGS](https://aliquome.github.io/benchmarks/unconditional-molecule-generation-geom-drugs/): 5 results, ranked by PoseBusters Validity
+- [Unconditional Molecule Generation on QM9](https://aliquome.github.io/benchmarks/unconditional-molecule-generation-qm9/): 4 results, ranked by Validity
 
 </details>
 
 <details>
 <summary><b>Epigenomics and regulation</b> (1 tables)</summary>
 
-- [Cancer Classification on Multi-omics mRNA, miRNA, and DNA Methylation Dataset](https://aliquome.github.io/#benchmarks/cancer-classification-multi-omics-mrna-mirna-and-dna-methylation-dataset): 2 results, ranked by 1:1 Accuracy
+- [Cancer Classification on Multi-omics mRNA, miRNA, and DNA Methylation Dataset](https://aliquome.github.io/benchmarks/cancer-classification-multi-omics-mrna-mirna-and-dna-methylation-dataset/): 2 results, ranked by 1:1 Accuracy
 
 </details>
 
 <details>
 <summary><b>Benchmarks and machine learning</b> (44 tables)</summary>
 
-- [AMR Parsing on Bio](https://aliquome.github.io/#benchmarks/amr-parsing-bio): 5 results, ranked by Smatch
-- [Binary Relation Extraction on BioRED](https://aliquome.github.io/#benchmarks/binary-relation-extraction-biored): 2 results, ranked by F1
-- [Biomedical Information Retrieval on BioASQ (BEIR)](https://aliquome.github.io/#benchmarks/biomedical-information-retrieval-bioasq-beir): 6 results, ranked by nDCG@10
-- [Biomedical Information Retrieval on NFCorpus (BEIR)](https://aliquome.github.io/#benchmarks/biomedical-information-retrieval-nfcorpus-beir): 7 results, ranked by nDCG@10
-- [Biomedical Information Retrieval on TREC-COVID (BEIR)](https://aliquome.github.io/#benchmarks/biomedical-information-retrieval-trec-covid-beir): 6 results, ranked by nDCG@10
-- [Cell Segmentation on LIVECell](https://aliquome.github.io/#benchmarks/cell-segmentation-livecell): 3 results, ranked by mask AP
-- [Chemical Indexing on BC7 NLM-Chem](https://aliquome.github.io/#benchmarks/chemical-indexing-bc7-nlm-chem): 2 results, ranked by F1-score (strict)
-- [Document Classification on HOC](https://aliquome.github.io/#benchmarks/document-classification-hoc): 5 results, ranked by F1
-- [Entity Linking on BC7 NLM-Chem](https://aliquome.github.io/#benchmarks/entity-linking-bc7-nlm-chem): 2 results, ranked by F1-score (strict)
-- [Entity Linking on MedMentions](https://aliquome.github.io/#benchmarks/entity-linking-medmentions): 3 results, ranked by Accuracy
-- [Event Extraction on GENIA](https://aliquome.github.io/#benchmarks/event-extraction-genia): 2 results, ranked by F1
-- [Graph Regression on PGR](https://aliquome.github.io/#benchmarks/graph-regression-pgr): 9 results, ranked by R2
-- [Link Prediction on UMLS](https://aliquome.github.io/#benchmarks/link-prediction-umls): 10 results, ranked by Hits@10
-- [Medical Relation Extraction on DDI extraction 2013 corpus](https://aliquome.github.io/#benchmarks/medical-relation-extraction-ddi-extraction-2013-corpus): 2 results, ranked by F1
-- [Named Entity Recognition (NER) on BC2GM](https://aliquome.github.io/#benchmarks/named-entity-recognition-ner-bc2gm): 13 results, ranked by F1
-- [Named Entity Recognition (NER) on BC4CHEMD](https://aliquome.github.io/#benchmarks/named-entity-recognition-ner-bc4chemd): 7 results, ranked by F1
-- [Named Entity Recognition (NER) on BC5CDR](https://aliquome.github.io/#benchmarks/named-entity-recognition-ner-bc5cdr): 16 results, ranked by F1
-- [Named Entity Recognition (NER) on BC7 NLM-Chem](https://aliquome.github.io/#benchmarks/named-entity-recognition-ner-bc7-nlm-chem): 2 results, ranked by F1-score (strict)
-- [Named Entity Recognition (NER) on BioRED](https://aliquome.github.io/#benchmarks/named-entity-recognition-ner-biored): 3 results, ranked by F1
-- [Named Entity Recognition (NER) on GENIA](https://aliquome.github.io/#benchmarks/named-entity-recognition-ner-genia): 14 results, ranked by F1
-- [Named Entity Recognition (NER) on JNLPBA](https://aliquome.github.io/#benchmarks/named-entity-recognition-ner-jnlpba): 17 results, ranked by F1
-- [Named Entity Recognition (NER) on LINNAEUS](https://aliquome.github.io/#benchmarks/named-entity-recognition-ner-linnaeus): 6 results, ranked by F1
-- [Named Entity Recognition (NER) on NCBI-disease](https://aliquome.github.io/#benchmarks/named-entity-recognition-ner-ncbi-disease): 26 results, ranked by F1
-- [Named Entity Recognition (NER) on Species-800](https://aliquome.github.io/#benchmarks/named-entity-recognition-ner-species-800): 4 results, ranked by F1
-- [Named Entity Recognition (NER) on Species800](https://aliquome.github.io/#benchmarks/named-entity-recognition-ner-species800): 2 results, ranked by F1
-- [Nested Named Entity Recognition on GENIA](https://aliquome.github.io/#benchmarks/nested-named-entity-recognition-genia): 26 results, ranked by F1
-- [PICO on EBM PICO](https://aliquome.github.io/#benchmarks/pico-ebm-pico): 3 results, ranked by Macro F1 word level
-- [Question Answering on BioASQ](https://aliquome.github.io/#benchmarks/question-answering-bioasq): 7 results, ranked by Accuracy
-- [Question Answering on BLURB](https://aliquome.github.io/#benchmarks/question-answering-blurb): 4 results, ranked by Accuracy
-- [Question Answering on PubChemQA](https://aliquome.github.io/#benchmarks/question-answering-pubchemqa): 2 results, ranked by BLEU-2
-- [Question Answering on UniProtQA](https://aliquome.github.io/#benchmarks/question-answering-uniprotqa): 2 results, ranked by BLEU-2
-- [Relation Extraction on Adverse Drug Events (ADE) Corpus](https://aliquome.github.io/#benchmarks/relation-extraction-adverse-drug-events-ade-corpus): 15 results, ranked by RE+ Macro F1
-- [Relation Extraction on BioRED](https://aliquome.github.io/#benchmarks/relation-extraction-biored): 2 results, ranked by F1
-- [Relation Extraction on CDR](https://aliquome.github.io/#benchmarks/relation-extraction-cdr): 10 results, ranked by F1
-- [Relation Extraction on ChemProt](https://aliquome.github.io/#benchmarks/relation-extraction-chemprot): 13 results, ranked by F1
-- [Relation Extraction on Dataset: Relationship extraction for knowledge graph creation from biomedical literature (Gene-Disease relationships)](https://aliquome.github.io/#benchmarks/relation-extraction-dataset-relationship-extraction-for-knowledge-graph-creation-from-biom): 2 results, ranked by F1
-- [Relation Extraction on DDI](https://aliquome.github.io/#benchmarks/relation-extraction-ddi): 3 results, ranked by F1
-- [Relation Extraction on GAD](https://aliquome.github.io/#benchmarks/relation-extraction-gad): 3 results, ranked by F1
-- [Relation Extraction on GDA](https://aliquome.github.io/#benchmarks/relation-extraction-gda): 9 results, ranked by F1
-- [Semantic Similarity on BIOSSES](https://aliquome.github.io/#benchmarks/semantic-similarity-biosses): 3 results, ranked by Pearson Correlation
-- [Sentence Embeddings For Biomedical Texts on BIOSSES](https://aliquome.github.io/#benchmarks/sentence-embeddings-for-biomedical-texts-biosses): 14 results, ranked by Pearson Correlation
-- [Sentence Embeddings For Biomedical Texts on MedSTS](https://aliquome.github.io/#benchmarks/sentence-embeddings-for-biomedical-texts-medsts): 4 results, ranked by Pearson Correlation
-- [Text Classification on BLURB](https://aliquome.github.io/#benchmarks/text-classification-blurb): 3 results, ranked by F1
-- [Text-based de novo Molecule Generation on ChEBI-20](https://aliquome.github.io/#benchmarks/text-based-de-novo-molecule-generation-chebi-20): 20 results, ranked by BLEU
+- [AMR Parsing on Bio](https://aliquome.github.io/benchmarks/amr-parsing-bio/): 5 results, ranked by Smatch
+- [Binary Relation Extraction on BioRED](https://aliquome.github.io/benchmarks/binary-relation-extraction-biored/): 2 results, ranked by F1
+- [Biomedical Information Retrieval on BioASQ (BEIR)](https://aliquome.github.io/benchmarks/biomedical-information-retrieval-bioasq-beir/): 6 results, ranked by nDCG@10
+- [Biomedical Information Retrieval on NFCorpus (BEIR)](https://aliquome.github.io/benchmarks/biomedical-information-retrieval-nfcorpus-beir/): 7 results, ranked by nDCG@10
+- [Biomedical Information Retrieval on TREC-COVID (BEIR)](https://aliquome.github.io/benchmarks/biomedical-information-retrieval-trec-covid-beir/): 6 results, ranked by nDCG@10
+- [Cell Segmentation on LIVECell](https://aliquome.github.io/benchmarks/cell-segmentation-livecell/): 3 results, ranked by mask AP
+- [Chemical Indexing on BC7 NLM-Chem](https://aliquome.github.io/benchmarks/chemical-indexing-bc7-nlm-chem/): 2 results, ranked by F1-score (strict)
+- [Document Classification on HOC](https://aliquome.github.io/benchmarks/document-classification-hoc/): 5 results, ranked by F1
+- [Entity Linking on BC7 NLM-Chem](https://aliquome.github.io/benchmarks/entity-linking-bc7-nlm-chem/): 2 results, ranked by F1-score (strict)
+- [Entity Linking on MedMentions](https://aliquome.github.io/benchmarks/entity-linking-medmentions/): 3 results, ranked by Accuracy
+- [Event Extraction on GENIA](https://aliquome.github.io/benchmarks/event-extraction-genia/): 2 results, ranked by F1
+- [Graph Regression on PGR](https://aliquome.github.io/benchmarks/graph-regression-pgr/): 9 results, ranked by R2
+- [Link Prediction on UMLS](https://aliquome.github.io/benchmarks/link-prediction-umls/): 10 results, ranked by Hits@10
+- [Medical Relation Extraction on DDI extraction 2013 corpus](https://aliquome.github.io/benchmarks/medical-relation-extraction-ddi-extraction-2013-corpus/): 2 results, ranked by F1
+- [Named Entity Recognition (NER) on BC2GM](https://aliquome.github.io/benchmarks/named-entity-recognition-ner-bc2gm/): 13 results, ranked by F1
+- [Named Entity Recognition (NER) on BC4CHEMD](https://aliquome.github.io/benchmarks/named-entity-recognition-ner-bc4chemd/): 7 results, ranked by F1
+- [Named Entity Recognition (NER) on BC5CDR](https://aliquome.github.io/benchmarks/named-entity-recognition-ner-bc5cdr/): 16 results, ranked by F1
+- [Named Entity Recognition (NER) on BC7 NLM-Chem](https://aliquome.github.io/benchmarks/named-entity-recognition-ner-bc7-nlm-chem/): 2 results, ranked by F1-score (strict)
+- [Named Entity Recognition (NER) on BioRED](https://aliquome.github.io/benchmarks/named-entity-recognition-ner-biored/): 3 results, ranked by F1
+- [Named Entity Recognition (NER) on GENIA](https://aliquome.github.io/benchmarks/named-entity-recognition-ner-genia/): 14 results, ranked by F1
+- [Named Entity Recognition (NER) on JNLPBA](https://aliquome.github.io/benchmarks/named-entity-recognition-ner-jnlpba/): 17 results, ranked by F1
+- [Named Entity Recognition (NER) on LINNAEUS](https://aliquome.github.io/benchmarks/named-entity-recognition-ner-linnaeus/): 6 results, ranked by F1
+- [Named Entity Recognition (NER) on NCBI-disease](https://aliquome.github.io/benchmarks/named-entity-recognition-ner-ncbi-disease/): 26 results, ranked by F1
+- [Named Entity Recognition (NER) on Species-800](https://aliquome.github.io/benchmarks/named-entity-recognition-ner-species-800/): 4 results, ranked by F1
+- [Named Entity Recognition (NER) on Species800](https://aliquome.github.io/benchmarks/named-entity-recognition-ner-species800/): 2 results, ranked by F1
+- [Nested Named Entity Recognition on GENIA](https://aliquome.github.io/benchmarks/nested-named-entity-recognition-genia/): 26 results, ranked by F1
+- [PICO on EBM PICO](https://aliquome.github.io/benchmarks/pico-ebm-pico/): 3 results, ranked by Macro F1 word level
+- [Question Answering on BioASQ](https://aliquome.github.io/benchmarks/question-answering-bioasq/): 7 results, ranked by Accuracy
+- [Question Answering on BLURB](https://aliquome.github.io/benchmarks/question-answering-blurb/): 4 results, ranked by Accuracy
+- [Question Answering on PubChemQA](https://aliquome.github.io/benchmarks/question-answering-pubchemqa/): 2 results, ranked by BLEU-2
+- [Question Answering on UniProtQA](https://aliquome.github.io/benchmarks/question-answering-uniprotqa/): 2 results, ranked by BLEU-2
+- [Relation Extraction on Adverse Drug Events (ADE) Corpus](https://aliquome.github.io/benchmarks/relation-extraction-adverse-drug-events-ade-corpus/): 15 results, ranked by RE+ Macro F1
+- [Relation Extraction on BioRED](https://aliquome.github.io/benchmarks/relation-extraction-biored/): 2 results, ranked by F1
+- [Relation Extraction on CDR](https://aliquome.github.io/benchmarks/relation-extraction-cdr/): 10 results, ranked by F1
+- [Relation Extraction on ChemProt](https://aliquome.github.io/benchmarks/relation-extraction-chemprot/): 13 results, ranked by F1
+- [Relation Extraction on Dataset: Relationship extraction for knowledge graph creation from biomedical literature (Gene-Disease relationships)](https://aliquome.github.io/benchmarks/relation-extraction-dataset-relationship-extraction-for-knowledge-graph-creation-from-biom/): 2 results, ranked by F1
+- [Relation Extraction on DDI](https://aliquome.github.io/benchmarks/relation-extraction-ddi/): 3 results, ranked by F1
+- [Relation Extraction on GAD](https://aliquome.github.io/benchmarks/relation-extraction-gad/): 3 results, ranked by F1
+- [Relation Extraction on GDA](https://aliquome.github.io/benchmarks/relation-extraction-gda/): 9 results, ranked by F1
+- [Semantic Similarity on BIOSSES](https://aliquome.github.io/benchmarks/semantic-similarity-biosses/): 3 results, ranked by Pearson Correlation
+- [Sentence Embeddings For Biomedical Texts on BIOSSES](https://aliquome.github.io/benchmarks/sentence-embeddings-for-biomedical-texts-biosses/): 14 results, ranked by Pearson Correlation
+- [Sentence Embeddings For Biomedical Texts on MedSTS](https://aliquome.github.io/benchmarks/sentence-embeddings-for-biomedical-texts-medsts/): 4 results, ranked by Pearson Correlation
+- [Text Classification on BLURB](https://aliquome.github.io/benchmarks/text-classification-blurb/): 3 results, ranked by F1
+- [Text-based de novo Molecule Generation on ChEBI-20](https://aliquome.github.io/benchmarks/text-based-de-novo-molecule-generation-chebi-20/): 20 results, ranked by BLEU
 
 </details>
 

@@ -14,7 +14,9 @@ import { prettyDate } from "./domain/format.js";
 import { buildBenchIndex } from "./domain/bench-index.js";
 import { updateSavedCount } from "./ui/save.js";
 import { palette } from "./core/search.js";
-import { route } from "./app/router.js";
+import { route, startRouting } from "./app/router.js";
+import { configurePaths } from "./domain/paths.js";
+import { keyed } from "./domain/bench-index.js";
 import { initTheme } from "./app/theme.js";
 
 async function start() {
@@ -33,7 +35,8 @@ async function start() {
     return;
   }
   if (S.build) document.getElementById("foot-build").textContent = `Data built ${prettyDate(S.build.generated_at)} by ${S.build.engine}.`;
-  window.addEventListener("hashchange", route);
+  configurePaths({ fields: S.fields.map((f) => f.id), datasetSlugs: keyed(S.datasets.map((d) => d.name)) });
+  startRouting();
   updateSavedCount();
   route();
   if (signedIn) toast(signedIn, 5000);

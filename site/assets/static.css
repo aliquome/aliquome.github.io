@@ -1,11 +1,11 @@
-/* Plain pages written by scripts/static-pages.mjs: one per database, dataset,
-   benchmark table and model, for search engines and direct links. Built on the
-   tokens and components of style.css. */
-.static-main { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-md); padding-block: var(--space-xl) var(--space-2xl); min-width: 0; }
-.static-main h1 { margin: 0; overflow-wrap: break-word; min-width: 0; }
-.static-main h2 { margin-top: var(--space-lg); }
-.static-main h3 { margin: var(--space-sm) 0 0; font-size: var(--text-sm); color: var(--color-ink-2); }
-.static-main .facts { max-width: 70ch; }
+/* The content scripts/static-pages.mjs writes into each page of the site, read
+   by search engines and shown until the interactive page replaces it. Built on
+   the tokens and components of style.css. */
+.static-page { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-md); padding-block: var(--space-lg) var(--space-2xl); min-width: 0; }
+.static-page h1 { margin: 0; overflow-wrap: break-word; min-width: 0; }
+.static-page h2 { margin-top: var(--space-lg); }
+.static-page h3 { margin: var(--space-sm) 0 0; font-size: var(--text-sm); color: var(--color-ink-2); }
+.static-page .facts { max-width: 70ch; }
 .static-table { width: 100%; border-collapse: collapse; font-size: var(--text-sm); }
 .static-table th { text-align: left; font-weight: 600; color: var(--color-ink-2); padding: var(--space-xs) var(--space-sm); border-bottom: var(--rule-hair) solid var(--color-rule); }
 .static-table td { padding: var(--space-xs) var(--space-sm); border-bottom: var(--rule-hair) solid var(--color-rule); vertical-align: top; overflow-wrap: anywhere; }
@@ -19,7 +19,6 @@
 .static-columns li { break-inside: avoid; padding-block: 2px; }
 .static-columns a { color: var(--color-ink); }
 .static-code { min-width: 0; }
-.static-main .url-line code { overflow-wrap: anywhere; }
+.static-page .url-line code { overflow-wrap: anywhere; }
 .static-code pre { margin: 0; padding: var(--space-sm) var(--space-md); background: var(--color-paper-2); border-radius: var(--radius-control); overflow-x: auto; font-size: var(--text-sm); }
-.static-atlas { margin-top: var(--space-lg); }
-.static a:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+.static-page a:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }

@@ -20,7 +20,7 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import http from "node:http";
-import { spawn } from "node:child_process";
+import { spawn, execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import puppeteer from "puppeteer-core";
 import { parse } from "smol-toml";
@@ -54,12 +54,20 @@ fs.writeFileSync(html, fs.readFileSync(html, "utf8")
   .replace(/<meta name="atlas-supabase-key" content="[^"]*">/, `<meta name="atlas-supabase-key" content="${supa.anonKey}">`)
   .replace('<meta name="atlas-repo" content="">', `<meta name="atlas-repo" content="https://github.com/${gh.repo}">`));
 
-// static server for the site copy
+// every page of the copy, written from the patched index.html
+execFileSync(process.execPath, [path.join(WORK, "scripts/static-pages.mjs"), path.join(WORK, "site")], { cwd: WORK, stdio: "ignore" });
+
+// static server for the site copy, answering as GitHub Pages does: /dir/ is
+// dir/index.html, and a missing page is 404.html with status 404
 const TYPES = { ".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".json": "application/json", ".svg": "image/svg+xml", ".png": "image/png" };
 const site = http.createServer((req, res) => {
-  const p = path.join(WORK, "site", decodeURIComponent(new URL(req.url, "http://x").pathname).replace(/\/$/, "/index.html"));
-  if (!p.startsWith(path.join(WORK, "site")) || !fs.existsSync(p)) { res.writeHead(404); return res.end(); }
-  res.writeHead(200, { "Content-Type": TYPES[path.extname(p)] || "application/octet-stream", "Cache-Control": "no-store" });
+  const root = path.join(WORK, "site");
+  let p = path.join(root, decodeURIComponent(new URL(req.url, "http://x").pathname));
+  if (fs.existsSync(p) && fs.statSync(p).isDirectory()) p = path.join(p, "index.html");
+  if (!p.startsWith(root)) { res.writeHead(403); return res.end(); }
+  let status = 200;
+  if (!fs.existsSync(p)) { status = 404; p = path.join(root, "404.html"); }
+  res.writeHead(status, { "Content-Type": TYPES[path.extname(p)] || "application/octet-stream", "Cache-Control": "no-store" });
   fs.createReadStream(p).pipe(res);
 });
 await new Promise((r) => site.listen(0, "127.0.0.1", r));
@@ -134,7 +142,7 @@ try {
     await p2.goto(mail.link, { waitUntil: "domcontentloaded" });
     const inLink = await p2.waitForFunction(() => /reader\.link@example\.org/.test(document.querySelector("#sg-auth")?.textContent || ""), { timeout: 60000 }).then(() => true, () => false);
     ok(inLink, "opening the link signs the reader in");
-    ok(p2.url().endsWith(`#benchmarks/${TABLE}`), `the reader is back on the same table (${p2.url().replace(SITE, "")})`);
+    ok(p2.url().endsWith(`/benchmarks/${TABLE}/`), `the reader is back on the same table (${p2.url().replace(SITE, "")})`);
     ok(!p2.url().includes("access_token"), "the session is not left in the address bar");
     await p2.goto(mail.link, { waitUntil: "domcontentloaded" });
     ok(await p2.waitForFunction(() => /expired or was already used/.test(document.getElementById("toast")?.textContent || ""), { timeout: 60000 }).then(() => true, () => false), "a used link is refused with a clear message");
@@ -266,6 +274,12 @@ try {
   await page.evaluate(() => { location.hash = "#benchmarks/model/testnet"; });
   await page.waitForSelector("#prows tr", { timeout: 15000 });
   ok((await page.$eval("#prows", (e) => e.textContent)).includes("1st"), "TestNet has a model page with its first place");
+  ok(new URL(page.url()).pathname === "/models/testnet/", `the old #address moved to ${new URL(page.url()).pathname}`);
+  // a model added after the pages were written has no page on disk yet: the
+  // 404 page carries the site, which still shows it
+  const fresh = await page.goto(`${SITE}/models/testnet/`, { waitUntil: "domcontentloaded" });
+  await page.waitForSelector("#prows tr", { timeout: 30000 });
+  ok(fresh.status() === 404 && (await page.$eval("#prows", (e) => e.textContent)).includes("1st"), "until the next build, /models/testnet/ is shown by the 404 page");
   await page.setViewport({ width: 390, height: 900 });
   await page.evaluate(() => { location.hash = "#benchmarks/molecular-property-prediction-bbbp"; });
   await page.waitForSelector("#suggest .seg", { timeout: 15000 });

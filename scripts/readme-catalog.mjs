@@ -6,6 +6,8 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { configurePaths, toPath } from "../site/assets/domain/paths.js";
+import { keyed } from "../site/assets/domain/bench-index.js";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SITE = "https://aliquome.github.io/";
@@ -27,6 +29,8 @@ const md = (s) => String(s ?? "").replace(/\s+/g, " ").trim()
 const cut = (s, n) => { s = String(s ?? "").replace(/\s+/g, " ").trim(); return s.length > n ? s.slice(0, n).replace(/\s+\S*$/, "") + "…" : s; };
 const title = (s) => md(String(s ?? "").replace(/\.$/, ""));
 const num = (n) => n.toLocaleString("en-US");
+configurePaths({ fields: fields.map((f) => f.id), datasetSlugs: keyed(datasets.map((d) => d.name)) });
+const at = (route) => SITE + toPath(route).slice(1);
 const label = Object.fromEntries(fields.map((f) => [f.id, f.label]));
 const order = fields.map((f) => f.id);
 const byField = (items, key = (x) => x.field) => {
@@ -53,7 +57,7 @@ out.push(`### Bioinformatics databases and their releases (${sources.length} dat
 for (const [f, xs] of byField(sources)) {
   out.push(group(label[f] || f, xs.length, "databases", xs.map((s) => {
     const rel = (s.versions || []).map((v) => v.version).filter(Boolean);
-    return `- **[${md(s.name)}](${SITE}#source/${s.id})**: ${md(cut(s.summary, 160))}${rel.length ? ` Releases: ${md(rel.join(", "))}.` : ""}`;
+    return `- **[${md(s.name)}](${at(["source", s.id])})**: ${md(cut(s.summary, 160))}${rel.length ? ` Releases: ${md(rel.join(", "))}.` : ""}`;
   })));
 }
 
@@ -62,7 +66,7 @@ out.push(`### Datasets for machine learning in biology (${datasets.length})\n`);
 for (const [f, xs] of byField(datasets)) {
   const sorted = [...xs].sort((a, b) => (b.stars || 0) - (a.stars || 0) || a.name.localeCompare(b.name));
   out.push(group(label[f] || f, xs.length, "datasets", sorted.map((d) =>
-    `- **[${md(d.name)}](${SITE}#datasets/${d.field}/${encodeURIComponent(d.name)})**: ${md(cut(d.description, 170))}`)));
+    `- **[${md(d.name)}](${at(["datasets", d.field, d.name])})**: ${md(cut(d.description, 170))}`)));
 }
 
 // benchmark tables
@@ -70,7 +74,7 @@ out.push(`### Benchmark tables and leaderboards (${tables.length})\n`);
 for (const [f, xs] of byField(tables)) {
   const sorted = [...xs].sort((a, b) => a.task.localeCompare(b.task) || a.dataset.localeCompare(b.dataset));
   out.push(group(label[f] || f, xs.length, "tables", sorted.map((t) =>
-    `- [${md(t.task)} on ${md(t.dataset)}](${SITE}#benchmarks/${t.id}): ${num(t.rows?.length || 0)} results${t.metric ? `, ranked by ${md(t.metric)}` : ""}`)));
+    `- [${md(t.task)} on ${md(t.dataset)}](${at(["benchmarks", t.id])}): ${num(t.rows?.length || 0)} results${t.metric ? `, ranked by ${md(t.metric)}` : ""}`)));
 }
 
 // most cited papers
@@ -92,7 +96,7 @@ const shown = newest.slice(0, IN_README);
 out.push(`### New bioinformatics and computational biology papers (${num(latest.papers.length)} since ${latest.since})\n\nThe ${num(shown.length)} newest, from ${shown.at(-1)?.date} to ${latest.until}; all ${num(latest.papers.length)} are in [PAPERS.md](PAPERS.md). ${from}\n`);
 out.push(...newPapers(shown));
 fs.writeFileSync(path.join(ROOT, "PAPERS.md"),
-  `# New bioinformatics and computational biology papers\n\nEvery paper published from ${latest.since} to ${latest.until} in the leading bioinformatics and computational biology journals, sorted by field, newest first. Updated every two days by [Aliquome](${SITE}); browse them with abstracts, tasks and filters at [aliquome.github.io](${SITE}#latest).\n\n${from}\n\n${newPapers(newest).join("\n")}`);
+  `# New bioinformatics and computational biology papers\n\nEvery paper published from ${latest.since} to ${latest.until} in the leading bioinformatics and computational biology journals, sorted by field, newest first. Updated every two days by [Aliquome](${SITE}); browse them with abstracts, tasks and filters at [aliquome.github.io/papers](${at(["latest"])}).\n\n${from}\n\n${newPapers(newest).join("\n")}`);
 
 const block = `${START}\n${out.join("\n")}\n${END}`;
 const file = path.join(ROOT, "README.md");

@@ -5,7 +5,7 @@
 # writes them here when the repository owner adds the `approved` label.
 #
 # One [[table]] block per table; the newest approval replaces the previous one.
-#   id        table id (the part after #benchmarks/ in the address)
+#   id        table id (the part after /benchmarks/ in the address)
 #   metric    the metric the ranking uses
 #   higher    true when a larger value is better
 #   exclude   models taken out of the ranking (say why in `note`)

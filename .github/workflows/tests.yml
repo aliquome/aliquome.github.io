@@ -19,10 +19,16 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: Write the static pages and the sitemap
-        run: node scripts/static-pages.mjs && test -f site/db/gnomad/index.html && grep -q "<loc>https://aliquome.github.io/db/gnomad/</loc>" site/sitemap.xml
+      - name: Write a page for every address of the site
+        run: node scripts/static-pages.mjs
+      - name: Check every address, link and the sitemap
+        run: node tests/paths.test.mjs
       - name: Install test dependencies
         run: npm install --prefix tests --no-audit --no-fund
+      - name: Browse the site at its clean addresses
+        env:
+          CHROME_PATH: /usr/bin/google-chrome
+        run: node tests/addresses.test.mjs
       - name: Run the end-to-end test
         env:
           CHROME_PATH: /usr/bin/google-chrome

@@ -56,8 +56,12 @@ jobs:
       - name: Write the full catalogue into README.md and PAPERS.md
         run: node scripts/readme-catalog.mjs
 
-      - name: Write one page per database, dataset, benchmark table and model, and the sitemap
+      - name: Write a page for every address of the site, and the sitemap
         run: node scripts/static-pages.mjs
+
+      # stops the deploy if any address, link or sitemap entry is wrong
+      - name: Check every address and link
+        run: node tests/paths.test.mjs
 
       - name: Commit the new data
         run: |

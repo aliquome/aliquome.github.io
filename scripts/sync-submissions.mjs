@@ -54,7 +54,7 @@ function issueBody(sub, clean) {
   return [
     `<!-- submission: ${sub.id} -->`,
     `A reader signed in on the site and suggests ${what} for **${t.task}** on **${t.dataset}** (\`${clean.id}\`).`,
-    SITE ? `Table: ${SITE}/#benchmarks/${clean.id}` : "",
+    SITE ? `Table: ${SITE}/benchmarks/${encodeURIComponent(clean.id)}/` : "",
     sub.paper_path ? `Uploaded paper: ${paperUrl(sub.paper_path)}` : "",
     "",
     "### Why",

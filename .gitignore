@@ -27,5 +27,10 @@ Thumbs.db
 /site/datasets/
 /site/benchmarks/
 /site/models/
+/site/papers/
+/site/status/
+/site/about/
+/site/saved/
+/site/404.html
 /site/sitemap.xml
 /site/robots.txt
