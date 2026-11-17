@@ -1,7 +1,7 @@
 // "Suggest a change" panel of a results table: sign in with an email code,
 // then propose a ranking, add a result (with a link or an uploaded PDF), or
 // correct a published value. Suggestions are reviewed before they appear.
-import * as api from "./submit.js";
+import * as api from "../services/submit.js";
 
 const KINDS = [
   ["ranking", "Ranking"],
