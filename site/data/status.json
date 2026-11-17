@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-11-17T12:36:55Z",
+  "checked_at": "2026-11-17T12:55:51Z",
   "sources": {
     "1000genomes": {
       "state": "ok",
       "code": 200,
-      "ms": 118,
+      "ms": 162,
       "url": "https://www.internationalgenome.org/",
       "history": [
         {
@@ -16,7 +16,7 @@
     "allen-brain": {
       "state": "ok",
       "code": 200,
-      "ms": 372,
+      "ms": 317,
       "url": "https://portal.brain-map.org/atlases-and-data/bkp/abc-atlas",
       "history": [
         {
@@ -28,7 +28,7 @@
     "allofus": {
       "state": "ok",
       "code": 200,
-      "ms": 1046,
+      "ms": 765,
       "url": "https://www.researchallofus.org/",
       "history": [
         {
@@ -40,7 +40,7 @@
     "alphafold": {
       "state": "ok",
       "code": 200,
-      "ms": 379,
+      "ms": 320,
       "url": "https://alphafold.ebi.ac.uk/",
       "history": [
         {
@@ -52,7 +52,7 @@
     "archs4": {
       "state": "ok",
       "code": 200,
-      "ms": 142,
+      "ms": 5268,
       "url": "https://archs4.org/",
       "history": [
         {
@@ -64,7 +64,7 @@
     "biogrid": {
       "state": "ok",
       "code": 200,
-      "ms": 129,
+      "ms": 300,
       "url": "https://thebiogrid.org/",
       "history": [
         {
@@ -76,7 +76,7 @@
     "cadd": {
       "state": "ok",
       "code": 200,
-      "ms": 365,
+      "ms": 453,
       "url": "https://cadd.gs.washington.edu/",
       "history": [
         {
@@ -88,7 +88,7 @@
     "cafa": {
       "state": "ok",
       "code": 200,
-      "ms": 539,
+      "ms": 506,
       "url": "https://biofunctionprediction.org/cafa/",
       "history": [
         {
@@ -100,7 +100,7 @@
     "casp": {
       "state": "ok",
       "code": 200,
-      "ms": 637,
+      "ms": 490,
       "url": "https://predictioncenter.org/",
       "history": [
         {
@@ -112,7 +112,7 @@
     "cath": {
       "state": "ok",
       "code": 200,
-      "ms": 367,
+      "ms": 259,
       "url": "https://www.cathdb.info/",
       "history": [
         {
@@ -124,7 +124,7 @@
     "cdd": {
       "state": "ok",
       "code": 200,
-      "ms": 200,
+      "ms": 99,
       "url": "https://www.ncbi.nlm.nih.gov/cdd/",
       "history": [
         {
@@ -136,7 +136,7 @@
     "cellxgene-census": {
       "state": "ok",
       "code": 200,
-      "ms": 397,
+      "ms": 298,
       "url": "https://cellxgene.cziscience.com/",
       "history": [
         {
@@ -148,7 +148,7 @@
     "chembl": {
       "state": "ok",
       "code": 200,
-      "ms": 165,
+      "ms": 101,
       "url": "https://www.ebi.ac.uk/chembl/",
       "history": [
         {
@@ -160,7 +160,7 @@
     "clinvar": {
       "state": "ok",
       "code": 200,
-      "ms": 31,
+      "ms": 42,
       "url": "https://www.ncbi.nlm.nih.gov/clinvar/",
       "history": [
         {
@@ -172,7 +172,7 @@
     "corum": {
       "state": "down",
       "code": 0,
-      "ms": 679,
+      "ms": 819,
       "url": "https://mips.helmholtz-muenchen.de/corum/",
       "history": [
         {
@@ -184,7 +184,7 @@
     "cosmic": {
       "state": "ok",
       "code": 200,
-      "ms": 629,
+      "ms": 647,
       "url": "https://cancer.sanger.ac.uk/cosmic",
       "history": [
         {
@@ -196,7 +196,7 @@
     "dbnsfp": {
       "state": "ok",
       "code": 200,
-      "ms": 299,
+      "ms": 285,
       "url": "https://www.dbnsfp.org/",
       "history": [
         {
@@ -208,7 +208,7 @@
     "dbsnp": {
       "state": "ok",
       "code": 200,
-      "ms": 260,
+      "ms": 331,
       "url": "https://www.ncbi.nlm.nih.gov/snp/",
       "history": [
         {
@@ -220,7 +220,7 @@
     "depmap": {
       "state": "ok",
       "code": 200,
-      "ms": 307,
+      "ms": 419,
       "url": "https://depmap.org/portal/",
       "history": [
         {
@@ -232,7 +232,7 @@
     "drugbank": {
       "state": "blocked",
       "code": 403,
-      "ms": 64,
+      "ms": 82,
       "url": "https://go.drugbank.com/",
       "history": [
         {
@@ -244,7 +244,7 @@
     "eggnog": {
       "state": "ok",
       "code": 200,
-      "ms": 832,
+      "ms": 600,
       "url": "http://eggnog5.embl.de/",
       "history": [
         {
@@ -256,7 +256,7 @@
     "encode-ccre": {
       "state": "ok",
       "code": 200,
-      "ms": 81,
+      "ms": 107,
       "url": "https://screen.encodeproject.org/",
       "history": [
         {
@@ -268,7 +268,7 @@
     "ensembl": {
       "state": "ok",
       "code": 200,
-      "ms": 763,
+      "ms": 1162,
       "url": "https://www.ensembl.org/",
       "history": [
         {
@@ -280,7 +280,7 @@
     "ensembl-genomes": {
       "state": "ok",
       "code": 200,
-      "ms": 549,
+      "ms": 427,
       "url": "https://ensemblgenomes.org/",
       "history": [
         {
@@ -292,7 +292,7 @@
     "eqtl-catalogue": {
       "state": "ok",
       "code": 200,
-      "ms": 461,
+      "ms": 567,
       "url": "https://www.ebi.ac.uk/eqtl/",
       "history": [
         {
@@ -304,7 +304,7 @@
     "esm-atlas": {
       "state": "ok",
       "code": 200,
-      "ms": 187,
+      "ms": 164,
       "url": "https://esmatlas.com/",
       "history": [
         {
@@ -316,7 +316,7 @@
     "expression-atlas": {
       "state": "ok",
       "code": 200,
-      "ms": 140,
+      "ms": 162,
       "url": "https://www.ebi.ac.uk/gxa/home",
       "history": [
         {
@@ -328,7 +328,7 @@
     "finngen": {
       "state": "ok",
       "code": 200,
-      "ms": 248,
+      "ms": 637,
       "url": "https://www.finngen.fi/en/access_results",
       "history": [
         {
@@ -340,7 +340,7 @@
     "gdc": {
       "state": "ok",
       "code": 200,
-      "ms": 95,
+      "ms": 152,
       "url": "https://portal.gdc.cancer.gov/",
       "history": [
         {
@@ -352,7 +352,7 @@
     "genbank": {
       "state": "ok",
       "code": 200,
-      "ms": 123,
+      "ms": 265,
       "url": "https://www.ncbi.nlm.nih.gov/genbank/",
       "history": [
         {
@@ -364,7 +364,7 @@
     "gencode": {
       "state": "ok",
       "code": 200,
-      "ms": 678,
+      "ms": 381,
       "url": "https://www.gencodegenes.org/",
       "history": [
         {
@@ -376,7 +376,7 @@
     "gnomad": {
       "state": "ok",
       "code": 200,
-      "ms": 172,
+      "ms": 88,
       "url": "https://gnomad.broadinstitute.org/",
       "history": [
         {
@@ -388,7 +388,7 @@
     "go": {
       "state": "ok",
       "code": 200,
-      "ms": 203,
+      "ms": 202,
       "url": "https://geneontology.org/",
       "history": [
         {
@@ -400,7 +400,7 @@
     "grch37": {
       "state": "ok",
       "code": 200,
-      "ms": 263,
+      "ms": 317,
       "url": "https://www.ncbi.nlm.nih.gov/grc/human",
       "history": [
         {
@@ -412,7 +412,7 @@
     "grch38": {
       "state": "ok",
       "code": 200,
-      "ms": 237,
+      "ms": 253,
       "url": "https://www.ncbi.nlm.nih.gov/grc/human",
       "history": [
         {
@@ -424,7 +424,7 @@
     "greengenes": {
       "state": "ok",
       "code": 200,
-      "ms": 488,
+      "ms": 477,
       "url": "https://greengenes2.ucsd.edu/",
       "history": [
         {
@@ -436,7 +436,7 @@
     "gtdb": {
       "state": "ok",
       "code": 200,
-      "ms": 145,
+      "ms": 195,
       "url": "https://gtdb.ecogenomic.org/",
       "history": [
         {
@@ -448,7 +448,7 @@
     "gtex": {
       "state": "ok",
       "code": 200,
-      "ms": 371,
+      "ms": 170,
       "url": "https://gtexportal.org/",
       "history": [
         {
@@ -460,7 +460,7 @@
     "hmdb": {
       "state": "blocked",
       "code": 403,
-      "ms": 44,
+      "ms": 99,
       "url": "https://hmdb.ca/",
       "history": [
         {
@@ -472,7 +472,7 @@
     "hocomoco": {
       "state": "ok",
       "code": 200,
-      "ms": 626,
+      "ms": 477,
       "url": "https://hocomoco14.autosome.org/",
       "history": [
         {
@@ -484,7 +484,7 @@
     "hpa": {
       "state": "ok",
       "code": 200,
-      "ms": 463,
+      "ms": 503,
       "url": "https://www.proteinatlas.org/",
       "history": [
         {
@@ -496,7 +496,7 @@
     "hpo": {
       "state": "ok",
       "code": 200,
-      "ms": 31,
+      "ms": 46,
       "url": "https://hpo.jax.org/",
       "history": [
         {
@@ -508,7 +508,7 @@
     "icgc": {
       "state": "ok",
       "code": 200,
-      "ms": 1442,
+      "ms": 1348,
       "url": "https://platform.icgc-argo.org/",
       "history": [
         {
@@ -520,7 +520,7 @@
     "interpro": {
       "state": "ok",
       "code": 200,
-      "ms": 80,
+      "ms": 83,
       "url": "https://www.ebi.ac.uk/interpro/",
       "history": [
         {
@@ -532,7 +532,7 @@
     "jaspar": {
       "state": "ok",
       "code": 200,
-      "ms": 1063,
+      "ms": 1759,
       "url": "https://jaspar.elixir.no/",
       "history": [
         {
@@ -544,7 +544,7 @@
     "kegg": {
       "state": "ok",
       "code": 200,
-      "ms": 1180,
+      "ms": 998,
       "url": "https://www.kegg.jp/",
       "history": [
         {
@@ -556,7 +556,7 @@
     "kofam": {
       "state": "ok",
       "code": 200,
-      "ms": 4696,
+      "ms": 4955,
       "url": "https://www.genome.jp/tools/kofamkoala/",
       "history": [
         {
@@ -568,7 +568,7 @@
     "kraken2": {
       "state": "ok",
       "code": 200,
-      "ms": 43,
+      "ms": 57,
       "url": "https://benlangmead.github.io/aws-indexes/k2",
       "history": [
         {
@@ -580,7 +580,7 @@
     "mane": {
       "state": "ok",
       "code": 200,
-      "ms": 193,
+      "ms": 250,
       "url": "https://www.ncbi.nlm.nih.gov/refseq/MANE/",
       "history": [
         {
@@ -592,7 +592,7 @@
     "metaphlan": {
       "state": "ok",
       "code": 200,
-      "ms": 589,
+      "ms": 371,
       "url": "https://github.com/biobakery/MetaPhlAn",
       "history": [
         {
@@ -604,7 +604,7 @@
     "mgnify-proteins": {
       "state": "ok",
       "code": 200,
-      "ms": 80,
+      "ms": 82,
       "url": "https://www.ebi.ac.uk/metagenomics/",
       "history": [
         {
@@ -616,7 +616,7 @@
     "mirbase": {
       "state": "ok",
       "code": 200,
-      "ms": 724,
+      "ms": 608,
       "url": "https://www.mirbase.org/",
       "history": [
         {
@@ -628,7 +628,7 @@
     "mirtarbase": {
       "state": "down",
       "code": 0,
-      "ms": 3040,
+      "ms": 3524,
       "url": "https://mirtarbase.cuhk.edu.cn/",
       "history": [
         {
@@ -640,7 +640,7 @@
     "model-organisms": {
       "state": "ok",
       "code": 200,
-      "ms": 92,
+      "ms": 153,
       "url": "https://www.alliancegenome.org/",
       "history": [
         {
@@ -652,7 +652,7 @@
     "mondo": {
       "state": "ok",
       "code": 200,
-      "ms": 83,
+      "ms": 127,
       "url": "https://mondo.monarchinitiative.org/",
       "history": [
         {
@@ -664,7 +664,7 @@
     "msigdb": {
       "state": "ok",
       "code": 200,
-      "ms": 355,
+      "ms": 410,
       "url": "https://www.gsea-msigdb.org/gsea/msigdb",
       "history": [
         {
@@ -676,7 +676,7 @@
     "opentargets": {
       "state": "ok",
       "code": 200,
-      "ms": 392,
+      "ms": 160,
       "url": "https://platform.opentargets.org/",
       "history": [
         {
@@ -688,7 +688,7 @@
     "opentargets-genetics": {
       "state": "ok",
       "code": 200,
-      "ms": 323,
+      "ms": 296,
       "url": "https://genetics.opentargets.org/",
       "history": [
         {
@@ -700,7 +700,7 @@
     "orthodb": {
       "state": "ok",
       "code": 200,
-      "ms": 352,
+      "ms": 487,
       "url": "https://www.orthodb.org/",
       "history": [
         {
@@ -712,7 +712,7 @@
     "papyrus": {
       "state": "ok",
       "code": 200,
-      "ms": 416,
+      "ms": 809,
       "url": "https://github.com/OlivierBeq/Papyrus-scripts",
       "history": [
         {
@@ -724,7 +724,7 @@
     "pathway-commons": {
       "state": "ok",
       "code": 200,
-      "ms": 262,
+      "ms": 295,
       "url": "https://www.pathwaycommons.org/",
       "history": [
         {
@@ -736,7 +736,7 @@
     "pdb": {
       "state": "ok",
       "code": 200,
-      "ms": 168,
+      "ms": 71,
       "url": "https://www.rcsb.org/",
       "history": [
         {
@@ -748,7 +748,7 @@
     "pdbbind": {
       "state": "ok",
       "code": 200,
-      "ms": 1059,
+      "ms": 2129,
       "url": "https://www.pdbbind-plus.org.cn/",
       "history": [
         {
@@ -760,7 +760,7 @@
     "pfam": {
       "state": "ok",
       "code": 200,
-      "ms": 79,
+      "ms": 82,
       "url": "https://www.ebi.ac.uk/interpro/entry/pfam/",
       "history": [
         {
@@ -772,7 +772,7 @@
     "prosite": {
       "state": "ok",
       "code": 200,
-      "ms": 765,
+      "ms": 890,
       "url": "https://prosite.expasy.org/",
       "history": [
         {
@@ -784,7 +784,7 @@
     "proteingym": {
       "state": "ok",
       "code": 200,
-      "ms": 328,
+      "ms": 233,
       "url": "https://proteingym.org/",
       "history": [
         {
@@ -796,7 +796,7 @@
     "reactome": {
       "state": "ok",
       "code": 200,
-      "ms": 118,
+      "ms": 180,
       "url": "https://reactome.org/",
       "history": [
         {
@@ -808,7 +808,7 @@
     "refseq": {
       "state": "ok",
       "code": 200,
-      "ms": 119,
+      "ms": 169,
       "url": "https://www.ncbi.nlm.nih.gov/refseq/",
       "history": [
         {
@@ -820,7 +820,7 @@
     "remap": {
       "state": "ok",
       "code": 200,
-      "ms": 1913,
+      "ms": 1997,
       "url": "https://remap.univ-amu.fr/",
       "history": [
         {
@@ -832,7 +832,7 @@
     "rfam": {
       "state": "ok",
       "code": 200,
-      "ms": 541,
+      "ms": 576,
       "url": "https://rfam.org/",
       "history": [
         {
@@ -844,7 +844,7 @@
     "rnacentral": {
       "state": "ok",
       "code": 200,
-      "ms": 331,
+      "ms": 353,
       "url": "https://rnacentral.org/",
       "history": [
         {
@@ -856,7 +856,7 @@
     "scope": {
       "state": "ok",
       "code": 200,
-      "ms": 410,
+      "ms": 408,
       "url": "https://scop.berkeley.edu/",
       "history": [
         {
@@ -868,7 +868,7 @@
     "silva": {
       "state": "ok",
       "code": 200,
-      "ms": 444,
+      "ms": 509,
       "url": "https://www.arb-silva.de/",
       "history": [
         {
@@ -880,7 +880,7 @@
     "string": {
       "state": "ok",
       "code": 200,
-      "ms": 158,
+      "ms": 162,
       "url": "https://string-db.org/",
       "history": [
         {
@@ -892,7 +892,7 @@
     "t2t-hprc": {
       "state": "ok",
       "code": 200,
-      "ms": 79,
+      "ms": 38,
       "url": "https://humanpangenome.org/",
       "history": [
         {
@@ -904,7 +904,7 @@
     "tabula-sapiens": {
       "state": "ok",
       "code": 200,
-      "ms": 96,
+      "ms": 185,
       "url": "https://tabula-sapiens.sf.czbiohub.org/",
       "history": [
         {
@@ -916,7 +916,7 @@
     "targetscan": {
       "state": "ok",
       "code": 200,
-      "ms": 2262,
+      "ms": 2166,
       "url": "https://www.targetscan.org/",
       "history": [
         {
@@ -928,7 +928,7 @@
     "ucsc": {
       "state": "ok",
       "code": 200,
-      "ms": 1103,
+      "ms": 1413,
       "url": "https://genome.ucsc.edu/",
       "history": [
         {
@@ -940,7 +940,7 @@
     "ukbiobank": {
       "state": "blocked",
       "code": 403,
-      "ms": 121,
+      "ms": 158,
       "url": "https://www.ukbiobank.ac.uk/",
       "history": [
         {
@@ -952,7 +952,7 @@
     "umls": {
       "state": "ok",
       "code": 200,
-      "ms": 209,
+      "ms": 296,
       "url": "https://www.nlm.nih.gov/research/umls/",
       "history": [
         {
@@ -964,7 +964,7 @@
     "uniprot": {
       "state": "ok",
       "code": 200,
-      "ms": 484,
+      "ms": 339,
       "url": "https://www.uniprot.org/",
       "history": [
         {
@@ -976,7 +976,7 @@
     "uniref30": {
       "state": "ok",
       "code": 200,
-      "ms": 650,
+      "ms": 607,
       "url": "https://uniclust.mmseqs.com/",
       "history": [
         {
@@ -988,7 +988,7 @@
     "unite": {
       "state": "ok",
       "code": 200,
-      "ms": 1101,
+      "ms": 9768,
       "url": "https://unite.ut.ee/",
       "history": [
         {
