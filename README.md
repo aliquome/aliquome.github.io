@@ -13,6 +13,7 @@ Versioned download links, ready-to-run download code, AI-ready datasets, model l
 </p>
 
 <p align="center">
+<a href="https://aliquome.github.io"><b>Website</b></a> |
 <a href="#why-aliquome"><b>Why Aliquome</b></a> |
 <a href="#whats-inside"><b>What's inside</b></a> |
 <a href="#use-it-in-your-code"><b>Use it in code</b></a> |
@@ -25,7 +26,7 @@ Versioned download links, ready-to-run download code, AI-ready datasets, model l
 
 **Aliquome** (*aliquot* + *-ome*: an exact portion of every dataset) is an open, free catalogue of **bioinformatics databases and datasets with every release version and a direct download link**. Reproducible research needs the exact data: *GRCh38 or T2T-CHM13? Ensembl 113 or 116? gnomAD v3 or v4? UniProt 2026_04?* Aliquome answers that for 83 core resources (reference genomes, variants, cancer genomics, single-cell and expression, protein structures, pathways, drug discovery, epigenomics, RNA and microbiome), and turns each link into ready-to-run download code for **curl, wget, Python, R, `pooch`, AWS CLI and `gcloud`**.
 
-It also gathers **519 machine-learning-ready biology datasets**, **200 benchmark tables with 1,854 published results** to compare models, and the **newest papers from 22 leading bioinformatics and computational biology journals**. A Rust engine rebuilds everything every two days and checks that every source is still online. The site is static, fast and hosted on GitHub Pages.
+It also gathers **519 machine-learning-ready biology datasets**, **200 benchmark tables with 1,854 published results** to compare models, and the **newest papers from 22 leading bioinformatics and computational biology journals**. A Rust engine rebuilds everything every two days and checks that every source is still online. The site is static, fast and hosted on GitHub Pages at **[aliquome.github.io](https://aliquome.github.io)**.
 
 ## Why Aliquome
 
@@ -83,7 +84,7 @@ The whole catalogue is also plain JSON, so scripts can query it directly:
 | `site/data/benchmarks/*.json` | results tables |
 | `site/data/latest.json`, `papers.json` | new and most cited papers |
 
-On the published site these are served at `https://<user>.github.io/aliquome/data/<file>`.
+They are served at `https://aliquome.github.io/data/<file>`, for example [sources.json](https://aliquome.github.io/data/sources.json).
 
 ## Run it locally
 
@@ -133,7 +134,7 @@ If Aliquome helps your research, please cite it:
   title  = {Aliquome: versioned bioinformatics databases, datasets and benchmarks},
   year   = {2026},
   note   = {Open catalogue with direct release links and download code},
-  howpublished = {\url{https://github.com/<user>/aliquome}}
+  howpublished = {\url{https://aliquome.github.io}}
 }
 ```
 

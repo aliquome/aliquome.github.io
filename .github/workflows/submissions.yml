@@ -41,5 +41,8 @@ jobs:
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
           GITHUB_TOKEN: ${{ github.token }}
           GITHUB_REPOSITORY: ${{ github.repository }}
-          SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
-        run: node scripts/sync-submissions.mjs
+        # a repository named <owner>.github.io is served at the root of that address
+        run: |
+          NAME="${GITHUB_REPOSITORY#*/}"
+          if [ "$NAME" = "${GITHUB_REPOSITORY_OWNER}.github.io" ]; then export SITE_URL="https://$NAME"; else export SITE_URL="https://${GITHUB_REPOSITORY_OWNER}.github.io/$NAME"; fi
+          node scripts/sync-submissions.mjs
