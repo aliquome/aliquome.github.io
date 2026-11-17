@@ -25,6 +25,10 @@ export function route() {
     papers: () => pagePapers(a), benchmarks: () => pageBenchmarks(a, b), status: pageStatus, about: pageAbout };
   const render = pages[page] || (() => notFound("That page does not exist."));
   const go = () => { render(); armArt(); window.scrollTo({ top: 0, behavior: "instant" }); };
-  if (document.startViewTransition && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.startViewTransition(go);
-  else go();
+  if (document.startViewTransition && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    // A quick second navigation skips the running transition; the page still
+    // updates, so the skipped transition's rejections are expected.
+    const t = document.startViewTransition(go);
+    for (const p of [t.ready, t.finished, t.updateCallbackDone]) p?.catch(() => {});
+  } else go();
 }
