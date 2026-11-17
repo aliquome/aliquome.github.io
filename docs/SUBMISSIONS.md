@@ -54,12 +54,12 @@ GitHub Action «Sync reader submissions»  (هر ۱۵ دقیقه)
    <p>این کد یک ساعت اعتبار دارد.</p>
    ```
    بدون `{{ .Token }}` به‌جای کد، لینک فرستاده می‌شود.
-5. در **Authentication → URL Configuration** آدرس سایت را بگذارید، مثلاً `https://USERNAME.github.io/REPO`.
+5. در **Authentication → URL Configuration** آدرس سایت را بگذارید، یعنی `https://aliquome.github.io`.
 6. **ارسال ایمیل:** فرستنده‌ی داخلی Supabase فقط برای آزمایش است و در ساعت چند ایمیل بیشتر نمی‌فرستد. برای استفاده‌ی واقعی در **Project Settings → Authentication → SMTP** یک سرویس ایمیل وصل کنید، مثل Resend، Brevo، Postmark یا Amazon SES. بیشترشان نسخه‌ی رایگان دارند.
 
 ### ۲. اتصال سایت
 
-در **Project Settings → API** دو مقدار هست: **Project URL** و کلید **anon public**. آن‌ها را در `site/index.html` بگذارید:
+در **Project Settings → Data API** مقدار **Project URL** و در **Project Settings → API Keys → Legacy API Keys** کلید **anon public** هست. آن‌ها را در `site/index.html` بگذارید:
 
 ```html
 <meta name="atlas-supabase-url" content="https://xxxx.supabase.co">
@@ -75,7 +75,7 @@ GitHub Action «Sync reader submissions»  (هر ۱۵ دقیقه)
 | نام | مقدار |
 |---|---|
 | `SUPABASE_URL` | همان Project URL |
-| `SUPABASE_SERVICE_ROLE_KEY` | کلید **service_role** از Project Settings → API |
+| `SUPABASE_SERVICE_ROLE_KEY` | کلید **service_role** از Project Settings → API Keys → Legacy API Keys |
 
 کلید service_role محرمانه است و **هرگز** نباید در سایت یا در کد گذاشته شود. فقط در این secret بماند.
 
