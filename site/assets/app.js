@@ -642,6 +642,15 @@ function buildIndex() {
     idx.push({ kind: "Benchmark", title: `${t.task} on ${t.dataset}`, sub: `${t.rows.length} results, ranked by ${approvedView(t).metric}`, href: `#benchmarks/${t.id}`,
       text: `${t.task} ${t.dataset} ${t.rows.map((r) => r.model).join(" ")}`.toLowerCase() });
   }
+  if (benchIdx) {
+    for (const [name, list] of benchIdx.byModel) {
+      const s = summarize(list);
+      idx.push({ kind: "Model", title: name, sub: `${s.tables} rankings${s.first ? `, first in ${s.first}` : ""}`, href: modelHref(name), text: name.toLowerCase() });
+    }
+    for (const [name, list] of benchIdx.byPaper) {
+      idx.push({ kind: "Results paper", title: name, sub: `${summarize(list).tables} rankings`, href: paperHref(name), text: name.toLowerCase() });
+    }
+  }
   for (const p of S.latest?.papers || []) {
     paperIndex.set(p.id, p);
     idx.push({ kind: "Paper", title: p.title, sub: `${p.journal}, ${prettyDate(p.date)}`, href: `#latest/${p.fields?.[0] || ""}/${encodeURIComponent(p.title.slice(0, 60).replace(/[/%]/g, " "))}`,
@@ -1018,7 +1027,7 @@ function boardTable(b, rows, full = true) {
   const max = Math.max(...b.rows.map((r) => r.score));
   return `<div class="table-wrap"><table>
     <thead><tr><th>#</th><th>Model</th><th>Family</th><th>${esc(b.metric_label)}</th>${full ? b.columns.map((c) => `<th>${esc(c)}</th>`).join("") + "<th>Paper</th>" : ""}</tr></thead>
-    <tbody>${rows.map((r) => `<tr><td class="num">${r.rank}</td><td><b>${esc(r.model)}</b></td><td class="muted">${esc(r.kind)}</td>
+    <tbody>${rows.map((r) => `<tr><td class="num">${r.rank}</td><td>${benchIdx?.modelKey.has(r.model) ? `<a href="${modelHref(r.model)}"><b>${esc(r.model)}</b></a>` : `<b>${esc(r.model)}</b>`}</td><td class="muted">${esc(r.kind)}</td>
       <td class="num"><span class="bar"><i style="width:${Math.max(2, (r.score / max) * 90).toFixed(0)}px"></i>${r.score.toFixed(3)}</span></td>
       ${full ? r.values.map((v) => `<td class="num">${v == null ? "—" : v.toFixed(3)}</td>`).join("") +
         `<td class="nowrap">${safe(r.paper_url) ? `<a href="${esc(r.paper_url)}" target="_blank" rel="noopener" title="${esc(r.paper)}">${esc(shortCite(r.paper))}</a>` : "—"}</td>` : ""}</tr>`).join("")}</tbody>
@@ -1083,26 +1092,117 @@ function proposalToml(t, v, note) {
   return lines.join("\n");
 }
 
+// Every result of every table and board, indexed by model, paper and dataset.
+// Each result carries its rank under the approved ranking and its rank on
+// every numeric metric of its table.
+let benchIdx = null;
+const benchKey = (s) => s.toLowerCase().normalize("NFKD").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 70) || "item";
+function keyed(names) {
+  const out = new Map(), used = new Set();
+  for (const n of [...names].sort()) {
+    let k = benchKey(n), i = 2;
+    while (used.has(k)) k = `${benchKey(n)}-${i++}`;
+    used.add(k);
+    out.set(n, k);
+  }
+  return out;
+}
+const paperName = (s) => (s || "").replace(/\s+/g, " ").trim();
+function metricRanks(rows, metric, higher, exclude) {
+  const vals = rows.filter((r) => !exclude.has(r.model)).map((r) => ({ r, s: numOf(r.values[metric]) })).filter((x) => x.s != null);
+  vals.sort((a, b) => (higher ? b.s - a.s : a.s - b.s));
+  const ranks = new Map();
+  let rank = 0, prev = null;
+  vals.forEach((x, i) => { if (x.s !== prev) { rank = i + 1; prev = x.s; } ranks.set(x.r, rank); });
+  return { ranks, of: vals.length };
+}
+function buildBenchIndex(tables, boards) {
+  if (benchIdx) return benchIdx;
+  const entries = [];
+  for (const t of tables) {
+    const v = approvedView(t);
+    const ranked = rankRows(t, v);
+    const rows = ranked.map((x) => x.r);
+    const total = ranked.filter((x) => x.rank != null).length;
+    const per = t.metrics.filter((m) => m.parsed >= 2).map((m) => {
+      const higher = m.name === v.metric ? v.higher : m.higher;
+      return { name: m.name, higher, ...metricRanks(rows, m.name, higher, v.exclude) };
+    });
+    for (const x of ranked) {
+      entries.push({ kind: "table", id: t.id, task: t.task, dataset: t.dataset, field: t.field, metric: v.metric, higher: v.higher,
+        model: x.r.model, paper: paperName(x.r.paper), url: x.r.url, code: x.r.code, date: x.r.date, rank: x.rank, total, out: x.out, extra: x.r.extra, added: x.r.added,
+        metrics: per.filter((m) => x.r.values[m.name] != null).map((m) => ({ name: m.name, value: x.r.values[m.name], rank: m.ranks.get(x.r) ?? null, of: m.of, higher: m.higher })) });
+    }
+  }
+  for (const b of boards) {
+    for (const r of b.rows) {
+      entries.push({ kind: "board", id: b.id, task: b.title.replace(/^[^:]+:\s*/, ""), dataset: b.title.split(":")[0], field: b.field, metric: b.metric_label, higher: b.higher,
+        model: r.model, paper: paperName(r.paper), url: r.paper_url, code: "", date: "", rank: r.rank, total: b.rows.length, out: false,
+        metrics: [{ name: b.metric_label, value: r.score.toFixed(3), rank: r.rank, of: b.rows.length, higher: b.higher }] });
+    }
+  }
+  const group = (key) => {
+    const m = new Map();
+    for (const e of entries) { const k = key(e); if (k) (m.get(k) || m.set(k, []).get(k)).push(e); }
+    return m;
+  };
+  const byModel = group((e) => e.model), byPaper = group((e) => e.paper), byDataset = group((e) => e.dataset);
+  benchIdx = { entries, byModel, byPaper, byDataset, modelKey: keyed(byModel.keys()), paperKey: keyed(byPaper.keys()), datasetKey: keyed(byDataset.keys()) };
+  for (const n of ["model", "paper", "dataset"]) benchIdx[`${n}ByKey`] = new Map([...benchIdx[`${n}Key`]].map(([name, k]) => [k, name]));
+  searchIndex = null;
+  return benchIdx;
+}
+const modelHref = (n) => `#benchmarks/model/${benchIdx.modelKey.get(n)}`;
+const paperHref = (n) => `#benchmarks/paper/${benchIdx.paperKey.get(n)}`;
+const datasetHref = (n) => `#benchmarks/dataset/${benchIdx.datasetKey.get(n)}`;
+const entryHref = (e) => `#benchmarks/${e.id}`;
+const placeText = (e) => (e.out ? "left out" : e.rank == null ? "no score" : `${e.rank} of ${e.total}`);
+function summarize(list) {
+  const ranks = list.filter((e) => e.rank != null).map((e) => e.rank);
+  return {
+    tables: new Set(list.map((e) => e.id)).size,
+    first: new Set(list.filter((e) => e.rank === 1).map((e) => e.id)).size,
+    best: ranks.length ? Math.min(...ranks) : null,
+    fields: [...new Set(list.map((e) => e.field))],
+    year: list.map((e) => (e.date || "").slice(0, 4)).filter(Boolean).sort()[0] || "",
+  };
+}
+const benchTabs = (on, idx, nTables) => `<nav class="tabbar" aria-label="Benchmark views">
+  <a href="#benchmarks" ${on === "tables" ? 'aria-current="page"' : ""}>Tables <small>${nTables} results tables</small></a>
+  <a href="#benchmarks/models" ${on === "models" ? 'aria-current="page"' : ""}>Models <small>${num(idx.byModel.size)} models</small></a>
+  <a href="#benchmarks/papers" ${on === "papers" ? 'aria-current="page"' : ""}>Papers <small>${num(idx.byPaper.size)} papers</small></a>
+</nav>`;
+
 async function pageBenchmarks(a, b) {
   view.innerHTML = `<div class="page"><p class="loading">Loading benchmarks…</p></div>`;
   const [data, tables] = await Promise.all([need("boards"), needTables()]);
   const boards = data?.boards || [];
+  const idx = buildBenchIndex(tables, boards);
+  if (a === "models" || a === "papers") return pageBenchList(a, tables, b || "");
+  if (a === "model" && idx.modelByKey.has(b)) return pageBenchProfile("model", idx.modelByKey.get(b));
+  if (a === "paper" && idx.paperByKey.has(b)) return pageBenchProfile("paper", idx.paperByKey.get(b));
+  if (a === "dataset" && idx.datasetByKey.has(b)) return pageBenchIndex(boards, tables, "", "", idx.datasetByKey.get(b));
   if (a && boards.some((x) => x.id === a)) return pageBoard(boards, a);
   const t = tables.find((x) => x.id === a);
   if (t) return pageTable(t);
-  return pageBenchIndex(boards, tables, S.fields.some((f) => f.id === a) ? a : "", b || "");
+  return pageBenchIndex(boards, tables, S.fields.some((f) => f.id === a) ? a : "", b || "", "");
 }
 
-function pageBenchIndex(boards, tables, field, preset) {
+function pageBenchIndex(boards, tables, field, preset, dataset) {
   const counts = {};
   tables.forEach((t) => (counts[t.field] = (counts[t.field] || 0) + 1));
   view.innerHTML = `<div class="page"><section class="section">
     <h1>Benchmarks</h1>
-    <p class="lede">Published results, ranked. Open a table to rank it by another metric. Anyone can propose a different ranking, and it goes live once a maintainer approves it.</p>
+    <p class="lede">Published results, ranked. Open a table to rank it by another metric, or a model or paper to see every ranking it appears in. Anyone can propose a different ranking, and it goes live once a maintainer approves it.</p>
+    ${benchTabs("tables", benchIdx, tables.length)}
     ${boards.length ? `<div class="section-head"><h2>Maintained boards</h2><span class="hint">Copied daily from the benchmark maintainers</span></div>
     <ul class="board-list">${boards.map((x) => `<li><a href="#benchmarks/${esc(x.id)}"><b>${esc(x.title)}</b><span class="hint">${x.rows.length} models, ranked by ${esc(x.metric_label)}</span></a></li>`).join("")}</ul>` : ""}
     <div class="section-head"><h2>Results tables</h2><span class="hint">${tables.length} tables from the Papers with Code archive</span></div>
     ${gel({ id: "bgel", active: field, counts, unit: "tables", search: { id: "bq", placeholder: "Filter by task, dataset, metric or model", value: preset } })}
+    <div class="controls bench-filters">
+      <div class="control"><label for="btask">Task</label><select class="input" id="btask"></select></div>
+      <div class="control"><label for="bds">Dataset</label><select class="input" id="bds"></select></div>
+    </div>
     <p class="count" id="bcount"></p>
     <div class="table-wrap"><table class="bench-index">
       <thead><tr><th>Task</th><th>Dataset</th><th>Ranked by</th><th>Models</th><th>Leader</th></tr></thead>
@@ -1110,23 +1210,42 @@ function pageBenchIndex(boards, tables, field, preset) {
     </table></div>
     <div class="more-row"><button class="btn" type="button" id="bmore" hidden>Show more tables</button></div>
   </section></div>`;
-  let active = field, shown = 40;
+  let active = field, task = "", ds = dataset, shown = 40;
   const q = document.getElementById("bq");
+  const options = (el, label, values, current) => {
+    const c = {};
+    values.forEach((x) => (c[x] = (c[x] || 0) + 1));
+    el.innerHTML = `<option value="">${label}</option>` + Object.keys(c).sort((x, y) => x.localeCompare(y))
+      .map((x) => `<option value="${esc(x)}" ${x === current ? "selected" : ""}>${esc(x)} (${c[x]})</option>`).join("");
+  };
   const draw = () => {
     const term = q.value.trim().toLowerCase();
-    const list = tables.filter((t) => (!active || t.field === active) && (!term ||
+    const inField = tables.filter((t) => !active || t.field === active);
+    if (task && !inField.some((t) => t.task === task)) task = "";
+    if (ds && !inField.some((t) => t.dataset === ds && (!task || t.task === task))) ds = "";
+    options(document.getElementById("btask"), "All tasks", inField.filter((t) => !ds || t.dataset === ds).map((t) => t.task), task);
+    options(document.getElementById("bds"), "All datasets", inField.filter((t) => !task || t.task === task).map((t) => t.dataset), ds);
+    const list = inField.filter((t) => (!task || t.task === task) && (!ds || t.dataset === ds) && (!term ||
       `${t.task} ${t.dataset} ${t.path.join(" ")} ${t.metrics.map((m) => m.name).join(" ")} ${t.rows.map((r) => r.model).join(" ")}`.toLowerCase().includes(term)));
     document.getElementById("bcount").textContent = `${list.length} of ${tables.length} tables`;
     document.getElementById("brows").innerHTML = list.slice(0, shown).map((t) => {
       const v = approvedView(t);
-      const top = rankRows(t, v).find((x) => x.rank === 1);
-      return `<tr><td><a href="#benchmarks/${esc(t.id)}"><b>${esc(t.task)}</b></a></td><td>${esc(t.dataset)}</td>
+      const top = rankRows(t, v).filter((x) => x.rank === 1);
+      return `<tr><td><a href="#benchmarks/${esc(t.id)}"><b>${esc(t.task)}</b></a></td>
+        <td><a href="${datasetHref(t.dataset)}">${esc(t.dataset)}</a></td>
         <td>${esc(v.metric)} <span class="hint">${v.higher ? "higher is better" : "lower is better"}</span></td><td class="num">${t.rows.length}</td>
-        <td>${top ? `${esc(top.r.model)} <span class="mono hint">${esc(top.r.values[v.metric])}</span>` : "—"}</td></tr>`;
+        <td>${top.length ? top.map((x) => `<a href="${modelHref(x.r.model)}">${esc(x.r.model)}</a> <span class="mono hint">${esc(x.r.values[v.metric])}</span>`).join("<br>") : "—"}</td></tr>`;
     }).join("") || `<tr><td colspan="5" class="note">No table matches this filter.</td></tr>`;
     document.getElementById("bmore").hidden = list.length <= shown;
   };
   q.addEventListener("input", () => { shown = 40; draw(); });
+  document.getElementById("btask").addEventListener("change", (e) => { task = e.target.value; shown = 40; draw(); });
+  document.getElementById("bds").addEventListener("change", (e) => {
+    ds = e.target.value;
+    replaceHash(ds ? datasetHref(ds) : active ? `#benchmarks/${active}` : "#benchmarks");
+    shown = 40;
+    draw();
+  });
   document.getElementById("bmore").addEventListener("click", () => { shown += 40; draw(); });
   document.getElementById("bgel").addEventListener("click", (e) => {
     const btn = e.target.closest("button[data-field]");
@@ -1140,6 +1259,115 @@ function pageBenchIndex(boards, tables, field, preset) {
   draw();
 }
 
+// Models or papers, with how many tables they appear in and how many they lead.
+function pageBenchList(kind, tables, preset) {
+  const idx = benchIdx;
+  const groups = kind === "models" ? idx.byModel : idx.byPaper;
+  const items = [...groups].map(([name, list]) => ({ name, list, ...summarize(list), models: new Set(list.map((e) => e.model)).size }));
+  const counts = {};
+  items.forEach((it) => it.fields.forEach((f) => (counts[f] = (counts[f] || 0) + 1)));
+  const label = kind === "models" ? "models" : "papers";
+  view.innerHTML = `<div class="page"><section class="section">
+    <h1>Benchmarks</h1>
+    <p class="lede">${kind === "models" ? "Every model in the results tables. Open one to see each ranking it appears in and its result on every metric." : "Every paper behind a published result. Open one to see the rankings its models reach on every metric."}</p>
+    ${benchTabs(kind, idx, tables.length)}
+    ${gel({ id: "lgel", active: "", counts, unit: label, search: { id: "lq", placeholder: kind === "models" ? "Filter models" : "Filter papers by title or model", value: preset } })}
+    <div class="controls bench-filters">
+      <div class="control"><label for="lsort">Sort</label><select class="input" id="lsort">
+        <option value="first">Most first places</option><option value="tables">Most tables</option><option value="name">Name</option>${kind === "papers" ? '<option value="year">Newest</option>' : ""}
+      </select></div>
+    </div>
+    <p class="count" id="lcount"></p>
+    <div class="table-wrap"><table class="bench-index">
+      <thead><tr><th>${kind === "models" ? "Model" : "Paper"}</th>${kind === "papers" ? "<th>Year</th><th>Models</th>" : "<th>Papers</th>"}<th>Tables</th><th>First places</th><th>Best rank</th><th>Fields</th></tr></thead>
+      <tbody id="lrows"></tbody>
+    </table></div>
+    <div class="more-row"><button class="btn" type="button" id="lmore" hidden>Show more ${label}</button></div>
+  </section></div>`;
+  let active = "", shown = 50;
+  const q = document.getElementById("lq");
+  const href = kind === "models" ? modelHref : paperHref;
+  const draw = () => {
+    const term = q.value.trim().toLowerCase();
+    const sort = document.getElementById("lsort").value;
+    const list = items.filter((it) => (!active || it.fields.includes(active)) &&
+      (!term || `${it.name} ${it.list.map((e) => `${e.model} ${e.paper}`).join(" ")}`.toLowerCase().includes(term)));
+    // when searching, the exact name first, then names that start with the term
+    const fit = (it) => (!term ? 0 : it.name.toLowerCase() === term ? 0 : it.name.toLowerCase().startsWith(term) ? 1 : it.name.toLowerCase().includes(term) ? 2 : 3);
+    list.sort((x, y) => fit(x) - fit(y) || (sort === "name" ? x.name.localeCompare(y.name) : sort === "tables" ? y.tables - x.tables || y.first - x.first
+      : sort === "year" ? (y.year || "0").localeCompare(x.year || "0") || y.first - x.first : y.first - x.first || y.tables - x.tables || x.name.localeCompare(y.name)));
+    document.getElementById("lcount").textContent = `${list.length} of ${items.length} ${label}`;
+    document.getElementById("lrows").innerHTML = list.slice(0, shown).map((it) => `<tr>
+      <td><a href="${href(it.name)}"><b>${esc(it.name.length > 120 ? it.name.slice(0, 120) + "…" : it.name)}</b></a></td>
+      ${kind === "papers" ? `<td class="num">${esc(it.year || "—")}</td><td class="num">${it.models}</td>` : `<td class="num">${new Set(it.list.map((e) => e.paper).filter(Boolean)).size}</td>`}
+      <td class="num">${it.tables}</td><td class="num">${it.first || "—"}</td><td class="num">${it.best ?? "—"}</td>
+      <td>${it.fields.map((f) => `<span class="tag field" style="--dot:${baseVar(fieldOf(f))}">${esc(fieldOf(f).label)}</span>`).join(" ")}</td></tr>`).join("")
+      || `<tr><td colspan="7" class="note">Nothing matches this filter.</td></tr>`;
+    document.getElementById("lmore").hidden = list.length <= shown;
+  };
+  q.addEventListener("input", () => { shown = 50; draw(); });
+  document.getElementById("lsort").addEventListener("change", () => { shown = 50; draw(); });
+  document.getElementById("lmore").addEventListener("click", () => { shown += 50; draw(); });
+  document.getElementById("lgel").addEventListener("click", (e) => {
+    const btn = e.target.closest("button[data-field]");
+    if (!btn) return;
+    active = btn.dataset.field;
+    document.querySelectorAll("#lgel button").forEach((x) => x.setAttribute("aria-pressed", String(x === btn)));
+    shown = 50;
+    draw();
+  });
+  draw();
+}
+
+// One model or one paper: every ranking it appears in, and its result and
+// rank on every metric of each table.
+function pageBenchProfile(kind, name) {
+  const idx = benchIdx;
+  const list = [...(kind === "model" ? idx.byModel : idx.byPaper).get(name)]
+    .sort((x, y) => (x.rank ?? 1e9) / (x.total || 1) - (y.rank ?? 1e9) / (y.total || 1) || x.task.localeCompare(y.task));
+  const s = summarize(list);
+  const papers = [...new Map(list.filter((e) => e.paper).map((e) => [e.paper, e])).values()];
+  const models = [...new Set(list.map((e) => e.model))];
+  const links = list.find((e) => safe(e.url));
+  const codes = [...new Set(list.map((e) => e.code).filter((c) => safe(c)))];
+  const metricCell = (e) => `<ul class="metric-list">${e.metrics.map((m) => `<li${m.name === e.metric ? ' class="main"' : ""}>
+      <span>${esc(m.name)}</span> <b class="mono">${esc(m.value)}</b>
+      <span class="hint">${m.rank != null ? `${m.rank} of ${m.of}` : "not ranked"}${m.rank === 1 ? " (best)" : ""}</span></li>`).join("")}</ul>`;
+  view.innerHTML = `<div class="page"><section class="section">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="#benchmarks">Benchmarks</a><span aria-hidden="true">/</span><a href="#benchmarks/${kind}s">${kind === "model" ? "Models" : "Papers"}</a><span aria-hidden="true">/</span><span aria-current="page">${esc(name.length > 60 ? name.slice(0, 60) + "…" : name)}</span></nav>
+    <h1 class="${kind === "paper" ? "paper-title" : ""}">${esc(name)}</h1>
+    <p class="lede">In ${s.tables} ${s.tables === 1 ? "ranking" : "rankings"}${s.first ? `, first in ${s.first}` : ""}${s.best && s.best > 1 ? `, best place ${s.best}` : ""}.</p>
+    <div class="profile-facts">
+      ${kind === "model"
+        ? `<div><b>Reported in</b>${papers.map((e) => `<a href="${paperHref(e.paper)}">${esc(e.paper)}</a>`).join("") || '<span class="muted">No paper listed</span>'}</div>`
+        : `<div><b>Models</b>${models.map((m) => `<a href="${modelHref(m)}">${esc(m)}</a>`).join("")}</div>
+           <div><b>Paper</b>${links ? `<a href="${esc(links.url)}" target="_blank" rel="noopener">Read the paper</a>` : '<span class="muted">No link</span>'}${s.year ? `<span class="hint">Published ${esc(s.year)}</span>` : ""}</div>`}
+      ${codes.length ? `<div><b>Code</b>${codes.map((c) => `<a href="${esc(c)}" target="_blank" rel="noopener">${esc(c.replace(/^https?:\/\/(www\.)?/, ""))}</a>`).join("")}</div>` : ""}
+      <div><b>Fields</b>${s.fields.map((f) => `<a href="#benchmarks/${esc(f)}">${esc(fieldOf(f).label)}</a>`).join("")}</div>
+    </div>
+    <div class="controls bench-filters"><div class="control"><label for="pq">Filter</label><input class="input" id="pq" type="search" placeholder="Task, dataset or metric"></div></div>
+    <p class="count" id="pcount"></p>
+    <div class="table-wrap"><table class="bench-index profile">
+      <thead><tr><th>Ranking</th><th>Dataset</th>${kind === "paper" ? "<th>Model</th>" : "<th>Paper</th>"}<th>Place</th><th>Result on every metric</th></tr></thead>
+      <tbody id="prows"></tbody>
+    </table></div>
+    <p class="note">Place is the rank under the approved ranking of each table. Each metric shows the value as published and its rank among the results that report that metric.</p>
+  </section></div>`;
+  const draw = () => {
+    const term = document.getElementById("pq").value.trim().toLowerCase();
+    const rows = list.filter((e) => !term || `${e.task} ${e.dataset} ${e.metrics.map((m) => m.name).join(" ")}`.toLowerCase().includes(term));
+    document.getElementById("pcount").textContent = `${rows.length} of ${list.length} results`;
+    document.getElementById("prows").innerHTML = rows.map((e) => `<tr class="${e.out ? "out" : ""}">
+      <td><a href="${entryHref(e)}"><b>${esc(e.task)}</b></a><br><span class="hint">ranked by ${esc(e.metric)}</span></td>
+      <td>${e.kind === "table" ? `<a href="${datasetHref(e.dataset)}">${esc(e.dataset)}</a>` : esc(e.dataset)}</td>
+      <td>${kind === "paper" ? `<a href="${modelHref(e.model)}">${esc(e.model)}</a>` : e.paper ? `<a href="${paperHref(e.paper)}">${esc(e.paper.length > 70 ? e.paper.slice(0, 70) + "…" : e.paper)}</a>` : "—"}${e.extra ? ' <span class="tag">extra data</span>' : ""}</td>
+      <td class="num nowrap">${e.rank === 1 ? `<span class="tag leader">1st</span> of ${e.total}` : esc(placeText(e))}</td>
+      <td>${metricCell(e)}</td></tr>`).join("") || `<tr><td colspan="5" class="note">Nothing matches this filter.</td></tr>`;
+  };
+  document.getElementById("pq").addEventListener("input", draw);
+  draw();
+}
+
 function pageTable(t) {
   const f = fieldOf(t.field);
   const base = approvedView(t);
@@ -1149,10 +1377,10 @@ function pageTable(t) {
   view.innerHTML = `<div class="page"><section class="section">
     <nav class="crumbs" aria-label="Breadcrumb"><a href="#benchmarks">Benchmarks</a><span aria-hidden="true">/</span><a href="#benchmarks/${esc(t.field)}">${esc(f.label)}</a><span aria-hidden="true">/</span><span aria-current="page">${esc(t.task)}</span></nav>
     <h1>${esc(t.task)}</h1>
-    <p class="lede">On ${ds ? `<a href="#datasets/${esc(ds.field)}/${encodeURIComponent(ds.name)}">${esc(t.dataset)}</a>` : esc(t.dataset)}. ${t.rows.length} published results.</p>
+    <p class="lede">On <a href="${datasetHref(t.dataset)}">${esc(t.dataset)}</a>. ${t.rows.length} published results.${ds ? ` About the data and how to download it: <a href="#datasets/${esc(ds.field)}/${encodeURIComponent(ds.name)}">${esc(ds.name)}</a>.` : ""}</p>
     ${t.path.length > 1 ? `<p class="hint">${esc(t.path.join(" / "))}</p>` : ""}
     <div class="controls">
-      <div class="control"><label for="tm">Rank by</label><select class="input" id="tm">${t.metrics.map((m) => `<option ${m.name === v.metric ? "selected" : ""}>${esc(m.name)}</option>`).join("")}</select></div>
+      <div class="control"><label for="tm">Rank by</label><select class="input" id="tm">${t.metrics.filter((m) => m.parsed >= 2 || m.name === v.metric).map((m) => `<option ${m.name === v.metric ? "selected" : ""}>${esc(m.name)}</option>`).join("")}</select></div>
       <div class="control"><label for="th">Order</label><select class="input" id="th"><option value="1">Higher is better</option><option value="0">Lower is better</option></select></div>
       <div class="control"><label for="tq">Model</label><input class="input" id="tq" type="search" placeholder="Filter models"></div>
       <div class="control"><label class="check"><input type="checkbox" id="tedit"> Choose rows to leave out</label></div>
@@ -1185,10 +1413,10 @@ function pageTable(t) {
       <tbody>${ranked.map((x) => `<tr class="${x.out ? "out" : ""}">
         ${edit ? `<td><input type="checkbox" data-out="${esc(x.r.model)}" ${x.out ? "checked" : ""} aria-label="Leave out ${esc(x.r.model)}"></td>` : ""}
         <td class="num">${x.out ? "out" : x.rank ?? "—"}</td>
-        <td><b>${esc(x.r.model)}</b>${x.r.extra ? ' <span class="tag">extra data</span>' : ""}${x.r.added ? ' <span class="tag">added</span>' : ""}</td>
+        <td><a href="${modelHref(x.r.model)}"><b>${esc(x.r.model)}</b></a>${x.r.extra ? ' <span class="tag">extra data</span>' : ""}${x.r.added ? ' <span class="tag">added</span>' : ""}</td>
         <td class="num">${x.s == null ? `<span class="muted">${esc(x.r.values[v.metric] || "—")}</span>` : `<span class="bar"><i style="width:${bar(x.s).toFixed(0)}px"></i>${esc(x.r.values[v.metric])}</span>`}</td>
         ${others.map((m) => `<td class="num">${esc(x.r.values[m] ?? "—")}</td>`).join("")}
-        <td>${safe(x.r.url) ? `<a href="${esc(x.r.url)}" target="_blank" rel="noopener" title="${esc(x.r.paper)}">${esc((x.r.paper || "Paper").slice(0, 60))}${(x.r.paper || "").length > 60 ? "…" : ""}</a>` : esc(x.r.paper || "—")}${x.r.date ? ` <span class="hint">${esc(x.r.date.slice(0, 4))}</span>` : ""}</td>
+        <td>${paperName(x.r.paper) ? `<a href="${paperHref(paperName(x.r.paper))}" title="${esc(x.r.paper)}">${esc(x.r.paper.slice(0, 60))}${x.r.paper.length > 60 ? "…" : ""}</a>` : "—"}${x.r.date ? ` <span class="hint">${esc(x.r.date.slice(0, 4))}</span>` : ""}</td>
         <td>${safe(x.r.code) ? `<a href="${esc(x.r.code)}" target="_blank" rel="noopener">Code</a>` : ""}</td></tr>`).join("")}</tbody>
     </table></div>`;
     const a = t.approved;
@@ -1420,7 +1648,7 @@ async function start() {
   route();
   // Load papers in the background so search covers them too.
   setTimeout(() => need("latest").then(() => palette.refresh()), 1200);
-  setTimeout(() => needTables().then(() => palette.refresh()).catch(() => {}), 2500);
+  setTimeout(() => Promise.all([needTables(), need("boards")]).then(([t, b]) => { buildBenchIndex(t, b?.boards || []); searchIndex = null; palette.refresh(); }).catch(() => {}), 2500);
 }
 
 // Back to top, shown after the reader scrolls a screen.

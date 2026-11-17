@@ -415,3 +415,19 @@ details.note p { margin-top: var(--space-xs); max-width: 75ch; }
 .proposal h2 { margin: 0; }
 .proposal p { margin: 0; max-width: 64ch; }
 .proposal textarea { width: 100%; min-height: 80px; resize: vertical; font: inherit; padding: var(--space-xs) var(--space-sm); }
+
+/* Benchmarks: filters, model and paper profiles */
+.bench-filters { margin-block: var(--space-md); grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
+.bench-index td a { color: var(--color-ink); }
+.bench-index td a:hover { color: var(--color-accent); }
+.metric-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-3xs); grid-template-columns: minmax(0, 1fr); }
+.metric-list li { display: flex; flex-wrap: wrap; gap: var(--space-2xs) var(--space-xs); align-items: baseline; font-size: var(--text-sm); }
+.metric-list li.main span:first-child { font-weight: 600; }
+.metric-list b { font-weight: 400; color: var(--color-ink); }
+.tag.leader { background: color-mix(in oklab, var(--base-a) 22%, var(--color-paper)); color: var(--color-ink); }
+.profile-facts { display: grid; gap: var(--space-sm); margin-block: var(--space-md) var(--space-lg); grid-template-columns: minmax(0, 1fr); }
+.profile-facts > div { display: flex; flex-wrap: wrap; gap: var(--space-2xs) var(--space-sm); align-items: baseline; }
+.profile-facts b { min-width: 7rem; font-size: var(--text-sm); color: var(--color-muted); font-weight: 400; }
+.profile-facts a { overflow-wrap: anywhere; }
+h1.paper-title { font-size: var(--text-3xl); max-width: 32ch; }
+.bench-index.profile td:last-child { min-width: 260px; }
