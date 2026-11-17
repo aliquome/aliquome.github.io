@@ -1,18 +1,19 @@
 {
-  "generated_at": "2026-11-17T07:19:53Z",
+  "generated_at": "2026-11-17T08:08:02Z",
   "engine": "local preview",
   "commit": "local",
   "mode": "offline",
   "inputs": {
-    "data/database_versions.csv": "841eabfca5cfbebfbb1b67b16409a2c10ba209a1668b3cbb7a9e84c1977fbd21",
-    "data/datasets.csv": "8469cadcb80895b1bfc6cb9592d3d4f0f25cd9af3a11df721df521102481c64e",
+    "data/database_versions.csv": "69a91fc7558f0bdfe9b62c9558dc321f4b450c3a92f1636f88ed05a628fe9bee",
+    "data/datasets.csv": "3d8f8b29177ee619dd358895c67bf226e2133b6bb5f95b6b548a7551aaa9e9fa",
     "data/fields.toml": "09860e0f713aecbd7e4caa22fffe3d396a76573012813e42191e76f5bf1c6295",
     "data/leaderboards.toml": "2fc493a21c026d478fa329984f5b920de7794c45f673bcafd67215b4a38cacad",
+    "data/loaders.toml": "e2af1a3595495f897d3254506a6c7df718f31907f6c7284fc16cb5140ee9897f",
     "data/sources.toml": "a60d05a7421762d97245c689dec478514c9456a65ac5379a089980abedbda2b5"
   },
   "counts": {
     "sources": 83,
     "versions": 794,
-    "datasets": 520
+    "datasets": 519
   }
 }

@@ -17,7 +17,7 @@ Every database and dataset has its own 3D figure and chromatogram trace, both ge
 
 | Path | Contents |
 |---|---|
-| `data/` | All inputs. `sources.toml` (databases), `database_versions.csv` (releases and links), `datasets.csv`, `fields.toml` (fields, tasks, paper queries), `latest.toml` (journals for new papers), `leaderboards.toml` (benchmark tables) |
+| `data/` | All inputs. `sources.toml` (databases), `database_versions.csv` (releases and links), `datasets.csv`, `fields.toml` (fields, tasks, paper queries), `latest.toml` (journals for new papers), `leaderboards.toml` (benchmark tables), `loaders.toml` (library calls and official client commands that fetch a dataset or database) |
 | `engine/` | `atlas`, a Rust program that turns `data/` into the JSON files under `site/data/`, fetches papers and benchmark tables, and checks sources |
 | `site/` | The website: HTML, CSS and JavaScript, with three.js for the 3D figures |
 | `.github/workflows/daily.yml` | Daily build: compile, reproducibility check, data refresh, commit, deploy to GitHub Pages |

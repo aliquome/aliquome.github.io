@@ -1,0 +1,817 @@
+# Library calls and official client commands that fetch a dataset or a
+# database. Each block is attached to every id in `targets`:
+#   "ds:<id>"  a row of datasets.csv      "db:<id>"  a source in sources.toml
+# Only official clients, the authors' own tools, or libraries widely used in
+# papers (PyTorch Geometric, DeepChem, TDC, OGB, Hugging Face, Bioconductor).
+
+[[loader]]
+targets = ["ds:pwc-proteins"]
+label = "PyTorch Geometric"
+docs = "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.TUDataset.html"
+code = '''
+from torch_geometric.datasets import TUDataset
+
+dataset = TUDataset(root="data/TUDataset", name="PROTEINS")
+print(dataset)
+'''
+
+[[loader]]
+targets = ["ds:pwc-mutag"]
+label = "PyTorch Geometric"
+docs = "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.TUDataset.html"
+code = '''
+from torch_geometric.datasets import TUDataset
+
+dataset = TUDataset(root="data/TUDataset", name="MUTAG")
+print(dataset)
+'''
+
+[[loader]]
+targets = ["ds:pwc-nci1"]
+label = "PyTorch Geometric"
+docs = "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.TUDataset.html"
+code = '''
+from torch_geometric.datasets import TUDataset
+
+dataset = TUDataset(root="data/TUDataset", name="NCI1")
+print(dataset)
+'''
+
+[[loader]]
+targets = ["ds:pwc-aids", "ds:pwc-aids-antiviral-screen"]
+label = "PyTorch Geometric"
+docs = "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.TUDataset.html"
+code = '''
+from torch_geometric.datasets import TUDataset
+
+dataset = TUDataset(root="data/TUDataset", name="AIDS")
+print(dataset)
+'''
+
+[[loader]]
+targets = ["ds:pwc-mutagenicity"]
+label = "PyTorch Geometric"
+docs = "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.TUDataset.html"
+code = '''
+from torch_geometric.datasets import TUDataset
+
+dataset = TUDataset(root="data/TUDataset", name="Mutagenicity")
+print(dataset)
+'''
+
+[[loader]]
+targets = ["ds:pwc-ppi"]
+label = "PyTorch Geometric"
+docs = "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.PPI.html"
+code = '''
+from torch_geometric.datasets import PPI
+
+train = PPI(root="data/PPI", split="train")
+val = PPI(root="data/PPI", split="val")
+test = PPI(root="data/PPI", split="test")
+'''
+
+[[loader]]
+targets = ["ds:pwc-esol-estimated-solubility"]
+label = "PyTorch Geometric"
+docs = "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.MoleculeNet.html"
+code = '''
+from torch_geometric.datasets import MoleculeNet
+
+dataset = MoleculeNet(root="data/MoleculeNet", name="ESOL")
+print(dataset)
+'''
+
+[[loader]]
+targets = ["ds:pwc-esol-estimated-solubility"]
+label = "DeepChem"
+docs = "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html"
+code = '''
+import deepchem as dc
+
+tasks, (train, valid, test), transformers = dc.molnet.load_delaney(featurizer="ECFP", splitter="scaffold")
+'''
+
+[[loader]]
+targets = ["ds:pwc-hiv-human-immunodeficiency-virus"]
+label = "PyTorch Geometric"
+docs = "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.MoleculeNet.html"
+code = '''
+from torch_geometric.datasets import MoleculeNet
+
+dataset = MoleculeNet(root="data/MoleculeNet", name="HIV")
+print(dataset)
+'''
+
+[[loader]]
+targets = ["ds:pwc-hiv-human-immunodeficiency-virus"]
+label = "DeepChem"
+docs = "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html"
+code = '''
+import deepchem as dc
+
+tasks, (train, valid, test), transformers = dc.molnet.load_hiv(featurizer="ECFP", splitter="scaffold")
+'''
+
+[[loader]]
+targets = ["ds:pwc-clintox"]
+label = "PyTorch Geometric"
+docs = "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.MoleculeNet.html"
+code = '''
+from torch_geometric.datasets import MoleculeNet
+
+dataset = MoleculeNet(root="data/MoleculeNet", name="ClinTox")
+print(dataset)
+'''
+
+[[loader]]
+targets = ["ds:pwc-clintox"]
+label = "DeepChem"
+docs = "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html"
+code = '''
+import deepchem as dc
+
+tasks, (train, valid, test), transformers = dc.molnet.load_clintox(featurizer="ECFP", splitter="scaffold")
+'''
+
+[[loader]]
+targets = ["ds:pwc-toxcast-toxicity-forecaster"]
+label = "PyTorch Geometric"
+docs = "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.MoleculeNet.html"
+code = '''
+from torch_geometric.datasets import MoleculeNet
+
+dataset = MoleculeNet(root="data/MoleculeNet", name="ToxCast")
+print(dataset)
+'''
+
+[[loader]]
+targets = ["ds:pwc-toxcast-toxicity-forecaster"]
+label = "DeepChem"
+docs = "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html"
+code = '''
+import deepchem as dc
+
+tasks, (train, valid, test), transformers = dc.molnet.load_toxcast(featurizer="ECFP", splitter="scaffold")
+'''
+
+[[loader]]
+targets = ["ds:pwc-sider"]
+label = "PyTorch Geometric"
+docs = "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.MoleculeNet.html"
+code = '''
+from torch_geometric.datasets import MoleculeNet
+
+dataset = MoleculeNet(root="data/MoleculeNet", name="SIDER")
+print(dataset)
+'''
+
+[[loader]]
+targets = ["ds:pwc-sider"]
+label = "DeepChem"
+docs = "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html"
+code = '''
+import deepchem as dc
+
+tasks, (train, valid, test), transformers = dc.molnet.load_sider(featurizer="ECFP", splitter="scaffold")
+'''
+
+[[loader]]
+targets = ["ds:pwc-muv"]
+label = "PyTorch Geometric"
+docs = "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.MoleculeNet.html"
+code = '''
+from torch_geometric.datasets import MoleculeNet
+
+dataset = MoleculeNet(root="data/MoleculeNet", name="MUV")
+print(dataset)
+'''
+
+[[loader]]
+targets = ["ds:pwc-muv"]
+label = "DeepChem"
+docs = "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html"
+code = '''
+import deepchem as dc
+
+tasks, (train, valid, test), transformers = dc.molnet.load_muv(featurizer="ECFP", splitter="scaffold")
+'''
+
+[[loader]]
+targets = ["ds:pwc-bace-secretase-enzyme"]
+label = "PyTorch Geometric"
+docs = "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.MoleculeNet.html"
+code = '''
+from torch_geometric.datasets import MoleculeNet
+
+dataset = MoleculeNet(root="data/MoleculeNet", name="BACE")
+print(dataset)
+'''
+
+[[loader]]
+targets = ["ds:pwc-bace-secretase-enzyme"]
+label = "DeepChem"
+docs = "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html"
+code = '''
+import deepchem as dc
+
+tasks, (train, valid, test), transformers = dc.molnet.load_bace_classification(featurizer="ECFP", splitter="scaffold")
+'''
+
+[[loader]]
+targets = ["ds:tox21"]
+label = "PyTorch Geometric"
+docs = "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.MoleculeNet.html"
+code = '''
+from torch_geometric.datasets import MoleculeNet
+
+dataset = MoleculeNet(root="data/MoleculeNet", name="Tox21")
+print(dataset)
+'''
+
+[[loader]]
+targets = ["ds:tox21"]
+label = "DeepChem"
+docs = "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html"
+code = '''
+import deepchem as dc
+
+tasks, (train, valid, test), transformers = dc.molnet.load_tox21(featurizer="ECFP", splitter="scaffold")
+'''
+
+[[loader]]
+targets = ["ds:pcba"]
+label = "PyTorch Geometric"
+docs = "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.MoleculeNet.html"
+code = '''
+from torch_geometric.datasets import MoleculeNet
+
+dataset = MoleculeNet(root="data/MoleculeNet", name="PCBA")
+print(dataset)
+'''
+
+[[loader]]
+targets = ["ds:pcba"]
+label = "DeepChem"
+docs = "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html"
+code = '''
+import deepchem as dc
+
+tasks, (train, valid, test), transformers = dc.molnet.load_pcba(featurizer="ECFP", splitter="scaffold")
+'''
+
+[[loader]]
+targets = ["ds:moleculenet", "ds:moleculenet-2"]
+label = "DeepChem (all MoleculeNet sets)"
+docs = "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html"
+code = '''
+import deepchem as dc
+
+# one loader per dataset: load_qm9, load_esol (load_delaney), load_freesolv,
+# load_lipo, load_bace_classification, load_bbbp, load_hiv, load_tox21,
+# load_toxcast, load_sider, load_clintox, load_muv, load_pcba, load_pdbbind
+tasks, (train, valid, test), transformers = dc.molnet.load_bbbp(featurizer="ECFP", splitter="scaffold")
+'''
+
+[[loader]]
+targets = ["ds:moleculenet", "ds:moleculenet-2"]
+label = "PyTorch Geometric"
+docs = "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.MoleculeNet.html"
+code = '''
+from torch_geometric.datasets import MoleculeNet
+
+dataset = MoleculeNet(root="data/MoleculeNet", name="BBBP")
+print(dataset)
+'''
+
+[[loader]]
+targets = ["ds:qm9"]
+label = "PyTorch Geometric"
+docs = "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.QM9.html"
+code = '''
+from torch_geometric.datasets import QM9
+
+dataset = QM9(root="data/QM9")
+print(dataset[0])
+'''
+
+[[loader]]
+targets = ["ds:qm9"]
+label = "DeepChem"
+docs = "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html"
+code = '''
+import deepchem as dc
+
+tasks, (train, valid, test), transformers = dc.molnet.load_qm9(featurizer="ECFP", splitter="scaffold")
+'''
+
+[[loader]]
+targets = ["ds:pwc-qm7"]
+label = "DeepChem"
+docs = "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html"
+code = '''
+import deepchem as dc
+
+tasks, (train, valid, test), transformers = dc.molnet.load_qm7(featurizer="ECFP", splitter="scaffold")
+'''
+
+[[loader]]
+targets = ["ds:pwc-qm8"]
+label = "DeepChem"
+docs = "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html"
+code = '''
+import deepchem as dc
+
+tasks, (train, valid, test), transformers = dc.molnet.load_qm8(featurizer="ECFP", splitter="scaffold")
+'''
+
+[[loader]]
+targets = ["ds:pwc-bbbc005"]
+label = "DeepChem"
+docs = "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html"
+code = '''
+import deepchem as dc
+
+tasks, (train, valid, test), transformers = dc.molnet.load_bbbc005(featurizer="ECFP", splitter="scaffold")
+'''
+
+[[loader]]
+targets = ["ds:pdbbind", "ds:pdbbind-casf-2016"]
+label = "DeepChem (PDBbind v2019)"
+docs = "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html"
+code = '''
+import deepchem as dc
+
+# set_name: "core" (the CASF-2016 set), "refined" or "general"
+tasks, (train, valid, test), transformers = dc.molnet.load_pdbbind(set_name="refined", featurizer="ECFP", splitter="random")
+'''
+
+[[loader]]
+targets = ["ds:casf-2016"]
+label = "DeepChem (PDBbind core set = CASF-2016)"
+docs = "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html"
+code = '''
+import deepchem as dc
+
+tasks, (train, valid, test), transformers = dc.molnet.load_pdbbind(set_name="core", featurizer="ECFP", splitter="random")
+'''
+
+[[loader]]
+targets = ["ds:davis", "ds:pwc-davis-dta"]
+label = "TDC"
+docs = "https://tdcommons.ai/multi_pred_tasks/dti/"
+code = '''
+from tdc.multi_pred import DTI   # pip install PyTDC
+
+data = DTI(name="DAVIS")
+split = data.get_split()
+'''
+
+[[loader]]
+targets = ["ds:kiba"]
+label = "TDC"
+docs = "https://tdcommons.ai/multi_pred_tasks/dti/"
+code = '''
+from tdc.multi_pred import DTI   # pip install PyTDC
+
+data = DTI(name="KIBA")
+split = data.get_split()
+'''
+
+[[loader]]
+targets = ["ds:bindingdb"]
+label = "TDC"
+docs = "https://tdcommons.ai/multi_pred_tasks/dti/"
+code = '''
+from tdc.multi_pred import DTI   # pip install PyTDC
+
+data = DTI(name="BindingDB_Kd")
+split = data.get_split()
+'''
+
+[[loader]]
+targets = ["ds:gdsc"]
+label = "TDC"
+docs = "https://tdcommons.ai/multi_pred_tasks/drugres/"
+code = '''
+from tdc.multi_pred import DrugRes   # pip install PyTDC
+
+data = DrugRes(name="GDSC2")
+split = data.get_split()
+'''
+
+[[loader]]
+targets = ["ds:pwc-drugcomb"]
+label = "TDC"
+docs = "https://tdcommons.ai/multi_pred_tasks/drugsyn/"
+code = '''
+from tdc.multi_pred import DrugSyn   # pip install PyTDC
+
+data = DrugSyn(name="DrugComb")
+split = data.get_split()
+'''
+
+[[loader]]
+targets = ["ds:pwc-uspto-190"]
+label = "TDC"
+docs = "https://tdcommons.ai/generation_tasks/retrosyn/"
+code = '''
+from tdc.generation import RetroSyn   # pip install PyTDC
+
+data = RetroSyn(name="USPTO-50K")
+split = data.get_split()
+'''
+
+[[loader]]
+targets = ["ds:pwc-pcqm4mv2-lsc"]
+label = "OGB"
+docs = "https://ogb.stanford.edu/docs/lsc/pcqm4mv2/"
+code = '''
+from ogb.lsc import PCQM4Mv2Dataset   # pip install ogb rdkit
+
+dataset = PCQM4Mv2Dataset(root="data", only_smiles=True)
+split = dataset.get_idx_split()
+'''
+
+[[loader]]
+targets = ["ds:pwc-atom3d"]
+label = "atom3d"
+docs = "https://atom3d.readthedocs.io/en/latest/"
+code = '''
+import atom3d.datasets as da   # pip install atom3d
+
+# tasks: smp, pip, res, msp, lba, lep, psr, rsr
+da.download_dataset("lba", "data/lba")
+dataset = da.load_dataset("data/lba/raw/pdbbind_2019-refined-set/data", "lmdb")
+'''
+
+[[loader]]
+targets = ["ds:pwc-umls"]
+label = "PyKEEN"
+docs = "https://pykeen.readthedocs.io/en/stable/api/pykeen.datasets.UMLS.html"
+code = '''
+from pykeen.datasets import UMLS   # pip install pykeen
+
+dataset = UMLS()
+print(dataset.training.num_triples)
+'''
+
+[[loader]]
+targets = ["ds:pwc-malaria-dataset"]
+label = "TensorFlow Datasets"
+docs = "https://www.tensorflow.org/datasets/catalog/malaria"
+code = '''
+import tensorflow_datasets as tfds
+
+ds = tfds.load("malaria", split="train", as_supervised=True)
+'''
+
+[[loader]]
+targets = ["ds:pwc-sachs"]
+label = "Causal Discovery Toolbox"
+docs = "https://fentechsolutions.github.io/CausalDiscoveryToolbox/html/data.html"
+code = '''
+from cdt.data import load_dataset   # pip install cdt
+
+data, graph = load_dataset("sachs")
+'''
+
+[[loader]]
+targets = ["ds:pwc-ecoli"]
+label = "UCI ucimlrepo"
+docs = "https://github.com/uci-ml-repo/ucimlrepo"
+code = '''
+from ucimlrepo import fetch_ucirepo   # pip install ucimlrepo
+
+ds = fetch_ucirepo(id=39)
+X, y = ds.data.features, ds.data.targets
+'''
+
+[[loader]]
+targets = ["ds:pwc-wdbc"]
+label = "UCI ucimlrepo"
+docs = "https://github.com/uci-ml-repo/ucimlrepo"
+code = '''
+from ucimlrepo import fetch_ucirepo   # pip install ucimlrepo
+
+ds = fetch_ucirepo(id=17)
+X, y = ds.data.features, ds.data.targets
+'''
+
+[[loader]]
+targets = ["ds:pwc-toxicity"]
+label = "UCI ucimlrepo"
+docs = "https://github.com/uci-ml-repo/ucimlrepo"
+code = '''
+from ucimlrepo import fetch_ucirepo   # pip install ucimlrepo
+
+ds = fetch_ucirepo(id=728)
+X, y = ds.data.features, ds.data.targets
+'''
+
+[[loader]]
+targets = ["ds:pwc-bc2gm"]
+label = "Hugging Face datasets"
+docs = "https://huggingface.co/datasets/bigbio/blurb"
+code = '''
+from datasets import load_dataset
+
+ds = load_dataset("bigbio/blurb", "bc2gm")
+'''
+
+[[loader]]
+targets = ["ds:asap-discovery-x-polaris-antiviral-2025"]
+label = "Polaris"
+docs = "https://polaris-hub.github.io/polaris/"
+code = '''
+import polaris as po   # pip install polaris-lib; polaris login
+
+dataset = po.load_dataset("asap-discovery/antiviral-potency-2025-unblinded")
+'''
+
+[[loader]]
+targets = ["ds:kaggle-biology-competitions"]
+label = "Kaggle CLI"
+docs = "https://github.com/Kaggle/kaggle-api"
+code = '''
+pip install kaggle   # API token in ~/.kaggle/kaggle.json
+kaggle competitions list -s protein
+kaggle competitions download -c <competition>
+'''
+
+[[loader]]
+targets = ["ds:camelyon16-17", "ds:pwc-camelyon16"]
+label = "AWS Open Data"
+docs = "https://registry.opendata.aws/camelyon/"
+code = '''
+# no AWS account needed
+aws s3 ls --no-sign-request s3://camelyon-dataset/
+aws s3 sync --no-sign-request s3://camelyon-dataset/CAMELYON16/ ./CAMELYON16
+'''
+
+[[loader]]
+targets = ["ds:pwc-h01"]
+label = "Google Cloud Storage"
+docs = "https://h01-release.storage.googleapis.com/landing.html"
+code = '''
+# public bucket, no account needed
+gcloud storage ls gs://h01-release/
+# volumes can also be read in Python with CloudVolume (pip install cloud-volume)
+'''
+
+[[loader]]
+targets = ["ds:sabdab-and-oas", "ds:sabdab"]
+label = "SAbDab summary file"
+docs = "https://opig.stats.ox.ac.uk/webapps/sabdab-sabpred/sabdab"
+code = '''
+# every antibody structure in SAbDab, one row per chain pair
+curl -L -o sabdab_summary_all.tsv https://opig.stats.ox.ac.uk/webapps/sabdab-sabpred/sabdab/summary/all/
+'''
+
+[[loader]]
+targets = ["ds:atlas-md"]
+label = "ATLAS REST API"
+docs = "https://www.dsimb.inserm.fr/ATLAS/"
+code = '''
+# analyses of one entry (PDB id and chain), returned as a zip
+curl -L -o 16pk_A_analysis.zip https://www.dsimb.inserm.fr/ATLAS/api/ATLAS/analysis/16pk_A
+'''
+
+[[loader]]
+targets = ["ds:chembl"]
+label = "ChEMBL web services"
+docs = "https://github.com/chembl/chembl_webresource_client"
+code = '''
+from chembl_webresource_client.new_client import new_client   # pip install chembl_webresource_client
+
+acts = new_client.activity.filter(target_chembl_id="CHEMBL203", standard_type="IC50")
+print(len(acts))
+'''
+
+[[loader]]
+targets = ["ds:pubchem", "ds:pwc-pubchem-antagonist-of-human-d-1-dopamine-recepto"]
+label = "PubChem PUG REST"
+docs = "https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest"
+code = '''
+import requests
+
+base = "https://pubchem.ncbi.nlm.nih.gov/rest/pug"
+props = requests.get(f"{base}/compound/cid/2244/property/CanonicalSMILES,MolecularWeight/JSON", timeout=60).json()
+assay = requests.get(f"{base}/assay/aid/504652/description/JSON", timeout=60).json()
+'''
+
+[[loader]]
+targets = ["ds:uniprot-swiss-prot"]
+label = "UniProt REST"
+docs = "https://www.uniprot.org/help/api"
+code = '''
+# every reviewed human protein, streamed as FASTA
+curl -o human_sprot.fasta "https://rest.uniprot.org/uniprotkb/stream?query=reviewed:true+AND+organism_id:9606&format=fasta"
+'''
+
+[[loader]]
+targets = ["ds:rcsb-pdb"]
+label = "RCSB file download"
+docs = "https://www.rcsb.org/docs/programmatic-access/file-download-services"
+code = '''
+# one entry
+curl -O https://files.rcsb.org/download/4HHB.cif.gz
+# the whole archive (mmCIF), kept in sync
+rsync -rlpt -v -z --delete --port=33444 rsync.rcsb.org::ftp_data/structures/divided/mmCIF/ ./mmCIF
+'''
+
+[[loader]]
+targets = ["ds:alphafold-db"]
+label = "AlphaFold DB API"
+docs = "https://alphafold.ebi.ac.uk/api-docs"
+code = '''
+import requests
+
+entry = requests.get("https://alphafold.ebi.ac.uk/api/prediction/P69905", timeout=60).json()[0]
+print(entry["pdbUrl"], entry["cifUrl"])
+# bulk: gcloud storage ls gs://public-datasets-deepmind-alphafold-v4/
+'''
+
+[[loader]]
+targets = ["ds:drugbank"]
+label = "DrugBank download (free academic account)"
+docs = "https://go.drugbank.com/releases/latest"
+code = '''
+curl -Lf -o drugbank_all_full_database.xml.zip -u "$DRUGBANK_EMAIL:$DRUGBANK_PASSWORD" \
+  https://go.drugbank.com/releases/latest/downloads/all-full-database
+'''
+
+[[loader]]
+targets = ["ds:pwc-string"]
+label = "STRING API"
+docs = "https://string-db.org/help/api/"
+code = '''
+curl "https://string-db.org/api/tsv/network?identifiers=TP53%0dMDM2&species=9606"
+'''
+
+[[loader]]
+targets = ["ds:pwc-tcga", "ds:pwc-bctcga"]
+label = "GDC API"
+docs = "https://docs.gdc.cancer.gov/API/Users_Guide/Getting_Started/"
+code = '''
+import requests, json
+
+filters = {"op": "and", "content": [
+  {"op": "in", "content": {"field": "cases.project.project_id", "value": ["TCGA-BRCA"]}},
+  {"op": "in", "content": {"field": "data_type", "value": ["Gene Expression Quantification"]}},
+  {"op": "in", "content": {"field": "access", "value": ["open"]}}]}
+r = requests.get("https://api.gdc.cancer.gov/files", params={"filters": json.dumps(filters), "fields": "file_id,file_name", "size": "2000"}, timeout=60).json()
+ids = [h["file_id"] for h in r["data"]["hits"]]
+# then: gdc-client download <id> ...  or POST ids to https://api.gdc.cancer.gov/data
+'''
+
+[[loader]]
+targets = ["ds:pwc-metabric"]
+label = "cBioPortal API"
+docs = "https://docs.cbioportal.org/downloads/"
+code = '''
+import requests
+
+study = requests.get("https://www.cbioportal.org/api/studies/brca_metabric", timeout=60).json()
+profiles = requests.get("https://www.cbioportal.org/api/studies/brca_metabric/molecular-profiles", timeout=60).json()
+'''
+
+[[loader]]
+targets = ["ds:pwc-ncbi-datasets"]
+label = "NCBI Datasets CLI"
+docs = "https://www.ncbi.nlm.nih.gov/datasets/docs/v2/"
+code = '''
+datasets download genome taxon human --reference --include genome,gtf --filename human.zip
+unzip human.zip
+'''
+
+[[loader]]
+targets = ["ds:pwc-nsclc-radiogenomics"]
+label = "TCIA (tcia_utils)"
+docs = "https://github.com/kirbyju/tcia_utils"
+code = '''
+from tcia_utils import nbia   # pip install tcia_utils
+
+series = nbia.getSeries(collection="NSCLC Radiogenomics")
+nbia.downloadSeries(series, number=5)
+'''
+
+[[loader]]
+targets = ["ds:pwc-bladderbatch"]
+label = "Bioconductor"
+docs = "https://www.bioconductor.org/packages/release/data/experiment/html/bladderbatch.html"
+code = '''
+BiocManager::install("bladderbatch")
+library(bladderbatch)
+data(bladderdata)
+exprs(bladderEset)[1:5, 1:5]
+'''
+
+[[loader]]
+targets = ["ds:pwc-riboflavin"]
+label = "R package hdi"
+docs = "https://cran.r-project.org/package=hdi"
+code = '''
+install.packages("hdi")
+library(hdi)
+data(riboflavin)
+dim(riboflavin$x)
+'''
+
+[[loader]]
+targets = ["db:ukbiobank"]
+label = "UK Biobank RAP (dxpy)"
+docs = "https://documentation.dnanexus.com/downloads"
+code = '''
+# approved UK Biobank project on the Research Analysis Platform needed
+pip install dxpy
+dx login
+dx ls "project-XXXX:/Bulk/"
+dx download "project-XXXX:/Bulk/<folder>/<file>"
+'''
+
+[[loader]]
+targets = ["db:allofus"]
+label = "All of Us Researcher Workbench"
+docs = "https://www.researchallofus.org/"
+code = '''
+# runs inside a Researcher Workbench notebook; record-level data cannot be downloaded
+import os
+from google.cloud import bigquery
+
+cdr = os.environ["WORKSPACE_CDR"]
+df = bigquery.Client().query(f"SELECT COUNT(*) AS n FROM `{cdr}.person`").to_dataframe()
+'''
+
+[[loader]]
+targets = ["db:cosmic"]
+label = "COSMIC scripted download (free academic account)"
+docs = "https://cancer.sanger.ac.uk/cosmic/download"
+code = '''
+# 1. ask for a signed URL with your COSMIC login
+AUTH=$(printf '%s:%s' "$COSMIC_EMAIL" "$COSMIC_PASSWORD" | base64)
+URL=$(curl -s -H "Authorization: Basic $AUTH" \
+  "https://cancer.sanger.ac.uk/api/mono/products/v1/downloads/scripted?path=grch38/cosmic/v104/Cosmic_MutantCensus_Tsv_v104_GRCh38.tar&bucket=downloads" \
+  | jq -r .url)
+# 2. download the file
+curl -L -o Cosmic_MutantCensus_v104.tar "$URL"
+'''
+
+[[loader]]
+targets = ["db:depmap"]
+label = "DepMap download API"
+docs = "https://depmap.org/portal/data_page/"
+code = '''
+import pandas as pd
+
+# one row per file of every release, with a direct download URL
+files = pd.read_csv("https://depmap.org/portal/api/download/files")
+latest = files[files["release"] == files["release"].iloc[0]]
+print(latest[["filename", "url"]].head())
+'''
+
+[[loader]]
+targets = ["db:pdbbind"]
+label = "DeepChem (PDBbind v2019)"
+docs = "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html"
+code = '''
+import deepchem as dc
+
+# set_name: "core" (CASF-2016), "refined" or "general"
+tasks, (train, valid, test), transformers = dc.molnet.load_pdbbind(set_name="refined", featurizer="ECFP", splitter="random")
+'''
+
+[[loader]]
+targets = ["db:encode-ccre"]
+label = "ENCODE REST API"
+docs = "https://www.encodeproject.org/help/rest-api/"
+code = '''
+import requests
+
+r = requests.get("https://www.encodeproject.org/search/", params={
+    "type": "Annotation", "annotation_type": "candidate Cis-Regulatory Elements",
+    "assembly": "GRCh38", "format": "json", "limit": "all"}, timeout=120).json()
+for a in r["@graph"][:5]:
+    print(a["accession"], a.get("biosample_summary"))
+'''
+
+[[loader]]
+targets = ["db:unite"]
+label = "QIIME 2 RESCRIPt"
+docs = "https://github.com/bokulich-lab/RESCRIPt"
+code = '''
+# UNITE 10.0 is the release of 2025-02-19
+qiime rescript get-unite-data \
+  --p-version 2025-02-19 --p-taxon-group eukaryotes --p-cluster-id 99 \
+  --output-dir unite-10.0
+'''
+
+[[loader]]
+targets = ["db:hpa"]
+label = "Human Protein Atlas API"
+docs = "https://www.proteinatlas.org/about/help/dataaccess"
+code = '''
+# one gene as JSON, or any search as TSV with chosen columns
+curl -s "https://www.proteinatlas.org/ENSG00000141510.json"
+curl -s "https://www.proteinatlas.org/api/search_download.php?search=TP53&format=tsv&columns=g,gs,eg,up&compress=no"
+'''

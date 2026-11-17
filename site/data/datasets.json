@@ -1603,6 +1603,10 @@
         {
           "label": "biofunctionprediction.org",
           "url": "https://www.biofunctionprediction.org/cafa/"
+        },
+        {
+          "label": "Kaggle (CAFA 6)",
+          "url": "https://www.kaggle.com/competitions/cafa-6-protein-function-prediction"
         }
       ],
       "access": "kaggle.com/competitions/cafa-6-protein-function-prediction",
@@ -1637,7 +1641,12 @@
       "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
-      "links": [],
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/InstaDeepAI/nucleotide_transformer_downstream_tasks_revised"
+        }
+      ],
       "access": "load_dataset(\"InstaDeepAI/nucleotide_transformer_downstream_tasks_revised\")",
       "license": "",
       "versions": "latest: revised",
@@ -1651,7 +1660,12 @@
       "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
-      "links": [],
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/InstaDeepAI/genomics-long-range-benchmark"
+        }
+      ],
       "access": "load_dataset(\"InstaDeepAI/genomics-long-range-benchmark\", task_name=..., sequence_length=...)",
       "license": "",
       "versions": "latest: 2024",
@@ -1665,7 +1679,12 @@
       "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
-      "links": [],
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/tahoebio/Tahoe-100M"
+        }
+      ],
       "access": "load_dataset(\"tahoebio/Tahoe-100M\", streaming=True)",
       "license": "",
       "versions": "latest: February 2025",
@@ -1687,6 +1706,10 @@
         {
           "label": "VCC 2026",
           "url": "https://arcinstitute.org/news/virtual-cell-challenge-2026"
+        },
+        {
+          "label": "Arc Virtual Cell Atlas code",
+          "url": "https://github.com/ArcInstitute/arc-virtual-cell-atlas"
         }
       ],
       "access": "",
@@ -1706,6 +1729,10 @@
         {
           "label": "scperturb.org",
           "url": "https://scperturb.org"
+        },
+        {
+          "label": "Zenodo (h5ad files)",
+          "url": "https://zenodo.org/records/7041849"
         }
       ],
       "access": "",
@@ -1768,7 +1795,19 @@
       "access": "deepchem.molnet.load_*",
       "license": "",
       "versions": "latest: 2018 (maintained in DeepChem)",
-      "paper_count": null
+      "paper_count": null,
+      "loaders": [
+        {
+          "label": "DeepChem (all MoleculeNet sets)",
+          "docs": "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html",
+          "code": "import deepchem as dc\n\n# one loader per dataset: load_qm9, load_esol (load_delaney), load_freesolv,\n# load_lipo, load_bace_classification, load_bbbp, load_hiv, load_tox21,\n# load_toxcast, load_sider, load_clintox, load_muv, load_pcba, load_pdbbind\ntasks, (train, valid, test), transformers = dc.molnet.load_bbbp(featurizer=\"ECFP\", splitter=\"scaffold\")"
+        },
+        {
+          "label": "PyTorch Geometric",
+          "docs": "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.MoleculeNet.html",
+          "code": "from torch_geometric.datasets import MoleculeNet\n\ndataset = MoleculeNet(root=\"data/MoleculeNet\", name=\"BBBP\")\nprint(dataset)"
+        }
+      ]
     },
     {
       "id": "openadmet-expansionrx-blind-challenge",
@@ -1806,7 +1845,14 @@
       "access": "Dataset asap-discovery/antiviral-potency-2025-unblinded on Polaris",
       "license": "",
       "versions": "latest: unblinded data since November 2025",
-      "paper_count": null
+      "paper_count": null,
+      "loaders": [
+        {
+          "label": "Polaris",
+          "docs": "https://polaris-hub.github.io/polaris/",
+          "code": "import polaris as po   # pip install polaris-lib; polaris login\n\ndataset = po.load_dataset(\"asap-discovery/antiviral-potency-2025-unblinded\")"
+        }
+      ]
     },
     {
       "id": "lit-pcba",
@@ -1820,6 +1866,10 @@
         {
           "label": "drugdesign.unistra.fr/LIT-PCBA",
           "url": "https://drugdesign.unistra.fr/LIT-PCBA/"
+        },
+        {
+          "label": "full_data.tgz",
+          "url": "https://drugdesign.unistra.fr/LIT-PCBA/Files/full_data.tgz"
         }
       ],
       "access": "",
@@ -1844,7 +1894,14 @@
       "access": "",
       "license": "",
       "versions": "latest: v2020 (last free release)",
-      "paper_count": null
+      "paper_count": null,
+      "loaders": [
+        {
+          "label": "DeepChem (PDBbind v2019)",
+          "docs": "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html",
+          "code": "import deepchem as dc\n\n# set_name: \"core\" (the CASF-2016 set), \"refined\" or \"general\"\ntasks, (train, valid, test), transformers = dc.molnet.load_pdbbind(set_name=\"refined\", featurizer=\"ECFP\", splitter=\"random\")"
+        }
+      ]
     },
     {
       "id": "dud-e-and-dekois-2-0",
@@ -1862,6 +1919,10 @@
         {
           "label": "dekois.com",
           "url": "http://www.dekois.com/"
+        },
+        {
+          "label": "DUD-E all targets",
+          "url": "https://dude.docking.org/db/subsets/all/all.tar.gz"
         }
       ],
       "access": "",
@@ -1877,7 +1938,12 @@
       "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
-      "links": [],
+      "links": [
+        {
+          "label": "Kaggle",
+          "url": "https://www.kaggle.com/competitions/leash-BELKA"
+        }
+      ],
       "access": "kaggle.com/competitions/leash-BELKA",
       "license": "",
       "versions": "latest: Kaggle 2024",
@@ -1919,7 +1985,14 @@
       "access": "",
       "license": "",
       "versions": "latest: 2024",
-      "paper_count": null
+      "paper_count": null,
+      "loaders": [
+        {
+          "label": "ATLAS REST API",
+          "docs": "https://www.dsimb.inserm.fr/ATLAS/",
+          "code": "# analyses of one entry (PDB id and chain), returned as a zip\ncurl -L -o 16pk_A_analysis.zip https://www.dsimb.inserm.fr/ATLAS/api/ATLAS/analysis/16pk_A"
+        }
+      ]
     },
     {
       "id": "sabdab-and-oas",
@@ -1942,7 +2015,14 @@
       "access": "",
       "license": "",
       "versions": "latest: SAbDab weekly",
-      "paper_count": null
+      "paper_count": null,
+      "loaders": [
+        {
+          "label": "SAbDab summary file",
+          "docs": "https://opig.stats.ox.ac.uk/webapps/sabdab-sabpred/sabdab",
+          "code": "# every antibody structure in SAbDab, one row per chain pair\ncurl -L -o sabdab_summary_all.tsv https://opig.stats.ox.ac.uk/webapps/sabdab-sabpred/sabdab/summary/all/"
+        }
+      ]
     },
     {
       "id": "biolip2",
@@ -1956,6 +2036,10 @@
         {
           "label": "zhanggroup.org/BioLiP",
           "url": "https://zhanggroup.org/BioLiP/"
+        },
+        {
+          "label": "BioLiP.txt.gz",
+          "url": "https://zhanggroup.org/BioLiP/download/BioLiP.txt.gz"
         }
       ],
       "access": "",
@@ -2009,7 +2093,12 @@
       "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
-      "links": [],
+      "links": [
+        {
+          "label": "DeepSEA training bundle",
+          "url": "https://deepsea.princeton.edu/media/code/deepsea_train_bundle.v0.9.tar.gz"
+        }
+      ],
       "access": "deepsea_train_bundle.v0.9.tar.gz (URL not verified)",
       "license": "",
       "versions": "latest: 2015",
@@ -2046,6 +2135,10 @@
         {
           "label": "arXiv 2604.09554",
           "url": "https://arxiv.org/pdf/2604.09554"
+        },
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/futurehouse/labbench2"
         }
       ],
       "access": "",
@@ -2073,6 +2166,14 @@
         {
           "label": "bioasq.org",
           "url": "http://bioasq.org"
+        },
+        {
+          "label": "PubMedQA",
+          "url": "https://huggingface.co/datasets/qiaojin/PubMedQA"
+        },
+        {
+          "label": "BLURB",
+          "url": "https://huggingface.co/datasets/bigbio/blurb"
         }
       ],
       "access": "",
@@ -2097,7 +2198,14 @@
       "access": "s3://camelyon-dataset",
       "license": "",
       "versions": "",
-      "paper_count": null
+      "paper_count": null,
+      "loaders": [
+        {
+          "label": "AWS Open Data",
+          "docs": "https://registry.opendata.aws/camelyon/",
+          "code": "# no AWS account needed\naws s3 ls --no-sign-request s3://camelyon-dataset/\naws s3 sync --no-sign-request s3://camelyon-dataset/CAMELYON16/ ./CAMELYON16"
+        }
+      ]
     },
     {
       "id": "panda",
@@ -2107,7 +2215,12 @@
       "category": "Paper benchmarks and challenges",
       "stars": null,
       "repo": "",
-      "links": [],
+      "links": [
+        {
+          "label": "Kaggle",
+          "url": "https://www.kaggle.com/competitions/prostate-cancer-grade-assessment"
+        }
+      ],
       "access": "kaggle.com/c/prostate-cancer-grade-assessment",
       "license": "",
       "versions": "latest: Kaggle 2020",
@@ -2125,6 +2238,14 @@
         {
           "label": "sartorius-research.github.io/LIVECell",
           "url": "https://sartorius-research.github.io/LIVECell/"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/sartorius-research/LIVECell"
+        },
+        {
+          "label": "Images (zip)",
+          "url": "http://livecell-dataset.s3.eu-central-1.amazonaws.com/LIVECell_dataset_2021/images.zip"
         }
       ],
       "access": "",
@@ -2144,6 +2265,10 @@
         {
           "label": "rxrx.ai/datasets",
           "url": "https://www.rxrx.ai/datasets"
+        },
+        {
+          "label": "RxRx3-core",
+          "url": "https://huggingface.co/datasets/recursionpharma/rxrx3-core"
         }
       ],
       "access": "Hugging Face: recursionpharma/rxrx3-core",
@@ -2163,6 +2288,14 @@
         {
           "label": "monuseg.grand-challenge.org",
           "url": "https://monuseg.grand-challenge.org"
+        },
+        {
+          "label": "PanNuke",
+          "url": "https://huggingface.co/datasets/RationAI/PanNuke"
+        },
+        {
+          "label": "PanNuke fold 1",
+          "url": "https://warwick.ac.uk/fac/cross_fac/tia/data/pannuke/fold_1.zip"
         }
       ],
       "access": "PanNuke: warwick.ac.uk/fac/cross_fac/tia/data/pannuke",
@@ -2182,7 +2315,14 @@
       "access": "kaggle competitions list -s <term>",
       "license": "",
       "versions": "",
-      "paper_count": null
+      "paper_count": null,
+      "loaders": [
+        {
+          "label": "Kaggle CLI",
+          "docs": "https://github.com/Kaggle/kaggle-api",
+          "code": "pip install kaggle   # API token in ~/.kaggle/kaggle.json\nkaggle competitions list -s protein\nkaggle competitions download -c <competition>"
+        }
+      ]
     },
     {
       "id": "zinc",
@@ -2224,7 +2364,14 @@
       "access": "",
       "license": "CC BY-SA 3.0",
       "versions": "22 and 31 most common; 35 and 36 in 2025–2026 work (latest: 37)",
-      "paper_count": 83
+      "paper_count": 83,
+      "loaders": [
+        {
+          "label": "ChEMBL web services",
+          "docs": "https://github.com/chembl/chembl_webresource_client",
+          "code": "from chembl_webresource_client.new_client import new_client   # pip install chembl_webresource_client\n\nacts = new_client.activity.filter(target_chembl_id=\"CHEMBL203\", standard_type=\"IC50\")\nprint(len(acts))"
+        }
+      ]
     },
     {
       "id": "crossdocked2020",
@@ -2238,6 +2385,10 @@
         {
           "label": "bits.csb.pitt.edu",
           "url": "https://bits.csb.pitt.edu/files/crossdock2020/"
+        },
+        {
+          "label": "CrossDocked2020 v1.3",
+          "url": "https://bits.csb.pitt.edu/files/crossdock2020/CrossDocked2020_v1.3.tgz"
         }
       ],
       "access": "",
@@ -2262,7 +2413,19 @@
       "access": "",
       "license": "CC0",
       "versions": "Subset of GDB-17",
-      "paper_count": 52
+      "paper_count": 52,
+      "loaders": [
+        {
+          "label": "PyTorch Geometric",
+          "docs": "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.QM9.html",
+          "code": "from torch_geometric.datasets import QM9\n\ndataset = QM9(root=\"data/QM9\")\nprint(dataset[0])"
+        },
+        {
+          "label": "DeepChem",
+          "docs": "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html",
+          "code": "import deepchem as dc\n\ntasks, (train, valid, test), transformers = dc.molnet.load_qm9(featurizer=\"ECFP\", splitter=\"scaffold\")"
+        }
+      ]
     },
     {
       "id": "moses-2",
@@ -2338,7 +2501,14 @@
       "access": "",
       "license": "Academic; newer releases are paid",
       "versions": "2020 (28 uses), 2016 (12)",
-      "paper_count": 19
+      "paper_count": 19,
+      "loaders": [
+        {
+          "label": "DeepChem (PDBbind v2019)",
+          "docs": "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html",
+          "code": "import deepchem as dc\n\n# set_name: \"core\" (the CASF-2016 set), \"refined\" or \"general\"\ntasks, (train, valid, test), transformers = dc.molnet.load_pdbbind(set_name=\"refined\", featurizer=\"ECFP\", splitter=\"random\")"
+        }
+      ]
     },
     {
       "id": "pubchem",
@@ -2352,12 +2522,23 @@
         {
           "label": "pubchem.ncbi.nlm.nih.gov",
           "url": "https://pubchem.ncbi.nlm.nih.gov/"
+        },
+        {
+          "label": "Compound SDF folder",
+          "url": "https://ftp.ncbi.nlm.nih.gov/pubchem/Compound/CURRENT-Full/SDF/"
         }
       ],
       "access": "",
       "license": "Public",
       "versions": "Continuous",
-      "paper_count": 19
+      "paper_count": 19,
+      "loaders": [
+        {
+          "label": "PubChem PUG REST",
+          "docs": "https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest",
+          "code": "import requests\n\nbase = \"https://pubchem.ncbi.nlm.nih.gov/rest/pug\"\nprops = requests.get(f\"{base}/compound/cid/2244/property/CanonicalSMILES,MolecularWeight/JSON\", timeout=60).json()\nassay = requests.get(f\"{base}/assay/aid/504652/description/JSON\", timeout=60).json()"
+        }
+      ]
     },
     {
       "id": "enamine-real",
@@ -2428,12 +2609,23 @@
         {
           "label": "bindingdb.org",
           "url": "https://www.bindingdb.org/"
+        },
+        {
+          "label": "BindingDB_All (TSV)",
+          "url": "https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/bind/downloads/BindingDB_All_202501_tsv.zip"
         }
       ],
       "access": "",
       "license": "CC BY 3.0 US",
       "versions": "Monthly",
-      "paper_count": 7
+      "paper_count": 7,
+      "loaders": [
+        {
+          "label": "TDC",
+          "docs": "https://tdcommons.ai/multi_pred_tasks/dti/",
+          "code": "from tdc.multi_pred import DTI   # pip install PyTDC\n\ndata = DTI(name=\"BindingDB_Kd\")\nsplit = data.get_split()"
+        }
+      ]
     },
     {
       "id": "gdb-11-13-17-20",
@@ -2447,6 +2639,10 @@
         {
           "label": "gdb.unibe.ch",
           "url": "https://gdb.unibe.ch/downloads/"
+        },
+        {
+          "label": "Zenodo (GDB databases)",
+          "url": "https://zenodo.org/records/7041051"
         }
       ],
       "access": "",
@@ -2490,7 +2686,14 @@
       "access": "",
       "license": "CC0",
       "versions": "Splits based on snapshot date",
-      "paper_count": 7
+      "paper_count": 7,
+      "loaders": [
+        {
+          "label": "RCSB file download",
+          "docs": "https://www.rcsb.org/docs/programmatic-access/file-download-services",
+          "code": "# one entry\ncurl -O https://files.rcsb.org/download/4HHB.cif.gz\n# the whole archive (mmCIF), kept in sync\nrsync -rlpt -v -z --delete --port=33444 rsync.rcsb.org::ftp_data/structures/divided/mmCIF/ ./mmCIF"
+        }
+      ]
     },
     {
       "id": "tdc",
@@ -2528,7 +2731,14 @@
       "access": "",
       "license": "CC BY-NC 4.0",
       "versions": "5.x",
-      "paper_count": 6
+      "paper_count": 6,
+      "loaders": [
+        {
+          "label": "DrugBank download (free academic account)",
+          "docs": "https://go.drugbank.com/releases/latest",
+          "code": "curl -Lf -o drugbank_all_full_database.xml.zip -u \"$DRUGBANK_EMAIL:$DRUGBANK_PASSWORD\" \\\n  https://go.drugbank.com/releases/latest/downloads/all-full-database"
+        }
+      ]
     },
     {
       "id": "materials-project-mp-20",
@@ -2570,7 +2780,19 @@
       "access": "",
       "license": "MIT",
       "versions": "2018",
-      "paper_count": 6
+      "paper_count": 6,
+      "loaders": [
+        {
+          "label": "DeepChem (all MoleculeNet sets)",
+          "docs": "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html",
+          "code": "import deepchem as dc\n\n# one loader per dataset: load_qm9, load_esol (load_delaney), load_freesolv,\n# load_lipo, load_bace_classification, load_bbbp, load_hiv, load_tox21,\n# load_toxcast, load_sider, load_clintox, load_muv, load_pcba, load_pdbbind\ntasks, (train, valid, test), transformers = dc.molnet.load_bbbp(featurizer=\"ECFP\", splitter=\"scaffold\")"
+        },
+        {
+          "label": "PyTorch Geometric",
+          "docs": "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.MoleculeNet.html",
+          "code": "from torch_geometric.datasets import MoleculeNet\n\ndataset = MoleculeNet(root=\"data/MoleculeNet\", name=\"BBBP\")\nprint(dataset)"
+        }
+      ]
     },
     {
       "id": "pcba",
@@ -2589,7 +2811,19 @@
       "access": "",
       "license": "MIT",
       "versions": "PCBA-128",
-      "paper_count": 6
+      "paper_count": 6,
+      "loaders": [
+        {
+          "label": "PyTorch Geometric",
+          "docs": "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.MoleculeNet.html",
+          "code": "from torch_geometric.datasets import MoleculeNet\n\ndataset = MoleculeNet(root=\"data/MoleculeNet\", name=\"PCBA\")\nprint(dataset)"
+        },
+        {
+          "label": "DeepChem",
+          "docs": "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html",
+          "code": "import deepchem as dc\n\ntasks, (train, valid, test), transformers = dc.molnet.load_pcba(featurizer=\"ECFP\", splitter=\"scaffold\")"
+        }
+      ]
     },
     {
       "id": "uspto",
@@ -2698,12 +2932,23 @@
         {
           "label": "uniprot.org",
           "url": "https://www.uniprot.org/"
+        },
+        {
+          "label": "Swiss-Prot FASTA",
+          "url": "https://ftp.ebi.ac.uk/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz"
         }
       ],
       "access": "",
       "license": "CC BY 4.0",
       "versions": "e.g. 2023_05 (latest: 2026_04)",
-      "paper_count": 5
+      "paper_count": 5,
+      "loaders": [
+        {
+          "label": "UniProt REST",
+          "docs": "https://www.uniprot.org/help/api",
+          "code": "# every reviewed human protein, streamed as FASTA\ncurl -o human_sprot.fasta \"https://rest.uniprot.org/uniprotkb/stream?query=reviewed:true+AND+organism_id:9606&format=fasta\""
+        }
+      ]
     },
     {
       "id": "casf-2016",
@@ -2717,7 +2962,14 @@
       "access": "Available via PDBbind+",
       "license": "Academic",
       "versions": "2007, 2013, 2016",
-      "paper_count": 4
+      "paper_count": 4,
+      "loaders": [
+        {
+          "label": "DeepChem (PDBbind core set = CASF-2016)",
+          "docs": "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html",
+          "code": "import deepchem as dc\n\ntasks, (train, valid, test), transformers = dc.molnet.load_pdbbind(set_name=\"core\", featurizer=\"ECFP\", splitter=\"random\")"
+        }
+      ]
     },
     {
       "id": "dud-e",
@@ -2731,6 +2983,10 @@
         {
           "label": "dude.docking.org",
           "url": "https://dude.docking.org/"
+        },
+        {
+          "label": "DUD-E all targets",
+          "url": "https://dude.docking.org/db/subsets/all/all.tar.gz"
         }
       ],
       "access": "",
@@ -2750,6 +3006,14 @@
         {
           "label": "clue.io/data",
           "url": "https://clue.io/data"
+        },
+        {
+          "label": "GEO GSE92742 (phase I)",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE92742"
+        },
+        {
+          "label": "GEO GSE70138 (phase II)",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE70138"
         }
       ],
       "access": "",
@@ -2769,6 +3033,10 @@
         {
           "label": "drugdesign.unistra.fr",
           "url": "https://drugdesign.unistra.fr/LIT-PCBA/"
+        },
+        {
+          "label": "full_data.tgz",
+          "url": "https://drugdesign.unistra.fr/LIT-PCBA/Files/full_data.tgz"
         }
       ],
       "access": "",
@@ -2854,7 +3122,14 @@
       "access": "",
       "license": "Open (TDC)",
       "versions": "2011",
-      "paper_count": 2
+      "paper_count": 2,
+      "loaders": [
+        {
+          "label": "TDC",
+          "docs": "https://tdcommons.ai/multi_pred_tasks/dti/",
+          "code": "from tdc.multi_pred import DTI   # pip install PyTDC\n\ndata = DTI(name=\"DAVIS\")\nsplit = data.get_split()"
+        }
+      ]
     },
     {
       "id": "dockstring-2",
@@ -2892,7 +3167,14 @@
       "access": "",
       "license": "Open (TDC)",
       "versions": "2014 (filtered version)",
-      "paper_count": 2
+      "paper_count": 2,
+      "loaders": [
+        {
+          "label": "TDC",
+          "docs": "https://tdcommons.ai/multi_pred_tasks/dti/",
+          "code": "from tdc.multi_pred import DTI   # pip install PyTDC\n\ndata = DTI(name=\"KIBA\")\nsplit = data.get_split()"
+        }
+      ]
     },
     {
       "id": "moldata-2",
@@ -2972,7 +3254,14 @@
       "access": "",
       "license": "Academic",
       "versions": "Weekly",
-      "paper_count": 2
+      "paper_count": 2,
+      "loaders": [
+        {
+          "label": "SAbDab summary file",
+          "docs": "https://opig.stats.ox.ac.uk/webapps/sabdab-sabpred/sabdab",
+          "code": "# every antibody structure in SAbDab, one row per chain pair\ncurl -L -o sabdab_summary_all.tsv https://opig.stats.ox.ac.uk/webapps/sabdab-sabpred/sabdab/summary/all/"
+        }
+      ]
     },
     {
       "id": "nist-massbank-gnps",
@@ -2990,6 +3279,10 @@
         {
           "label": "gnps.ucsd.edu",
           "url": "https://gnps.ucsd.edu/"
+        },
+        {
+          "label": "MassBank data",
+          "url": "https://github.com/MassBank/MassBank-data"
         }
       ],
       "access": "",
@@ -3009,6 +3302,10 @@
         {
           "label": "surechembl.org",
           "url": "https://www.surechembl.org/"
+        },
+        {
+          "label": "SureChEMBL FTP",
+          "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/SureChEMBL/"
         }
       ],
       "access": "",
@@ -3070,12 +3367,23 @@
         {
           "label": "alphafold.ebi.ac.uk",
           "url": "https://alphafold.ebi.ac.uk/"
+        },
+        {
+          "label": "AlphaFold FTP",
+          "url": "https://ftp.ebi.ac.uk/pub/databases/alphafold/"
         }
       ],
       "access": "",
       "license": "CC BY 4.0",
       "versions": "v4 (latest: v6)",
-      "paper_count": 1
+      "paper_count": 1,
+      "loaders": [
+        {
+          "label": "AlphaFold DB API",
+          "docs": "https://alphafold.ebi.ac.uk/api-docs",
+          "code": "import requests\n\nentry = requests.get(\"https://alphafold.ebi.ac.uk/api/prediction/P69905\", timeout=60).json()[0]\nprint(entry[\"pdbUrl\"], entry[\"cifUrl\"])\n# bulk: gcloud storage ls gs://public-datasets-deepmind-alphafold-v4/"
+        }
+      ]
     },
     {
       "id": "cath",
@@ -3089,6 +3397,10 @@
         {
           "label": "cathdb.info",
           "url": "https://www.cathdb.info/"
+        },
+        {
+          "label": "Latest release folder",
+          "url": "http://download.cathdb.info/cath/releases/latest-release/"
         }
       ],
       "access": "",
@@ -3108,12 +3420,23 @@
         {
           "label": "cancerrxgene.org",
           "url": "https://www.cancerrxgene.org/"
+        },
+        {
+          "label": "GDSC2 dose response (8.5)",
+          "url": "https://cog.sanger.ac.uk/cancerrxgene/GDSC_release8.5/GDSC2_fitted_dose_response_27Oct23.xlsx"
         }
       ],
       "access": "",
       "license": "CC BY-NC",
       "versions": "GDSC1 / GDSC2",
-      "paper_count": 1
+      "paper_count": 1,
+      "loaders": [
+        {
+          "label": "TDC",
+          "docs": "https://tdcommons.ai/multi_pred_tasks/drugres/",
+          "code": "from tdc.multi_pred import DrugRes   # pip install PyTDC\n\ndata = DrugRes(name=\"GDSC2\")\nsplit = data.get_split()"
+        }
+      ]
     },
     {
       "id": "iza-zeolite",
@@ -3241,6 +3564,10 @@
         {
           "label": "life.bsc.es/pid/skempi2",
           "url": "https://life.bsc.es/pid/skempi2"
+        },
+        {
+          "label": "skempi_v2.csv",
+          "url": "https://life.bsc.es/pid/skempi2/database/download/skempi_v2.csv"
         }
       ],
       "access": "",
@@ -3265,7 +3592,19 @@
       "access": "",
       "license": "Public (NIH)",
       "versions": "Challenge set",
-      "paper_count": 1
+      "paper_count": 1,
+      "loaders": [
+        {
+          "label": "PyTorch Geometric",
+          "docs": "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.MoleculeNet.html",
+          "code": "from torch_geometric.datasets import MoleculeNet\n\ndataset = MoleculeNet(root=\"data/MoleculeNet\", name=\"Tox21\")\nprint(dataset)"
+        },
+        {
+          "label": "DeepChem",
+          "docs": "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html",
+          "code": "import deepchem as dc\n\ntasks, (train, valid, test), transformers = dc.molnet.load_tox21(featurizer=\"ECFP\", splitter=\"scaffold\")"
+        }
+      ]
     },
     {
       "id": "zinc22",
@@ -3589,7 +3928,14 @@
       "access": "Loaders: DGL, Spektral. Introduced 2005",
       "license": "Various",
       "versions": "",
-      "paper_count": 371
+      "paper_count": 371,
+      "loaders": [
+        {
+          "label": "PyTorch Geometric",
+          "docs": "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.TUDataset.html",
+          "code": "from torch_geometric.datasets import TUDataset\n\ndataset = TUDataset(root=\"data/TUDataset\", name=\"PROTEINS\")\nprint(dataset)"
+        }
+      ]
     },
     {
       "id": "pwc-ppi",
@@ -3615,12 +3961,23 @@
         {
           "label": "Spektral loader",
           "url": "https://graphneural.network/datasets/#ppi"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/williamleif/GraphSAGE"
         }
       ],
       "access": "Loaders: Community, DGL, Spektral. Introduced 2017",
       "license": "",
       "versions": "",
-      "paper_count": 309
+      "paper_count": 309,
+      "loaders": [
+        {
+          "label": "PyTorch Geometric",
+          "docs": "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.PPI.html",
+          "code": "from torch_geometric.datasets import PPI\n\ntrain = PPI(root=\"data/PPI\", split=\"train\")\nval = PPI(root=\"data/PPI\", split=\"val\")\ntest = PPI(root=\"data/PPI\", split=\"test\")"
+        }
+      ]
     },
     {
       "id": "pwc-mutag",
@@ -3647,7 +4004,14 @@
       "access": "Loaders: DGL",
       "license": "",
       "versions": "",
-      "paper_count": 274
+      "paper_count": 274,
+      "loaders": [
+        {
+          "label": "PyTorch Geometric",
+          "docs": "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.TUDataset.html",
+          "code": "from torch_geometric.datasets import TUDataset\n\ndataset = TUDataset(root=\"data/TUDataset\", name=\"MUTAG\")\nprint(dataset)"
+        }
+      ]
     },
     {
       "id": "pwc-nci1",
@@ -3678,7 +4042,14 @@
       "access": "Loaders: DGL, Spektral. Introduced 2006",
       "license": "",
       "versions": "NCI-123",
-      "paper_count": 260
+      "paper_count": 260,
+      "loaders": [
+        {
+          "label": "PyTorch Geometric",
+          "docs": "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.TUDataset.html",
+          "code": "from torch_geometric.datasets import TUDataset\n\ndataset = TUDataset(root=\"data/TUDataset\", name=\"NCI1\")\nprint(dataset)"
+        }
+      ]
     },
     {
       "id": "pwc-enzymes",
@@ -3774,7 +4145,14 @@
       "access": "Introduced 2017",
       "license": "",
       "versions": "",
-      "paper_count": 172
+      "paper_count": 172,
+      "loaders": [
+        {
+          "label": "AWS Open Data",
+          "docs": "https://registry.opendata.aws/camelyon/",
+          "code": "# no AWS account needed\naws s3 ls --no-sign-request s3://camelyon-dataset/\naws s3 sync --no-sign-request s3://camelyon-dataset/CAMELYON16/ ./CAMELYON16"
+        }
+      ]
     },
     {
       "id": "pwc-ncbi-disease",
@@ -3833,6 +4211,10 @@
         {
           "label": "Paper",
           "url": "http://bioinformatics.oupjournals.org/cgi/content/abstract/19/suppl_1/i180?etoc"
+        },
+        {
+          "label": "Hugging Face (bigbio)",
+          "url": "https://huggingface.co/datasets/bigbio/genia_term_corpus"
         }
       ],
       "access": "Introduced 2003",
@@ -3856,6 +4238,10 @@
         {
           "label": "Community loader",
           "url": "https://docs.activeloop.ai/datasets/glas-dataset"
+        },
+        {
+          "label": "Warwick-QU (zip)",
+          "url": "https://warwick.ac.uk/fac/cross_fac/tia/data/glascontest/download/warwick_qu_dataset_released_2016_07_08.zip"
         }
       ],
       "access": "Loaders: Community. Introduced 2016",
@@ -3929,6 +4315,10 @@
         {
           "label": "Homepage",
           "url": "https://ir.nist.gov/trec-covid/"
+        },
+        {
+          "label": "Hugging Face (BEIR)",
+          "url": "https://huggingface.co/datasets/BeIR/trec-covid"
         }
       ],
       "access": "Introduced 2020",
@@ -3980,7 +4370,14 @@
       "access": "Introduced 2008",
       "license": "CC BY-SA",
       "versions": "",
-      "paper_count": 67
+      "paper_count": 67,
+      "loaders": [
+        {
+          "label": "PyTorch Geometric",
+          "docs": "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.TUDataset.html",
+          "code": "from torch_geometric.datasets import TUDataset\n\ndataset = TUDataset(root=\"data/TUDataset\", name=\"AIDS\")\nprint(dataset)"
+        }
+      ]
     },
     {
       "id": "pwc-pannuke",
@@ -4092,7 +4489,12 @@
       "category": "Molecules and chemistry",
       "stars": null,
       "repo": "https://github.com/cnedwards/text2mol/tree/master/data",
-      "links": [],
+      "links": [
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/cnedwards/text2mol"
+        }
+      ],
       "access": "Introduced 2021",
       "license": "",
       "versions": "",
@@ -4110,6 +4512,10 @@
         {
           "label": "Homepage",
           "url": "https://microsoft.github.io/BLURB/index.html"
+        },
+        {
+          "label": "Hugging Face (bigbio)",
+          "url": "https://huggingface.co/datasets/bigbio/blurb"
         }
       ],
       "access": "Introduced 2020",
@@ -4152,6 +4558,10 @@
         {
           "label": "Homepage",
           "url": "https://s-baker.net/resource/hoc/"
+        },
+        {
+          "label": "Hugging Face (bigbio)",
+          "url": "https://huggingface.co/datasets/bigbio/hallmarks_of_cancer"
         }
       ],
       "access": "Introduced 2015",
@@ -4175,12 +4585,23 @@
         {
           "label": "Paper",
           "url": "https://doi.org/10.1093/nar/gku1003"
+        },
+        {
+          "label": "Protein links v12.0",
+          "url": "https://stringdb-downloads.org/download/protein.links.v12.0.txt.gz"
         }
       ],
       "access": "Introduced 2015",
       "license": "CC BY 4.0",
       "versions": "",
-      "paper_count": 35
+      "paper_count": 35,
+      "loaders": [
+        {
+          "label": "STRING API",
+          "docs": "https://string-db.org/help/api/",
+          "code": "curl \"https://string-db.org/api/tsv/network?identifiers=TP53%0dMDM2&species=9606\""
+        }
+      ]
     },
     {
       "id": "pwc-biogrid",
@@ -4198,6 +4619,10 @@
         {
           "label": "Paper",
           "url": "https://doi.org/10.1093/nar/gkj109"
+        },
+        {
+          "label": "BioGRID latest (tab3)",
+          "url": "https://downloads.thebiogrid.org/Download/BioGRID/Latest-Release/BIOGRID-ALL-LATEST.tab3.zip"
         }
       ],
       "access": "Introduced 2006",
@@ -4217,6 +4642,14 @@
         {
           "label": "Homepage",
           "url": "http://snap.stanford.edu/decagon/"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/mims-harvard/decagon"
+        },
+        {
+          "label": "Drug combinations",
+          "url": "http://snap.stanford.edu/decagon/bio-decagon-combo.tar.gz"
         }
       ],
       "access": "Introduced 2018",
@@ -4320,6 +4753,10 @@
         {
           "label": "Homepage",
           "url": "https://academic.oup.com/bib/advance-article/doi/10.1093/bib/bbac282/6645993"
+        },
+        {
+          "label": "Hugging Face (bigbio)",
+          "url": "https://huggingface.co/datasets/bigbio/biored"
         }
       ],
       "access": "Introduced 2022",
@@ -4344,7 +4781,19 @@
       "access": "Introduced 2022",
       "license": "",
       "versions": "ESOL",
-      "paper_count": 25
+      "paper_count": 25,
+      "loaders": [
+        {
+          "label": "PyTorch Geometric",
+          "docs": "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.MoleculeNet.html",
+          "code": "from torch_geometric.datasets import MoleculeNet\n\ndataset = MoleculeNet(root=\"data/MoleculeNet\", name=\"ESOL\")\nprint(dataset)"
+        },
+        {
+          "label": "DeepChem",
+          "docs": "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html",
+          "code": "import deepchem as dc\n\ntasks, (train, valid, test), transformers = dc.molnet.load_delaney(featurizer=\"ECFP\", splitter=\"scaffold\")"
+        }
+      ]
     },
     {
       "id": "pwc-elife",
@@ -4386,12 +4835,23 @@
         {
           "label": "Homepage",
           "url": "http://quantum-machine.org/datasets/"
+        },
+        {
+          "label": "qm7.mat",
+          "url": "http://quantum-machine.org/data/qm7.mat"
         }
       ],
       "access": "Introduced 2020",
       "license": "",
       "versions": "",
-      "paper_count": 24
+      "paper_count": 24,
+      "loaders": [
+        {
+          "label": "DeepChem",
+          "docs": "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html",
+          "code": "import deepchem as dc\n\ntasks, (train, valid, test), transformers = dc.molnet.load_qm7(featurizer=\"ECFP\", splitter=\"scaffold\")"
+        }
+      ]
     },
     {
       "id": "pwc-atom3d",
@@ -4405,12 +4865,23 @@
         {
           "label": "Homepage",
           "url": "https://www.atom3d.ai/"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/drorlab/atom3d"
         }
       ],
       "access": "Introduced 2020",
       "license": "",
       "versions": "",
-      "paper_count": 23
+      "paper_count": 23,
+      "loaders": [
+        {
+          "label": "atom3d",
+          "docs": "https://atom3d.readthedocs.io/en/latest/",
+          "code": "import atom3d.datasets as da   # pip install atom3d\n\n# tasks: smp, pip, res, msp, lba, lep, psr, rsr\nda.download_dataset(\"lba\", \"data/lba\")\ndataset = da.load_dataset(\"data/lba/raw/pdbbind_2019-refined-set/data\", \"lmdb\")"
+        }
+      ]
     },
     {
       "id": "pwc-digestpath",
@@ -4452,7 +4923,14 @@
       "access": "",
       "license": "",
       "versions": "",
-      "paper_count": 23
+      "paper_count": 23,
+      "loaders": [
+        {
+          "label": "GDC API",
+          "docs": "https://docs.gdc.cancer.gov/API/Users_Guide/Getting_Started/",
+          "code": "import requests, json\n\nfilters = {\"op\": \"and\", \"content\": [\n  {\"op\": \"in\", \"content\": {\"field\": \"cases.project.project_id\", \"value\": [\"TCGA-BRCA\"]}},\n  {\"op\": \"in\", \"content\": {\"field\": \"data_type\", \"value\": [\"Gene Expression Quantification\"]}},\n  {\"op\": \"in\", \"content\": {\"field\": \"access\", \"value\": [\"open\"]}}]}\nr = requests.get(\"https://api.gdc.cancer.gov/files\", params={\"filters\": json.dumps(filters), \"fields\": \"file_id,file_name\", \"size\": \"2000\"}, timeout=60).json()\nids = [h[\"file_id\"] for h in r[\"data\"][\"hits\"]]\n# then: gdc-client download <id> ...  or POST ids to https://api.gdc.cancer.gov/data"
+        }
+      ]
     },
     {
       "id": "pwc-bace-secretase-enzyme",
@@ -4471,7 +4949,19 @@
       "access": "",
       "license": "",
       "versions": "BACE",
-      "paper_count": 22
+      "paper_count": 22,
+      "loaders": [
+        {
+          "label": "PyTorch Geometric",
+          "docs": "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.MoleculeNet.html",
+          "code": "from torch_geometric.datasets import MoleculeNet\n\ndataset = MoleculeNet(root=\"data/MoleculeNet\", name=\"BACE\")\nprint(dataset)"
+        },
+        {
+          "label": "DeepChem",
+          "docs": "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html",
+          "code": "import deepchem as dc\n\ntasks, (train, valid, test), transformers = dc.molnet.load_bace_classification(featurizer=\"ECFP\", splitter=\"scaffold\")"
+        }
+      ]
     },
     {
       "id": "pwc-cometa",
@@ -4513,6 +5003,10 @@
         {
           "label": "Homepage",
           "url": "https://data.mendeley.com/datasets/9xxm58dvs3/1"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/cvblab/gleason_grading_cmpb"
         }
       ],
       "access": "Introduced 2021",
@@ -4551,7 +5045,19 @@
       "access": "",
       "license": "",
       "versions": "HIV dataset, HIV",
-      "paper_count": 20
+      "paper_count": 20,
+      "loaders": [
+        {
+          "label": "PyTorch Geometric",
+          "docs": "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.MoleculeNet.html",
+          "code": "from torch_geometric.datasets import MoleculeNet\n\ndataset = MoleculeNet(root=\"data/MoleculeNet\", name=\"HIV\")\nprint(dataset)"
+        },
+        {
+          "label": "DeepChem",
+          "docs": "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html",
+          "code": "import deepchem as dc\n\ntasks, (train, valid, test), transformers = dc.molnet.load_hiv(featurizer=\"ECFP\", splitter=\"scaffold\")"
+        }
+      ]
     },
     {
       "id": "pwc-jnlpba",
@@ -4653,7 +5159,19 @@
       "access": "",
       "license": "",
       "versions": "",
-      "paper_count": 19
+      "paper_count": 19,
+      "loaders": [
+        {
+          "label": "PyTorch Geometric",
+          "docs": "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.MoleculeNet.html",
+          "code": "from torch_geometric.datasets import MoleculeNet\n\ndataset = MoleculeNet(root=\"data/MoleculeNet\", name=\"ClinTox\")\nprint(dataset)"
+        },
+        {
+          "label": "DeepChem",
+          "docs": "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html",
+          "code": "import deepchem as dc\n\ntasks, (train, valid, test), transformers = dc.molnet.load_clintox(featurizer=\"ECFP\", splitter=\"scaffold\")"
+        }
+      ]
     },
     {
       "id": "pwc-sider",
@@ -4667,12 +5185,28 @@
         {
           "label": "Homepage",
           "url": "http://sideeffects.embl.de/"
+        },
+        {
+          "label": "Side effects (MedDRA)",
+          "url": "http://sideeffects.embl.de/media/download/meddra_all_se.tsv.gz"
         }
       ],
       "access": "",
       "license": "",
       "versions": "",
-      "paper_count": 19
+      "paper_count": 19,
+      "loaders": [
+        {
+          "label": "PyTorch Geometric",
+          "docs": "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.MoleculeNet.html",
+          "code": "from torch_geometric.datasets import MoleculeNet\n\ndataset = MoleculeNet(root=\"data/MoleculeNet\", name=\"SIDER\")\nprint(dataset)"
+        },
+        {
+          "label": "DeepChem",
+          "docs": "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html",
+          "code": "import deepchem as dc\n\ntasks, (train, valid, test), transformers = dc.molnet.load_sider(featurizer=\"ECFP\", splitter=\"scaffold\")"
+        }
+      ]
     },
     {
       "id": "pwc-umls",
@@ -4695,7 +5229,14 @@
       "access": "Loaders: Community. Introduced 2013",
       "license": "",
       "versions": "",
-      "paper_count": 19
+      "paper_count": 19,
+      "loaders": [
+        {
+          "label": "PyKEEN",
+          "docs": "https://pykeen.readthedocs.io/en/stable/api/pykeen.datasets.UMLS.html",
+          "code": "from pykeen.datasets import UMLS   # pip install pykeen\n\ndataset = UMLS()\nprint(dataset.training.num_triples)"
+        }
+      ]
     },
     {
       "id": "pwc-yeast",
@@ -4761,7 +5302,12 @@
       "category": "Molecules and chemistry",
       "stars": null,
       "repo": "https://github.com/divelab/MoleculeX/tree/molx/Molecule3D",
-      "links": [],
+      "links": [
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/divelab/MoleculeX"
+        }
+      ],
       "access": "Introduced 2021",
       "license": "",
       "versions": "Molecule3D val, Molecule3D test",
@@ -4802,12 +5348,23 @@
         {
           "label": "Homepage",
           "url": "https://ogb.stanford.edu/docs/lsc/pcqm4mv2/"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/snap-stanford/ogb"
         }
       ],
       "access": "Introduced 2021",
       "license": "CC BY 4.0",
       "versions": "",
-      "paper_count": 17
+      "paper_count": 17,
+      "loaders": [
+        {
+          "label": "OGB",
+          "docs": "https://ogb.stanford.edu/docs/lsc/pcqm4mv2/",
+          "code": "from ogb.lsc import PCQM4Mv2Dataset   # pip install ogb rdkit\n\ndataset = PCQM4Mv2Dataset(root=\"data\", only_smiles=True)\nsplit = dataset.get_idx_split()"
+        }
+      ]
     },
     {
       "id": "pwc-quilt-1m",
@@ -4845,7 +5402,14 @@
       "access": "Introduced 2022",
       "license": "",
       "versions": "",
-      "paper_count": 17
+      "paper_count": 17,
+      "loaders": [
+        {
+          "label": "Causal Discovery Toolbox",
+          "docs": "https://fentechsolutions.github.io/CausalDiscoveryToolbox/html/data.html",
+          "code": "from cdt.data import load_dataset   # pip install cdt\n\ndata, graph = load_dataset(\"sachs\")"
+        }
+      ]
     },
     {
       "id": "pwc-chemprot",
@@ -4859,6 +5423,10 @@
         {
           "label": "Homepage",
           "url": "https://biocreative.bioinformatics.udel.edu/news/corpora/chemprot-corpus-biocreative-vi/"
+        },
+        {
+          "label": "Hugging Face (bigbio)",
+          "url": "https://huggingface.co/datasets/bigbio/chemprot"
         }
       ],
       "access": "",
@@ -4897,7 +5465,19 @@
       "access": "",
       "license": "",
       "versions": "ToxCast",
-      "paper_count": 15
+      "paper_count": 15,
+      "loaders": [
+        {
+          "label": "PyTorch Geometric",
+          "docs": "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.MoleculeNet.html",
+          "code": "from torch_geometric.datasets import MoleculeNet\n\ndataset = MoleculeNet(root=\"data/MoleculeNet\", name=\"ToxCast\")\nprint(dataset)"
+        },
+        {
+          "label": "DeepChem",
+          "docs": "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html",
+          "code": "import deepchem as dc\n\ntasks, (train, valid, test), transformers = dc.molnet.load_toxcast(featurizer=\"ECFP\", splitter=\"scaffold\")"
+        }
+      ]
     },
     {
       "id": "pwc-adverse-drug-events-ade-corpus",
@@ -4911,6 +5491,10 @@
         {
           "label": "Homepage",
           "url": "https://pubmed.ncbi.nlm.nih.gov/22554702/"
+        },
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/ade-benchmark-corpus/ade_corpus_v2"
         }
       ],
       "access": "Introduced 2012",
@@ -4976,7 +5560,14 @@
       "access": "",
       "license": "",
       "versions": "",
-      "paper_count": 13
+      "paper_count": 13,
+      "loaders": [
+        {
+          "label": "Hugging Face datasets",
+          "docs": "https://huggingface.co/datasets/bigbio/blurb",
+          "code": "from datasets import load_dataset\n\nds = load_dataset(\"bigbio/blurb\", \"bc2gm\")"
+        }
+      ]
     },
     {
       "id": "pwc-biomrc",
@@ -5032,7 +5623,14 @@
       "access": "",
       "license": "",
       "versions": "",
-      "paper_count": 13
+      "paper_count": 13,
+      "loaders": [
+        {
+          "label": "PyTorch Geometric",
+          "docs": "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.TUDataset.html",
+          "code": "from torch_geometric.datasets import TUDataset\n\ndataset = TUDataset(root=\"data/TUDataset\", name=\"Mutagenicity\")\nprint(dataset)"
+        }
+      ]
     },
     {
       "id": "pwc-cdr",
@@ -5046,6 +5644,10 @@
         {
           "label": "Homepage",
           "url": "https://biocreative.bioinformatics.udel.edu/tasks/biocreative-v/track-3-cdr/"
+        },
+        {
+          "label": "Hugging Face (bigbio)",
+          "url": "https://huggingface.co/datasets/bigbio/bc5cdr"
         }
       ],
       "access": "Introduced 2016",
@@ -5079,7 +5681,19 @@
       "access": "",
       "license": "",
       "versions": "",
-      "paper_count": 12
+      "paper_count": 12,
+      "loaders": [
+        {
+          "label": "PyTorch Geometric",
+          "docs": "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.MoleculeNet.html",
+          "code": "from torch_geometric.datasets import MoleculeNet\n\ndataset = MoleculeNet(root=\"data/MoleculeNet\", name=\"MUV\")\nprint(dataset)"
+        },
+        {
+          "label": "DeepChem",
+          "docs": "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html",
+          "code": "import deepchem as dc\n\ntasks, (train, valid, test), transformers = dc.molnet.load_muv(featurizer=\"ECFP\", splitter=\"scaffold\")"
+        }
+      ]
     },
     {
       "id": "pwc-bcnb",
@@ -5163,7 +5777,14 @@
       "access": "",
       "license": "",
       "versions": "",
-      "paper_count": 11
+      "paper_count": 11,
+      "loaders": [
+        {
+          "label": "NCBI Datasets CLI",
+          "docs": "https://www.ncbi.nlm.nih.gov/datasets/docs/v2/",
+          "code": "datasets download genome taxon human --reference --include genome,gtf --filename human.zip\nunzip human.zip"
+        }
+      ]
     },
     {
       "id": "pwc-gda",
@@ -5205,7 +5826,14 @@
       "access": "Introduced 1996",
       "license": "",
       "versions": "",
-      "paper_count": 9
+      "paper_count": 9,
+      "loaders": [
+        {
+          "label": "UCI ucimlrepo",
+          "docs": "https://github.com/uci-ml-repo/ucimlrepo",
+          "code": "from ucimlrepo import fetch_ucirepo   # pip install ucimlrepo\n\nds = fetch_ucirepo(id=39)\nX, y = ds.data.features, ds.data.targets"
+        }
+      ]
     },
     {
       "id": "pwc-bb",
@@ -5219,6 +5847,10 @@
         {
           "label": "Homepage",
           "url": "https://sites.google.com/view/bb-2019/home"
+        },
+        {
+          "label": "Hugging Face (bigbio)",
+          "url": "https://huggingface.co/datasets/bigbio/bionlp_st_2019_bb"
         }
       ],
       "access": "Introduced 2019",
@@ -5317,6 +5949,10 @@
         {
           "label": "Homepage",
           "url": "https://ieee-dataport.org/open-access/unitopatho"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/EIDOSlab/UNITOPATHO"
         }
       ],
       "access": "Introduced 2021",
@@ -5407,6 +6043,10 @@
         {
           "label": "Homepage",
           "url": "https://zenodo.org/records/8278563"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/maabuu/posebusters"
         }
       ],
       "access": "Introduced 2023",
@@ -5422,11 +6062,23 @@
       "category": "Molecules and chemistry",
       "stars": null,
       "repo": "",
-      "links": [],
+      "links": [
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/binghong-ml/retro_star"
+        }
+      ],
       "access": "Introduced 2020",
       "license": "",
       "versions": "",
-      "paper_count": 7
+      "paper_count": 7,
+      "loaders": [
+        {
+          "label": "TDC",
+          "docs": "https://tdcommons.ai/generation_tasks/retrosyn/",
+          "code": "from tdc.generation import RetroSyn   # pip install PyTDC\n\ndata = RetroSyn(name=\"USPTO-50K\")\nsplit = data.get_split()"
+        }
+      ]
     },
     {
       "id": "pwc-bc4chemd",
@@ -5468,7 +6120,14 @@
       "access": "",
       "license": "",
       "versions": "",
-      "paper_count": 6
+      "paper_count": 6,
+      "loaders": [
+        {
+          "label": "TDC",
+          "docs": "https://tdcommons.ai/multi_pred_tasks/dti/",
+          "code": "from tdc.multi_pred import DTI   # pip install PyTDC\n\ndata = DTI(name=\"DAVIS\")\nsplit = data.get_split()"
+        }
+      ]
     },
     {
       "id": "pwc-malaria-dataset",
@@ -5491,7 +6150,14 @@
       "access": "Loaders: TensorFlow Datasets",
       "license": "",
       "versions": "",
-      "paper_count": 6
+      "paper_count": 6,
+      "loaders": [
+        {
+          "label": "TensorFlow Datasets",
+          "docs": "https://www.tensorflow.org/datasets/catalog/malaria",
+          "code": "import tensorflow_datasets as tfds\n\nds = tfds.load(\"malaria\", split=\"train\", as_supervised=True)"
+        }
+      ]
     },
     {
       "id": "pwc-pgr",
@@ -5519,6 +6185,10 @@
         {
           "label": "Homepage",
           "url": "https://osf.io/rnpmf/"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/attal-kush/PLABA"
         }
       ],
       "access": "Introduced 2022",
@@ -5543,7 +6213,14 @@
       "access": "",
       "license": "",
       "versions": "",
-      "paper_count": 6
+      "paper_count": 6,
+      "loaders": [
+        {
+          "label": "DeepChem",
+          "docs": "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html",
+          "code": "import deepchem as dc\n\ntasks, (train, valid, test), transformers = dc.molnet.load_qm8(featurizer=\"ECFP\", splitter=\"scaffold\")"
+        }
+      ]
     },
     {
       "id": "pwc-rxrx1",
@@ -5608,6 +6285,10 @@
         {
           "label": "Homepage",
           "url": "https://sites.google.com/view/bb-2019/home"
+        },
+        {
+          "label": "Hugging Face (bigbio)",
+          "url": "https://huggingface.co/datasets/bigbio/bionlp_st_2019_bb"
         }
       ],
       "access": "Introduced 2019",
@@ -5627,6 +6308,10 @@
         {
           "label": "Homepage",
           "url": "https://sites.google.com/view/bb-2019/home"
+        },
+        {
+          "label": "Hugging Face (bigbio)",
+          "url": "https://huggingface.co/datasets/bigbio/bionlp_st_2019_bb"
         }
       ],
       "access": "Introduced 2019",
@@ -5646,6 +6331,10 @@
         {
           "label": "Homepage",
           "url": "https://stonybrooknlp.github.io/BioNLI/"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/StonyBrookNLP/BioNLI"
         }
       ],
       "access": "Introduced 2022",
@@ -5725,6 +6414,10 @@
         {
           "label": "Homepage",
           "url": "https://connectomics-bazaar.github.io/proj/nucMM/index.html"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/zudi-lin/pytorch_connectomics"
         }
       ],
       "access": "Introduced 2021",
@@ -5763,6 +6456,10 @@
         {
           "label": "Homepage",
           "url": "https://data.gesis.org/somesci/"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/dave-s477/somesci_code"
         }
       ],
       "access": "Introduced 2021",
@@ -5782,6 +6479,10 @@
         {
           "label": "Homepage",
           "url": "https://species.jensenlab.org/"
+        },
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/spyysalo/species_800"
         }
       ],
       "access": "",
@@ -5806,7 +6507,14 @@
       "access": "",
       "license": "",
       "versions": "",
-      "paper_count": 5
+      "paper_count": 5,
+      "loaders": [
+        {
+          "label": "UCI ucimlrepo",
+          "docs": "https://github.com/uci-ml-repo/ucimlrepo",
+          "code": "from ucimlrepo import fetch_ucirepo   # pip install ucimlrepo\n\nds = fetch_ucirepo(id=17)\nX, y = ds.data.features, ds.data.targets"
+        }
+      ]
     },
     {
       "id": "pwc-bach",
@@ -5903,6 +6611,10 @@
         {
           "label": "Homepage",
           "url": "https://ai-econsilio.diag.pl/"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/michalkoziarski/DiagSet"
         }
       ],
       "access": "Introduced 2021",
@@ -5922,6 +6634,10 @@
         {
           "label": "Homepage",
           "url": "https://zenodo.org/records/10809442"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/neelkanwal/equipping-computational-pathology-systems-with-artifact-processing-pipeline"
         }
       ],
       "access": "Introduced 2024",
@@ -6002,6 +6718,10 @@
         {
           "label": "Homepage",
           "url": "https://data.broadinstitute.org/bbbc/BBBC039"
+        },
+        {
+          "label": "Images (zip)",
+          "url": "https://data.broadinstitute.org/bbbc/BBBC039/images.zip"
         }
       ],
       "access": "",
@@ -6040,6 +6760,10 @@
         {
           "label": "Homepage",
           "url": "https://doi.org/10.5281/zenodo.7931445"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/genentech/cremp"
         }
       ],
       "access": "Introduced 2023",
@@ -6078,6 +6802,10 @@
         {
           "label": "Homepage",
           "url": "https://ai2-web.apps.allenai.org/data/dcd"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/allenai/drug-combo-extraction"
         }
       ],
       "access": "Introduced 2022",
@@ -6097,6 +6825,10 @@
         {
           "label": "Homepage",
           "url": "http://celltrackingchallenge.net/2d-datasets/"
+        },
+        {
+          "label": "Training set (zip)",
+          "url": "http://data.celltrackingchallenge.net/training-datasets/Fluo-N2DH-GOWT1.zip"
         }
       ],
       "access": "",
@@ -6116,6 +6848,10 @@
         {
           "label": "Homepage",
           "url": "http://celltrackingchallenge.net/2d-datasets/"
+        },
+        {
+          "label": "Training set (zip)",
+          "url": "http://data.celltrackingchallenge.net/training-datasets/Fluo-N2DL-HeLa.zip"
         }
       ],
       "access": "",
@@ -6158,6 +6894,10 @@
         {
           "label": "Homepage",
           "url": "https://www.proteinatlas.org/about/assays+annotation"
+        },
+        {
+          "label": "proteinatlas.tsv.zip",
+          "url": "https://www.proteinatlas.org/download/proteinatlas.tsv.zip"
         }
       ],
       "access": "",
@@ -6285,6 +7025,10 @@
         {
           "label": "Homepage",
           "url": "https://rgai.inf.u-szeged.hu/node/105"
+        },
+        {
+          "label": "Hugging Face (bigbio)",
+          "url": "https://huggingface.co/datasets/bigbio/bioscope"
         }
       ],
       "access": "",
@@ -6304,6 +7048,10 @@
         {
           "label": "Homepage",
           "url": "https://quaerofrenchmed.limsi.fr/"
+        },
+        {
+          "label": "Hugging Face (bigbio)",
+          "url": "https://huggingface.co/datasets/bigbio/quaero"
         }
       ],
       "access": "Introduced 2014",
@@ -6357,7 +7105,12 @@
       "category": "Molecules and chemistry",
       "stars": null,
       "repo": "",
-      "links": [],
+      "links": [
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/j-adamczyk/apis_tox_dataset"
+        }
+      ],
       "access": "Introduced 2024",
       "license": "CC-BY-NC",
       "versions": "",
@@ -6403,6 +7156,10 @@
         {
           "label": "Homepage",
           "url": "https://biocreative.bioinformatics.udel.edu/tasks/biocreative-vii/track-2/"
+        },
+        {
+          "label": "Hugging Face (bigbio)",
+          "url": "https://huggingface.co/datasets/bigbio/nlmchem"
         }
       ],
       "access": "Introduced 2021",
@@ -6427,7 +7184,14 @@
       "access": "",
       "license": "",
       "versions": "",
-      "paper_count": 2
+      "paper_count": 2,
+      "loaders": [
+        {
+          "label": "GDC API",
+          "docs": "https://docs.gdc.cancer.gov/API/Users_Guide/Getting_Started/",
+          "code": "import requests, json\n\nfilters = {\"op\": \"and\", \"content\": [\n  {\"op\": \"in\", \"content\": {\"field\": \"cases.project.project_id\", \"value\": [\"TCGA-BRCA\"]}},\n  {\"op\": \"in\", \"content\": {\"field\": \"data_type\", \"value\": [\"Gene Expression Quantification\"]}},\n  {\"op\": \"in\", \"content\": {\"field\": \"access\", \"value\": [\"open\"]}}]}\nr = requests.get(\"https://api.gdc.cancer.gov/files\", params={\"filters\": json.dumps(filters), \"fields\": \"file_id,file_name\", \"size\": \"2000\"}, timeout=60).json()\nids = [h[\"file_id\"] for h in r[\"data\"][\"hits\"]]\n# then: gdc-client download <id> ...  or POST ids to https://api.gdc.cancer.gov/data"
+        }
+      ]
     },
     {
       "id": "pwc-brightfield-vs-fluorescent-staining-dataset",
@@ -6616,6 +7380,10 @@
         {
           "label": "Homepage",
           "url": "https://www.epfl.ch/labs/cvlab/data/data-em/"
+        },
+        {
+          "label": "Training volume (tif)",
+          "url": "https://documents.epfl.ch/groups/c/cv/cvlab-unit/www/data/%20ElectronMicroscopy_Hippocampus/training.tif"
         }
       ],
       "access": "",
@@ -6649,6 +7417,10 @@
         {
           "label": "Homepage",
           "url": "https://edmond.mpdl.mpg.de/dataset.xhtml;jsessionid=294bca02ef53cdc35118d0470ef7?persistentId=doi%3A10.17617%2F3.AJBV1S&version=&q=&fileTypeGroupFacet=&fileAccess=&fileSortField=type"
+        },
+        {
+          "label": "Edmond (Dataverse)",
+          "url": "https://edmond.mpdl.mpg.de/dataset.xhtml?persistentId=doi:10.17617/3.AJBV1S"
         }
       ],
       "access": "",
@@ -6744,7 +7516,14 @@
       "access": "Introduced 2021",
       "license": "",
       "versions": "",
-      "paper_count": 2
+      "paper_count": 2,
+      "loaders": [
+        {
+          "label": "Google Cloud Storage",
+          "docs": "https://h01-release.storage.googleapis.com/landing.html",
+          "code": "# public bucket, no account needed\ngcloud storage ls gs://h01-release/\n# volumes can also be read in Python with CloudVolume (pip install cloud-volume)"
+        }
+      ]
     },
     {
       "id": "pwc-imdrug",
@@ -6974,6 +7753,10 @@
         {
           "label": "Homepage",
           "url": "https://drive.google.com/drive/folders/1Oh7onawKsDW5ScamVO5ByXFgqdYJ39sK?usp=drive_link"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/enigmanx20/patchtcga"
         }
       ],
       "access": "Introduced 2023",
@@ -6993,6 +7776,10 @@
         {
           "label": "Homepage",
           "url": "http://celltrackingchallenge.net/2d-datasets/"
+        },
+        {
+          "label": "Training set (zip)",
+          "url": "http://data.celltrackingchallenge.net/training-datasets/PhC-C2DH-U373.zip"
         }
       ],
       "access": "",
@@ -7059,6 +7846,10 @@
         {
           "label": "Homepage",
           "url": "https://drive.google.com/drive/folders/1zg_C37B_1HR6miRFuTwPKmueaJzvO-GD?usp=drive_link"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/enigmanx20/patchtcga"
         }
       ],
       "access": "Introduced 2023",
@@ -7158,6 +7949,10 @@
         {
           "label": "Homepage",
           "url": "https://tabula-sapiens-portal.ds.czbiohub.org/"
+        },
+        {
+          "label": "Zenodo (scvi-tools data zoo)",
+          "url": "https://zenodo.org/records/6640402"
         }
       ],
       "access": "",
@@ -7177,6 +7972,10 @@
         {
           "label": "Homepage",
           "url": "https://phenixace.github.io/tomgbench/"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/phenixace/tomg-bench"
         }
       ],
       "access": "Introduced 2024",
@@ -7248,6 +8047,10 @@
         {
           "label": "Homepage",
           "url": "https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=70226184"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/nadeemlab/deepliif"
         }
       ],
       "access": "Introduced 2023",
@@ -7276,7 +8079,14 @@
       "access": "Introduced 2008",
       "license": "",
       "versions": "",
-      "paper_count": 1
+      "paper_count": 1,
+      "loaders": [
+        {
+          "label": "PyTorch Geometric",
+          "docs": "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.TUDataset.html",
+          "code": "from torch_geometric.datasets import TUDataset\n\ndataset = TUDataset(root=\"data/TUDataset\", name=\"AIDS\")\nprint(dataset)"
+        }
+      ]
     },
     {
       "id": "pwc-antibody-watch",
@@ -7290,6 +8100,10 @@
         {
           "label": "Homepage",
           "url": "https://doi.org/10.5281/zenodo.3701931"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/SciCrunch/Antibody-Watch"
         }
       ],
       "access": "Introduced 2020",
@@ -7342,6 +8156,10 @@
         {
           "label": "Homepage",
           "url": "https://zenodo.org/records/11495514"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/biochunan/asep-dataset"
         }
       ],
       "access": "Introduced 2024",
@@ -7394,12 +8212,23 @@
         {
           "label": "Homepage",
           "url": "https://data.broadinstitute.org/bbbc/BBBC005"
+        },
+        {
+          "label": "Images (zip)",
+          "url": "https://data.broadinstitute.org/bbbc/BBBC005/BBBC005_v1_images.zip"
         }
       ],
       "access": "",
       "license": "CC0 1.0",
       "versions": "",
-      "paper_count": 1
+      "paper_count": 1,
+      "loaders": [
+        {
+          "label": "DeepChem",
+          "docs": "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html",
+          "code": "import deepchem as dc\n\ntasks, (train, valid, test), transformers = dc.molnet.load_bbbc005(featurizer=\"ECFP\", splitter=\"scaffold\")"
+        }
+      ]
     },
     {
       "id": "pwc-bbbc041",
@@ -7413,6 +8242,10 @@
         {
           "label": "Homepage",
           "url": "https://bbbc.broadinstitute.org/BBBC041"
+        },
+        {
+          "label": "Images (zip)",
+          "url": "https://data.broadinstitute.org/bbbc/BBBC041/malaria.zip"
         }
       ],
       "access": "Introduced 2012",
@@ -7451,6 +8284,10 @@
         {
           "label": "Homepage",
           "url": "https://zenodo.org/record/5196178"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/bayer-science-for-a-better-life/data2text-bioleaflets"
         }
       ],
       "access": "Introduced 2021",
@@ -7475,7 +8312,14 @@
       "access": "",
       "license": "",
       "versions": "",
-      "paper_count": 1
+      "paper_count": 1,
+      "loaders": [
+        {
+          "label": "Bioconductor",
+          "docs": "https://www.bioconductor.org/packages/release/data/experiment/html/bladderbatch.html",
+          "code": "BiocManager::install(\"bladderbatch\")\nlibrary(bladderbatch)\ndata(bladderdata)\nexprs(bladderEset)[1:5, 1:5]"
+        }
+      ]
     },
     {
       "id": "pwc-blood-cell-detection-dataset",
@@ -7503,6 +8347,10 @@
         {
           "label": "Homepage",
           "url": "https://data.mendeley.com/datasets/m3jxgb54c9/4"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/jiangdat/COMI"
         }
       ],
       "access": "Introduced 2022",
@@ -7541,6 +8389,10 @@
         {
           "label": "Homepage",
           "url": "https://www.predictioncenter.org/casp13/"
+        },
+        {
+          "label": "CASP13 download area",
+          "url": "https://predictioncenter.org/download_area/CASP13/"
         }
       ],
       "access": "",
@@ -7560,6 +8412,10 @@
         {
           "label": "Homepage",
           "url": "https://cathdb.info/wiki/doku/?id=index"
+        },
+        {
+          "label": "chain_set.jsonl (CATH 4.2 split)",
+          "url": "http://people.csail.mit.edu/ingraham/graph-protein-design/data/cath/chain_set.jsonl"
         }
       ],
       "access": "",
@@ -7579,6 +8435,10 @@
         {
           "label": "Homepage",
           "url": "https://cathdb.info/wiki/doku/?id=index"
+        },
+        {
+          "label": "chain_set.jsonl (CATH 4.3 split)",
+          "url": "https://dl.fbaipublicfiles.com/fair-esm/data/cath4.3_topologysplit_202206/chain_set.jsonl"
         }
       ],
       "access": "",
@@ -7608,7 +8468,12 @@
       "category": "Biomedical text and coding benchmarks",
       "stars": null,
       "repo": "https://github.com/EagleW/Chem-FINESE/tree/main/data",
-      "links": [],
+      "links": [
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/EagleW/Chem-FINESE"
+        }
+      ],
       "access": "Introduced 2024",
       "license": "",
       "versions": "",
@@ -7701,6 +8566,10 @@
         {
           "label": "Homepage",
           "url": "https://doi.org/10.5281/zenodo.14961732"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/VirtualEmbryo/ZAugNet"
         }
       ],
       "access": "Introduced 2025",
@@ -7758,6 +8627,10 @@
         {
           "label": "Homepage",
           "url": "http://celltrackingchallenge.net/2d-datasets/"
+        },
+        {
+          "label": "Training set (zip)",
+          "url": "http://data.celltrackingchallenge.net/training-datasets/DIC-C2DH-HeLa.zip"
         }
       ],
       "access": "",
@@ -7796,7 +8669,14 @@
       "access": "",
       "license": "",
       "versions": "",
-      "paper_count": 1
+      "paper_count": 1,
+      "loaders": [
+        {
+          "label": "TDC",
+          "docs": "https://tdcommons.ai/multi_pred_tasks/drugsyn/",
+          "code": "from tdc.multi_pred import DrugSyn   # pip install PyTDC\n\ndata = DrugSyn(name=\"DrugComb\")\nsplit = data.get_split()"
+        }
+      ]
     },
     {
       "id": "pwc-drugprot",
@@ -7810,6 +8690,10 @@
         {
           "label": "Homepage",
           "url": "https://biocreative.bioinformatics.udel.edu/tasks/biocreative-vii/track-1/"
+        },
+        {
+          "label": "Hugging Face (bigbio)",
+          "url": "https://huggingface.co/datasets/bigbio/drugprot"
         }
       ],
       "access": "",
@@ -7829,6 +8713,10 @@
         {
           "label": "Homepage",
           "url": "https://doi.org/10.5061/dryad.5x69p8d8g"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/HibaKob/MicroBundleCompute"
         }
       ],
       "access": "Introduced 2023",
@@ -7848,6 +8736,10 @@
         {
           "label": "Homepage",
           "url": "https://doi.org/10.5061/dryad.3r2280gqd"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/HibaKob/MicroBundlePillarTrack"
         }
       ],
       "access": "Introduced 2024",
@@ -7867,6 +8759,10 @@
         {
           "label": "Homepage",
           "url": "https://benchmark.protein.properties/"
+        },
+        {
+          "label": "FLIP repository",
+          "url": "https://github.com/J-SNACKKB/FLIP"
         }
       ],
       "access": "Introduced 2022",
@@ -7886,6 +8782,10 @@
         {
           "label": "Homepage",
           "url": "http://celltrackingchallenge.net/3d-datasets/"
+        },
+        {
+          "label": "Training set (zip)",
+          "url": "http://data.celltrackingchallenge.net/training-datasets/Fluo-C3DL-MDA231.zip"
         }
       ],
       "access": "",
@@ -7928,6 +8828,10 @@
         {
           "label": "Homepage",
           "url": "https://doi.org/10.5281/zenodo.7473277"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/tomealbuquerque/EDoF-CNN"
         }
       ],
       "access": "Introduced 2023",
@@ -7943,7 +8847,12 @@
       "category": "Cell and microscopy imaging",
       "stars": null,
       "repo": "",
-      "links": [],
+      "links": [
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/qiangwang57/coreg_flim_histology"
+        }
+      ],
       "access": "Introduced 2022",
       "license": "CC BY 4.0",
       "versions": "",
@@ -7994,6 +8903,10 @@
         {
           "label": "Homepage",
           "url": "https://arxiv.org/abs/2110.14923"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/snap-stanford/ConE"
         }
       ],
       "access": "Introduced 2021",
@@ -8046,6 +8959,14 @@
         {
           "label": "Homepage",
           "url": "https://2019-ncovgroup.github.io/HTDockingDataRepo/"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/2019-ncovgroup/ML-Code"
+        },
+        {
+          "label": "Data repository",
+          "url": "https://github.com/2019-ncovgroup/HTDockingDataRepo"
         }
       ],
       "access": "Introduced 2021",
@@ -8084,6 +9005,10 @@
         {
           "label": "Homepage",
           "url": "https://iciar2018-challenge.grand-challenge.org/"
+        },
+        {
+          "label": "Zenodo",
+          "url": "https://zenodo.org/records/3632035"
         }
       ],
       "access": "Introduced 2018",
@@ -8155,6 +9080,10 @@
         {
           "label": "Homepage",
           "url": "https://figshare.com/s/635499acfdcdf0893750"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/vganapati/led_pvae"
         }
       ],
       "access": "Introduced 2022",
@@ -8259,31 +9188,23 @@
         {
           "label": "Homepage",
           "url": "https://ega-archive.org/studies/EGAS00000000083"
+        },
+        {
+          "label": "cBioPortal DataHub study",
+          "url": "https://github.com/cBioPortal/datahub/tree/master/public/brca_metabric"
         }
       ],
       "access": "",
       "license": "",
       "versions": "",
-      "paper_count": 1
-    },
-    {
-      "id": "pwc-meteor",
-      "name": "METEOR",
-      "description": "METEOR is a complex traffic dataset which captures traffic patterns in unstructured scenarios in India. METEOR consists of more than 1000 one-minute video clips, over 2 million annotated frames with ego-vehicle trajectories, and more than 13 million bounding boxes for surrounding vehicles or…",
-      "field": "expression",
-      "category": "Cell and microscopy imaging",
-      "stars": null,
-      "repo": "",
-      "links": [
+      "paper_count": 1,
+      "loaders": [
         {
-          "label": "Homepage",
-          "url": "https://gamma.umd.edu/researchdirections/autonomousdriving/meteor/"
+          "label": "cBioPortal API",
+          "docs": "https://docs.cbioportal.org/downloads/",
+          "code": "import requests\n\nstudy = requests.get(\"https://www.cbioportal.org/api/studies/brca_metabric\", timeout=60).json()\nprofiles = requests.get(\"https://www.cbioportal.org/api/studies/brca_metabric/molecular-profiles\", timeout=60).json()"
         }
-      ],
-      "access": "Introduced 2021",
-      "license": "",
-      "versions": "",
-      "paper_count": 1
+      ]
     },
     {
       "id": "pwc-miccai-2015-gland-segmentation-challenge-contest",
@@ -8297,6 +9218,10 @@
         {
           "label": "Homepage",
           "url": "https://warwick.ac.uk/fac/cross_fac/tia/data/glascontest/"
+        },
+        {
+          "label": "Warwick-QU (zip)",
+          "url": "https://warwick.ac.uk/fac/cross_fac/tia/data/glascontest/download/warwick_qu_dataset_released_2016_07_08.zip"
         }
       ],
       "access": "",
@@ -8504,6 +9429,10 @@
         {
           "label": "Homepage",
           "url": "https://rxn4chemistry.github.io/multimodal-spectroscopic-dataset/"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/rxn4chemistry/multimodal-spectroscopic-dataset"
         }
       ],
       "access": "Introduced 2024",
@@ -8523,6 +9452,10 @@
         {
           "label": "Homepage",
           "url": "https://osf.io/gqutd/"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/boehringer-ingelheim/anomaly-detection-in-histology"
         }
       ],
       "access": "Introduced 2022",
@@ -8575,7 +9508,14 @@
       "access": "",
       "license": "TCIA Data Usage Policy and Restriction",
       "versions": "",
-      "paper_count": 1
+      "paper_count": 1,
+      "loaders": [
+        {
+          "label": "TCIA (tcia_utils)",
+          "docs": "https://github.com/kirbyju/tcia_utils",
+          "code": "from tcia_utils import nbia   # pip install tcia_utils\n\nseries = nbia.getSeries(collection=\"NSCLC Radiogenomics\")\nnbia.downloadSeries(series, number=5)"
+        }
+      ]
     },
     {
       "id": "pwc-openreact-chon-efh",
@@ -8736,7 +9676,12 @@
       "category": "Biomedical text and coding benchmarks",
       "stars": null,
       "repo": "",
-      "links": [],
+      "links": [
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/IDEA-XL/RAPM"
+        }
+      ],
       "access": "Introduced 2025",
       "license": "",
       "versions": "",
@@ -8773,6 +9718,10 @@
         {
           "label": "Homepage",
           "url": "https://drive.google.com/drive/folders/18CmL-WLyppK1Rk29CgV7ib5MACFzg5ei?usp=drive_link"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/enigmanx20/patchtcga"
         }
       ],
       "access": "Introduced 2023",
@@ -8792,12 +9741,23 @@
         {
           "label": "Homepage",
           "url": "https://pubchem.ncbi.nlm.nih.gov/bioassay/504652"
+        },
+        {
+          "label": "PubChem BioAssay CSV (AIDs 504001-505000)",
+          "url": "https://ftp.ncbi.nlm.nih.gov/pubchem/Bioassay/CSV/Data/0504001_0505000.zip"
         }
       ],
       "access": "Introduced 2011",
       "license": "",
       "versions": "",
-      "paper_count": 1
+      "paper_count": 1,
+      "loaders": [
+        {
+          "label": "PubChem PUG REST",
+          "docs": "https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest",
+          "code": "import requests\n\nbase = \"https://pubchem.ncbi.nlm.nih.gov/rest/pug\"\nprops = requests.get(f\"{base}/compound/cid/2244/property/CanonicalSMILES,MolecularWeight/JSON\", timeout=60).json()\nassay = requests.get(f\"{base}/assay/aid/504652/description/JSON\", timeout=60).json()"
+        }
+      ]
     },
     {
       "id": "pwc-pubchem18",
@@ -8825,6 +9785,10 @@
         {
           "label": "Homepage",
           "url": "https://eaglew.github.io/dataset/paperrobot_reading"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/EagleW/PaperRobot"
         }
       ],
       "access": "Introduced 2019",
@@ -8882,7 +9846,12 @@
       "category": "Variants and mutations",
       "stars": null,
       "repo": "https://github.com/liyp0095/CuPUL/tree/main",
-      "links": [],
+      "links": [
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/liyp0095/CuPUL"
+        }
+      ],
       "access": "Introduced 2024",
       "license": "",
       "versions": "",
@@ -8928,7 +9897,14 @@
       "access": "",
       "license": "",
       "versions": "",
-      "paper_count": 1
+      "paper_count": 1,
+      "loaders": [
+        {
+          "label": "R package hdi",
+          "docs": "https://cran.r-project.org/package=hdi",
+          "code": "install.packages(\"hdi\")\nlibrary(hdi)\ndata(riboflavin)\ndim(riboflavin$x)"
+        }
+      ]
     },
     {
       "id": "pwc-sib-bioinformatics-sparql-queries",
@@ -8970,6 +9946,10 @@
         {
           "label": "Homepage",
           "url": "https://doi.org/10.5281/zenodo.15288765"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/Nisha1803/Methodology_Endosomal_Escape"
         }
       ],
       "access": "Introduced 2024",
@@ -9003,6 +9983,10 @@
         {
           "label": "Homepage",
           "url": "https://osf.io/byf27/"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/Boehringer-Ingelheim/stain-transfer"
         }
       ],
       "access": "Introduced 2023",
@@ -9022,6 +10006,10 @@
         {
           "label": "Homepage",
           "url": "https://cvg.unibe.ch/media/project/page/LFMNet/index.html"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/pvjosue/LFMNet"
         }
       ],
       "access": "Introduced 2020",
@@ -9041,6 +10029,10 @@
         {
           "label": "Homepage",
           "url": "https://doi.org/10.5061/dryad.sqv9s4nbg"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/HibaKob/MicroBundlePillarTrack"
         }
       ],
       "access": "Introduced 2024",
@@ -9131,6 +10123,10 @@
         {
           "label": "Homepage",
           "url": "https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/2880?locale-attribute=en_US"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/ChristophReich1996/Multi-StyleGAN"
         }
       ],
       "access": "Introduced 2021",
@@ -9155,7 +10151,14 @@
       "access": "Introduced 2021",
       "license": "Creative Commons Attribution 4.0 International (CC BY 4.0) license.",
       "versions": "",
-      "paper_count": 1
+      "paper_count": 1,
+      "loaders": [
+        {
+          "label": "UCI ucimlrepo",
+          "docs": "https://github.com/uci-ml-repo/ucimlrepo",
+          "code": "from ucimlrepo import fetch_ucirepo   # pip install ucimlrepo\n\nds = fetch_ucirepo(id=728)\nX, y = ds.data.features, ds.data.targets"
+        }
+      ]
     },
     {
       "id": "pwc-treutlein-et-al",
@@ -9225,6 +10228,10 @@
         {
           "label": "Homepage",
           "url": "https://www.uniprot.org/"
+        },
+        {
+          "label": "UniRef90 FASTA",
+          "url": "https://ftp.ebi.ac.uk/pub/databases/uniprot/uniref/uniref90/uniref90.fasta.gz"
         }
       ],
       "access": "Introduced 2014",
@@ -9320,6 +10327,10 @@
         {
           "label": "Homepage",
           "url": "https://christophreich1996.github.io/yeast_in_microstructures_dataset/"
+        },
+        {
+          "label": "Code from the paper",
+          "url": "https://github.com/christophreich1996/yeast-in-microstructures-dataset"
         }
       ],
       "access": "Introduced 2023",
@@ -9410,6 +10421,10 @@
         {
           "label": "Homepage",
           "url": "https://www.sciencedirect.com/science/article/pii/S1532046412000573"
+        },
+        {
+          "label": "Hugging Face (bigbio)",
+          "url": "https://huggingface.co/datasets/bigbio/euadr"
         }
       ],
       "access": "",
@@ -9429,6 +10444,10 @@
         {
           "label": "Homepage",
           "url": "http://celltrackingchallenge.net/3d-datasets/"
+        },
+        {
+          "label": "Training set (zip)",
+          "url": "http://data.celltrackingchallenge.net/training-datasets/Fluo-C3DH-A549-SIM.zip"
         }
       ],
       "access": "",
@@ -9448,6 +10467,10 @@
         {
           "label": "Homepage",
           "url": "http://celltrackingchallenge.net/3d-datasets/"
+        },
+        {
+          "label": "Training set (zip)",
+          "url": "http://data.celltrackingchallenge.net/training-datasets/Fluo-N3DL-TRIC.zip"
         }
       ],
       "access": "",
@@ -9486,6 +10509,14 @@
         {
           "label": "Homepage",
           "url": "https://clue.io/"
+        },
+        {
+          "label": "GEO GSE92742",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE92742"
+        },
+        {
+          "label": "GEO GSE70138",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE70138"
         }
       ],
       "access": "",
@@ -9547,6 +10578,10 @@
         {
           "label": "Homepage",
           "url": "http://www.rnapuzzles.org/"
+        },
+        {
+          "label": "Standardized dataset",
+          "url": "https://github.com/RNA-Puzzles/standardized_dataset"
         }
       ],
       "access": "",
@@ -9562,7 +10597,12 @@
       "category": "Molecules and chemistry",
       "stars": null,
       "repo": "",
-      "links": [],
+      "links": [
+        {
+          "label": "Zenodo",
+          "url": "https://zenodo.org/records/5970538"
+        }
+      ],
       "access": "",
       "license": "",
       "versions": "",

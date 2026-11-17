@@ -152,6 +152,33 @@ struct SourceOut {
     latest_url: String,
     latest_url_type: String,
     versions: Vec<VersionOut>,
+    #[serde(skip_serializing_if = "Vec::is_empty")]
+    loaders: Vec<LoaderOut>,
+}
+
+/// data/loaders.toml: a library call or official client command that
+/// fetches a dataset or database, attached to every id in `targets`
+/// ("ds:<dataset id>" or "db:<source id>").
+#[derive(Deserialize, Default)]
+struct LoadersFile {
+    #[serde(default)]
+    loader: Vec<LoaderDef>,
+}
+
+#[derive(Deserialize)]
+struct LoaderDef {
+    targets: Vec<String>,
+    label: String,
+    #[serde(default)]
+    docs: String,
+    code: String,
+}
+
+#[derive(Serialize, Clone)]
+struct LoaderOut {
+    label: String,
+    docs: String,
+    code: String,
 }
 
 #[derive(Serialize)]
@@ -180,6 +207,8 @@ struct DatasetOut {
     license: String,
     versions: String,
     paper_count: Option<u64>,
+    #[serde(skip_serializing_if = "Vec::is_empty")]
+    loaders: Vec<LoaderOut>,
 }
 
 #[derive(Serialize)]
@@ -445,6 +474,7 @@ fn build_sources(root: &Path, defs: &[SourceDef], fields: &[FieldDef]) -> Res<So
             latest_url,
             latest_url_type,
             versions,
+            loaders: Vec::new(),
         });
     }
     for id in by_id.keys() {
@@ -494,6 +524,7 @@ fn build_datasets(root: &Path, categories: &[CategoryDef]) -> Res<DatasetsOut> {
             license: get(row, "license"),
             versions: get(row, "versions"),
             paper_count: get(row, "paper_count").parse().ok(),
+            loaders: Vec::new(),
         });
     }
     Ok(DatasetsOut { datasets })
@@ -1099,9 +1130,29 @@ fn run() -> Res<()> {
     let out = root.join("site/data");
     fs::create_dir_all(&out)?;
 
-    let sources = build_sources(&root, &sources_file.source, &fields_file.field)?;
+    let loaders_file: LoadersFile = match fs::read_to_string(data_in.join("loaders.toml")) {
+        Ok(text) => toml::from_str(&text)?,
+        Err(_) => LoadersFile::default(),
+    };
+    let mut sources = build_sources(&root, &sources_file.source, &fields_file.field)?;
+    let mut datasets = build_datasets(&root, &fields_file.category)?;
+    for def in &loaders_file.loader {
+        let out_l = LoaderOut { label: def.label.clone(), docs: def.docs.clone(), code: def.code.trim().to_string() };
+        for t in &def.targets {
+            if let Some(id) = t.strip_prefix("ds:") {
+                match datasets.datasets.iter_mut().find(|d| d.id == id) {
+                    Some(d) => d.loaders.push(out_l.clone()),
+                    None => eprintln!("loaders.toml: unknown dataset {}", id),
+                }
+            } else if let Some(id) = t.strip_prefix("db:") {
+                match sources.sources.iter_mut().find(|s| s.id == id) {
+                    Some(s) => s.loaders.push(out_l.clone()),
+                    None => eprintln!("loaders.toml: unknown source {}", id),
+                }
+            }
+        }
+    }
     write_json(&out.join("sources.json"), &sources)?;
-    let datasets = build_datasets(&root, &fields_file.category)?;
     write_json(&out.join("datasets.json"), &datasets)?;
 
     let mut counts = BTreeMap::new();
@@ -1139,6 +1190,7 @@ fn run() -> Res<()> {
         "data/latest.toml",
         "data/database_versions.csv",
         "data/datasets.csv",
+        "data/loaders.toml",
     ] {
         inputs.insert(name.to_string(), sha256_file(&root.join(name))?);
     }

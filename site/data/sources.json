@@ -2178,6 +2178,13 @@
           "verified": true,
           "note": "R2024Q3R9 / C2024Q3R9; controlled tier on Researcher Workbench 2.0 since 2026-02-24."
         }
+      ],
+      "loaders": [
+        {
+          "label": "All of Us Researcher Workbench",
+          "docs": "https://www.researchallofus.org/",
+          "code": "# runs inside a Researcher Workbench notebook; record-level data cannot be downloaded\nimport os\nfrom google.cloud import bigquery\n\ncdr = os.environ[\"WORKSPACE_CDR\"]\ndf = bigquery.Client().query(f\"SELECT COUNT(*) AS n FROM `{cdr}.person`\").to_dataframe()"
+        }
       ]
     },
     {
@@ -2236,6 +2243,13 @@
           "url_type": "portal",
           "verified": true,
           "note": "Latest whole-genome release; via UKB-RAP."
+        }
+      ],
+      "loaders": [
+        {
+          "label": "UK Biobank RAP (dxpy)",
+          "docs": "https://documentation.dnanexus.com/downloads",
+          "code": "# approved UK Biobank project on the Research Analysis Platform needed\npip install dxpy\ndx login\ndx ls \"project-XXXX:/Bulk/\"\ndx download \"project-XXXX:/Bulk/<folder>/<file>\""
         }
       ]
     },
@@ -2850,6 +2864,13 @@
           "verified": true,
           "note": "Latest. Scripted download requires login."
         }
+      ],
+      "loaders": [
+        {
+          "label": "COSMIC scripted download (free academic account)",
+          "docs": "https://cancer.sanger.ac.uk/cosmic/download",
+          "code": "# 1. ask for a signed URL with your COSMIC login\nAUTH=$(printf '%s:%s' \"$COSMIC_EMAIL\" \"$COSMIC_PASSWORD\" | base64)\nURL=$(curl -s -H \"Authorization: Basic $AUTH\" \\\n  \"https://cancer.sanger.ac.uk/api/mono/products/v1/downloads/scripted?path=grch38/cosmic/v104/Cosmic_MutantCensus_Tsv_v104_GRCh38.tar&bucket=downloads\" \\\n  | jq -r .url)\n# 2. download the file\ncurl -L -o Cosmic_MutantCensus_v104.tar \"$URL\""
+        }
       ]
     },
     {
@@ -2944,6 +2965,13 @@
           "url_type": "portal",
           "verified": true,
           "note": "Latest release."
+        }
+      ],
+      "loaders": [
+        {
+          "label": "DepMap download API",
+          "docs": "https://depmap.org/portal/data_page/",
+          "code": "import pandas as pd\n\n# one row per file of every release, with a direct download URL\nfiles = pd.read_csv(\"https://depmap.org/portal/api/download/files\")\nlatest = files[files[\"release\"] == files[\"release\"].iloc[0]]\nprint(latest[[\"filename\", \"url\"]].head())"
         }
       ]
     },
@@ -3201,8 +3229,8 @@
       "summary": "Protein and RNA expression across human tissues and cells.",
       "latest": "v25.1",
       "latest_date": "2026-05-28",
-      "latest_url": "https://www.proteinatlas.org",
-      "latest_url_type": "portal",
+      "latest_url": "https://www.proteinatlas.org/download/proteinatlas.tsv.zip",
+      "latest_url_type": "file",
       "versions": [
         {
           "version": "v20",
@@ -3262,10 +3290,17 @@
           "version": "v25.1",
           "date": "2026-05-28",
           "status": "latest",
-          "url": "https://www.proteinatlas.org",
-          "url_type": "portal",
+          "url": "https://www.proteinatlas.org/download/proteinatlas.tsv.zip",
+          "url_type": "file",
           "verified": true,
           "note": "Latest release."
+        }
+      ],
+      "loaders": [
+        {
+          "label": "Human Protein Atlas API",
+          "docs": "https://www.proteinatlas.org/about/help/dataaccess",
+          "code": "# one gene as JSON, or any search as TSV with chosen columns\ncurl -s \"https://www.proteinatlas.org/ENSG00000141510.json\"\ncurl -s \"https://www.proteinatlas.org/api/search_download.php?search=TP53&format=tsv&columns=g,gs,eg,up&compress=no\""
         }
       ]
     },
@@ -6469,8 +6504,8 @@
       "summary": "Mammalian protein complexes.",
       "latest": "5.0",
       "latest_date": "2024",
-      "latest_url": "https://mips.helmholtz-muenchen.de/corum/download",
-      "latest_url_type": "portal",
+      "latest_url": "https://mips.helmholtz-muenchen.de/fastapi-corum/public/file/download_current_file?file_id=human&file_format=txt",
+      "latest_url_type": "file",
       "versions": [
         {
           "version": "1.0",
@@ -6512,8 +6547,8 @@
           "version": "5.0",
           "date": "2024",
           "status": "latest",
-          "url": "https://mips.helmholtz-muenchen.de/corum/download",
-          "url_type": "portal",
+          "url": "https://mips.helmholtz-muenchen.de/fastapi-corum/public/file/download_current_file?file_id=human&file_format=txt",
+          "url_type": "file",
           "verified": true,
           "note": "Latest; 7,193 complexes."
         }
@@ -7186,6 +7221,13 @@
           "verified": true,
           "note": "PDBbind+ subscription releases."
         }
+      ],
+      "loaders": [
+        {
+          "label": "DeepChem (PDBbind v2019)",
+          "docs": "https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html",
+          "code": "import deepchem as dc\n\n# set_name: \"core\" (CASF-2016), \"refined\" or \"general\"\ntasks, (train, valid, test), transformers = dc.molnet.load_pdbbind(set_name=\"refined\", featurizer=\"ECFP\", splitter=\"random\")"
+        }
       ]
     },
     {
@@ -7469,8 +7511,8 @@
       "summary": "Atlas of regulatory regions from ChIP-seq.",
       "latest": "ReMap 2022",
       "latest_date": "2022",
-      "latest_url": "https://remap2022.univ-amu.fr/",
-      "latest_url_type": "portal",
+      "latest_url": "https://remap.univ-amu.fr/storage/remap2022/hg38/MACS2/remap2022_all_macs2_hg38_v1_0.bed.gz",
+      "latest_url_type": "file",
       "versions": [
         {
           "version": "ReMap 2018",
@@ -7494,8 +7536,8 @@
           "version": "ReMap 2022",
           "date": "2022",
           "status": "latest",
-          "url": "https://remap2022.univ-amu.fr/",
-          "url_type": "portal",
+          "url": "https://remap.univ-amu.fr/storage/remap2022/hg38/MACS2/remap2022_all_macs2_hg38_v1_0.bed.gz",
+          "url_type": "file",
           "verified": true,
           "note": "Latest verified release."
         }
@@ -7510,8 +7552,8 @@
       "summary": "Candidate cis-regulatory elements.",
       "latest": "V4",
       "latest_date": "2024–2025",
-      "latest_url": "https://downloads.wenglab.org/",
-      "latest_url_type": "portal",
+      "latest_url": "https://downloads.wenglab.org/Registry-V4/GRCh38-cCREs.bed",
+      "latest_url_type": "file",
       "versions": [
         {
           "version": "V1",
@@ -7535,19 +7577,26 @@
           "version": "V3",
           "date": "2022",
           "status": "archived",
-          "url": "",
-          "url_type": "none",
-          "verified": false,
+          "url": "https://downloads.wenglab.org/V3/GRCh38-cCREs.bed",
+          "url_type": "file",
+          "verified": true,
           "note": ""
         },
         {
           "version": "V4",
           "date": "2024–2025",
           "status": "latest",
-          "url": "https://downloads.wenglab.org/",
-          "url_type": "portal",
-          "verified": false,
+          "url": "https://downloads.wenglab.org/Registry-V4/GRCh38-cCREs.bed",
+          "url_type": "file",
+          "verified": true,
           "note": "Latest; files such as GRCh38-cCREs.V4.bed."
+        }
+      ],
+      "loaders": [
+        {
+          "label": "ENCODE REST API",
+          "docs": "https://www.encodeproject.org/help/rest-api/",
+          "code": "import requests\n\nr = requests.get(\"https://www.encodeproject.org/search/\", params={\n    \"type\": \"Annotation\", \"annotation_type\": \"candidate Cis-Regulatory Elements\",\n    \"assembly\": \"GRCh38\", \"format\": \"json\", \"limit\": \"all\"}, timeout=120).json()\nfor a in r[\"@graph\"][:5]:\n    print(a[\"accession\"], a.get(\"biosample_summary\"))"
         }
       ]
     },
@@ -8367,6 +8416,13 @@
           "url_type": "portal",
           "verified": true,
           "note": "Latest; one tgz with all three clusterings; some sources give 2024."
+        }
+      ],
+      "loaders": [
+        {
+          "label": "QIIME 2 RESCRIPt",
+          "docs": "https://github.com/bokulich-lab/RESCRIPt",
+          "code": "# UNITE 10.0 is the release of 2025-02-19\nqiime rescript get-unite-data \\\n  --p-version 2025-02-19 --p-taxon-group eukaryotes --p-cluster-id 99 \\\n  --output-dir unite-10.0"
         }
       ]
     },

@@ -279,7 +279,7 @@ hpa,v22,2022-12,archived,https://v22.proteinatlas.org,portal,no,Archive site.
 hpa,v23,2023-06,archived,https://v23.proteinatlas.org,portal,no,Archive site.
 hpa,v24,2024-11,archived,https://v24.proteinatlas.org,portal,no,Archive site.
 hpa,v25,2025-11-11,archived,https://www.proteinatlas.org,portal,yes,Main site; archived versions use v<NN>.proteinatlas.org.
-hpa,v25.1,2026-05-28,latest,https://www.proteinatlas.org,portal,yes,Latest release.
+hpa,v25.1,2026-05-28,latest,https://www.proteinatlas.org/download/proteinatlas.tsv.zip,file,yes,Latest release.
 expression-atlas,Expression Atlas r42,2025-07,archived,https://ftp.ebi.ac.uk/pub/databases/microarray/data/atlas/experiments/,directory,yes,Live experiments folder.
 expression-atlas,Expression Atlas r43,2025-10,latest,https://ftp.ebi.ac.uk/pub/databases/microarray/data/atlas/experiments/,directory,yes,"Latest; 4,562 datasets."
 expression-atlas,SCXA 202103 / 202105 / 202109 / 202110,2021,archived,https://ftp.ebi.ac.uk/pub/databases/microarray/data/atlas/sc_experiments_{YYYYMM}/,pattern,yes,Dated Single Cell Expression Atlas snapshots.
@@ -595,7 +595,7 @@ corum,1.0,2008,archived,,none,no,
 corum,2.0,2010,archived,,none,no,
 corum,3.0,2019,archived,,none,no,
 corum,4.0 / 4.1,2022,archived,,none,yes,
-corum,5.0,2024,latest,https://mips.helmholtz-muenchen.de/corum/download,portal,yes,"Latest; 7,193 complexes."
+corum,5.0,2024,latest,https://mips.helmholtz-muenchen.de/fastapi-corum/public/file/download_current_file?file_id=human&file_format=txt,file,yes,"Latest; 7,193 complexes."
 pathway-commons,PC1,until 2016,archived,https://download.baderlab.org/PathwayCommons/PC1/,directory,yes,
 pathway-commons,PC2 v1–v12,2012–2019,archived,https://download.baderlab.org/PathwayCommons/PC2/,directory,no,Versions listed under PC2/.
 pathway-commons,PC2 v13,2023,archived,https://download.baderlab.org/PathwayCommons/PC2/,directory,no,Versions listed under PC2/.
@@ -687,11 +687,11 @@ hocomoco,v13,2024–2025,archived,https://hocomoco14.autosome.org/downloads_v13,
 hocomoco,v14,,latest,https://hocomoco14.autosome.org/downloads_v14,portal,yes,"Latest; 1,595 models."
 remap,ReMap 2018,2018,archived,https://remap2018.univ-amu.fr/,portal,no,
 remap,ReMap 2020,2020,archived,https://remap2020.univ-amu.fr/,portal,no,
-remap,ReMap 2022,2022,latest,https://remap2022.univ-amu.fr/,portal,yes,Latest verified release.
+remap,ReMap 2022,2022,latest,https://remap.univ-amu.fr/storage/remap2022/hg38/MACS2/remap2022_all_macs2_hg38_v1_0.bed.gz,file,yes,Latest verified release.
 encode-ccre,V1,2017–2018,archived,,none,no,
 encode-ccre,V2,2020,archived,,none,no,
-encode-ccre,V3,2022,archived,,none,no,
-encode-ccre,V4,2024–2025,latest,https://downloads.wenglab.org/,portal,no,Latest; files such as GRCh38-cCREs.V4.bed.
+encode-ccre,V3,2022,archived,https://downloads.wenglab.org/V3/GRCh38-cCREs.bed,file,yes,
+encode-ccre,V4,2024–2025,latest,https://downloads.wenglab.org/Registry-V4/GRCh38-cCREs.bed,file,yes,Latest; files such as GRCh38-cCREs.V4.bed.
 rnacentral,1–24,,archived,https://ftp.ebi.ac.uk/pub/databases/RNAcentral/releases/{N}.0/,pattern,no,
 rnacentral,25,2025-06-19,archived,https://ftp.ebi.ac.uk/pub/databases/RNAcentral/releases/25.0/,directory,yes,Includes Rfam 15.0.
 rnacentral,26,2025-10-08,archived,https://ftp.ebi.ac.uk/pub/databases/RNAcentral/releases/26.0/,directory,yes,
