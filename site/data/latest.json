@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-21T11:24:08Z",
-  "since": "2026-09-22",
-  "until": "2026-11-21",
+  "generated_at": "2026-11-22T13:14:21Z",
+  "since": "2026-09-23",
+  "until": "2026-11-22",
   "days": 60,
   "journals": [
     "Bioinformatics",
@@ -39,8 +39,8 @@
       "date": "2026-11-18",
       "doi": "10.1093/nargab/lqag139",
       "cited": 0,
-      "license": "",
-      "pdf": "",
+      "license": "cc by",
+      "pdf": "https://europepmc.org/articles/PMC13778625?pdf=render",
       "keywords": [
         "Computational Biology",
         "Software",
@@ -61,7 +61,7 @@
         "pathways",
         "benchmarks"
       ],
-      "abstract": "",
+      "abstract": "To address the long, redundant result tables produced by standard gene-set enrichment tools, we developed the Ontology-Ranked Biological Interpretation Tool (ORBIT), which combines annotation-aware empirical enrichment, semantic reranking, and representative-term selection to generate compact functional summaries linked to supporting genes. On a curated 45-set internal functional-class benchmark, ORBIT achieved a mean reciprocal rank of 0.913 and top-1 recovery of 0.889. Component ablations identified query-level functional consensus as the strongest individual semantic contributor, while coefficient perturbations showed stable recovery across the tested range. Vocabulary controls showed that internal functional labels contributed to benchmark recovery. A GPCR case study demonstrated redundancy reduction, and applications to PBMC3K, IFNB-stimulated immune cells, and TCGA-BRCA recovered cell-identity, interferon-response, and breast-cancer subtype programs. ORBIT integrates enrichment statistics, functional prioritization, and supporting evidence within a single workflow, enabling users to review concise biological summaries while retaining access to the complete results.",
       "url": "https://doi.org/10.1093/nargab/lqag139"
     },
     {
@@ -671,7 +671,7 @@
       "doi": "10.1093/nargab/lqag114",
       "cited": 0,
       "license": "cc by-nc",
-      "pdf": "",
+      "pdf": "https://europepmc.org/articles/PMC13643173?pdf=render",
       "keywords": [
         "Open Reading Frames",
         "Software",
@@ -716,7 +716,7 @@
       "doi": "10.1093/nargab/lqag116",
       "cited": 0,
       "license": "cc by-nc",
-      "pdf": "",
+      "pdf": "https://europepmc.org/articles/PMC13639356?pdf=render",
       "keywords": [
         "Alzheimer Disease",
         "Gene Regulatory Networks"
@@ -746,7 +746,7 @@
       "doi": "10.1093/nargab/lqag117",
       "cited": 0,
       "license": "cc by",
-      "pdf": "",
+      "pdf": "https://europepmc.org/articles/PMC13639371?pdf=render",
       "keywords": [
         "DNA Repeat Expansion",
         "Nanopore Sequencing"
@@ -812,6 +812,372 @@
       "lists": [],
       "abstract": "Interpretation of rare-disease genomes remains constrained by variant-centric analytical frameworks that insufficiently capture the cumulative impact of multiple variants within a gene. GenePy provides an individual-level, gene-based burden metric that integrates variant consequence, allele frequency, and zygosity into a unified quantitative score, enabling a transition from discrete variant annotation to aggregated gene-level interpretation. In the context of Genomics England (GEL), this formulation supports a panel-agnostic, genotype-to-phenotype diagnostic strategy for unresolved monogenic disorders by prioritizing genes with elevated mutational burden per individual. Here, we present a fully automated, containerized GenePy workflow deployed through Nextflow and integrated within the GEL Research Environment via the Lifebit CloudOS platform. This implementation provides scalable, secure, and governance-compliant computation of gene-level burden scores across population-scale cohorts. The workflow harmonizes variant annotation, quality control, and chunked data aggregation within modular, reproducible processes designed for high-throughput execution on cloud-native infrastructure. By enabling robust, portable, and auditable gene-level scoring across large rare-disease sequencing datasets, this framework enhances analytical resolution and supports downstream statistical prioritization, integrative phenotype matching, and hypothesis generation within genotype-to-phenotype diagnostic workflows.",
       "url": "https://doi.org/10.1093/nargab/lqag113"
+    },
+    {
+      "id": "MED:43064832",
+      "title": "Author Correction: Microbial community resemblance methods differ in their ability to detect biologically relevant patterns.",
+      "method": "Author Correction",
+      "authors": "Kuczynski J, Liu Z, Lozupone C, McDonald D, Fierer N, Knight R.",
+      "journal": "Nature methods",
+      "year": "2026",
+      "date": "2026-11-06",
+      "doi": "10.1038/s41592-026-03336-y",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [],
+      "tasks": [],
+      "datasets": [],
+      "lists": [],
+      "abstract": "",
+      "url": "https://doi.org/10.1038/s41592-026-03336-y"
+    },
+    {
+      "id": "MED:43064831",
+      "title": "Computational methods for cell-cell communication via single cells.",
+      "method": "",
+      "authors": "Li H, Zhou X, Sun X, Nie Q, Gao Y, He J.",
+      "journal": "Nature methods",
+      "year": "2026",
+      "date": "2026-11-20",
+      "doi": "10.1038/s41592-026-03287-4",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [],
+      "tasks": [
+        "expression:integration",
+        "expression:spatial"
+      ],
+      "datasets": [],
+      "lists": [],
+      "fields": [
+        "expression"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1038/s41592-026-03287-4"
+    },
+    {
+      "id": "MED:43064830",
+      "title": "A two-platform blueprint for modeling human brain development.",
+      "method": "",
+      "authors": "De Los Angeles A, Chen C, Tam TTKK, Xu S, Deng H, Huang CY, Li T, Liu P, Loh YH, Lunshof J, Ong CS, Pei D, Theunissen TW, Trounson A, Yu L, Sugaya K, Silva JCR.",
+      "journal": "Nature methods",
+      "year": "2026",
+      "date": "2026-11-20",
+      "doi": "10.1038/s41592-026-03327-z",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [],
+      "tasks": [
+        "benchmarks:benchmark",
+        "benchmarks:reproducibility"
+      ],
+      "datasets": [],
+      "lists": [],
+      "fields": [
+        "benchmarks"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1038/s41592-026-03327-z"
+    },
+    {
+      "id": "MED:43064779",
+      "title": "Multiancestry genome-wide association and integrative multiomics analyses implicate key pathways in endometriosis.",
+      "method": "",
+      "authors": "Guare LA, Das J, Caruth L, Rajagopalan A, Akerele AT, Jaworski J, Kottyan L, Mulford AJ, Moreno E, Brumpton BM, Teerlink C, Lynch J, Chen TT, Lin YF, Penn Medicine Biobank, eMERGE Network, VA Million Veteran Program, Global Biobank Meta-analysis Initiative, Chang KM, Chapman SB, Edwards T, Senapati S, Velez Edwards DR, Zhou W, Setia-Verma S.",
+      "journal": "Nature genetics",
+      "year": "2026",
+      "date": "2026-11-20",
+      "doi": "10.1038/s41588-026-02810-9",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [],
+      "tasks": [],
+      "datasets": [],
+      "lists": [],
+      "fields": [
+        "pathways"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1038/s41588-026-02810-9"
+    },
+    {
+      "id": "MED:43064737",
+      "title": "Predicting degradation of polymeric materials in complex chemical environments via molecular modeling.",
+      "method": "",
+      "authors": "Gissinger JR, Bauer J, Mahanthe JJ, Fairbanks BD, Bowman CN, Varshney V.",
+      "journal": "Nature computational science",
+      "year": "2026",
+      "date": "2026-11-20",
+      "doi": "10.1038/s43588-026-01041-6",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [],
+      "tasks": [],
+      "datasets": [],
+      "lists": [],
+      "abstract": "",
+      "url": "https://doi.org/10.1038/s43588-026-01041-6"
+    },
+    {
+      "id": "MED:43064736",
+      "title": "System of agentic AI for the discovery of metal-organic frameworks.",
+      "method": "",
+      "authors": "Inizan TJ, Yang S, Kaplan A, Lin YH, Yin J, Mirzaei S, Abdelgaid M, Alawadhi AH, Cho K, Zheng Z, Cubuk ED, Borgs C, Chayes JT, Persson KA, Yaghi OM.",
+      "journal": "Nature computational science",
+      "year": "2026",
+      "date": "2026-11-20",
+      "doi": "10.1038/s43588-026-01058-x",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [],
+      "tasks": [
+        "benchmarks:foundation-eval",
+        "benchmarks:llm"
+      ],
+      "datasets": [],
+      "lists": [],
+      "fields": [
+        "benchmarks"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1038/s43588-026-01058-x"
+    },
+    {
+      "id": "MED:43064728",
+      "title": "velotest: statistical assessment of RNA velocity embeddings reveals quality differences for reliable trajectory visualizations.",
+      "method": "velotest",
+      "authors": "Bischoff S, Poličar PG, Mukherjee S, Macke JH, Claassen M, Schröder C.",
+      "journal": "Nature communications",
+      "year": "2026",
+      "date": "2026-11-20",
+      "doi": "10.1038/s41467-026-78669-5",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [
+        "RNA",
+        "Sequence Analysis, RNA",
+        "Single-Cell Analysis"
+      ],
+      "tasks": [
+        "expression:trajectory"
+      ],
+      "datasets": [],
+      "lists": [],
+      "fields": [
+        "expression"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1038/s41467-026-78669-5"
+    },
+    {
+      "id": "MED:43064703",
+      "title": "Endocrine, nutritional and metabolic diseases drive cancer risk through subtype-specific and shared proteomic mediators.",
+      "method": "",
+      "authors": "Wu J, Yao Y, Chu Y, Chen L, Chen L, Chen L, Zhang C, Liao F, He S, Xu B, Shi X, Liu Z, Song K.",
+      "journal": "Nature communications",
+      "year": "2026",
+      "date": "2026-11-20",
+      "doi": "10.1038/s41467-026-78791-4",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [
+        "Neoplasms",
+        "Metabolic Diseases",
+        "Endocrine System Diseases"
+      ],
+      "tasks": [
+        "cancer:subtyping"
+      ],
+      "datasets": [],
+      "lists": [],
+      "fields": [
+        "cancer"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1038/s41467-026-78791-4"
+    },
+    {
+      "id": "MED:43064697",
+      "title": "Biosynthesis of iboga alkaloids.",
+      "method": "",
+      "authors": "Kang M, Kamileen MO, Nakamura Y, Hamilton JP, Kang G, Huettel B, Wurlitzer J, Heinicke S, Kunert M, Buell CR, Caputi L, O'Connor SE.",
+      "journal": "Nature communications",
+      "year": "2026",
+      "date": "2026-11-21",
+      "doi": "10.1038/s41467-026-79750-9",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [
+        "Tabernaemontana",
+        "Alkaloids",
+        "Ibogaine"
+      ],
+      "tasks": [],
+      "datasets": [],
+      "lists": [],
+      "fields": [
+        "proteins",
+        "expression"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1038/s41467-026-79750-9"
+    },
+    {
+      "id": "MED:43064689",
+      "title": "Met4All: a dockerised Shiny application for DNA methylation array analysis, visualization and reporting.",
+      "method": "Met4All",
+      "authors": "Roca C, Campo-Fernández G, Moreno-Cabrera JM, Rivera B.",
+      "journal": "Bioinformatics (Oxford, England)",
+      "year": "2026",
+      "date": "2026-11-20",
+      "doi": "10.1093/bioinformatics/btag849",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [],
+      "tasks": [
+        "regulation:accessibility",
+        "regulation:methylation"
+      ],
+      "datasets": [],
+      "lists": [],
+      "fields": [
+        "regulation"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1093/bioinformatics/btag849"
+    },
+    {
+      "id": "MED:43063299",
+      "title": "Rollout models of human planning with exact action probabilities.",
+      "method": "",
+      "authors": "Olieslagers J, Ma WJ.",
+      "journal": "PLoS computational biology",
+      "year": "2026",
+      "date": "2026-11-20",
+      "doi": "10.1371/journal.pcbi.1014945",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [],
+      "tasks": [],
+      "datasets": [],
+      "lists": [],
+      "abstract": "",
+      "url": "https://doi.org/10.1371/journal.pcbi.1014945"
+    },
+    {
+      "id": "MED:43063295",
+      "title": "A hybrid mixture approach for clustering and characterizing biomedical data.",
+      "method": "",
+      "authors": "Kareem KA, Dai F.",
+      "journal": "PLoS computational biology",
+      "year": "2026",
+      "date": "2026-11-20",
+      "doi": "10.1371/journal.pcbi.1014974",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [],
+      "tasks": [
+        "cancer:heterogeneity",
+        "cancer:subtyping"
+      ],
+      "datasets": [],
+      "lists": [],
+      "fields": [
+        "cancer"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1371/journal.pcbi.1014974"
+    },
+    {
+      "id": "MED:43063294",
+      "title": "Ionic condition-dependent allostery shapes ribosomal dynamics.",
+      "method": "",
+      "authors": "Yangaliev D, Süel GM, Ozkan SB.",
+      "journal": "PLoS computational biology",
+      "year": "2026",
+      "date": "2026-11-20",
+      "doi": "10.1371/journal.pcbi.1014977",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [],
+      "tasks": [],
+      "datasets": [],
+      "lists": [],
+      "fields": [
+        "pathways"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1371/journal.pcbi.1014977"
+    },
+    {
+      "id": "MED:43063243",
+      "title": "Pupil dynamics reflect uncertainty-driven adjustments of probability learning.",
+      "method": "",
+      "authors": "Greenhouse-Tucknott A, Foucault C, Buot A, Meyniel F.",
+      "journal": "PLoS computational biology",
+      "year": "2026",
+      "date": "2026-11-20",
+      "doi": "10.1371/journal.pcbi.1014064",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [],
+      "tasks": [],
+      "datasets": [],
+      "lists": [],
+      "abstract": "",
+      "url": "https://doi.org/10.1371/journal.pcbi.1014064"
+    },
+    {
+      "id": "MED:43063235",
+      "title": "Inferring population-level physiologically based model parameters for sleep in infancy and young childhood.",
+      "method": "",
+      "authors": "Webb L, Phillips AJK, Roberts JA.",
+      "journal": "PLoS computational biology",
+      "year": "2026",
+      "date": "2026-11-20",
+      "doi": "10.1371/journal.pcbi.1014960",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [],
+      "tasks": [],
+      "datasets": [],
+      "lists": [],
+      "abstract": "",
+      "url": "https://doi.org/10.1371/journal.pcbi.1014960"
+    },
+    {
+      "id": "MED:43063232",
+      "title": "Simulation-guided design of exotendons to reduce the energetic cost of running.",
+      "method": "",
+      "authors": "Stingel J, Bianco N, Ong C, Collins S, Delp S, Hicks J.",
+      "journal": "PLoS computational biology",
+      "year": "2026",
+      "date": "2026-11-20",
+      "doi": "10.1371/journal.pcbi.1014203",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [],
+      "tasks": [],
+      "datasets": [],
+      "lists": [],
+      "abstract": "",
+      "url": "https://doi.org/10.1371/journal.pcbi.1014203"
     },
     {
       "id": "MED:43062152",
@@ -1678,8 +2044,8 @@
       "date": "2026-11-01",
       "doi": "10.1093/bioinformatics/btag831",
       "cited": 0,
-      "license": "",
-      "pdf": "",
+      "license": "cc by",
+      "pdf": "https://europepmc.org/articles/PMC13784754?pdf=render",
       "keywords": [],
       "tasks": [],
       "datasets": [],
@@ -1697,8 +2063,8 @@
       "date": "2026-11-01",
       "doi": "10.1093/bioinformatics/btag820",
       "cited": 0,
-      "license": "",
-      "pdf": "",
+      "license": "cc by",
+      "pdf": "https://europepmc.org/articles/PMC13784751?pdf=render",
       "keywords": [],
       "tasks": [],
       "datasets": [],
@@ -1767,8 +2133,8 @@
       "date": "2026-11-19",
       "doi": "10.1371/journal.pcbi.1014900",
       "cited": 0,
-      "license": "",
-      "pdf": "",
+      "license": "cc by",
+      "pdf": "https://europepmc.org/articles/PMC13784590?pdf=render",
       "keywords": [
         "Chiroptera",
         "Social Behavior",
@@ -1777,7 +2143,7 @@
       "tasks": [],
       "datasets": [],
       "lists": [],
-      "abstract": "",
+      "abstract": "Bats are fast fliers with great maneuverability. Many species sense and communicate through echolocation, relying on acoustic signals in the environment. Bats also form large colonies, which necessitates that they fly in groups. When group size increases or obstacles are in their flight paths, the acoustic space can become cluttered, posing a non-trivial challenge for navigation. How do they interact with their environment and conspecifics, and how do they balance social and environmental cues? Recent research has uncovered individual adaptations to calling and flight patterns when flying in the groups or avoiding obstacles. Studies also suggest coordination when foraging, as well as strategies used by the group to mitigate acoustic clutter. However, there has yet to be a study on how bats weigh different navigational tasks when flying in spatially complex environments. Here, we collected stereoscopic video data from a wild colony of gray bats, Myotis grisescens, navigating their usual foraging flight paths in the presence of novel obstacles. We find that bats tend to stay close to a wall, but space out when flying in groups. We develop a data-informed agent-based model which reveals that their social repulsive behavior is strengthened when challenged to navigate novel obstacles.",
       "url": "https://doi.org/10.1371/journal.pcbi.1014900"
     },
     {
@@ -1790,17 +2156,17 @@
       "date": "2026-11-01",
       "doi": "10.1093/bib/bbag638",
       "cited": 0,
-      "license": "",
-      "pdf": "",
+      "license": "cc by",
+      "pdf": "https://europepmc.org/articles/PMC13783184?pdf=render",
       "keywords": [
         "Computational Immunology",
         "Benchmarking",
         "Codon Optimisation",
         "T-cell Epitope Prediction",
         "Immunopeptidomics",
+        "Peptide–mhc Binding",
         "Mrna Vaccines",
         "Protein Language Models",
-        "Peptide–mhc Binding",
         "Peptides",
         "RNA, Messenger",
         "Computational Biology",
@@ -1819,7 +2185,7 @@
         "proteins",
         "benchmarks"
       ],
-      "abstract": "",
+      "abstract": "Computational prediction of T-cell epitopes has become indispensable to vaccine design, yet the field still relies on the assumption that how much of a given antigen is produced is fixed by its coding sequence. However, this is not the case with mRNA vaccines, i.e. the design of the mRNA template can vastly alter the quantity of the same protein produced. Codon usage, guanine-cytosine (GC) content, untranslated-region (UTR) design, and predicted secondary structure together define how fast the message is translated and how long it survives, and therefore how much antigen ever reaches the presentation pathway. This is a variable that no current immunogenicity predictor represents. Herein we appraise three decades of computational immunogenicity prediction, tracing the path from position-specific scoring matrices through pan-specific neural networks to transformer-based protein language models, and we use that history to expose the peptide-nucleotide gap between these tools and the way mRNA vaccines are designed. A structured synthesis of published evaluations of leading predictors across human leukocyte antigen (HLA) alleles, peptide lengths and data types shows that headline accuracy masks persistent deficiencies in predicting major histocompatibility complex (MHC) class II, which underpins durable T-cell help, and rare alleles, which disproportionately affect under-represented populations. Four bottlenecks continue to constrain the field: class II prediction, T-cell receptor (TCR) recognition, immunodominance, and the disconnection between nucleotide-level design and peptide-level prediction. We argue that the last of these, which has drawn the least attention, is, in our assessment, the most likely to yield near-term gains for personalised cancer vaccines and pandemic preparedness, and we set out an architecture that couples translation-rate prediction to peptide presentation. Building it will require data that do not yet exist; we specify what must be measured, and on which platforms.",
       "url": "https://doi.org/10.1093/bib/bbag638"
     },
     {
@@ -1832,8 +2198,8 @@
       "date": "2026-11-01",
       "doi": "10.1093/bib/bbag637",
       "cited": 0,
-      "license": "",
-      "pdf": "",
+      "license": "cc by",
+      "pdf": "https://europepmc.org/articles/PMC13783198?pdf=render",
       "keywords": [
         "Multi-task Learning",
         "Deep Learning",
@@ -1858,7 +2224,7 @@
         "proteins",
         "rna"
       ],
-      "abstract": "",
+      "abstract": "RNA G-quadruplexes (RG4s) are noncanonical four-stranded RNA structures that regulate post-transcriptional processes and are linked to multiple diseases, yet identifying their binding proteins remains experimentally challenging and computationally limited. Here, we present G4SAINT, a deep learning framework that predicts RG4-binding potential directly from protein sequence, structural, and domain-guided features. G4SAINT integrates residue-level embeddings from protein language models with graph neural networks and domain-guided attention to capture complementary signals across modalities. Across multiple benchmarks, G4SAINT outperforms existing approaches and accurately highlights regions associated with RG4 recognition. By leveraging multi-task learning across related binding prediction tasks, it enables scalable application to large, uncharacterized human proteomes. Overall, G4SAINT provides a robust and extensible approach for systematic discovery of RG4-binding proteins, offering new opportunities for understanding RNA-protein interactions and identifying potential therapeutic targets. Our code and datasets are available at: https://github.com/o-nwn-o/G4SAINT.",
       "url": "https://doi.org/10.1093/bib/bbag637"
     },
     {
@@ -2202,8 +2568,8 @@
       "date": "2026-11-14",
       "doi": "10.1186/s12859-026-06728-1",
       "cited": 0,
-      "license": "",
-      "pdf": "",
+      "license": "cc by",
+      "pdf": "https://europepmc.org/articles/PMC13783600?pdf=render",
       "keywords": [
         "Gene Regulatory Networks",
         "Benchmarking",
@@ -2227,7 +2593,7 @@
         "benchmarks",
         "expression"
       ],
-      "abstract": "",
+      "abstract": "Background Causal structure learning offers a promising approach to studying gene regulation in cells, aiming to provide deeper mechanistic insights than purely association-based methods. Theoretical groundwork indicating that interventions improve identifiability of causal structure motivates the use of causal structure learning methods in scenarios with interventional information. Results This benchmark investigates the ability of existing causal structure learning algorithms to leverage the information revealed by targeted interventions to infer gene regulatory networks (GRNs). In this study synthetic single-cell perturbation data and experimental data from a clustered regularly interspaced short palindromic repeats (CRISPR) screen are leveraged, and a suite of causal structure learning algorithms is evaluated on metrics tailored to synthetic ground truth and real biological data respectively. On synthetic data, accurate recovery of GRNs was achieved under favourable conditions: strong interventions, large sample sizes, and low measurement noise. For experimental data, no reliable ground truth is available, so inferred GRNs were assessed indirectly, using observed perturbation effects and curated regulatory annotations. Here, performance remained unreliable, with technical and biological noise and algorithmic scalability as limiting factors. This highlights a current gap between theoretical potential and practical application of causal structure learning for GRNs. Conclusions The benchmark provides insight into algorithm strengths and limitations and offers groundwork for further methodological development. We also provide an accessible software package for applying modern causal structure learning to custom datasets and thereby foster future exploration of its potential.",
       "url": "https://doi.org/10.1186/s12859-026-06728-1"
     },
     {
@@ -2484,8 +2850,8 @@
       "date": "2026-11-18",
       "doi": "10.1038/s41467-026-79335-6",
       "cited": 0,
-      "license": "",
-      "pdf": "",
+      "license": "cc by",
+      "pdf": "https://europepmc.org/articles/PMC13782556?pdf=render",
       "keywords": [],
       "tasks": [],
       "datasets": [],
@@ -2493,7 +2859,7 @@
       "fields": [
         "pathways"
       ],
-      "abstract": "",
+      "abstract": "The practical deployment of high-energy-density lithium-oxygen batteries is fundamentally restricted by sluggish oxygen redox kinetics and the instability of discharge intermediates. Here, we report an artificial intelligence-integrated framework leveraging interpretable machine learning and density functional theory to navigate a vast chemical space of thousands of active sites. This approach identifies Ni-Co dual-atom catalysts as a better configuration among the selected elements for orchestrating multi-electron transfer. Theoretical analysis reveals that synergistic electronic coupling between the dual-sites fundamentally reconfigures the d-band center, thereby lowering the thermodynamic barriers for oxygen redox. Moreover, the catalysts enable precise regulation of the reaction pathway, inducing a controllable transition from the conventional two-electron pathway to a four-electron pathway. This shift yields a discharge capacity of ~60,000 mAh g -1 . Beyond its role as a positive electrode catalyst, this architecture functions as a multifunctional interfacial protective layer that stabilizes the lithium metal negative electrode by suppressing dendrite growth. Consequently, the lithium-oxygen system achieves stable lifespan of 2075 cycles under the four-electron pathway with reduced voltage decay. This work establishes a data-guided strategy for the rational design of atomic-scale architecture via artificial intelligence, unlocking the potential of multi-electron oxygen chemistry for lithium-oxygen batteries.",
       "url": "https://doi.org/10.1038/s41467-026-79335-6"
     },
     {
@@ -2898,8 +3264,8 @@
         "Phage display",
         "Next-generation Sequencing (Ngs)",
         "Post-translational Modifications (Ptms)",
-        "High-affinity Binding Domains",
         "Deep Learning Algorithms",
+        "High-affinity Binding Domains",
         "Artificial Intelligence",
         "Proto-Oncogene Proteins c-fyn",
         "High-Throughput Nucleotide Sequencing"
@@ -3156,7 +3522,7 @@
       "doi": "10.1371/journal.pcbi.1014925",
       "cited": 0,
       "license": "cc by",
-      "pdf": "",
+      "pdf": "https://europepmc.org/articles/PMC13787800?pdf=render",
       "keywords": [],
       "tasks": [
         "pathways:ontology"
@@ -3256,7 +3622,7 @@
       "doi": "10.1371/journal.pcbi.1014959",
       "cited": 0,
       "license": "cc0",
-      "pdf": "",
+      "pdf": "https://europepmc.org/articles/PMC13787819?pdf=render",
       "keywords": [],
       "tasks": [
         "cancer:heterogeneity",
@@ -3792,8 +4158,8 @@
       "date": "2026-11-16",
       "doi": "10.1371/journal.pcbi.1014941",
       "cited": 0,
-      "license": "",
-      "pdf": "",
+      "license": "cc by",
+      "pdf": "https://europepmc.org/articles/PMC13784722?pdf=render",
       "keywords": [
         "Skull",
         "Birds",
@@ -3803,7 +4169,7 @@
       "tasks": [],
       "datasets": [],
       "lists": [],
-      "abstract": "",
+      "abstract": "Quantifying morphology from 3D scans is increasingly central to comparative biology, yet many existing pipelines require labor-intensive manual landmarking and impose strict assumptions on the data quality, hindering the high-throughput analysis of large and often imperfect digitized collections. In this work, we develop a fully unsupervised geometric framework that extracts robust parametric descriptors of cranial morphology directly from imperfect 3D skull meshes. Specifically, utilizing tools in computational geometry, differential geometry, and numerical optimization, the framework automatically aligns each specimen, measures the primary skull dimensions, and fits geometric primitives to the orbit and the neurocranium via robust iterative schemes, yielding stable estimates even for topologically noisy or damaged meshes. We demonstrate the framework on 100 skull specimens of Darwin's finches and their relatives. The extracted measurements recover the well-established scaling relationship between skull size and orbit curvature, providing a biological validation of the automated pipeline. Building on this, we establish a predictive model that estimates the orbit curvature from three easily obtainable linear skull measurements, explaining 86.36% of the variance in curvature with an average prediction error of only 6.14%, and further derive dimensionless relative-geometry descriptors that are invariant to uniform scaling and retain variation among the sampled genera. We also demonstrate the generalizability of our method by applying it to other avian and mammalian skulls. Altogether, our work establishes a rigorous foundation for the digital estimation and high-throughput phenotyping of large-scale museum collections without the need for manual landmarking.",
       "url": "https://doi.org/10.1371/journal.pcbi.1014941"
     },
     {
@@ -3816,8 +4182,8 @@
       "date": "2026-11-16",
       "doi": "10.1371/journal.pcbi.1014946",
       "cited": 0,
-      "license": "",
-      "pdf": "",
+      "license": "cc by",
+      "pdf": "https://europepmc.org/articles/PMC13787798?pdf=render",
       "keywords": [],
       "tasks": [],
       "datasets": [],
@@ -3825,7 +4191,7 @@
       "fields": [
         "microbiome"
       ],
-      "abstract": "",
+      "abstract": "Streptococcus pneumoniae is a multi-serotype pathogen causing a substantial global burden of pneumonia and invasive bacterial disease. Pneumococcal conjugate vaccines have been implemented worldwide, protecting against colonisation and disease from selected high-burden serotypes, but in many settings short-term effectiveness has been eroded by serotype replacement. Vaccines with broader serotype coverage have been developed, at the cost of immunogenicity against single serotypes. To determine the longer-term impact of these new formulations, we propose a novel modelling framework that evaluates the relationship between serotype-specific vaccine immunogenicity and effectiveness, comprising immunity, carriage and clinical models. Dynamics of individual serotypes are modelled over time, advancing existing modelling paradigms that group all serotypes according to vaccine type. This framework is sufficiently flexible to consider diverse populations, emerging vaccine formulations and implementation strategies. A retrospective analysis of sequential introduction of 7- and 13-valent pneumococcal conjugate vaccines in Australia demonstrates the flexibility of the model.",
       "url": "https://doi.org/10.1371/journal.pcbi.1014946"
     },
     {
@@ -3857,13 +4223,13 @@
       "date": "2026-11-16",
       "doi": "10.1371/journal.pcbi.1014971",
       "cited": 0,
-      "license": "",
-      "pdf": "",
+      "license": "cc by",
+      "pdf": "https://europepmc.org/articles/PMC13787812?pdf=render",
       "keywords": [],
       "tasks": [],
       "datasets": [],
       "lists": [],
-      "abstract": "",
+      "abstract": "Single neurons can perform complex exclusive-or (XOR) computation which is conventionally thought to need multilayer networks, yet the biophysical mechanisms and the robustness of such computations under stochastic synaptic drive remain unclear. Using biologically realistic modeling, we demonstrate that dendritic depolarization block provides a universal and robust mechanism for XOR-like computation. Voltage-gated calcium channels enable a non-monotonic input-output relationship: moderate asynchronous drive evokes spiking, whereas excessive drive induces a sustained plateau that suppresses output, naturally implementing XOR logic computation. This computation is strictly gated by temporal distribution of synaptic inputs rather than spatial distribution; the XOR-like response is robust across diverse dendritic configurations but collapses under synchronous activation. Dendritic depolarization block propagates to the soma via dendrite-soma coupling, establishing a neuronal output-limiting mechanism. The computation is highly efficient, leveraging a frequency-synapse-count trade-off to ensure stable logic operations across varying levels of background activity. Cross-morphological validation confirms that XOR-like computation is morphology-independent, representing a generalizable biophysical principle of neural information processing.",
       "url": "https://doi.org/10.1371/journal.pcbi.1014971"
     },
     {
@@ -4841,7 +5207,7 @@
       "doi": "10.1371/journal.pcbi.1014899",
       "cited": 0,
       "license": "cc by",
-      "pdf": "",
+      "pdf": "https://europepmc.org/articles/PMC13784732?pdf=render",
       "keywords": [
         "Proteins",
         "Protein Interaction Mapping",
@@ -4870,7 +5236,7 @@
       "doi": "10.1371/journal.pcbi.1014942",
       "cited": 0,
       "license": "cc by",
-      "pdf": "",
+      "pdf": "https://europepmc.org/articles/PMC13784719?pdf=render",
       "keywords": [
         "Bacteria",
         "Models, Biological"
@@ -6751,7 +7117,7 @@
       "doi": "10.1093/bioinformatics/btag814",
       "cited": 0,
       "license": "cc by",
-      "pdf": "",
+      "pdf": "https://europepmc.org/articles/PMC13787844?pdf=render",
       "keywords": [],
       "tasks": [
         "expression:integration"
@@ -7272,7 +7638,7 @@
       "doi": "10.1016/j.xgen.2026.101425",
       "cited": 0,
       "license": "cc by-nc",
-      "pdf": "",
+      "pdf": "https://europepmc.org/articles/PMC13781581?pdf=render",
       "keywords": [
         "Evolution, Molecular",
         "Biological Evolution"
@@ -7321,7 +7687,7 @@
       "doi": "10.1016/j.xgen.2026.101400",
       "cited": 0,
       "license": "cc by-nc-nd",
-      "pdf": "",
+      "pdf": "https://europepmc.org/articles/PMC13781588?pdf=render",
       "keywords": [
         "Neocortex",
         "Evolution, Molecular",
@@ -7430,7 +7796,7 @@
       "doi": "10.1371/journal.pcbi.1014954",
       "cited": 0,
       "license": "cc by",
-      "pdf": "",
+      "pdf": "https://europepmc.org/articles/PMC13781423?pdf=render",
       "keywords": [
         "Proteomics",
         "Computational Biology",
@@ -7493,7 +7859,7 @@
       "doi": "10.1371/journal.pcbi.1014883",
       "cited": 0,
       "license": "cc by",
-      "pdf": "",
+      "pdf": "https://europepmc.org/articles/PMC13784735?pdf=render",
       "keywords": [
         "Brain",
         "Memory",
@@ -7986,7 +8352,7 @@
       "year": "2026",
       "date": "2026-11-01",
       "doi": "10.1038/s41587-026-03371-2",
-      "cited": 0,
+      "cited": 1,
       "license": "",
       "pdf": "",
       "keywords": [],
@@ -8406,7 +8772,7 @@
       "doi": "10.1093/bioinformatics/btag817",
       "cited": 0,
       "license": "cc by",
-      "pdf": "",
+      "pdf": "https://europepmc.org/articles/PMC13787857?pdf=render",
       "keywords": [
         "Transposable element",
         "Convolutional Neural Network",
@@ -8525,8 +8891,8 @@
       "date": "2026-11-10",
       "doi": "10.1371/journal.pcbi.1014920",
       "cited": 0,
-      "license": "",
-      "pdf": "",
+      "license": "cc by",
+      "pdf": "https://europepmc.org/articles/PMC13781422?pdf=render",
       "keywords": [
         "COVID-19",
         "SARS-CoV-2"
@@ -8537,7 +8903,7 @@
       "fields": [
         "microbiome"
       ],
-      "abstract": "",
+      "abstract": "The modern enormous scale of viral genomic data, as exemplified by SARS-CoV-2, presents unique opportunities for epidemic inference and real-time monitoring. A key challenge is to wade through the extremely large stream of sequence data in order to identify small subsets of sequences that may represent rapid population growth of newly emerged lineages. To address this challenge, we developed a new approach that combines techniques in graph theory and machine learning. We represent distances between small subsets of sequences as graph Laplacians and identify from them features of rapid population growth. From early sequence data collected in the US and the UK between 2021 and mid-2022, we identified two features-genetic diversity and graph connectivity-that allow us to reliably estimate growth rates of newly emerged lineages. To test our model, we used data collected from mid-2022 to end-2024 and accurately inferred the growth rates of lineages that appeared during this period. Furthermore, we demonstrate that for data collected in 2023 when the sequencing efforts were relatively high (thousands of sequences per day) in the US and the UK, our model correctly identified the most rapidly expanding lineages when they were still at low frequencies. Overall, our work provides a scalable and adaptable tool to estimate the growth rate of newly emerged SARS-CoV-2 lineages.",
       "url": "https://doi.org/10.1371/journal.pcbi.1014920"
     },
     {
@@ -10235,8 +10601,8 @@
       "date": "2026-11-01",
       "doi": "10.1093/bioinformatics/btag807",
       "cited": 0,
-      "license": "",
-      "pdf": "",
+      "license": "cc by",
+      "pdf": "https://europepmc.org/articles/PMC13784639?pdf=render",
       "keywords": [
         "Computational Biology",
         "Cell Lineage",
@@ -10256,7 +10622,7 @@
         "expression",
         "pathways"
       ],
-      "abstract": "",
+      "abstract": "Motivation Gene regulatory network (GRN) inference from single-cell transcriptomes is complicated by expression patterns associated with both cell state and shared ancestry. Cellular phylogenies provide developmental context, but incorporating relationships among individual cells into gene-level regulatory inference remains challenging. Results We present scPhyloGRN, a supervised framework that integrates single-cell gene expression with cellular phylogeny to prioritize directed transcription factor (TF)-target candidates within the observed gene set. The framework maps cell ancestry to gene associations that guide graph construction, attention in a dual-stream encoder, and lineage-consistency regularization. We evaluated scPhyloGRN against 10 methods across 17 dataset-reference settings spanning four mouse embryos and one Caenorhabditis elegans dataset. scPhyloGRN showed an overall advantage in regulatory edge prioritization, supported by additional evaluations using shared candidate spaces. Removing lineage information reduced AUPRC in the ablation analyses, while branch-level and regulator-level analyses showed improved ranking and recovery of reference-supported regulatory candidates. Availability and implementation Source code and analysis workflows are available at https://github.com/Maria0852/scPhyloGRN, with a versioned archive at https://doi.org/10.5281/zenodo.22793831.",
       "url": "https://doi.org/10.1093/bioinformatics/btag807"
     },
     {
@@ -10731,17 +11097,17 @@
       "doi": "10.1016/j.xgen.2026.101419",
       "cited": 0,
       "license": "cc by",
-      "pdf": "",
+      "pdf": "https://europepmc.org/articles/PMC13781595?pdf=render",
       "keywords": [
         "Benchmark",
         "Whole-genome Sequencing",
         "Reference Bias",
-        "Reference Genome",
-        "Somatic Variant",
         "Colo829",
         "Pangenome Graph",
-        "Donor-specific Assembly",
         "Hapmap Mixture",
+        "Reference Genome",
+        "Donor-specific Assembly",
+        "Somatic Variant",
         "Genome Inference",
         "Genomics",
         "Genome, Human",
@@ -11940,7 +12306,7 @@
       "year": "2026",
       "date": "2026-11-03",
       "doi": "10.1038/s41592-026-03301-9",
-      "cited": 0,
+      "cited": 1,
       "license": "",
       "pdf": "",
       "keywords": [],
@@ -12189,7 +12555,7 @@
       "doi": "10.1016/j.xgen.2026.101418",
       "cited": 1,
       "license": "cc by",
-      "pdf": "",
+      "pdf": "https://europepmc.org/articles/PMC13781589?pdf=render",
       "keywords": [
         "Somatic Mosaicism, Mobile Element Insertions, Retrotransposition, Benchmarking, Long-read Sequencing, Transposon-targeted Sequencing, Multi-platform Sequencing, Donor-specific Genome Assembly, Line-1 Source Tracing, Haplotype Phasing",
         "Retroelements",
@@ -12221,7 +12587,7 @@
       "doi": "10.1016/j.xgen.2026.101401",
       "cited": 0,
       "license": "cc by-nc-nd",
-      "pdf": "",
+      "pdf": "https://europepmc.org/articles/PMC13781582?pdf=render",
       "keywords": [
         "Chromosome Mapping",
         "Mutation",
@@ -12656,8 +13022,8 @@
       "date": "2026-11-02",
       "doi": "10.1371/journal.pcbi.1014914",
       "cited": 0,
-      "license": "",
-      "pdf": "",
+      "license": "cc by",
+      "pdf": "https://europepmc.org/articles/PMC13784734?pdf=render",
       "keywords": [
         "RNA",
         "Evolution, Molecular",
@@ -12667,7 +13033,7 @@
       "tasks": [],
       "datasets": [],
       "lists": [],
-      "abstract": "",
+      "abstract": "The topography of fitness landscapes strongly influences the outcome of Darwinian evolution. This topography in turn is determined by the effects of genotypic changes on phenotypes, such as the structure and function of biomolecules like proteins and RNA. Thus, understanding the evolution of biomolecules requires an understanding of the relationship between genotype and phenotype. Here, we study how this relationship is influenced by the fundamental biochemical rules that determine which RNA bases can form base pairs in RNA secondary structure. To this end, we computationally study the secondary structure genotype-phenotype maps of RNA molecules using all ten possible different such RNA base-pairing rules. We simulate adaptive evolution on fitness landscapes in which an RNA's fitness is defined by its secondary structure. We find that the base-pairing rules strongly affect how likely an evolving population is to find the global peak of a fitness landscape. The base-pairing rule of most biological RNA molecules (A-U, G-C, G-U) is among the top three most favorable rules for adaptive evolution, in which over 80% of evolving populations find a landscape's highest fitness peak. Simple characteristics of the genotype-phenotype map, such as the fraction of genotypes that constitute local peaks can help to predict how likely evolving populations are to find a landscape's global fitness peak. These characteristics can in turn be explained by two elementary properties of base-pairing rules that we call promiscuity and degeneracy.",
       "url": "https://doi.org/10.1371/journal.pcbi.1014914"
     },
     {
@@ -14709,7 +15075,7 @@
       "doi": "10.1093/bioinformatics/btag783",
       "cited": 0,
       "license": "cc by",
-      "pdf": "",
+      "pdf": "https://europepmc.org/articles/PMC13781455?pdf=render",
       "keywords": [
         "Computational Biology",
         "Linkage Disequilibrium",
@@ -14877,7 +15243,7 @@
       "doi": "10.1016/j.xgen.2026.101358",
       "cited": 2,
       "license": "cc by-nc-nd",
-      "pdf": "",
+      "pdf": "https://europepmc.org/articles/PMC13781599?pdf=render",
       "keywords": [
         "Mathematical Modeling",
         "Clinical Genetics",
@@ -14915,7 +15281,7 @@
       "doi": "10.1016/j.xgen.2026.101390",
       "cited": 2,
       "license": "cc by",
-      "pdf": "",
+      "pdf": "https://europepmc.org/articles/PMC13781593?pdf=render",
       "keywords": [
         "Somatic Mosaicism",
         "Somatic Mutation",
@@ -15071,7 +15437,7 @@
       "doi": "10.1038/s41586-026-11119-w",
       "cited": 0,
       "license": "cc by",
-      "pdf": "",
+      "pdf": "https://europepmc.org/articles/PMC13781783?pdf=render",
       "keywords": [
         "Autistic Disorder",
         "Alternative Splicing",
@@ -15872,7 +16238,7 @@
       "doi": "10.1016/j.xgen.2026.101383",
       "cited": 5,
       "license": "cc by-nc-nd",
-      "pdf": "",
+      "pdf": "https://europepmc.org/articles/PMC13781585?pdf=render",
       "keywords": [
         "Genetic variation",
         "in vitro model",
@@ -15882,10 +16248,10 @@
         "Gene-by-environment Interaction",
         "Single-cell Rna-seq",
         "Context-Dependent Gene Regulation",
-        "Gwas Colocalization",
-        "Dynamic Eqtl",
         "Response Eqtl",
+        "Dynamic Eqtl",
         "Eqtl Enrichment",
+        "Gwas Colocalization",
         "Genetic Predisposition to Disease",
         "Environmental Exposure",
         "Quantitative Trait Loci"
@@ -15914,7 +16280,7 @@
       "doi": "10.1016/j.xgen.2026.101367",
       "cited": 1,
       "license": "cc by-nc-nd",
-      "pdf": "",
+      "pdf": "https://europepmc.org/articles/PMC13781605?pdf=render",
       "keywords": [
         "Gene regulation",
         "Comparative genomics",
@@ -16410,6 +16776,28 @@
       "url": "https://doi.org/10.1101/gr.280579.125"
     },
     {
+      "id": "PMC:PMC13787598",
+      "title": "Categorization and analysis of 16 computational methods for estimating cell potency from single-cell RNA-seq data",
+      "method": "",
+      "authors": "Wang Q, Zhai Z, Lian Q, Song D, Li J.",
+      "journal": "Cell systems",
+      "year": "2026",
+      "date": "2026-10-29",
+      "doi": "",
+      "cited": 0,
+      "license": "",
+      "pdf": "",
+      "keywords": [],
+      "tasks": [],
+      "datasets": [],
+      "lists": [],
+      "fields": [
+        "expression"
+      ],
+      "abstract": "",
+      "url": "https://europepmc.org/article/PMC/PMC13787598"
+    },
+    {
       "id": "MED:43058116",
       "title": "Fine-tuning of polygenic score to local data improves risk prediction and clinical implementation.",
       "method": "",
@@ -16536,8 +16924,8 @@
       "date": "2026-10-20",
       "doi": "10.1038/s41467-026-78776-3",
       "cited": 0,
-      "license": "",
-      "pdf": "",
+      "license": "cc by-nc-nd",
+      "pdf": "https://europepmc.org/articles/PMC13782551?pdf=render",
       "keywords": [
         "Chromosomes, Human",
         "Diploidy",
@@ -16556,7 +16944,7 @@
         "genomes",
         "variants"
       ],
-      "abstract": "",
+      "abstract": "Reference genomes are essential for identifying and representing human genomic variation, yet single-genome sequences fail to capture population-specific diversity. We present the Emirati pangenome comprising a trio-based, diploid chromosome-level assembly from deep, multi-platform sequencing data and 57 additional high-quality HiFi sequencing-based chromosome-scale assemblies, 27 of which are trio-based. Haplotypes demonstrate high contiguity (median N50 of 151.9 Mb) and good base accuracy (median QV score of 59.31). Of all assembled chromosomes, 31.8% are telomere-to-telomere (T2T) scaffolds (chromosome-spanning sequences flanked by telomeric repeats at both ends), and 64.3% achieved chromosome-level continuity (single scaffolds spanning an entire chromosome but retaining one or more sequence gaps or lacking a telomeric signature at one or both ends). These assemblies form the foundation of the population-specific pangenome graph of the Emirati Reference Genome Project (ERGP), which captures genomic variation comparable to the globally diverse HPRC reference graph, while covering regionally enriched variation. Applying the ERGP pangenome to short‑read genotyping of an independent Emirati cohort revealed structural variant sites in linkage disequilibrium with phenotype‑associated GWAS variants, demonstrating the value of population-graph-based variant inference. The ERGP reference complements human pangenomes and provides a critical foundation for population-specific genomics and precision medicine in the United Arab Emirates.",
       "url": "https://doi.org/10.1038/s41467-026-78776-3"
     },
     {
@@ -16569,8 +16957,8 @@
       "date": "2026-10-21",
       "doi": "10.1038/s41467-026-78526-5",
       "cited": 0,
-      "license": "",
-      "pdf": "",
+      "license": "cc by-nc-nd",
+      "pdf": "https://europepmc.org/articles/PMC13782539?pdf=render",
       "keywords": [
         "Emergency Service, Hospital",
         "Triage",
@@ -16579,7 +16967,7 @@
       "tasks": [],
       "datasets": [],
       "lists": [],
-      "abstract": "",
+      "abstract": "Ethnoracial disparities in emergency department triage decisions persist, despite efforts to standardize protocols. Here, we analyze 1.35 million encounters at four U.S. emergency departments that all use the Emergency Severity Index triage protocol. We independently score visits as emergent (level 2) or urgent (level 3) by applying the criteria computationally and compare to nurse assignments. We show that, matched on clinical presentation and hospital context, Hispanic patients are less often triaged emergent than Non-Hispanic White (NHW) patients at every site (odds ratios (ORs): 0.75 [95% CI 0.72-0.78] to 0.90 [0.86-0.94]), and Non-Hispanic Black patients at two (0.73 [0.71-0.74], 0.89 [0.86-0.92]). Disparities increase where the algorithm scores patients lower-risk (Hispanic-NHW ORs: 0.73 [0.69-0.77] to 0.88 [0.83-0.94]), and attenuate where it scores them higher-risk (0.83 [0.79-0.89] to 0.95 [0.90-1.00]), suggesting a disparate \"benefit-of-the-doubt\" pattern of clinical discretion. Standardized decision support may reduce these disparities, and we estimate a worst-case increase on ED lengths of stay to be 1.0 -3.8% across sites.",
       "url": "https://doi.org/10.1038/s41467-026-78526-5"
     },
     {
@@ -16592,8 +16980,8 @@
       "date": "2026-10-20",
       "doi": "10.1038/s41467-026-78559-w",
       "cited": 0,
-      "license": "",
-      "pdf": "",
+      "license": "cc by-nc-nd",
+      "pdf": "https://europepmc.org/articles/PMC13782521?pdf=render",
       "keywords": [
         "Thyroid Neoplasms",
         "Proteomics",
@@ -16609,7 +16997,7 @@
       "fields": [
         "cancer"
       ],
-      "abstract": "",
+      "abstract": "Papillary thyroid cancer (PTC) has a rising incidence. The majority are diagnosed at an early stage, albeit with a minority exhibiting aggressive tendencies. Given its generally indolent nature, controversy persists regarding the management of early-stage PTCs, particularly surgical intervention and long-term surveillance strategies. Here, we conduct a large-scale proteomic characterization of early-stage PTC based on tumor samples from 797 patients. Proteomic profiling unveils clinically relevant modules and identifies six subtypes, capturing the spectrum of heterogeneity from indolent to progressive disease states. Notably, subtypes associated with higher progression risk display enhanced signatures of ribogenesis and epithelial-mesenchymal transition. Furthermore, integrating machine learning with protein co-expression network analysis, we identify predictive markers of PTC progression risk such as GPX3 and TMSB4X. Integration of clinical and proteomic data provides a valuable resource for a deeper understanding of early-stage PTC biology and may inform personalized management strategies for patients with indolent or progressive disease.",
       "url": "https://doi.org/10.1038/s41467-026-78559-w"
     },
     {
@@ -17689,7 +18077,7 @@
       "year": "2026",
       "date": "2026-10-10",
       "doi": "10.1038/s41467-026-78326-x",
-      "cited": 0,
+      "cited": 1,
       "license": "cc by",
       "pdf": "https://europepmc.org/articles/PMC13745583?pdf=render",
       "keywords": [
@@ -25019,8 +25407,8 @@
         "Transcriptomics",
         "Voluntary Exercise",
         "Multi-omics",
-        "Single-nucleus Dna Methylation",
-        "Single-nucleus Rna Seqencing"
+        "Single-nucleus Rna Seqencing",
+        "Single-nucleus Dna Methylation"
       ],
       "tasks": [
         "regulation:methylation"
@@ -27818,8 +28206,8 @@
       "date": "2026-10-01",
       "doi": "10.1093/bioinformatics/btag758",
       "cited": 0,
-      "license": "",
-      "pdf": "",
+      "license": "cc by",
+      "pdf": "https://europepmc.org/articles/PMC13783422?pdf=render",
       "keywords": [
         "Proteomics",
         "Computational Biology",
@@ -27838,7 +28226,7 @@
         "expression",
         "regulation"
       ],
-      "abstract": "",
+      "abstract": "Motivation Paired spatial omics technologies measure transcriptomic profiles together with epigenomic or proteomic profiles while preserving tissue context. Integration remains challenging because modalities differ in feature distributions, sparsity, and spatial dependencies. Existing methods may not fully model complementary graph views or adapt spatial constraints, limiting preservation of spatial organization and modality-specific information. Results We present smiMAD for paired spatial omics integration. smiMAD models spatial-neighborhood and molecular-feature graphs through graph-view-specific and common-information branches. An adaptive gate integrates graph-view and modality information, while an alignment-decorrelation objective promotes common-information embedding consistency and reduces branch redundancy. A dynamic spatial-consistency strategy progressively relaxes spatial constraints during training. Across 17 simulated and 15 real RNA-ATAC (assay for transposase-accessible chromatin) and RNA-protein datasets, smiMAD achieved competitive clustering accuracy, spatial coherence, and multimodal integration performance. Molecular marker patterns provided support for the inferred spatial regions. Availability and implementation The source code is available at https://github.com/fdu-wangfeilab/smiMAD, with the version used in this study archived at https://zenodo.org/records/22931624. Data are available at https://zenodo.org/records/17207079.",
       "url": "https://doi.org/10.1093/bioinformatics/btag758"
     },
     {
@@ -29044,7 +29432,7 @@
       "doi": "10.1371/journal.pcbi.1014840",
       "cited": 0,
       "license": "cc by",
-      "pdf": "",
+      "pdf": "https://europepmc.org/articles/PMC13645221?pdf=render",
       "keywords": [
         "Financing, Organized",
         "Research Support as Topic"
@@ -29476,7 +29864,7 @@
       "doi": "10.1038/s41467-026-77918-x",
       "cited": 0,
       "license": "cc by",
-      "pdf": "",
+      "pdf": "https://europepmc.org/articles/PMC13642919?pdf=render",
       "keywords": [
         "Neoplasms",
         "Whole Genome Sequencing"
@@ -29729,7 +30117,7 @@
       "doi": "10.1371/journal.pcbi.1014843",
       "cited": 0,
       "license": "cc by",
-      "pdf": "",
+      "pdf": "https://europepmc.org/articles/PMC13641346?pdf=render",
       "keywords": [
         "Malaria",
         "Malaria, Falciparum",
@@ -29956,7 +30344,7 @@
       "doi": "10.1186/s13059-026-04286-6",
       "cited": 0,
       "license": "cc by-nc-nd",
-      "pdf": "",
+      "pdf": "https://europepmc.org/articles/PMC13637242?pdf=render",
       "keywords": [
         "Comparative genomics",
         "Non-human primates",
@@ -29991,7 +30379,7 @@
       "doi": "10.1038/s41592-026-03237-0",
       "cited": 1,
       "license": "cc by-nc-nd",
-      "pdf": "",
+      "pdf": "https://europepmc.org/articles/PMC13645621?pdf=render",
       "keywords": [
         "Cell Communication",
         "Single-Cell Analysis"
@@ -30157,7 +30545,7 @@
       "doi": "10.1038/s41467-026-78143-2",
       "cited": 0,
       "license": "cc by",
-      "pdf": "",
+      "pdf": "https://europepmc.org/articles/PMC13639084?pdf=render",
       "keywords": [
         "Blood Proteins",
         "Proteome",
@@ -30416,7 +30804,7 @@
       "doi": "10.1371/journal.pcbi.1014601",
       "cited": 0,
       "license": "cc by",
-      "pdf": "",
+      "pdf": "https://europepmc.org/articles/PMC13638049?pdf=render",
       "keywords": [
         "Sequence Analysis, RNA",
         "Single-Cell Analysis",
@@ -30713,126 +31101,6 @@
       "url": "https://europepmc.org/article/PMC/PMC13649120"
     },
     {
-      "id": "PMC:PMC13643169",
-      "title": "XPA lactylation is required for UV-induced DNA damage repair",
-      "method": "",
-      "authors": "",
-      "journal": "Nucleic acids research",
-      "year": "2026",
-      "date": "2026-10-07",
-      "doi": "",
-      "cited": 0,
-      "license": "cc by",
-      "pdf": "",
-      "keywords": [],
-      "tasks": [],
-      "datasets": [],
-      "lists": [],
-      "abstract": "",
-      "url": "https://europepmc.org/article/PMC/PMC13643169"
-    },
-    {
-      "id": "PMC:PMC13643167",
-      "title": "Robust helicase loading mechanism underlies diverse architectures of bacterial replication origins",
-      "method": "",
-      "authors": "",
-      "journal": "Nucleic acids research",
-      "year": "2026",
-      "date": "2026-10-07",
-      "doi": "",
-      "cited": 0,
-      "license": "cc by-nc",
-      "pdf": "",
-      "keywords": [],
-      "tasks": [],
-      "datasets": [],
-      "lists": [],
-      "fields": [
-        "microbiome"
-      ],
-      "abstract": "",
-      "url": "https://europepmc.org/article/PMC/PMC13643167"
-    },
-    {
-      "id": "PMC:PMC13643173",
-      "title": "Detect de novo expressed ORFs in transcriptomes with DESwoMAN",
-      "method": "DESwoMAN",
-      "authors": "",
-      "journal": "NAR genomics and bioinformatics",
-      "year": "2026",
-      "date": "2026-10-07",
-      "doi": "",
-      "cited": 0,
-      "license": "cc by-nc",
-      "pdf": "",
-      "keywords": [],
-      "tasks": [],
-      "datasets": [],
-      "lists": [],
-      "fields": [
-        "expression"
-      ],
-      "abstract": "",
-      "url": "https://europepmc.org/article/PMC/PMC13643173"
-    },
-    {
-      "id": "PMC:PMC13643176",
-      "title": "Acetylation-independent mechanism for binding of ENL to intrinsically disordered regions in TAF2/6 and SNF5",
-      "method": "",
-      "authors": "",
-      "journal": "Nucleic acids research",
-      "year": "2026",
-      "date": "2026-10-07",
-      "doi": "",
-      "cited": 0,
-      "license": "cc by-nc",
-      "pdf": "",
-      "keywords": [],
-      "tasks": [],
-      "datasets": [],
-      "lists": [],
-      "abstract": "",
-      "url": "https://europepmc.org/article/PMC/PMC13643176"
-    },
-    {
-      "id": "PMC:PMC13643172",
-      "title": "A dynamically frustrated allosteric checkpoint consistent with conformational proofreading in CRISPR–Cas9",
-      "method": "",
-      "authors": "",
-      "journal": "Nucleic acids research",
-      "year": "2026",
-      "date": "2026-10-07",
-      "doi": "",
-      "cited": 0,
-      "license": "cc by-nc",
-      "pdf": "",
-      "keywords": [],
-      "tasks": [],
-      "datasets": [],
-      "lists": [],
-      "abstract": "",
-      "url": "https://europepmc.org/article/PMC/PMC13643172"
-    },
-    {
-      "id": "PMC:PMC13645221",
-      "title": "Ten simple rules for preparing and delivering effective funding pitches in competitive grant applications",
-      "method": "",
-      "authors": "Göbel A, Rachner T.",
-      "journal": "PLoS computational biology",
-      "year": "2026",
-      "date": "2026-10-01",
-      "doi": "",
-      "cited": 0,
-      "license": "cc by",
-      "pdf": "",
-      "keywords": [],
-      "tasks": [],
-      "datasets": [],
-      "lists": [],
-      "abstract": "",
-      "url": "https://europepmc.org/article/PMC/PMC13645221"
-    },
-    {
       "id": "PMC:PMC13643171",
       "title": "Correction to ‘Identification and analysis of consensus RNA motifs binding to the genome regulator CTCF’",
       "method": "",
@@ -30850,191 +31118,6 @@
       "lists": [],
       "abstract": "",
       "url": "https://europepmc.org/article/PMC/PMC13643171"
-    },
-    {
-      "id": "PMC:PMC13641346",
-      "title": "Mobility hinders malaria elimination goals in the Brazilian Amazon",
-      "method": "",
-      "authors": "Arisco N, Fontoura P, Peterka C, Castro M.",
-      "journal": "PLoS computational biology",
-      "year": "2026",
-      "date": "2026-10-01",
-      "doi": "",
-      "cited": 0,
-      "license": "cc by",
-      "pdf": "",
-      "keywords": [],
-      "tasks": [],
-      "datasets": [],
-      "lists": [],
-      "abstract": "",
-      "url": "https://europepmc.org/article/PMC/PMC13641346"
-    },
-    {
-      "id": "PMC:PMC13639370",
-      "title": "Adaptation-coupled CRISPRi identifies antibiotic-sensitizing genes leading to a novel plasmid selection marker",
-      "method": "",
-      "authors": "",
-      "journal": "Nucleic acids research",
-      "year": "2026",
-      "date": "2026-10-06",
-      "doi": "",
-      "cited": 0,
-      "license": "cc by-nc",
-      "pdf": "",
-      "keywords": [],
-      "tasks": [],
-      "datasets": [],
-      "lists": [],
-      "abstract": "",
-      "url": "https://europepmc.org/article/PMC/PMC13639370"
-    },
-    {
-      "id": "PMC:PMC13639371",
-      "title": "Nanopore sequencing combined with adaptive sampling and NanoExpansion enables accurate characterization of repeat expansion disorders",
-      "method": "",
-      "authors": "",
-      "journal": "NAR genomics and bioinformatics",
-      "year": "2026",
-      "date": "2026-10-06",
-      "doi": "",
-      "cited": 0,
-      "license": "cc by",
-      "pdf": "",
-      "keywords": [],
-      "tasks": [],
-      "datasets": [],
-      "lists": [],
-      "abstract": "",
-      "url": "https://europepmc.org/article/PMC/PMC13639371"
-    },
-    {
-      "id": "PMC:PMC13639356",
-      "title": "Integrating network medicine and foundation models reveals cell-type-specific regulatory alterations in Alzheimer’s disease",
-      "method": "",
-      "authors": "",
-      "journal": "NAR genomics and bioinformatics",
-      "year": "2026",
-      "date": "2026-10-06",
-      "doi": "",
-      "cited": 0,
-      "license": "cc by-nc",
-      "pdf": "",
-      "keywords": [],
-      "tasks": [
-        "benchmarks:foundation-eval"
-      ],
-      "datasets": [],
-      "lists": [],
-      "fields": [
-        "benchmarks"
-      ],
-      "abstract": "",
-      "url": "https://europepmc.org/article/PMC/PMC13639356"
-    },
-    {
-      "id": "PMC:PMC13635752",
-      "title": "A systematic single-cell analysis of enhancer RNAs across human and mouse",
-      "method": "",
-      "authors": "",
-      "journal": "Nucleic acids research",
-      "year": "2026",
-      "date": "2026-10-05",
-      "doi": "",
-      "cited": 0,
-      "license": "cc by-nc",
-      "pdf": "",
-      "keywords": [],
-      "tasks": [],
-      "datasets": [],
-      "lists": [],
-      "fields": [
-        "expression"
-      ],
-      "abstract": "",
-      "url": "https://europepmc.org/article/PMC/PMC13635752"
-    },
-    {
-      "id": "PMC:PMC13635743",
-      "title": "Commentary on ‘corradjust unveils biologically relevant transcriptomic correlations by efficiently eliminating hidden confounders’",
-      "method": "",
-      "authors": "",
-      "journal": "Nucleic acids research",
-      "year": "2026",
-      "date": "2026-10-05",
-      "doi": "",
-      "cited": 0,
-      "license": "cc by",
-      "pdf": "",
-      "keywords": [],
-      "tasks": [],
-      "datasets": [],
-      "lists": [],
-      "fields": [
-        "expression"
-      ],
-      "abstract": "",
-      "url": "https://europepmc.org/article/PMC/PMC13635743"
-    },
-    {
-      "id": "PMC:PMC13638049",
-      "title": "A graph-attentive GAN for rare-cell-aware single-cell RNA-seq data generation",
-      "method": "",
-      "authors": "Ganguly R, Aafrine S, Hossain S, Ray S.",
-      "journal": "PLoS computational biology",
-      "year": "2026",
-      "date": "2026-10-01",
-      "doi": "",
-      "cited": 0,
-      "license": "cc by",
-      "pdf": "",
-      "keywords": [],
-      "tasks": [],
-      "datasets": [],
-      "lists": [],
-      "fields": [
-        "expression"
-      ],
-      "abstract": "",
-      "url": "https://europepmc.org/article/PMC/PMC13638049"
-    },
-    {
-      "id": "PMC:PMC13635750",
-      "title": "Conjugative transfer inhibition of IncA and IncC plasmids by SGI1-like elements via relaxosome assembly interference",
-      "method": "",
-      "authors": "",
-      "journal": "Nucleic acids research",
-      "year": "2026",
-      "date": "2026-10-05",
-      "doi": "",
-      "cited": 0,
-      "license": "cc by-nc",
-      "pdf": "",
-      "keywords": [],
-      "tasks": [],
-      "datasets": [],
-      "lists": [],
-      "abstract": "",
-      "url": "https://europepmc.org/article/PMC/PMC13635750"
-    },
-    {
-      "id": "PMC:PMC13635751",
-      "title": "Structural basis of PARP2 recognition of nucleosomal DNA breaks and inhibitor trapping",
-      "method": "",
-      "authors": "",
-      "journal": "Nucleic acids research",
-      "year": "2026",
-      "date": "2026-10-05",
-      "doi": "",
-      "cited": 0,
-      "license": "cc by",
-      "pdf": "",
-      "keywords": [],
-      "tasks": [],
-      "datasets": [],
-      "lists": [],
-      "abstract": "",
-      "url": "https://europepmc.org/article/PMC/PMC13635751"
     },
     {
       "id": "PMC:PMC13635744",
@@ -31057,63 +31140,6 @@
       ],
       "abstract": "",
       "url": "https://europepmc.org/article/PMC/PMC13635744"
-    },
-    {
-      "id": "PMC:PMC13635749",
-      "title": "Functional roles for viral RNA ribosylation in mammalian cells",
-      "method": "",
-      "authors": "",
-      "journal": "Nucleic acids research",
-      "year": "2026",
-      "date": "2026-10-05",
-      "doi": "",
-      "cited": 0,
-      "license": "cc by-nc",
-      "pdf": "",
-      "keywords": [],
-      "tasks": [],
-      "datasets": [],
-      "lists": [],
-      "abstract": "",
-      "url": "https://europepmc.org/article/PMC/PMC13635749"
-    },
-    {
-      "id": "PMC:PMC13635748",
-      "title": "RMI2 regulates recombination intermediate metabolism to ensure proper chromosome segregation in mammalian meiosis",
-      "method": "",
-      "authors": "",
-      "journal": "Nucleic acids research",
-      "year": "2026",
-      "date": "2026-10-05",
-      "doi": "",
-      "cited": 0,
-      "license": "cc by",
-      "pdf": "",
-      "keywords": [],
-      "tasks": [],
-      "datasets": [],
-      "lists": [],
-      "abstract": "",
-      "url": "https://europepmc.org/article/PMC/PMC13635748"
-    },
-    {
-      "id": "PMC:PMC13635745",
-      "title": "Size and sequence variation of the Lid of the Cas12a nuclease domain results in a nickase phenotype",
-      "method": "",
-      "authors": "",
-      "journal": "Nucleic acids research",
-      "year": "2026",
-      "date": "2026-10-05",
-      "doi": "",
-      "cited": 0,
-      "license": "cc by",
-      "pdf": "",
-      "keywords": [],
-      "tasks": [],
-      "datasets": [],
-      "lists": [],
-      "abstract": "",
-      "url": "https://europepmc.org/article/PMC/PMC13635745"
     },
     {
       "id": "MED:42830455",
@@ -33075,39 +33101,6 @@
       "url": "https://doi.org/10.1093/bioinformatics/btag700"
     },
     {
-      "id": "MED:42773294",
-      "title": "NanoTS: a deep learning tool for accurate SNP calling in nanopore long-read transcriptome data.",
-      "method": "NanoTS",
-      "authors": "Liu Z, Wang F, Wang R, Wu DW, DeBruyne N, Keith K, McCormick EM, Park JJ, Sullenberger MT, Edmondson AC, Falk MJ, Lin L, Xing Y.",
-      "journal": "Nature methods",
-      "year": "2026",
-      "date": "2026-09-22",
-      "doi": "10.1038/s41592-026-03225-4",
-      "cited": 1,
-      "license": "cc by-nc-nd",
-      "pdf": "https://europepmc.org/articles/PMC13645616?pdf=render",
-      "keywords": [
-        "Gene Expression Profiling",
-        "Polymorphism, Single Nucleotide",
-        "Software",
-        "Nanopores",
-        "Transcriptome",
-        "Deep Learning",
-        "Nanopore Sequencing"
-      ],
-      "tasks": [
-        "genomes:long-read"
-      ],
-      "datasets": [],
-      "lists": [],
-      "fields": [
-        "expression",
-        "genomes"
-      ],
-      "abstract": "Accurate variant detection using nanopore long-read transcriptome data remains challenging. Here we present NanoTS-a deep learning-based tool for single nucleotide polymorphism detection from diverse types of nanopore transcriptome sequencing data. NanoTS outperforms existing methods, achieving F 1 scores above 0.980 and 0.966 on nanopore direct RNA and cDNA sequencing data, respectively, for single nucleotide polymorphisms with at least five supporting reads. Notably, NanoTS shows strong improvements over existing methods for allelically imbalanced variants. We also demonstrate that NanoTS enables accurate detection and genotype calling of pathogenic variants underlying Mendelian disorders, highlighting its potential clinical utility.",
-      "url": "https://doi.org/10.1038/s41592-026-03225-4"
-    },
-    {
       "id": "MED:42773259",
       "title": "Intuitive enzyme design with LLM agents.",
       "method": "",
@@ -33147,38 +33140,6 @@
       "lists": [],
       "abstract": "",
       "url": "https://doi.org/10.1038/s41587-026-03321-y"
-    },
-    {
-      "id": "MED:42772279",
-      "title": "A geothermal amoeba sets a new upper temperature limit for eukaryotes.",
-      "method": "",
-      "authors": "Rappaport HB, Petek-Seoane NA, Tyml T, Niblo JK, Mikus F, Gilbert NE, LaButti K, Ani G, MacVicar E, Shepherd RM, de la Higuera I, Lord SJ, Dey G, Wolfe GV, Dudin O, Katz LA, Stedman KM, Sukenik S, Skruber K, Schulz F, Dyche Mullins R, Oliverio AM.",
-      "journal": "Cell",
-      "year": "2026",
-      "date": "2026-09-22",
-      "doi": "10.1016/j.cell.2026.08.043",
-      "cited": 3,
-      "license": "cc by-nc-nd",
-      "pdf": "",
-      "keywords": [
-        "Eukaryotic cell",
-        "Thermophile",
-        "Amoeba",
-        "Protist",
-        "Extremophile",
-        "Geothermal",
-        "Amoeba"
-      ],
-      "tasks": [
-        "microbiome:functional"
-      ],
-      "datasets": [],
-      "lists": [],
-      "fields": [
-        "microbiome"
-      ],
-      "abstract": "The study of temperature limits has transformed our understanding of life's boundaries but has focused on bacteria and archaea. For decades after their discovery, no eukaryote was shown to replicate above 60°C. We isolated a geothermal amoeba, Incendiamoeba cascadensis, that divides at 63°C and is motile up to 64°C. We identified an enrichment of genes related to proteostasis and environmental sensing relative to mesophilic amoebae. Comparative RNA sequencing of I. cascadensis revealed upregulation of pathways related to proteostasis, DNA repair, and membrane trafficking at high temperatures. Predicted proteins of I. cascadensis have distinct biophysical properties, including enrichment of positively charged surface residues similar to bacterial and archaeal hyperthermophiles, which suggests a convergent mechanism for protein stability under temperature stress. Together, our findings expand our understanding of where and how life can persist.",
-      "url": "https://doi.org/10.1016/j.cell.2026.08.043"
     },
     {
       "id": "MED:42768125",
@@ -34595,35 +34556,6 @@
       "url": "https://doi.org/10.1038/s41587-025-02906-3"
     },
     {
-      "id": "MED:43058883",
-      "title": "Variants in RNU4-2 or RNU6 paralogs account for 2% of individuals with non-syndromic autosomal dominant retinitis pigmentosa in a large French cohort.",
-      "method": "",
-      "authors": "Audo I, Navarro J, Bianco L, Antropoli A, Condroyer C, Antonio A, Andrieu C, Mohand-Saïd S, Laurent-Coriat C, Atia R, Benadji A, Smirnov V, Sahel JA, Zeitz C.",
-      "journal": "Genome medicine",
-      "year": "2026",
-      "date": "2026-09-22",
-      "doi": "10.1186/s13073-026-01743-6",
-      "cited": 0,
-      "license": "",
-      "pdf": "",
-      "keywords": [
-        "Small Nuclear Rna",
-        "Autosomal Dominant Retinitis Pigmentosa",
-        "Major Spliceosome",
-        "Rnu4-2 Or Rnu6",
-        "Important Gene Defect In A French Retinitis Pigmentosa Cohort",
-        "Tri-small Nuclear Ribonucleoprotein",
-        "Retinitis Pigmentosa",
-        "Ribonucleoprotein, U4-U6 Small Nuclear",
-        "RNA, Small Nuclear"
-      ],
-      "tasks": [],
-      "datasets": [],
-      "lists": [],
-      "abstract": "",
-      "url": "https://doi.org/10.1186/s13073-026-01743-6"
-    },
-    {
       "id": "MED:42957732",
       "title": "Structural mechanisms underlying resistance to Switch-II pocket inhibitors in KRAS.",
       "method": "KRAS",
@@ -35185,30 +35117,6 @@
       "url": "https://doi.org/10.1038/s41467-026-77923-0"
     },
     {
-      "id": "MED:42918779",
-      "title": "The role of shape and interaction directionality in the crystalline phase behaviour of octahedral metal-organic cages.",
-      "method": "",
-      "authors": "Wolpert EH, Tarzia A, Zhu Y, Jelfs KE.",
-      "journal": "Nature communications",
-      "year": "2026",
-      "date": "2026-09-22",
-      "doi": "10.1038/s41467-026-77857-7",
-      "cited": 0,
-      "license": "cc by",
-      "pdf": "https://europepmc.org/articles/PMC13690734?pdf=render",
-      "keywords": [],
-      "tasks": [
-        "chemistry:generation"
-      ],
-      "datasets": [],
-      "lists": [],
-      "fields": [
-        "chemistry"
-      ],
-      "abstract": "Despite advances in crystal engineering, predicting the packing of metal-containing molecules remains a significant challenge due to their increased structural complexity and computational cost relative to purely organic compounds. Yet, predicting solid-state structures is critical for understanding structureproperty relationships, particularly in modular porous systems such as metal-organic cages (MOCs), where packing governs access to the internal pores and thereby impacts functionality. Here, we present a computationally inexpensive methodology that combines semi-empirical dimer calculations with coarse-grained modelling to predict the packing behaviour of MOCs. This approach enables a priori prediction of the solid state and allows insight into how molecular shape and intermolecular interactions influence the crystalline phase behaviour of MOCs. Our findings provide a foundation for the rational design of MOCs with tailored solid-state structures and properties.",
-      "url": "https://doi.org/10.1038/s41467-026-77857-7"
-    },
-    {
       "id": "MED:42918766",
       "title": "Neoadjuvant chemotherapy interferes with tertiary lymphoid structure formation in Epstein-Barr virus-associated gastric cancer.",
       "method": "",
@@ -35298,139 +35206,6 @@
       "lists": [],
       "abstract": "Background Developing peripheral blood-based diagnostic models for idiopathic Parkinson's disease (iPD), particularly those leveraging the T-cell receptor (TCR) repertoire, has long been considered infeasible because patient-derived TCRs appear to lack convergent sequence motifs. We reasoned that this apparent absence of shared TCR features likely reflects both insufficient sample sizes and unaccounted immune heterogeneity within the iPD population. Methods We reconstructed TCR repertoires from the two largest iPD cohorts currently available, anchoring them with three mechanistically distinct mouse models to stratify patients into model-anchored informed subtypes. Within these data-driven subtypes, we trained subtype-specific, multimodal multi-instance classifiers. Results We demonstrated that iPD patients can be successfully stratified into model-anchored informed subtypes. Furthermore, the trained subtype-specific, multimodal multi-instance classifiers achieved an Area Under Curve (AUC) exceeding 0.8 for both subtypes. Conclusions Our findings underscore the critical role of disease stratification in enabling TCR repertoire-based modeling in neurodegenerative diseases.",
       "url": "https://doi.org/10.1186/s13073-026-01776-x"
-    },
-    {
-      "id": "MED:42907459",
-      "title": "Long-range interdependencies aware signal analysis for rapid and accurate obstructive sleep apnea prediction.",
-      "method": "",
-      "authors": "Wang Z, Yin C, Cheng A, Chen X, Cheng M, An L, Wang H, Sun H, Ding L, Mihaicuta S, Udrescu L, Gozal D, Del Campo F, Vaquerizo-Villar F, Hornero R, Hedner J, Randerath W, Mannino DM, Nazarian S, Udrescu M, Bogdan P.",
-      "journal": "Nature communications",
-      "year": "2026",
-      "date": "2026-09-22",
-      "doi": "10.1038/s41467-026-76274-0",
-      "cited": 0,
-      "license": "cc by-nc-nd",
-      "pdf": "https://europepmc.org/articles/PMC13686975?pdf=render",
-      "keywords": [
-        "Sleep Apnea, Obstructive",
-        "Signal Processing, Computer-Assisted"
-      ],
-      "tasks": [],
-      "datasets": [],
-      "lists": [],
-      "abstract": "Obstructive sleep apnea, characterized by frequent interruptions in breathing and intermittent hypoxia, is a public health concern due to its potential to increase multiple organ system morbidity and mortality. Although polysomnography is the gold standard for diagnosis, it is laborious, costly, and complex. Here, we present a biological geometry-aware artificial intelligence framework that processes physiological signals to predict sleep apnea severity. This framework extracts multifractal coupling features that capture long-range dependencies among physiological processes and integrates them into deep learning for classification. We validate this approach across five heterogeneous cohorts comprising more than 35,000 subjects. The method achieves robust and consistent performance, with area-under-the-curve values exceeding 0.91 and improvements of 8-18% over state-of-the-art models. The extracted coupling representations exhibit rapid convergence and consistent performance across heterogeneous cohorts. This framework provides a robust representation of physiological dynamics and supports future developments in automated analysis of sleep-disordered breathing.",
-      "url": "https://doi.org/10.1038/s41467-026-76274-0"
-    },
-    {
-      "id": "MED:42907458",
-      "title": "Patient-derived separation-of-function mutations reveal specific role for BRCA1 coiled coil domain in genome stability.",
-      "method": "",
-      "authors": "Szikriszt B, Németh E, Hosen B, Krawczyk M, Martinek R, Szabó B, Póti Á, Szeltner Z, Várady G, Sztupinszki Z, Szallasi Z, Branzei D, Richardson AL, Szüts D.",
-      "journal": "Nature communications",
-      "year": "2026",
-      "date": "2026-09-22",
-      "doi": "10.1038/s41467-026-77330-5",
-      "cited": 0,
-      "license": "cc by-nc-nd",
-      "pdf": "https://europepmc.org/articles/PMC13687062?pdf=render",
-      "keywords": [
-        "Genomic Instability",
-        "BRCA1 Protein",
-        "Mutation"
-      ],
-      "tasks": [],
-      "datasets": [],
-      "lists": [],
-      "fields": [
-        "genomes"
-      ],
-      "abstract": "Specific inherited mutations of BRCA1 compromise homologous recombination repair and increase the risk of cancer. Here, we employ a panel of isogenic chicken DT40 cell lines for the comparative study of the main BRCA1 protein domains and of common BRCA1 founder mutations in genome stability and DNA repair. Whole genome sequencing of cell clones demonstrates that the L1407P-equivalent coiled coil domain variant is a separation-of-function mutant with an increased rate of base substitution mutagenesis but not of deletions or large-scale genomic instability, reflecting its proficiency in repairing DNA double strand breaks and promoting sister chromatid exchanges. The BRCA1 coiled coil domain mediates interaction with PALB2, and PALB2 coiled coil domain mutations also primarily affect base substitution mutagenesis. In contrast, truncating and missense mutations in the RING and BRCT domains affect all functions of BRCA1, inducing larger deletions and rearrangements typical of BRCA1 loss. PARP inhibitor sensitivity is marginal in the coiled coil domain mutants, instead it correlates with deletion mutagenesis, degradation of stalled replication forks, and impaired RAD51 loading following topoisomerase I inhibition. Our results suggest a specific function for the BRCA1-PALB2 interaction in promoting error-free DNA damage bypass as an alternative to mutagenic translesion DNA synthesis.",
-      "url": "https://doi.org/10.1038/s41467-026-77330-5"
-    },
-    {
-      "id": "MED:42907457",
-      "title": "Single-cell TimeLapse-seq reveals MTA is an essential retrotransposon orchestrating mouse zygotic genome activation.",
-      "method": "",
-      "authors": "Wu Y, Shi H, Yan R, Wu J, Yang L, Xu L, Kou X, Zhao Y, Liu X, Lai L, Tian S, Hu Y, Wang Q, Wang H, Gao S, Zhang XO, Gao Y.",
-      "journal": "Nature communications",
-      "year": "2026",
-      "date": "2026-09-22",
-      "doi": "10.1038/s41467-026-77750-3",
-      "cited": 0,
-      "license": "cc by-nc-nd",
-      "pdf": "https://europepmc.org/articles/PMC13686978?pdf=render",
-      "keywords": [
-        "Zygote",
-        "Retroelements",
-        "Genome",
-        "Single-Cell Analysis"
-      ],
-      "tasks": [],
-      "datasets": [],
-      "lists": [],
-      "fields": [
-        "expression"
-      ],
-      "abstract": "Transposable elements (TEs) are temporally activated during mammalian early embryogenesis and are closely linked to zygotic genome activation (ZGA), yet their nascent transcriptional dynamics remain incompletely resolved owing to limited sensitivity and maternal RNA background. Here, we develop single-cell TimeLapse sequencing (scTL-seq), enabling allele-resolved detection of nascent RNA in individual embryos. Applying scTL-seq to mouse ZGA, we generate a refined transcriptional atlas of genes and TEs and identify the pronuclear (PN) stage activated genes and TEs. We found that transcription at PN stage is largely contributed by the maternal genome and enriched for genes highly transcribed in germinal vesicle oocytes. Similarly, Mouse Transcripts type-A (MTA) elements are transcribed in oocytes and highly active in PN stage. MTA knockdown disrupts zygotic gene activation and dysregulates hundreds of TE subfamilies, resulting in 1-cell embryo arrest. Using nascent transcripts, we further identify 662 TE-driven chimeric transcripts and show that TEs are essential for regulating key developmental genes, including Nfya, Setd2 and Tead4. Finally, we identify maternal transcription factors, including NOBOX, as potential regulators of MTA activation. Together, our study provides a high-resolution nascent transcriptome landscape of mouse ZGA and reveals vital regulatory roles of MTA retrotransposon in orchestrating early embryonic development.",
-      "url": "https://doi.org/10.1038/s41467-026-77750-3"
-    },
-    {
-      "id": "MED:42907449",
-      "title": "Short-term memory of past caspase activity biases cell elimination in vivo.",
-      "method": "",
-      "authors": "Cumming T, Villars A, Davidović A, Levillayer F, Valon L, Levayer R.",
-      "journal": "Nature communications",
-      "year": "2026",
-      "date": "2026-09-22",
-      "doi": "10.1038/s41467-026-77685-9",
-      "cited": 0,
-      "license": "cc by",
-      "pdf": "https://europepmc.org/articles/PMC13687027?pdf=render",
-      "keywords": [
-        "Drosophila melanogaster",
-        "Caspases",
-        "Drosophila Proteins",
-        "Memory, Short-Term",
-        "Apoptosis"
-      ],
-      "tasks": [
-        "expression:spatial"
-      ],
-      "datasets": [],
-      "lists": [],
-      "fields": [
-        "expression"
-      ],
-      "abstract": "Apoptosis is triggered by the activation of Caspases leading to irreversible engagement in cell death. However, recent data outline numerous non-apoptotic functions of caspases as well as quite ubiquitous sublethal activation of effector caspases in vivo, opening the question of what drives the bifurcation between cell death and survival. Using quantitative live imaging combined with machine learning and optogenetics in the Drosophila pupal notum (a single-layer epithelium), we reveal the existence of a large heterogeneity of caspase activity thresholds between cells and distinct spatial domains with low or high sensitivity to caspases. We outline the central role of past exposure to sublethal caspase activity, which sensitises cells to apoptosis for several hours and reduces their threshold, and can bias single-cell elimination. Altogether, this work reveals the role of a cell's past history for apoptosis regulation in vivo, which can bias clonal selection and the spatial pattern of cell death.",
-      "url": "https://doi.org/10.1038/s41467-026-77685-9"
-    },
-    {
-      "id": "MED:42907447",
-      "title": "Unveiling structural determinants of peptide recognition by public and private SARS-CoV-2-specific T-cell receptors.",
-      "method": "",
-      "authors": "Akıl C, Peng Y, McCarthy J, Zhu Y, Hardenbrook N, Yang Y, Dong D, Antoun E, Yao X, Liu G, Chen JL, Balıkçı E, Cioaca R, Mentzer AJ, Knight JC, Fernandes RA, Dong T, Zhang P.",
-      "journal": "Nature communications",
-      "year": "2026",
-      "date": "2026-09-22",
-      "doi": "10.1038/s41467-026-77827-z",
-      "cited": 0,
-      "license": "cc by",
-      "pdf": "https://europepmc.org/articles/PMC13687542?pdf=render",
-      "keywords": [
-        "Peptides",
-        "Receptors, Antigen, T-Cell",
-        "SARS-CoV-2"
-      ],
-      "tasks": [
-        "proteins:complexes"
-      ],
-      "datasets": [],
-      "lists": [],
-      "fields": [
-        "proteins"
-      ],
-      "abstract": "Public T cell receptors (TCRs) recurrently emerge across individuals in response to common pathogens, yet the structural and biophysical basis distinguishing public from private clonotypes remains incompletely defined. Here, we combine epitope mapping, single-cell TCR sequencing, and single-particle cryo-electron microscopy to dissect CD8 + T cell responses to the immunodominant SARS-CoV-2 ORF3a (207-215) epitope presented by HLA-A*01:01. Among responding clonotypes, we identify a public TCR (TCR pub ), shared across donors, and a private TCR (TCR priv ) that uses nearly identical β chains but distinct α chains. Despite comparable micromolar affinities and functional avidities, cryo-EM structures at ~3 Å resolution reveal that the two receptors engage the peptide-MHC complex through distinct CDR-loop configurations and contact footprints. TCR pub establishes contacts with the peptide and the MHC α2-helix primarily through the CDR2β and CDR3β loops, whereas TCR priv distributes contacts across both MHC α-helices and engages the peptide via multiple CDR loops. In agreement with these observations, alanine-scanning mutagenesis reveals that TCR pub shows greater sensitivity to peptide substitutions, consistent with its peptide-focused binding mode. These findings demonstrate how alternative α-chain pairing reconfigures the antigen-binding interface within a shared β-chain.",
-      "url": "https://doi.org/10.1038/s41467-026-77827-z"
     },
     {
       "id": "MED:42901885",
@@ -35745,7 +35520,7 @@
       "year": "2026",
       "date": "2026-09-29",
       "doi": "10.1016/j.cell.2026.09.012",
-      "cited": 1,
+      "cited": 2,
       "license": "cc by",
       "pdf": "",
       "keywords": [
@@ -37057,191 +36832,6 @@
       "url": "https://doi.org/10.1093/nar/gkag904"
     },
     {
-      "id": "MED:42772960",
-      "title": "Multilevel ensemble for genome-wide prediction of cell-specific G-quadruplexes utilizing transformed sequences and enhanced chromatin accessibility with G4Beacon2.",
-      "method": "G4Beacon2",
-      "authors": "Tao T, Zhang R, Shu H, Ma Y, Zhang Z, Tu J, Sun X.",
-      "journal": "Genome research",
-      "year": "2026",
-      "date": "2026-09-22",
-      "doi": "10.1101/gr.280606.125",
-      "cited": 0,
-      "license": "",
-      "pdf": "",
-      "keywords": [],
-      "tasks": [
-        "regulation:accessibility"
-      ],
-      "datasets": [],
-      "lists": [],
-      "fields": [
-        "regulation"
-      ],
-      "abstract": "",
-      "url": "https://doi.org/10.1101/gr.280606.125"
-    },
-    {
-      "id": "MED:42771692",
-      "title": "A physiology-based mathematical model of the renin-angiotensin system, bone remodeling, and calcium homeostasis: Effects of estrogen and renin-angiotensin system inhibitors.",
-      "method": "",
-      "authors": "Stadt MM, Ralph VA, Layton AT.",
-      "journal": "PLoS computational biology",
-      "year": "2026",
-      "date": "2026-09-22",
-      "doi": "10.1371/journal.pcbi.1013101",
-      "cited": 0,
-      "license": "cc by",
-      "pdf": "https://europepmc.org/articles/PMC13623139?pdf=render",
-      "keywords": [
-        "Calcium",
-        "Angiotensin-Converting Enzyme Inhibitors",
-        "Estrogens",
-        "Bone Remodeling",
-        "Renin-Angiotensin System",
-        "Models, Biological"
-      ],
-      "tasks": [],
-      "datasets": [],
-      "lists": [],
-      "fields": [
-        "proteins"
-      ],
-      "abstract": "During menopause, estrogen levels decline significantly, leading to substantial physiological changes due to estrogen's regulatory role in various systems. In particular, estrogen helps prevent excessive bone resorption by its impact on bone remodeling. When estrogen levels decrease, bone resorption increases, often resulting in weakened bones and osteoporosis in post-menopausal women. Experimental studies have also shown that estrogen regulates the renin-angiotensin system (RAS), a hormone system involved in many physiological processes, including blood pressure regulation. Additionally, the RAS has an interconnected relationship with calcium regulatory and bone remodeling systems. Given these dynamic interplays, we developed a physiology-based mathematical model that simulates the interactions of estrogen, key RAS components, calcium regulation, and bone remodeling to investigate how perturbations in one system affect the others. This represents the first known model to include the direct impacts of estrogen on the RAS and to couple the RAS with calcium homeostasis and bone remodelling systems in humans. Through model simulations and sensitivity analysis, we investigated how declining estrogen levels affect the RAS and bone mineral density. Furthermore, we quantified how RAS inhibitors, specifically angiotensin-converting enzyme inhibitors (ACEi) and angiotensin receptor blockers (ARB), may increase bone density during post-menopausal estrogen decline. Our simulation results suggest that ARB treatment may be more effective at improving bone mineral density during postmenopausal estrogen decline, and that this trend remains consistent regardless of the age of RAS inhibitor initiation.",
-      "url": "https://doi.org/10.1371/journal.pcbi.1013101"
-    },
-    {
-      "id": "MED:42771689",
-      "title": "OT-knn: A neighborhood-aware optimal transport framework for aligning spatial transcriptomics data.",
-      "method": "OT-knn",
-      "authors": "Song J, Li Q.",
-      "journal": "PLoS computational biology",
-      "year": "2026",
-      "date": "2026-09-22",
-      "doi": "10.1371/journal.pcbi.1014041",
-      "cited": 0,
-      "license": "cc by",
-      "pdf": "https://europepmc.org/articles/PMC13641709?pdf=render",
-      "keywords": [
-        "Gene Expression Profiling",
-        "Spatial Transcriptomics"
-      ],
-      "tasks": [
-        "expression:integration",
-        "expression:spatial"
-      ],
-      "datasets": [],
-      "lists": [],
-      "fields": [
-        "expression"
-      ],
-      "abstract": "Spatial transcriptomics (ST) measures gene expression while preserving spatial context within tissues, enabling detailed characterization of tissue organization. As ST technologies advance, aligning datasets across tissue sections, individuals, platforms, and developmental stages has become increasingly important but remains challenging due to sparse expression, biological heterogeneity, and geometric distortions between slices. We introduce OT-knn, a method for ST alignment that integrates local neighborhood information within an optimal transport framework. Rather than relying solely on single-spot expression, OT-knn reconstructs each spot using its spatial k-nearest neighbors, capturing microenvironment context that is more robust to noise and variability. These representations are then used to derive probabilistic correspondences between slices. We evaluate OT-knn using simulated data with known ground-truth alignment and real datasets from multiple ST platforms, including human dorsolateral prefrontal cortex data (10x Genomics Visium), mouse brain aging data with both within-donor and cross-donor comparisons (MERFISH), a multi-stage axolotl brain dataset (Stereo-seq), and a cross-platform analysis using mouse embryo datasets profiled by Stereo-seq and seqFISH. Across these settings, OT-knn achieves accurate and robust alignment, particularly in the presence of spatial deformation, donor heterogeneity, developmental variation and technological differences.",
-      "url": "https://doi.org/10.1371/journal.pcbi.1014041"
-    },
-    {
-      "id": "MED:42771687",
-      "title": "Drift-diffusion dynamics of hippocampal replay.",
-      "method": "",
-      "authors": "Wu Z, Wei XX.",
-      "journal": "PLoS computational biology",
-      "year": "2026",
-      "date": "2026-09-22",
-      "doi": "10.1371/journal.pcbi.1014761",
-      "cited": 0,
-      "license": "cc by",
-      "pdf": "https://europepmc.org/articles/PMC13614660?pdf=render",
-      "keywords": [
-        "Hippocampus",
-        "Memory",
-        "Models, Neurological"
-      ],
-      "tasks": [],
-      "datasets": [],
-      "lists": [],
-      "abstract": "Replay in the hippocampus during sharp-wave ripples is thought to play major roles in learning and memory. However, existing analysis methods often lead to inconsistent and inaccurate metrics for characterizing replay dynamics. We develop a novel computational framework that models the replay dynamics using a drift-diffusion process. Further, to capture the potentially rich population-level dynamics during sharp-wave ripples, our model allows switching between multiple well-motivated types of dynamics. Applications of our method to rat hippocampal recordings lead to a number of insights. First, our results reveal that a small fraction of SWRs are stationary, and those with drift-diffusion dynamics generally have a much higher speed than the animal's movement. Second, we find that replay dynamics are heterogeneous and inconsistent with a random walk model proposed previously. The mean-squared displacement of replay trajectories scales quadratically with time, supporting the presence of substantial drifts. Third, we find that only a tiny fraction of SWR events (less than 1%) exhibit sequential structure at the timescale of 100 ms before the animal had spatial experience in an environment. This suggests that, while neural activity in the hippocampus may be coordinated before the animal's spatial experience (i.e., preplay), the level of coordination is much weaker than that after spatial experience. Overall, our approach enables precise characterizations and unambiguous interpretations of population dynamics during sharp-wave ripples, which more broadly can provide a better understanding of the functions and underlying mechanisms of replay.",
-      "url": "https://doi.org/10.1371/journal.pcbi.1014761"
-    },
-    {
-      "id": "MED:42771678",
-      "title": "Communication through autoattractants can enhance and limit collective migration of immune cells.",
-      "method": "",
-      "authors": "Versluis DM, Insall RH.",
-      "journal": "PLoS computational biology",
-      "year": "2026",
-      "date": "2026-09-22",
-      "doi": "10.1371/journal.pcbi.1014809",
-      "cited": 0,
-      "license": "cc by",
-      "pdf": "https://europepmc.org/articles/PMC13626474?pdf=render",
-      "keywords": [
-        "Neutrophils",
-        "Chemotactic Factors",
-        "Cell Communication",
-        "Cell Movement",
-        "Chemotaxis",
-        "Models, Biological"
-      ],
-      "tasks": [],
-      "datasets": [],
-      "lists": [],
-      "abstract": "Many eukaryotic cells produce attractant molecules to which they themselves are also attracted. For example, neutrophils produce leukotriene B4 while swarming. These autoattractants create a secondary signalling layer that coordinates collective cell behaviour. The principles by which autoattractants shape migration, however, remain poorly understood. Here we use a hybrid agent-based computational model to dissect the effects of autoattractants on the collective chemotaxis of immune cells. We find that autoattractant signals strongly enhance cells' responses to primary attractant, but only if the autoattractant is sufficiently short-lived: at longer lifetimes, accumulation degrades the directional information cells can extract. The overall effect of autoattractants therefore depends crucially on the balance between production and efficient removal - whether through cellular uptake, enzymatic breakdown, or inherent chemical instability. Optimal lifetimes exist, determined by cell speed and autoattractant diffusion, yet remarkably independent of cell density and primary attractant concentration. Autoattractants whose removal is governed by inherent instability rather than direct cellular breakdown coordinate migration less efficiently, but work more robustly across different environments. In the absence of cell-mediated breakdown, the model further reveals a characteristic optimal cell-cell distance: too little communication leaves cells uncoordinated, while excessive signalling drives them into slow-moving aggregates. Strikingly, the conditions that produce the most efficient chemotaxis lie close to those that trigger aggregation, suggesting that many autoattractant systems operate near a critical boundary that can be tuned by evolution either to disperse cells or to bring them together.",
-      "url": "https://doi.org/10.1371/journal.pcbi.1014809"
-    },
-    {
-      "id": "MED:42771662",
-      "title": "In-silico personalized protein-protein interaction networks prioritize candidate compounds for glioblastoma.",
-      "method": "",
-      "authors": "Siminea N, Popescu VB, Păun M, Petre I, Păun A.",
-      "journal": "PLoS computational biology",
-      "year": "2026",
-      "date": "2026-09-22",
-      "doi": "10.1371/journal.pcbi.1014785",
-      "cited": 0,
-      "license": "cc by",
-      "pdf": "https://europepmc.org/articles/PMC13596792?pdf=render",
-      "keywords": [
-        "Glioblastoma",
-        "Brain Neoplasms",
-        "Antineoplastic Agents",
-        "Protein Interaction Mapping",
-        "Protein Interaction Maps"
-      ],
-      "tasks": [
-        "chemistry:generation"
-      ],
-      "datasets": [],
-      "lists": [],
-      "fields": [
-        "chemistry",
-        "cancer"
-      ],
-      "abstract": "The incidence of cancer continues to rise globally, with many tumor types remaining difficult to treat effectively. While existing drugs can alleviate symptoms or slow disease progression, their efficacy varies considerably between patients. To explore this challenge, we present a computational approach for identifying patient-specific candidate compounds. Our approach was developed for glioblastoma, but it can be applied to other types of cancer. Our study involves identifying possible disease-relevant proteins specific to each patient that underlie the generated networks, together with drug targets and proteins associated with cancer dependency. These networks are analyzed using centrality measures and Louvain community detection method. Then, further investigating the individual networks, network controllability analysis is applied to identify key regulatory targets within the network. These targets are filtered and ranked to prioritize candidate drugs for individualized treatment. By comparing results across patients and against networks based on generic data, we show substantial differences between patient-specific and generic network representations. Additionally, we track changes in patient-specific networks over time in five glioblastoma cases, exploring how molecular differences between primary and recurrent tumors may influence network structure and computational drug prioritization.",
-      "url": "https://doi.org/10.1371/journal.pcbi.1014785"
-    },
-    {
-      "id": "MED:42771598",
-      "title": "Correction: Study of Protein-Protein Interactions in Septin Assembly: Multiple amphipathic helix domains cooperate in binding to the lipid membrane.",
-      "method": "Correction",
-      "authors": "Mofidi SM, Sahoo A, Edelmaier CJ, Klawa SJ, Freeman R, Gladfelter A, Forest MG, Nazockdast E, Hanson SM.",
-      "journal": "PLoS computational biology",
-      "year": "2026",
-      "date": "2026-09-22",
-      "doi": "10.1371/journal.pcbi.1014812",
-      "cited": 0,
-      "license": "cc by",
-      "pdf": "https://europepmc.org/articles/PMC13596807?pdf=render",
-      "keywords": [],
-      "tasks": [
-        "proteins:complexes"
-      ],
-      "datasets": [],
-      "lists": [],
-      "fields": [
-        "proteins"
-      ],
-      "abstract": "[This corrects the article DOI: 10.1371/journal.pcbi.1014230.].",
-      "url": "https://doi.org/10.1371/journal.pcbi.1014812"
-    },
-    {
       "id": "MED:43054786",
       "title": "A model context protocol-enabled framework for LLM-driven somatic mutation analysis.",
       "method": "",
@@ -37251,8 +36841,8 @@
       "date": "2026-11-05",
       "doi": "10.1093/bioadv/vbag336",
       "cited": 0,
-      "license": "",
-      "pdf": "",
+      "license": "cc by",
+      "pdf": "https://europepmc.org/articles/PMC13781454?pdf=render",
       "keywords": [],
       "tasks": [
         "cancer:somatic"
@@ -37262,7 +36852,7 @@
       "fields": [
         "cancer"
       ],
-      "abstract": "",
+      "abstract": "Motivation Somatic mutation analysis is routine in cancer genomics, but the scale and complexity of next-generation sequencing data can make analysis challenging. Maftools is widely used for somatic variant analysis and visualization, yet its R-based workflow can be difficult for nonprogrammers, while graphical interfaces may provide access to only predefined analytical options. Results We developed Maftools-MCP, a framework based on the Model Context Protocol that translates natural-language requests into structured tool calls for Maftools analysis. Maftools-MCP demonstrates how this protocol can enable natural-language interaction with an R-based analytical package while allowing flexible control of exposed functions and parameters. We also developed an agent skill to support upstream variant annotation before downstream Maftools analysis. Evaluation included per-tool validation, repeated execution of three representative use cases across five language models, including commercial and locally deployed models, and comparison of an integrated annotation workflow with a directly executed reference workflow. Availability and implementation Maftools-MCP is publicly available at http://tardis.cgu.edu.tw/maftools-mcp.",
       "url": "https://doi.org/10.1093/bioadv/vbag336"
     },
     {
@@ -37275,8 +36865,8 @@
       "date": "2026-11-06",
       "doi": "10.1093/bioadv/vbag312",
       "cited": 0,
-      "license": "",
-      "pdf": "",
+      "license": "cc by-nc",
+      "pdf": "https://europepmc.org/articles/PMC13778629?pdf=render",
       "keywords": [
         "Proteomics",
         "Ensemble Methods",
@@ -37293,7 +36883,7 @@
         "benchmarks",
         "cancer"
       ],
-      "abstract": "",
+      "abstract": "Background Missing values are pervasive in high-throughput proteomics data from mass spectrometry-based experiments. They can compromise statistical power and mislead downstream inference, necessitating proper imputation as a key preprocessing step. While previous efforts, such as the 2017 National Cancer Institute-Clinical Proteomic Tumor Analysis Consortium (NCI-CPTAC) DREAM Proteogenomics Challenge, established benchmarks for imputation on isobaric labeling-based data-dependent acquisition (DDA) profiles, the applicability of these strategies to the increasingly popular label-free data-independent acquisition (DIA) experiment data remains unverified. This is a critical gap, given the distinct differences in instrument settings and acquisition modes between the two experiments. Methods To address this gap, we systematically benchmarked seven individual algorithms and four ensemble strategies on label-free DIA data, using a unique dataset comprising paired label-free DIA and tandem mass tag (TMT)-DDA global proteomics profiles from 162 melanoma tumors. By leveraging the matched TMT measurements as an independent external reference, we evaluated DIA imputation accuracy under realistic conditions. Results & conclusion Building on these benchmarking results, we introduce DreamAI2, a DIA-optimized ensemble imputation integrating complementary strategies to achieve superior performance. This study clarifies the transferability of existing imputation methods and delivers DreamAI2 as an open-source tool (https://github.com/WangLab-MSSM/DreamAI2) alongside a rigorous validation framework for future research.",
       "url": "https://doi.org/10.1093/bioadv/vbag312"
     },
     {
@@ -38202,36 +37792,6 @@
       "url": "https://doi.org/10.1093/bioadv/vbag285"
     },
     {
-      "id": "MED:42857753",
-      "title": "Employing AlphaFold and TED to explore the structural impacts of stress-associated mutations in rice.",
-      "method": "",
-      "authors": "Shahid F, Sen N, Orengo C, Lam SD.",
-      "journal": "Bioinformatics advances",
-      "year": "2026",
-      "date": "2026-09-22",
-      "doi": "10.1093/bioadv/vbag275",
-      "cited": 0,
-      "license": "cc by",
-      "pdf": "",
-      "keywords": [],
-      "tasks": [
-        "variants:gwas",
-        "proteins:complexes",
-        "chemistry:affinity"
-      ],
-      "datasets": [
-        "db:alphafold"
-      ],
-      "lists": [],
-      "fields": [
-        "proteins",
-        "variants",
-        "chemistry"
-      ],
-      "abstract": "Motivation Plants have evolved adaptive mechanisms to handle environmental stress. However, genome-wide association studies (GWASs) have identified genetic variations associated with stress resistance, yet their structural and functional impacts remain poorly understood. This limits our ability to develop more resilient crops. Results Using predicted three-dimensional protein structures from the AlphaFold Database, chopped into domains by The Encyclopedia of Domains, we analysed how mutations identified in rice GWASs affect protein structure and function. The analysis revealed 102 mutations in 76 high-quality protein domains likely to impact structure and function. Thirty-nine mutations were positioned within 5 Å of predicted functional sites, including those near post-translational modification sites (3), allosteric sites (5), protein-protein interaction sites (25), ligand-binding sites (15), and conserved regions (9). We identified potential interaction partners for 18 proteins with mutations at predicted interfaces and modelled their complex structures. Six mutations were predicted to enhance binding affinity with their protein partners. Availability and implementation This study utilized only open-access tools and and provides a framework that could strengthen plant defence mechanisms. However, experimental validation is essential to confirm the applicability of these findings for plant breeding programs.",
-      "url": "https://doi.org/10.1093/bioadv/vbag275"
-    },
-    {
       "id": "MED:42857739",
       "title": "RCSB PDB AI Help Desk: retrieval-augmented generation for protein structure deposition support.",
       "method": "",
@@ -38268,8 +37828,8 @@
       "date": "2026-10-07",
       "doi": "10.1093/bioadv/vbag280",
       "cited": 0,
-      "license": "",
-      "pdf": "",
+      "license": "cc by",
+      "pdf": "https://europepmc.org/articles/PMC13644534?pdf=render",
       "keywords": [],
       "tasks": [
         "cancer:prognosis",
@@ -38284,36 +37844,8 @@
         "cancer",
         "expression"
       ],
-      "abstract": "",
+      "abstract": "Motivation Loss-of-function (LOF) mutations in essential genes (Goners) should be lethal, yet some tumours survive through compensatory buffering mechanisms. Existing computational methods for identifying synthetic lethal (SL) interactions focus on known tumour suppressor losses, missing essential gene dependencies. We developed a computational pipeline to identify SL buffering mechanisms by correlating Goner LOF burden with transcriptomic compensation. Results Applying our pipeline to pancreatic adenocarcinoma (PAAD), we integrated CRISPR essentiality screens (DepMap), mutation data, and RNA expression profiles from 165 TCGA-PAAD cases. This PAAD analysis supports the feasibility of the pipeline but does not nominate a transcriptomic buffer; applicability to other cancer types remains to be tested. Availability and implementation Analysis code and documentation are available at https://github.com/d3dd/goblet. Implemented in Python 3.9+ using pandas, scipy, and gseapy. All data are publicly available from TCGA and DepMap.",
       "url": "https://doi.org/10.1093/bioadv/vbag280"
-    },
-    {
-      "id": "MED:42841153",
-      "title": "pycmplot: fast, low-memory multi-track circular and linear Manhattan plotting in Python.",
-      "method": "pycmplot",
-      "authors": "Esoh K, Osman F, Fortes-Lima C, Awandare GA, Wonkam A.",
-      "journal": "Bioinformatics advances",
-      "year": "2026",
-      "date": "2026-09-22",
-      "doi": "10.1093/bioadv/vbag281",
-      "cited": 0,
-      "license": "cc by",
-      "pdf": "",
-      "keywords": [],
-      "tasks": [
-        "variants:gwas"
-      ],
-      "datasets": [
-        "db:ensembl",
-        "db:grch37",
-        "db:grch38"
-      ],
-      "lists": [],
-      "fields": [
-        "variants"
-      ],
-      "abstract": "Motivation Manhattan plots remain the standard visual summary for genome-wide association studies and other per-variant scans (iHS, FST, XP-EHH). Existing Manhattan visualization tools either lack multi-track support (gwaslab, qmplot, and qqman) or do not provide a Circos-style multi-track circular Manhattan view. CMplot (R) does, but its memory and runtime costs on multi-million-variant inputs are substantial. Results We present pycmplot, a Python package for generating multi-track linear and Circos-style circular Manhattan plots from one or more GWAS summary statistics. On a 10-million-variant scan, pycmplot is 5.5× faster and uses ∼5× less memory than CMplot for linear Manhattan plotting, 1.6× faster (and 3× faster with optional pre-filtering) for circular Manhattan, and 7.7× faster for qq rendering. Multi-track comparisons of two summary statistics are 4.5× faster (linear) and 3.5× faster (circular) than CMplot's equivalent mode. Transparent hg18/hg19 → hg38 liftover lets users mix coordinate systems within a single plot, and a lightweight bundle of Ensembl GFF3 gene information files (hg19 and hg38) enables nearest gene annotation. Availability and implementation pycmplot is freely available under the MIT license at https://github.com/esohkevin/pycmplot; and from PyPI (pip install pycmplot). Documentation is at https://pycmplot.readthedocs.io.",
-      "url": "https://doi.org/10.1093/bioadv/vbag281"
     },
     {
       "id": "MED:42820214",

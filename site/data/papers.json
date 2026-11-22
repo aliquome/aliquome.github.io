@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T11:23:43Z",
+  "generated_at": "2026-11-22T13:14:12Z",
   "source": "Europe PMC REST API",
   "rule": "For each field, the 30 most cited open-access papers of all time and the 30 most cited of the last 24 months that match the field query. Tasks come from keyword patterns; datasets are databases and datasets named in the title, abstract or keywords.",
   "fields": [
@@ -662,7 +662,7 @@
           "year": "2018",
           "date": "2018-11-01",
           "doi": "10.1093/nar/gky730",
-          "cited": 608,
+          "cited": 679,
           "license": "cc by",
           "pdf": "https://europepmc.org/articles/PMC6265445?pdf=render",
           "keywords": [
@@ -720,7 +720,7 @@
           "year": "2018",
           "date": "2018-11-14",
           "doi": "10.1038/s41586-018-0692-z",
-          "cited": 530,
+          "cited": 532,
           "license": "cc by",
           "pdf": "https://europepmc.org/articles/PMC6421076?pdf=render",
           "keywords": [
@@ -2569,37 +2569,6 @@
           "url": "https://doi.org/10.1038/s41586-025-09140-6"
         },
         {
-          "id": "MED:39572783",
-          "title": "Genome-wide association analysis provides insights into the molecular etiology of dilated cardiomyopathy.",
-          "method": "",
-          "authors": "Zheng SL, Henry A, Cannie D, Lee M, Miller D, McGurk KA, Bond I, Xu X, Issa H, Francis C, De Marvao A, Theotokis PI, Buchan RJ, Speed D, Abner E, Adams L, Aragam KG, Ärnlöv J, Raja AA, Backman JD, Baksi J, Barton PJR, Biddinger KJ, Boersma E, Brandimarto J, Brunak S, Bundgaard H, Carey DJ, Charron P, Cook JP, Cook SA, Denaxas S, Deleuze JF, Doney AS, Elliott P, Erikstrup C, Esko T, Farber-Eger EH, Finan C, Garnier S, Ghouse J, Giedraitis V, Guðbjartsson DF, Haggerty CM, Halliday BP, Helgadottir A, Hemingway H, Hillege HL, Kardys I, Lind L, Lindgren CM, Lowery BD, Manisty C, Margulies KB, Moon JC, Mordi IR, Morley MP, Morris AD, Morris AP, Morton L, Noursadeghi M, Ostrowski SR, Owens AT, Palmer CNA, Pantazis A, Pedersen OBV, Prasad SK, Shekhar A, Smelser DT, Srinivasan S, Stefansson K, Sveinbjörnsson G, Syrris P, Tammesoo ML, Tayal U, Teder-Laving M, Thorgeirsson G, Thorsteinsdottir U, Tragante V, Trégouët DA, Treibel TA, Ullum H, Valdes AM, van Setten J, van Vugt M, Veluchamy A, Verschuren WMM, Villard E, Yang Y, COVIDsortium, DBDS Genomic Consortium, Estonian Biobank Research Team, HERMES Consortium, Asselbergs FW, Cappola TP, Dube MP, Dunn ME, Ellinor PT, Hingorani AD, Lang CC, Samani NJ, Shah SH, Smith JG, Vasan RS, O'Regan DP, Holm H, Noseda M, Wells Q, Ware JS, Lumbers RT.",
-          "journal": "Nature genetics",
-          "year": "2024",
-          "date": "2024-11-21",
-          "doi": "10.1038/s41588-024-01952-y",
-          "cited": 75,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC11631752?pdf=render",
-          "keywords": [
-            "Cardiomyopathy, Dilated",
-            "Genetic Predisposition to Disease",
-            "Genome-Wide Association Study",
-            "Nedd4 Ubiquitin Protein Ligases"
-          ],
-          "tasks": [
-            "gwas",
-            "polygenic"
-          ],
-          "datasets": [
-            "db:ukbiobank"
-          ],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Dilated cardiomyopathy (DCM) is a leading cause of heart failure and cardiac transplantation. We report a genome-wide association study and multi-trait analysis of DCM (14,256 cases) and three left ventricular traits (36,203 UK Biobank participants). We identified 80 genomic risk loci and prioritized 62 putative effector genes, including several with rare variant DCM associations (MAP3K7, NEDD4L and SSPN). Using single-nucleus transcriptomics, we identify cellular states, biological pathways, and intracellular communications that drive pathogenesis. We demonstrate that polygenic scores predict DCM in the general population and modify penetrance in carriers of rare DCM variants. Our findings may inform the design of genetic testing strategies that incorporate polygenic background. They also provide insights into the molecular etiology of DCM that may facilitate the development of targeted therapeutics.",
-          "url": "https://doi.org/10.1038/s41588-024-01952-y"
-        },
-        {
           "id": "MED:39966646",
           "title": "Large-scale genome-wide association analyses identify novel genetic loci and mechanisms in hypertrophic cardiomyopathy.",
           "method": "",
@@ -2630,37 +2599,6 @@
           ],
           "abstract": "Hypertrophic cardiomyopathy (HCM) is an important cause of morbidity and mortality with both monogenic and polygenic components. Here, we report results from a large genome-wide association study and multitrait analysis including 5,900 HCM cases, 68,359 controls and 36,083 UK Biobank participants with cardiac magnetic resonance imaging. We identified 70 loci (50 novel) associated with HCM and 62 loci (20 novel) associated with relevant left ventricular traits. Among the prioritized genes in the HCM loci, we identify a novel HCM disease gene, SVIL, which encodes the actin-binding protein supervillin, showing that rare truncating SVIL variants confer a roughly tenfold increased risk of HCM. Mendelian randomization analyses support a causal role of increased left ventricular contractility in both obstructive and nonobstructive forms of HCM, suggesting common disease mechanisms and anticipating shared response to therapy. Taken together, these findings increase our understanding of the genetic basis of HCM, with potential implications for disease management.",
           "url": "https://doi.org/10.1038/s41588-025-02087-4"
-        },
-        {
-          "id": "MED:39572784",
-          "title": "Genome-wide association study reveals mechanisms underlying dilated cardiomyopathy and myocardial resilience.",
-          "method": "",
-          "authors": "Jurgens SJ, Rämö JT, Kramarenko DR, Wijdeveld LFJM, Haas J, Chaffin MD, Garnier S, Gaziano L, Weng LC, Lipov A, Zheng SL, Henry A, Huffman JE, Challa S, Rühle F, Verdugo CD, Krijger Juárez C, Kany S, van Orsouw CA, Biddinger K, Poel E, Elliott AL, Wang X, Francis C, Ruan R, Koyama S, Beekman L, Zimmerman DS, Deleuze JF, Villard E, Trégouët DA, Isnard R, FinnGen, VA Million Veteran Program, HERMES Consortium, Boomsma DI, de Geus EJC, Tadros R, Pinto YM, Wilde AAM, Hottenga JJ, Sinisalo J, Niiranen T, Walsh R, Schmidt AF, Choi SH, Chang KM, Tsao PS, Matthews PM, Ware JS, Lumbers RT, van der Crabben S, Laukkanen J, Palotie A, Amin AS, Charron P, Meder B, Ellinor PT, Daly M, Aragam KG, Bezzina CR.",
-          "journal": "Nature genetics",
-          "year": "2024",
-          "date": "2024-11-21",
-          "doi": "10.1038/s41588-024-01975-5",
-          "cited": 67,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC11631763?pdf=render",
-          "keywords": [
-            "Cardiomyopathy, Dilated",
-            "Genetic Predisposition to Disease",
-            "Multifactorial Inheritance",
-            "Genome-Wide Association Study"
-          ],
-          "tasks": [
-            "variant-effect",
-            "gwas",
-            "ancestry",
-            "polygenic"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Dilated cardiomyopathy (DCM) is a heart muscle disease that represents an important cause of morbidity and mortality, yet causal mechanisms remain largely elusive. Here, we perform a large-scale genome-wide association study and multitrait analysis for DCM using 9,365 cases and 946,368 controls. We identify 70 genome-wide significant loci, which show broad replication in independent samples and map to 63 prioritized genes. Tissue, cell type and pathway enrichment analyses highlight the central role of the cardiomyocyte and contractile apparatus in DCM pathogenesis. Polygenic risk scores constructed from our genome-wide association study predict DCM across different ancestry groups, show differing contributions to DCM depending on rare pathogenic variant status and associate with systolic heart failure across various clinical settings. Mendelian randomization analyses reveal actionable potential causes of DCM, including higher bodyweight and higher systolic blood pressure. Our findings provide insights into the genetic architecture and mechanisms underlying DCM and myocardial function more broadly.",
-          "url": "https://doi.org/10.1038/s41588-024-01975-5"
         },
         {
           "id": "MED:40038546",
@@ -3386,6 +3324,66 @@
           ],
           "abstract": "Limited whole genome sequencing (WGS) studies in Asian populations result in a lack of representative reference panels, thus hindering the discovery of ancestry-specific variants. Here, we present the South and East Asian reference Database (SEAD) panel ( https://imputationserver.westlake.edu.cn/ ), which integrates WGS data for 11,067 individuals from various sources across 17 Asian countries. The SEAD panel, comprising 22,134 haplotypes and 88,294,957 variants, demonstrates improved imputation accuracy for South Asian populations compared to 1000 Genomes Project, TOPMed, and ChinaMAP panels, with a higher proportion of well-imputed rare variants. For East Asian populations, SEAD shows concordance comparable to ChinaMAP, but outperforming TOPMed. Additionally, we apply the SEAD panel to conduct a genome-wide association study for total hip (Hip) and femoral neck (FN) bone mineral density (BMD) traits in 5369 genotyped Chinese samples. The single-variant test suggests that rare variants near SNTG1 are associated with Hip BMD (rs60103302, MAF = 0.0092, P = 1.67 × 10 -7 ), and variant-set analysis further supports the association (P slide_window = 9.08 × 10 -9 , P gene_centric = 5.27 × 10 -8 ). This association was not reported previously and can only be detected by using Asian reference panels. Preliminary in vitro experiments for one of the rare variants identified provide evidence that it upregulates SNTG1 expression, which could in turn inhibit the proliferation and differentiation of preosteoblasts.",
           "url": "https://doi.org/10.1038/s41467-024-55147-4"
+        },
+        {
+          "id": "MED:40164586",
+          "title": "A genome-wide association study of imaging-defined atherosclerosis.",
+          "method": "",
+          "authors": "Gummesson A, Lundmark P, Chen QS, Björnson E, Dekkers KF, Hammar U, Adiels M, Wang Y, Andersson T, Bergström G, Carlhäll CJ, Erlinge D, Jernberg T, Landfors F, Lind L, Mannila M, Melander O, Pirazzi C, Sundström J, Östgren CJ, Gunnarsson C, Orho-Melander M, Söderberg S, Fall T, Gigante B.",
+          "journal": "Nature communications",
+          "year": "2025",
+          "date": "2025-03-31",
+          "doi": "10.1038/s41467-025-57457-7",
+          "cited": 18,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC11958696?pdf=render",
+          "keywords": [
+            "Atherosclerosis",
+            "Coronary Artery Disease",
+            "Genome-Wide Association Study",
+            "Plaque, Atherosclerotic"
+          ],
+          "tasks": [
+            "gwas"
+          ],
+          "datasets": [
+            "db:ukbiobank"
+          ],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Imaging-defined atherosclerosis represents an intermediate phenotype of atherosclerotic cardiovascular disease (ASCVD). Genome-wide association studies (GWAS) on directly measured coronary plaques using coronary computed tomography angiography (CCTA) are scarce. In the so far largest population-based cohort with CCTA data, we performed a GWAS on coronary plaque burden as determined by the segment involvement score (SIS) in 24,811 European individuals. We identified 20 significant independent genetic markers for SIS, three of which were found in loci not implicated in ASCVD before. Further GWAS on coronary artery calcification showed similar results to that of SIS, whereas a GWAS on ultrasound-assessed carotid plaques identified both shared and non-shared loci with SIS. In two-sample Mendelian randomization studies using SIS-associated markers in UK Biobank and CARDIoGRAMplusC4D, one extra coronary segment with atherosclerosis corresponded to 1.8-fold increased odds of myocardial infarction. This GWAS data can aid future studies of causal pathways in ASCVD.",
+          "url": "https://doi.org/10.1038/s41467-025-57457-7"
+        },
+        {
+          "id": "MED:40065166",
+          "title": "Family-based genome-wide association study designs for increased power and robustness.",
+          "method": "",
+          "authors": "Guan J, Tan T, Nehzati SM, Bennett M, Turley P, Benjamin DJ, Young AS.",
+          "journal": "Nature genetics",
+          "year": "2025",
+          "date": "2025-03-10",
+          "doi": "10.1038/s41588-025-02118-0",
+          "cited": 18,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC11985344?pdf=render",
+          "keywords": [
+            "Genome-Wide Association Study"
+          ],
+          "tasks": [
+            "variant-calling",
+            "gwas",
+            "ancestry",
+            "polygenic"
+          ],
+          "datasets": [
+            "db:ukbiobank"
+          ],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Family-based genome-wide association studies (FGWASs) use random, within-family genetic variation to remove confounding from estimates of direct genetic effects (DGEs). Here we introduce a 'unified estimator' that includes individuals without genotyped relatives, unifying standard and FGWAS while increasing power for DGE estimation. We also introduce a 'robust estimator' that is not biased in structured and/or admixed populations. In an analysis of 19 phenotypes in the UK Biobank, the unified estimator in the White British subsample and the robust estimator (applied without ancestry restrictions) increased the effective sample size for DGEs by 46.9% to 106.5% and 10.3% to 21.0%, respectively, compared to using genetic differences between siblings. Polygenic predictors derived from the unified estimator demonstrated superior out-of-sample prediction ability compared to other family-based methods. We implemented the methods in the software package snipar in an efficient linear mixed model that accounts for sample relatedness and sibling shared environment.",
+          "url": "https://doi.org/10.1038/s41588-025-02118-0"
         }
       ]
     },
@@ -4444,35 +4442,6 @@
           "url": "https://doi.org/10.3390/cells14080562"
         },
         {
-          "id": "MED:39572534",
-          "title": "Multimodal single cell-resolved spatial proteomics reveal pancreatic tumor heterogeneity.",
-          "method": "",
-          "authors": "Xu Y, Wang X, Li Y, Mao Y, Su Y, Mao Y, Yang Y, Gao W, Fu C, Chen W, Ye X, Liang F, Bai P, Sun Y, Li S, Xu R, Tian R.",
-          "journal": "Nature communications",
-          "year": "2024",
-          "date": "2024-11-21",
-          "doi": "10.1038/s41467-024-54438-0",
-          "cited": 41,
-          "license": "cc by-nc-nd",
-          "pdf": "https://europepmc.org/articles/PMC11582669?pdf=render",
-          "keywords": [
-            "Pancreatic Neoplasms",
-            "Proteomics",
-            "Single-Cell Analysis",
-            "Tumor Microenvironment"
-          ],
-          "tasks": [
-            "heterogeneity",
-            "subtyping"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Despite the advances in antibody-guided cell typing and mass spectrometry-based proteomics, their integration is hindered by challenges for processing rare cells in the heterogeneous tissue context. Here, we introduce Spatial and Cell-type Proteomics (SCPro), which combines multiplexed imaging and flow cytometry with ion exchange-based protein aggregation capture technology to characterize spatial proteome heterogeneity with single-cell resolution. The SCPro is employed to explore the pancreatic tumor microenvironment and reveals the spatial alternations of over 5000 proteins by automatically dissecting up to 100 single cells guided by multi-color imaging of centimeter-scale formalin-fixed, paraffin-embedded tissue slide. To enhance cell-type resolution, we characterize the proteome of 14 different cell types by sorting up to 1000 cells from the same tumor, which allows us to deconvolute the spatial distribution of immune cell subtypes and leads to the discovery of subtypes of regulatory T cells. Together, the SCPro provides a multimodal spatial proteomics approach for profiling tissue proteome heterogeneity.",
-          "url": "https://doi.org/10.1038/s41467-024-54438-0"
-        },
-        {
           "id": "MED:39558175",
           "title": "scCancerExplorer: a comprehensive database for interactively exploring single-cell multi-omics data of human pan-cancer.",
           "method": "scCancerExplorer",
@@ -5150,6 +5119,37 @@
           ],
           "abstract": "A comprehensive understanding of tumor heterogeneity, tumor microenvironment and the mechanisms of drug resistance is fundamental to advancing breast cancer research. While single-cell RNA sequencing has resolved the issue of \"temporal dynamic expression\" of genes at the single-cell level, the lack of spatial information still prevents us from gaining a comprehensive understanding of breast cancer. The introduction and application of spatial transcriptomics addresses this limitation. As the annual technical method of 2020, spatial transcriptomics preserves the spatial location of tissues and resolves RNA-seq data to help localize and differentiate the active expression of functional genes within a specific tissue region, enabling the study of spatial location attributes of gene locations and cellular tissue environments. In the context of breast cancer, spatial transcriptomics can assist in the identification of novel breast cancer subtypes and spatially discriminative features that show promise for individualized precise treatment. This article summarized the key technical approaches, recent advances in spatial transcriptomics and its applications in breast cancer, and discusses the limitations of current spatial transcriptomics methods and the prospects for future development, with a view to advancing the application of this technology in clinical practice.",
           "url": "https://doi.org/10.3389/fimmu.2024.1499301"
+        },
+        {
+          "id": "MED:40904351",
+          "title": "Bystin is a Prognosis and Immune Biomarker: From Pan-Cancer Analysis to Validation in Breast Cancer.",
+          "method": "",
+          "authors": "Aimaiti X, Wang Y, Ismtula D, Li Y, Ma H, Wang J, Elihamu D, Guo C.",
+          "journal": "Breast cancer (Dove Medical Press)",
+          "year": "2025",
+          "date": "2025-08-29",
+          "doi": "10.2147/bctt.s537429",
+          "cited": 20,
+          "license": "cc by-nc",
+          "pdf": "https://europepmc.org/articles/PMC12404263?pdf=render",
+          "keywords": [
+            "Methylation",
+            "Prognosis",
+            "tumor immunity",
+            "Pan-cancer",
+            "Bysl"
+          ],
+          "tasks": [
+            "prognosis"
+          ],
+          "datasets": [
+            "db:gdc"
+          ],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Introduction The Bystin gene (BYSL) contributes to cancer development and is a probable therapeutic target in cancer therapy. However, no systematic studies have been conducted on BYSL value in pan-cancer diagnosis, prognosis, and immunology. Methods We performed a pan-cancer analysis of BYSL using TCGA, GEO, and other databases to assess its expression, clinical significance, genetic variants, methylation, and immune correlation. Enrichment analysis was applied to predict BYSL-related pathways. We analyzed BYSL protein levels in corresponding breast cancer (BRCA) tissue samples to validate our findings using Western blot assays. A tissue microarray was deployed to verify BYSL expression in BRCA tissues by immunohistochemical staining. Moreover, we comprehensively analyzed the function of BYSL in BRCA initiation and development through CCK-8, transwell invasion, migration assays, and cell scratch assays for migration ability assessment. Results Through the study, BYSL was significantly overexpressed in the majority of cancers relative to normal tissues, with different expression patterns at different clinicopathological stages. In most cancer types, BYSL exhibits moderate to high diagnostic value, and overexpressed BYSL represents an independent prognosis factor in patients having BRCA, HNSC, KICH, LIHC, OV, and SARC cancers. Mutations in BYSL are distributed in most cancers and are related to prognosis. Most tumors have elevated levels of m6A methylation compared to normal tissues, while their promoter regions exhibit low levels of methylation. Additionally, BYSL expression displayed a positive correlation with MDSC immune infiltration. Further enrichment analysis showed the involvement of BYSL in important biological processes (BP), In addition, BYSL was overexpressed in BRCA tissues and promoted their proliferation, invasion, and migration compared to matched normal breast tissues. Discussion Our study showed that BYSL is an important biological indicator for predicting pan-cancer survival outcomes and immune characteristics and elucidated BYSL expression and role in BRCA, which highlights its therapeutic potential in BRCA.",
+          "url": "https://doi.org/10.2147/bctt.s537429"
         }
       ]
     },
@@ -5399,7 +5399,7 @@
           "year": "2015",
           "date": "2015-04-13",
           "doi": "10.1038/nbt.3192",
-          "cited": 6688,
+          "cited": 6732,
           "license": "",
           "pdf": "https://europepmc.org/articles/PMC4430369?pdf=render",
           "keywords": [],
@@ -5446,7 +5446,7 @@
           "year": "2017",
           "date": "2017-10-09",
           "doi": "10.1038/nmeth.4463",
-          "cited": 6025,
+          "cited": 6251,
           "license": "",
           "pdf": "https://europepmc.org/articles/PMC5937676?pdf=render",
           "keywords": [
@@ -5538,6 +5538,31 @@
           "url": "https://doi.org/10.1038/s41590-018-0276-y"
         },
         {
+          "id": "MED:30787437",
+          "title": "The single-cell transcriptional landscape of mammalian organogenesis.",
+          "method": "",
+          "authors": "Cao J, Spielmann M, Qiu X, Huang X, Ibrahim DM, Hill AJ, Zhang F, Mundlos S, Christiansen L, Steemers FJ, Trapnell C, Shendure J.",
+          "journal": "Nature",
+          "year": "2019",
+          "date": "2019-02-20",
+          "doi": "10.1038/s41586-019-0969-x",
+          "cited": 4497,
+          "license": "",
+          "pdf": "https://europepmc.org/articles/PMC6434952?pdf=render",
+          "keywords": [
+            "Transcriptome"
+          ],
+          "tasks": [
+            "trajectory"
+          ],
+          "datasets": [],
+          "lists": [
+            "classic"
+          ],
+          "abstract": "Mammalian organogenesis is a remarkable process. Within a short timeframe, the cells of the three germ layers transform into an embryo that includes most of the major internal and external organs. Here we investigate the transcriptional dynamics of mouse organogenesis at single-cell resolution. Using single-cell combinatorial indexing, we profiled the transcriptomes of around 2 million cells derived from 61 embryos staged between 9.5 and 13.5 days of gestation, in a single experiment. The resulting 'mouse organogenesis cell atlas' (MOCA) provides a global view of developmental processes during this critical window. We use Monocle 3 to identify hundreds of cell types and 56 trajectories, many of which are detected only because of the depth of cellular coverage, and collectively define thousands of corresponding marker genes. We explore the dynamics of gene expression within cell types and trajectories over time, including focused analyses of the apical ectodermal ridge, limb mesenchyme and skeletal muscle.",
+          "url": "https://doi.org/10.1038/s41586-019-0969-x"
+        },
+        {
           "id": "MED:28825705",
           "title": "Reversed graph embedding resolves complex single-cell trajectories.",
           "method": "",
@@ -5590,31 +5615,6 @@
           ],
           "abstract": "A flexible statistical framework is developed for the analysis of read counts from RNA-Seq gene expression studies. It provides the ability to analyse complex experiments involving multiple treatment conditions and blocking variables while still taking full account of biological variation. Biological variation between RNA samples is estimated separately from the technical variation associated with sequencing technologies. Novel empirical Bayes methods allow each gene to have its own specific variability, even when there are relatively few biological replicates from which to estimate such variability. The pipeline is implemented in the edgeR package of the Bioconductor project. A case study analysis of carcinoma data demonstrates the ability of generalized linear model methods (GLMs) to detect differential expression in a paired design, and even to detect tumour-specific expression changes. The case study demonstrates the need to allow for gene-specific variability, rather than assuming a common dispersion across genes or a fixed relationship between abundance and variability. Genewise dispersions de-prioritize genes with inconsistent results and allow the main analysis to focus on changes that are consistent between biological replicates. Parallel computational approaches are developed to make non-linear model fitting faster and more reliable, making the application of GLMs to genomic data more convenient and practical. Simulations demonstrate the ability of adjusted profile likelihood estimators to return accurate estimators of biological variability in complex situations. When variation is gene-specific, empirical Bayes estimators provide an advantageous compromise between the extremes of assuming common dispersion or separate genewise dispersion. The methods developed here can also be applied to count data arising from DNA-Seq applications, including ChIP-Seq for epigenetic marks and DNA methylation analyses.",
           "url": "https://doi.org/10.1093/nar/gks042"
-        },
-        {
-          "id": "MED:30787437",
-          "title": "The single-cell transcriptional landscape of mammalian organogenesis.",
-          "method": "",
-          "authors": "Cao J, Spielmann M, Qiu X, Huang X, Ibrahim DM, Hill AJ, Zhang F, Mundlos S, Christiansen L, Steemers FJ, Trapnell C, Shendure J.",
-          "journal": "Nature",
-          "year": "2019",
-          "date": "2019-02-20",
-          "doi": "10.1038/s41586-019-0969-x",
-          "cited": 4424,
-          "license": "",
-          "pdf": "https://europepmc.org/articles/PMC6434952?pdf=render",
-          "keywords": [
-            "Transcriptome"
-          ],
-          "tasks": [
-            "trajectory"
-          ],
-          "datasets": [],
-          "lists": [
-            "classic"
-          ],
-          "abstract": "Mammalian organogenesis is a remarkable process. Within a short timeframe, the cells of the three germ layers transform into an embryo that includes most of the major internal and external organs. Here we investigate the transcriptional dynamics of mouse organogenesis at single-cell resolution. Using single-cell combinatorial indexing, we profiled the transcriptomes of around 2 million cells derived from 61 embryos staged between 9.5 and 13.5 days of gestation, in a single experiment. The resulting 'mouse organogenesis cell atlas' (MOCA) provides a global view of developmental processes during this critical window. We use Monocle 3 to identify hundreds of cell types and 56 trajectories, many of which are detected only because of the depth of cellular coverage, and collectively define thousands of corresponding marker genes. We explore the dynamics of gene expression within cell types and trajectories over time, including focused analyses of the apical ectodermal ridge, limb mesenchyme and skeletal muscle.",
-          "url": "https://doi.org/10.1038/s41586-019-0969-x"
         },
         {
           "id": "MED:31870423",
@@ -5842,7 +5842,7 @@
           "year": "2017",
           "date": "2017-08-21",
           "doi": "10.1038/nmeth.4401",
-          "cited": 1792,
+          "cited": 1814,
           "license": "",
           "pdf": "https://europepmc.org/articles/PMC5623146?pdf=render",
           "keywords": [
@@ -6732,6 +6732,38 @@
           "url": "https://doi.org/10.1186/s12943-025-02426-3"
         },
         {
+          "id": "MED:40903571",
+          "title": "Single-cell transcriptomic and genomic changes in the ageing human brain.",
+          "method": "",
+          "authors": "Jeffries AM, Yu T, Ziegenfuss JS, Tolles AK, Baer CE, Sotelo CB, Kim Y, Weng Z, Lodato MA.",
+          "journal": "Nature",
+          "year": "2025",
+          "date": "2025-09-03",
+          "doi": "10.1038/s41586-025-09435-8",
+          "cited": 67,
+          "license": "cc by-nc-nd",
+          "pdf": "https://europepmc.org/articles/PMC12527935?pdf=render",
+          "keywords": [
+            "Brain",
+            "Prefrontal Cortex",
+            "Genomics",
+            "Aging",
+            "Genome, Human",
+            "Single-Cell Analysis",
+            "Transcriptome"
+          ],
+          "tasks": [
+            "clustering",
+            "spatial"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Over time, cells in the brain and in the body accumulate damage, which contributes to the ageing process 1 . In the human brain, the prefrontal cortex undergoes age-related changes that can affect cognitive functioning later in life 2 . Here, using single-nucleus RNA sequencing (snRNA-seq), single-cell whole-genome sequencing (scWGS) and spatial transcriptomics, we identify gene-expression and genomic changes in the human prefrontal cortex across lifespan, from infancy to centenarian. snRNA-seq identified infant-specific cell clusters enriched for the expression of neurodevelopmental genes, as well as an age-associated common downregulation of cell-essential homeostatic genes that function in ribosomes, transport and metabolism across cell types. Conversely, the expression of neuron-specific genes generally remains stable throughout life. These findings were validated with spatial transcriptomics. scWGS identified two age-associated mutational signatures that correlate with gene transcription and gene repression, respectively, and revealed gene length- and expression-level-dependent rates of somatic mutation in neurons that correlate with the transcriptomic landscape of the aged human brain. Our results provide insight into crucial aspects of human brain development and ageing, and shed light on transcriptomic and genomic dynamics.",
+          "url": "https://doi.org/10.1038/s41586-025-09435-8"
+        },
+        {
           "id": "MED:40312419",
           "title": "Single-cell transcriptomic analysis reveals gut microbiota-immunotherapy synergy through modulating tumor microenvironment.",
           "method": "",
@@ -6783,37 +6815,6 @@
           ],
           "abstract": "Aging affects human immune system functionality, increasing susceptibility to immune-mediated diseases. While gene expression programs accurately reflect immune function, their relationship with biological immune aging and health status remains unclear. Here we developed robust, cell-type-specific aging clocks (sc-ImmuAging) for the myeloid and lymphoid immune cell populations in circulation within peripheral blood mononuclear cells, using single-cell RNA-sequencing data from 1,081 healthy individuals aged from 18 to 97 years. Application of sc-ImmuAging to transcriptome data of patients with COVID-19 revealed notable age acceleration in monocytes, which decreased during recovery. Furthermore, inter-individual variations in immune aging induced by vaccination were identified, with individuals exhibiting elevated baseline interferon response genes showing age rejuvenation in CD8 + T cells after BCG vaccination. sc-ImmuAging provides a powerful tool for decoding immune aging dynamics, offering insights into age-related immune alterations and potential interventions to promote healthy aging.",
           "url": "https://doi.org/10.1038/s43587-025-00819-z"
-        },
-        {
-          "id": "MED:40830271",
-          "title": "A single-cell, spatial transcriptomic atlas of the Arabidopsis life cycle.",
-          "method": "",
-          "authors": "Lee TA, Illouz-Eliaz N, Nobori T, Xu J, Jow B, Nery JR, Ecker JR.",
-          "journal": "Nature plants",
-          "year": "2025",
-          "date": "2025-08-19",
-          "doi": "10.1038/s41477-025-02072-z",
-          "cited": 64,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC12416547?pdf=render",
-          "keywords": [
-            "Arabidopsis",
-            "Gene Expression Regulation, Plant",
-            "Transcriptome",
-            "Single-Cell Gene Expression Analysis"
-          ],
-          "tasks": [
-            "integration",
-            "clustering",
-            "spatial",
-            "perturbation"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Arabidopsis has been pivotal in uncovering fundamental principles of plant biology, yet a comprehensive, high-resolution understanding of its cellular identities throughout the entire life cycle remains incomplete. Here we present a single-nucleus and spatial transcriptomic atlas spanning ten developmental stages, encompassing over 400,000 nuclei from all organ systems and tissues-from seeds to developing siliques. Leveraging paired single-nucleus and spatial transcriptomic datasets, we annotate 75% of identified cell clusters, revealing striking molecular diversity in cell types and states across development. Our integrated approach identified conserved transcriptional signatures among recurrent cell types, organ-specific heterogeneity and previously uncharacterized cell-type-specific markers validated spatially. Moreover, we uncover dynamic transcriptional programs governing secondary metabolite production and differential growth patterns, exemplified by detailed spatial profiling of the compact yet complex apical hook structure; this profiling revealed transient cellular states linked to developmental progression and hormonal regulation, highlighting the hidden complexity underlying plant morphogenesis. Functional validation of genes uniquely expressed within specific cell contexts confirmed their essential developmental roles, underscoring the predictive power of our atlas. Collectively, this comprehensive resource provides an invaluable foundation for exploring cellular differentiation, environmental responses and genetic perturbations at high resolution, advancing our understanding of plant biology.",
-          "url": "https://doi.org/10.1038/s41477-025-02072-z"
         }
       ]
     },
@@ -7483,7 +7484,7 @@
           "year": "2011",
           "date": "2011-10-06",
           "doi": "10.1186/1478-811x-9-22",
-          "cited": 392,
+          "cited": 396,
           "license": "cc by",
           "pdf": "https://biosignaling.biomedcentral.com/counter/pdf/10.1186/1478-811X-9-22",
           "keywords": [],
@@ -7670,7 +7671,7 @@
           "year": "2025",
           "date": "2025-01-23",
           "doi": "10.1016/j.jmb.2025.168960",
-          "cited": 125,
+          "cited": 138,
           "license": "cc by",
           "pdf": "https://europepmc.org/articles/PMC7617537?pdf=render",
           "keywords": [
@@ -8764,7 +8765,7 @@
           "year": "2019",
           "date": "2019-01-01",
           "doi": "10.1093/nar/gky1055",
-          "cited": 3757,
+          "cited": 3837,
           "license": "cc by",
           "pdf": "https://europepmc.org/articles/PMC6323945?pdf=render",
           "keywords": [],
@@ -9816,9 +9817,9 @@
             "Knowledge Graph",
             "Contrastive Learning",
             "Interpretable Artificial Intelligence",
+            "Ophthalmic Disease Detection",
             "Clinical Profile Prompts",
-            "Medical Intelligent Systems",
-            "Ophthalmic Disease Detection"
+            "Medical Intelligent Systems"
           ],
           "tasks": [
             "knowledge-graph"
@@ -11145,35 +11146,38 @@
           "url": "https://doi.org/10.1177/1087057117696795"
         },
         {
-          "id": "MED:32296570",
-          "title": "Structural basis of SARS-CoV-2 3CLpro and anti-COVID-19 drug discovery from medicinal plants.",
+          "id": "MED:26193119",
+          "title": "Contacts-based prediction of binding affinity in protein-protein complexes.",
           "method": "",
-          "authors": "Tahir Ul Qamar M, Alqahtani SM, Alamri MA, Chen LL.",
-          "journal": "Journal of pharmaceutical analysis",
-          "year": "2020",
-          "date": "2020-03-26",
-          "doi": "10.1016/j.jpha.2020.03.009",
-          "cited": 577,
-          "license": "cc by-nc-nd",
-          "pdf": "https://europepmc.org/articles/PMC7156227?pdf=render",
+          "authors": "Vangone A, Bonvin AM.",
+          "journal": "eLife",
+          "year": "2015",
+          "date": "2015-07-20",
+          "doi": "10.7554/elife.07454",
+          "cited": 579,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC4523921?pdf=render",
           "keywords": [
-            "Molecular dynamics simulation",
-            "Molecular docking",
-            "Natural products",
-            "Coronavirus",
-            "Covid-19",
-            "Sars-cov-2",
-            "Protein Homology Modelling"
+            "Binding affinity",
+            "Biophysics",
+            "Structural Biology",
+            "None",
+            "Protein–protein Interactions",
+            "Protein–protein Complexes",
+            "Buried Surface Area",
+            "Non-interacting Surface",
+            "Protein Contacts",
+            "Protein Interaction Maps"
           ],
           "tasks": [
-            "docking"
+            "affinity"
           ],
           "datasets": [],
           "lists": [
             "classic"
           ],
-          "abstract": "The recent pandemic of coronavirus disease 2019 (COVID-19) caused by SARS-CoV-2 has raised global health concerns. The viral 3-chymotrypsin-like cysteine protease (3CL pro ) enzyme controls coronavirus replication and is essential for its life cycle. 3CL pro is a proven drug discovery target in the case of severe acute respiratory syndrome coronavirus (SARS-CoV) and Middle East respiratory syndrome coronavirus (MERS-CoV). Recent studies revealed that the genome sequence of SARS-CoV-2 is very similar to that of SARS-CoV. Therefore, herein, we analysed the 3CL pro sequence, constructed its 3D homology model, and screened it against a medicinal plant library containing 32,297 potential anti-viral phytochemicals/traditional Chinese medicinal compounds. Our analyses revealed that the top nine hits might serve as potential anti- SARS-CoV-2 lead molecules for further optimisation and drug development process to combat COVID-19.",
-          "url": "https://doi.org/10.1016/j.jpha.2020.03.009"
+          "abstract": "Almost all critical functions in cells rely on specific protein-protein interactions. Understanding these is therefore crucial in the investigation of biological systems. Despite all past efforts, we still lack a thorough understanding of the energetics of association of proteins. Here, we introduce a new and simple approach to predict binding affinity based on functional and structural features of the biological system, namely the network of interfacial contacts. We assess its performance against a protein-protein binding affinity benchmark and show that both experimental methods used for affinity measurements and conformational changes have a strong impact on prediction accuracy. Using a subset of complexes with reliable experimental binding affinities and combining our contacts and contact-types-based model with recent observations on the role of the non-interacting surface in protein-protein interactions, we reach a high prediction accuracy for such a diverse dataset outperforming all other tested methods.",
+          "url": "https://doi.org/10.7554/elife.07454"
         },
         {
           "id": "MED:39657122",
@@ -12156,7 +12160,7 @@
           "year": "2019",
           "date": "2019-01-01",
           "doi": "10.18632/aging.101684",
-          "cited": 2231,
+          "cited": 2427,
           "license": "cc by",
           "pdf": "https://europepmc.org/articles/PMC6366976?pdf=render",
           "keywords": [
@@ -12379,7 +12383,7 @@
           "year": "2010",
           "date": "2010-07-01",
           "doi": "10.1038/nature09165",
-          "cited": 1308,
+          "cited": 1334,
           "license": "",
           "pdf": "https://europepmc.org/articles/PMC3998662?pdf=render",
           "keywords": [
@@ -14627,7 +14631,7 @@
           "year": "2025",
           "date": "2025-04-21",
           "doi": "10.1186/s13046-025-03391-x",
-          "cited": 172,
+          "cited": 191,
           "license": "cc by",
           "pdf": "https://europepmc.org/articles/PMC12010629?pdf=render",
           "keywords": [
@@ -16134,7 +16138,7 @@
           "year": "2019",
           "date": "2018-12-10",
           "doi": "10.1038/s41564-018-0306-4",
-          "cited": 1710,
+          "cited": 1725,
           "license": "",
           "pdf": "https://europepmc.org/articles/PMC6342642?pdf=render",
           "keywords": [
@@ -16160,7 +16164,7 @@
           "year": "2018",
           "date": "2018-10-24",
           "doi": "10.1038/s41586-018-0617-x",
-          "cited": 1673,
+          "cited": 1687,
           "license": "cc by",
           "pdf": "https://europepmc.org/articles/PMC6415775?pdf=render",
           "keywords": [
@@ -18359,6 +18363,43 @@
           ],
           "abstract": "Motivation Protein language models (pLMs) have emerged as powerful tools for capturing the intricate information encoded in protein sequences, facilitating various downstream protein prediction tasks. With numerous pLMs available, there is a critical need for diverse benchmarks to systematically evaluate their performance across biologically relevant tasks. Here, we introduce DARKIN, a zero-shot classification benchmark designed to assign phosphosites to understudied kinases, termed dark kinases. Kinases, which catalyze phosphorylation, are central to cellular signaling pathways. While phosphoproteomics enables the large-scale identification of phosphosites, determining the cognate kinase responsible for the phosphorylation event remains an experimental challenge. Results In DARKIN, we prepared training, validation, and test folds that respect the zero-shot nature of this classification problem, incorporating stratification based on kinase groups and sequence similarity. We evaluated multiple pLMs using two zero-shot classifiers: a novel, training-free k-NN-based method, and a bilinear classifier. Our findings indicate that ESM, ProtT5-XL, and SaProt exhibit superior performance on this task. DARKIN provides a challenging benchmark for assessing pLM efficacy and fosters deeper exploration of under-characterized (dark) kinases by offering a biologically relevant test bed. Availability and implementation The DARKIN benchmark data and the scripts for generating additional splits are publicly available at: https://github.com/tastanlab/darkin.",
           "url": "https://doi.org/10.1093/bioinformatics/btaf480"
+        },
+        {
+          "id": "MED:43052708",
+          "title": "Protein language models for viral entry protein prediction: a multi-scale ESM2 benchmark.",
+          "method": "",
+          "authors": "Beltrán JF, Belén LH, Lugo A, Jimenez L.",
+          "journal": "BMC bioinformatics",
+          "year": "2026",
+          "date": "2026-08-25",
+          "doi": "10.1186/s12859-026-06622-w",
+          "cited": 0,
+          "license": "cc by-nc-nd",
+          "pdf": "https://europepmc.org/articles/PMC13783937?pdf=render",
+          "keywords": [
+            "Membrane fusion",
+            "Machine Learning",
+            "Protein Function Prediction",
+            "Embeddings",
+            "Protein Language Models",
+            "Viral Entry Proteins",
+            "Esm2",
+            "Viral Proteins",
+            "Computational Biology",
+            "Virus Internalization"
+          ],
+          "tasks": [
+            "benchmark",
+            "foundation-eval"
+          ],
+          "datasets": [
+            "db:uniprot"
+          ],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Background Viral entry proteins mediate host recognition and membrane fusion and are major targets for vaccines and antivirals. Identifying them directly from sequence data is important for characterizing emerging viruses, particularly when similarity to experimentally characterized proteins is limited. We evaluated whether frozen embeddings from the ESM2 protein language model family can support accurate binary classification of viral entry proteins. Results We benchmarked embeddings from three ESM2 models (650 M, 3B, and 15B parameters) with five supervised classifiers (SVM-RBF, Random Forest, XGBoost, LightGBM, and MLP) on a curated, non-redundant, balanced dataset of 1092 reviewed viral proteins from UniProt/Swiss-Prot. Sequences were clustered at 40% identity with CD-HIT and split into training (n = 873) and independent test (n = 219) sets. Performance improved monotonically with model scale. The best configuration, ESM2 15B with SVM-RBF, achieved 88.6% accuracy, MCC = 0.772, and ROC-AUC = 0.956 on the test set. ESM2 3B with SVM-RBF performed similarly (88.1% accuracy, MCC = 0.765, ROC-AUC = 0.953), indicating that most gains were captured by the intermediate-scale model. Classical descriptor baselines based on AAC, DPC, and PseAAC achieved lower independent test performance, with the best descriptor baseline reaching MCC = 0.537 and ROC-AUC = 0.846. In an exploratory taxid-disjoint evaluation of the ESM2 650 M plus SVM-RBF model, mean MCC and ROC-AUC were 0.734 and 0.929, respectively. We also implemented ViralEntryPred ( https://www.biochemintelli.com/viralentrypred/ ), a web application for rapid screening. Conclusions Frozen ESM2 embeddings provide effective feature representations for viral entry protein prediction within a curated balanced benchmark. Larger models improved performance consistently, but with diminishing returns beyond the 3B scale, supporting intermediate-scale protein language models as a practical trade-off between accuracy and computational cost. Exploratory taxid-disjoint analysis suggested robustness to unseen taxids, but validation on completely unseen viral families remains future work.",
+          "url": "https://doi.org/10.1186/s12859-026-06622-w"
         },
         {
           "id": "MED:42973741",

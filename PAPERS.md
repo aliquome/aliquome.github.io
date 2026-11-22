@@ -1,11 +1,11 @@
 # New bioinformatics and computational biology papers
 
-Every paper published from 2026-09-22 to 2026-11-21 in the leading bioinformatics and computational biology journals, sorted by field, newest first. Updated every two days by [Aliquome](https://aliquome.github.io/); browse them with abstracts, tasks and filters at [aliquome.github.io/papers](https://aliquome.github.io/papers/).
+Every paper published from 2026-09-23 to 2026-11-22 in the leading bioinformatics and computational biology journals, sorted by field, newest first. Updated every two days by [Aliquome](https://aliquome.github.io/); browse them with abstracts, tasks and filters at [aliquome.github.io/papers](https://aliquome.github.io/papers/).
 
 From Bioinformatics, Nucleic Acids Res, Genome Biol, Nat Methods, Nat Biotechnol, Brief Bioinform, PLoS Comput Biol, Genome Res, Nat Genet, Cell Syst, Cell Genom, Nat Comput Sci, Genome Med, Mol Syst Biol, Gigascience, NAR Genom Bioinform, Bioinform Adv, BMC Bioinformatics, Nature (computational papers only), Science (computational papers only), Cell (computational papers only), Nat Commun (computational papers only).
 
 <details>
-<summary><b>Genomes and annotation</b> (58 papers)</summary>
+<summary><b>Genomes and annotation</b> (57 papers)</summary>
 
 - [ABAQS: A comprehensive scoring method for assessing genome annotation quality](https://doi.org/10.1093/bioinformatics/btag832). Liu R et al. *Bioinformatics (Oxford, England)*, 2026.
 - [Evaluating long-read RNA sequencing for Mendelian disorder diagnosis](https://doi.org/10.1186/s13073-026-01830-8). Hou H et al. *Genome medicine*, 2026.
@@ -64,12 +64,11 @@ From Bioinformatics, Nucleic Acids Res, Genome Biol, Nat Methods, Nat Biotechnol
 - [MOSHPIT: Accessible, reproducible metagenome data science on the QIIME 2 framework](https://doi.org/10.1016/j.xgen.2026.101366). Ziemski M et al. *Cell genomics*, 2026.
 - [Long-read RNA sequencing identifies non-coding isoform switching as a regulator of cell fate](https://doi.org/10.1038/s41467-026-78011-z). Fort V et al. *Nature communications*, 2026.
 - [Intraspecific sequence variation and complete genomes refine the identification of rapidly evolved regions in humans](https://doi.org/10.1016/j.xgen.2026.101363). Luo Y et al. *Cell genomics*, 2026.
-- [NanoTS: a deep learning tool for accurate SNP calling in nanopore long-read transcriptome data](https://doi.org/10.1038/s41592-026-03225-4). Liu Z et al. *Nature methods*, 2026.
 
 </details>
 
 <details>
-<summary><b>Variants and population genetics</b> (68 papers)</summary>
+<summary><b>Variants and population genetics</b> (66 papers)</summary>
 
 - [Optimizing phenotype scale improves genetic analyses in large-scale biobanks](https://doi.org/10.1038/s41588-026-02826-1). Huang Z et al. *Nature genetics*, 2026.
 - [Regularized ensemble polygenic risk prediction with GWAS summary statistics](https://doi.org/10.1038/s41588-026-02844-z). Zhao Z et al. *Nature genetics*, 2026.
@@ -137,14 +136,14 @@ From Bioinformatics, Nucleic Acids Res, Genome Biol, Nat Methods, Nat Biotechnol
 - [Multivariate GWAS framework for family trios with parental phenotypes to control dynastic effects](https://doi.org/10.1186/s12859-026-06597-8). Zhang S et al. *BMC bioinformatics*, 2026.
 - [Genome-wide mapping of common and rare variant effects on adiposity across childhood](https://doi.org/10.1038/s41588-026-02772-y). Kentistou KA et al. *Nature genetics*, 2026.
 - [Single-nucleus transcriptome-wide association study of human brain disorders](https://doi.org/10.1038/s41586-026-10836-6). Venkatesh S et al. *Nature*, 2026.
-- [Employing AlphaFold and TED to explore the structural impacts of stress-associated mutations in rice](https://doi.org/10.1093/bioadv/vbag275). Shahid F et al. *Bioinformatics advances*, 2026.
-- [pycmplot: fast, low-memory multi-track circular and linear Manhattan plotting in Python](https://doi.org/10.1093/bioadv/vbag281). Esoh K et al. *Bioinformatics advances*, 2026.
 
 </details>
 
 <details>
-<summary><b>Cancer genomics</b> (88 papers)</summary>
+<summary><b>Cancer genomics</b> (90 papers)</summary>
 
+- [Endocrine, nutritional and metabolic diseases drive cancer risk through subtype-specific and shared proteomic mediators](https://doi.org/10.1038/s41467-026-78791-4). Wu J et al. *Nature communications*, 2026.
+- [A hybrid mixture approach for clustering and characterizing biomedical data](https://doi.org/10.1371/journal.pcbi.1014974). Kareem KA et al. *PLoS computational biology*, 2026.
 - [CIViC 2026: expanding cancer variant curation with AI, genome-wide biomarkers, and genomic regions](https://doi.org/10.1093/nar/gkag1156). Danos AM et al. *Nucleic acids research*, 2026.
 - [DriverDBv5: a multi-omics integration database for cancer driver gene research](https://doi.org/10.1093/nar/gkag1173). Lai YL et al. *Nucleic acids research*, 2026.
 - [Conservation of the tumour microenvironment across organs and species](https://doi.org/10.1038/s41586-026-11270-4). Januszyk M et al. *Nature*, 2026.
@@ -239,6 +238,8 @@ From Bioinformatics, Nucleic Acids Res, Genome Biol, Nat Methods, Nat Biotechnol
 <details>
 <summary><b>Expression and single-cell</b> (198 papers)</summary>
 
+- [Computational methods for cell-cell communication via single cells](https://doi.org/10.1038/s41592-026-03287-4). Li H et al. *Nature methods*, 2026.
+- [velotest: statistical assessment of RNA velocity embeddings reveals quality differences for reliable trajectory visualizations](https://doi.org/10.1038/s41467-026-78669-5). Bischoff S et al. *Nature communications*, 2026.
 - [LACA: a cross-species single-cell resource for exploring longevity and aging-associated cellular and molecular programs](https://doi.org/10.1093/nar/gkag1129). Chen T et al. *Nucleic acids research*, 2026.
 - [Space-map: 3D single-cell atlas reconstruction from serial sections](https://doi.org/10.1038/s41592-026-03310-8). Han R et al. *Nature methods*, 2026.
 - [scCVD: a comprehensive single-cell omics atlas of cerebrovascular disease](https://doi.org/10.1093/nar/gkag1198). Zhou LW et al. *Nucleic acids research*, 2026.
@@ -435,13 +436,11 @@ From Bioinformatics, Nucleic Acids Res, Genome Biol, Nat Methods, Nat Biotechnol
 - [Efficient differential expression analysis of large-scale single-cell transcriptomics data using Dreamlet](https://doi.org/10.1038/s41467-026-75680-8). Hoffman GE et al. *Nature communications*, 2026.
 - [Fast, flexible analysis of differences in cellular composition with crumblr](https://doi.org/10.1038/s41467-026-75681-7). Hoffman GE et al. *Nature communications*, 2026.
 - [Personalized single-cell transcriptomics reveals molecular diversity in Alzheimer's disease](https://doi.org/10.1038/s41467-026-72310-1). Chandrashekar PB et al. *Nature communications*, 2026.
-- [Short-term memory of past caspase activity biases cell elimination in vivo](https://doi.org/10.1038/s41467-026-77685-9). Cumming T et al. *Nature communications*, 2026.
-- [OT-knn: A neighborhood-aware optimal transport framework for aligning spatial transcriptomics data](https://doi.org/10.1371/journal.pcbi.1014041). Song J et al. *PLoS computational biology*, 2026.
 
 </details>
 
 <details>
-<summary><b>Proteins and structures</b> (99 papers)</summary>
+<summary><b>Proteins and structures</b> (97 papers)</summary>
 
 - [ADCdb 2.0: clinical landscape and ADMET profiles of antibody-drug conjugates](https://doi.org/10.1093/nar/gkag1244). Sun X et al. *Nucleic acids research*, 2026.
 - [Zero-shot de novo design of a metalloenzyme](https://doi.org/10.1126/science.aej3009). El Nesr G et al. *Science (New York, N.Y.)*, 2026.
@@ -540,8 +539,6 @@ From Bioinformatics, Nucleic Acids Res, Genome Biol, Nat Methods, Nat Biotechnol
 - [A spectral framework for measuring diversity in multiple sequence alignments](https://doi.org/10.1371/journal.pcbi.1014778). Opuu V. *PLoS computational biology*, 2026.
 - [VDJdb in 2026: boosting T-cell receptor recognition evidence using paratope embeddings and AI-based structure prediction](https://doi.org/10.1093/nar/gkag904). Luppov DV et al. *Nucleic acids research*, 2026.
 - [OOPSIE (OOPS informatics extension)](https://doi.org/10.1093/bioadv/vbag278). Telerman SB et al. *Bioinformatics advances*, 2026.
-- [Unveiling structural determinants of peptide recognition by public and private SARS-CoV-2-specific T-cell receptors](https://doi.org/10.1038/s41467-026-77827-z). Akıl C et al. *Nature communications*, 2026.
-- [Correction: Study of Protein-Protein Interactions in Septin Assembly: Multiple amphipathic helix domains cooperate in binding to the lipid membrane](https://doi.org/10.1371/journal.pcbi.1014812). Mofidi SM et al. *PLoS computational biology*, 2026.
 
 </details>
 
@@ -584,7 +581,7 @@ From Bioinformatics, Nucleic Acids Res, Genome Biol, Nat Methods, Nat Biotechnol
 </details>
 
 <details>
-<summary><b>Chemistry and drug discovery</b> (63 papers)</summary>
+<summary><b>Chemistry and drug discovery</b> (61 papers)</summary>
 
 - [SynCED: the Synthetic Chemical Exposome Database](https://doi.org/10.1093/nar/gkag1246). Kyes M et al. *Nucleic acids research*, 2026.
 - [canSAR 2026-an update to the public drug discovery knowledgebase](https://doi.org/10.1093/nar/gkag1144). Orouji S et al. *Nucleic acids research*, 2026.
@@ -647,14 +644,13 @@ From Bioinformatics, Nucleic Acids Res, Genome Biol, Nat Methods, Nat Biotechnol
 - [Structural mechanisms underlying resistance to Switch-II pocket inhibitors in KRAS](https://doi.org/10.1038/s41467-026-78133-4). Whitley MJ et al. *Nature communications*, 2026.
 - [Solid-state nanopore sensing: the next workhorse of biophysical characterization](https://doi.org/10.1038/s41592-026-03222-7). Platnich CM et al. *Nature methods*, 2026.
 - [Chiral oxazolidinones via biocatalytic aziridination of unactivated alkenes](https://doi.org/10.1038/s41586-026-11169-0). Li ZQ et al. *Nature*, 2026.
-- [The role of shape and interaction directionality in the crystalline phase behaviour of octahedral metal-organic cages](https://doi.org/10.1038/s41467-026-77857-7). Wolpert EH et al. *Nature communications*, 2026.
-- [In-silico personalized protein-protein interaction networks prioritize candidate compounds for glioblastoma](https://doi.org/10.1371/journal.pcbi.1014785). Siminea N et al. *PLoS computational biology*, 2026.
 
 </details>
 
 <details>
 <summary><b>Epigenomics and regulation</b> (62 papers)</summary>
 
+- [Met4All: a dockerised Shiny application for DNA methylation array analysis, visualization and reporting](https://doi.org/10.1093/bioinformatics/btag849). Roca C et al. *Bioinformatics (Oxford, England)*, 2026.
 - [Dosage compensation is regulated by segregated chromatin modules during development in Drosophila](https://doi.org/10.1038/s44320-026-00254-1). Younas L et al. *Molecular systems biology*, 2026.
 - [Aging out of the blue: Region-specific epigenetic clock calibration for a blue zone with the DNAm SuperLearner](https://doi.org/10.1371/journal.pcbi.1014949). Gunter N et al. *PLoS computational biology*, 2026.
 - [Evolutionary lineage-specific and heterochromatin-independent repression of transposon-derived sequences](https://doi.org/10.1038/s41588-026-02823-4). Matsushima W et al. *Nature genetics*, 2026.
@@ -716,7 +712,6 @@ From Bioinformatics, Nucleic Acids Res, Genome Biol, Nat Methods, Nat Biotechnol
 - [Divergent medulloblastoma chromatin states disclose KDM2B as a selective dependency](https://doi.org/10.1038/s41588-026-02745-1). Tao R et al. *Nature genetics*, 2026.
 - [Author Correction: Epigenetic priming of mammalian embryonic enhancer elements coordinates developmental gene networks](https://doi.org/10.1186/s13059-026-04290-w). Todd CD et al. *Genome biology*, 2026.
 - [Targeting ZMYND8 unleashes IL-2 signalling to override T cell exhaustion](https://doi.org/10.1038/s41586-026-11059-5). Wang Y et al. *Nature*, 2026.
-- [Multilevel ensemble for genome-wide prediction of cell-specific G-quadruplexes utilizing transformed sequences and enhanced chromatin accessibility with G4Beacon2](https://doi.org/10.1101/gr.280606.125). Tao T et al. *Genome research*, 2026.
 
 </details>
 
@@ -756,7 +751,7 @@ From Bioinformatics, Nucleic Acids Res, Genome Biol, Nat Methods, Nat Biotechnol
 </details>
 
 <details>
-<summary><b>Microbiome and metagenomics</b> (60 papers)</summary>
+<summary><b>Microbiome and metagenomics</b> (59 papers)</summary>
 
 - [P2CS-Web: an updated resource for comparative exploration of prokaryotic two-component systems](https://doi.org/10.1093/nar/gkag1205). Silly L et al. *Nucleic acids research*, 2026.
 - [Host-microbe interactions in engineered immunocompetent human gut tissues](https://doi.org/10.1038/s41586-026-11292-y). López-Sandoval R et al. *Nature*, 2026.
@@ -817,13 +812,14 @@ From Bioinformatics, Nucleic Acids Res, Genome Biol, Nat Methods, Nat Biotechnol
 - [A global mitochondrial genomic atlas illuminates freshwater microeukaryote diversity](https://doi.org/10.1038/s41467-026-78160-1). Serra Moncadas L et al. *Nature communications*, 2026.
 - [A global S-palmitoylation map of Trypanosoma cruzi identifies ABCA10 as a key component of a redundant heme-acquisition system](https://doi.org/10.1038/s41467-026-77828-y). Seminario-Mondejar G et al. *Nature communications*, 2026.
 - [CADD-ThresholdApp: an interactive web application for calibrating CADD scores using ClinVar](https://doi.org/10.1186/s12859-026-06675-x). Leifheit C et al. *BMC bioinformatics*, 2026.
-- [A geothermal amoeba sets a new upper temperature limit for eukaryotes](https://doi.org/10.1016/j.cell.2026.08.043). Rappaport HB et al. *Cell*, 2026.
 
 </details>
 
 <details>
-<summary><b>Benchmarks and machine learning</b> (47 papers)</summary>
+<summary><b>Benchmarks and machine learning</b> (48 papers)</summary>
 
+- [A two-platform blueprint for modeling human brain development](https://doi.org/10.1038/s41592-026-03327-z). De Los Angeles A et al. *Nature methods*, 2026.
+- [System of agentic AI for the discovery of metal-organic frameworks](https://doi.org/10.1038/s43588-026-01058-x). Inizan TJ et al. *Nature computational science*, 2026.
 - [Europe PMC in 2026](https://doi.org/10.1093/nar/gkag1168). Jeffryes M et al. *Nucleic acids research*, 2026.
 - [Transforming molecular evolutionary analyses with protein foundation models](https://doi.org/10.1038/s41592-026-03304-6). Kumar S et al. *Nature methods*, 2026.
 - [Cognitive grounding improves LLM simulation of collective human behavior](https://doi.org/10.1038/s43588-026-01080-z). Zhu H et al. *Nature computational science*, 2026.
@@ -857,7 +853,6 @@ From Bioinformatics, Nucleic Acids Res, Genome Biol, Nat Methods, Nat Biotechnol
 - [Retrofitting language models to operate over bytes](https://doi.org/10.1038/s41586-026-11111-4). Minixhofer B et al. *Nature*, 2026.
 - [Decoding systemic vascular health and hypertensive disorders in pregnancy through retinal imaging and Visionary AI](https://doi.org/10.1038/s41587-026-03303-0). Bearelly S et al. *Nature biotechnology*, 2026.
 - [Omics data discovery agents: Agent-supported retrieval, reanalysis, and synthesis of published omics data](https://doi.org/10.1371/journal.pcbi.1014822). Hutton A et al. *PLoS computational biology*, 2026.
-- Integrating network medicine and foundation models reveals cell-type-specific regulatory alterations in Alzheimer’s disease. *NAR genomics and bioinformatics*, 2026.
 - [Assessment of LLMs on basic bioinformatics tasks requiring multi-step reasoning and code writing](https://doi.org/10.1093/bioinformatics/btag749). Rajesh V et al. *Bioinformatics (Oxford, England)*, 2026.
 - [What is the future of genomic foundation models in biological research?](https://doi.org/10.1016/j.cels.2026.101758) Bacher R et al. *Cell systems*, 2026.
 - [pxGPT: a schema-constrained multimodal large language model framework for plant phenotyping](https://doi.org/10.1093/bioinformatics/btag781). Zheng PX et al. *Bioinformatics (Oxford, England)*, 2026.
@@ -875,8 +870,16 @@ From Bioinformatics, Nucleic Acids Res, Genome Biol, Nat Methods, Nat Biotechnol
 </details>
 
 <details>
-<summary><b>Other</b> (646 papers)</summary>
+<summary><b>Other</b> (632 papers)</summary>
 
+- [Biosynthesis of iboga alkaloids](https://doi.org/10.1038/s41467-026-79750-9). Kang M et al. *Nature communications*, 2026.
+- [Multiancestry genome-wide association and integrative multiomics analyses implicate key pathways in endometriosis](https://doi.org/10.1038/s41588-026-02810-9). Guare LA et al. *Nature genetics*, 2026.
+- [Predicting degradation of polymeric materials in complex chemical environments via molecular modeling](https://doi.org/10.1038/s43588-026-01041-6). Gissinger JR et al. *Nature computational science*, 2026.
+- [Rollout models of human planning with exact action probabilities](https://doi.org/10.1371/journal.pcbi.1014945). Olieslagers J et al. *PLoS computational biology*, 2026.
+- [Ionic condition-dependent allostery shapes ribosomal dynamics](https://doi.org/10.1371/journal.pcbi.1014977). Yangaliev D et al. *PLoS computational biology*, 2026.
+- [Pupil dynamics reflect uncertainty-driven adjustments of probability learning](https://doi.org/10.1371/journal.pcbi.1014064). Greenhouse-Tucknott A et al. *PLoS computational biology*, 2026.
+- [Inferring population-level physiologically based model parameters for sleep in infancy and young childhood](https://doi.org/10.1371/journal.pcbi.1014960). Webb L et al. *PLoS computational biology*, 2026.
+- [Simulation-guided design of exotendons to reduce the energetic cost of running](https://doi.org/10.1371/journal.pcbi.1014203). Stingel J et al. *PLoS computational biology*, 2026.
 - [pyGENIE: A Python library for programmatic access and mutational analysis of AACR Project GENIE](https://doi.org/10.1093/bioinformatics/btag844). Dayan D et al. *Bioinformatics (Oxford, England)*, 2026.
 - [RNAcomp2D: a web tool to execute multiple methods and visually compare predictions of RNA secondary structure](https://doi.org/10.1093/bioinformatics/btag841). Vitale R et al. *Bioinformatics (Oxford, England)*, 2026.
 - [FusionGDB 3.0: integrating breakpoints, generating personalized sequences, and inferring tumorigenic scenarios for human fusion genes](https://doi.org/10.1093/nar/gkag1214). Kim P et al. *Nucleic acids research*, 2026.
@@ -963,6 +966,7 @@ From Bioinformatics, Nucleic Acids Res, Genome Biol, Nat Methods, Nat Biotechnol
 - [High school science ambitions](https://doi.org/10.1038/s41592-026-03323-3). Marx V. *Nature methods*, 2026.
 - [Looking back on the adolescence of GFP research](https://doi.org/10.1038/s41592-026-03335-z). Miyawaki A. *Nature methods*, 2026.
 - Histone H3.3 subvariant H3mm15 is required for normal spermatogenesis by regulating gene expression. *Nucleic acids research*, 2026.
+- [Author Correction: Microbial community resemblance methods differ in their ability to detect biologically relevant patterns](https://doi.org/10.1038/s41592-026-03336-y). Kuczynski J et al. *Nature methods*, 2026.
 - [Ab initio simulation of excited-state potential energy surfaces with transferable deep quantum Monte Carlo](https://doi.org/10.1038/s43588-026-01065-y). Schätzle Z et al. *Nature computational science*, 2026.
 - [Cas12a-based combinatorial knockout screens define the genetic architecture of the DNA damage response](https://doi.org/10.1038/s41587-026-03339-2). Hayward SB et al. *Nature biotechnology*, 2026.
 - [Efficient and accurate mixed model association tool for single-cell eQTL analysis](https://doi.org/10.1038/s41588-026-02798-2). Zhou W et al. *Nature genetics*, 2026.
@@ -1109,6 +1113,7 @@ From Bioinformatics, Nucleic Acids Res, Genome Biol, Nat Methods, Nat Biotechnol
 - [Coupled beta and high-frequency oscillations emerge from synchronized bursting in a minimal model of the parkinsonian subthalamic nucleus](https://doi.org/10.1371/journal.pcbi.1014921). Sheheitli H et al. *PLoS computational biology*, 2026.
 - [Ten simple rules for teaching practical AI to health data teams](https://doi.org/10.1371/journal.pcbi.1014915). Just E et al. *PLoS computational biology*, 2026.
 - [dictyBase 2026: a reimplementation of the Dictyostelium model organism database on minimal infrastructure](https://doi.org/10.1093/nar/gkag1077). Mendieta MJ et al. *Nucleic acids research*, 2026.
+- Categorization and analysis of 16 computational methods for estimating cell potency from single-cell RNA-seq data. Wang Q et al. *Cell systems*, 2026.
 - [Population-scale ancestral recombination graphs with tskit 1.0](https://doi.org/10.1038/s41592-026-03325-1). Jeffery B et al. *Nature methods*, 2026.
 - [Single-cell imaging of the lytic phage life cycle in bacteria](https://doi.org/10.1016/j.cels.2026.101763). Wedd C et al. *Cell systems*, 2026.
 - [Innate sensor responses set a supra-unitary threshold for viral replication](https://doi.org/10.1016/j.cell.2026.10.004). Mukai K et al. *Cell*, 2026.
@@ -1287,11 +1292,6 @@ From Bioinformatics, Nucleic Acids Res, Genome Biol, Nat Methods, Nat Biotechnol
 - [Ten simple rules for preparing and delivering effective funding pitches in competitive grant applications](https://doi.org/10.1371/journal.pcbi.1014840). Göbel A et al. *PLoS computational biology*, 2026.
 - [A physiologically constrained calibration framework for cardiovascular models applied to a paediatric synthetic sepsis population](https://doi.org/10.1371/journal.pcbi.1014847). Cabeleira MT et al. *PLoS computational biology*, 2026.
 - [A joint mixture Tobit method with latent microbial abundance improves detection of microbiome-disease associations in zero-inflated data](https://doi.org/10.1371/journal.pcbi.1014844). Deng J et al. *PLoS computational biology*, 2026.
-- XPA lactylation is required for UV-induced DNA damage repair. *Nucleic acids research*, 2026.
-- Robust helicase loading mechanism underlies diverse architectures of bacterial replication origins. *Nucleic acids research*, 2026.
-- Detect de novo expressed ORFs in transcriptomes with DESwoMAN. *NAR genomics and bioinformatics*, 2026.
-- Acetylation-independent mechanism for binding of ENL to intrinsically disordered regions in TAF2/6 and SNF5. *Nucleic acids research*, 2026.
-- A dynamically frustrated allosteric checkpoint consistent with conformational proofreading in CRISPR–Cas9. *Nucleic acids research*, 2026.
 - Correction to ‘Identification and analysis of consensus RNA motifs binding to the genome regulator CTCF’. *NAR genomics and bioinformatics*, 2026.
 - [dbcan-nf: a Nextflow pipeline for accurate CAZyme annotation in metagenomes](https://doi.org/10.1093/bioadv/vbag304). Zhang X et al. *Bioinformatics advances*, 2026.
 - [Accurate and well-powered case-control analysis of spatial molecular data](https://doi.org/10.1038/s41592-026-03236-1). Reshef YA et al. *Nature methods*, 2026.
@@ -1301,22 +1301,13 @@ From Bioinformatics, Nucleic Acids Res, Genome Biol, Nat Methods, Nat Biotechnol
 - [Shotgun engineering fires up mammalian metabolic design](https://doi.org/10.1038/s41587-026-03329-4). Rai K et al. *Nature biotechnology*, 2026.
 - [Rapid Whole Genome Sequencing Enhances Pediatric Cancer Diagnosis](https://doi.org/10.1038/s41467-026-77918-x). Vedi A et al. *Nature communications*, 2026.
 - [Mobility hinders malaria elimination goals in the Brazilian Amazon](https://doi.org/10.1371/journal.pcbi.1014843). Arisco NJ et al. *PLoS computational biology*, 2026.
-- Adaptation-coupled CRISPRi identifies antibiotic-sensitizing genes leading to a novel plasmid selection marker. *Nucleic acids research*, 2026.
-- Nanopore sequencing combined with adaptive sampling and NanoExpansion enables accurate characterization of repeat expansion disorders. *NAR genomics and bioinformatics*, 2026.
 - [Efficient design of RNA sequences with desired properties, structure, and motifs using a grammar variational autoencoder](https://doi.org/10.1093/bioadv/vbag298). Zarnaghinaghsh N et al. *Bioinformatics advances*, 2026.
 - [Imputation of fluid intelligence scores reduces ascertainment bias and increases power for analyses of common and rare variants](https://doi.org/10.1038/s41588-026-02787-5). van den Berg DM et al. *Nature genetics*, 2026.
 - [Discovery and engineering of avian R2 retrotransposons for all-RNA-mediated targeted DNA integration in human cells](https://doi.org/10.1038/s41587-026-03315-w). Chen Y et al. *Nature biotechnology*, 2026.
 - [Photonic neuromorphic learning via generalized in situ physical gradient descent](https://doi.org/10.1038/s43588-026-01057-y). Zhou T et al. *Nature computational science*, 2026.
 - [Bioactivity-driven prediction of antibacterial synergy using machine learning models](https://doi.org/10.1371/journal.pcbi.1014849). Yousefabadi H et al. *PLoS computational biology*, 2026.
 - [A generalized scaling law reveals synchrony-driven reorganization of brain dynamics across human lifespan](https://doi.org/10.1371/journal.pcbi.1014821). Saha S et al. *PLoS computational biology*, 2026.
-- A systematic single-cell analysis of enhancer RNAs across human and mouse. *Nucleic acids research*, 2026.
-- Commentary on ‘corradjust unveils biologically relevant transcriptomic correlations by efficiently eliminating hidden confounders’. *Nucleic acids research*, 2026.
-- Conjugative transfer inhibition of IncA and IncC plasmids by SGI1-like elements via relaxosome assembly interference. *Nucleic acids research*, 2026.
-- Structural basis of PARP2 recognition of nucleosomal DNA breaks and inhibitor trapping. *Nucleic acids research*, 2026.
 - Response to commentary on ‘CorrAdjust unveils biologically relevant transcriptomic correlations by efficiently eliminating hidden confounders’. *Nucleic acids research*, 2026.
-- Functional roles for viral RNA ribosylation in mammalian cells. *Nucleic acids research*, 2026.
-- RMI2 regulates recombination intermediate metabolism to ensure proper chromosome segregation in mammalian meiosis. *Nucleic acids research*, 2026.
-- Size and sequence variation of the Lid of the Cas12a nuclease domain results in a nickase phenotype. *Nucleic acids research*, 2026.
 - [A nationwide prospective randomized trial for diagnosing developmental disorders demonstrates genome sequencing outperforms standard of care](https://doi.org/10.1186/s13073-026-01771-2). Geysens M et al. *Genome medicine*, 2026.
 - [BandQuant: a web application for western blot quantification](https://doi.org/10.1093/bioadv/vbag292). He M et al. *Bioinformatics advances*, 2026.
 - [Trade-off between flux efficiency and metabolic control shapes enzyme allocation](https://doi.org/10.1038/s44320-026-00250-5). Sun K et al. *Molecular systems biology*, 2026.
@@ -1410,9 +1401,6 @@ From Bioinformatics, Nucleic Acids Res, Genome Biol, Nat Methods, Nat Biotechnol
 - How does explicit reliability guide choices? Effect of trustworthiness on choice and metacognition. Ota K et al. *PLoS computational biology*, 2026.
 - Awake alpha bursting emerges as the dynamic working state in a lateral geniculate thalamocortical cell model. McGahan K et al. *PLoS computational biology*, 2026.
 - Bioactivity-driven prediction of antibacterial synergy using machine learning models. Yousefabadi H et al. *PLoS computational biology*, 2026.
-- Ten simple rules for preparing and delivering effective funding pitches in competitive grant applications. Göbel A et al. *PLoS computational biology*, 2026.
-- Mobility hinders malaria elimination goals in the Brazilian Amazon. Arisco N et al. *PLoS computational biology*, 2026.
-- A graph-attentive GAN for rare-cell-aware single-cell RNA-seq data generation. Ganguly R et al. *PLoS computational biology*, 2026.
 - [Katalyst: knowledge-guided semantic alignment via contrastive learning for enzyme turnover prediction](https://doi.org/10.1093/bioinformatics/btag709). Li R et al. *Bioinformatics (Oxford, England)*, 2026.
 - [Information leakage in enzyme-substrate prediction](https://doi.org/10.1093/bioinformatics/btag733). Atabaigi Elmi V et al. *Bioinformatics (Oxford, England)*, 2026.
 - [Modulatability of complex oscillators](https://doi.org/10.1038/s43588-026-01050-5). Cai Y et al. *Nature computational science*, 2026.
@@ -1516,12 +1504,5 @@ From Bioinformatics, Nucleic Acids Res, Genome Biol, Nat Methods, Nat Biotechnol
 - [Triplet-based species tree estimation: Sensitivity to gene tree rooting (or lack thereof)](https://doi.org/10.1371/journal.pcbi.1014782). Zaman TA et al. *PLoS computational biology*, 2026.
 - [Nematic structures contribute to robust zygotic polarization in C. elegans](https://doi.org/10.1371/journal.pcbi.1014792). Vanslambrouck M et al. *PLoS computational biology*, 2026.
 - [Coupling with opinion dynamics promotes prosocial behavior in multilayer networks](https://doi.org/10.1371/journal.pcbi.1014810). Bhaumik J et al. *PLoS computational biology*, 2026.
-- [Variants in RNU4-2 or RNU6 paralogs account for 2% of individuals with non-syndromic autosomal dominant retinitis pigmentosa in a large French cohort](https://doi.org/10.1186/s13073-026-01743-6). Audo I et al. *Genome medicine*, 2026.
-- [Long-range interdependencies aware signal analysis for rapid and accurate obstructive sleep apnea prediction](https://doi.org/10.1038/s41467-026-76274-0). Wang Z et al. *Nature communications*, 2026.
-- [Patient-derived separation-of-function mutations reveal specific role for BRCA1 coiled coil domain in genome stability](https://doi.org/10.1038/s41467-026-77330-5). Szikriszt B et al. *Nature communications*, 2026.
-- [Single-cell TimeLapse-seq reveals MTA is an essential retrotransposon orchestrating mouse zygotic genome activation](https://doi.org/10.1038/s41467-026-77750-3). Wu Y et al. *Nature communications*, 2026.
-- [A physiology-based mathematical model of the renin-angiotensin system, bone remodeling, and calcium homeostasis: Effects of estrogen and renin-angiotensin system inhibitors](https://doi.org/10.1371/journal.pcbi.1013101). Stadt MM et al. *PLoS computational biology*, 2026.
-- [Drift-diffusion dynamics of hippocampal replay](https://doi.org/10.1371/journal.pcbi.1014761). Wu Z et al. *PLoS computational biology*, 2026.
-- [Communication through autoattractants can enhance and limit collective migration of immune cells](https://doi.org/10.1371/journal.pcbi.1014809). Versluis DM et al. *PLoS computational biology*, 2026.
 
 </details>
