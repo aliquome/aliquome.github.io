@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T13:14:12Z",
+  "generated_at": "2026-11-23T13:15:48Z",
   "source": "Europe PMC REST API",
   "rule": "For each field, the 30 most cited open-access papers of all time and the 30 most cited of the last 24 months that match the field query. Tasks come from keyword patterns; datasets are databases and datasets named in the title, abstract or keywords.",
   "fields": [
@@ -397,7 +397,7 @@
           "year": "2023",
           "date": "2023-05-10",
           "doi": "10.1038/s41586-023-05896-x",
-          "cited": 1260,
+          "cited": 1297,
           "license": "cc by",
           "pdf": "https://europepmc.org/articles/PMC10172123?pdf=render",
           "keywords": [
@@ -681,6 +681,37 @@
           "url": "https://doi.org/10.1093/nar/gky730"
         },
         {
+          "id": "MED:32191811",
+          "title": "De novo assembly of the cattle reference genome with single-molecule sequencing.",
+          "method": "",
+          "authors": "Rosen BD, Bickhart DM, Schnabel RD, Koren S, Elsik CG, Tseng E, Rowan TN, Low WY, Zimin A, Couldrey C, Hall R, Li W, Rhie A, Ghurye J, McKay SD, Thibaud-Nissen F, Hoffman J, Murdoch BM, Snelling WM, McDaneld TG, Hammond JA, Schwartz JC, Nandolo W, Hagen DE, Dreischer C, Schultheiss SJ, Schroeder SG, Phillippy AM, Cole JB, Van Tassell CP, Liu G, Smith TPL, Medrano JF.",
+          "journal": "GigaScience",
+          "year": "2020",
+          "date": "2020-03-01",
+          "doi": "10.1093/gigascience/giaa021",
+          "cited": 588,
+          "license": "cc by",
+          "pdf": "https://academic.oup.com/gigascience/article-pdf/9/3/giaa021/32932931/giaa021.pdf",
+          "keywords": [
+            "Cattle",
+            "Hereford",
+            "Bovine Genome",
+            "Reference Assembly",
+            "Polymorphism, Genetic",
+            "Genome"
+          ],
+          "tasks": [
+            "assembly",
+            "annotation"
+          ],
+          "datasets": [],
+          "lists": [
+            "classic"
+          ],
+          "abstract": "Background Major advances in selection progress for cattle have been made following the introduction of genomic tools over the past 10-12 years. These tools depend upon the Bos taurus reference genome (UMD3.1.1), which was created using now-outdated technologies and is hindered by a variety of deficiencies and inaccuracies. Results We present the new reference genome for cattle, ARS-UCD1.2, based on the same animal as the original to facilitate transfer and interpretation of results obtained from the earlier version, but applying a combination of modern technologies in a de novo assembly to increase continuity, accuracy, and completeness. The assembly includes 2.7 Gb and is >250× more continuous than the original assembly, with contig N50 >25 Mb and L50 of 32. We also greatly expanded supporting RNA-based data for annotation that identifies 30,396 total genes (21,039 protein coding). The new reference assembly is accessible in annotated form for public use. Conclusions We demonstrate that improved continuity of assembled sequence warrants the adoption of ARS-UCD1.2 as the new cattle reference genome and that increased assembly accuracy will benefit future research on this species.",
+          "url": "https://doi.org/10.1093/gigascience/giaa021"
+        },
+        {
           "id": "MED:27646134",
           "title": "Oxford Nanopore MinION Sequencing and Genome Assembly.",
           "method": "",
@@ -736,37 +767,6 @@
           ],
           "abstract": "Female Aedes aegypti mosquitoes infect more than 400 million people each year with dangerous viral pathogens including dengue, yellow fever, Zika and chikungunya. Progress in understanding the biology of mosquitoes and developing the tools to fight them has been slowed by the lack of a high-quality genome assembly. Here we combine diverse technologies to produce the markedly improved, fully re-annotated AaegL5 genome assembly, and demonstrate how it accelerates mosquito science. We anchored physical and cytogenetic maps, doubled the number of known chemosensory ionotropic receptors that guide mosquitoes to human hosts and egg-laying sites, provided further insight into the size and composition of the sex-determining M locus, and revealed copy-number variation among glutathione S-transferase genes that are important for insecticide resistance. Using high-resolution quantitative trait locus and population genomic analyses, we mapped new candidates for dengue vector competence and insecticide resistance. AaegL5 will catalyse new biological insights and intervention strategies to fight this deadly disease vector.",
           "url": "https://doi.org/10.1038/s41586-018-0692-z"
-        },
-        {
-          "id": "MED:32191811",
-          "title": "De novo assembly of the cattle reference genome with single-molecule sequencing.",
-          "method": "",
-          "authors": "Rosen BD, Bickhart DM, Schnabel RD, Koren S, Elsik CG, Tseng E, Rowan TN, Low WY, Zimin A, Couldrey C, Hall R, Li W, Rhie A, Ghurye J, McKay SD, Thibaud-Nissen F, Hoffman J, Murdoch BM, Snelling WM, McDaneld TG, Hammond JA, Schwartz JC, Nandolo W, Hagen DE, Dreischer C, Schultheiss SJ, Schroeder SG, Phillippy AM, Cole JB, Van Tassell CP, Liu G, Smith TPL, Medrano JF.",
-          "journal": "GigaScience",
-          "year": "2020",
-          "date": "2020-03-01",
-          "doi": "10.1093/gigascience/giaa021",
-          "cited": 527,
-          "license": "cc by",
-          "pdf": "https://academic.oup.com/gigascience/article-pdf/9/3/giaa021/32932931/giaa021.pdf",
-          "keywords": [
-            "Cattle",
-            "Hereford",
-            "Bovine Genome",
-            "Reference Assembly",
-            "Polymorphism, Genetic",
-            "Genome"
-          ],
-          "tasks": [
-            "assembly",
-            "annotation"
-          ],
-          "datasets": [],
-          "lists": [
-            "classic"
-          ],
-          "abstract": "Background Major advances in selection progress for cattle have been made following the introduction of genomic tools over the past 10-12 years. These tools depend upon the Bos taurus reference genome (UMD3.1.1), which was created using now-outdated technologies and is hindered by a variety of deficiencies and inaccuracies. Results We present the new reference genome for cattle, ARS-UCD1.2, based on the same animal as the original to facilitate transfer and interpretation of results obtained from the earlier version, but applying a combination of modern technologies in a de novo assembly to increase continuity, accuracy, and completeness. The assembly includes 2.7 Gb and is >250× more continuous than the original assembly, with contig N50 >25 Mb and L50 of 32. We also greatly expanded supporting RNA-based data for annotation that identifies 30,396 total genes (21,039 protein coding). The new reference assembly is accessible in annotated form for public use. Conclusions We demonstrate that improved continuity of assembled sequence warrants the adoption of ARS-UCD1.2 as the new cattle reference genome and that increased assembly accuracy will benefit future research on this species.",
-          "url": "https://doi.org/10.1093/gigascience/giaa021"
         },
         {
           "id": "MED:23870653",
@@ -2188,7 +2188,7 @@
           "year": "2021",
           "date": "2021-05-17",
           "doi": "10.1038/s41588-021-00857-4",
-          "cited": 1510,
+          "cited": 1526,
           "license": "",
           "pdf": "https://europepmc.org/articles/PMC8192451?pdf=render",
           "keywords": [
@@ -2924,6 +2924,32 @@
           "url": "https://doi.org/10.1038/s41588-026-02583-1"
         },
         {
+          "id": "MED:41173866",
+          "title": "ClairS-TO: a deep-learning method for long-read tumor-only somatic small variant calling.",
+          "method": "ClairS-TO",
+          "authors": "Chen L, Zheng Z, Su J, Yu X, Wong AOK, Zhang J, Lee YL, Luo R.",
+          "journal": "Nature communications",
+          "year": "2025",
+          "date": "2025-10-31",
+          "doi": "10.1038/s41467-025-64547-z",
+          "cited": 28,
+          "license": "cc by-nc-nd",
+          "pdf": "https://europepmc.org/articles/PMC12579226?pdf=render",
+          "keywords": [
+            "Neoplasms",
+            "Deep Learning"
+          ],
+          "tasks": [
+            "variant-calling"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Accurate detection of somatic variants in tumors is of critical importance and remains challenging. Current methods typically require matched normal samples for reliable detection, which are often unavailable in real-world research and clinical scenarios. Without a matched normal sample, more proficient algorithms are required to distinguish true somatic variants from germline variants and technical artifacts. However, existing tumor-only somatic variant callers that were designed for short-read sequencing data are not able to work well with long-read data. To fill the gap, we present ClairS-TO, a deep-learning-based method for long-read tumor-only somatic variant calling. ClairS-TO uses an ensemble of two disparate neural networks trained from the same samples but for opposite tasks-how likely/not likely a candidate is a somatic variant. Benchmarks using COLO829 and HCC1395 cancer cell lines show that ClairS-TO outperforms DeepSomatic and smrest in ONT and PacBio long-read data. ClairS-TO is also applicable to short-read data and outperforms Mutect2, Octopus, Pisces, and DeepSomatic. Extensive experiments across various sequencing coverages, variant allelic fractions, and tumor purities support that ClairS-TO is a reliable tool for somatic variant discovery. ClairS-TO is open-source, available at https://github.com/HKU-BAL/ClairS-TO .",
+          "url": "https://doi.org/10.1038/s41467-025-64547-z"
+        },
+        {
           "id": "MED:39987793",
           "title": "Leveraging protein structural information to improve variant effect prediction.",
           "method": "",
@@ -3236,32 +3262,6 @@
           ],
           "abstract": "The tumor suppressor CHEK2 encodes the serine/threonine protein kinase CHK2 which, upon DNA damage, is important for pausing the cell cycle, initiating DNA repair, and inducing apoptosis. CHK2 phosphorylation of the tumor suppressor BRCA1 is also important for mitotic spindle assembly and chromosomal stability. Consistent with its cell-cycle checkpoint role, both germline and somatic variants in CHEK2 have been linked to breast and other cancers. Over 90% of clinical germline CHEK2 missense variants are classified as variants of uncertain significance, complicating diagnosis of CHK2-dependent cancer. We therefore sought to test the functional impact of all possible missense variants in CHK2. Using a scalable multiplexed assay based on the ability of human CHK2 to complement DNA sensitivity of Saccharomyces cerevisiae cells lacking the CHEK2 ortholog, RAD53, we generated a systematic \"missense variant effect map\" for CHEK2 missense variation. The map reflects known biochemical features of CHK2 while offering new biological insights. It also provides strong evidence toward pathogenicity for some clinical missense variants and supporting evidence toward benignity for others. Overall, this comprehensive missense variant effect map contributes to understanding of both known and yet-to-be-observed CHK2 variants.",
           "url": "https://doi.org/10.1016/j.ajhg.2024.10.013"
-        },
-        {
-          "id": "MED:41173866",
-          "title": "ClairS-TO: a deep-learning method for long-read tumor-only somatic small variant calling.",
-          "method": "ClairS-TO",
-          "authors": "Chen L, Zheng Z, Su J, Yu X, Wong AOK, Zhang J, Lee YL, Luo R.",
-          "journal": "Nature communications",
-          "year": "2025",
-          "date": "2025-10-31",
-          "doi": "10.1038/s41467-025-64547-z",
-          "cited": 20,
-          "license": "cc by-nc-nd",
-          "pdf": "https://europepmc.org/articles/PMC12579226?pdf=render",
-          "keywords": [
-            "Neoplasms",
-            "Deep Learning"
-          ],
-          "tasks": [
-            "variant-calling"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Accurate detection of somatic variants in tumors is of critical importance and remains challenging. Current methods typically require matched normal samples for reliable detection, which are often unavailable in real-world research and clinical scenarios. Without a matched normal sample, more proficient algorithms are required to distinguish true somatic variants from germline variants and technical artifacts. However, existing tumor-only somatic variant callers that were designed for short-read sequencing data are not able to work well with long-read data. To fill the gap, we present ClairS-TO, a deep-learning-based method for long-read tumor-only somatic variant calling. ClairS-TO uses an ensemble of two disparate neural networks trained from the same samples but for opposite tasks-how likely/not likely a candidate is a somatic variant. Benchmarks using COLO829 and HCC1395 cancer cell lines show that ClairS-TO outperforms DeepSomatic and smrest in ONT and PacBio long-read data. ClairS-TO is also applicable to short-read data and outperforms Mutect2, Octopus, Pisces, and DeepSomatic. Extensive experiments across various sequencing coverages, variant allelic fractions, and tumor purities support that ClairS-TO is a reliable tool for somatic variant discovery. ClairS-TO is open-source, available at https://github.com/HKU-BAL/ClairS-TO .",
-          "url": "https://doi.org/10.1038/s41467-025-64547-z"
         },
         {
           "id": "MED:39882942",
@@ -4138,6 +4138,66 @@
           "url": "https://doi.org/10.1186/s13045-019-0818-2"
         },
         {
+          "id": "MED:36973407",
+          "title": "Nucleotide metabolism: a pan-cancer metabolic dependency.",
+          "method": "Nucleotide metabolism",
+          "authors": "Mullen NJ, Singh PK.",
+          "journal": "Nature reviews. Cancer",
+          "year": "2023",
+          "date": "2023-03-27",
+          "doi": "10.1038/s41568-023-00557-7",
+          "cited": 477,
+          "license": "",
+          "pdf": "https://europepmc.org/articles/PMC10041518?pdf=render",
+          "keywords": [
+            "Neoplasms"
+          ],
+          "tasks": [
+            "drug-response"
+          ],
+          "datasets": [],
+          "lists": [
+            "classic"
+          ],
+          "abstract": "Metabolic alterations are a key hallmark of cancer cells, and the augmented synthesis and use of nucleotide triphosphates is a critical and universal metabolic dependency of cancer cells across different cancer types and genetic backgrounds. Many of the aggressive behaviours of cancer cells, including uncontrolled proliferation, chemotherapy resistance, immune evasion and metastasis, rely heavily on augmented nucleotide metabolism. Furthermore, most of the known oncogenic drivers upregulate nucleotide biosynthetic capacity, suggesting that this phenotype is a prerequisite for cancer initiation and progression. Despite the wealth of data demonstrating the efficacy of nucleotide synthesis inhibitors in preclinical cancer models and the well-established clinical use of these drugs in certain cancer settings, the full potential of these agents remains unrealized. In this Review, we discuss recent studies that have generated mechanistic insights into the diverse biological roles of hyperactive cancer cell nucleotide metabolism. We explore opportunities for combination therapies that are highlighted by these recent advances and detail key questions that remain to be answered, with the goal of informing urgently warranted future studies.",
+          "url": "https://doi.org/10.1038/s41568-023-00557-7"
+        },
+        {
+          "id": "MED:36179670",
+          "title": "Pan-cancer analyses reveal cancer-type-specific fungal ecologies and bacteriome interactions.",
+          "method": "",
+          "authors": "Narunsky-Haziza L, Sepich-Poore GD, Livyatan I, Asraf O, Martino C, Nejman D, Gavert N, Stajich JE, Amit G, González A, Wandro S, Perry G, Ariel R, Meltser A, Shaffer JP, Zhu Q, Balint-Lahat N, Barshack I, Dadiani M, Gal-Yam EN, Patel SP, Bashan A, Swafford AD, Pilpel Y, Knight R, Straussman R.",
+          "journal": "Cell",
+          "year": "2022",
+          "date": "2022-09-01",
+          "doi": "10.1016/j.cell.2022.09.005",
+          "cited": 476,
+          "license": "cc by",
+          "pdf": "",
+          "keywords": [
+            "Fungi",
+            "Cancer",
+            "Biomarkers",
+            "Metagenomics",
+            "Metatranscriptomics",
+            "Microbial Interactions",
+            "Liquid Biopsy",
+            "Tumor Microbiome",
+            "Tumor Mycobiome",
+            "Neoplasms",
+            "Mycobiome"
+          ],
+          "tasks": [
+            "prognosis"
+          ],
+          "datasets": [],
+          "lists": [
+            "classic"
+          ],
+          "abstract": "Cancer-microbe associations have been explored for centuries, but cancer-associated fungi have rarely been examined. Here, we comprehensively characterize the cancer mycobiome within 17,401 patient tissue, blood, and plasma samples across 35 cancer types in four independent cohorts. We report fungal DNA and cells at low abundances across many major human cancers, with differences in community compositions that differ among cancer types, even when accounting for technical background. Fungal histological staining of tissue microarrays supported intratumoral presence and frequent spatial association with cancer cells and macrophages. Comparing intratumoral fungal communities with matched bacteriomes and immunomes revealed co-occurring bi-domain ecologies, often with permissive, rather than competitive, microenvironments and distinct immune responses. Clinically focused assessments suggested prognostic and diagnostic capacities of the tissue and plasma mycobiomes, even in stage I cancers, and synergistic predictive performance with bacteriomes.",
+          "url": "https://doi.org/10.1016/j.cell.2022.09.005"
+        },
+        {
           "id": "MED:21930502",
           "title": "International Cancer Genome Consortium Data Portal--a one-stop shop for cancer genomics data.",
           "method": "",
@@ -4166,57 +4226,6 @@
           ],
           "abstract": "The International Cancer Genome Consortium (ICGC) is a collaborative effort to characterize genomic abnormalities in 50 different cancer types. To make this data available, the ICGC has created the ICGC Data Portal. Powered by the BioMart software, the Data Portal allows each ICGC member institution to manage and maintain its own databases locally, while seamlessly presenting all the data in a single access point for users. The Data Portal currently contains data from 24 cancer projects, including ICGC, The Cancer Genome Atlas (TCGA), Johns Hopkins University, and the Tumor Sequencing Project. It consists of 3478 genomes and 13 cancer types and subtypes. Available open access data types include simple somatic mutations, copy number alterations, structural rearrangements, gene expression, microRNAs, DNA methylation and exon junctions. Additionally, simple germline variations are available as controlled access data. The Data Portal uses a web-based graphical user interface (GUI) to offer researchers multiple ways to quickly and easily search and analyze the available data. The web interface can assist in constructing complicated queries across multiple data sets. Several application programming interfaces are also available for programmatic access. Here we describe the organization, functionality, and capabilities of the ICGC Data Portal.",
           "url": "https://doi.org/10.1093/database/bar026"
-        },
-        {
-          "id": "MED:33149131",
-          "title": "Pan-cancer landscape of homologous recombination deficiency.",
-          "method": "",
-          "authors": "Nguyen L, W M Martens J, Van Hoeck A, Cuppen E.",
-          "journal": "Nature communications",
-          "year": "2020",
-          "date": "2020-11-04",
-          "doi": "10.1038/s41467-020-19406-4",
-          "cited": 466,
-          "license": "cc by",
-          "pdf": "https://www.nature.com/articles/s41467-020-19406-4.pdf",
-          "keywords": [
-            "Homologous Recombination"
-          ],
-          "tasks": [
-            "subtyping"
-          ],
-          "datasets": [],
-          "lists": [
-            "classic"
-          ],
-          "abstract": "Homologous recombination deficiency (HRD) results in impaired double strand break repair and is a frequent driver of tumorigenesis. Here, we develop a genome-wide mutational scar-based pan-cancer Classifier of HOmologous Recombination Deficiency (CHORD) that can discriminate BRCA1- and BRCA2-subtypes. Analysis of a metastatic (n = 3,504) and primary (n = 1,854) pan-cancer cohort reveals that HRD is most frequent in ovarian and breast cancer, followed by pancreatic and prostate cancer. We identify biallelic inactivation of BRCA1, BRCA2, RAD51C or PALB2 as the most common genetic cause of HRD, with RAD51C and PALB2 inactivation resulting in BRCA2-type HRD. We find that while the specific genetic cause of HRD is cancer type specific, biallelic inactivation is predominantly associated with loss-of-heterozygosity (LOH), with increased contribution of deep deletions in prostate cancer. Our results demonstrate the value of pan-cancer genomics-based HRD testing and its potential diagnostic value for patient stratification towards treatment with e.g. poly ADP-ribose polymerase inhibitors (PARPi).",
-          "url": "https://doi.org/10.1038/s41467-020-19406-4"
-        },
-        {
-          "id": "MED:8006591",
-          "title": "Analysis of somatic mutation in five B cell subsets of human tonsil.",
-          "method": "",
-          "authors": "Pascual V, Liu YJ, Magalski A, de Bouteiller O, Banchereau J, Capra JD.",
-          "journal": "The Journal of experimental medicine",
-          "year": "1994",
-          "date": "1994-07-01",
-          "doi": "10.1084/jem.180.1.329",
-          "cited": 464,
-          "license": "cc by-nc-sa",
-          "pdf": "https://europepmc.org/articles/PMC2191579?pdf=render",
-          "keywords": [
-            "Genes, Immunoglobulin",
-            "Mutation"
-          ],
-          "tasks": [
-            "somatic"
-          ],
-          "datasets": [],
-          "lists": [
-            "classic"
-          ],
-          "abstract": "Using a series of phenotypic markers that include immunoglobulin (Ig)D, IgM, IgG, CD23, CD44, Bcl-2, CD38, CD10, CD77, and Ki67, human tonsillar B cells were separated into five fractions representing different stages of B cell differentiation that included sIgD+ (Bm1 and Bm2), germinal center (Bm3 and Bm4), and memory (Bm5) B cells. To establish whether the initiation of somatic mutation correlated with this phenotypic characterization, we performed polymerase chain reaction and subsequent sequence analysis of the Ig heavy chain variable region genes from each of the B cell subsets. We studied the genes from the smallest VH families (VH4, VH5, and VH6) in order to facilitate the mutational analysis. In agreement with previous reports, we found that the somatic mutation machinery is activated only after B cells reach the germinal center and become centroblasts (Bm3). Whereas 47 independently rearranged IgM transcripts from the Bm1 and Bm2 subsets were nearly germline encoded, 57 Bm3-, and Bm4-, and Bm5-derived IgM transcripts had accumulated an average of 5.7 point mutations within the VH gene segment. gamma transcripts corresponding to the same VH gene families were isolated from subsets Bm3, Bm4, and Bm5, and had accumulated an average of 9.5 somatic mutations. We conclude that the molecular events underlying the process of somatic mutation takes place during the transition from IgD+, CD23+ B cells (Bm2) to the IgD-, CD23-, germinal center centroblast (Bm3). Furthermore, the analysis of Ig variable region transcripts from the different subpopulations confirms that the pathway of B cell differentiation from virgin B cell throughout the germinal center up to the memory compartment can be traced with phenotypic markers. The availability of these subpopulations should permit the identification of the functional molecules relevant to each stage of B cell differentiation.",
-          "url": "https://doi.org/10.1084/jem.180.1.329"
         },
         {
           "id": "MED:40236779",
@@ -4837,6 +4846,35 @@
           "url": "https://doi.org/10.1038/s41598-025-85444-x"
         },
         {
+          "id": "MED:39775838",
+          "title": "Knowledge graph-based thought: a knowledge graph-enhanced LLM framework for pan-cancer question answering.",
+          "method": "Knowledge graph-based thought",
+          "authors": "Feng Y, Zhou L, Ma C, Zheng Y, He R, Li Y.",
+          "journal": "GigaScience",
+          "year": "2025",
+          "date": "2025-01-01",
+          "doi": "10.1093/gigascience/giae082",
+          "cited": 26,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC11702363?pdf=render",
+          "keywords": [
+            "Prompt Engineering",
+            "Large Language Model",
+            "Knowledge Graph Question Answering",
+            "Pan-Cancer Knowledge Graph",
+            "Neoplasms"
+          ],
+          "tasks": [
+            "drug-response"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Background In recent years, large language models (LLMs) have shown promise in various domains, notably in biomedical sciences. However, their real-world application is often limited by issues like erroneous outputs and hallucinatory responses. Results We developed the knowledge graph-based thought (KGT) framework, an innovative solution that integrates LLMs with knowledge graphs (KGs) to improve their initial responses by utilizing verifiable information from KGs, thus significantly reducing factual errors in reasoning. The KGT framework demonstrates strong adaptability and performs well across various open-source LLMs. Notably, KGT can facilitate the discovery of new uses for existing drugs through potential drug-cancer associations and can assist in predicting resistance by analyzing relevant biomarkers and genetic mechanisms. To evaluate the knowledge graph question answering task within biomedicine, we utilize a pan-cancer knowledge graph to develop a pan-cancer question answering benchmark, named pan-cancer question answering. Conclusions The KGT framework substantially improves the accuracy and utility of LLMs in the biomedical field. This study serves as a proof of concept, demonstrating its exceptional performance in biomedical question answering.",
+          "url": "https://doi.org/10.1093/gigascience/giae082"
+        },
+        {
           "id": "MED:40120098",
           "title": "Pan-cancer analysis shapes the understanding of cancer biology and medicine.",
           "method": "",
@@ -5119,37 +5157,6 @@
           ],
           "abstract": "A comprehensive understanding of tumor heterogeneity, tumor microenvironment and the mechanisms of drug resistance is fundamental to advancing breast cancer research. While single-cell RNA sequencing has resolved the issue of \"temporal dynamic expression\" of genes at the single-cell level, the lack of spatial information still prevents us from gaining a comprehensive understanding of breast cancer. The introduction and application of spatial transcriptomics addresses this limitation. As the annual technical method of 2020, spatial transcriptomics preserves the spatial location of tissues and resolves RNA-seq data to help localize and differentiate the active expression of functional genes within a specific tissue region, enabling the study of spatial location attributes of gene locations and cellular tissue environments. In the context of breast cancer, spatial transcriptomics can assist in the identification of novel breast cancer subtypes and spatially discriminative features that show promise for individualized precise treatment. This article summarized the key technical approaches, recent advances in spatial transcriptomics and its applications in breast cancer, and discusses the limitations of current spatial transcriptomics methods and the prospects for future development, with a view to advancing the application of this technology in clinical practice.",
           "url": "https://doi.org/10.3389/fimmu.2024.1499301"
-        },
-        {
-          "id": "MED:40904351",
-          "title": "Bystin is a Prognosis and Immune Biomarker: From Pan-Cancer Analysis to Validation in Breast Cancer.",
-          "method": "",
-          "authors": "Aimaiti X, Wang Y, Ismtula D, Li Y, Ma H, Wang J, Elihamu D, Guo C.",
-          "journal": "Breast cancer (Dove Medical Press)",
-          "year": "2025",
-          "date": "2025-08-29",
-          "doi": "10.2147/bctt.s537429",
-          "cited": 20,
-          "license": "cc by-nc",
-          "pdf": "https://europepmc.org/articles/PMC12404263?pdf=render",
-          "keywords": [
-            "Methylation",
-            "Prognosis",
-            "tumor immunity",
-            "Pan-cancer",
-            "Bysl"
-          ],
-          "tasks": [
-            "prognosis"
-          ],
-          "datasets": [
-            "db:gdc"
-          ],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Introduction The Bystin gene (BYSL) contributes to cancer development and is a probable therapeutic target in cancer therapy. However, no systematic studies have been conducted on BYSL value in pan-cancer diagnosis, prognosis, and immunology. Methods We performed a pan-cancer analysis of BYSL using TCGA, GEO, and other databases to assess its expression, clinical significance, genetic variants, methylation, and immune correlation. Enrichment analysis was applied to predict BYSL-related pathways. We analyzed BYSL protein levels in corresponding breast cancer (BRCA) tissue samples to validate our findings using Western blot assays. A tissue microarray was deployed to verify BYSL expression in BRCA tissues by immunohistochemical staining. Moreover, we comprehensively analyzed the function of BYSL in BRCA initiation and development through CCK-8, transwell invasion, migration assays, and cell scratch assays for migration ability assessment. Results Through the study, BYSL was significantly overexpressed in the majority of cancers relative to normal tissues, with different expression patterns at different clinicopathological stages. In most cancer types, BYSL exhibits moderate to high diagnostic value, and overexpressed BYSL represents an independent prognosis factor in patients having BRCA, HNSC, KICH, LIHC, OV, and SARC cancers. Mutations in BYSL are distributed in most cancers and are related to prognosis. Most tumors have elevated levels of m6A methylation compared to normal tissues, while their promoter regions exhibit low levels of methylation. Additionally, BYSL expression displayed a positive correlation with MDSC immune infiltration. Further enrichment analysis showed the involvement of BYSL in important biological processes (BP), In addition, BYSL was overexpressed in BRCA tissues and promoted their proliferation, invasion, and migration compared to matched normal breast tissues. Discussion Our study showed that BYSL is an important biological indicator for predicting pan-cancer survival outcomes and immune characteristics and elucidated BYSL expression and role in BRCA, which highlights its therapeutic potential in BRCA.",
-          "url": "https://doi.org/10.2147/bctt.s537429"
         }
       ]
     },
@@ -5995,7 +6002,7 @@
           "year": "2025",
           "date": "2025-02-03",
           "doi": "10.1038/s41588-025-02080-x",
-          "cited": 184,
+          "cited": 199,
           "license": "cc by",
           "pdf": "https://europepmc.org/articles/PMC11906353?pdf=render",
           "keywords": [
@@ -9479,6 +9486,35 @@
           "url": "https://doi.org/10.1038/s41392-024-02036-3"
         },
         {
+          "id": "MED:39775838",
+          "title": "Knowledge graph-based thought: a knowledge graph-enhanced LLM framework for pan-cancer question answering.",
+          "method": "Knowledge graph-based thought",
+          "authors": "Feng Y, Zhou L, Ma C, Zheng Y, He R, Li Y.",
+          "journal": "GigaScience",
+          "year": "2025",
+          "date": "2025-01-01",
+          "doi": "10.1093/gigascience/giae082",
+          "cited": 26,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC11702363?pdf=render",
+          "keywords": [
+            "Prompt Engineering",
+            "Large Language Model",
+            "Knowledge Graph Question Answering",
+            "Pan-Cancer Knowledge Graph",
+            "Neoplasms"
+          ],
+          "tasks": [
+            "knowledge-graph"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Background In recent years, large language models (LLMs) have shown promise in various domains, notably in biomedical sciences. However, their real-world application is often limited by issues like erroneous outputs and hallucinatory responses. Results We developed the knowledge graph-based thought (KGT) framework, an innovative solution that integrates LLMs with knowledge graphs (KGs) to improve their initial responses by utilizing verifiable information from KGs, thus significantly reducing factual errors in reasoning. The KGT framework demonstrates strong adaptability and performs well across various open-source LLMs. Notably, KGT can facilitate the discovery of new uses for existing drugs through potential drug-cancer associations and can assist in predicting resistance by analyzing relevant biomarkers and genetic mechanisms. To evaluate the knowledge graph question answering task within biomedicine, we utilize a pan-cancer knowledge graph to develop a pan-cancer question answering benchmark, named pan-cancer question answering. Conclusions The KGT framework substantially improves the accuracy and utility of LLMs in the biomedical field. This study serves as a proof of concept, demonstrating its exceptional performance in biomedical question answering.",
+          "url": "https://doi.org/10.1093/gigascience/giae082"
+        },
+        {
           "id": "MED:40220286",
           "title": "Detecting emergencies in patient portal messages using large language models and knowledge graph-based retrieval-augmented generation.",
           "method": "",
@@ -9606,35 +9642,6 @@
           ],
           "abstract": "Background Sepsis is a complex, life-threatening condition characterized by significant heterogeneity and vast amounts of unstructured data, posing substantial challenges for traditional knowledge graph construction methods. The integration of large language models (LLMs) with real-world data offers a promising avenue to address these challenges and enhance the understanding and management of sepsis. Objective This study aims to develop a comprehensive sepsis knowledge graph by leveraging the capabilities of LLMs, specifically GPT-4.0, in conjunction with multicenter clinical databases. The goal is to improve the understanding of sepsis and provide actionable insights for clinical decision-making. We also established a multicenter sepsis database (MSD) to support this effort. Methods We collected clinical guidelines, public databases, and real-world data from 3 major hospitals in Western China, encompassing 10,544 patients diagnosed with sepsis. Using GPT-4.0, we used advanced prompt engineering techniques for entity recognition and relationship extraction, which facilitated the construction of a nuanced sepsis knowledge graph. Results We established a sepsis database with 10,544 patient records, including 8497 from West China Hospital, 690 from Shangjin Hospital, and 357 from Tianfu Hospital. The sepsis knowledge graph comprises of 1894 nodes and 2021 distinct relationships, encompassing nine entity concepts (diseases, symptoms, biomarkers, imaging examinations, etc) and 8 semantic relationships (complications, recommended medications, laboratory tests, etc). GPT-4.0 demonstrated superior performance in entity recognition and relationship extraction, achieving an F 1 -score of 76.76 on a sepsis-specific dataset, outperforming other models such as Qwen2 (43.77) and Llama3 (48.39). On the CMeEE dataset, GPT-4.0 achieved an F 1 -score of 65.42 using few-shot learning, surpassing traditional models such as BERT-CRF (62.11) and Med-BERT (60.66). Building upon this, we compiled a comprehensive sepsis knowledge graph, comprising of 1894 nodes and 2021 distinct relationships. Conclusions This study represents a pioneering effort in using LLMs, particularly GPT-4.0, to construct a comprehensive sepsis knowledge graph. The innovative application of prompt engineering, combined with the integration of multicenter real-world data, has significantly enhanced the efficiency and accuracy of knowledge graph construction. The resulting knowledge graph provides a robust framework for understanding sepsis, supporting clinical decision-making, and facilitating further research. The success of this approach underscores the potential of LLMs in medical research and sets a new benchmark for future studies in sepsis and other complex medical conditions.",
           "url": "https://doi.org/10.2196/65537"
-        },
-        {
-          "id": "MED:39775838",
-          "title": "Knowledge graph-based thought: a knowledge graph-enhanced LLM framework for pan-cancer question answering.",
-          "method": "Knowledge graph-based thought",
-          "authors": "Feng Y, Zhou L, Ma C, Zheng Y, He R, Li Y.",
-          "journal": "GigaScience",
-          "year": "2025",
-          "date": "2025-01-01",
-          "doi": "10.1093/gigascience/giae082",
-          "cited": 20,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC11702363?pdf=render",
-          "keywords": [
-            "Prompt Engineering",
-            "Large Language Model",
-            "Knowledge Graph Question Answering",
-            "Pan-Cancer Knowledge Graph",
-            "Neoplasms"
-          ],
-          "tasks": [
-            "knowledge-graph"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Background In recent years, large language models (LLMs) have shown promise in various domains, notably in biomedical sciences. However, their real-world application is often limited by issues like erroneous outputs and hallucinatory responses. Results We developed the knowledge graph-based thought (KGT) framework, an innovative solution that integrates LLMs with knowledge graphs (KGs) to improve their initial responses by utilizing verifiable information from KGs, thus significantly reducing factual errors in reasoning. The KGT framework demonstrates strong adaptability and performs well across various open-source LLMs. Notably, KGT can facilitate the discovery of new uses for existing drugs through potential drug-cancer associations and can assist in predicting resistance by analyzing relevant biomarkers and genetic mechanisms. To evaluate the knowledge graph question answering task within biomedicine, we utilize a pan-cancer knowledge graph to develop a pan-cancer question answering benchmark, named pan-cancer question answering. Conclusions The KGT framework substantially improves the accuracy and utility of LLMs in the biomedical field. This study serves as a proof of concept, demonstrating its exceptional performance in biomedical question answering.",
-          "url": "https://doi.org/10.1093/gigascience/giae082"
         },
         {
           "id": "MED:40055736",
@@ -11146,38 +11153,29 @@
           "url": "https://doi.org/10.1177/1087057117696795"
         },
         {
-          "id": "MED:26193119",
-          "title": "Contacts-based prediction of binding affinity in protein-protein complexes.",
+          "id": "MED:36180795",
+          "title": "Stroke genetics informs drug discovery and risk prediction across ancestries.",
           "method": "",
-          "authors": "Vangone A, Bonvin AM.",
-          "journal": "eLife",
-          "year": "2015",
-          "date": "2015-07-20",
-          "doi": "10.7554/elife.07454",
+          "authors": "Mishra A, Malik R, Hachiya T, Jürgenson T, Namba S, Posner DC, Kamanu FK, Koido M, Le Grand Q, Shi M, He Y, Georgakis MK, Caro I, Krebs K, Liaw YC, Vaura FC, Lin K, Winsvold BS, Srinivasasainagendra V, Parodi L, Bae HJ, Chauhan G, Chong MR, Tomppo L, Akinyemi R, Roshchupkin GV, Habib N, Jee YH, Thomassen JQ, Abedi V, Cárcel-Márquez J, Nygaard M, Leonard HL, Yang C, Yonova-Doing E, Knol MJ, Lewis AJ, Judy RL, Ago T, Amouyel P, Armstrong ND, Bakker MK, Bartz TM, Bennett DA, Bis JC, Bordes C, Børte S, Cain A, Ridker PM, Cho K, Chen Z, Cruchaga C, Cole JW, de Jager PL, de Cid R, Endres M, Ferreira LE, Geerlings MI, Gasca NC, Gudnason V, Hata J, He J, Heath AK, Ho YL, Havulinna AS, Hopewell JC, Hyacinth HI, Inouye M, Jacob MA, Jeon CE, Jern C, Kamouchi M, Keene KL, Kitazono T, Kittner SJ, Konuma T, Kumar A, Lacaze P, Launer LJ, Lee KJ, Lepik K, Li J, Li L, Manichaikul A, Markus HS, Marston NA, Meitinger T, Mitchell BD, Montellano FA, Morisaki T, Mosley TH, Nalls MA, Nordestgaard BG, O'Donnell MJ, Okada Y, Onland-Moret NC, Ovbiagele B, Peters A, Psaty BM, Rich SS, Rosand J, Sabatine MS, Sacco RL, Saleheen D, Sandset EC, Salomaa V, Sargurupremraj M, Sasaki M, Satizabal CL, Schmidt CO, Shimizu A, Smith NL, Sloane KL, Sutoh Y, Sun YV, Tanno K, Tiedt S, Tatlisumak T, Torres-Aguila NP, Tiwari HK, Trégouët DA, Trompet S, Tuladhar AM, Tybjærg-Hansen A, van Vugt M, Vibo R, Verma SS, Wiggins KL, Wennberg P, Woo D, Wilson PWF, Xu H, Yang Q, Yoon K, COMPASS Consortium, INVENT Consortium, Dutch Parelsnoer Initiative (PSI) Cerebrovascular Disease Study Group, Estonian Biobank, PRECISE4Q Consortium, FinnGen Consortium, NINDS Stroke Genetics Network (SiGN), MEGASTROKE Consortium, SIREN Consortium, China Kadoorie Biobank Collaborative Group, VA Million Veteran Program, International Stroke Genetics Consortium (ISGC), Biobank Japan, CHARGE Consortium, GIGASTROKE Consortium, Millwood IY, Gieger C, Ninomiya T, Grabe HJ, Jukema JW, Rissanen IL, Strbian D, Kim YJ, Chen PH, Mayerhofer E, Howson JMM, Irvin MR, Adams H, Wassertheil-Smoller S, Christensen K, Ikram MA, Rundek T, Worrall BB, Lathrop GM, Riaz M, Simonsick EM, Kõrv J, França PHC, Zand R, Prasad K, Frikke-Schmidt R, de Leeuw FE, Liman T, Haeusler KG, Ruigrok YM, Heuschmann PU, Longstreth WT, Jung KJ, Bastarache L, Paré G, Damrauer SM, Chasman DI, Rotter JI, Anderson CD, Zwart JA, Niiranen TJ, Fornage M, Liaw YP, Seshadri S, Fernández-Cadenas I, Walters RG, Ruff CT, Owolabi MO, Huffman JE, Milani L, Kamatani Y, Dichgans M, Debette S.",
+          "journal": "Nature",
+          "year": "2022",
+          "date": "2022-09-30",
+          "doi": "10.1038/s41586-022-05165-3",
           "cited": 579,
           "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC4523921?pdf=render",
+          "pdf": "https://europepmc.org/articles/PMC9524349?pdf=render",
           "keywords": [
-            "Binding affinity",
-            "Biophysics",
-            "Structural Biology",
-            "None",
-            "Protein–protein Interactions",
-            "Protein–protein Complexes",
-            "Buried Surface Area",
-            "Non-interacting Surface",
-            "Protein Contacts",
-            "Protein Interaction Maps"
+            "Genetic Predisposition to Disease",
+            "Drug Discovery",
+            "Ischemic Stroke"
           ],
-          "tasks": [
-            "affinity"
-          ],
+          "tasks": [],
           "datasets": [],
           "lists": [
             "classic"
           ],
-          "abstract": "Almost all critical functions in cells rely on specific protein-protein interactions. Understanding these is therefore crucial in the investigation of biological systems. Despite all past efforts, we still lack a thorough understanding of the energetics of association of proteins. Here, we introduce a new and simple approach to predict binding affinity based on functional and structural features of the biological system, namely the network of interfacial contacts. We assess its performance against a protein-protein binding affinity benchmark and show that both experimental methods used for affinity measurements and conformational changes have a strong impact on prediction accuracy. Using a subset of complexes with reliable experimental binding affinities and combining our contacts and contact-types-based model with recent observations on the role of the non-interacting surface in protein-protein interactions, we reach a high prediction accuracy for such a diverse dataset outperforming all other tested methods.",
-          "url": "https://doi.org/10.7554/elife.07454"
+          "abstract": "Previous genome-wide association studies (GWASs) of stroke - the second leading cause of death worldwide - were conducted predominantly in populations of European ancestry 1,2 . Here, in cross-ancestry GWAS meta-analyses of 110,182 patients who have had a stroke (five ancestries, 33% non-European) and 1,503,898 control individuals, we identify association signals for stroke and its subtypes at 89 (61 new) independent loci: 60 in primary inverse-variance-weighted analyses and 29 in secondary meta-regression and multitrait analyses. On the basis of internal cross-ancestry validation and an independent follow-up in 89,084 additional cases of stroke (30% non-European) and 1,013,843 control individuals, 87% of the primary stroke risk loci and 60% of the secondary stroke risk loci were replicated (P 3 , and transcriptome-wide and proteome-wide association analyses revealed putative causal genes (such as SH3PXD2A and FURIN) and variants (such as at GRK5 and NOS3). Using a three-pronged approach 4 , we provide genetic evidence for putative drug effects, highlighting F11, KLKB1, PROC, GP1BA, LAMC2 and VCAM1 as possible targets, with drugs already under investigation for stroke for F11 and PROC. A polygenic score integrating cross-ancestry and ancestry-specific stroke GWASs with vascular-risk factor GWASs (integrative polygenic scores) strongly predicted ischaemic stroke in populations of European, East Asian and African ancestry 5 . Stroke genetic risk scores were predictive of ischaemic stroke independent of clinical risk factors in 52,600 clinical-trial participants with cardiometabolic disease. Our results provide insights to inform biology, reveal potential drug targets and derive genetic risk prediction tools across ancestries.",
+          "url": "https://doi.org/10.1038/s41586-022-05165-3"
         },
         {
           "id": "MED:39657122",
@@ -11883,6 +11881,34 @@
           "url": "https://doi.org/10.3390/ph18070981"
         },
         {
+          "id": "MED:40122800",
+          "title": "A new paradigm for drug discovery in the treatment of complex diseases: drug discovery and optimization.",
+          "method": "",
+          "authors": "Yuan Y, Yu L, Bi C, Huang L, Su B, Nie J, Dou Z, Yang S, Li Y.",
+          "journal": "Chinese medicine",
+          "year": "2025",
+          "date": "2025-03-24",
+          "doi": "10.1186/s13020-025-01075-4",
+          "cited": 31,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC11931805?pdf=render",
+          "keywords": [
+            "Natural products",
+            "drug discovery",
+            "Drug Repurposing"
+          ],
+          "tasks": [
+            "docking",
+            "reaction"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "In the past, the drug research and development has predominantly followed a \"single target, single disease\" model. However, clinical data show that single-target drugs are difficult to interfere with the complete disease network, are prone to develop drug resistance and low safety in clinical use. The proposal of multi-target drug therapy (also known as \"cocktail therapy\") provides a new approach for drug discovery, which can affect the disease and reduce adverse reactions by regulating multiple targets. Natural products are an important source for multi-target innovative drug development, and more than half of approved small molecule drugs are related to natural products. However, there are many challenges in the development process of natural products, such as active drug screening, target identification and preclinical dosage optimization. Therefore, how to develop multi-target drugs with good drug resistance from natural products has always been a challenge. This article summarizes the applications and shortcomings of related technologies such as natural product bioactivity screening, clarify the mode of action of the drug (direct/indirect target), and preclinical dose optimization. Moreover, in response to the challenges faced by natural products in the development process and the trend of interdisciplinary and multi-technology integration, and a multi-target drug development strategy of \"active substances - drug action mode - drug optimization\" is proposed to solve the key challenges in the development of natural products from multiple dimensions and levels.",
+          "url": "https://doi.org/10.1186/s13020-025-01075-4"
+        },
+        {
           "id": "MED:39284102",
           "title": "Next-Gen Therapeutics: Pioneering Drug Discovery with iPSCs, Genomics, AI, and Clinical Trials in a Dish.",
           "method": "Next-Gen Therapeutics",
@@ -12035,36 +12061,6 @@
           ],
           "abstract": "The integration of large language models (LLMs) into the drug discovery and development field marks a significant paradigm shift, offering novel methodologies for understanding disease mechanisms, facilitating de novo drug discovery, and optimizing clinical trial processes. This review highlights the expanding role of LLMs in revolutionizing various stages of the drug development pipeline. We investigate how these advanced computational models can uncover target-disease linkage, interpret complex biomedical data, enhance drug molecule design, predict drug efficacy and safety profiles, and facilitate clinical trial processes. In this paper, we aim to provide a comprehensive overview for researchers and practitioners in computational biology, pharmacology, and AI4Science by offering insights into the potential transformative impact of LLMs on drug discovery and development.",
           "url": "https://doi.org/10.1016/j.patter.2025.101346"
-        },
-        {
-          "id": "MED:40585410",
-          "title": "Leveraging machine learning models in evaluating ADMET properties for drug discovery and development.",
-          "method": "",
-          "authors": "Venkataraman M, Rao GC, Madavareddi JK, Maddi SR.",
-          "journal": "ADMET & DMPK",
-          "year": "2025",
-          "date": "2025-06-07",
-          "doi": "10.5599/admet.2772",
-          "cited": 29,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC12205928?pdf=render",
-          "keywords": [
-            "Pharmacokinetics",
-            "Computational Toxicology",
-            "Molecular Descriptors",
-            "Admet Prediction",
-            "Ai/Ml"
-          ],
-          "tasks": [
-            "property",
-            "docking"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Background and purpose The evaluation of ADMET properties remains a critical bottleneck in drug discovery and development, contributing significantly to the high attrition rate of drug candidates. Traditional experimental approaches are often time-consuming, cost-intensive, and limited in scalability. This review aims to investigate how recent advances in machine learning (ML) models are revolutionizing ADMET prediction by enhancing accuracy, reducing experimental burden, and accelerating decision-making during early-stage drug development. Experimental approach This article systematically examines the current landscape of ML applications in ADMET prediction, including the types of algorithms employed, common molecular descriptors and datasets used, and model development workflows. It also explores public databases, model evaluation metrics, and regulatory considerations relevant to computational toxicology. Emphasis is placed on supervised and deep learning techniques, model validation strategies, and the challenges of data imbalance and model interpretability. Key results ML-based models have demonstrated significant promise in predicting key ADMET endpoints, outperforming some traditional quantitative structure - activity relationship (QSAR) models. These approaches provide rapid, cost-effective, and reproducible alternatives that integrate seamlessly with existing drug discovery pipelines. Case studies discussed in this review illustrate the successful deployment of ML models for solubility, permeability, metabolism, and toxicity predictions. Conclusion Machine learning has emerged as a transformative tool in ADMET prediction, offering new opportunities for early risk assessment and compound prioritization. While challenges such as data quality, algorithm transparency, and regulatory acceptance persist, continued integration of ML with experimental pharmacology holds the potential to substantially improve drug development efficiency and reduce late-stage failures.",
-          "url": "https://doi.org/10.5599/admet.2772"
         }
       ]
     },
@@ -12305,7 +12301,7 @@
           "year": "2021",
           "date": "2021-02-25",
           "doi": "10.1038/s41588-021-00790-6",
-          "cited": 1536,
+          "cited": 1561,
           "license": "cc by",
           "pdf": "https://europepmc.org/articles/PMC8012210?pdf=render",
           "keywords": [
@@ -12408,7 +12404,7 @@
           "year": "2019",
           "date": "2019-11-29",
           "doi": "10.1038/s41588-019-0538-0",
-          "cited": 1242,
+          "cited": 1274,
           "license": "",
           "pdf": "https://europepmc.org/articles/PMC6886585?pdf=render",
           "keywords": [
@@ -12821,6 +12817,33 @@
           "url": "https://doi.org/10.1038/s41598-018-23276-8"
         },
         {
+          "id": "MED:31767039",
+          "title": "DNA methylation aging clocks: challenges and recommendations.",
+          "method": "DNA methylation aging clocks",
+          "authors": "Bell CG, Lowe R, Adams PD, Baccarelli AA, Beck S, Bell JT, Christensen BC, Gladyshev VN, Heijmans BT, Horvath S, Ideker T, Issa JJ, Kelsey KT, Marioni RE, Reik W, Relton CL, Schalkwyk LC, Teschendorff AE, Wagner W, Zhang K, Rakyan VK.",
+          "journal": "Genome biology",
+          "year": "2019",
+          "date": "2019-11-25",
+          "doi": "10.1186/s13059-019-1824-y",
+          "cited": 898,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC6876109?pdf=render",
+          "keywords": [
+            "DNA Methylation",
+            "Epigenesis, Genetic",
+            "Biological Clocks"
+          ],
+          "tasks": [
+            "methylation"
+          ],
+          "datasets": [],
+          "lists": [
+            "classic"
+          ],
+          "abstract": "Epigenetic clocks comprise a set of CpG sites whose DNA methylation levels measure subject age. These clocks are acknowledged as a highly accurate molecular correlate of chronological age in humans and other vertebrates. Also, extensive research is aimed at their potential to quantify biological aging rates and test longevity or rejuvenating interventions. Here, we discuss key challenges to understand clock mechanisms and biomarker utility. This requires dissecting the drivers and regulators of age-related changes in single-cell, tissue- and disease-specific models, as well as exploring other epigenomic marks, longitudinal and diverse population studies, and non-human models. We also highlight important ethical issues in forensic age determination and predicting the trajectory of biological aging in an individual.",
+          "url": "https://doi.org/10.1186/s13059-019-1824-y"
+        },
+        {
           "id": "MED:26501517",
           "title": "Highly specific epigenome editing by CRISPR-Cas9 repressors for silencing of distal regulatory elements.",
           "method": "",
@@ -12874,30 +12897,30 @@
           "url": "https://doi.org/10.1371/journal.pone.0041361"
         },
         {
-          "id": "MED:24495553",
-          "title": "Accounting for cellular heterogeneity is critical in epigenome-wide association studies.",
-          "method": "",
-          "authors": "Jaffe AE, Irizarry RA.",
-          "journal": "Genome biology",
-          "year": "2014",
-          "date": "2014-02-04",
-          "doi": "10.1186/gb-2014-15-2-r31",
-          "cited": 866,
+          "id": "MED:39627201",
+          "title": "Chromatin accessibility: biological functions, molecular mechanisms and therapeutic application.",
+          "method": "Chromatin accessibility",
+          "authors": "Chen Y, Liang R, Li Y, Jiang L, Ma D, Luo Q, Song G.",
+          "journal": "Signal transduction and targeted therapy",
+          "year": "2024",
+          "date": "2024-12-04",
+          "doi": "10.1038/s41392-024-02030-9",
+          "cited": 163,
           "license": "cc by",
-          "pdf": "https://genomebiology.biomedcentral.com/counter/pdf/10.1186/gb-2014-15-2-r31",
+          "pdf": "https://europepmc.org/articles/PMC11615378?pdf=render",
           "keywords": [
-            "Epigenesis, Genetic",
-            "Genome-Wide Association Study"
+            "Chromatin"
           ],
           "tasks": [
+            "accessibility",
             "methylation"
           ],
           "datasets": [],
           "lists": [
-            "classic"
+            "recent"
           ],
-          "abstract": "Background Epigenome-wide association studies of human disease and other quantitative traits are becoming increasingly common. A series of papers reporting age-related changes in DNA methylation profiles in peripheral blood have already been published. However, blood is a heterogeneous collection of different cell types, each with a very different DNA methylation profile. Results Using a statistical method that permits estimating the relative proportion of cell types from DNA methylation profiles, we examine data from five previously published studies, and find strong evidence of cell composition change across age in blood. We also demonstrate that, in these studies, cellular composition explains much of the observed variability in DNA methylation. Furthermore, we find high levels of confounding between age-related variability and cellular composition at the CpG level. Conclusions Our findings underscore the importance of considering cell composition variability in epigenetic studies based on whole blood and other heterogeneous tissue sources. We also provide software for estimating and exploring this composition confounding for the Illumina 450k microarray.",
-          "url": "https://doi.org/10.1186/gb-2014-15-2-r31"
+          "abstract": "The dynamic regulation of chromatin accessibility is one of the prominent characteristics of eukaryotic genome. The inaccessible regions are mainly located in heterochromatin, which is multilevel compressed and access restricted. The remaining accessible loci are generally located in the euchromatin, which have less nucleosome occupancy and higher regulatory activity. The opening of chromatin is the most important prerequisite for DNA transcription, replication, and damage repair, which is regulated by genetic, epigenetic, environmental, and other factors, playing a vital role in multiple biological progresses. Currently, based on the susceptibility difference of occupied or free DNA to enzymatic cleavage, solubility, methylation, and transposition, there are many methods to detect chromatin accessibility both in bulk and single-cell level. Through combining with high-throughput sequencing, the genome-wide chromatin accessibility landscape of many tissues and cells types also have been constructed. The chromatin accessibility feature is distinct in different tissues and biological states. Research on the regulation network of chromatin accessibility is crucial for uncovering the secret of various biological processes. In this review, we comprehensively introduced the major functions and mechanisms of chromatin accessibility variation in different physiological and pathological processes, meanwhile, the targeted therapies based on chromatin dynamics regulation are also summarized.",
+          "url": "https://doi.org/10.1038/s41392-024-02030-9"
         },
         {
           "id": "MED:39900648",
@@ -12959,57 +12982,6 @@
           "url": "https://doi.org/10.1093/nar/gkaf1209"
         },
         {
-          "id": "MED:39627201",
-          "title": "Chromatin accessibility: biological functions, molecular mechanisms and therapeutic application.",
-          "method": "Chromatin accessibility",
-          "authors": "Chen Y, Liang R, Li Y, Jiang L, Ma D, Luo Q, Song G.",
-          "journal": "Signal transduction and targeted therapy",
-          "year": "2024",
-          "date": "2024-12-04",
-          "doi": "10.1038/s41392-024-02030-9",
-          "cited": 95,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC11615378?pdf=render",
-          "keywords": [
-            "Chromatin"
-          ],
-          "tasks": [
-            "accessibility",
-            "methylation"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "The dynamic regulation of chromatin accessibility is one of the prominent characteristics of eukaryotic genome. The inaccessible regions are mainly located in heterochromatin, which is multilevel compressed and access restricted. The remaining accessible loci are generally located in the euchromatin, which have less nucleosome occupancy and higher regulatory activity. The opening of chromatin is the most important prerequisite for DNA transcription, replication, and damage repair, which is regulated by genetic, epigenetic, environmental, and other factors, playing a vital role in multiple biological progresses. Currently, based on the susceptibility difference of occupied or free DNA to enzymatic cleavage, solubility, methylation, and transposition, there are many methods to detect chromatin accessibility both in bulk and single-cell level. Through combining with high-throughput sequencing, the genome-wide chromatin accessibility landscape of many tissues and cells types also have been constructed. The chromatin accessibility feature is distinct in different tissues and biological states. Research on the regulation network of chromatin accessibility is crucial for uncovering the secret of various biological processes. In this review, we comprehensively introduced the major functions and mechanisms of chromatin accessibility variation in different physiological and pathological processes, meanwhile, the targeted therapies based on chromatin dynamics regulation are also summarized.",
-          "url": "https://doi.org/10.1038/s41392-024-02030-9"
-        },
-        {
-          "id": "MED:39470740",
-          "title": "VISTA Enhancer browser: an updated database of tissue-specific developmental enhancers.",
-          "method": "VISTA Enhancer browser",
-          "authors": "Kosicki M, Baltoumas FA, Kelman G, Boverhof J, Ong Y, Cook LE, Dickel DE, Pavlopoulos GA, Pennacchio LA, Visel A.",
-          "journal": "Nucleic acids research",
-          "year": "2025",
-          "date": "2025-01-01",
-          "doi": "10.1093/nar/gkae940",
-          "cited": 76,
-          "license": "cc by-nc",
-          "pdf": "https://europepmc.org/articles/PMC11701537?pdf=render",
-          "keywords": [
-            "Enhancer Elements, Genetic"
-          ],
-          "tasks": [
-            "enhancers"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Regulatory elements (enhancers) are major drivers of gene expression in mammals and harbor many genetic variants associated with human diseases. Here, we present an updated VISTA Enhancer Browser (https://enhancer.lbl.gov), a database of transgenic enhancer assays conducted in developing mouse embryos in vivo. Since the original publication in 2007, the database grew nearly 20-fold from 250 to over 4500 experiments and currently harbors over 23 500 images. The updated database provides structured information on experiments conducted at different stages of embryonic development, including enhancer activities of human pathogenic and synthetic variants and sequences derived from a variety of species. In addition to manually curated results of thousands of individual experiments, the new database also features hundreds of manually curated comparisons between alleles. The VISTA Enhancer Browser provides a crucial resource for study of human genetic variation, gene regulation and developmental biology.",
-          "url": "https://doi.org/10.1093/nar/gkae940"
-        },
-        {
           "id": "MED:40403704",
           "title": "Enhancer AAV toolbox for accessing and perturbing striatal cell types and circuits.",
           "method": "",
@@ -13018,7 +12990,7 @@
           "year": "2025",
           "date": "2025-05-01",
           "doi": "10.1016/j.neuron.2025.04.035",
-          "cited": 72,
+          "cited": 86,
           "license": "cc by-nc",
           "pdf": "https://europepmc.org/articles/PMC12237622?pdf=render",
           "keywords": [
@@ -13046,6 +13018,31 @@
           ],
           "abstract": "We present an enhancer-AAV toolbox for accessing and perturbing striatal cell types and circuits. Best-in-class vectors were curated for accessing major striatal neuron populations including medium spiny neurons (MSNs), direct- and indirect-pathway MSNs, Sst-Chodl, Pvalb-Pthlh, and cholinergic interneurons. Specificity was evaluated by multiple modes of molecular validation, by three different routes of virus delivery, and with diverse transgene cargos. Importantly, we provide detailed information necessary to achieve reliable cell-type-specific labeling under different experimental contexts. We demonstrate direct pathway circuit-selective optogenetic perturbation of behavior and multiplex labeling of striatal interneuron types for targeted analysis of cellular features. Lastly, we show conserved in vivo activity for exemplary MSN enhancers in rats and macaques. This collection of striatal enhancer AAVs offers greater versatility compared to available transgenic lines and can readily be applied for cell type and circuit studies in diverse mammalian species beyond the mouse model.",
           "url": "https://doi.org/10.1016/j.neuron.2025.04.035"
+        },
+        {
+          "id": "MED:39470740",
+          "title": "VISTA Enhancer browser: an updated database of tissue-specific developmental enhancers.",
+          "method": "VISTA Enhancer browser",
+          "authors": "Kosicki M, Baltoumas FA, Kelman G, Boverhof J, Ong Y, Cook LE, Dickel DE, Pavlopoulos GA, Pennacchio LA, Visel A.",
+          "journal": "Nucleic acids research",
+          "year": "2025",
+          "date": "2025-01-01",
+          "doi": "10.1093/nar/gkae940",
+          "cited": 76,
+          "license": "cc by-nc",
+          "pdf": "https://europepmc.org/articles/PMC11701537?pdf=render",
+          "keywords": [
+            "Enhancer Elements, Genetic"
+          ],
+          "tasks": [
+            "enhancers"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Regulatory elements (enhancers) are major drivers of gene expression in mammals and harbor many genetic variants associated with human diseases. Here, we present an updated VISTA Enhancer Browser (https://enhancer.lbl.gov), a database of transgenic enhancer assays conducted in developing mouse embryos in vivo. Since the original publication in 2007, the database grew nearly 20-fold from 250 to over 4500 experiments and currently harbors over 23 500 images. The updated database provides structured information on experiments conducted at different stages of embryonic development, including enhancer activities of human pathogenic and synthetic variants and sequences derived from a variety of species. In addition to manually curated results of thousands of individual experiments, the new database also features hundreds of manually curated comparisons between alleles. The VISTA Enhancer Browser provides a crucial resource for study of human genetic variation, gene regulation and developmental biology.",
+          "url": "https://doi.org/10.1093/nar/gkae940"
         },
         {
           "id": "MED:40102876",
@@ -13457,7 +13454,7 @@
           "year": "2026",
           "date": "2025-11-10",
           "doi": "10.1016/j.xgen.2025.101061",
-          "cited": 32,
+          "cited": 33,
           "license": "cc by",
           "pdf": "https://europepmc.org/articles/PMC12926193?pdf=render",
           "keywords": [
@@ -14846,6 +14843,35 @@
           "url": "https://doi.org/10.7150/thno.104713"
         },
         {
+          "id": "MED:40683866",
+          "title": "Single cell and spatial alternative splicing analysis with Nanopore long read sequencing.",
+          "method": "",
+          "authors": "Fu Y, Kim H, Roy S, Huang S, Adams JI, Grimes SM, Lau BT, Sathe A, Ji HP, Zhang NR.",
+          "journal": "Nature communications",
+          "year": "2025",
+          "date": "2025-07-19",
+          "doi": "10.1038/s41467-025-60902-2",
+          "cited": 38,
+          "license": "cc by-nc-nd",
+          "pdf": "https://europepmc.org/articles/PMC12276307?pdf=render",
+          "keywords": [
+            "Alternative Splicing",
+            "Nanopores",
+            "Single-Cell Analysis",
+            "Nanopore Sequencing"
+          ],
+          "tasks": [
+            "mirna",
+            "splicing"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Long-read sequencing boosts alternative splicing analysis but faces technical and computational barriers in single-cell and spatial settings. High Nanopore error rates compromise cell barcode and UMI recovery, while read truncation and misalignment undermine isoform quantification. Downstream, a statistical framework to assess splicing variation within and between cells or spatial spots is lacking. We introduce Longcell, a statistical and computational pipeline for isoform quantification from single-cell and spatially barcoded Nanopore long reads. Longcell efficiently recovers cell barcodes and UMIs, corrects sequencing errors, and models splicing diversity within and between cells or spots. Applied across multiple datasets, Longcell allows accurate identification of spatial isoform switching. Longcell also reveals widespread high intra-cell isoform heterogeneity for highly expressed genes. Finally, on a perturbation experiment for 9 splicing factors, Longcell identifies regulatory targets that are validated by targeted sequencing.",
+          "url": "https://doi.org/10.1038/s41467-025-60902-2"
+        },
+        {
           "id": "MED:40057850",
           "title": "Electrochemical Biosensors for the Detection of Exosomal microRNA Biomarkers for Early Diagnosis of Neurodegenerative Diseases.",
           "method": "",
@@ -15147,6 +15173,43 @@
           "url": "https://doi.org/10.1038/s41467-025-60374-4"
         },
         {
+          "id": "MED:39707465",
+          "title": "Unraveling the interplay of CD8 + T cells and microRNA signaling in cancer: implications for immune dysfunction and therapeutic approaches.",
+          "method": "",
+          "authors": "Zabeti Touchaei A, Vahidi S.",
+          "journal": "Journal of translational medicine",
+          "year": "2024",
+          "date": "2024-12-20",
+          "doi": "10.1186/s12967-024-05963-5",
+          "cited": 24,
+          "license": "cc by-nc-nd",
+          "pdf": "https://europepmc.org/articles/PMC11662517?pdf=render",
+          "keywords": [
+            "Cancer",
+            "Cytokines",
+            "Drug therapy",
+            "Radiotherapy",
+            "Extracellular Vesicles",
+            "Micrornas (Mirnas)",
+            "Tumor Microenvironment (Tme)",
+            "Cd8 + t-cells",
+            "CD8-Positive T-Lymphocytes",
+            "Neoplasms",
+            "MicroRNAs",
+            "Signal Transduction",
+            "Tumor Microenvironment"
+          ],
+          "tasks": [
+            "mirna"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "MicroRNAs (miRNAs) emerge as critical regulators of CD8 + T cell function within the complex tumor microenvironment (TME). This review explores the multifaceted interplay between miRNAs and CD8 + T cells across various cancers. We discuss how specific miRNAs influence CD8 + T cell activation, recruitment, infiltration, and effector function. Dysregulation of these miRNAs can contribute to CD8 + T cell exhaustion and immune evasion, hindering anti-tumor immunity. Conversely, manipulating miRNA expression holds promise for enhancing CD8 + T cell activity and improving cancer immunotherapy outcomes. We delve into the role of miRNAs in CD8 + T-cell function across different cancer types, including gliomas, gastric and colon cancer, oral squamous cell carcinoma, thyroid carcinoma, lymphomas, melanoma, breast cancer, renal cell carcinoma, ovarian cancer, uterine corpus endometrial cancer, bladder cancer, acute myeloid leukemia, chronic myelogenous leukemia, and osteosarcoma. Additionally, we explore how extracellular vesicles and cytokines modulate CD8 + T-cell function through complex interactions with miRNAs. Finally, we discuss the potential impact of radiotherapy and specific drugs on miRNA expression and CD8 + T-cell activity within the TME. This review highlights the immense potential of targeting miRNAs to manipulate CD8 + T-cell activity for the development of novel and improved cancer immunotherapies.",
+          "url": "https://doi.org/10.1186/s12967-024-05963-5"
+        },
+        {
           "id": "MED:41131153",
           "title": "RNA structure modulates Cas13 activity and enables mismatch detection.",
           "method": "",
@@ -15441,35 +15504,6 @@
           "url": "https://doi.org/10.1002/advs.202412196"
         },
         {
-          "id": "MED:40683866",
-          "title": "Single cell and spatial alternative splicing analysis with Nanopore long read sequencing.",
-          "method": "",
-          "authors": "Fu Y, Kim H, Roy S, Huang S, Adams JI, Grimes SM, Lau BT, Sathe A, Ji HP, Zhang NR.",
-          "journal": "Nature communications",
-          "year": "2025",
-          "date": "2025-07-19",
-          "doi": "10.1038/s41467-025-60902-2",
-          "cited": 19,
-          "license": "cc by-nc-nd",
-          "pdf": "https://europepmc.org/articles/PMC12276307?pdf=render",
-          "keywords": [
-            "Alternative Splicing",
-            "Nanopores",
-            "Single-Cell Analysis",
-            "Nanopore Sequencing"
-          ],
-          "tasks": [
-            "mirna",
-            "splicing"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Long-read sequencing boosts alternative splicing analysis but faces technical and computational barriers in single-cell and spatial settings. High Nanopore error rates compromise cell barcode and UMI recovery, while read truncation and misalignment undermine isoform quantification. Downstream, a statistical framework to assess splicing variation within and between cells or spatial spots is lacking. We introduce Longcell, a statistical and computational pipeline for isoform quantification from single-cell and spatially barcoded Nanopore long reads. Longcell efficiently recovers cell barcodes and UMIs, corrects sequencing errors, and models splicing diversity within and between cells or spots. Applied across multiple datasets, Longcell allows accurate identification of spatial isoform switching. Longcell also reveals widespread high intra-cell isoform heterogeneity for highly expressed genes. Finally, on a perturbation experiment for 9 splicing factors, Longcell identifies regulatory targets that are validated by targeted sequencing.",
-          "url": "https://doi.org/10.1038/s41467-025-60902-2"
-        },
-        {
           "id": "MED:39814719",
           "title": "Training data diversity enhances the basecalling of novel RNA modification-induced nanopore sequencing readouts.",
           "method": "",
@@ -15496,33 +15530,6 @@
           ],
           "abstract": "Accurately basecalling sequence backbones in the presence of nucleotide modifications remains a substantial challenge in nanopore sequencing bioinformatics. It has been extensively demonstrated that state-of-the-art basecallers are less compatible with modification-induced sequencing signals. A precise basecalling, on the other hand, serves as the prerequisite for virtually all the downstream analyses. Here, we report that basecallers exposed to diverse training modifications gain the generalizability to analyze novel modifications. With synthesized oligos as the model system, we precisely basecall various out-of-sample RNA modifications. From the representation learning perspective, we attribute this generalizability to basecaller representation space expanded by diverse training modifications. Taken together, we conclude increasing the training data diversity as a paradigm for building modification-tolerant nanopore sequencing basecallers.",
           "url": "https://doi.org/10.1038/s41467-025-55974-z"
-        },
-        {
-          "id": "MED:33159038",
-          "title": "Alternative splicing landscape of the neural transcriptome in a cytoplasmic-predominant Pten expression murine model of autism-like Behavior.",
-          "method": "",
-          "authors": "Thacker S, Sefyi M, Eng C.",
-          "journal": "Translational psychiatry",
-          "year": "2020",
-          "date": "2020-11-06",
-          "doi": "10.1038/s41398-020-01068-x",
-          "cited": 19,
-          "license": "cc by",
-          "pdf": "https://www.nature.com/articles/s41398-020-01068-x.pdf",
-          "keywords": [
-            "Autistic Disorder",
-            "Alternative Splicing",
-            "Autism Spectrum Disorder"
-          ],
-          "tasks": [
-            "splicing"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Alternative splicing (AS) is a posttranscriptional mechanism regulating gene expression that complex organisms utilize to expand proteome diversity from a comparatively limited set of genes. Recent research has increasingly associated AS with increased functional complexity in the central nervous systems in higher order mammals. This work has heavily implicated aberrant AS in several neurocognitive and neurodevelopmental disorders, including autism. Due to the strong genetic association between germline PTEN mutations and autism spectrum disorder (ASD), we hypothesized that germline PTEN mutations would alter AS patterns, contributing to the pathophysiology of ASD. In a murine model of constitutional mislocalization of Pten, recapitulating an autism-like phenotype, we found significant changes in AS patterns across the neural transcriptome by analyzing RNA-sequencing data with the program rMATS. A few hundred significant alternative splicing events (ASEs) that differentiate each m3m4 genotype were identified. These ASEs occur in genes enriched in PTEN signaling, inositol metabolism, and several other pathways relevant to the pathophysiology of ASD. In addition, we identified expression changes in several splicing factors known to be enriched in the nervous system. For instance, the master regulator of microexons, Srrm4, has decreased expression, and consequently, we found decreased inclusion of microexons in the Pten m3m4/m3m4 cortex (~10% decrease). We also demonstrated that the m3m4 mutation disrupts the interaction between Pten and U2af2, a member of the spliceosome. In sum, our observations point to germline Pten disruption changing the landscape of alternative splicing in the brain, and these changes may be relevant to the pathogenesis and/or maintenance of PTEN-ASD phenotypes.",
-          "url": "https://doi.org/10.1038/s41398-020-01068-x"
         }
       ]
     },
@@ -16156,6 +16163,33 @@
           "url": "https://doi.org/10.1038/s41564-018-0306-4"
         },
         {
+          "id": "MED:31695033",
+          "title": "Evaluation of 16S rRNA gene sequencing for species and strain-level microbiome analysis.",
+          "method": "",
+          "authors": "Johnson JS, Spakowicz DJ, Hong BY, Petersen LM, Demkowicz P, Chen L, Leopold SR, Hanson BM, Agresta HO, Gerstein M, Sodergren E, Weinstock GM.",
+          "journal": "Nature communications",
+          "year": "2019",
+          "date": "2019-11-06",
+          "doi": "10.1038/s41467-019-13036-1",
+          "cited": 1701,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC6834636?pdf=render",
+          "keywords": [
+            "Phylogeny",
+            "Genetic Variation"
+          ],
+          "tasks": [
+            "profiling",
+            "amplicon"
+          ],
+          "datasets": [],
+          "lists": [
+            "classic"
+          ],
+          "abstract": "The 16S rRNA gene has been a mainstay of sequence-based bacterial analysis for decades. However, high-throughput sequencing of the full gene has only recently become a realistic prospect. Here, we use in silico and sequence-based experiments to critically re-evaluate the potential of the 16S gene to provide taxonomic resolution at species and strain level. We demonstrate that targeting of 16S variable regions with short-read sequencing platforms cannot achieve the taxonomic resolution afforded by sequencing the entire (~1500 bp) gene. We further demonstrate that full-length sequencing platforms are sufficiently accurate to resolve subtle nucleotide substitutions (but not insertions/deletions) that exist between intragenomic copies of the 16S gene. In consequence, we argue that modern analysis approaches must necessarily account for intragenomic variation between 16S gene copies. In particular, we demonstrate that appropriate treatment of full-length 16S intragenomic copy variants has the potential to provide taxonomic resolution of bacterial communities at species and strain level.",
+          "url": "https://doi.org/10.1038/s41467-019-13036-1"
+        },
+        {
           "id": "MED:30356187",
           "title": "Temporal development of the gut microbiome in early childhood from the TEDDY study.",
           "method": "",
@@ -16230,33 +16264,6 @@
           ],
           "abstract": "Metagenomics emerged as an important field of research not only in microbial ecology but also for human health and disease, and metagenomic studies are performed on increasingly larger scales. While recent taxonomic classification programs achieve high speed by comparing genomic k-mers, they often lack sensitivity for overcoming evolutionary divergence, so that large fractions of the metagenomic reads remain unclassified. Here we present the novel metagenome classifier Kaiju, which finds maximum (in-)exact matches on the protein-level using the Burrows-Wheeler transform. We show in a genome exclusion benchmark that Kaiju classifies reads with higher sensitivity and similar precision compared with current k-mer-based classifiers, especially in genera that are underrepresented in reference databases. We also demonstrate that Kaiju classifies up to 10 times more reads in real metagenomes. Kaiju can process millions of reads per minute and can run on a standard PC. Source code and web server are available at http://kaiju.binf.ku.dk.",
           "url": "https://doi.org/10.1038/ncomms11257"
-        },
-        {
-          "id": "MED:31695033",
-          "title": "Evaluation of 16S rRNA gene sequencing for species and strain-level microbiome analysis.",
-          "method": "",
-          "authors": "Johnson JS, Spakowicz DJ, Hong BY, Petersen LM, Demkowicz P, Chen L, Leopold SR, Hanson BM, Agresta HO, Gerstein M, Sodergren E, Weinstock GM.",
-          "journal": "Nature communications",
-          "year": "2019",
-          "date": "2019-11-06",
-          "doi": "10.1038/s41467-019-13036-1",
-          "cited": 1517,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC6834636?pdf=render",
-          "keywords": [
-            "Phylogeny",
-            "Genetic Variation"
-          ],
-          "tasks": [
-            "profiling",
-            "amplicon"
-          ],
-          "datasets": [],
-          "lists": [
-            "classic"
-          ],
-          "abstract": "The 16S rRNA gene has been a mainstay of sequence-based bacterial analysis for decades. However, high-throughput sequencing of the full gene has only recently become a realistic prospect. Here, we use in silico and sequence-based experiments to critically re-evaluate the potential of the 16S gene to provide taxonomic resolution at species and strain level. We demonstrate that targeting of 16S variable regions with short-read sequencing platforms cannot achieve the taxonomic resolution afforded by sequencing the entire (~1500 bp) gene. We further demonstrate that full-length sequencing platforms are sufficiently accurate to resolve subtle nucleotide substitutions (but not insertions/deletions) that exist between intragenomic copies of the 16S gene. In consequence, we argue that modern analysis approaches must necessarily account for intragenomic variation between 16S gene copies. In particular, we demonstrate that appropriate treatment of full-length 16S intragenomic copy variants has the potential to provide taxonomic resolution of bacterial communities at species and strain level.",
-          "url": "https://doi.org/10.1038/s41467-019-13036-1"
         },
         {
           "id": "MED:33349699",
@@ -16961,31 +16968,6 @@
           "url": "https://doi.org/10.1038/s41467-025-56829-3"
         },
         {
-          "id": "MED:39678067",
-          "title": "Rhizosphere microbiome regulation: Unlocking the potential for plant growth.",
-          "method": "Rhizosphere microbiome regulation",
-          "authors": "Luo C, He Y, Chen Y.",
-          "journal": "Current research in microbial sciences",
-          "year": "2025",
-          "date": "2024-11-22",
-          "doi": "10.1016/j.crmicr.2024.100322",
-          "cited": 56,
-          "license": "cc by-nc-nd",
-          "pdf": "https://europepmc.org/articles/PMC11638623?pdf=render",
-          "keywords": [
-            "PGPR",
-            "rhizosphere microorganism",
-            "Regulating Microorganisms"
-          ],
-          "tasks": [],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Rhizosphere microbial communities are essential for plant growth and health maintenance, but their recruitment and functions are affected by their interactions with host plants. Finding ways to use the interaction to achieve specific production purposes, so as to reduce the use of chemical fertilizers and pesticides, is an important research approach in the development of green agriculture. To demonstrate the importance of rhizosphere microbial communities and guide practical production applications, this review summarizes the outstanding performance of rhizosphere microbial communities in promoting plant growth and stress tolerance. We also discuss the effect of host plants on their rhizosphere microbes, especially emphasizing the important role of host plant species and genes in the specific recruitment of beneficial microorganisms to improve the plants' own traits. The aim of this review is to provide valuable insights into developing plant varieties that can consistently recruit specific beneficial microorganisms to improve crop adaptability and productivity, and thus can be applied to green and sustainable agriculture in the future.",
-          "url": "https://doi.org/10.1016/j.crmicr.2024.100322"
-        },
-        {
           "id": "MED:40200054",
           "title": "Microbiome-metabolome dynamics associated with impaired glucose control and responses to lifestyle changes.",
           "method": "",
@@ -17012,6 +16994,35 @@
           ],
           "abstract": "Type 2 diabetes (T2D) is a complex disease shaped by genetic and environmental factors, including the gut microbiome. Recent research revealed pathophysiological heterogeneity and distinct subgroups in both T2D and prediabetes, prompting exploration of personalized risk factors. Using metabolomics in two Swedish cohorts (n = 1,167), we identified over 500 blood metabolites associated with impaired glucose control, with approximately one-third linked to an altered gut microbiome. Our findings identified metabolic disruptions in microbiome-metabolome dynamics as potential mediators of compromised glucose homeostasis, as illustrated by the potential interactions between Hominifimenecus microfluidus and Blautia wexlerae via hippurate. Short-term lifestyle changes, for example, diet and exercise, modulated microbiome-associated metabolites in a lifestyle-specific manner. This study suggests that the microbiome-metabolome axis is a modifiable target for T2D management, with optimal health benefits achievable through a combination of lifestyle modifications.",
           "url": "https://doi.org/10.1038/s41591-025-03642-6"
+        },
+        {
+          "id": "MED:40284650",
+          "title": "The Oral-Gut Microbiome-Brain Axis in Cognition.",
+          "method": "Cognition",
+          "authors": "Adil NA, Omo-Erigbe C, Yadav H, Jain S.",
+          "journal": "Microorganisms",
+          "year": "2025",
+          "date": "2025-04-03",
+          "doi": "10.3390/microorganisms13040814",
+          "cited": 54,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC12029813?pdf=render",
+          "keywords": [
+            "Brain",
+            "Cognition",
+            "Inflammation",
+            "Dysbiosis",
+            "Oral Microbiome"
+          ],
+          "tasks": [
+            "functional"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Alzheimer's disease (AD) is a progressive neurodegenerative disorder characterized by cognitive decline and neuronal loss, affecting millions worldwide. Emerging evidence highlights the oral microbiome-a complex ecosystem of bacteria, fungi, viruses, and protozoa as a significant factor in cognitive health. Dysbiosis of the oral microbiome contributes to systemic inflammation, disrupts the blood-brain barrier, and promotes neuroinflammation, processes increasingly implicated in the pathogenesis of AD. This review examines the mechanisms linking oral microbiome dysbiosis to cognitive decline through the oral-brain and oral-gut-brain axis. These interconnected pathways enable bidirectional communication between the oral cavity, gut, and brain via neural, immune, and endocrine signaling. Oral pathogens, such as Porphyromonas gingivalis , along with virulence factors, including lipopolysaccharides (LPS) and gingipains, contribute to neuroinflammation, while metabolic byproducts, such as short-chain fatty acids (SCFAs) and peptidoglycans, further exacerbate systemic immune activation. Additionally, this review explores the influence of external factors, including diet, pH balance, medication use, smoking, alcohol consumption, and oral hygiene, on oral microbial diversity and stability, highlighting their role in shaping cognitive outcomes. The dynamic interplay between the oral and gut microbiomes reinforces the importance of microbial homeostasis in preserving systemic and neurological health. The interventions, including probiotics, prebiotics, and dietary modifications, offer promising strategies to support cognitive function and reduce the risk of neurodegenerative diseases, such as AD, by maintaining a diverse microbiome. Future longitudinal research is needed to identify the long-term impact of oral microbiome dysbiosis on cognition.",
+          "url": "https://doi.org/10.3390/microorganisms13040814"
         },
         {
           "id": "MED:40140705",
@@ -17077,35 +17088,6 @@
           "url": "https://doi.org/10.3390/biomedicines13040791"
         },
         {
-          "id": "MED:40284650",
-          "title": "The Oral-Gut Microbiome-Brain Axis in Cognition.",
-          "method": "Cognition",
-          "authors": "Adil NA, Omo-Erigbe C, Yadav H, Jain S.",
-          "journal": "Microorganisms",
-          "year": "2025",
-          "date": "2025-04-03",
-          "doi": "10.3390/microorganisms13040814",
-          "cited": 53,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC12029813?pdf=render",
-          "keywords": [
-            "Brain",
-            "Cognition",
-            "Inflammation",
-            "Dysbiosis",
-            "Oral Microbiome"
-          ],
-          "tasks": [
-            "functional"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Alzheimer's disease (AD) is a progressive neurodegenerative disorder characterized by cognitive decline and neuronal loss, affecting millions worldwide. Emerging evidence highlights the oral microbiome-a complex ecosystem of bacteria, fungi, viruses, and protozoa as a significant factor in cognitive health. Dysbiosis of the oral microbiome contributes to systemic inflammation, disrupts the blood-brain barrier, and promotes neuroinflammation, processes increasingly implicated in the pathogenesis of AD. This review examines the mechanisms linking oral microbiome dysbiosis to cognitive decline through the oral-brain and oral-gut-brain axis. These interconnected pathways enable bidirectional communication between the oral cavity, gut, and brain via neural, immune, and endocrine signaling. Oral pathogens, such as Porphyromonas gingivalis , along with virulence factors, including lipopolysaccharides (LPS) and gingipains, contribute to neuroinflammation, while metabolic byproducts, such as short-chain fatty acids (SCFAs) and peptidoglycans, further exacerbate systemic immune activation. Additionally, this review explores the influence of external factors, including diet, pH balance, medication use, smoking, alcohol consumption, and oral hygiene, on oral microbial diversity and stability, highlighting their role in shaping cognitive outcomes. The dynamic interplay between the oral and gut microbiomes reinforces the importance of microbial homeostasis in preserving systemic and neurological health. The interventions, including probiotics, prebiotics, and dietary modifications, offer promising strategies to support cognitive function and reduce the risk of neurodegenerative diseases, such as AD, by maintaining a diverse microbiome. Future longitudinal research is needed to identify the long-term impact of oral microbiome dysbiosis on cognition.",
-          "url": "https://doi.org/10.3390/microorganisms13040814"
-        },
-        {
           "id": "MED:40155609",
           "title": "The regulatory framework for microbiome-based therapies: insights into European regulatory developments.",
           "method": "",
@@ -17160,6 +17142,37 @@
           ],
           "abstract": "Increasing evidence links the gut microbiome to carcinogenesis. Disruptions in estrogen regulation by the estrobolome-gut microbiota with estrogen-related functions-may promote breast cancer. However, precise information on estrobolome targets and their underlying mechanisms is limited. This review identifies relevant targets for measuring the estrobolome, focusing on enzymes and microbial taxa involved in processing estrogens, precursors, metabolites, and phytoestrogens, to facilitate the exploration of potential links to breast cancer. Evidence from breast cancer case-control studies is synthesized to assess alignment with these targets, highlight gaps in the evidence, and suggest new paths forward. Findings from case-control studies were heterogeneous and showed limited alignment with estrobolome targets, with only Escherichia coli and Roseburia inulinivorans identified as differentially abundant and functionally relevant between cases and controls. The lack of compelling evidence for estrobolome-specific mechanisms may reflect measurement challenges or may suggest that broader ecological changes in the microbiome, which influence a network of interacting mechanisms, are more influential for carcinogenesis. To clarify the estrobolome's role in breast cancer, future research should use advanced sequencing techniques and methods such as metabolomics and transcriptomics, while considering clinical and behavioral factors that may modify estrobolome mechanisms.",
           "url": "https://doi.org/10.1002/ijc.35427"
+        },
+        {
+          "id": "MED:40027489",
+          "title": "EasyMetagenome: A user-friendly and flexible pipeline for shotgun metagenomic analysis in microbiome research.",
+          "method": "EasyMetagenome",
+          "authors": "Bai D, Chen T, Xun J, Ma C, Luo H, Yang H, Cao C, Cao X, Cui J, Deng YP, Deng Z, Dong W, Dong W, Du J, Fang Q, Fang W, Fang Y, Fu F, Fu M, Fu YT, Gao H, Ge J, Gong Q, Gu L, Guo P, Guo Y, Hai T, Liu H, He J, He ZY, Hou H, Huang C, Ji S, Jiang C, Jiang GL, Jiang L, Jin LN, Kan Y, Kang D, Kou J, Lam KL, Li C, Li C, Li F, Li L, Li M, Li X, Li Y, Li ZT, Liang J, Lin Y, Liu C, Liu D, Liu F, Liu J, Liu T, Liu T, Liu X, Liu Y, Liu B, Liu M, Lou W, Luan Y, Luo Y, Lv H, Ma T, Mai Z, Mo J, Niu D, Pan Z, Qi H, Shi Z, Song C, Sun F, Sun Y, Tian S, Wan X, Wang G, Wang H, Wang H, Wang H, Wang J, Wang J, Wang K, Wang L, Wang SK, Wang X, Wang Y, Xiao Z, Xing H, Xu Y, Yan SY, Yang L, Yang S, Yang Y, Yao X, Yousuf S, Yu H, Lei Y, Yuan Z, Zeng M, Zhang C, Zhang C, Zhang H, Zhang J, Zhang N, Zhang T, Zhang YB, Zhang Y, Zhang Z, Zhou M, Zhou Y, Zhu C, Zhu L, Zhu Y, Zhu Z, Zou H, Zuo A, Dong W, Wen T, Chen S, Li G, Gao Y, Liu YX.",
+          "journal": "iMeta",
+          "year": "2025",
+          "date": "2025-02-14",
+          "doi": "10.1002/imt2.70001",
+          "cited": 49,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC11865343?pdf=render",
+          "keywords": [
+            "Microbiota",
+            "Visualization",
+            "metagenome",
+            "Microbiome",
+            "pipeline"
+          ],
+          "tasks": [
+            "profiling",
+            "binning",
+            "functional"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Shotgun metagenomics has become a pivotal technology in microbiome research, enabling in-depth analysis of microbial communities at both the high-resolution taxonomic and functional levels. This approach provides valuable insights of microbial diversity, interactions, and their roles in health and disease. However, the complexity of data processing and the need for reproducibility pose significant challenges to researchers. To address these challenges, we developed EasyMetagenome, a user-friendly pipeline that supports multiple analysis methods, including quality control and host removal, read-based, assembly-based, and binning, along with advanced genome analysis. The pipeline also features customizable settings, comprehensive data visualizations, and detailed parameter explanations, ensuring its adaptability across a wide range of data scenarios. Looking forward, we aim to refine the pipeline by addressing host contamination issues, optimizing workflows for third-generation sequencing data, and integrating emerging technologies like deep learning and network analysis, to further enhance microbiome insights and data accuracy. EasyMetageonome is freely available at https://github.com/YongxinLiu/EasyMetagenome.",
+          "url": "https://doi.org/10.1002/imt2.70001"
         },
         {
           "id": "MED:40136712",
