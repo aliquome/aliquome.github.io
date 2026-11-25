@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T13:15:48Z",
+  "generated_at": "2026-11-25T13:17:55Z",
   "source": "Europe PMC REST API",
   "rule": "For each field, the 30 most cited open-access papers of all time and the 30 most cited of the last 24 months that match the field query. Tasks come from keyword patterns; datasets are databases and datasets named in the title, abstract or keywords.",
   "fields": [
@@ -862,7 +862,7 @@
           "year": "2025",
           "date": "2025-04-16",
           "doi": "10.1038/s41586-025-08883-6",
-          "cited": 82,
+          "cited": 86,
           "license": "cc by-nc-nd",
           "pdf": "https://europepmc.org/articles/PMC12176639?pdf=render",
           "keywords": [
@@ -971,6 +971,35 @@
           "url": "https://doi.org/10.1101/gr.280383.124"
         },
         {
+          "id": "MED:39843749",
+          "title": "Leveraging a phased pangenome for haplotype design of hybrid potato.",
+          "method": "",
+          "authors": "Cheng L, Wang N, Bao Z, Zhou Q, Guarracino A, Yang Y, Wang P, Zhang Z, Tang D, Zhang P, Wu Y, Zhou Y, Zheng Y, Hu Y, Lian Q, Ma Z, Lassois L, Zhang C, Lucas WJ, Garrison E, Stein N, Städler T, Zhou Y, Huang S.",
+          "journal": "Nature",
+          "year": "2025",
+          "date": "2025-01-22",
+          "doi": "10.1038/s41586-024-08476-9",
+          "cited": 59,
+          "license": "cc by-nc-nd",
+          "pdf": "https://europepmc.org/articles/PMC11981936?pdf=render",
+          "keywords": [
+            "Hybridization, Genetic",
+            "Haplotypes",
+            "Genome, Plant",
+            "Solanum tuberosum",
+            "Plant Breeding"
+          ],
+          "tasks": [
+            "pangenome"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "The tetraploid genome and clonal propagation of the cultivated potato (Solanum tuberosum L.) 1,2 dictate a slow, non-accumulative breeding mode of the most important tuber crop. Transitioning potato breeding to a seed-propagated hybrid system based on diploid inbred lines has the potential to greatly accelerate its improvement 3 . Crucially, the development of inbred lines is impeded by manifold deleterious variants; explaining their nature and finding ways to eliminate them is the current focus of hybrid potato research 4-10 . However, most published diploid potato genomes are unphased, concealing crucial information on haplotype diversity and heterozygosity 11-13 . Here we develop a phased potato pangenome graph of 60 haplotypes from cultivated diploids and the ancestral wild species, and find evidence for the prevalence of transposable elements in generating structural variants. Compared with the linear reference, the graph pangenome represents a broader diversity (3,076 Mb versus 742 Mb). Notably, we observe enhanced heterozygosity in cultivated diploids compared with wild ones (14.0% versus 9.5%), indicating extensive hybridization during potato domestication. Using conservative criteria, we identify 19,625 putatively deleterious structural variants (dSVs) and reveal a biased accumulation of deleterious single nucleotide polymorphisms (dSNPs) around dSVs in coupling phase. Based on the graph pangenome, we computationally design ideal potato haplotypes with minimal dSNPs and dSVs. These advances provide critical insights into the genomic basis of clonal propagation and will guide breeders to develop a suite of promising inbred lines.",
+          "url": "https://doi.org/10.1038/s41586-024-08476-9"
+        },
+        {
           "id": "MED:40437092",
           "title": "Domesticated cannabinoid synthases amid a wild mosaic cannabis pangenome.",
           "method": "",
@@ -1026,35 +1055,6 @@
           ],
           "abstract": "Rice (Oryza sativa L.) is a major cereal crop that provides calories across the world. With a small genome, rice has been used extensively as a model for genetic and genomic studies in the Poaceae. Since the release of the first rice genome sequence in 2002, an improved reference genome assembly, multiple whole genome assemblies, extensive gene expression profiles, and resequencing data from over 3000 rice accessions have been generated. To facilitate access to the rice genome for plant biologists, we updated the Rice Genome Annotation Project database (RGAP; https://rice.uga.edu) with new datasets including 16 whole genome rice assemblies and sequence variants generated from multiple rice pan-genome projects including the 3000 Rice Genomes Project. We updated gene expression abundance data with 80 RNA-sequencing datasets and to facilitate gene function discovery, performed gene coexpression resulting in 39 coexpression modules that capture highly connected sets of co-regulated genes. To facilitate comparative genome analyses, 32 335 syntelogs were identified between the Nipponbare reference genome and other rice genomes and 19 371 syntelogs were identified between Nipponbare and four other Poaceae genomes. Infrastructure improvements to the RGAP database include an upgraded genome browser and data access portals, enhanced website security and increased performance of the website.",
           "url": "https://doi.org/10.1093/nar/gkae1061"
-        },
-        {
-          "id": "MED:39843749",
-          "title": "Leveraging a phased pangenome for haplotype design of hybrid potato.",
-          "method": "",
-          "authors": "Cheng L, Wang N, Bao Z, Zhou Q, Guarracino A, Yang Y, Wang P, Zhang Z, Tang D, Zhang P, Wu Y, Zhou Y, Zheng Y, Hu Y, Lian Q, Ma Z, Lassois L, Zhang C, Lucas WJ, Garrison E, Stein N, Städler T, Zhou Y, Huang S.",
-          "journal": "Nature",
-          "year": "2025",
-          "date": "2025-01-22",
-          "doi": "10.1038/s41586-024-08476-9",
-          "cited": 52,
-          "license": "cc by-nc-nd",
-          "pdf": "https://europepmc.org/articles/PMC11981936?pdf=render",
-          "keywords": [
-            "Hybridization, Genetic",
-            "Haplotypes",
-            "Genome, Plant",
-            "Solanum tuberosum",
-            "Plant Breeding"
-          ],
-          "tasks": [
-            "pangenome"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "The tetraploid genome and clonal propagation of the cultivated potato (Solanum tuberosum L.) 1,2 dictate a slow, non-accumulative breeding mode of the most important tuber crop. Transitioning potato breeding to a seed-propagated hybrid system based on diploid inbred lines has the potential to greatly accelerate its improvement 3 . Crucially, the development of inbred lines is impeded by manifold deleterious variants; explaining their nature and finding ways to eliminate them is the current focus of hybrid potato research 4-10 . However, most published diploid potato genomes are unphased, concealing crucial information on haplotype diversity and heterozygosity 11-13 . Here we develop a phased potato pangenome graph of 60 haplotypes from cultivated diploids and the ancestral wild species, and find evidence for the prevalence of transposable elements in generating structural variants. Compared with the linear reference, the graph pangenome represents a broader diversity (3,076 Mb versus 742 Mb). Notably, we observe enhanced heterozygosity in cultivated diploids compared with wild ones (14.0% versus 9.5%), indicating extensive hybridization during potato domestication. Using conservative criteria, we identify 19,625 putatively deleterious structural variants (dSVs) and reveal a biased accumulation of deleterious single nucleotide polymorphisms (dSNPs) around dSVs in coupling phase. Based on the graph pangenome, we computationally design ideal potato haplotypes with minimal dSNPs and dSVs. These advances provide critical insights into the genomic basis of clonal propagation and will guide breeders to develop a suite of promising inbred lines.",
-          "url": "https://doi.org/10.1038/s41586-024-08476-9"
         },
         {
           "id": "MED:39730188",
@@ -1167,6 +1167,33 @@
           ],
           "abstract": "Peanut (Arachis hypogaea L.) is an important oilseed and food legume crop, with seed size and weight being critical traits for domestication and breeding. However, genomic rearrangements like structural variations (SVs) underlying seed size and weight remain unclear. Here we present a comprehensive pangenome analysis utilizing eight high-quality genomes (two diploid wild, two tetraploid wild and four tetraploid cultivated peanuts) and resequencing data of 269 accessions with diverse seed sizes. We identified 22,222 core or soft-core, 22,232 distributed and 5,643 private gene families. The frequency of SVs in subgenome A is higher than in subgenome B. We identified 1,335 domestication-related SVs and 190 SVs associated with seed size or weight. Notably, a 275-bp deletion in gene AhARF2-2 results in loss of interaction with AhIAA13 and TOPLESS, reducing the inhibitory effect on AhGRF5 and promoting seed expansion. This high-quality pangenome serves as a fundamental resource for the genetic enhancement of peanuts and other legume crops.",
           "url": "https://doi.org/10.1038/s41588-025-02170-w"
+        },
+        {
+          "id": "MED:39962240",
+          "title": "The Marchantia polymorpha pangenome reveals ancient mechanisms of plant adaptation to the environment.",
+          "method": "",
+          "authors": "Beaulieu C, Libourel C, Mbadinga Zamar DL, El Mahboubi K, Hoey DJ, Greiff GRL, Keller J, Girou C, San Clemente H, Diop I, Amblard E, Castel B, Théron A, Cauet S, Rodde N, Zachgo S, Halpape W, Meierhenrich A, Laker B, Bräutigam A, SLCU Outreach Consortium, Szovenyi P, Cheng S, Tanizawa Y, Aziz S, Leebens-Mack JH, Schmutz J, Webber J, Grimwood J, Jacquet C, Dunand C, Nelson JM, Roux F, Philippe H, Schornack S, Bonhomme M, Delaux PM.",
+          "journal": "Nature genetics",
+          "year": "2025",
+          "date": "2025-02-17",
+          "doi": "10.1038/s41588-024-02071-4",
+          "cited": 32,
+          "license": "cc by-nc-nd",
+          "pdf": "https://europepmc.org/articles/PMC11906373?pdf=render",
+          "keywords": [
+            "Marchantia",
+            "Adaptation, Physiological",
+            "Genome, Plant"
+          ],
+          "tasks": [
+            "pangenome"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Plant adaptation to terrestrial life started 450 million years ago and has played a major role in the evolution of life on Earth. The genetic mechanisms allowing this adaptation to a diversity of terrestrial constraints have been mostly studied by focusing on flowering plants. Here, we gathered a collection of 133 accessions of the model bryophyte Marchantia polymorpha and studied its intraspecific diversity using selection signature analyses, a genome-environment association study and a pangenome. We identified adaptive features, such as peroxidases or nucleotide-binding and leucine-rich repeats (NLRs), also observed in flowering plants, likely inherited from the first land plants. The M. polymorpha pangenome also harbors lineage-specific accessory genes absent from seed plants. We conclude that different land plant lineages still share many elements from the genetic toolkit evolved by their most recent common ancestor to adapt to the terrestrial habitat, refined by lineage-specific polymorphisms and gene family evolution.",
+          "url": "https://doi.org/10.1038/s41588-024-02071-4"
         },
         {
           "id": "MED:39657783",
@@ -1304,33 +1331,6 @@
           ],
           "abstract": "Background Streptomyces is a highly diverse genus known for the production of secondary or specialized metabolites with a wide range of applications in the medical and agricultural industries. Several thousand complete or nearly complete Streptomyces genome sequences are now available, affording the opportunity to deeply investigate the biosynthetic potential within these organisms and to advance natural product discovery initiatives. Results We perform pangenome analysis on 2371 Streptomyces genomes, including approximately 1200 complete assemblies. Employing a data-driven approach based on genome similarities, the Streptomyces genus was classified into 7 primary and 42 secondary Mash-clusters, forming the basis for comprehensive pangenome mining. A refined workflow for grouping biosynthetic gene clusters (BGCs) redefines their diversity across different Mash-clusters. This workflow also reassigns 2729 known BGC families to only 440 families, a reduction caused by inaccuracies in BGC boundary detections. When the genomic location of BGCs is included in the analysis, a conserved genomic structure, or synteny, among BGCs becomes apparent within species and Mash-clusters. This synteny suggests that vertical inheritance is a major factor in the diversification of BGCs. Conclusions Our analysis of a genomic dataset at a scale of thousands of genomes refines predictions of BGC diversity using Mash-clusters as a basis for pangenome analysis. The observed conservation in the order of BGCs' genomic locations shows that the BGCs are vertically inherited. The presented workflow and the in-depth analysis pave the way for large-scale pangenome investigations and enhance our understanding of the biosynthetic potential of the Streptomyces genus.",
           "url": "https://doi.org/10.1186/s13059-024-03471-9"
-        },
-        {
-          "id": "MED:39962240",
-          "title": "The Marchantia polymorpha pangenome reveals ancient mechanisms of plant adaptation to the environment.",
-          "method": "",
-          "authors": "Beaulieu C, Libourel C, Mbadinga Zamar DL, El Mahboubi K, Hoey DJ, Greiff GRL, Keller J, Girou C, San Clemente H, Diop I, Amblard E, Castel B, Théron A, Cauet S, Rodde N, Zachgo S, Halpape W, Meierhenrich A, Laker B, Bräutigam A, SLCU Outreach Consortium, Szovenyi P, Cheng S, Tanizawa Y, Aziz S, Leebens-Mack JH, Schmutz J, Webber J, Grimwood J, Jacquet C, Dunand C, Nelson JM, Roux F, Philippe H, Schornack S, Bonhomme M, Delaux PM.",
-          "journal": "Nature genetics",
-          "year": "2025",
-          "date": "2025-02-17",
-          "doi": "10.1038/s41588-024-02071-4",
-          "cited": 27,
-          "license": "cc by-nc-nd",
-          "pdf": "https://europepmc.org/articles/PMC11906373?pdf=render",
-          "keywords": [
-            "Marchantia",
-            "Adaptation, Physiological",
-            "Genome, Plant"
-          ],
-          "tasks": [
-            "pangenome"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Plant adaptation to terrestrial life started 450 million years ago and has played a major role in the evolution of life on Earth. The genetic mechanisms allowing this adaptation to a diversity of terrestrial constraints have been mostly studied by focusing on flowering plants. Here, we gathered a collection of 133 accessions of the model bryophyte Marchantia polymorpha and studied its intraspecific diversity using selection signature analyses, a genome-environment association study and a pangenome. We identified adaptive features, such as peroxidases or nucleotide-binding and leucine-rich repeats (NLRs), also observed in flowering plants, likely inherited from the first land plants. The M. polymorpha pangenome also harbors lineage-specific accessory genes absent from seed plants. We conclude that different land plant lineages still share many elements from the genetic toolkit evolved by their most recent common ancestor to adapt to the terrestrial habitat, refined by lineage-specific polymorphisms and gene family evolution.",
-          "url": "https://doi.org/10.1038/s41588-024-02071-4"
         },
         {
           "id": "MED:39665690",
@@ -1896,7 +1896,7 @@
           "year": "2018",
           "date": "2018-09-24",
           "doi": "10.12688/wellcomeopenres.14826.1",
-          "cited": 3086,
+          "cited": 3193,
           "license": "cc by",
           "pdf": "https://europepmc.org/articles/PMC6192448?pdf=render",
           "keywords": [
@@ -2240,7 +2240,7 @@
           "year": "2009",
           "date": "2009-05-10",
           "doi": "10.1038/ng.381",
-          "cited": 1365,
+          "cited": 1368,
           "license": "",
           "pdf": "https://europepmc.org/articles/PMC2889014?pdf=render",
           "keywords": [
@@ -2361,6 +2361,33 @@
           "url": "https://doi.org/10.1038/ng.2742"
         },
         {
+          "id": "MED:26828793",
+          "title": "Iterative Usage of Fixed and Random Effect Models for Powerful and Efficient Genome-Wide Association Studies.",
+          "method": "",
+          "authors": "Liu X, Huang M, Fan B, Buckler ES, Zhang Z.",
+          "journal": "PLoS genetics",
+          "year": "2016",
+          "date": "2016-02-01",
+          "doi": "10.1371/journal.pgen.1005767",
+          "cited": 1233,
+          "license": "cc0",
+          "pdf": "https://europepmc.org/articles/PMC4734661?pdf=render",
+          "keywords": [
+            "Models, Genetic",
+            "Genome-Wide Association Study"
+          ],
+          "tasks": [
+            "gwas",
+            "ancestry"
+          ],
+          "datasets": [],
+          "lists": [
+            "classic"
+          ],
+          "abstract": "False positives in a Genome-Wide Association Study (GWAS) can be effectively controlled by a fixed effect and random effect Mixed Linear Model (MLM) that incorporates population structure and kinship among individuals to adjust association tests on markers; however, the adjustment also compromises true positives. The modified MLM method, Multiple Loci Linear Mixed Model (MLMM), incorporates multiple markers simultaneously as covariates in a stepwise MLM to partially remove the confounding between testing markers and kinship. To completely eliminate the confounding, we divided MLMM into two parts: Fixed Effect Model (FEM) and a Random Effect Model (REM) and use them iteratively. FEM contains testing markers, one at a time, and multiple associated markers as covariates to control false positives. To avoid model over-fitting problem in FEM, the associated markers are estimated in REM by using them to define kinship. The P values of testing markers and the associated markers are unified at each iteration. We named the new method as Fixed and random model Circulating Probability Unification (FarmCPU). Both real and simulated data analyses demonstrated that FarmCPU improves statistical power compared to current methods. Additional benefits include an efficient computing time that is linear to both number of individuals and number of markers. Now, a dataset with half million individuals and half million markers can be analyzed within three days.",
+          "url": "https://doi.org/10.1371/journal.pgen.1005767"
+        },
+        {
           "id": "MED:19212322",
           "title": "Population genomics of domestic and wild yeasts.",
           "method": "",
@@ -2458,33 +2485,6 @@
           "url": "https://doi.org/10.1038/nbt.4042"
         },
         {
-          "id": "MED:26828793",
-          "title": "Iterative Usage of Fixed and Random Effect Models for Powerful and Efficient Genome-Wide Association Studies.",
-          "method": "",
-          "authors": "Liu X, Huang M, Fan B, Buckler ES, Zhang Z.",
-          "journal": "PLoS genetics",
-          "year": "2016",
-          "date": "2016-02-01",
-          "doi": "10.1371/journal.pgen.1005767",
-          "cited": 1116,
-          "license": "cc0",
-          "pdf": "https://europepmc.org/articles/PMC4734661?pdf=render",
-          "keywords": [
-            "Models, Genetic",
-            "Genome-Wide Association Study"
-          ],
-          "tasks": [
-            "gwas",
-            "ancestry"
-          ],
-          "datasets": [],
-          "lists": [
-            "classic"
-          ],
-          "abstract": "False positives in a Genome-Wide Association Study (GWAS) can be effectively controlled by a fixed effect and random effect Mixed Linear Model (MLM) that incorporates population structure and kinship among individuals to adjust association tests on markers; however, the adjustment also compromises true positives. The modified MLM method, Multiple Loci Linear Mixed Model (MLMM), incorporates multiple markers simultaneously as covariates in a stepwise MLM to partially remove the confounding between testing markers and kinship. To completely eliminate the confounding, we divided MLMM into two parts: Fixed Effect Model (FEM) and a Random Effect Model (REM) and use them iteratively. FEM contains testing markers, one at a time, and multiple associated markers as covariates to control false positives. To avoid model over-fitting problem in FEM, the associated markers are estimated in REM by using them to define kinship. The P values of testing markers and the associated markers are unified at each iteration. We named the new method as Fixed and random model Circulating Probability Unification (FarmCPU). Both real and simulated data analyses demonstrated that FarmCPU improves statistical power compared to current methods. Additional benefits include an efficient computing time that is linear to both number of individuals and number of markers. Now, a dataset with half million individuals and half million markers can be analyzed within three days.",
-          "url": "https://doi.org/10.1371/journal.pgen.1005767"
-        },
-        {
           "id": "MED:29292387",
           "title": "Multi-trait analysis of genome-wide association summary statistics using MTAG.",
           "method": "MTAG",
@@ -2550,7 +2550,7 @@
           "year": "2025",
           "date": "2025-07-23",
           "doi": "10.1038/s41586-025-09140-6",
-          "cited": 160,
+          "cited": 169,
           "license": "cc by",
           "pdf": "https://europepmc.org/articles/PMC12350169?pdf=render",
           "keywords": [
@@ -2808,6 +2808,36 @@
           "url": "https://doi.org/10.3390/ijms26010372"
         },
         {
+          "id": "MED:39680601",
+          "title": "Adjusting for principal components can induce collider bias in genome-wide association studies.",
+          "method": "",
+          "authors": "Grinde KE, Browning BL, Reiner AP, Thornton TA, Browning SR.",
+          "journal": "PLoS genetics",
+          "year": "2024",
+          "date": "2024-12-16",
+          "doi": "10.1371/journal.pgen.1011242",
+          "cited": 37,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC11684764?pdf=render",
+          "keywords": [
+            "Linkage Disequilibrium",
+            "Polymorphism, Single Nucleotide",
+            "Principal Component Analysis",
+            "Genome-Wide Association Study",
+            "Black or African American"
+          ],
+          "tasks": [
+            "gwas",
+            "ancestry"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Principal component analysis (PCA) is widely used to control for population structure in genome-wide association studies (GWAS). Top principal components (PCs) typically reflect population structure, but challenges arise in deciding how many PCs are needed and ensuring that PCs do not capture other artifacts such as regions with atypical linkage disequilibrium (LD). In response to the latter, many groups suggest performing LD pruning or excluding known high LD regions prior to PCA. However, these suggestions are not universally implemented and the implications for GWAS are not fully understood, especially in the context of admixed populations. In this paper, we investigate the impact of pre-processing and the number of PCs included in GWAS models in African American samples from the Women's Health Initiative SNP Health Association Resource and two Trans-Omics for Precision Medicine Whole Genome Sequencing Project contributing studies (Jackson Heart Study and Genetic Epidemiology of Chronic Obstructive Pulmonary Disease Study). In all three samples, we find the first PC is highly correlated with genome-wide ancestry whereas later PCs often capture local genomic features. The pattern of which, and how many, genetic variants are highly correlated with individual PCs differs from what has been observed in prior studies focused on European populations and leads to distinct downstream consequences: adjusting for such PCs yields biased effect size estimates and elevated rates of spurious associations due to the phenomenon of collider bias. Excluding high LD regions identified in previous studies does not resolve these issues. LD pruning proves more effective, but the optimal choice of thresholds varies across datasets. Altogether, our work highlights unique issues that arise when using PCA to control for ancestral heterogeneity in admixed populations and demonstrates the importance of careful pre-processing and diagnostics to ensure that PCs capturing multiple local genomic features are not included in GWAS models.",
+          "url": "https://doi.org/10.1371/journal.pgen.1011242"
+        },
+        {
           "id": "MED:40921788",
           "title": "Multiancestry brain pQTL fine-mapping and integration with genome-wide association studies of 21 neurologic and psychiatric conditions.",
           "method": "",
@@ -2816,7 +2846,7 @@
           "year": "2025",
           "date": "2025-09-08",
           "doi": "10.1038/s41588-025-02291-2",
-          "cited": 34,
+          "cited": 36,
           "license": "cc by",
           "pdf": "https://europepmc.org/articles/PMC12425806?pdf=render",
           "keywords": [
@@ -2846,7 +2876,7 @@
           "year": "2025",
           "date": "2025-07-15",
           "doi": "10.1038/s41588-025-02250-x",
-          "cited": 33,
+          "cited": 34,
           "license": "cc by-nc-nd",
           "pdf": "https://europepmc.org/articles/PMC12339400?pdf=render",
           "keywords": [
@@ -2863,36 +2893,6 @@
           ],
           "abstract": "With age, clonal expansions occur pervasively across normal tissues yet only in rare instances lead to cancer, despite being driven by well-established cancer drivers. Characterization of the factors that influence clonal progression is needed to inform interventional approaches. Germline genetic variation influences cancer risk and shapes tumor mutational profile, but its influence on the mutational landscape of normal tissues is not well known. Here we studied the impact of germline genetic variation on clonal hematopoiesis (CH) in 731,835 individuals. We identified 22 new CH-predisposition genes, most of which predispose to CH driven by specific mutational events. CH-predisposition genes contribute to unique somatic landscapes, reflecting the influence of germline genetic backdrop on gene-specific CH fitness. Correspondingly, somatic-germline interactions influence the risk of CH progression to hematologic malignancies. These results demonstrate that germline genetic variation influences somatic evolution in the blood, findings that likely extend to other tissues.",
           "url": "https://doi.org/10.1038/s41588-025-02250-x"
-        },
-        {
-          "id": "MED:39680601",
-          "title": "Adjusting for principal components can induce collider bias in genome-wide association studies.",
-          "method": "",
-          "authors": "Grinde KE, Browning BL, Reiner AP, Thornton TA, Browning SR.",
-          "journal": "PLoS genetics",
-          "year": "2024",
-          "date": "2024-12-16",
-          "doi": "10.1371/journal.pgen.1011242",
-          "cited": 32,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC11684764?pdf=render",
-          "keywords": [
-            "Linkage Disequilibrium",
-            "Polymorphism, Single Nucleotide",
-            "Principal Component Analysis",
-            "Genome-Wide Association Study",
-            "Black or African American"
-          ],
-          "tasks": [
-            "gwas",
-            "ancestry"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Principal component analysis (PCA) is widely used to control for population structure in genome-wide association studies (GWAS). Top principal components (PCs) typically reflect population structure, but challenges arise in deciding how many PCs are needed and ensuring that PCs do not capture other artifacts such as regions with atypical linkage disequilibrium (LD). In response to the latter, many groups suggest performing LD pruning or excluding known high LD regions prior to PCA. However, these suggestions are not universally implemented and the implications for GWAS are not fully understood, especially in the context of admixed populations. In this paper, we investigate the impact of pre-processing and the number of PCs included in GWAS models in African American samples from the Women's Health Initiative SNP Health Association Resource and two Trans-Omics for Precision Medicine Whole Genome Sequencing Project contributing studies (Jackson Heart Study and Genetic Epidemiology of Chronic Obstructive Pulmonary Disease Study). In all three samples, we find the first PC is highly correlated with genome-wide ancestry whereas later PCs often capture local genomic features. The pattern of which, and how many, genetic variants are highly correlated with individual PCs differs from what has been observed in prior studies focused on European populations and leads to distinct downstream consequences: adjusting for such PCs yields biased effect size estimates and elevated rates of spurious associations due to the phenomenon of collider bias. Excluding high LD regions identified in previous studies does not resolve these issues. LD pruning proves more effective, but the optimal choice of thresholds varies across datasets. Altogether, our work highlights unique issues that arise when using PCA to control for ancestral heterogeneity in admixed populations and demonstrates the importance of careful pre-processing and diagnostics to ensure that PCs capturing multiple local genomic features are not included in GWAS models.",
-          "url": "https://doi.org/10.1371/journal.pgen.1011242"
         },
         {
           "id": "MED:42237039",
@@ -2948,6 +2948,62 @@
           ],
           "abstract": "Accurate detection of somatic variants in tumors is of critical importance and remains challenging. Current methods typically require matched normal samples for reliable detection, which are often unavailable in real-world research and clinical scenarios. Without a matched normal sample, more proficient algorithms are required to distinguish true somatic variants from germline variants and technical artifacts. However, existing tumor-only somatic variant callers that were designed for short-read sequencing data are not able to work well with long-read data. To fill the gap, we present ClairS-TO, a deep-learning-based method for long-read tumor-only somatic variant calling. ClairS-TO uses an ensemble of two disparate neural networks trained from the same samples but for opposite tasks-how likely/not likely a candidate is a somatic variant. Benchmarks using COLO829 and HCC1395 cancer cell lines show that ClairS-TO outperforms DeepSomatic and smrest in ONT and PacBio long-read data. ClairS-TO is also applicable to short-read data and outperforms Mutect2, Octopus, Pisces, and DeepSomatic. Extensive experiments across various sequencing coverages, variant allelic fractions, and tumor purities support that ClairS-TO is a reliable tool for somatic variant discovery. ClairS-TO is open-source, available at https://github.com/HKU-BAL/ClairS-TO .",
           "url": "https://doi.org/10.1038/s41467-025-64547-z"
+        },
+        {
+          "id": "MED:39805841",
+          "title": "Genome-wide association study unravels mechanisms of brain glymphatic activity.",
+          "method": "",
+          "authors": "Huang SY, Ge YJ, Ren P, Wu BS, Gong W, Du J, Chen SD, Kang JJ, Ma Q, Bokde ALW, Desrivières S, Garavan H, Grigis A, Lemaitre H, Smolka MN, Hohmann S, IMAGEN Consortium, Feng JF, Zhang YR, Cheng W, Yu JT.",
+          "journal": "Nature communications",
+          "year": "2025",
+          "date": "2025-01-13",
+          "doi": "10.1038/s41467-024-55706-9",
+          "cited": 28,
+          "license": "cc by-nc-nd",
+          "pdf": "https://europepmc.org/articles/PMC11730627?pdf=render",
+          "keywords": [
+            "Brain",
+            "Genome-Wide Association Study",
+            "Glymphatic System"
+          ],
+          "tasks": [
+            "gwas",
+            "polygenic"
+          ],
+          "datasets": [
+            "db:ukbiobank"
+          ],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Brain glymphatic activity, as indicated by diffusion-tensor imaging analysis along the perivascular space (ALPS) index, is involved in developmental neuropsychiatric and neurodegenerative diseases, but its genetic architecture is poorly understood. Here, we identified 17 unique genome-wide significant loci and 161 candidate genes linked to the ALPS-indexes in a discovery sample of 31,021 individuals from the UK Biobank. Seven loci were replicated in two independent datasets. Genetic signals located at the 2p23.3 locus yielded significantly concordant effects in both young and aging cohorts. Genetic correlation and polygenic overlap analyses indicate a common underlying genetic mechanism between the ALPS-index, ventricular volumes, and cerebrospinal fluid tau levels, with GMNC (3q28) and C16orf95 (16q24.2) as the shared genetic basis. Our findings enhance the understanding of the genetics of the ALPS-index and provide insight for further research into the neurobiological mechanisms of glymphatic clearance activity across the lifespan and its relation to neuropsychiatric phenotypes.",
+          "url": "https://doi.org/10.1038/s41467-024-55706-9"
+        },
+        {
+          "id": "MED:40000848",
+          "title": "Genome-wide association study reveals multiple loci for nociception and opioid consumption behaviors associated with heroin vulnerability in outbred rats.",
+          "method": "",
+          "authors": "Kuhn BN, Cannella N, Chitre AS, Nguyen KH, Cohen K, Chen D, Peng B, Ziegler KS, Lin B, Johnson BB, Missfeldt Sanches T, Crow AD, Lunerti V, Gupta A, Dereschewitz E, Soverchia L, Hopkins JL, Roberts AT, Ubaldi M, Abdulmalek S, Kinen A, Hardiman G, Chung D, Polesskaya O, Solberg Woods LC, Ciccocioppo R, Kalivas PW, Palmer AA.",
+          "journal": "Molecular psychiatry",
+          "year": "2025",
+          "date": "2025-02-25",
+          "doi": "10.1038/s41380-025-02922-4",
+          "cited": 27,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC12240846?pdf=render",
+          "keywords": [
+            "Opioid-Related Disorders",
+            "Nociception"
+          ],
+          "tasks": [
+            "gwas"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "The increased prevalence of opioid use disorder (OUD) makes it imperative to disentangle the biological mechanisms contributing to individual differences in OUD vulnerability. OUD shows strong heritability, however genetic variants contributing to vulnerability remain poorly defined. We performed a genome-wide association study using over 850 male and female heterogeneous stock (HS) rats to identify genes underlying behaviors associated with OUD such as nociception, as well as heroin-taking, extinction and seeking behaviors. By using an animal model of OUD, we were able to identify genetic variants associated with distinct OUD behaviors while maintaining a uniform environment, an experimental design not easily achieved in humans. Furthermore, we used a novel non-linear network-based clustering approach to characterize rats based on OUD vulnerability to assess genetic variants associated with OUD susceptibility. Our findings confirm the heritability of several OUD-like behaviors, including OUD susceptibility. Additionally, several genetic variants associated with nociceptive threshold prior to heroin experience, heroin consumption, escalation of intake, and motivation to obtain heroin were identified. Tom1, a microglial component, was implicated for nociception. Several genes involved in dopaminergic signaling, neuroplasticity and substance use disorders, including Brwd1, Pcp4, Phb1l2 and Mmp15 were implicated for the heroin traits. Additionally, an OUD vulnerable phenotype was associated with genetic variants for consumption and break point, suggesting a specific genetic contribution for OUD-like traits contributing to vulnerability. Together, these findings identify novel genetic markers related to the susceptibility to OUD-relevant behaviors in HS rats.",
+          "url": "https://doi.org/10.1038/s41380-025-02922-4"
         },
         {
           "id": "MED:39987793",
@@ -3008,30 +3064,37 @@
           "url": "https://doi.org/10.1038/s41467-025-59950-5"
         },
         {
-          "id": "MED:40000848",
-          "title": "Genome-wide association study reveals multiple loci for nociception and opioid consumption behaviors associated with heroin vulnerability in outbred rats.",
+          "id": "MED:39747859",
+          "title": "Deep learning and genome-wide association meta-analyses of bone marrow adiposity in the UK Biobank.",
           "method": "",
-          "authors": "Kuhn BN, Cannella N, Chitre AS, Nguyen KH, Cohen K, Chen D, Peng B, Ziegler KS, Lin B, Johnson BB, Missfeldt Sanches T, Crow AD, Lunerti V, Gupta A, Dereschewitz E, Soverchia L, Hopkins JL, Roberts AT, Ubaldi M, Abdulmalek S, Kinen A, Hardiman G, Chung D, Polesskaya O, Solberg Woods LC, Ciccocioppo R, Kalivas PW, Palmer AA.",
-          "journal": "Molecular psychiatry",
+          "authors": "Xu W, Mesa-Eguiagaray I, Morris DM, Wang C, Gray CD, Sjöström S, Papanastasiou G, Badr S, Paccou J, Li X, Timmers PRHJ, Timofeeva M, Farrington SM, Dunlop MG, Semple SI, MacGillivray T, Theodoratou E, Cawthorn WP.",
+          "journal": "Nature communications",
           "year": "2025",
-          "date": "2025-02-25",
-          "doi": "10.1038/s41380-025-02922-4",
+          "date": "2025-01-02",
+          "doi": "10.1038/s41467-024-55422-4",
           "cited": 26,
           "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC12240846?pdf=render",
+          "pdf": "https://www.nature.com/articles/s41467-024-55422-4.pdf",
           "keywords": [
-            "Opioid-Related Disorders",
-            "Nociception"
+            "Bone Marrow",
+            "Polymorphism, Single Nucleotide",
+            "Biological Specimen Banks",
+            "Adiposity",
+            "Genome-Wide Association Study",
+            "Deep Learning"
           ],
           "tasks": [
-            "gwas"
+            "gwas",
+            "ancestry"
           ],
-          "datasets": [],
+          "datasets": [
+            "db:ukbiobank"
+          ],
           "lists": [
             "recent"
           ],
-          "abstract": "The increased prevalence of opioid use disorder (OUD) makes it imperative to disentangle the biological mechanisms contributing to individual differences in OUD vulnerability. OUD shows strong heritability, however genetic variants contributing to vulnerability remain poorly defined. We performed a genome-wide association study using over 850 male and female heterogeneous stock (HS) rats to identify genes underlying behaviors associated with OUD such as nociception, as well as heroin-taking, extinction and seeking behaviors. By using an animal model of OUD, we were able to identify genetic variants associated with distinct OUD behaviors while maintaining a uniform environment, an experimental design not easily achieved in humans. Furthermore, we used a novel non-linear network-based clustering approach to characterize rats based on OUD vulnerability to assess genetic variants associated with OUD susceptibility. Our findings confirm the heritability of several OUD-like behaviors, including OUD susceptibility. Additionally, several genetic variants associated with nociceptive threshold prior to heroin experience, heroin consumption, escalation of intake, and motivation to obtain heroin were identified. Tom1, a microglial component, was implicated for nociception. Several genes involved in dopaminergic signaling, neuroplasticity and substance use disorders, including Brwd1, Pcp4, Phb1l2 and Mmp15 were implicated for the heroin traits. Additionally, an OUD vulnerable phenotype was associated with genetic variants for consumption and break point, suggesting a specific genetic contribution for OUD-like traits contributing to vulnerability. Together, these findings identify novel genetic markers related to the susceptibility to OUD-relevant behaviors in HS rats.",
-          "url": "https://doi.org/10.1038/s41380-025-02922-4"
+          "abstract": "Bone marrow adipose tissue is a distinct adipose subtype comprising more than 10% of fat mass in healthy humans. However, the functions and pathophysiological correlates of this tissue are unclear, and its genetic determinants remain unknown. Here, we use deep learning to measure bone marrow adiposity in the femoral head, total hip, femoral diaphysis, and spine from MRI scans of approximately 47,000 UK Biobank participants, including over 41,000 white and over 6300 non-white participants. We then establish the heritability and genome-wide significant associations for bone marrow adiposity at each site. Our meta-GWAS in the white population finds 67, 147, 134, and 174 independent significant single nucleotide polymorphisms, which map to 54, 90, 43, and 100 genes for the femoral head, total hip, femoral diaphysis, and spine, respectively. Transcriptome-wide association studies, colocalization analyses, and sex-stratified meta-GWASes in the white participants further resolve functional and sex-specific genes associated with bone marrow adiposity at each site. Finally, we perform a multi-ancestry meta-GWAS to identify genes associated with bone marrow adiposity across the different bone regions and across ancestry groups. Our findings provide insights into BMAT formation and function and provide a basis to study the impact of BMAT on human health and disease.",
+          "url": "https://doi.org/10.1038/s41467-024-55422-4"
         },
         {
           "id": "MED:40858613",
@@ -3171,36 +3234,6 @@
           "url": "https://doi.org/10.1371/journal.pcbi.1013400"
         },
         {
-          "id": "MED:39805841",
-          "title": "Genome-wide association study unravels mechanisms of brain glymphatic activity.",
-          "method": "",
-          "authors": "Huang SY, Ge YJ, Ren P, Wu BS, Gong W, Du J, Chen SD, Kang JJ, Ma Q, Bokde ALW, Desrivières S, Garavan H, Grigis A, Lemaitre H, Smolka MN, Hohmann S, IMAGEN Consortium, Feng JF, Zhang YR, Cheng W, Yu JT.",
-          "journal": "Nature communications",
-          "year": "2025",
-          "date": "2025-01-13",
-          "doi": "10.1038/s41467-024-55706-9",
-          "cited": 22,
-          "license": "cc by-nc-nd",
-          "pdf": "https://europepmc.org/articles/PMC11730627?pdf=render",
-          "keywords": [
-            "Brain",
-            "Genome-Wide Association Study",
-            "Glymphatic System"
-          ],
-          "tasks": [
-            "gwas",
-            "polygenic"
-          ],
-          "datasets": [
-            "db:ukbiobank"
-          ],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Brain glymphatic activity, as indicated by diffusion-tensor imaging analysis along the perivascular space (ALPS) index, is involved in developmental neuropsychiatric and neurodegenerative diseases, but its genetic architecture is poorly understood. Here, we identified 17 unique genome-wide significant loci and 161 candidate genes linked to the ALPS-indexes in a discovery sample of 31,021 individuals from the UK Biobank. Seven loci were replicated in two independent datasets. Genetic signals located at the 2p23.3 locus yielded significantly concordant effects in both young and aging cohorts. Genetic correlation and polygenic overlap analyses indicate a common underlying genetic mechanism between the ALPS-index, ventricular volumes, and cerebrospinal fluid tau levels, with GMNC (3q28) and C16orf95 (16q24.2) as the shared genetic basis. Our findings enhance the understanding of the genetics of the ALPS-index and provide insight for further research into the neurobiological mechanisms of glymphatic clearance activity across the lifespan and its relation to neuropsychiatric phenotypes.",
-          "url": "https://doi.org/10.1038/s41467-024-55706-9"
-        },
-        {
           "id": "MED:39690174",
           "title": "Brain change trajectories in healthy adults correlate with Alzheimer's related genetic variation and memory decline across life.",
           "method": "",
@@ -3326,64 +3359,33 @@
           "url": "https://doi.org/10.1038/s41467-024-55147-4"
         },
         {
-          "id": "MED:40164586",
-          "title": "A genome-wide association study of imaging-defined atherosclerosis.",
+          "id": "MED:41606319",
+          "title": "Human and bacterial genetic variation shape oral microbiomes and health.",
           "method": "",
-          "authors": "Gummesson A, Lundmark P, Chen QS, Björnson E, Dekkers KF, Hammar U, Adiels M, Wang Y, Andersson T, Bergström G, Carlhäll CJ, Erlinge D, Jernberg T, Landfors F, Lind L, Mannila M, Melander O, Pirazzi C, Sundström J, Östgren CJ, Gunnarsson C, Orho-Melander M, Söderberg S, Fall T, Gigante B.",
-          "journal": "Nature communications",
-          "year": "2025",
-          "date": "2025-03-31",
-          "doi": "10.1038/s41467-025-57457-7",
-          "cited": 18,
+          "authors": "Kamitaki N, Handsaker RE, Hujoel MLA, Mukamel RE, Usher CL, McCarroll SA, Loh PR.",
+          "journal": "Nature",
+          "year": "2026",
+          "date": "2026-01-28",
+          "doi": "10.1038/s41586-025-10037-7",
+          "cited": 19,
           "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC11958696?pdf=render",
+          "pdf": "https://europepmc.org/articles/PMC12979206?pdf=render",
           "keywords": [
-            "Atherosclerosis",
-            "Coronary Artery Disease",
-            "Genome-Wide Association Study",
-            "Plaque, Atherosclerotic"
+            "Mouth",
+            "Bacteria",
+            "Health",
+            "Genetic Variation",
+            "Microbiota"
           ],
-          "tasks": [
-            "gwas"
-          ],
+          "tasks": [],
           "datasets": [
             "db:ukbiobank"
           ],
           "lists": [
             "recent"
           ],
-          "abstract": "Imaging-defined atherosclerosis represents an intermediate phenotype of atherosclerotic cardiovascular disease (ASCVD). Genome-wide association studies (GWAS) on directly measured coronary plaques using coronary computed tomography angiography (CCTA) are scarce. In the so far largest population-based cohort with CCTA data, we performed a GWAS on coronary plaque burden as determined by the segment involvement score (SIS) in 24,811 European individuals. We identified 20 significant independent genetic markers for SIS, three of which were found in loci not implicated in ASCVD before. Further GWAS on coronary artery calcification showed similar results to that of SIS, whereas a GWAS on ultrasound-assessed carotid plaques identified both shared and non-shared loci with SIS. In two-sample Mendelian randomization studies using SIS-associated markers in UK Biobank and CARDIoGRAMplusC4D, one extra coronary segment with atherosclerosis corresponded to 1.8-fold increased odds of myocardial infarction. This GWAS data can aid future studies of causal pathways in ASCVD.",
-          "url": "https://doi.org/10.1038/s41467-025-57457-7"
-        },
-        {
-          "id": "MED:40065166",
-          "title": "Family-based genome-wide association study designs for increased power and robustness.",
-          "method": "",
-          "authors": "Guan J, Tan T, Nehzati SM, Bennett M, Turley P, Benjamin DJ, Young AS.",
-          "journal": "Nature genetics",
-          "year": "2025",
-          "date": "2025-03-10",
-          "doi": "10.1038/s41588-025-02118-0",
-          "cited": 18,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC11985344?pdf=render",
-          "keywords": [
-            "Genome-Wide Association Study"
-          ],
-          "tasks": [
-            "variant-calling",
-            "gwas",
-            "ancestry",
-            "polygenic"
-          ],
-          "datasets": [
-            "db:ukbiobank"
-          ],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Family-based genome-wide association studies (FGWASs) use random, within-family genetic variation to remove confounding from estimates of direct genetic effects (DGEs). Here we introduce a 'unified estimator' that includes individuals without genotyped relatives, unifying standard and FGWAS while increasing power for DGE estimation. We also introduce a 'robust estimator' that is not biased in structured and/or admixed populations. In an analysis of 19 phenotypes in the UK Biobank, the unified estimator in the White British subsample and the robust estimator (applied without ancestry restrictions) increased the effective sample size for DGEs by 46.9% to 106.5% and 10.3% to 21.0%, respectively, compared to using genetic differences between siblings. Polygenic predictors derived from the unified estimator demonstrated superior out-of-sample prediction ability compared to other family-based methods. We implemented the methods in the software package snipar in an efficient linear mixed model that accounts for sample relatedness and sibling shared environment.",
-          "url": "https://doi.org/10.1038/s41588-025-02118-0"
+          "abstract": "Human genetic variation influences all aspects of our biology, including the oral cavity 1-3 , through which nutrients and microbes enter the body. Yet it is largely unknown which human genetic variants shape a person's oral microbiome and potentially promote its dysbiosis 3-5 . We characterized the oral microbiomes of 12,519 people by re-analysing whole-genome sequencing reads from previously sequenced saliva-derived DNA. Human genetic variation at 11 loci (10 new) associated with variation in oral microbiome composition. Several of these related to carbohydrate availability; the strongest association (P = 3.0 × 10 -188 ) involved the common FUT2 W154X loss-of-function variant, which associated with the abundances of 58 bacterial species. Human host genetics also seemed to powerfully shape genetic variation in oral bacterial species: these 11 host genetic variants also associated with variation of gene dosages in 68 regions of bacterial genomes. Common, multi-allelic copy number variation of AMY1, which encodes salivary amylase, associated with oral microbiome composition (P = 1.5 × 10 -53 ) and with dentures use in UK Biobank (P = 5.9 × 10 -35 , n = 418,039) but not with body mass index (P = 0.85), suggesting that salivary amylase abundance impacts health by influencing the oral microbiome. Two other microbiome composition-associated loci, FUT2 and PITX1, also significantly associated with dentures risk, collectively nominating numerous host-microbial interactions that contribute to tooth decay.",
+          "url": "https://doi.org/10.1038/s41586-025-10037-7"
         }
       ]
     },
@@ -4451,6 +4453,29 @@
           "url": "https://doi.org/10.3390/cells14080562"
         },
         {
+          "id": "MED:40604087",
+          "title": "Mucin-1: a promising pan-cancer therapeutic target.",
+          "method": "Mucin-1",
+          "authors": "Grewal US, Kurzrock R.",
+          "journal": "NPJ precision oncology",
+          "year": "2025",
+          "date": "2025-07-02",
+          "doi": "10.1038/s41698-025-01016-2",
+          "cited": 42,
+          "license": "cc by-nc-nd",
+          "pdf": "https://europepmc.org/articles/PMC12223159?pdf=render",
+          "keywords": [],
+          "tasks": [
+            "heterogeneity"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Mucin1 or MUC1 (also known as CD227, EMA, MCD, MAM6, PEM, PUM, KL-6, CA 27.29/CA 15-3) is a highly glycosylated transmembrane mucin family member protein that is overexpressed in various solid or hematological cancers. Abnormal MUC1 expression/glycosylation in cancer leads to the activation of multiple pathways, resulting in tumor migration, invasion and accelerated growth. CA 27.29/CA 15-3 are blood tumor markers used in breast cancer patients. Novel therapeutic agents targeting MUC1, including cancer vaccines, cellular therapies, radiopharmaceuticals, monoclonal antibodies and antibody-drug conjugates, are being explored in clinical studies. The current review summarizes the molecular mechanisms of MUC1 in cancer and highlights existing data for MUC1-targeting agents in the therapeutic pipeline.",
+          "url": "https://doi.org/10.1038/s41698-025-01016-2"
+        },
+        {
           "id": "MED:39558175",
           "title": "scCancerExplorer: a comprehensive database for interactively exploring single-cell multi-omics data of human pan-cancer.",
           "method": "scCancerExplorer",
@@ -4504,29 +4529,6 @@
           ],
           "abstract": "The tumor microenvironment evolves during tumor development and influences the cells in the microenvironment to orchestrate a supportive environment for tumor growth. Here we collected 4,483,367 cells across 36 cancer types and constructed a pan-cancer resource named TabulaTIME. Our integrated analyses reveal that CTHRC1 is a hallmark of extracellular matrix-related cancer-associated fibroblasts (CAFs) that are enriched in different cancer types. Spatiotemporal analyses further indicated that CTHRC1 + CAFs are located at the leading edge between the malignant and normal regions, potentially preventing immune infiltration. Moreover, we identified that SLPI + macrophages exhibit profibrotic-associated phenotypes and colocalize with CTHRC1 + CAFs to form unique spatial ecotypes. Finally, we demonstrated that TabulaTIME can be used to analyze tumor ecotype composition and can serve as a reference for cell-type annotation. This work establishes a comprehensive single-cell landscape of the heterogenous TME and offers a potential therapeutic strategy for targeting the profibrotic ecotype in cancer treatment.",
           "url": "https://doi.org/10.1038/s43018-025-01039-5"
-        },
-        {
-          "id": "MED:40604087",
-          "title": "Mucin-1: a promising pan-cancer therapeutic target.",
-          "method": "Mucin-1",
-          "authors": "Grewal US, Kurzrock R.",
-          "journal": "NPJ precision oncology",
-          "year": "2025",
-          "date": "2025-07-02",
-          "doi": "10.1038/s41698-025-01016-2",
-          "cited": 37,
-          "license": "cc by-nc-nd",
-          "pdf": "https://europepmc.org/articles/PMC12223159?pdf=render",
-          "keywords": [],
-          "tasks": [
-            "heterogeneity"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Mucin1 or MUC1 (also known as CD227, EMA, MCD, MAM6, PEM, PUM, KL-6, CA 27.29/CA 15-3) is a highly glycosylated transmembrane mucin family member protein that is overexpressed in various solid or hematological cancers. Abnormal MUC1 expression/glycosylation in cancer leads to the activation of multiple pathways, resulting in tumor migration, invasion and accelerated growth. CA 27.29/CA 15-3 are blood tumor markers used in breast cancer patients. Novel therapeutic agents targeting MUC1, including cancer vaccines, cellular therapies, radiopharmaceuticals, monoclonal antibodies and antibody-drug conjugates, are being explored in clinical studies. The current review summarizes the molecular mechanisms of MUC1 in cancer and highlights existing data for MUC1-targeting agents in the therapeutic pipeline.",
-          "url": "https://doi.org/10.1038/s41698-025-01016-2"
         },
         {
           "id": "MED:40095483",
@@ -4632,7 +4634,7 @@
           "year": "2025",
           "date": "2025-05-08",
           "doi": "10.3389/fimmu.2025.1584350",
-          "cited": 30,
+          "cited": 32,
           "license": "cc by",
           "pdf": "https://europepmc.org/articles/PMC12095158?pdf=render",
           "keywords": [
@@ -4873,6 +4875,35 @@
           ],
           "abstract": "Background In recent years, large language models (LLMs) have shown promise in various domains, notably in biomedical sciences. However, their real-world application is often limited by issues like erroneous outputs and hallucinatory responses. Results We developed the knowledge graph-based thought (KGT) framework, an innovative solution that integrates LLMs with knowledge graphs (KGs) to improve their initial responses by utilizing verifiable information from KGs, thus significantly reducing factual errors in reasoning. The KGT framework demonstrates strong adaptability and performs well across various open-source LLMs. Notably, KGT can facilitate the discovery of new uses for existing drugs through potential drug-cancer associations and can assist in predicting resistance by analyzing relevant biomarkers and genetic mechanisms. To evaluate the knowledge graph question answering task within biomedicine, we utilize a pan-cancer knowledge graph to develop a pan-cancer question answering benchmark, named pan-cancer question answering. Conclusions The KGT framework substantially improves the accuracy and utility of LLMs in the biomedical field. This study serves as a proof of concept, demonstrating its exceptional performance in biomedical question answering.",
           "url": "https://doi.org/10.1093/gigascience/giae082"
+        },
+        {
+          "id": "MED:40149360",
+          "title": "Tumor Heterogeneity and the Immune Response in Non-Small Cell Lung Cancer: Emerging Insights and Implications for Immunotherapy.",
+          "method": "",
+          "authors": "Oh MS, Abascal J, Rennels AK, Salehi-Rad R, Dubinett SM, Liu B.",
+          "journal": "Cancers",
+          "year": "2025",
+          "date": "2025-03-19",
+          "doi": "10.3390/cancers17061027",
+          "cited": 25,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC11941341?pdf=render",
+          "keywords": [
+            "Heterogeneity",
+            "Immunotherapy",
+            "Non-small cell lung cancer",
+            "Tumor Evolution"
+          ],
+          "tasks": [
+            "heterogeneity",
+            "drug-response"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Resistance to immune checkpoint inhibitors (ICIs) represents a major challenge for the effective treatment of non-small cell lung cancer (NSCLC). Tumor heterogeneity has been identified as an important mechanism of treatment resistance in cancer and has been increasingly implicated in ICI resistance. The diversity and clonality of tumor neoantigens, which represent the target epitopes for tumor-specific immune cells, have been shown to impact the efficacy of immunotherapy. Advances in genomic techniques have further enhanced our understanding of clonal landscapes within NSCLC and their evolution in response to therapy. In this review, we examine the role of tumor heterogeneity during immune surveillance in NSCLC and highlight its spatial and temporal evolution as revealed by modern technologies. We explore additional sources of heterogeneity, including epigenetic and metabolic factors, that have come under greater scrutiny as potential mediators of the immune response. We finally discuss the implications of tumor heterogeneity on the efficacy of ICIs and highlight potential strategies for overcoming therapeutic resistance.",
+          "url": "https://doi.org/10.3390/cancers17061027"
         },
         {
           "id": "MED:40120098",
@@ -5121,42 +5152,6 @@
           ],
           "abstract": "Breast cancer is a leading cause of cancer-related mortality, with tumor heterogeneity and drug resistance posing significant challenges to treatment. We integrated single-cell RNA sequencing, spatial transcriptomics, and bulk RNA-seq deconvolution to analyze BRCA samples. Our analysis identified 15 major cell clusters, including neoplastic epithelial, immune, stromal, and endothelial populations. Notably, low-grade tumors showed enriched subtypes, such as CXCR4+ fibroblasts, IGKC+ myeloid cells, and CLU+ endothelial cells, with distinct spatial localization and immune-modulatory functions. These subtypes were paradoxically linked to reduced immunotherapy responsiveness, despite their association with favorable clinical features. High-grade tumors exhibited reprogrammed intercellular communication, with expanded MDK and Galectin signaling. Bulk RNA-seq deconvolution further supported the prognostic significance of low-grade-enriched subtypes. Our findings highlight the heterogeneity of the tumor microenvironment and provide new insights into immune evasion and therapeutic resistance in breast cancer.",
           "url": "https://doi.org/10.1038/s41746-025-01967-7"
-        },
-        {
-          "id": "MED:39749323",
-          "title": "Spatial transcriptomics in breast cancer: providing insight into tumor heterogeneity and promoting individualized therapy.",
-          "method": "",
-          "authors": "An J, Lu Y, Chen Y, Chen Y, Zhou Z, Chen J, Peng C, Huang R, Peng F.",
-          "journal": "Frontiers in immunology",
-          "year": "2024",
-          "date": "2024-12-19",
-          "doi": "10.3389/fimmu.2024.1499301",
-          "cited": 21,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC11693744?pdf=render",
-          "keywords": [
-            "Heterogeneity",
-            "Breast cancer",
-            "Tumor Microenvironment",
-            "Spatial Transcriptomics",
-            "Individualized Precise Treatment",
-            "Breast Neoplasms",
-            "Gene Expression Profiling",
-            "Tumor Microenvironment",
-            "Transcriptome",
-            "Precision Medicine"
-          ],
-          "tasks": [
-            "heterogeneity",
-            "subtyping",
-            "drug-response"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "A comprehensive understanding of tumor heterogeneity, tumor microenvironment and the mechanisms of drug resistance is fundamental to advancing breast cancer research. While single-cell RNA sequencing has resolved the issue of \"temporal dynamic expression\" of genes at the single-cell level, the lack of spatial information still prevents us from gaining a comprehensive understanding of breast cancer. The introduction and application of spatial transcriptomics addresses this limitation. As the annual technical method of 2020, spatial transcriptomics preserves the spatial location of tissues and resolves RNA-seq data to help localize and differentiate the active expression of functional genes within a specific tissue region, enabling the study of spatial location attributes of gene locations and cellular tissue environments. In the context of breast cancer, spatial transcriptomics can assist in the identification of novel breast cancer subtypes and spatially discriminative features that show promise for individualized precise treatment. This article summarized the key technical approaches, recent advances in spatial transcriptomics and its applications in breast cancer, and discusses the limitations of current spatial transcriptomics methods and the prospects for future development, with a view to advancing the application of this technology in clinical practice.",
-          "url": "https://doi.org/10.3389/fimmu.2024.1499301"
         }
       ]
     },
@@ -5821,7 +5816,7 @@
           "year": "2019",
           "date": "2019-12-16",
           "doi": "10.1186/s13059-019-1910-1",
-          "cited": 1818,
+          "cited": 1844,
           "license": "cc by",
           "pdf": "https://genomebiology.biomedcentral.com/track/pdf/10.1186/s13059-019-1910-1",
           "keywords": [
@@ -6023,6 +6018,32 @@
           "url": "https://doi.org/10.1038/s41588-025-02080-x"
         },
         {
+          "id": "MED:41145665",
+          "title": "Improved reconstruction of single-cell developmental potential with CytoTRACE 2.",
+          "method": "",
+          "authors": "Kang M, Gulati GS, Brown EL, Qi Z, Avagyan S, Armenteros JJA, Gleyzer R, Zhang W, Steen CB, D'Silva JP, Schwab J, Clarke MF, Chaudhuri AA, Newman AM.",
+          "journal": "Nature methods",
+          "year": "2025",
+          "date": "2025-10-27",
+          "doi": "10.1038/s41592-025-02857-2",
+          "cited": 157,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC12615260?pdf=render",
+          "keywords": [
+            "Sequence Analysis, RNA",
+            "Cell Differentiation",
+            "Single-Cell Analysis",
+            "Deep Learning"
+          ],
+          "tasks": [],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "While single-cell RNA sequencing has advanced our understanding of cell fate, identifying molecular hallmarks of potency-a cell's ability to differentiate into other cell types-remains a challenge. Here we introduce CytoTRACE 2, an interpretable deep learning framework for predicting absolute developmental potential from single-cell RNA sequencing data. Across diverse platforms and tissues, CytoTRACE 2 outperformed previous methods in predicting developmental hierarchies, enabling detailed mapping of single-cell differentiation landscapes and expanding insights into cell potency.",
+          "url": "https://doi.org/10.1038/s41592-025-02857-2"
+        },
+        {
           "id": "MED:41168487",
           "title": "Nicheformer: a foundation model for single-cell and spatial omics.",
           "method": "Nicheformer",
@@ -6079,32 +6100,6 @@
           ],
           "abstract": "Despite significant advancements in sample preparation, instrumentation and data analysis, single-cell proteomics is currently limited by proteomic depth and quantitative performance. Here we demonstrate highly improved depth of proteome coverage as well as accuracy and precision for quantification of ultra-low input amounts. Using a tailored library, we identify up to 7,400 protein groups from as little as 250 pg of HeLa cell peptides at a throughput of 50 samples per day. Using a two-proteome mix, we check for optimal parameters of quantification and show that fold change differences of 2 can still be successfully determined at single-cell-level inputs. Eventually, we apply our workflow to A549 cells, yielding a proteome coverage ranging from 1,801 to a maximum of >5,300 protein groups from a single cell depending on cell size and search strategy used, which allows for the study of dependencies between cell size and cell cycle phase. Additionally, our workflow enables us to distinguish between in vitro analogs of two human blastocyst lineages: naive human pluripotent stem cells (epiblast) and trophectoderm-like cells. Our data harmoniously align with transcriptomic data, indicating that single-cell proteomics possesses the capability to identify biologically relevant differences within the blastocyst.",
           "url": "https://doi.org/10.1038/s41592-024-02559-1"
-        },
-        {
-          "id": "MED:41145665",
-          "title": "Improved reconstruction of single-cell developmental potential with CytoTRACE 2.",
-          "method": "",
-          "authors": "Kang M, Gulati GS, Brown EL, Qi Z, Avagyan S, Armenteros JJA, Gleyzer R, Zhang W, Steen CB, D'Silva JP, Schwab J, Clarke MF, Chaudhuri AA, Newman AM.",
-          "journal": "Nature methods",
-          "year": "2025",
-          "date": "2025-10-27",
-          "doi": "10.1038/s41592-025-02857-2",
-          "cited": 140,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC12615260?pdf=render",
-          "keywords": [
-            "Sequence Analysis, RNA",
-            "Cell Differentiation",
-            "Single-Cell Analysis",
-            "Deep Learning"
-          ],
-          "tasks": [],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "While single-cell RNA sequencing has advanced our understanding of cell fate, identifying molecular hallmarks of potency-a cell's ability to differentiate into other cell types-remains a challenge. Here we introduce CytoTRACE 2, an interpretable deep learning framework for predicting absolute developmental potential from single-cell RNA sequencing data. Across diverse platforms and tissues, CytoTRACE 2 outperformed previous methods in predicting developmental hierarchies, enabling detailed mapping of single-cell differentiation landscapes and expanding insights into cell potency.",
-          "url": "https://doi.org/10.1038/s41592-025-02857-2"
         },
         {
           "id": "MED:39747812",
@@ -6256,6 +6251,33 @@
           "url": "https://doi.org/10.1038/s41590-024-02059-6"
         },
         {
+          "id": "MED:41266321",
+          "title": "Systematic benchmarking of imaging spatial transcriptomics platforms in FFPE tissues.",
+          "method": "",
+          "authors": "Wang H, Huang R, Nelson J, Gao C, Tran M, Yeaton A, Krishna S, Felt K, Pfaff KL, Bowman T, Rodig SJ, Wei K, Goods BA, Farhi SL.",
+          "journal": "Nature communications",
+          "year": "2025",
+          "date": "2025-11-20",
+          "doi": "10.1038/s41467-025-64990-y",
+          "cited": 109,
+          "license": "cc by-nc-nd",
+          "pdf": "https://europepmc.org/articles/PMC12635344?pdf=render",
+          "keywords": [
+            "Tissue Array Analysis",
+            "Spatial Transcriptomics"
+          ],
+          "tasks": [
+            "clustering",
+            "spatial"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Emerging imaging spatial transcriptomics (iST) platforms and coupled analytical methods can recover cell-to-cell interactions, groups of spatially covarying genes, and gene signatures associated with pathological features, and are thus particularly well-suited for applications in formalin fixed paraffin embedded (FFPE) tissues. Here, we benchmark the performance of three commercial iST platforms-10X Xenium, Vizgen MERSCOPE, and Nanostring CosMx-on serial sections from tissue microarrays (TMAs) containing 17 tumor and 16 normal tissue types for both relative technical and biological performance. On matched genes, we find that Xenium consistently generates higher transcript counts per gene without sacrificing specificity. Xenium and CosMx measure RNA transcripts in concordance with orthogonal single-cell transcriptomics. All three platforms can perform spatially resolved cell typing with varying degrees of sub-clustering capabilities, with Xenium and CosMx finding slightly more clusters than MERSCOPE, albeit with different false discovery rates and cell segmentation error frequencies. Taken together, our analyses provide a comprehensive benchmark to guide the choice of iST method as researchers design studies with precious samples in this rapidly evolving field.",
+          "url": "https://doi.org/10.1038/s41467-025-64990-y"
+        },
+        {
           "id": "MED:40442373",
           "title": "A visual-omics foundation model to bridge histopathology with spatial transcriptomics.",
           "method": "",
@@ -6264,7 +6286,7 @@
           "year": "2025",
           "date": "2025-05-29",
           "doi": "10.1038/s41592-025-02707-1",
-          "cited": 107,
+          "cited": 109,
           "license": "cc by",
           "pdf": "https://europepmc.org/articles/PMC12240810?pdf=render",
           "keywords": [
@@ -6284,6 +6306,34 @@
           ],
           "abstract": "Artificial intelligence has revolutionized computational biology. Recent developments in omics technologies, including single-cell RNA sequencing and spatial transcriptomics, provide detailed genomic data alongside tissue histology. However, current computational models focus on either omics or image analysis, lacking their integration. To address this, we developed OmiCLIP, a visual-omics foundation model linking hematoxylin and eosin images and transcriptomics using tissue patches from Visium data. We transformed transcriptomic data into 'sentences' by concatenating top-expressed gene symbols from each patch. We curated a dataset of 2.2 million paired tissue images and transcriptomic data across 32 organs to train OmiCLIP integrating histology and transcriptomics. Building on OmiCLIP, our Loki platform offers five key functions: tissue alignment, annotation via bulk RNA sequencing or marker genes, cell-type decomposition, image-transcriptomics retrieval and spatial transcriptomics gene expression prediction from hematoxylin and eosin-stained images. Compared with 22 state-of-the-art models on 5 simulations, and 19 public and 4 in-house experimental datasets, Loki demonstrated consistent accuracy and robustness.",
           "url": "https://doi.org/10.1038/s41592-025-02707-1"
+        },
+        {
+          "id": "MED:40369074",
+          "title": "Spatial transcriptomics reveals human cortical layer and area specification.",
+          "method": "",
+          "authors": "Qian X, Coleman K, Jiang S, Kriz AJ, Marciano JH, Luo C, Cai C, Manam MD, Caglayan E, Lai A, Exposito-Alonso D, Otani A, Ghosh U, Shao DD, Andersen RE, Neil JE, Johnson R, LeFevre A, Hecht JL, Micali N, Sestan N, Rakic P, Miller MB, Sun L, Stringer C, Li M, Walsh CA.",
+          "journal": "Nature",
+          "year": "2025",
+          "date": "2025-05-14",
+          "doi": "10.1038/s41586-025-09010-1",
+          "cited": 106,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC12328223?pdf=render",
+          "keywords": [
+            "Cerebral Cortex",
+            "Gene Expression Profiling",
+            "Transcriptome"
+          ],
+          "tasks": [
+            "integration",
+            "spatial"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "The human cerebral cortex is composed of six layers and dozens of areas that are molecularly and structurally distinct 1-4 . Although single-cell transcriptomic studies have advanced the molecular characterization of human cortical development, a substantial gap exists owing to the loss of spatial context during cell dissociation 5-8 . Here we used multiplexed error-robust fluorescence in situ hybridization (MERFISH) 9 , augmented with deep-learning-based nucleus segmentation, to examine the molecular, cellular and cytoarchitectural development of the human fetal cortex with spatially resolved single-cell resolution. Our extensive spatial atlas, encompassing more than 18 million single cells, spans eight cortical areas across seven developmental time points. We uncovered the early establishment of the six-layer structure, identifiable by the laminar distribution of excitatory neuron subtypes, 3 months before the emergence of cytoarchitectural layers. Notably, we discovered two distinct modes of cortical areal specification during mid-gestation: (1) a continuous, gradual transition observed across most cortical areas along the anterior-posterior axis and (2) a discrete, abrupt boundary specifically identified between the primary (V1) and secondary (V2) visual cortices as early as gestational week 20. This sharp binary transition in V1-V2 neuronal subtypes challenges the notion that mid-gestation cortical arealization involves only gradient-like transitions 6,10 . Furthermore, integrating single-nucleus RNA sequencing with MERFISH revealed an early upregulation of synaptogenesis in V1-specific layer 4 neurons. Collectively, our findings underscore the crucial role of spatial relationships in determining the molecular specification of cortical layers and areas. This study establishes a spatially resolved single-cell analysis paradigm and paves the way for the construction of a comprehensive developmental atlas of the human brain.",
+          "url": "https://doi.org/10.1038/s41586-025-09010-1"
         },
         {
           "id": "MED:41107232",
@@ -6312,34 +6362,6 @@
           ],
           "abstract": "Recent advancements in spatial transcriptomics technologies have significantly enhanced resolution and throughput, underscoring an urgent need for systematic benchmarking. Here, we generate serial tissue sections from colon adenocarcinoma, hepatocellular carcinoma, and ovarian cancer samples for systematic evaluation. Using these uniformly processed samples, we generate spatial transcriptomics data across four high-throughput platforms with subcellular resolution: Stereo-seq v1.3, Visium HD FFPE, CosMx 6K, and Xenium 5K. To establish ground truth datasets, we profile proteins on tissue sections adjacent to all platforms using CODEX and perform single-cell RNA sequencing on the same samples. Leveraging manual nuclear segmentation and detailed annotations, we systematically assess each platform's performance across capture sensitivity, specificity, diffusion control, cell segmentation, cell annotation, spatial clustering, and concordance with adjacent CODEX. The uniformly generated and processed multi-omics dataset could advance computational method development and biological discoveries. The dataset is accessible via SPATCH, a user-friendly web server for visualization and download.",
           "url": "https://doi.org/10.1038/s41467-025-64292-3"
-        },
-        {
-          "id": "MED:40369074",
-          "title": "Spatial transcriptomics reveals human cortical layer and area specification.",
-          "method": "",
-          "authors": "Qian X, Coleman K, Jiang S, Kriz AJ, Marciano JH, Luo C, Cai C, Manam MD, Caglayan E, Lai A, Exposito-Alonso D, Otani A, Ghosh U, Shao DD, Andersen RE, Neil JE, Johnson R, LeFevre A, Hecht JL, Micali N, Sestan N, Rakic P, Miller MB, Sun L, Stringer C, Li M, Walsh CA.",
-          "journal": "Nature",
-          "year": "2025",
-          "date": "2025-05-14",
-          "doi": "10.1038/s41586-025-09010-1",
-          "cited": 102,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC12328223?pdf=render",
-          "keywords": [
-            "Cerebral Cortex",
-            "Gene Expression Profiling",
-            "Transcriptome"
-          ],
-          "tasks": [
-            "integration",
-            "spatial"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "The human cerebral cortex is composed of six layers and dozens of areas that are molecularly and structurally distinct 1-4 . Although single-cell transcriptomic studies have advanced the molecular characterization of human cortical development, a substantial gap exists owing to the loss of spatial context during cell dissociation 5-8 . Here we used multiplexed error-robust fluorescence in situ hybridization (MERFISH) 9 , augmented with deep-learning-based nucleus segmentation, to examine the molecular, cellular and cytoarchitectural development of the human fetal cortex with spatially resolved single-cell resolution. Our extensive spatial atlas, encompassing more than 18 million single cells, spans eight cortical areas across seven developmental time points. We uncovered the early establishment of the six-layer structure, identifiable by the laminar distribution of excitatory neuron subtypes, 3 months before the emergence of cytoarchitectural layers. Notably, we discovered two distinct modes of cortical areal specification during mid-gestation: (1) a continuous, gradual transition observed across most cortical areas along the anterior-posterior axis and (2) a discrete, abrupt boundary specifically identified between the primary (V1) and secondary (V2) visual cortices as early as gestational week 20. This sharp binary transition in V1-V2 neuronal subtypes challenges the notion that mid-gestation cortical arealization involves only gradient-like transitions 6,10 . Furthermore, integrating single-nucleus RNA sequencing with MERFISH revealed an early upregulation of synaptogenesis in V1-specific layer 4 neurons. Collectively, our findings underscore the crucial role of spatial relationships in determining the molecular specification of cortical layers and areas. This study establishes a spatially resolved single-cell analysis paradigm and paves the way for the construction of a comprehensive developmental atlas of the human brain.",
-          "url": "https://doi.org/10.1038/s41586-025-09010-1"
         },
         {
           "id": "MED:40346362",
@@ -6467,31 +6489,33 @@
           "url": "https://doi.org/10.3389/abp.2025.13922"
         },
         {
-          "id": "MED:41266321",
-          "title": "Systematic benchmarking of imaging spatial transcriptomics platforms in FFPE tissues.",
+          "id": "MED:40307555",
+          "title": "Single-cell transcriptomics reveal how root tissues adapt to soil stress.",
           "method": "",
-          "authors": "Wang H, Huang R, Nelson J, Gao C, Tran M, Yeaton A, Krishna S, Felt K, Pfaff KL, Bowman T, Rodig SJ, Wei K, Goods BA, Farhi SL.",
-          "journal": "Nature communications",
+          "authors": "Zhu M, Hsu CW, Peralta Ogorek LL, Taylor IW, La Cavera S, Oliveira DM, Verma L, Mehra P, Mijar M, Sadanandom A, Perez-Cota F, Boerjan W, Nolan TM, Bennett MJ, Benfey PN, Pandey BK.",
+          "journal": "Nature",
           "year": "2025",
-          "date": "2025-11-20",
-          "doi": "10.1038/s41467-025-64990-y",
+          "date": "2025-04-30",
+          "doi": "10.1038/s41586-025-08941-z",
           "cited": 89,
-          "license": "cc by-nc-nd",
-          "pdf": "https://europepmc.org/articles/PMC12635344?pdf=render",
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC12176638?pdf=render",
           "keywords": [
-            "Tissue Array Analysis",
-            "Spatial Transcriptomics"
+            "Plant Roots",
+            "Soil",
+            "Single-Cell Analysis",
+            "Transcriptome",
+            "Oryza"
           ],
           "tasks": [
-            "clustering",
             "spatial"
           ],
           "datasets": [],
           "lists": [
             "recent"
           ],
-          "abstract": "Emerging imaging spatial transcriptomics (iST) platforms and coupled analytical methods can recover cell-to-cell interactions, groups of spatially covarying genes, and gene signatures associated with pathological features, and are thus particularly well-suited for applications in formalin fixed paraffin embedded (FFPE) tissues. Here, we benchmark the performance of three commercial iST platforms-10X Xenium, Vizgen MERSCOPE, and Nanostring CosMx-on serial sections from tissue microarrays (TMAs) containing 17 tumor and 16 normal tissue types for both relative technical and biological performance. On matched genes, we find that Xenium consistently generates higher transcript counts per gene without sacrificing specificity. Xenium and CosMx measure RNA transcripts in concordance with orthogonal single-cell transcriptomics. All three platforms can perform spatially resolved cell typing with varying degrees of sub-clustering capabilities, with Xenium and CosMx finding slightly more clusters than MERSCOPE, albeit with different false discovery rates and cell segmentation error frequencies. Taken together, our analyses provide a comprehensive benchmark to guide the choice of iST method as researchers design studies with precious samples in this rapidly evolving field.",
-          "url": "https://doi.org/10.1038/s41467-025-64990-y"
+          "abstract": "Land plants thrive in soils showing vastly different properties and environmental stresses 1 . Root systems can adapt to contrasting soil conditions and stresses, yet how their responses are programmed at the individual cell scale remains unclear. Using single-cell RNA sequencing and spatial transcriptomic approaches, we showed major expression changes in outer root cell types when comparing the single-cell transcriptomes of rice roots grown in gel versus soil conditions. These tissue-specific transcriptional responses are related to nutrient homeostasis, cell wall integrity and defence in response to heterogeneous soil versus homogeneous gel growth conditions. We also demonstrate how the model soil stress, termed compaction, triggers expression changes in cell wall remodelling and barrier formation in outer and inner root tissues, regulated by abscisic acid released from phloem cells. Our study reveals how root tissues communicate and adapt to contrasting soil conditions at single-cell resolution.",
+          "url": "https://doi.org/10.1038/s41586-025-08941-z"
         },
         {
           "id": "MED:39833687",
@@ -6580,35 +6604,6 @@
           ],
           "abstract": "Senescent cells accumulate in most tissues with organismal aging, exposure to stressors, or disease progression. It is challenging to identify senescent cells because cellular senescence signatures and phenotypes vary widely across distinct cell types and tissues. Here we developed an analytical algorithm that defines cell-type-specific and universal signatures of cellular senescence across a wide range of cell types and tissues. We utilize 72 mouse and 64 human weighted single-cell transcriptomic signatures of cellular senescence to create the SenePy scoring platform. SenePy signatures better recapitulate in vivo cellular senescence than signatures derived from in vitro senescence studies. We use SenePy to map the kinetics of senescent cell accumulation in healthy aging as well as multiple disease contexts, including tumorigenesis, inflammation, and myocardial infarction. SenePy characterizes cell-type-specific in vivo cellular senescence and could lead to the identification of genes that serve as mediators of cellular senescence and disease progression.",
           "url": "https://doi.org/10.1038/s41467-025-57047-7"
-        },
-        {
-          "id": "MED:40307555",
-          "title": "Single-cell transcriptomics reveal how root tissues adapt to soil stress.",
-          "method": "",
-          "authors": "Zhu M, Hsu CW, Peralta Ogorek LL, Taylor IW, La Cavera S, Oliveira DM, Verma L, Mehra P, Mijar M, Sadanandom A, Perez-Cota F, Boerjan W, Nolan TM, Bennett MJ, Benfey PN, Pandey BK.",
-          "journal": "Nature",
-          "year": "2025",
-          "date": "2025-04-30",
-          "doi": "10.1038/s41586-025-08941-z",
-          "cited": 85,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC12176638?pdf=render",
-          "keywords": [
-            "Plant Roots",
-            "Soil",
-            "Single-Cell Analysis",
-            "Transcriptome",
-            "Oryza"
-          ],
-          "tasks": [
-            "spatial"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Land plants thrive in soils showing vastly different properties and environmental stresses 1 . Root systems can adapt to contrasting soil conditions and stresses, yet how their responses are programmed at the individual cell scale remains unclear. Using single-cell RNA sequencing and spatial transcriptomic approaches, we showed major expression changes in outer root cell types when comparing the single-cell transcriptomes of rice roots grown in gel versus soil conditions. These tissue-specific transcriptional responses are related to nutrient homeostasis, cell wall integrity and defence in response to heterogeneous soil versus homogeneous gel growth conditions. We also demonstrate how the model soil stress, termed compaction, triggers expression changes in cell wall remodelling and barrier formation in outer and inner root tissues, regulated by abscisic acid released from phloem cells. Our study reveals how root tissues communicate and adapt to contrasting soil conditions at single-cell resolution.",
-          "url": "https://doi.org/10.1038/s41586-025-08941-z"
         },
         {
           "id": "MED:39592577",
@@ -7315,7 +7310,7 @@
           "year": "2007",
           "date": "2007-05-03",
           "doi": "10.1093/nar/gkm251",
-          "cited": 574,
+          "cited": 576,
           "license": "cc by-nc",
           "pdf": "https://europepmc.org/articles/PMC1904280?pdf=render",
           "keywords": [
@@ -7362,6 +7357,36 @@
           "url": "https://doi.org/10.1093/nar/gki410"
         },
         {
+          "id": "MED:37563329",
+          "title": "Genome-wide prediction of disease variant effects with a deep protein language model.",
+          "method": "",
+          "authors": "Brandes N, Goldman G, Wang CH, Ye CJ, Ntranos V.",
+          "journal": "Nature genetics",
+          "year": "2023",
+          "date": "2023-08-10",
+          "doi": "10.1038/s41588-023-01465-0",
+          "cited": 478,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC10484790?pdf=render",
+          "keywords": [
+            "Computational Biology",
+            "Software"
+          ],
+          "tasks": [
+            "fitness",
+            "language-model",
+            "complexes"
+          ],
+          "datasets": [
+            "db:clinvar"
+          ],
+          "lists": [
+            "classic"
+          ],
+          "abstract": "Predicting the effects of coding variants is a major challenge. While recent deep-learning models have improved variant effect prediction accuracy, they cannot analyze all coding variants due to dependency on close homologs or software limitations. Here we developed a workflow using ESM1b, a 650-million-parameter protein language model, to predict all ~450 million possible missense variant effects in the human genome, and made all predictions available on a web portal. ESM1b outperformed existing methods in classifying ~150,000 ClinVar/HGMD missense variants as pathogenic or benign and predicting measurements across 28 deep mutational scan datasets. We further annotated ~2 million variants as damaging only in specific protein isoforms, demonstrating the importance of considering all isoforms when predicting variant effects. Our approach also generalizes to more complex coding variants such as in-frame indels and stop-gains. Together, these results establish protein language models as an effective, accurate and general approach to predicting variant effects.",
+          "url": "https://doi.org/10.1038/s41588-023-01465-0"
+        },
+        {
           "id": "MED:28472402",
           "title": "COFACTOR: improved protein function prediction by combining structure, sequence and protein-protein interaction information.",
           "method": "COFACTOR",
@@ -7391,36 +7416,6 @@
           ],
           "abstract": "The COFACTOR web server is a unified platform for structure-based multiple-level protein function predictions. By structurally threading low-resolution structural models through the BioLiP library, the COFACTOR server infers three categories of protein functions including gene ontology, enzyme commission and ligand-binding sites from various analogous and homologous function templates. Here, we report recent improvements of the COFACTOR server in the development of new pipelines to infer functional insights from sequence profile alignments and protein-protein interaction networks. Large-scale benchmark tests show that the new hybrid COFACTOR approach significantly improves the function annotation accuracy of the former structure-based pipeline and other state-of-the-art functional annotation methods, particularly for targets that have no close homology templates. The updated COFACTOR server and the template libraries are available at http://zhanglab.ccmb.med.umich.edu/COFACTOR/.",
           "url": "https://doi.org/10.1093/nar/gkx366"
-        },
-        {
-          "id": "MED:37563329",
-          "title": "Genome-wide prediction of disease variant effects with a deep protein language model.",
-          "method": "",
-          "authors": "Brandes N, Goldman G, Wang CH, Ye CJ, Ntranos V.",
-          "journal": "Nature genetics",
-          "year": "2023",
-          "date": "2023-08-10",
-          "doi": "10.1038/s41588-023-01465-0",
-          "cited": 467,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC10484790?pdf=render",
-          "keywords": [
-            "Computational Biology",
-            "Software"
-          ],
-          "tasks": [
-            "fitness",
-            "language-model",
-            "complexes"
-          ],
-          "datasets": [
-            "db:clinvar"
-          ],
-          "lists": [
-            "classic"
-          ],
-          "abstract": "Predicting the effects of coding variants is a major challenge. While recent deep-learning models have improved variant effect prediction accuracy, they cannot analyze all coding variants due to dependency on close homologs or software limitations. Here we developed a workflow using ESM1b, a 650-million-parameter protein language model, to predict all ~450 million possible missense variant effects in the human genome, and made all predictions available on a web portal. ESM1b outperformed existing methods in classifying ~150,000 ClinVar/HGMD missense variants as pathogenic or benign and predicting measurements across 28 deep mutational scan datasets. We further annotated ~2 million variants as damaging only in specific protein isoforms, demonstrating the importance of considering all isoforms when predicting variant effects. Our approach also generalizes to more complex coding variants such as in-frame indels and stop-gains. Together, these results establish protein language models as an effective, accurate and general approach to predicting variant effects.",
-          "url": "https://doi.org/10.1038/s41588-023-01465-0"
         },
         {
           "id": "MED:27112573",
@@ -7711,7 +7706,7 @@
           "year": "2026",
           "date": "2025-05-23",
           "doi": "10.1038/s41587-025-02654-4",
-          "cited": 85,
+          "cited": 101,
           "license": "cc by-nc-nd",
           "pdf": "https://europepmc.org/articles/PMC13090124?pdf=render",
           "keywords": [
@@ -8554,37 +8549,30 @@
           "url": "https://doi.org/10.3390/biom15060843"
         },
         {
-          "id": "MED:41674557",
-          "title": "Artificial intelligence driven protein design and sustainable nanomedicine for advanced theranostics.",
+          "id": "MED:42754580",
+          "title": "Accelerating protein design by scaling experimental characterization.",
           "method": "",
-          "authors": "Esmaeilpour D, Hamblin MR, Cheng J, Khosravi A, Liu J, Zarepour A, Zarrabi A, Sillanpää M, Nazarzadeh Zare E, Shen J, Karimi-Maleh H.",
-          "journal": "Bioactive materials",
+          "authors": "Qian J, Milles LF, Wicky BIM, Ragotte RJ, Motmaen A, Borst AJ, Skotheim R, Ols S, Coventry B, Li X, Kibler RD, Goreshnik I, Expòsit M, Loré K, Stewart L, Baker D.",
+          "journal": "Nature communications",
           "year": "2026",
-          "date": "2026-01-30",
-          "doi": "10.1016/j.bioactmat.2026.01.036",
+          "date": "2026-08-20",
+          "doi": "10.1038/s41467-026-76740-9",
           "cited": 10,
-          "license": "cc by-nc-nd",
-          "pdf": "https://europepmc.org/articles/PMC12887271?pdf=render",
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC13586242?pdf=render",
           "keywords": [
-            "Protein engineering",
-            "Artificial intelligence",
-            "Personalized Medicine",
-            "Theranostics",
-            "Biodegradable Nanomaterials",
-            "Sustainable Nanomedicine"
+            "Proteins",
+            "Protein Engineering"
           ],
           "tasks": [
-            "structure",
-            "design",
-            "fitness",
-            "complexes"
+            "design"
           ],
           "datasets": [],
           "lists": [
             "recent"
           ],
-          "abstract": "The integration of artificial intelligence, protein engineering, and sustainable nanomedicine is driving a paradigm shift in theranostics by enabling highly precise disease diagnosis and targeted therapy. AI-driven methodologies, including machine learning and deep learning, facilitate the rapid analysis of complex biological and chemical datasets, accelerating protein structure prediction, molecular docking, and structure-activity relationship modeling. These capabilities support the rational design of proteins and peptides with enhanced specificity, therapeutic efficacy, and safety, while enabling personalized treatment strategies tailored to individual molecular profiles. In parallel, sustainable nanomedicine focuses on the development of biodegradable, biocompatible, and environmentally benign nanomaterials to improve drug bioavailability, stability, and controlled release. AI-assisted optimization further refines nanocarrier design by balancing therapeutic performance with safety and environmental impact. Advanced intelligent nanocarriers capable of real-time monitoring, adaptive drug release, and degradation into non-toxic by-products represent a significant advancement over conventional static systems. The theranostic paradigm has become central to precision medicine, particularly in oncology, especially where AI-designed nanoplatforms enable targeted delivery of imaging agents and therapeutics to tumors, while allowing continuous treatment monitoring and minimizing off-target effects. Emerging applications in neurological, infectious, and cardiovascular diseases further highlight the broad clinical potential of this approach. Accordingly, this review summarizes AI-driven protein design strategies, sustainable nanocarrier engineering, and their convergence in next-generation theranostic systems, critically discussing mechanistic insights, translational challenges, and design principles required for developing safe, scalable, and clinically adaptable intelligent nanomedicines.",
-          "url": "https://doi.org/10.1016/j.bioactmat.2026.01.036"
+          "abstract": "Recent advances in de novo protein design have greatly outpaced standard protein biochemistry workflows, making experimental validation a bottleneck. Here, we describe workflows to address the scale, speed and reproducibility of common in vitro protein testing methods, enabling at least an order of magnitude increase in throughput while reducing wetlab time. Semi-Automated Protein Production (SAPP) is a rapid, modular, scalable and cost-effective protocol, enabling up to milligram-scale protein production and standardized characterization - including yield, dispersity, and oligomeric state - of hundreds of designs per day, at the cost-equivalent of a few DNA oligos per construct. End-to-end protocol execution takes 48 hours, with ~6 hours spent benchside using standard laboratory equipment. We showcase the platform by rapidly screening redesigned fluorescent proteins, as well as identifying de novo binders that potently neutralize respiratory syncytial virus. We also developed a barcoding and demultiplexing protocol (DMX) to further reduce gene synthesis cost 5-fold by leveraging oligo pools as input DNA for the generation of thousands of sequence-verified arrayed clones. These protocols which combine optimized molecular biology, automated analysis, and optional open-source robotics should be widely adoptable, accelerating protein design.",
+          "url": "https://doi.org/10.1038/s41467-026-76740-9"
         }
       ]
     },
@@ -8846,6 +8834,35 @@
           "url": "https://doi.org/10.1093/nar/gkaa1113"
         },
         {
+          "id": "MED:25428369",
+          "title": "Gene Ontology Consortium: going forward.",
+          "method": "Gene Ontology Consortium",
+          "authors": "Gene Ontology Consortium.",
+          "journal": "Nucleic acids research",
+          "year": "2015",
+          "date": "2014-11-26",
+          "doi": "10.1093/nar/gku1179",
+          "cited": 2803,
+          "license": "cc by-nc",
+          "pdf": "https://academic.oup.com/nar/article-pdf/43/D1/D1049/7329240/gku1179.pdf",
+          "keywords": [
+            "Databases, Genetic",
+            "Gene Ontology"
+          ],
+          "tasks": [
+            "enrichment",
+            "ontology"
+          ],
+          "datasets": [
+            "db:go"
+          ],
+          "lists": [
+            "classic"
+          ],
+          "abstract": "The Gene Ontology (GO; http://www.geneontology.org) is a community-based bioinformatics resource that supplies information about gene product function using ontologies to represent biological knowledge. Here we describe improvements and expansions to several branches of the ontology, as well as updates that have allowed us to more efficiently disseminate the GO and capture feedback from the research community. The Gene Ontology Consortium (GOC) has expanded areas of the ontology such as cilia-related terms, cell-cycle terms and multicellular organism processes. We have also implemented new tools for generating ontology terms based on a set of logical rules making use of templates, and we have made efforts to increase our use of logical definitions. The GOC has a new and improved web site summarizing new developments and documentation, serving as a portal to GO data. Users can perform GO enrichment analysis, and search the GO for terms, annotations to gene products, and associated metadata across multiple species using the all-new AmiGO 2 browser. We encourage and welcome the input of the research community in all biological areas in our continued effort to improve the Gene Ontology.",
+          "url": "https://doi.org/10.1093/nar/gku1179"
+        },
+        {
           "id": "MED:36866529",
           "title": "The Gene Ontology knowledgebase in 2023.",
           "method": "",
@@ -8879,35 +8896,6 @@
           ],
           "abstract": "The Gene Ontology (GO) knowledgebase (http://geneontology.org) is a comprehensive resource concerning the functions of genes and gene products (proteins and noncoding RNAs). GO annotations cover genes from organisms across the tree of life as well as viruses, though most gene function knowledge currently derives from experiments carried out in a relatively small number of model organisms. Here, we provide an updated overview of the GO knowledgebase, as well as the efforts of the broad, international consortium of scientists that develops, maintains, and updates the GO knowledgebase. The GO knowledgebase consists of three components: (1) the GO-a computational knowledge structure describing the functional characteristics of genes; (2) GO annotations-evidence-supported statements asserting that a specific gene product has a particular functional characteristic; and (3) GO Causal Activity Models (GO-CAMs)-mechanistic models of molecular \"pathways\" (GO biological processes) created by linking multiple GO annotations using defined relations. Each of these components is continually expanded, revised, and updated in response to newly published discoveries and receives extensive QA checks, reviews, and user feedback. For each of these components, we provide a description of the current contents, recent developments to keep the knowledgebase up to date with new discoveries, and guidance on how users can best make use of the data that we provide. We conclude with future directions for the project.",
           "url": "https://doi.org/10.1093/genetics/iyad031"
-        },
-        {
-          "id": "MED:25428369",
-          "title": "Gene Ontology Consortium: going forward.",
-          "method": "Gene Ontology Consortium",
-          "authors": "Gene Ontology Consortium.",
-          "journal": "Nucleic acids research",
-          "year": "2015",
-          "date": "2014-11-26",
-          "doi": "10.1093/nar/gku1179",
-          "cited": 2748,
-          "license": "cc by-nc",
-          "pdf": "https://academic.oup.com/nar/article-pdf/43/D1/D1049/7329240/gku1179.pdf",
-          "keywords": [
-            "Databases, Genetic",
-            "Gene Ontology"
-          ],
-          "tasks": [
-            "enrichment",
-            "ontology"
-          ],
-          "datasets": [
-            "db:go"
-          ],
-          "lists": [
-            "classic"
-          ],
-          "abstract": "The Gene Ontology (GO; http://www.geneontology.org) is a community-based bioinformatics resource that supplies information about gene product function using ontologies to represent biological knowledge. Here we describe improvements and expansions to several branches of the ontology, as well as updates that have allowed us to more efficiently disseminate the GO and capture feedback from the research community. The Gene Ontology Consortium (GOC) has expanded areas of the ontology such as cilia-related terms, cell-cycle terms and multicellular organism processes. We have also implemented new tools for generating ontology terms based on a set of logical rules making use of templates, and we have made efforts to increase our use of logical definitions. The GOC has a new and improved web site summarizing new developments and documentation, serving as a portal to GO data. Users can perform GO enrichment analysis, and search the GO for terms, annotations to gene products, and associated metadata across multiple species using the all-new AmiGO 2 browser. We encourage and welcome the input of the research community in all biological areas in our continued effort to improve the Gene Ontology.",
-          "url": "https://doi.org/10.1093/nar/gku1179"
         },
         {
           "id": "MED:21085593",
@@ -9024,6 +9012,32 @@
           "url": "https://doi.org/10.1186/s12859-018-2486-6"
         },
         {
+          "id": "MED:36426870",
+          "title": "GSEApy: a comprehensive package for performing gene set enrichment analysis in Python.",
+          "method": "GSEApy",
+          "authors": "Fang Z, Liu X, Peltz G.",
+          "journal": "Bioinformatics (Oxford, England)",
+          "year": "2023",
+          "date": "2023-01-01",
+          "doi": "10.1093/bioinformatics/btac757",
+          "cited": 1359,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC9805564?pdf=render",
+          "keywords": [
+            "Algorithms",
+            "Software"
+          ],
+          "tasks": [
+            "enrichment"
+          ],
+          "datasets": [],
+          "lists": [
+            "classic"
+          ],
+          "abstract": "Motivation Gene set enrichment analysis (GSEA) is a commonly used algorithm for characterizing gene expression changes. However, the currently available tools used to perform GSEA have a limited ability to analyze large datasets, which is particularly problematic for the analysis of single-cell data. To overcome this limitation, we developed a GSEA package in Python (GSEApy), which could efficiently analyze large single-cell datasets. Results We present a package (GSEApy) that performs GSEA in either the command line or Python environment. GSEApy uses a Rust implementation to enable it to calculate the same enrichment statistic as GSEA for a collection of pathways. The Rust implementation of GSEApy is 3-fold faster than the Numpy version of GSEApy (v0.10.8) and uses >4-fold less memory. GSEApy also provides an interface between Python and Enrichr web services, as well as for BioMart. The Enrichr application programming interface enables GSEApy to perform over-representation analysis for an input gene list. Furthermore, GSEApy consists of several tools, each designed to facilitate a particular type of enrichment analysis. Availability and implementation The new GSEApy with Rust extension is deposited in PyPI: https://pypi.org/project/gseapy/. The GSEApy source code is freely available at https://github.com/zqfang/GSEApy. Also, the documentation website is available at https://gseapy.rtfd.io/. Supplementary information Supplementary data are available at Bioinformatics online.",
+          "url": "https://doi.org/10.1093/bioinformatics/btac757"
+        },
+        {
           "id": "MED:22383865",
           "title": "Ten years of pathway analysis: current approaches and outstanding challenges.",
           "method": "",
@@ -9082,7 +9096,7 @@
           "year": "2018",
           "date": "2018-07-18",
           "doi": "10.1038/s41598-018-28948-z",
-          "cited": 1040,
+          "cited": 1088,
           "license": "cc by",
           "pdf": "https://www.nature.com/articles/s41598-018-28948-z.pdf",
           "keywords": [
@@ -9103,32 +9117,6 @@
           ],
           "abstract": "The biological interpretation of gene lists with interesting shared properties, such as up- or down-regulation in a particular experiment, is typically accomplished using gene ontology enrichment analysis tools. Given a list of genes, a gene ontology (GO) enrichment analysis may return hundreds of statistically significant GO results in a \"flat\" list, which can be challenging to summarize. It can also be difficult to keep pace with rapidly expanding biological knowledge, which often results in daily changes to any of the over 47,000 gene ontologies that describe biological knowledge. GOATOOLS, a Python-based library, makes it more efficient to stay current with the latest ontologies and annotations, perform gene ontology enrichment analyses to determine over- and under-represented terms, and organize results for greater clarity and easier interpretation using a novel GOATOOLS GO grouping method. We performed functional analyses on both stochastic simulation data and real data from a published RNA-seq study to compare the enrichment results from GOATOOLS to two other popular tools: DAVID and GOstats. GOATOOLS is freely available through GitHub: https://github.com/tanghaibao/goatools .",
           "url": "https://doi.org/10.1038/s41598-018-28948-z"
-        },
-        {
-          "id": "MED:36426870",
-          "title": "GSEApy: a comprehensive package for performing gene set enrichment analysis in Python.",
-          "method": "GSEApy",
-          "authors": "Fang Z, Liu X, Peltz G.",
-          "journal": "Bioinformatics (Oxford, England)",
-          "year": "2023",
-          "date": "2023-01-01",
-          "doi": "10.1093/bioinformatics/btac757",
-          "cited": 1035,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC9805564?pdf=render",
-          "keywords": [
-            "Algorithms",
-            "Software"
-          ],
-          "tasks": [
-            "enrichment"
-          ],
-          "datasets": [],
-          "lists": [
-            "classic"
-          ],
-          "abstract": "Motivation Gene set enrichment analysis (GSEA) is a commonly used algorithm for characterizing gene expression changes. However, the currently available tools used to perform GSEA have a limited ability to analyze large datasets, which is particularly problematic for the analysis of single-cell data. To overcome this limitation, we developed a GSEA package in Python (GSEApy), which could efficiently analyze large single-cell datasets. Results We present a package (GSEApy) that performs GSEA in either the command line or Python environment. GSEApy uses a Rust implementation to enable it to calculate the same enrichment statistic as GSEA for a collection of pathways. The Rust implementation of GSEApy is 3-fold faster than the Numpy version of GSEApy (v0.10.8) and uses >4-fold less memory. GSEApy also provides an interface between Python and Enrichr web services, as well as for BioMart. The Enrichr application programming interface enables GSEApy to perform over-representation analysis for an input gene list. Furthermore, GSEApy consists of several tools, each designed to facilitate a particular type of enrichment analysis. Availability and implementation The new GSEApy with Rust extension is deposited in PyPI: https://pypi.org/project/gseapy/. The GSEApy source code is freely available at https://github.com/zqfang/GSEApy. Also, the documentation website is available at https://gseapy.rtfd.io/. Supplementary information Supplementary data are available at Bioinformatics online.",
-          "url": "https://doi.org/10.1093/bioinformatics/btac757"
         },
         {
           "id": "MED:28472511",
@@ -9839,6 +9827,31 @@
           "url": "https://doi.org/10.3389/frai.2025.1527010"
         },
         {
+          "id": "MED:39693438",
+          "title": "Deep representation learning of protein-protein interaction networks for enhanced pattern discovery.",
+          "method": "",
+          "authors": "Yan R, Islam MT, Xing L.",
+          "journal": "Science advances",
+          "year": "2024",
+          "date": "2024-12-18",
+          "doi": "10.1126/sciadv.adq4324",
+          "cited": 14,
+          "license": "cc by-nc",
+          "pdf": "https://europepmc.org/articles/PMC11654695?pdf=render",
+          "keywords": [
+            "Protein Interaction Mapping",
+            "Protein Interaction Maps",
+            "Deep Learning"
+          ],
+          "tasks": [],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Protein-protein interaction (PPI) networks, where nodes represent proteins and edges depict myriad interactions among them, are fundamental to understanding the dynamics within biological systems. Despite their pivotal role in modern biology, reliably discerning patterns from these intertwined networks remains a substantial challenge. The essence of the challenge lies in holistically characterizing the relationships of each node with others in the network and effectively using this information for accurate pattern discovery. In this work, we introduce a self-supervised network embedding framework termed discriminative network embedding (DNE). Unlike conventional methods that primarily focus on direct or limited-order node proximity, DNE characterizes a node both locally and globally by harnessing the contrast between representations from neighboring and distant nodes. Our experimental results demonstrate DNE's superior performance over existing techniques across various critical network analyses, including PPI inference and the identification of protein functional modules. DNE emerges as a robust strategy for node representation in PPI networks, offering promising avenues for diverse biomedical applications.",
+          "url": "https://doi.org/10.1126/sciadv.adq4324"
+        },
+        {
           "id": "MED:40592888",
           "title": "Construction, Deployment, and Usage of the Human Reference Atlas Knowledge Graph.",
           "method": "",
@@ -9889,31 +9902,6 @@
           ],
           "abstract": "Invasiveness is a key indicator of tumor malignancy and is often linked to poor prognosis in breast cancer (BC). To explore the diverse characteristics of invasive cells, single-cell RNA sequencing (scRNA-seq) data from three ductal carcinoma stages were analyzed, classifying samples into invasion and non-invasion groups. Nine genes (MCTS1, PGK1, PCMT1, C8orf76, TMEM242, QPRT, SLC16A2, AFG1L, and SPINK8) were identified as key discriminators between these groups. A breast cancer invasion score (BCIS) model was developed using LASSO Cox regression, revealed that high BCIS correlated with poorer overall survival in TCGA-BRCA patients and was validated across GSE20685 and METABRIC datasets (five-year and ten-year survival). Functional experiments demonstrated that knockdown of PGK1 or PCMT1 inhibited tumor cell proliferation and reduced the phosphorylation levels of mTORC, P70S6K, S6, and AKT, indicating suppression of the PI3K/AKT/mTOR pathways. High-BCIS tumors exhibited enrichment in protein secretion and PI3K/AKT/mTOR pathways, associated with aggressiveness and therapy resistance. This study introduced the BCIS score, distinguishing invasion from non-invasion cells, linked to PI3K/AKT/mTOR pathways, offering insights into BRCA prognosis and tumor aggressiveness.",
           "url": "https://doi.org/10.1038/s41420-025-02422-y"
-        },
-        {
-          "id": "MED:39693438",
-          "title": "Deep representation learning of protein-protein interaction networks for enhanced pattern discovery.",
-          "method": "",
-          "authors": "Yan R, Islam MT, Xing L.",
-          "journal": "Science advances",
-          "year": "2024",
-          "date": "2024-12-18",
-          "doi": "10.1126/sciadv.adq4324",
-          "cited": 13,
-          "license": "cc by-nc",
-          "pdf": "https://europepmc.org/articles/PMC11654695?pdf=render",
-          "keywords": [
-            "Protein Interaction Mapping",
-            "Protein Interaction Maps",
-            "Deep Learning"
-          ],
-          "tasks": [],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Protein-protein interaction (PPI) networks, where nodes represent proteins and edges depict myriad interactions among them, are fundamental to understanding the dynamics within biological systems. Despite their pivotal role in modern biology, reliably discerning patterns from these intertwined networks remains a substantial challenge. The essence of the challenge lies in holistically characterizing the relationships of each node with others in the network and effectively using this information for accurate pattern discovery. In this work, we introduce a self-supervised network embedding framework termed discriminative network embedding (DNE). Unlike conventional methods that primarily focus on direct or limited-order node proximity, DNE characterizes a node both locally and globally by harnessing the contrast between representations from neighboring and distant nodes. Our experimental results demonstrate DNE's superior performance over existing techniques across various critical network analyses, including PPI inference and the identification of protein functional modules. DNE emerges as a robust strategy for node representation in PPI networks, offering promising avenues for diverse biomedical applications.",
-          "url": "https://doi.org/10.1126/sciadv.adq4324"
         },
         {
           "id": "MED:39632911",
@@ -10253,6 +10241,33 @@
           "url": "https://doi.org/10.1038/s41597-025-05343-8"
         },
         {
+          "id": "MED:39707457",
+          "title": "Interface-aware molecular generative framework for protein-protein interaction modulators.",
+          "method": "",
+          "authors": "Wang J, Mao J, Li C, Xiang H, Wang X, Wang S, Wang Z, Chen Y, Li Y, No KT, Song T, Zeng X.",
+          "journal": "Journal of cheminformatics",
+          "year": "2024",
+          "date": "2024-12-20",
+          "doi": "10.1186/s13321-024-00930-0",
+          "cited": 9,
+          "license": "cc by-nc-nd",
+          "pdf": "https://europepmc.org/articles/PMC11662471?pdf=render",
+          "keywords": [
+            "Gat",
+            "Protein–protein Interaction Modulators",
+            "Geometric Deep Learning",
+            "Molecular Generative Model",
+            "Conditional Wgan"
+          ],
+          "tasks": [],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Protein-protein interactions (PPIs) play a crucial role in numerous biochemical and biological processes. Although several structure-based molecular generative models have been developed, PPI interfaces and compounds targeting PPIs exhibit distinct physicochemical properties compared to traditional binding pockets and small-molecule drugs. As a result, generating compounds that effectively target PPIs, particularly by considering PPI complexes or interface hotspot residues, remains a significant challenge. In this work, we constructed a comprehensive dataset of PPI interfaces with active and inactive compound pairs. Based on this, we propose a novel molecular generative framework tailored to PPI interfaces, named GENiPPI. Our evaluation demonstrates that GENiPPI captures the implicit relationships between the PPI interfaces and the active molecules, and can generate novel compounds that target these interfaces. Moreover, GENiPPI can generate structurally diverse novel compounds with limited PPI interface modulators. To the best of our knowledge, this is the first exploration of a structure-based molecular generative model focused on PPI interfaces, which could facilitate the design of PPI modulators. The PPI interface-based molecular generative model enriches the existing landscape of structure-based (pocket/interface) molecular generative model. SCIENTIFIC CONTRIBUTION: This study introduces GENiPPI, a protein-protein interaction (PPI) interface-aware molecular generative framework. The framework first employs Graph Attention Networks to capture atomic-level interaction features at the protein complex interface. Subsequently, Convolutional Neural Networks extract compound representations in voxel and electron density spaces. These features are integrated into a Conditional Wasserstein Generative Adversarial Network, which trains the model to generate compound representations targeting PPI interfaces. GENiPPI effectively captures the relationship between PPI interfaces and active/inactive compounds. Furthermore, in fewshot molecular generation, GENiPPI successfully generates compounds comparable to known disruptors. GENiPPI provides an efficient tool for structure-based design of PPI modulators.",
+          "url": "https://doi.org/10.1186/s13321-024-00930-0"
+        },
+        {
           "id": "MED:40400398",
           "title": "Genetics of catatonia: a systematic review of case reports and a gene pathway analysis.",
           "method": "Genetics of catatonia",
@@ -10314,38 +10329,6 @@
           ],
           "abstract": "Degree distributions in protein-protein interaction (PPI) networks are believed to follow a power law (PL). However, technical and study biases affect the experimental procedures for detecting PPIs. For instance, cancer-associated proteins have received disproportional attention. Moreover, bait proteins in large-scale experiments tend to have many false-positive interaction partners. Studying the degree distributions of thousands of PPI networks of controlled provenance, we address the question if PL distributions in observed PPI networks could be explained by these biases alone. Our findings are supported by mathematical models and extensive simulations, and indicate that study bias and technical bias suffice to produce the observed PL distribution. It is, hence, problematic to derive hypotheses about the topology of the true biological interactome from the PL distributions in observed PPI networks. Our study casts doubt on the use of the PL property of biological networks as a modeling assumption or quality criterion in network biology.",
           "url": "https://doi.org/10.7554/elife.99951"
-        },
-        {
-          "id": "MED:40843781",
-          "title": "Pathway Analysis Interpretation in the Multi-Omic Era.",
-          "method": "",
-          "authors": "Ryan V WG, Sahay S, Vergis J, Weistuch C, Meller J, McCullumsmith RE.",
-          "journal": "Biotech (Basel (Switzerland))",
-          "year": "2025",
-          "date": "2025-07-29",
-          "doi": "10.3390/biotech14030058",
-          "cited": 7,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC12372084?pdf=render",
-          "keywords": [
-            "gene ontology",
-            "Pathway analysis",
-            "Semantic Similarity",
-            "Embeddings",
-            "Omics Interpretation"
-          ],
-          "tasks": [
-            "enrichment",
-            "ontology"
-          ],
-          "datasets": [
-            "db:go"
-          ],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "In bioinformatics, pathway analyses are used to interpret biological data by mapping measured molecules with known pathways to discover their functional processes and relationships. Pathway analysis has become an essential tool for interpreting large-scale omics data, translating complex gene sets into actionable experimental insights. However, issues inherent to pathway databases and misinterpretations of pathway relevance often result in \"pathway fails,\" where findings, though statistically significant, lack biological applicability. For example, the Tumor Necrosis Factor (TNF) pathway was originally annotated based on its association with observed tumor necrosis, while it is multifunctional across diverse physiological processes in the body. This review broadly evaluates pathway analysis interpretation, including embedding-based, semantic similarity-based, and network-based approaches to clarify their ideal use-case scenarios. Each method for interpretation is assessed for its strengths, such as high-quality visualizations and ease of use, as well as its limitations, including data redundancy and database compatibility challenges. Despite advancements in the field, the principle of \"garbage in, garbage out\" (GIGO) shows that input quality and method choice are critical for reliable and biologically meaningful results. Methodological standardization, scalability improvements, and integration with diverse data sources remain areas for further development. By providing critical guidance with contextual examples such as TNF, we aim to help researchers align their objectives with the appropriate method. Advancing pathway analysis interpretation will further enhance the utility of pathway analysis, ultimately propelling progress in systems biology and personalized medicine.",
-          "url": "https://doi.org/10.3390/biotech14030058"
         }
       ]
     },
@@ -12206,6 +12189,37 @@
           "url": "https://doi.org/10.1038/nature14590"
         },
         {
+          "id": "MED:34850907",
+          "title": "JASPAR 2022: the 9th release of the open-access database of transcription factor binding profiles.",
+          "method": "JASPAR 2022",
+          "authors": "Castro-Mondragon JA, Riudavets-Puig R, Rauluseviciute I, Lemma RB, Turchi L, Blanc-Mathieu R, Lucas J, Boddie P, Khan A, Manosalva Pérez N, Fornes O, Leung TY, Aguirre A, Hammal F, Schmelter D, Baranasic D, Ballester B, Sandelin A, Lenhard B, Vandepoele K, Wasserman WW, Parcy F, Mathelier A.",
+          "journal": "Nucleic acids research",
+          "year": "2022",
+          "date": "2022-01-01",
+          "doi": "10.1093/nar/gkab1113",
+          "cited": 1872,
+          "license": "cc by-nc",
+          "pdf": "https://europepmc.org/articles/PMC8728201?pdf=render",
+          "keywords": [
+            "Software",
+            "Databases, Genetic"
+          ],
+          "tasks": [
+            "accessibility",
+            "tf-binding"
+          ],
+          "datasets": [
+            "db:jaspar",
+            "db:ucsc",
+            "ds:nucleotide-transformer-downstream-tasks-revised"
+          ],
+          "lists": [
+            "classic"
+          ],
+          "abstract": "JASPAR (http://jaspar.genereg.net/) is an open-access database containing manually curated, non-redundant transcription factor (TF) binding profiles for TFs across six taxonomic groups. In this 9th release, we expanded the CORE collection with 341 new profiles (148 for plants, 101 for vertebrates, 85 for urochordates, and 7 for insects), which corresponds to a 19% expansion over the previous release. We added 298 new profiles to the Unvalidated collection when no orthogonal evidence was found in the literature. All the profiles were clustered to provide familial binding profiles for each taxonomic group. Moreover, we revised the structural classification of DNA binding domains to consider plant-specific TFs. This release introduces word clouds to represent the scientific knowledge associated with each TF. We updated the genome tracks of TFBSs predicted with JASPAR profiles in eight organisms; the human and mouse TFBS predictions can be visualized as native tracks in the UCSC Genome Browser. Finally, we provide a new tool to perform JASPAR TFBS enrichment analysis in user-provided genomic regions. All the data is accessible through the JASPAR website, its associated RESTful API, the R/Bioconductor data package, and a new Python package, pyJASPAR, that facilitates serverless access to the data.",
+          "url": "https://doi.org/10.1093/nar/gkab1113"
+        },
+        {
           "id": "MED:23034086",
           "title": "methylKit: a comprehensive R package for the analysis of genome-wide DNA methylation profiles.",
           "method": "methylKit",
@@ -12229,37 +12243,6 @@
           ],
           "abstract": "DNA methylation is a chemical modification of cytosine bases that is pivotal for gene regulation, cellular specification and cancer development. Here, we describe an R package, methylKit, that rapidly analyzes genome-wide cytosine epigenetic profiles from high-throughput methylation and hydroxymethylation sequencing experiments. methylKit includes functions for clustering, sample quality visualization, differential methylation analysis and annotation features, thus automating and simplifying many of the steps for discerning statistically significant bases or regions of DNA methylation. Finally, we demonstrate methylKit on breast cancer data, in which we find statistically significant regions of differential methylation and stratify tumor subtypes. methylKit is available at http://code.google.com/p/methylkit.",
           "url": "https://doi.org/10.1186/gb-2012-13-10-r87"
-        },
-        {
-          "id": "MED:34850907",
-          "title": "JASPAR 2022: the 9th release of the open-access database of transcription factor binding profiles.",
-          "method": "JASPAR 2022",
-          "authors": "Castro-Mondragon JA, Riudavets-Puig R, Rauluseviciute I, Lemma RB, Turchi L, Blanc-Mathieu R, Lucas J, Boddie P, Khan A, Manosalva Pérez N, Fornes O, Leung TY, Aguirre A, Hammal F, Schmelter D, Baranasic D, Ballester B, Sandelin A, Lenhard B, Vandepoele K, Wasserman WW, Parcy F, Mathelier A.",
-          "journal": "Nucleic acids research",
-          "year": "2022",
-          "date": "2022-01-01",
-          "doi": "10.1093/nar/gkab1113",
-          "cited": 1824,
-          "license": "cc by-nc",
-          "pdf": "https://europepmc.org/articles/PMC8728201?pdf=render",
-          "keywords": [
-            "Software",
-            "Databases, Genetic"
-          ],
-          "tasks": [
-            "accessibility",
-            "tf-binding"
-          ],
-          "datasets": [
-            "db:jaspar",
-            "db:ucsc",
-            "ds:nucleotide-transformer-downstream-tasks-revised"
-          ],
-          "lists": [
-            "classic"
-          ],
-          "abstract": "JASPAR (http://jaspar.genereg.net/) is an open-access database containing manually curated, non-redundant transcription factor (TF) binding profiles for TFs across six taxonomic groups. In this 9th release, we expanded the CORE collection with 341 new profiles (148 for plants, 101 for vertebrates, 85 for urochordates, and 7 for insects), which corresponds to a 19% expansion over the previous release. We added 298 new profiles to the Unvalidated collection when no orthogonal evidence was found in the literature. All the profiles were clustered to provide familial binding profiles for each taxonomic group. Moreover, we revised the structural classification of DNA binding domains to consider plant-specific TFs. This release introduces word clouds to represent the scientific knowledge associated with each TF. We updated the genome tracks of TFBSs predicted with JASPAR profiles in eight organisms; the human and mouse TFBS predictions can be visualized as native tracks in the UCSC Genome Browser. Finally, we provide a new tool to perform JASPAR TFBS enrichment analysis in user-provided genomic regions. All the data is accessible through the JASPAR website, its associated RESTful API, the R/Bioconductor data package, and a new Python package, pyJASPAR, that facilitates serverless access to the data.",
-          "url": "https://doi.org/10.1093/nar/gkab1113"
         },
         {
           "id": "MED:31701148",
@@ -12879,7 +12862,7 @@
           "year": "2012",
           "date": "2012-07-25",
           "doi": "10.1371/journal.pone.0041361",
-          "cited": 879,
+          "cited": 887,
           "license": "cc by",
           "pdf": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0041361&type=printable",
           "keywords": [
@@ -13092,7 +13075,7 @@
           "year": "2025",
           "date": "2025-01-16",
           "doi": "10.1186/s13148-025-01815-1",
-          "cited": 58,
+          "cited": 61,
           "license": "cc by-nc-nd",
           "pdf": "https://europepmc.org/articles/PMC11740528?pdf=render",
           "keywords": [
@@ -13446,6 +13429,43 @@
           "url": "https://doi.org/10.1038/s41392-025-02170-6"
         },
         {
+          "id": "MED:39696436",
+          "title": "Epigenome-wide association studies identify novel DNA methylation sites associated with PTSD: a meta-analysis of 23 military and civilian cohorts.",
+          "method": "",
+          "authors": "Katrinli S, Wani AH, Maihofer AX, Ratanatharathorn A, Daskalakis NP, Montalvo-Ortiz J, Núñez-Ríos DL, Zannas AS, Zhao X, Aiello AE, Ashley-Koch AE, Avetyan D, Baker DG, Beckham JC, Boks MP, Brick LA, Bromet E, Champagne FA, Chen CY, Dalvie S, Dennis MF, Fatumo S, Fortier C, Galea S, Garrett ME, Geuze E, Grant G, Hauser MA, Hayes JP, Hemmings SMJ, Huber BR, Jajoo A, Jansen S, Kessler RC, Kimbrel NA, King AP, Kleinman JE, Koen N, Koenen KC, Kuan PF, Liberzon I, Linnstaedt SD, Lori A, Luft BJ, Luykx JJ, Marx CE, McLean SA, Mehta D, Milberg W, Miller MW, Mufford MS, Musanabaganwa C, Mutabaruka J, Mutesa L, Nemeroff CB, Nugent NR, Orcutt HK, Qin XJ, Rauch SAM, Ressler KJ, Risbrough VB, Rutembesa E, Rutten BPF, Seedat S, Stein DJ, Stein MB, Toikumo S, Ursano RJ, Uwineza A, Verfaellie MH, Vermetten E, Vinkers CH, Ware EB, Wildman DE, Wolf EJ, Young RM, Zhao Y, van den Heuvel LL, PGC-PTSD Epigenetics Workgroup, PsychENCODE PTSD Brainomics Project, Traumatic Stress Brain Research Group, Uddin M, Nievergelt CM, Smith AK, Logue MW.",
+          "journal": "Genome medicine",
+          "year": "2024",
+          "date": "2024-12-18",
+          "doi": "10.1186/s13073-024-01417-1",
+          "cited": 34,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC11658418?pdf=render",
+          "keywords": [
+            "DNA methylation",
+            "Trauma",
+            "Gene Expression",
+            "Ptsd",
+            "Gwas",
+            "Postmortem Brain",
+            "Stress Disorders, Post-Traumatic",
+            "DNA Methylation",
+            "Epigenesis, Genetic",
+            "CpG Islands",
+            "Military Personnel",
+            "Genome-Wide Association Study",
+            "Epigenome"
+          ],
+          "tasks": [
+            "methylation"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Background The occurrence of post-traumatic stress disorder (PTSD) following a traumatic event is associated with biological differences that can represent the susceptibility to PTSD, the impact of trauma, or the sequelae of PTSD itself. These effects include differences in DNA methylation (DNAm), an important form of epigenetic gene regulation, at multiple CpG loci across the genome. Moreover, these effects can be shared or specific to both central and peripheral tissues. Here, we aim to identify blood DNAm differences associated with PTSD and characterize the underlying biological mechanisms by examining the extent to which they mirror associations across multiple brain regions. Methods As the Psychiatric Genomics Consortium (PGC) PTSD Epigenetics Workgroup, we conducted the largest cross-sectional meta-analysis of epigenome-wide association studies (EWASs) of PTSD to date, involving 5077 participants (2156 PTSD cases and 2921 trauma-exposed controls) from 23 civilian and military studies. PTSD diagnosis assessments were harmonized following the standardized guidelines established by the PGC-PTSD Workgroup. DNAm was assayed from blood using Illumina HumanMethylation450 or MethylationEPIC (850 K) BeadChips. Within each cohort, DNA methylation was regressed on PTSD, sex (if applicable), age, blood cell proportions, and ancestry. An inverse variance-weighted meta-analysis was performed. We conducted replication analyses in tissue from multiple brain regions, neuronal nuclei, and a cellular model of prolonged stress. Results We identified 11 CpG sites associated with PTSD in the overall meta-analysis (1.44e - 09 Conclusions This study identifies 11 PTSD-associated CpGs and leverages data from postmortem brain samples, GWAS, and genome-wide expression data to interpret the biology underlying these associations and prioritize genes whose regulation differs in those with PTSD.",
+          "url": "https://doi.org/10.1186/s13073-024-01417-1"
+        },
+        {
           "id": "MED:41218612",
           "title": "Impact of disease-associated chromatin accessibility QTLs across immune cell types and contexts.",
           "method": "",
@@ -13726,30 +13746,28 @@
           "url": "https://doi.org/10.1186/s13148-025-01884-2"
         },
         {
-          "id": "MED:39696436",
-          "title": "Epigenome-wide association studies identify novel DNA methylation sites associated with PTSD: a meta-analysis of 23 military and civilian cohorts.",
+          "id": "MED:39947136",
+          "title": "Activation of the imprinted Prader-Willi syndrome locus by CRISPR-based epigenome editing.",
           "method": "",
-          "authors": "Katrinli S, Wani AH, Maihofer AX, Ratanatharathorn A, Daskalakis NP, Montalvo-Ortiz J, Núñez-Ríos DL, Zannas AS, Zhao X, Aiello AE, Ashley-Koch AE, Avetyan D, Baker DG, Beckham JC, Boks MP, Brick LA, Bromet E, Champagne FA, Chen CY, Dalvie S, Dennis MF, Fatumo S, Fortier C, Galea S, Garrett ME, Geuze E, Grant G, Hauser MA, Hayes JP, Hemmings SMJ, Huber BR, Jajoo A, Jansen S, Kessler RC, Kimbrel NA, King AP, Kleinman JE, Koen N, Koenen KC, Kuan PF, Liberzon I, Linnstaedt SD, Lori A, Luft BJ, Luykx JJ, Marx CE, McLean SA, Mehta D, Milberg W, Miller MW, Mufford MS, Musanabaganwa C, Mutabaruka J, Mutesa L, Nemeroff CB, Nugent NR, Orcutt HK, Qin XJ, Rauch SAM, Ressler KJ, Risbrough VB, Rutembesa E, Rutten BPF, Seedat S, Stein DJ, Stein MB, Toikumo S, Ursano RJ, Uwineza A, Verfaellie MH, Vermetten E, Vinkers CH, Ware EB, Wildman DE, Wolf EJ, Young RM, Zhao Y, van den Heuvel LL, PGC-PTSD Epigenetics Workgroup, PsychENCODE PTSD Brainomics Project, Traumatic Stress Brain Research Group, Uddin M, Nievergelt CM, Smith AK, Logue MW.",
-          "journal": "Genome medicine",
-          "year": "2024",
-          "date": "2024-12-18",
-          "doi": "10.1186/s13073-024-01417-1",
+          "authors": "Rohm D, Black JB, McCutcheon SR, Barrera A, Berry SS, Morone DJ, Nuttle X, de Esch CE, Tai DJC, Talkowski ME, Iglesias N, Gersbach CA.",
+          "journal": "Cell genomics",
+          "year": "2025",
+          "date": "2025-02-01",
+          "doi": "10.1016/j.xgen.2025.100770",
           "cited": 29,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC11658418?pdf=render",
+          "license": "cc by-nc",
+          "pdf": "https://europepmc.org/articles/PMC11872474?pdf=render",
           "keywords": [
             "DNA methylation",
-            "Trauma",
-            "Gene Expression",
-            "Ptsd",
-            "Gwas",
-            "Postmortem Brain",
-            "Stress Disorders, Post-Traumatic",
-            "DNA Methylation",
-            "Epigenesis, Genetic",
-            "CpG Islands",
-            "Military Personnel",
-            "Genome-Wide Association Study",
+            "Imprinting",
+            "Prader-willi Syndrome",
+            "Crispr",
+            "Dcas9",
+            "Epigenome Editing",
+            "Prader-Willi Syndrome",
+            "Genomic Imprinting",
+            "CRISPR-Cas Systems",
+            "Gene Editing",
             "Epigenome"
           ],
           "tasks": [
@@ -13759,36 +13777,8 @@
           "lists": [
             "recent"
           ],
-          "abstract": "Background The occurrence of post-traumatic stress disorder (PTSD) following a traumatic event is associated with biological differences that can represent the susceptibility to PTSD, the impact of trauma, or the sequelae of PTSD itself. These effects include differences in DNA methylation (DNAm), an important form of epigenetic gene regulation, at multiple CpG loci across the genome. Moreover, these effects can be shared or specific to both central and peripheral tissues. Here, we aim to identify blood DNAm differences associated with PTSD and characterize the underlying biological mechanisms by examining the extent to which they mirror associations across multiple brain regions. Methods As the Psychiatric Genomics Consortium (PGC) PTSD Epigenetics Workgroup, we conducted the largest cross-sectional meta-analysis of epigenome-wide association studies (EWASs) of PTSD to date, involving 5077 participants (2156 PTSD cases and 2921 trauma-exposed controls) from 23 civilian and military studies. PTSD diagnosis assessments were harmonized following the standardized guidelines established by the PGC-PTSD Workgroup. DNAm was assayed from blood using Illumina HumanMethylation450 or MethylationEPIC (850 K) BeadChips. Within each cohort, DNA methylation was regressed on PTSD, sex (if applicable), age, blood cell proportions, and ancestry. An inverse variance-weighted meta-analysis was performed. We conducted replication analyses in tissue from multiple brain regions, neuronal nuclei, and a cellular model of prolonged stress. Results We identified 11 CpG sites associated with PTSD in the overall meta-analysis (1.44e - 09 Conclusions This study identifies 11 PTSD-associated CpGs and leverages data from postmortem brain samples, GWAS, and genome-wide expression data to interpret the biology underlying these associations and prioritize genes whose regulation differs in those with PTSD.",
-          "url": "https://doi.org/10.1186/s13073-024-01417-1"
-        },
-        {
-          "id": "MED:40360814",
-          "title": "CTCF depletion decouples enhancer-mediated gene activation from chromatin hub formation.",
-          "method": "",
-          "authors": "Karpinska MA, Zhu Y, Fakhraei Ghazvini Z, Ramasamy S, Barbieri M, Cao TBN, Varahram N, Aljahani A, Lidschreiber M, Papantonis A, Oudelaar AM.",
-          "journal": "Nature structural & molecular biology",
-          "year": "2025",
-          "date": "2025-05-13",
-          "doi": "10.1038/s41594-025-01555-z",
-          "cited": 28,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC12263429?pdf=render",
-          "keywords": [
-            "Chromatin",
-            "Enhancer Elements, Genetic",
-            "Transcriptional Activation",
-            "CCCTC-Binding Factor"
-          ],
-          "tasks": [
-            "enhancers"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Enhancers and promoters interact in three-dimensional (3D) chromatin structures to regulate gene expression. Here we characterize the mechanisms that drive the formation and function of these structures in a lymphoid-to-myeloid transdifferentiation system. Based on analyses at base pair resolution, we demonstrate a close correlation between binding of regulatory proteins, formation of chromatin interactions and gene expression. Multi-way interaction analyses and computational modeling show that tissue-specific gene loci are organized into chromatin hubs, characterized by cooperative interactions between multiple enhancers, promoters and CTCF-binding sites. While depletion of CTCF strongly impairs the formation of these chromatin hubs, the effects of CTCF depletion on gene expression are modest and can be explained by rewired enhancer-promoter interactions. These findings demonstrate a role for enhancer-promoter interactions in gene regulation that is independent of cooperative interactions in chromatin hubs. Together, these results contribute to our understanding of the structure-function relationship of the genome during cellular differentiation.",
-          "url": "https://doi.org/10.1038/s41594-025-01555-z"
+          "abstract": "Epigenome editing with DNA-targeting technologies such as CRISPR-dCas9 can be used to dissect gene regulatory mechanisms and potentially treat associated disorders. For example, Prader-Willi syndrome (PWS) results from loss of paternally expressed imprinted genes on chromosome 15q11.2-q13.3, although the maternal allele is intact but epigenetically silenced. Using CRISPR repression and activation screens in human induced pluripotent stem cells (iPSCs), we identified genomic elements that control the expression of the PWS gene SNRPN from the paternal and maternal chromosomes. We showed that either targeted transcriptional activation or DNA demethylation can activate the silenced maternal SNRPN and downstream PWS transcripts. However, these two approaches function at unique regions, preferentially activating different transcript variants and involving distinct epigenetic reprogramming mechanisms. Remarkably, transient expression of the targeted demethylase leads to stable, long-term maternal SNRPN expression in PWS iPSCs. This work uncovers targeted epigenetic manipulations to reprogram a disease-associated imprinted locus and suggests possible therapeutic interventions.",
+          "url": "https://doi.org/10.1016/j.xgen.2025.100770"
         }
       ]
     },
@@ -14009,7 +13999,7 @@
           "year": "2003",
           "date": "2003-12-12",
           "doi": "10.1186/gb-2003-5-1-r1",
-          "cited": 2882,
+          "cited": 2908,
           "license": "",
           "pdf": "https://europepmc.org/articles/PMC395733?pdf=render",
           "keywords": [],
@@ -14498,7 +14488,7 @@
           "year": "2012",
           "date": "2012-02-20",
           "doi": "10.1002/emmm.201100209",
-          "cited": 1238,
+          "cited": 1246,
           "license": "",
           "pdf": "https://europepmc.org/articles/PMC3376845?pdf=render",
           "keywords": [
@@ -14722,7 +14712,7 @@
           "year": "2025",
           "date": "2025-03-28",
           "doi": "10.1038/s41592-025-02631-4",
-          "cited": 63,
+          "cited": 65,
           "license": "cc by",
           "pdf": "https://europepmc.org/articles/PMC11978507?pdf=render",
           "keywords": [
@@ -14753,7 +14743,7 @@
           "year": "2025",
           "date": "2025-01-06",
           "doi": "10.1038/s41593-024-01850-w",
-          "cited": 53,
+          "cited": 58,
           "license": "cc by",
           "pdf": "https://europepmc.org/articles/PMC11802453?pdf=render",
           "keywords": [
@@ -15512,7 +15502,7 @@
           "year": "2025",
           "date": "2025-01-15",
           "doi": "10.1038/s41467-025-55974-z",
-          "cited": 19,
+          "cited": 20,
           "license": "cc by-nc-nd",
           "pdf": "https://europepmc.org/articles/PMC11735843?pdf=render",
           "keywords": [
@@ -15700,6 +15690,33 @@
           "url": "https://doi.org/10.1038/nature11053"
         },
         {
+          "id": "MED:28005526",
+          "title": "Introducing EzBioCloud: a taxonomically united database of 16S rRNA gene sequences and whole-genome assemblies.",
+          "method": "Introducing EzBioCloud",
+          "authors": "Yoon SH, Ha SM, Kwon S, Lim J, Kim Y, Seo H, Chun J.",
+          "journal": "International journal of systematic and evolutionary microbiology",
+          "year": "2017",
+          "date": "2017-05-30",
+          "doi": "10.1099/ijsem.0.001755",
+          "cited": 5834,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC5563544?pdf=render",
+          "keywords": [
+            "Phylogeny",
+            "Databases, Nucleic Acid"
+          ],
+          "tasks": [
+            "profiling",
+            "amplicon"
+          ],
+          "datasets": [],
+          "lists": [
+            "classic"
+          ],
+          "abstract": "The recent advent of DNA sequencing technologies facilitates the use of genome sequencing data that provide means for more informative and precise classification and identification of members of the Bacteria and Archaea. Because the current species definition is based on the comparison of genome sequences between type and other strains in a given species, building a genome database with correct taxonomic information is of paramount need to enhance our efforts in exploring prokaryotic diversity and discovering novel species as well as for routine identifications. Here we introduce an integrated database, called EzBioCloud, that holds the taxonomic hierarchy of the Bacteria and Archaea, which is represented by quality-controlled 16S rRNA gene and genome sequences. Whole-genome assemblies in the NCBI Assembly Database were screened for low quality and subjected to a composite identification bioinformatics pipeline that employs gene-based searches followed by the calculation of average nucleotide identity. As a result, the database is made of 61 700 species/phylotypes, including 13 132 with validly published names, and 62 362 whole-genome assemblies that were identified taxonomically at the genus, species and subspecies levels. Genomic properties, such as genome size and DNA G+C content, and the occurrence in human microbiome data were calculated for each genus or higher taxa. This united database of taxonomy, 16S rRNA gene and genome sequences, with accompanying bioinformatics tools, should accelerate genome-based classification and identification of members of the Bacteria and Archaea. The database and related search tools are available at www.ezbiocloud.net/.",
+          "url": "https://doi.org/10.1099/ijsem.0.001755"
+        },
+        {
           "id": "MED:19043404",
           "title": "A core gut microbiome in obese and lean twins.",
           "method": "",
@@ -15722,33 +15739,6 @@
           ],
           "abstract": "The human distal gut harbours a vast ensemble of microbes (the microbiota) that provide important metabolic capabilities, including the ability to extract energy from otherwise indigestible dietary polysaccharides. Studies of a few unrelated, healthy adults have revealed substantial diversity in their gut communities, as measured by sequencing 16S rRNA genes, yet how this diversity relates to function and to the rest of the genes in the collective genomes of the microbiota (the gut microbiome) remains obscure. Studies of lean and obese mice suggest that the gut microbiota affects energy balance by influencing the efficiency of calorie harvest from the diet, and how this harvested energy is used and stored. Here we characterize the faecal microbial communities of adult female monozygotic and dizygotic twin pairs concordant for leanness or obesity, and their mothers, to address how host genotype, environmental exposure and host adiposity influence the gut microbiome. Analysis of 154 individuals yielded 9,920 near full-length and 1,937,461 partial bacterial 16S rRNA sequences, plus 2.14 gigabases from their microbiomes. The results reveal that the human gut microbiome is shared among family members, but that each person's gut microbial community varies in the specific bacterial lineages present, with a comparable degree of co-variation between adult monozygotic and dizygotic twin pairs. However, there was a wide array of shared microbial genes among sampled individuals, comprising an extensive, identifiable 'core microbiome' at the gene, rather than at the organismal lineage, level. Obesity is associated with phylum-level changes in the microbiota, reduced bacterial diversity and altered representation of bacterial genes and metabolic pathways. These results demonstrate that a diversity of organismal assemblages can nonetheless yield a core microbiome at a functional level, and that deviations from this core are associated with different physiological states (obese compared with lean).",
           "url": "https://doi.org/10.1038/nature07540"
-        },
-        {
-          "id": "MED:28005526",
-          "title": "Introducing EzBioCloud: a taxonomically united database of 16S rRNA gene sequences and whole-genome assemblies.",
-          "method": "Introducing EzBioCloud",
-          "authors": "Yoon SH, Ha SM, Kwon S, Lim J, Kim Y, Seo H, Chun J.",
-          "journal": "International journal of systematic and evolutionary microbiology",
-          "year": "2017",
-          "date": "2017-05-30",
-          "doi": "10.1099/ijsem.0.001755",
-          "cited": 5740,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC5563544?pdf=render",
-          "keywords": [
-            "Phylogeny",
-            "Databases, Nucleic Acid"
-          ],
-          "tasks": [
-            "profiling",
-            "amplicon"
-          ],
-          "datasets": [],
-          "lists": [
-            "classic"
-          ],
-          "abstract": "The recent advent of DNA sequencing technologies facilitates the use of genome sequencing data that provide means for more informative and precise classification and identification of members of the Bacteria and Archaea. Because the current species definition is based on the comparison of genome sequences between type and other strains in a given species, building a genome database with correct taxonomic information is of paramount need to enhance our efforts in exploring prokaryotic diversity and discovering novel species as well as for routine identifications. Here we introduce an integrated database, called EzBioCloud, that holds the taxonomic hierarchy of the Bacteria and Archaea, which is represented by quality-controlled 16S rRNA gene and genome sequences. Whole-genome assemblies in the NCBI Assembly Database were screened for low quality and subjected to a composite identification bioinformatics pipeline that employs gene-based searches followed by the calculation of average nucleotide identity. As a result, the database is made of 61 700 species/phylotypes, including 13 132 with validly published names, and 62 362 whole-genome assemblies that were identified taxonomically at the genus, species and subspecies levels. Genomic properties, such as genome size and DNA G+C content, and the occurrence in human microbiome data were calculated for each genus or higher taxa. This united database of taxonomy, 16S rRNA gene and genome sequences, with accompanying bioinformatics tools, should accelerate genome-based classification and identification of members of the Bacteria and Archaea. The database and related search tools are available at www.ezbiocloud.net/.",
-          "url": "https://doi.org/10.1099/ijsem.0.001755"
         },
         {
           "id": "MED:25387460",
@@ -15787,7 +15777,7 @@
           "year": "2018",
           "date": "2018-12-17",
           "doi": "10.1186/s40168-018-0605-2",
-          "cited": 2681,
+          "cited": 2726,
           "license": "cc by",
           "pdf": "https://europepmc.org/articles/PMC6298009?pdf=render",
           "keywords": [
@@ -16377,6 +16367,37 @@
           "url": "https://doi.org/10.1093/bioinformatics/btaf147"
         },
         {
+          "id": "MED:38950910",
+          "title": "Interplay between gut microbiome, host genetic and epigenetic modifications in MASLD and MASLD-related hepatocellular carcinoma.",
+          "method": "",
+          "authors": "Ha S, Wong VW, Zhang X, Yu J.",
+          "journal": "Gut",
+          "year": "2024",
+          "date": "2024-12-10",
+          "doi": "10.1136/gutjnl-2024-332398",
+          "cited": 165,
+          "license": "cc by-nc",
+          "pdf": "https://europepmc.org/articles/PMC11671994?pdf=render",
+          "keywords": [
+            "Fatty liver",
+            "Gene Expression",
+            "Intestinal Microbiology",
+            "Carcinoma, Hepatocellular",
+            "Liver Neoplasms",
+            "Epigenesis, Genetic",
+            "Gastrointestinal Microbiome"
+          ],
+          "tasks": [
+            "functional"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Metabolic dysfunction-associated steatotic liver disease (MASLD) encompasses a wide spectrum of liver injuries, ranging from hepatic steatosis, metabolic dysfunction-associated steatohepatitis (MASH), fibrosis, cirrhosis to MASLD-associated hepatocellular carcinoma (MASLD-HCC). Recent studies have highlighted the bidirectional impacts between host genetics/epigenetics and the gut microbial community. Host genetics influence the composition of gut microbiome, while the gut microbiota and their derived metabolites can induce host epigenetic modifications to affect the development of MASLD. The exploration of the intricate relationship between the gut microbiome and the genetic/epigenetic makeup of the host is anticipated to yield promising avenues for therapeutic interventions targeting MASLD and its associated conditions. In this review, we summarise the effects of gut microbiome, host genetics and epigenetic alterations in MASLD and MASLD-HCC. We further discuss research findings demonstrating the bidirectional impacts between gut microbiome and host genetics/epigenetics, emphasising the significance of this interconnection in MASLD prevention and treatment.",
+          "url": "https://doi.org/10.1136/gutjnl-2024-332398"
+        },
+        {
           "id": "MED:39604623",
           "title": "Gut physiology and environment explain variations in human gut microbiome composition and metabolism.",
           "method": "",
@@ -16411,7 +16432,7 @@
           "year": "2025",
           "date": "2025-01-06",
           "doi": "10.1038/s41564-024-01870-z",
-          "cited": 122,
+          "cited": 128,
           "license": "cc by",
           "pdf": "https://europepmc.org/articles/PMC11726441?pdf=render",
           "keywords": [
@@ -16490,37 +16511,6 @@
           ],
           "abstract": "Plant-microbiome symbiotic interactions play a crucial role in regulating plant health and productivity. To establish symbiotic relationships, the plant secretes a variety of substances to facilitate microbial community recruitment and assembly. In recent years, important progress has been made in studying how plant exudates attract beneficial microorganisms and regulate plant health. However, the mechanisms of plant exudates-mediated microbial community recruitment and assembly and their effects on plant health are no comprehensive review. Here, we summarize the interaction mechanisms among plant exudates, microbial community recruitment and assembly, and plant health. First, we systematically evaluate the type and distribution of plant exudates, as well as their role in microbiome recruitment and assembly. Second, we summarize the mechanisms of plant exudates in terms of microbiome recruitment, diversity regulation and chemotaxis. Finally, we list some typical examples for elucidating the importance of plant exudates in promoting plant health and development. This review contributes to utilizing plant exudate or beneficial microbiome resources to manage plant health and productivity.",
           "url": "https://doi.org/10.1093/femsre/fuaf008"
-        },
-        {
-          "id": "MED:38950910",
-          "title": "Interplay between gut microbiome, host genetic and epigenetic modifications in MASLD and MASLD-related hepatocellular carcinoma.",
-          "method": "",
-          "authors": "Ha S, Wong VW, Zhang X, Yu J.",
-          "journal": "Gut",
-          "year": "2024",
-          "date": "2024-12-10",
-          "doi": "10.1136/gutjnl-2024-332398",
-          "cited": 106,
-          "license": "cc by-nc",
-          "pdf": "https://europepmc.org/articles/PMC11671994?pdf=render",
-          "keywords": [
-            "Fatty liver",
-            "Gene Expression",
-            "Intestinal Microbiology",
-            "Carcinoma, Hepatocellular",
-            "Liver Neoplasms",
-            "Epigenesis, Genetic",
-            "Gastrointestinal Microbiome"
-          ],
-          "tasks": [
-            "functional"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Metabolic dysfunction-associated steatotic liver disease (MASLD) encompasses a wide spectrum of liver injuries, ranging from hepatic steatosis, metabolic dysfunction-associated steatohepatitis (MASH), fibrosis, cirrhosis to MASLD-associated hepatocellular carcinoma (MASLD-HCC). Recent studies have highlighted the bidirectional impacts between host genetics/epigenetics and the gut microbial community. Host genetics influence the composition of gut microbiome, while the gut microbiota and their derived metabolites can induce host epigenetic modifications to affect the development of MASLD. The exploration of the intricate relationship between the gut microbiome and the genetic/epigenetic makeup of the host is anticipated to yield promising avenues for therapeutic interventions targeting MASLD and its associated conditions. In this review, we summarise the effects of gut microbiome, host genetics and epigenetic alterations in MASLD and MASLD-HCC. We further discuss research findings demonstrating the bidirectional impacts between gut microbiome and host genetics/epigenetics, emphasising the significance of this interconnection in MASLD prevention and treatment.",
-          "url": "https://doi.org/10.1136/gutjnl-2024-332398"
         },
         {
           "id": "MED:40166938",
@@ -16968,6 +16958,32 @@
           "url": "https://doi.org/10.1038/s41467-025-56829-3"
         },
         {
+          "id": "MED:41571673",
+          "title": "Gut microbiome-driven colorectal cancer via immune, metabolic, neural, and endocrine axes reprogramming.",
+          "method": "",
+          "authors": "Bautista J, Lamas-Maceiras M, Hidalgo-Tinoco C, Guerra-Guerrero A, Betancourt-Velarde A, López-Cortés A.",
+          "journal": "NPJ biofilms and microbiomes",
+          "year": "2026",
+          "date": "2026-01-23",
+          "doi": "10.1038/s41522-025-00883-8",
+          "cited": 55,
+          "license": "cc by-nc-nd",
+          "pdf": "https://europepmc.org/articles/PMC12847797?pdf=render",
+          "keywords": [
+            "Colorectal Neoplasms",
+            "Gastrointestinal Microbiome"
+          ],
+          "tasks": [
+            "functional"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Colorectal cancer (CRC) is a leading cause of cancer mortality worldwide and is increasingly recognized as the outcome of complex host-microbe interactions. Beyond established genetic and environmental drivers, the gut microbiome has emerged as a causal and mechanistic contributor to CRC initiation, progression, and therapy response. This review synthesizes current molecular, ecological, and translational evidence to explain how gut microbial communities reprogram immune, metabolic, neural, and endocrine networks within the tumor microenvironment. CRC-associated dysbiosis is characterized by enrichment of pathobionts such as Fusobacterium nucleatum, pks⁺ Escherichia coli, and enterotoxigenic Bacteroides fragilis, and by loss of protective, short-chain-fatty-acid-producing commensals. These microbes promote carcinogenesis through genotoxin-induced DNA damage, epithelial barrier disruption, metabolic rewiring, and chronic inflammation that collectively sustain immune suppression and tumor growth. Defined mutational signatures from bacterial metabolites, including colibactin, cytolethal distending toxin, and indolimines, now directly link microbial exposures to human cancer genomes. By integrating these findings, this review conceptualizes CRC as a biofilm-structured, microbiome-driven ecosystem disease, where polymicrobial consortia coordinate barrier breakdown, immune evasion, and metabolic cooperation. Finally, we highlight emerging microbiota-targeted strategies, including dietary modulation, pre- and probiotics, postbiotics, bacteriophage therapy, engineered live biotherapeutics, and fecal microbiota transplantation, that translate these insights into precision prevention and therapy. Through this integrative framework, the review aims to reposition the microbiome from a correlative feature to a tractable determinant of CRC pathogenesis and treatment response.",
+          "url": "https://doi.org/10.1038/s41522-025-00883-8"
+        },
+        {
           "id": "MED:40200054",
           "title": "Microbiome-metabolome dynamics associated with impaired glucose control and responses to lifestyle changes.",
           "method": "",
@@ -17207,30 +17223,6 @@
           ],
           "abstract": "Over the last few decades, the prevalence of metabolic diseases such as obesity, diabetes, non-alcoholic fatty liver disease, hypertension, and hyperuricemia has surged, primarily due to high-fat diet (HFD). The pathologies of these metabolic diseases show disease-specific alterations in the composition and function of their gut microbiome. How HFD alters the microbiome and its metabolite to mediate adipose tissue (AT) inflammation and obesity is not well known. Thus, this study aimed to identify the changes in the gut microbiome and metabolomic signatures induced by an HFD to alter obesity. To explore the changes in the gut microbiota and metabolites, 16S rRNA gene amplicon sequencing and metabolomic analyses were performed after HFD and normal diet (ND) feeding. We noticed that, at taxonomic levels, the number of operational taxonomic units (OTUs), along with the Chao and Shannon indexes, significantly shifted in HFD-fed mice compared to those fed a ND. Similarly, at the phylum level, an increase in Firmicutes and a decrease in Bacteroidetes were noticed in HFD-fed mice. At the genus level, an increase in Lactobacillus and Ruminococcus was observed, while Allobaculum , Clostridium , and Akkermansia were markedly reduced in the HFD group. Many bacteria from the Ruminococcus genus impair bile acid metabolism and restrict weight loss. Firmicutes are efficient in breaking down complex carbohydrates into short-chain fatty acids (SCFAs) and other metabolites, whereas Bacteroidetes are involved in a more balanced or efficient energy extraction. Thus, an increase in Firmicutes over Bacteroidetes enhances the absorption of more calories from food, which may contribute to obesity. Taken together, the altered gut microbiota and metabolites trigger AT inflammation, which contributes to metabolic dysregulation and disease progression. Thus, this study highlights the potential of the gut microbiome in the development of therapeutic strategies for obesity and related metabolic disorders.",
           "url": "https://doi.org/10.3390/cells14060463"
-        },
-        {
-          "id": "MED:41272493",
-          "title": "Nutrigenomics meets multi-omics: integrating genetic, metabolic, and microbiome data for personalized nutrition strategies.",
-          "method": "Nutrigenomics meets multi-omics",
-          "authors": "Nourazarain A, Vaziri Y.",
-          "journal": "Genes & nutrition",
-          "year": "2025",
-          "date": "2025-11-21",
-          "doi": "10.1186/s12263-025-00790-9",
-          "cited": 47,
-          "license": "cc by-nc-nd",
-          "pdf": "https://europepmc.org/articles/PMC12751198?pdf=render",
-          "keywords": [],
-          "tasks": [
-            "profiling",
-            "functional"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "The integration of multi-omics technologies with computational biology has had a profound impact on nutritional science, enabling the development of precision nutrition strategies tailored to individual biochemical profiles. This review synthesizes recent advances in integrating genomic, epigenetic, transcriptomic, proteomic, metabolomic, and microbiome data for personalized dietary interventions. The present study analyzed machine learning approaches, with a particular focus on transformer and graph neural networks, for the processing of multi-omics data and prediction of metabolic outcomes. Advanced computational models have demonstrated an accuracy rate of over 90% in predicting individual metabolic responses to dietary interventions. Large-scale clinical trials (PREDICT, FOOD4ME, and PRECISION-HEALTH) have demonstrated significant improvements in weight management, glycemic control, and dietary adherence compared with conventional approaches. Digital health technologies, including continuous glucose monitoring and artificial intelligence (AI)-powered applications, facilitate real-time physiological monitoring and enable dynamic nutritional adjustments in patients with diabetes. The paradigm shift from population-based dietary recommendations to individualized interventions is represented by multi-omics-driven precision nutrition. The integration of sophisticated computational methodologies with comprehensive biological profiling provides a unique opportunity to prevent and manage chronic diseases via targeted dietary interventions. However, the successful implementation of such a system necessitates interdisciplinary collaboration among biologists, computational scientists, clinicians, and policymakers to ensure equitable access and ethical deployment of the technology. Future research should focus on developing scalable implementation frameworks, establishing evidence-based clinical practice guidelines to standardize multi-omics applications in precision nutrition, and identifying strategies to address potential disparities in access to these applications.",
-          "url": "https://doi.org/10.1186/s12263-025-00790-9"
         }
       ]
     },
@@ -17306,7 +17298,7 @@
           "year": "2023",
           "date": "2023-01-19",
           "doi": "10.1038/s41597-022-01721-8",
-          "cited": 203,
+          "cited": 246,
           "license": "cc by",
           "pdf": "https://europepmc.org/articles/PMC9852451?pdf=render",
           "keywords": [
@@ -17382,7 +17374,7 @@
           "year": "2014",
           "date": "2014-08-20",
           "doi": "10.1021/ci500319f",
-          "cited": 123,
+          "cited": 126,
           "license": "",
           "pdf": "https://europepmc.org/articles/PMC4170813?pdf=render",
           "keywords": [],
@@ -17557,6 +17549,42 @@
           "url": "https://doi.org/10.1093/nar/gkn386"
         },
         {
+          "id": "MED:42561913",
+          "title": "A complete diploid human genome benchmark for personalized genomics.",
+          "method": "",
+          "authors": "Hansen NF, Dwarshuis N, Ji HJ, Rhie A, Loucks H, Logsdon GA, Vollger MR, Storer JM, Kim J, Adam E, Altemose N, Antipov D, Asri M, Barreira S, Bohaczuk SC, Bzikadze AV, Carioscia SA, Carroll A, Chao KH, Chu Y, Das A, Ebert P, English A, Fleharty M, Fleming LE, Formenti G, Guarracino A, Hartley GA, Jenike K, Kalleberg J, Kang Y, King R, Lipovac J, Mastoras M, Mitchell MW, Negi S, Olson ND, Oshima KK, Paulin LF, Pickett BD, Porubsky D, Ranchalis J, Ranjan D, Rautiainen M, Riethman H, Schnabel RD, Sedlazeck FJ, Shafin K, Sikic M, Solar SJ, Sweeten AP, Timp W, Wagner J, Yoo D, Zhou Y, Garrison E, Eichler EE, Schatz MC, Stergachis AB, O'Neill RJ, Miga KH, Salzberg SL, Koren S, Zook JM, Phillippy AM.",
+          "journal": "Cell",
+          "year": "2026",
+          "date": "2026-08-01",
+          "doi": "10.1016/j.cell.2026.06.016",
+          "cited": 59,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC13456413?pdf=render",
+          "keywords": [
+            "Diploid",
+            "Genome annotation",
+            "Genome sequencing",
+            "Genomics",
+            "haplotypes",
+            "Genome Assembly",
+            "Benchmarking",
+            "Telomere-to-telomere",
+            "Genomics",
+            "Diploidy",
+            "Genome, Human"
+          ],
+          "tasks": [
+            "benchmark"
+          ],
+          "datasets": [],
+          "lists": [
+            "classic",
+            "recent"
+          ],
+          "abstract": "Human genome sequencing typically relies on mapping reads to a reference genome to call variants, but this approach introduces technical biases, excluding duplicated and structurally polymorphic regions of the genome. To overcome this, we present a telomere-to-telomere genome benchmark with near-perfect accuracy across 99.4% of the diploid HG002 genome. This benchmark adds 701.4 Mb of autosomal sequence and both sex chromosomes (216.8 Mb), which were absent from prior benchmarks. We annotated genes and repeats on both haplotypes, including 19,956 protein-coding genes on the maternal haplotype and 19,190 on the paternal haplotype, and developed new methods to measure the accuracy of reads, phased variant call sets, and assemblies against a diploid reference. Genome-wide analyses show that de novo assembly resolves 2%-7% more sequence and outperforms variant calling accuracy by an order of magnitude, expanding the reach of genomic medicine to the entire genome and enabling a new era of personalized genomics.",
+          "url": "https://doi.org/10.1016/j.cell.2026.06.016"
+        },
+        {
           "id": "MED:31921297",
           "title": "Benchmark and Parameter Sensitivity Analysis of Single-Cell RNA Sequencing Clustering Methods.",
           "method": "",
@@ -17584,42 +17612,6 @@
           ],
           "abstract": "Single-cell RNA-seq (scRNAseq) is a powerful tool to study heterogeneity of cells. Recently, several clustering based methods have been proposed to identify distinct cell populations. These methods are based on different statistical models and usually require to perform several additional steps, such as preprocessing or dimension reduction, before applying the clustering algorithm. Individual steps are often controlled by method-specific parameters, permitting the method to be used in different modes on the same datasets, depending on the user choices. The large number of possibilities that these methods provide can intimidate non-expert users, since the available choices are not always clearly documented. In addition, to date, no large studies have invistigated the role and the impact that these choices can have in different experimental contexts. This work aims to provide new insights into the advantages and drawbacks of scRNAseq clustering methods and describe the ranges of possibilities that are offered to users. In particular, we provide an extensive evaluation of several methods with respect to different modes of usage and parameter settings by applying them to real and simulated datasets that vary in terms of dimensionality, number of cell populations or levels of noise. Remarkably, the results presented here show that great variability in the performance of the models is strongly attributed to the choice of the user-specific parameter settings. We describe several tendencies in the performance attributed to their modes of usage and different types of datasets, and identify which methods are strongly affected by data dimensionality in terms of computational time. Finally, we highlight some open challenges in scRNAseq data clustering, such as those related to the identification of the number of clusters.",
           "url": "https://doi.org/10.3389/fgene.2019.01253"
-        },
-        {
-          "id": "MED:42561913",
-          "title": "A complete diploid human genome benchmark for personalized genomics.",
-          "method": "",
-          "authors": "Hansen NF, Dwarshuis N, Ji HJ, Rhie A, Loucks H, Logsdon GA, Vollger MR, Storer JM, Kim J, Adam E, Altemose N, Antipov D, Asri M, Barreira S, Bohaczuk SC, Bzikadze AV, Carioscia SA, Carroll A, Chao KH, Chu Y, Das A, Ebert P, English A, Fleharty M, Fleming LE, Formenti G, Guarracino A, Hartley GA, Jenike K, Kalleberg J, Kang Y, King R, Lipovac J, Mastoras M, Mitchell MW, Negi S, Olson ND, Oshima KK, Paulin LF, Pickett BD, Porubsky D, Ranchalis J, Ranjan D, Rautiainen M, Riethman H, Schnabel RD, Sedlazeck FJ, Shafin K, Sikic M, Solar SJ, Sweeten AP, Timp W, Wagner J, Yoo D, Zhou Y, Garrison E, Eichler EE, Schatz MC, Stergachis AB, O'Neill RJ, Miga KH, Salzberg SL, Koren S, Zook JM, Phillippy AM.",
-          "journal": "Cell",
-          "year": "2026",
-          "date": "2026-08-01",
-          "doi": "10.1016/j.cell.2026.06.016",
-          "cited": 53,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC13456413?pdf=render",
-          "keywords": [
-            "Diploid",
-            "Genome annotation",
-            "Genome sequencing",
-            "Genomics",
-            "haplotypes",
-            "Genome Assembly",
-            "Benchmarking",
-            "Telomere-to-telomere",
-            "Genomics",
-            "Diploidy",
-            "Genome, Human"
-          ],
-          "tasks": [
-            "benchmark"
-          ],
-          "datasets": [],
-          "lists": [
-            "classic",
-            "recent"
-          ],
-          "abstract": "Human genome sequencing typically relies on mapping reads to a reference genome to call variants, but this approach introduces technical biases, excluding duplicated and structurally polymorphic regions of the genome. To overcome this, we present a telomere-to-telomere genome benchmark with near-perfect accuracy across 99.4% of the diploid HG002 genome. This benchmark adds 701.4 Mb of autosomal sequence and both sex chromosomes (216.8 Mb), which were absent from prior benchmarks. We annotated genes and repeats on both haplotypes, including 19,956 protein-coding genes on the maternal haplotype and 19,190 on the paternal haplotype, and developed new methods to measure the accuracy of reads, phased variant call sets, and assemblies against a diploid reference. Genome-wide analyses show that de novo assembly resolves 2%-7% more sequence and outperforms variant calling accuracy by an order of magnitude, expanding the reach of genomic medicine to the entire genome and enabling a new era of personalized genomics.",
-          "url": "https://doi.org/10.1016/j.cell.2026.06.016"
         },
         {
           "id": "MED:34365906",
