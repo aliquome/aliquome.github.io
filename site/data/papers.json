@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T13:17:55Z",
+  "generated_at": "2026-11-27T12:47:44Z",
   "source": "Europe PMC REST API",
   "rule": "For each field, the 30 most cited open-access papers of all time and the 30 most cited of the last 24 months that match the field query. Tasks come from keyword patterns; datasets are databases and datasets named in the title, abstract or keywords.",
   "fields": [
@@ -316,7 +316,7 @@
           "year": "2013",
           "date": "2013-02-06",
           "doi": "10.1186/1939-8433-6-4",
-          "cited": 1639,
+          "cited": 1673,
           "license": "cc by",
           "pdf": "https://europepmc.org/articles/PMC5395016?pdf=render",
           "keywords": [],
@@ -1057,6 +1057,34 @@
           "url": "https://doi.org/10.1093/nar/gkae1061"
         },
         {
+          "id": "MED:39758981",
+          "title": "Movi: A fast and cache-efficient full-text pangenome index.",
+          "method": "Movi",
+          "authors": "Zakeri M, Brown NK, Ahmed OY, Gagie T, Langmead B.",
+          "journal": "iScience",
+          "year": "2024",
+          "date": "2024-11-27",
+          "doi": "10.1016/j.isci.2024.111464",
+          "cited": 48,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC11696632?pdf=render",
+          "keywords": [
+            "Genomic analysis",
+            "Biocomputational Method",
+            "Classification Of Bioinformatical Subject"
+          ],
+          "tasks": [
+            "pangenome",
+            "long-read"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Pangenome indexes are promising tools for many applications, including classification of nanopore sequencing reads. Move structure is a compressed-index data structure based on the Burrows-Wheeler Transform (BWT). It offers simultaneous O(1)-time queries and O(r) space, where r is the number of BWT runs (consecutive sequence of identical characters). We developed Movi based on the move structure for indexing and querying pangenomes. Movi scales very well for repetitive text as its size grows strictly by r. Movi computes sophisticated matching queries for classification such as pseudo-matching lengths and backward search up to 30 times faster than existing methods by minimizing the number of cache misses and using memory prefetching to attain a degree of latency hiding. Movi's fast constant-time query loop makes it well suited to real-time applications like adaptive sampling for nanopore sequencing, where decisions must be made in a small and predictable time interval.",
+          "url": "https://doi.org/10.1016/j.isci.2024.111464"
+        },
+        {
           "id": "MED:39730188",
           "title": "Combining DNA and protein alignments to improve genome annotation with LiftOn.",
           "method": "LiftOn",
@@ -1111,34 +1139,6 @@
           ],
           "abstract": "Recent technological advances have facilitated the assembly of telomere-to-telomere (T2T) genomes. The current T2T CHM13 showcases the complete architecture of the human genome, yet its use in functional experiments is limited by discrepancies with the actual genome of the specific biological system under study. Access to reference assemblies for experimentally relevant cell lines is therefore essential in advancing sequencing-based analyses and precise manipulation, particularly in highly variable regions such as centromeres. Here, we present RPE1v1.1, the near-complete diploid genome assembly of the hTERT RPE-1 cell line, a non-cancerous human retinal epithelial model with a stable karyotype. Using high-coverage Pacific Biosciences and Oxford Nanopore Technologies long-read sequencing, we generate a high-quality de novo assembly, validate it through multiple methods, and phase it by integrating high-throughput chromosome conformation capture (Hi-C) data. Our assembly includes chromosome-level scaffolds that span centromeres for all chromosomes. Comparing both haplotypes with the CHM13 genome, we detect haplotype-specific genomic variations, including the translocation between chromosome 10 and chromosome X t(X;10)(Xq28;10q21.2) characteristic of RPE-1 cells, and divergence peaking at centromeres. Altogether, the RPE1v1.1 genome provides a reference-quality diploid assembly of a widely used cell line, supporting high-precision genetic and epigenetic studies in this model system.",
           "url": "https://doi.org/10.1038/s41467-025-62428-z"
-        },
-        {
-          "id": "MED:39758981",
-          "title": "Movi: A fast and cache-efficient full-text pangenome index.",
-          "method": "Movi",
-          "authors": "Zakeri M, Brown NK, Ahmed OY, Gagie T, Langmead B.",
-          "journal": "iScience",
-          "year": "2024",
-          "date": "2024-11-27",
-          "doi": "10.1016/j.isci.2024.111464",
-          "cited": 39,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC11696632?pdf=render",
-          "keywords": [
-            "Genomic analysis",
-            "Biocomputational Method",
-            "Classification Of Bioinformatical Subject"
-          ],
-          "tasks": [
-            "pangenome",
-            "long-read"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Pangenome indexes are promising tools for many applications, including classification of nanopore sequencing reads. Move structure is a compressed-index data structure based on the Burrows-Wheeler Transform (BWT). It offers simultaneous O(1)-time queries and O(r) space, where r is the number of BWT runs (consecutive sequence of identical characters). We developed Movi based on the move structure for indexing and querying pangenomes. Movi scales very well for repetitive text as its size grows strictly by r. Movi computes sophisticated matching queries for classification such as pseudo-matching lengths and backward search up to 30 times faster than existing methods by minimizing the number of cache misses and using memory prefetching to attain a degree of latency hiding. Movi's fast constant-time query loop makes it well suited to real-time applications like adaptive sampling for nanopore sequencing, where decisions must be made in a small and predictable time interval.",
-          "url": "https://doi.org/10.1016/j.isci.2024.111464"
         },
         {
           "id": "MED:40295880",
@@ -1488,6 +1488,30 @@
           "url": "https://doi.org/10.1101/gr.280274.124"
         },
         {
+          "id": "MED:39742300",
+          "title": "Pangenome and genome variation analyses of pigs unveil genomic facets for their adaptation and agronomic characteristics.",
+          "method": "",
+          "authors": "Li D, Wang Y, Yuan T, Cao M, He Y, Zhang L, Li X, Jiang Y, Li K, Sun J, Lv G, Su G, Wang Q, Pan Y, Li X, Jiang Y, Yang G, Groenen MAM, Derks MFL, Ding R, Ding X, Yu T.",
+          "journal": "iMeta",
+          "year": "2024",
+          "date": "2024-12-26",
+          "doi": "10.1002/imt2.257",
+          "cited": 22,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC11683468?pdf=render",
+          "keywords": [],
+          "tasks": [
+            "assembly",
+            "pangenome"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "The development of a comprehensive pig graph pangenome assembly encompassing 27 genomes represents the most extensive collection of pig genomic data to date. Analysis of this pangenome reveals the critical role of structural variations in driving adaptation and defining breed-specific traits. Notably, the study identifies BTF3 as a key candidate gene governing intramuscular fat deposition and meat quality in pigs. These findings underscore the power of pangenome approaches in uncovering novel genomic features underlying economically important agricultural traits. Collectively, these results demonstrate the value of leveraging large-scale, multi-genome analyses for advancing our understanding of livestock genomes and accelerating genetic improvement.",
+          "url": "https://doi.org/10.1002/imt2.257"
+        },
+        {
           "id": "MED:40442108",
           "title": "Pangenome analysis reveals yield- and fiber-related diversity and interspecific gene flow in Gossypium barbadense L.",
           "method": "",
@@ -1515,30 +1539,6 @@
           ],
           "abstract": "Gossypium barbadense is renowned for its superior fiber quality, particularly its extra-long fibers, although its fiber yield is lower compared to G. hirsutum. Here, to further reveal fiber-related genomic variants of G. barbadense, we de novo assemble 12 genomes of G. barbadense that span the wild-to-domesticated continuum, and construct a graph-based pangenome by integrating these assemblies and 17 publicly available tetraploid cotton genome assemblies. We uncover the divergent evolutionary trajectories and subsequent exchanges between G. barbadense and G. hirsutum through investigation of structural variants (SVs). We perform the SV-based GWAS analysis in G. barbadense and identify four, three, and seven candidate SVs for fiber length, fiber strength, and lint percentage, respectively. Furthermore, we detect the underlying candidate genes and uncover the origin and distribution of favorable alleles, and reveal the tradeoff between lint percentage and fiber quality. These pangenome and trait-associated SVs provide insights into and resources for improving cotton fiber.",
           "url": "https://doi.org/10.1038/s41467-025-60254-x"
-        },
-        {
-          "id": "MED:39742300",
-          "title": "Pangenome and genome variation analyses of pigs unveil genomic facets for their adaptation and agronomic characteristics.",
-          "method": "",
-          "authors": "Li D, Wang Y, Yuan T, Cao M, He Y, Zhang L, Li X, Jiang Y, Li K, Sun J, Lv G, Su G, Wang Q, Pan Y, Li X, Jiang Y, Yang G, Groenen MAM, Derks MFL, Ding R, Ding X, Yu T.",
-          "journal": "iMeta",
-          "year": "2024",
-          "date": "2024-12-26",
-          "doi": "10.1002/imt2.257",
-          "cited": 21,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC11683468?pdf=render",
-          "keywords": [],
-          "tasks": [
-            "assembly",
-            "pangenome"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "The development of a comprehensive pig graph pangenome assembly encompassing 27 genomes represents the most extensive collection of pig genomic data to date. Analysis of this pangenome reveals the critical role of structural variations in driving adaptation and defining breed-specific traits. Notably, the study identifies BTF3 as a key candidate gene governing intramuscular fat deposition and meat quality in pigs. These findings underscore the power of pangenome approaches in uncovering novel genomic features underlying economically important agricultural traits. Collectively, these results demonstrate the value of leveraging large-scale, multi-genome analyses for advancing our understanding of livestock genomes and accelerating genetic improvement.",
-          "url": "https://doi.org/10.1002/imt2.257"
         },
         {
           "id": "MED:40634612",
@@ -1949,7 +1949,7 @@
           "year": "2015",
           "date": "2015-09-28",
           "doi": "10.1038/ng.3404",
-          "cited": 2696,
+          "cited": 2728,
           "license": "",
           "pdf": "https://europepmc.org/articles/PMC4626285?pdf=render",
           "keywords": [
@@ -3234,33 +3234,6 @@
           "url": "https://doi.org/10.1371/journal.pcbi.1013400"
         },
         {
-          "id": "MED:39690174",
-          "title": "Brain change trajectories in healthy adults correlate with Alzheimer's related genetic variation and memory decline across life.",
-          "method": "",
-          "authors": "Roe JM, Vidal-Piñeiro D, Sørensen Ø, Grydeland H, Leonardsen EH, Iakunchykova O, Pan M, Mowinckel A, Strømstad M, Nawijn L, Milaneschi Y, Andersson M, Pudas S, Bråthen ACS, Kransberg J, Falch ES, Øverbye K, Kievit RA, Ebmeier KP, Lindenberger U, Ghisletta P, Demnitz N, Boraxbekk CJ, Drevon CA, Alzheimer’s Disease Neuroimaging Initiative, Australian Imaging Biomarkers and Lifestyle Flagship Study of Ageing, Penninx B, Bertram L, Nyberg L, Walhovd KB, Fjell AM, Wang Y.",
-          "journal": "Nature communications",
-          "year": "2024",
-          "date": "2024-12-17",
-          "doi": "10.1038/s41467-024-53548-z",
-          "cited": 21,
-          "license": "cc by-nc-nd",
-          "pdf": "https://europepmc.org/articles/PMC11652687?pdf=render",
-          "keywords": [
-            "Brain",
-            "Alzheimer Disease"
-          ],
-          "tasks": [
-            "variant-calling",
-            "polygenic"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Throughout adulthood and ageing our brains undergo structural loss in an average pattern resembling faster atrophy in Alzheimer's disease (AD). Using a longitudinal adult lifespan sample (aged 30-89; 2-7 timepoints) and four polygenic scores for AD, we show that change in AD-sensitive brain features correlates with genetic AD-risk and memory decline in healthy adults. We first show genetic risk links with more brain loss than expected for age in early Braak regions, and find this extends beyond APOE genotype. Next, we run machine learning on AD-control data from the Alzheimer's Disease Neuroimaging Initiative using brain change trajectories conditioned on age, to identify AD-sensitive features and model their change in healthy adults. Genetic AD-risk linked with multivariate change across many AD-sensitive features, and we show most individuals over age ~50 are on an accelerated trajectory of brain loss in AD-sensitive regions. Finally, high genetic risk adults with elevated brain change showed more memory decline through adulthood, compared to high genetic risk adults with less brain change. Our findings suggest quantitative AD risk factors are detectable in healthy individuals, via a shared pattern of ageing- and AD-related neurodegeneration that occurs along a continuum and tracks memory decline through adulthood.",
-          "url": "https://doi.org/10.1038/s41467-024-53548-z"
-        },
-        {
           "id": "MED:39642869",
           "title": "A missense variant effect map for the human tumor-suppressor protein CHK2.",
           "method": "",
@@ -3269,7 +3242,7 @@
           "year": "2024",
           "date": "2024-12-01",
           "doi": "10.1016/j.ajhg.2024.10.013",
-          "cited": 21,
+          "cited": 23,
           "license": "cc by",
           "pdf": "https://europepmc.org/articles/PMC11639082?pdf=render",
           "keywords": [
@@ -3295,6 +3268,33 @@
           ],
           "abstract": "The tumor suppressor CHEK2 encodes the serine/threonine protein kinase CHK2 which, upon DNA damage, is important for pausing the cell cycle, initiating DNA repair, and inducing apoptosis. CHK2 phosphorylation of the tumor suppressor BRCA1 is also important for mitotic spindle assembly and chromosomal stability. Consistent with its cell-cycle checkpoint role, both germline and somatic variants in CHEK2 have been linked to breast and other cancers. Over 90% of clinical germline CHEK2 missense variants are classified as variants of uncertain significance, complicating diagnosis of CHK2-dependent cancer. We therefore sought to test the functional impact of all possible missense variants in CHK2. Using a scalable multiplexed assay based on the ability of human CHK2 to complement DNA sensitivity of Saccharomyces cerevisiae cells lacking the CHEK2 ortholog, RAD53, we generated a systematic \"missense variant effect map\" for CHEK2 missense variation. The map reflects known biochemical features of CHK2 while offering new biological insights. It also provides strong evidence toward pathogenicity for some clinical missense variants and supporting evidence toward benignity for others. Overall, this comprehensive missense variant effect map contributes to understanding of both known and yet-to-be-observed CHK2 variants.",
           "url": "https://doi.org/10.1016/j.ajhg.2024.10.013"
+        },
+        {
+          "id": "MED:39690174",
+          "title": "Brain change trajectories in healthy adults correlate with Alzheimer's related genetic variation and memory decline across life.",
+          "method": "",
+          "authors": "Roe JM, Vidal-Piñeiro D, Sørensen Ø, Grydeland H, Leonardsen EH, Iakunchykova O, Pan M, Mowinckel A, Strømstad M, Nawijn L, Milaneschi Y, Andersson M, Pudas S, Bråthen ACS, Kransberg J, Falch ES, Øverbye K, Kievit RA, Ebmeier KP, Lindenberger U, Ghisletta P, Demnitz N, Boraxbekk CJ, Drevon CA, Alzheimer’s Disease Neuroimaging Initiative, Australian Imaging Biomarkers and Lifestyle Flagship Study of Ageing, Penninx B, Bertram L, Nyberg L, Walhovd KB, Fjell AM, Wang Y.",
+          "journal": "Nature communications",
+          "year": "2024",
+          "date": "2024-12-17",
+          "doi": "10.1038/s41467-024-53548-z",
+          "cited": 21,
+          "license": "cc by-nc-nd",
+          "pdf": "https://europepmc.org/articles/PMC11652687?pdf=render",
+          "keywords": [
+            "Brain",
+            "Alzheimer Disease"
+          ],
+          "tasks": [
+            "variant-calling",
+            "polygenic"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Throughout adulthood and ageing our brains undergo structural loss in an average pattern resembling faster atrophy in Alzheimer's disease (AD). Using a longitudinal adult lifespan sample (aged 30-89; 2-7 timepoints) and four polygenic scores for AD, we show that change in AD-sensitive brain features correlates with genetic AD-risk and memory decline in healthy adults. We first show genetic risk links with more brain loss than expected for age in early Braak regions, and find this extends beyond APOE genotype. Next, we run machine learning on AD-control data from the Alzheimer's Disease Neuroimaging Initiative using brain change trajectories conditioned on age, to identify AD-sensitive features and model their change in healthy adults. Genetic AD-risk linked with multivariate change across many AD-sensitive features, and we show most individuals over age ~50 are on an accelerated trajectory of brain loss in AD-sensitive regions. Finally, high genetic risk adults with elevated brain change showed more memory decline through adulthood, compared to high genetic risk adults with less brain change. Our findings suggest quantitative AD risk factors are detectable in healthy individuals, via a shared pattern of ageing- and AD-related neurodegeneration that occurs along a continuum and tracks memory decline through adulthood.",
+          "url": "https://doi.org/10.1038/s41467-024-53548-z"
         },
         {
           "id": "MED:39882942",
@@ -3714,7 +3714,7 @@
           "year": "2017",
           "date": "2017-09-05",
           "doi": "10.1038/sdata.2017.117",
-          "cited": 922,
+          "cited": 940,
           "license": "cc by",
           "pdf": "https://europepmc.org/articles/PMC5685212?pdf=render",
           "keywords": [
@@ -4003,7 +4003,7 @@
           "year": "2014",
           "date": "2014-05-29",
           "doi": "10.1038/ncomms4887",
-          "cited": 511,
+          "cited": 524,
           "license": "",
           "pdf": "https://europepmc.org/articles/PMC4109726?pdf=render",
           "keywords": [
@@ -4259,6 +4259,34 @@
           "url": "https://doi.org/10.1002/imt2.70011"
         },
         {
+          "id": "MED:41062696",
+          "title": "Somatic mutation and selection at population scale.",
+          "method": "",
+          "authors": "Lawson ARJ, Abascal F, Nicola PA, Lensing SV, Roberts AL, Kalantzis G, Baez-Ortega A, Brzozowska N, El-Sayed Moustafa JS, Vaitkute D, Jakupovic B, Nessa A, Wadge S, Österdahl MF, Paterson AL, Rassl DM, Alcantara RE, O'Neill L, Widaa S, Austin-Guest S, Neville MDC, Przybilla MJ, Cheng W, Morra M, Sykes L, Mayho M, Müller-Sienerth N, Williams N, Alexander D, Harvey LMR, Clarke T, Byrne A, Blundell JR, Young MD, Mahbubani KTA, Saeb-Parsy K, Martin HC, Stratton MR, Campbell PJ, Rahbari R, Small KS, Martincorena I.",
+          "journal": "Nature",
+          "year": "2025",
+          "date": "2025-10-08",
+          "doi": "10.1038/s41586-025-09584-w",
+          "cited": 72,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC12611758?pdf=render",
+          "keywords": [
+            "Mutation",
+            "Selection, Genetic",
+            "High-Throughput Nucleotide Sequencing"
+          ],
+          "tasks": [
+            "somatic",
+            "heterogeneity"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "As we age, many tissues become colonized by microscopic clones carrying somatic driver mutations 1-7 . Some of these clones represent a first step towards cancer whereas others may contribute to ageing and other diseases. However, our understanding of this phenomenon remains limited due to the challenge of detecting mutations in small clones. Here we introduce a new version of nanorate sequencing (NanoSeq) 8 , a duplex sequencing method with an error rate lower than five errors per billion base pairs, which is compatible with whole-exome and targeted capture. Deep sequencing of polyclonal samples with single-molecule sensitivity simultaneously profiles large numbers of clones, providing accurate mutation rates, signatures and driver frequencies in any tissue. Applying targeted NanoSeq to 1,042 non-invasive samples of oral epithelium and 371 blood samples from a twin cohort, we report an extremely rich selection landscape, with 46 genes under positive selection in oral epithelium, more than 62,000 driver mutations and evidence of negative selection in essential genes. High-resolution maps of selection across coding and non-coding sites are obtained for many genes: a form of in vivo saturation mutagenesis. Multivariate regression models enable mutational epidemiology studies on how exposures and cancer risk factors, such as age, tobacco or alcohol, alter the acquisition or selection of somatic mutations. Accurate single-molecule sequencing provides a powerful tool to study early carcinogenesis, cancer prevention and the role of somatic mutations in ageing and disease.",
+          "url": "https://doi.org/10.1038/s41586-025-09584-w"
+        },
+        {
           "id": "MED:40855431",
           "title": "Single-cell multi-omics in cancer immunotherapy: from tumor heterogeneity to personalized precision treatment.",
           "method": "",
@@ -4318,34 +4346,6 @@
           ],
           "abstract": "The landscapes of somatic mutation in normal cells inform us about the processes of mutation and selection operative throughout life, providing insight into normal ageing and the earliest stages of cancer development 1 . Here, by whole-genome sequencing of 238 microdissections 2 from 30 individuals, including 18 with gastric cancer, we elucidate the developmental trajectories of normal and malignant gastric epithelium. We find that gastric glands are units of monoclonal cell populations that accrue roughly 28 somatic single-nucleotide variants per year, predominantly attributable to endogenous mutational processes. In individuals with gastric cancer, metaplastic glands often show elevated mutation burdens due to acceleration of mutational processes linked to proliferation and oxidative damage. Unusually for normal cells, gastric epithelial cells often carry recurrent trisomies of specific chromosomes, which are highly enriched in a subset of individuals. Surveying 829 polyclonal gastric microbiopsies by targeted sequencing, we find somatic 'driver' mutations in a distinctive repertoire of known cancer genes, including ARID1A, ARID1B, ARID2, CTNNB1 and KDM6A. The prevalence of mutant clones increases with age to occupy roughly 8% of the gastric epithelial lining by age 60 years and is significantly increased by the presence of severe chronic inflammation. Our findings provide insights into intrinsic and extrinsic influences on somatic evolution in the gastric epithelium in healthy, precancerous and malignant states.",
           "url": "https://doi.org/10.1038/s41586-025-08708-6"
-        },
-        {
-          "id": "MED:41062696",
-          "title": "Somatic mutation and selection at population scale.",
-          "method": "",
-          "authors": "Lawson ARJ, Abascal F, Nicola PA, Lensing SV, Roberts AL, Kalantzis G, Baez-Ortega A, Brzozowska N, El-Sayed Moustafa JS, Vaitkute D, Jakupovic B, Nessa A, Wadge S, Österdahl MF, Paterson AL, Rassl DM, Alcantara RE, O'Neill L, Widaa S, Austin-Guest S, Neville MDC, Przybilla MJ, Cheng W, Morra M, Sykes L, Mayho M, Müller-Sienerth N, Williams N, Alexander D, Harvey LMR, Clarke T, Byrne A, Blundell JR, Young MD, Mahbubani KTA, Saeb-Parsy K, Martin HC, Stratton MR, Campbell PJ, Rahbari R, Small KS, Martincorena I.",
-          "journal": "Nature",
-          "year": "2025",
-          "date": "2025-10-08",
-          "doi": "10.1038/s41586-025-09584-w",
-          "cited": 66,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC12611758?pdf=render",
-          "keywords": [
-            "Mutation",
-            "Selection, Genetic",
-            "High-Throughput Nucleotide Sequencing"
-          ],
-          "tasks": [
-            "somatic",
-            "heterogeneity"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "As we age, many tissues become colonized by microscopic clones carrying somatic driver mutations 1-7 . Some of these clones represent a first step towards cancer whereas others may contribute to ageing and other diseases. However, our understanding of this phenomenon remains limited due to the challenge of detecting mutations in small clones. Here we introduce a new version of nanorate sequencing (NanoSeq) 8 , a duplex sequencing method with an error rate lower than five errors per billion base pairs, which is compatible with whole-exome and targeted capture. Deep sequencing of polyclonal samples with single-molecule sensitivity simultaneously profiles large numbers of clones, providing accurate mutation rates, signatures and driver frequencies in any tissue. Applying targeted NanoSeq to 1,042 non-invasive samples of oral epithelium and 371 blood samples from a twin cohort, we report an extremely rich selection landscape, with 46 genes under positive selection in oral epithelium, more than 62,000 driver mutations and evidence of negative selection in essential genes. High-resolution maps of selection across coding and non-coding sites are obtained for many genes: a form of in vivo saturation mutagenesis. Multivariate regression models enable mutational epidemiology studies on how exposures and cancer risk factors, such as age, tobacco or alcohol, alter the acquisition or selection of somatic mutations. Accurate single-molecule sequencing provides a powerful tool to study early carcinogenesis, cancer prevention and the role of somatic mutations in ageing and disease.",
-          "url": "https://doi.org/10.1038/s41586-025-09584-w"
         },
         {
           "id": "MED:39885364",
@@ -4453,6 +4453,31 @@
           "url": "https://doi.org/10.3390/cells14080562"
         },
         {
+          "id": "MED:40854985",
+          "title": "Spatiotemporal analyses of the pan-cancer single-cell landscape reveal widespread profibrotic ecotypes associated with tumor immunity.",
+          "method": "",
+          "authors": "Han Y, Zhang L, Sun D, Cao G, Wang Y, Yue J, Hu J, Dong Z, Li F, Li T, Zhang P, Wu Q, Wang C.",
+          "journal": "Nature cancer",
+          "year": "2025",
+          "date": "2025-08-25",
+          "doi": "10.1038/s43018-025-01039-5",
+          "cited": 42,
+          "license": "cc by-nc-nd",
+          "pdf": "https://europepmc.org/articles/PMC12643937?pdf=render",
+          "keywords": [
+            "Neoplasms",
+            "Tumor Microenvironment",
+            "Cancer-Associated Fibroblasts"
+          ],
+          "tasks": [],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "The tumor microenvironment evolves during tumor development and influences the cells in the microenvironment to orchestrate a supportive environment for tumor growth. Here we collected 4,483,367 cells across 36 cancer types and constructed a pan-cancer resource named TabulaTIME. Our integrated analyses reveal that CTHRC1 is a hallmark of extracellular matrix-related cancer-associated fibroblasts (CAFs) that are enriched in different cancer types. Spatiotemporal analyses further indicated that CTHRC1 + CAFs are located at the leading edge between the malignant and normal regions, potentially preventing immune infiltration. Moreover, we identified that SLPI + macrophages exhibit profibrotic-associated phenotypes and colocalize with CTHRC1 + CAFs to form unique spatial ecotypes. Finally, we demonstrated that TabulaTIME can be used to analyze tumor ecotype composition and can serve as a reference for cell-type annotation. This work establishes a comprehensive single-cell landscape of the heterogenous TME and offers a potential therapeutic strategy for targeting the profibrotic ecotype in cancer treatment.",
+          "url": "https://doi.org/10.1038/s43018-025-01039-5"
+        },
+        {
           "id": "MED:40604087",
           "title": "Mucin-1: a promising pan-cancer therapeutic target.",
           "method": "Mucin-1",
@@ -4504,31 +4529,6 @@
           ],
           "abstract": "Genomic, epigenomic and transcriptomic alterations are hallmarks of cancer cells, and are closely connected. Especially, epigenetic regulation plays a critical role in tumorigenesis and progression. The growing single-cell epigenome data in cancer research provide new opportunities for data mining from a more comprehensive perspective. However, there is still a lack of databases designed for interactively exploring the single-cell multi-omics data of human pan-cancer, especially for the single-cell epigenome data. To fill in the gap, we developed scCancerExplorer, a comprehensive and user-friendly database to facilitate the exploration of the single-cell genome, epigenome (chromatin accessibility and DNA methylation), and transcriptome data of 50 cancer types. Five major modules were provided to explore those data interactively, including 'Integrated multi-omics analysis', 'Single-cell transcriptome', 'Single-cell epigenome', 'Single-cell genome' and 'TCGA analysis'. By simple clicking, users can easily investigate gene expression features, chromatin accessibility patterns, transcription factor activities, DNA methylation states, copy number variations and TCGA survival analysis results. Taken together, scCancerExplorer is distinguished from previous databases with rich and interactive functions for exploring the single-cell multi-omics data of human pan-cancer. It bridges the gap between single-cell multi-omics data and the end-users, and will facilitate progress in the field of cancer research. scCancerExplorer is freely accessible via https://bianlab.cn/scCancerExplorer.",
           "url": "https://doi.org/10.1093/nar/gkae1100"
-        },
-        {
-          "id": "MED:40854985",
-          "title": "Spatiotemporal analyses of the pan-cancer single-cell landscape reveal widespread profibrotic ecotypes associated with tumor immunity.",
-          "method": "",
-          "authors": "Han Y, Zhang L, Sun D, Cao G, Wang Y, Yue J, Hu J, Dong Z, Li F, Li T, Zhang P, Wu Q, Wang C.",
-          "journal": "Nature cancer",
-          "year": "2025",
-          "date": "2025-08-25",
-          "doi": "10.1038/s43018-025-01039-5",
-          "cited": 37,
-          "license": "cc by-nc-nd",
-          "pdf": "https://europepmc.org/articles/PMC12643937?pdf=render",
-          "keywords": [
-            "Neoplasms",
-            "Tumor Microenvironment",
-            "Cancer-Associated Fibroblasts"
-          ],
-          "tasks": [],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "The tumor microenvironment evolves during tumor development and influences the cells in the microenvironment to orchestrate a supportive environment for tumor growth. Here we collected 4,483,367 cells across 36 cancer types and constructed a pan-cancer resource named TabulaTIME. Our integrated analyses reveal that CTHRC1 is a hallmark of extracellular matrix-related cancer-associated fibroblasts (CAFs) that are enriched in different cancer types. Spatiotemporal analyses further indicated that CTHRC1 + CAFs are located at the leading edge between the malignant and normal regions, potentially preventing immune infiltration. Moreover, we identified that SLPI + macrophages exhibit profibrotic-associated phenotypes and colocalize with CTHRC1 + CAFs to form unique spatial ecotypes. Finally, we demonstrated that TabulaTIME can be used to analyze tumor ecotype composition and can serve as a reference for cell-type annotation. This work establishes a comprehensive single-cell landscape of the heterogenous TME and offers a potential therapeutic strategy for targeting the profibrotic ecotype in cancer treatment.",
-          "url": "https://doi.org/10.1038/s43018-025-01039-5"
         },
         {
           "id": "MED:40095483",
@@ -4806,6 +4806,38 @@
           "url": "https://doi.org/10.1021/jacsau.4c00989"
         },
         {
+          "id": "MED:40120098",
+          "title": "Pan-cancer analysis shapes the understanding of cancer biology and medicine.",
+          "method": "",
+          "authors": "Cen X, Lan Y, Zou J, Chen R, Hu C, Tong Y, Zhang C, Chen J, Wang Y, Zhou R, He W, Lu T, Dubee F, Jovic D, Dong W, Gao Q, Ma M, Lu Y, Xue Y, Cheng X, Li Y, Yang H.",
+          "journal": "Cancer communications (London, England)",
+          "year": "2025",
+          "date": "2025-03-22",
+          "doi": "10.1002/cac2.70008",
+          "cited": 26,
+          "license": "cc by-nc-nd",
+          "pdf": "https://europepmc.org/articles/PMC12328095?pdf=render",
+          "keywords": [
+            "Artificial intelligence",
+            "Cancer Treatment",
+            "Cancer Biology",
+            "Multi‐omics",
+            "Pan‐Cancer",
+            "Neoplasms",
+            "Medical Oncology",
+            "Multiomics"
+          ],
+          "tasks": [
+            "heterogeneity"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Advances in multi-omics datasets and analytical methods have revolutionized cancer research, offering a comprehensive, pan-cancer perspective. Pan-cancer studies identify shared mechanisms and unique traits across different cancer types, which are reshaping diagnostic and treatment strategies. However, continued innovation is required to refine these approaches and deepen our understanding of cancer biology and medicine. This review summarized key findings from pan-cancer research and explored their potential to drive future advancements in oncology.",
+          "url": "https://doi.org/10.1002/cac2.70008"
+        },
+        {
           "id": "MED:39863609",
           "title": "Comprehensive pan-cancer analysis reveals NTN1 as an immune infiltrate risk factor and its potential prognostic value in SKCM.",
           "method": "SKCM",
@@ -4904,38 +4936,6 @@
           ],
           "abstract": "Resistance to immune checkpoint inhibitors (ICIs) represents a major challenge for the effective treatment of non-small cell lung cancer (NSCLC). Tumor heterogeneity has been identified as an important mechanism of treatment resistance in cancer and has been increasingly implicated in ICI resistance. The diversity and clonality of tumor neoantigens, which represent the target epitopes for tumor-specific immune cells, have been shown to impact the efficacy of immunotherapy. Advances in genomic techniques have further enhanced our understanding of clonal landscapes within NSCLC and their evolution in response to therapy. In this review, we examine the role of tumor heterogeneity during immune surveillance in NSCLC and highlight its spatial and temporal evolution as revealed by modern technologies. We explore additional sources of heterogeneity, including epigenetic and metabolic factors, that have come under greater scrutiny as potential mediators of the immune response. We finally discuss the implications of tumor heterogeneity on the efficacy of ICIs and highlight potential strategies for overcoming therapeutic resistance.",
           "url": "https://doi.org/10.3390/cancers17061027"
-        },
-        {
-          "id": "MED:40120098",
-          "title": "Pan-cancer analysis shapes the understanding of cancer biology and medicine.",
-          "method": "",
-          "authors": "Cen X, Lan Y, Zou J, Chen R, Hu C, Tong Y, Zhang C, Chen J, Wang Y, Zhou R, He W, Lu T, Dubee F, Jovic D, Dong W, Gao Q, Ma M, Lu Y, Xue Y, Cheng X, Li Y, Yang H.",
-          "journal": "Cancer communications (London, England)",
-          "year": "2025",
-          "date": "2025-03-22",
-          "doi": "10.1002/cac2.70008",
-          "cited": 25,
-          "license": "cc by-nc-nd",
-          "pdf": "https://europepmc.org/articles/PMC12328095?pdf=render",
-          "keywords": [
-            "Artificial intelligence",
-            "Cancer Treatment",
-            "Cancer Biology",
-            "Multi‐omics",
-            "Pan‐Cancer",
-            "Neoplasms",
-            "Medical Oncology",
-            "Multiomics"
-          ],
-          "tasks": [
-            "heterogeneity"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Advances in multi-omics datasets and analytical methods have revolutionized cancer research, offering a comprehensive, pan-cancer perspective. Pan-cancer studies identify shared mechanisms and unique traits across different cancer types, which are reshaping diagnostic and treatment strategies. However, continued innovation is required to refine these approaches and deepen our understanding of cancer biology and medicine. This review summarized key findings from pan-cancer research and explored their potential to drive future advancements in oncology.",
-          "url": "https://doi.org/10.1002/cac2.70008"
         },
         {
           "id": "MED:40517231",
@@ -6018,6 +6018,36 @@
           "url": "https://doi.org/10.1038/s41588-025-02080-x"
         },
         {
+          "id": "MED:41168487",
+          "title": "Nicheformer: a foundation model for single-cell and spatial omics.",
+          "method": "Nicheformer",
+          "authors": "Tejada-Lapuerta A, Schaar AC, Gutgesell R, Palla G, Halle L, Minaeva M, Vornholz L, Dony L, Drummer F, Richter T, Bahrami M, Theis FJ.",
+          "journal": "Nature methods",
+          "year": "2025",
+          "date": "2025-10-30",
+          "doi": "10.1038/s41592-025-02814-z",
+          "cited": 165,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC12695652?pdf=render",
+          "keywords": [
+            "Computational Biology",
+            "Genomics",
+            "Software",
+            "Single-Cell Analysis"
+          ],
+          "tasks": [
+            "integration",
+            "spatial",
+            "foundation"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Tissue makeup depends on the local cellular microenvironment. Spatial single-cell genomics enables scalable and unbiased interrogation of these interactions. Here we introduce Nicheformer, a transformer-based foundation model trained on both human and mouse dissociated single-cell and targeted spatial transcriptomics data. Pretrained on SpatialCorpus-110M, a curated collection of over 57 million dissociated and 53 million spatially resolved cells across 73 tissues on cellular reconstruction, Nicheformer learns cell representations that capture spatial context. It excels in linear-probing and fine-tuning scenarios for a newly designed set of downstream tasks, in particular spatial composition prediction and spatial label prediction. Critically, we show that models trained only on dissociated data fail to recover the complexity of spatial microenvironments, underscoring the need for multiscale integration. Nicheformer enables the prediction of the spatial context of dissociated cells, allowing the transfer of rich spatial information to scRNA-seq datasets. Overall, Nicheformer sets the stage for the next generation of machine-learning models in spatial single-cell analysis.",
+          "url": "https://doi.org/10.1038/s41592-025-02814-z"
+        },
+        {
           "id": "MED:41145665",
           "title": "Improved reconstruction of single-cell developmental potential with CytoTRACE 2.",
           "method": "",
@@ -6042,36 +6072,6 @@
           ],
           "abstract": "While single-cell RNA sequencing has advanced our understanding of cell fate, identifying molecular hallmarks of potency-a cell's ability to differentiate into other cell types-remains a challenge. Here we introduce CytoTRACE 2, an interpretable deep learning framework for predicting absolute developmental potential from single-cell RNA sequencing data. Across diverse platforms and tissues, CytoTRACE 2 outperformed previous methods in predicting developmental hierarchies, enabling detailed mapping of single-cell differentiation landscapes and expanding insights into cell potency.",
           "url": "https://doi.org/10.1038/s41592-025-02857-2"
-        },
-        {
-          "id": "MED:41168487",
-          "title": "Nicheformer: a foundation model for single-cell and spatial omics.",
-          "method": "Nicheformer",
-          "authors": "Tejada-Lapuerta A, Schaar AC, Gutgesell R, Palla G, Halle L, Minaeva M, Vornholz L, Dony L, Drummer F, Richter T, Bahrami M, Theis FJ.",
-          "journal": "Nature methods",
-          "year": "2025",
-          "date": "2025-10-30",
-          "doi": "10.1038/s41592-025-02814-z",
-          "cited": 143,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC12695652?pdf=render",
-          "keywords": [
-            "Computational Biology",
-            "Genomics",
-            "Software",
-            "Single-Cell Analysis"
-          ],
-          "tasks": [
-            "integration",
-            "spatial",
-            "foundation"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Tissue makeup depends on the local cellular microenvironment. Spatial single-cell genomics enables scalable and unbiased interrogation of these interactions. Here we introduce Nicheformer, a transformer-based foundation model trained on both human and mouse dissociated single-cell and targeted spatial transcriptomics data. Pretrained on SpatialCorpus-110M, a curated collection of over 57 million dissociated and 53 million spatially resolved cells across 73 tissues on cellular reconstruction, Nicheformer learns cell representations that capture spatial context. It excels in linear-probing and fine-tuning scenarios for a newly designed set of downstream tasks, in particular spatial composition prediction and spatial label prediction. Critically, we show that models trained only on dissociated data fail to recover the complexity of spatial microenvironments, underscoring the need for multiscale integration. Nicheformer enables the prediction of the spatial context of dissociated cells, allowing the transfer of rich spatial information to scRNA-seq datasets. Overall, Nicheformer sets the stage for the next generation of machine-learning models in spatial single-cell analysis.",
-          "url": "https://doi.org/10.1038/s41592-025-02814-z"
         },
         {
           "id": "MED:39820751",
@@ -6110,7 +6110,7 @@
           "year": "2025",
           "date": "2025-01-02",
           "doi": "10.1038/s41467-024-55325-4",
-          "cited": 130,
+          "cited": 135,
           "license": "cc by-nc-nd",
           "pdf": "https://europepmc.org/articles/PMC11697218?pdf=render",
           "keywords": [
@@ -6606,35 +6606,6 @@
           "url": "https://doi.org/10.1038/s41467-025-57047-7"
         },
         {
-          "id": "MED:39592577",
-          "title": "Spatial transcriptomics reveals substantial heterogeneity in triple-negative breast cancer with potential clinical implications.",
-          "method": "",
-          "authors": "Wang X, Venet D, Lifrange F, Larsimont D, Rediti M, Stenbeck L, Dupont F, Rouas G, Garcia AJ, Craciun L, Buisseret L, Ignatiadis M, Carausu M, Bhalla N, Masarapu Y, Villacampa EG, Franzén L, Saarenpää S, Kvastad L, Thrane K, Lundeberg J, Rothé F, Sotiriou C.",
-          "journal": "Nature communications",
-          "year": "2024",
-          "date": "2024-11-26",
-          "doi": "10.1038/s41467-024-54145-w",
-          "cited": 83,
-          "license": "cc by-nc-nd",
-          "pdf": "https://europepmc.org/articles/PMC11599601?pdf=render",
-          "keywords": [
-            "Tumor Microenvironment",
-            "Transcriptome",
-            "Triple Negative Breast Neoplasms"
-          ],
-          "tasks": [
-            "integration",
-            "clustering",
-            "spatial"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "While triple-negative breast cancer (TNBC) is known to be heterogeneous at the genomic and transcriptomic levels, spatial information on tumor organization and cell composition is still lacking. Here, we investigate TNBC tumor architecture including its microenvironment using spatial transcriptomics on a series of 92 patients. We perform an in-depth characterization of tumor and stroma organization and composition using an integrative approach combining histomorphological and spatial transcriptomics. Furthermore, a detailed molecular characterization of tertiary lymphoid structures leads to identify a gene signature strongly associated to disease outcome and response to immunotherapy in several tumor types beyond TNBC. A stepwise clustering analysis identifies nine TNBC spatial archetypes, further validated in external datasets. Several spatial archetypes are associated with disease outcome and characterized by potentially actionable features. In this work, we provide a comprehensive insight into the complexity of TNBC ecosystem with potential clinical relevance, opening avenues for treatment tailoring including immunotherapy.",
-          "url": "https://doi.org/10.1038/s41467-024-54145-w"
-        },
-        {
           "id": "MED:40752494",
           "title": "Single-cell multiregion epigenomic rewiring in Alzheimer's disease progression and cognitive resilience.",
           "method": "",
@@ -6672,6 +6643,34 @@
           ],
           "abstract": "Alzheimer's disease (AD) is a neurodegenerative disorder characterized by progressive cognitive decline, yet its epigenetic underpinnings remain elusive. Here, we generate and integrate single-cell epigenomic and transcriptomic profiles of 3.5 million cells from 384 postmortem brain samples across 6 regions in 111 AD and control individuals. We identify over 1 million candidate cis-regulatory elements (cCREs), organized into 123 regulatory modules across 67 cell subtypes. We define large-scale epigenomic compartments and single-cell epigenomic information and delineate their dynamics in AD, revealing widespread epigenome relaxation and brain-region-specific and cell-type-specific epigenomic erosion signatures during AD progression. These epigenomic stability dynamics are closely associated with cell-type proportion changes, glial cell-state transitions, and coordinated epigenomic and transcriptomic dysregulation linked to AD pathology, cognitive impairment, and cognitive resilience. This study provides critical insights into AD progression and cognitive resilience, presenting a comprehensive single-cell multiomic atlas to advance the understanding of AD.",
           "url": "https://doi.org/10.1016/j.cell.2025.06.031"
+        },
+        {
+          "id": "MED:40312419",
+          "title": "Single-cell transcriptomic analysis reveals gut microbiota-immunotherapy synergy through modulating tumor microenvironment.",
+          "method": "",
+          "authors": "Cao M, Deng Y, Hao Q, Yan H, Wang QL, Dong C, Wu J, He Y, Huang LB, Xia X, Gao Y, Chen HN, Zhang WH, Zhang YJ, Zhuo X, Dai L, Hu H, Peng Y, Zhang F, Liu Z, Huang W, Zhang H, Yang L, Shu Y, Zhang W, Zhang Y, Xu H.",
+          "journal": "Signal transduction and targeted therapy",
+          "year": "2025",
+          "date": "2025-05-02",
+          "doi": "10.1038/s41392-025-02226-7",
+          "cited": 72,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC12045981?pdf=render",
+          "keywords": [
+            "Neoplasms",
+            "Immunotherapy",
+            "Single-Cell Analysis",
+            "Tumor Microenvironment",
+            "Gastrointestinal Microbiome",
+            "Immune Checkpoint Inhibitors"
+          ],
+          "tasks": [],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "The gut microbiota crucially regulates the efficacy of immune checkpoint inhibitor (ICI) based immunotherapy, but the underlying mechanisms remain unclear at the single-cell resolution. Using single-cell RNA sequencing and subsequent validations, we investigate gut microbiota-ICI synergy by profiling the tumor microenvironment (TME) and elucidating critical cellular interactions in mouse models. Our findings reveal that intact gut microbiota combined with ICIs may synergistically increase the proportions of CD8 + , CD4 + , and γδ T cells, reduce glycolysis metabolism, and reverse exhausted CD8 + T cells into memory/effector CD8 + T cells, enhancing antitumor response. This synergistic effect also induces macrophage reprogramming from M2 protumor Spp1 + tumor-associated macrophages (TAMs) to Cd74 + TAMs, which act as antigen-presenting cells (APCs). These macrophage subtypes show a negative correlation within tumors, particularly during fecal microbiota transplantation. Depleting Spp1 + TAMs in Spp1 conditional knockout mice boosts ICI efficacy and T cell infiltration, regardless of gut microbiota status, suggesting a potential upstream role of the gut microbiota and highlighting the crucial negative impact of Spp1 + TAMs during macrophage reprogramming on immunotherapy outcomes. Mechanistically, we propose a γδ T cell-APC-CD8 + T cell axis, where gut microbiota and ICIs enhance Cd40lg expression on γδ T cells, activating Cd40 overexpressing APCs (e.g., Cd74 + TAMs) through CD40-CD40L-related NF-κB signaling and boosting CD8 + T cell responses via CD86-CD28 interactions. These findings highlight the potential importance of γδ T cells and SPP1-related macrophage reprogramming in activating CD8 + T cells, as well as the synergistic effect of gut microbiota and ICIs in immunotherapy through modulating the TME.",
+          "url": "https://doi.org/10.1038/s41392-025-02226-7"
         },
         {
           "id": "MED:40993240",
@@ -6766,34 +6765,6 @@
           "url": "https://doi.org/10.1038/s41586-025-09435-8"
         },
         {
-          "id": "MED:40312419",
-          "title": "Single-cell transcriptomic analysis reveals gut microbiota-immunotherapy synergy through modulating tumor microenvironment.",
-          "method": "",
-          "authors": "Cao M, Deng Y, Hao Q, Yan H, Wang QL, Dong C, Wu J, He Y, Huang LB, Xia X, Gao Y, Chen HN, Zhang WH, Zhang YJ, Zhuo X, Dai L, Hu H, Peng Y, Zhang F, Liu Z, Huang W, Zhang H, Yang L, Shu Y, Zhang W, Zhang Y, Xu H.",
-          "journal": "Signal transduction and targeted therapy",
-          "year": "2025",
-          "date": "2025-05-02",
-          "doi": "10.1038/s41392-025-02226-7",
-          "cited": 67,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC12045981?pdf=render",
-          "keywords": [
-            "Neoplasms",
-            "Immunotherapy",
-            "Single-Cell Analysis",
-            "Tumor Microenvironment",
-            "Gastrointestinal Microbiome",
-            "Immune Checkpoint Inhibitors"
-          ],
-          "tasks": [],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "The gut microbiota crucially regulates the efficacy of immune checkpoint inhibitor (ICI) based immunotherapy, but the underlying mechanisms remain unclear at the single-cell resolution. Using single-cell RNA sequencing and subsequent validations, we investigate gut microbiota-ICI synergy by profiling the tumor microenvironment (TME) and elucidating critical cellular interactions in mouse models. Our findings reveal that intact gut microbiota combined with ICIs may synergistically increase the proportions of CD8 + , CD4 + , and γδ T cells, reduce glycolysis metabolism, and reverse exhausted CD8 + T cells into memory/effector CD8 + T cells, enhancing antitumor response. This synergistic effect also induces macrophage reprogramming from M2 protumor Spp1 + tumor-associated macrophages (TAMs) to Cd74 + TAMs, which act as antigen-presenting cells (APCs). These macrophage subtypes show a negative correlation within tumors, particularly during fecal microbiota transplantation. Depleting Spp1 + TAMs in Spp1 conditional knockout mice boosts ICI efficacy and T cell infiltration, regardless of gut microbiota status, suggesting a potential upstream role of the gut microbiota and highlighting the crucial negative impact of Spp1 + TAMs during macrophage reprogramming on immunotherapy outcomes. Mechanistically, we propose a γδ T cell-APC-CD8 + T cell axis, where gut microbiota and ICIs enhance Cd40lg expression on γδ T cells, activating Cd40 overexpressing APCs (e.g., Cd74 + TAMs) through CD40-CD40L-related NF-κB signaling and boosting CD8 + T cell responses via CD86-CD28 interactions. These findings highlight the potential importance of γδ T cells and SPP1-related macrophage reprogramming in activating CD8 + T cells, as well as the synergistic effect of gut microbiota and ICIs in immunotherapy through modulating the TME.",
-          "url": "https://doi.org/10.1038/s41392-025-02226-7"
-        },
-        {
           "id": "MED:40044970",
           "title": "Single-cell immune aging clocks reveal inter-individual heterogeneity during infection and vaccination.",
           "method": "",
@@ -6817,6 +6788,37 @@
           ],
           "abstract": "Aging affects human immune system functionality, increasing susceptibility to immune-mediated diseases. While gene expression programs accurately reflect immune function, their relationship with biological immune aging and health status remains unclear. Here we developed robust, cell-type-specific aging clocks (sc-ImmuAging) for the myeloid and lymphoid immune cell populations in circulation within peripheral blood mononuclear cells, using single-cell RNA-sequencing data from 1,081 healthy individuals aged from 18 to 97 years. Application of sc-ImmuAging to transcriptome data of patients with COVID-19 revealed notable age acceleration in monocytes, which decreased during recovery. Furthermore, inter-individual variations in immune aging induced by vaccination were identified, with individuals exhibiting elevated baseline interferon response genes showing age rejuvenation in CD8 + T cells after BCG vaccination. sc-ImmuAging provides a powerful tool for decoding immune aging dynamics, offering insights into age-related immune alterations and potential interventions to promote healthy aging.",
           "url": "https://doi.org/10.1038/s43587-025-00819-z"
+        },
+        {
+          "id": "MED:40830271",
+          "title": "A single-cell, spatial transcriptomic atlas of the Arabidopsis life cycle.",
+          "method": "",
+          "authors": "Lee TA, Illouz-Eliaz N, Nobori T, Xu J, Jow B, Nery JR, Ecker JR.",
+          "journal": "Nature plants",
+          "year": "2025",
+          "date": "2025-08-19",
+          "doi": "10.1038/s41477-025-02072-z",
+          "cited": 64,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC12416547?pdf=render",
+          "keywords": [
+            "Arabidopsis",
+            "Gene Expression Regulation, Plant",
+            "Transcriptome",
+            "Single-Cell Gene Expression Analysis"
+          ],
+          "tasks": [
+            "integration",
+            "clustering",
+            "spatial",
+            "perturbation"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Arabidopsis has been pivotal in uncovering fundamental principles of plant biology, yet a comprehensive, high-resolution understanding of its cellular identities throughout the entire life cycle remains incomplete. Here we present a single-nucleus and spatial transcriptomic atlas spanning ten developmental stages, encompassing over 400,000 nuclei from all organ systems and tissues-from seeds to developing siliques. Leveraging paired single-nucleus and spatial transcriptomic datasets, we annotate 75% of identified cell clusters, revealing striking molecular diversity in cell types and states across development. Our integrated approach identified conserved transcriptional signatures among recurrent cell types, organ-specific heterogeneity and previously uncharacterized cell-type-specific markers validated spatially. Moreover, we uncover dynamic transcriptional programs governing secondary metabolite production and differential growth patterns, exemplified by detailed spatial profiling of the compact yet complex apical hook structure; this profiling revealed transient cellular states linked to developmental progression and hormonal regulation, highlighting the hidden complexity underlying plant morphogenesis. Functional validation of genes uniquely expressed within specific cell contexts confirmed their essential developmental roles, underscoring the predictive power of our atlas. Collectively, this comprehensive resource provides an invaluable foundation for exploring cellular differentiation, environmental responses and genetic perturbations at high resolution, advancing our understanding of plant biology.",
+          "url": "https://doi.org/10.1038/s41477-025-02072-z"
         }
       ]
     },
@@ -6966,6 +6968,38 @@
           "url": "https://doi.org/10.1038/s41586-021-03828-1"
         },
         {
+          "id": "MED:37933859",
+          "title": "AlphaFold Protein Structure Database in 2024: providing structure coverage for over 214 million protein sequences.",
+          "method": "",
+          "authors": "Varadi M, Bertoni D, Magana P, Paramval U, Pidruchna I, Radhakrishnan M, Tsenkov M, Nair S, Mirdita M, Yeo J, Kovalevskiy O, Tunyasuvunakool K, Laydon A, Žídek A, Tomlinson H, Hariharan D, Abrahamson J, Green T, Jumper J, Birney E, Steinegger M, Hassabis D, Velankar S.",
+          "journal": "Nucleic acids research",
+          "year": "2024",
+          "date": "2024-01-01",
+          "doi": "10.1093/nar/gkad1011",
+          "cited": 2128,
+          "license": "cc by",
+          "pdf": "https://academic.oup.com/nar/advance-article-pdf/doi/10.1093/nar/gkad1011/52777135/gkad1011.pdf",
+          "keywords": [
+            "Proteome",
+            "Protein Structure, Secondary",
+            "Artificial Intelligence"
+          ],
+          "tasks": [],
+          "datasets": [
+            "db:alphafold",
+            "db:ensembl",
+            "db:interpro",
+            "db:pdb",
+            "db:uniprot",
+            "ds:alphafold-db"
+          ],
+          "lists": [
+            "classic"
+          ],
+          "abstract": "The AlphaFold Database Protein Structure Database (AlphaFold DB, https://alphafold.ebi.ac.uk) has significantly impacted structural biology by amassing over 214 million predicted protein structures, expanding from the initial 300k structures released in 2021. Enabled by the groundbreaking AlphaFold2 artificial intelligence (AI) system, the predictions archived in AlphaFold DB have been integrated into primary data resources such as PDB, UniProt, Ensembl, InterPro and MobiDB. Our manuscript details subsequent enhancements in data archiving, covering successive releases encompassing model organisms, global health proteomes, Swiss-Prot integration, and a host of curated protein datasets. We detail the data access mechanisms of AlphaFold DB, from direct file access via FTP to advanced queries using Google Cloud Public Datasets and the programmatic access endpoints of the database. We also discuss the improvements and services added since its initial release, including enhancements to the Predicted Aligned Error viewer, customisation options for the 3D viewer, and improvements in the search engine of AlphaFold DB.",
+          "url": "https://doi.org/10.1093/nar/gkad1011"
+        },
+        {
           "id": "MED:37433327",
           "title": "De novo design of protein structure and function with RFdiffusion.",
           "method": "RFdiffusion",
@@ -6992,38 +7026,6 @@
           ],
           "abstract": "There has been considerable recent progress in designing new proteins using deep-learning methods 1-9 . Despite this progress, a general deep-learning framework for protein design that enables solution of a wide range of design challenges, including de novo binder design and design of higher-order symmetric architectures, has yet to be described. Diffusion models 10,11 have had considerable success in image and language generative modelling but limited success when applied to protein modelling, probably due to the complexity of protein backbone geometry and sequence-structure relationships. Here we show that by fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks, we obtain a generative model of protein backbones that achieves outstanding performance on unconditional and topology-constrained protein monomer design, protein binder design, symmetric oligomer design, enzyme active site scaffolding and symmetric motif scaffolding for therapeutic and metal-binding protein design. We demonstrate the power and generality of the method, called RoseTTAFold diffusion (RFdiffusion), by experimentally characterizing the structures and functions of hundreds of designed symmetric assemblies, metal-binding proteins and protein binders. The accuracy of RFdiffusion is confirmed by the cryogenic electron microscopy structure of a designed binder in complex with influenza haemagglutinin that is nearly identical to the design model. In a manner analogous to networks that produce images from user-specified inputs, RFdiffusion enables the design of diverse functional proteins from simple molecular specifications.",
           "url": "https://doi.org/10.1038/s41586-023-06415-8"
-        },
-        {
-          "id": "MED:37933859",
-          "title": "AlphaFold Protein Structure Database in 2024: providing structure coverage for over 214 million protein sequences.",
-          "method": "",
-          "authors": "Varadi M, Bertoni D, Magana P, Paramval U, Pidruchna I, Radhakrishnan M, Tsenkov M, Nair S, Mirdita M, Yeo J, Kovalevskiy O, Tunyasuvunakool K, Laydon A, Žídek A, Tomlinson H, Hariharan D, Abrahamson J, Green T, Jumper J, Birney E, Steinegger M, Hassabis D, Velankar S.",
-          "journal": "Nucleic acids research",
-          "year": "2024",
-          "date": "2024-01-01",
-          "doi": "10.1093/nar/gkad1011",
-          "cited": 2017,
-          "license": "cc by",
-          "pdf": "https://academic.oup.com/nar/advance-article-pdf/doi/10.1093/nar/gkad1011/52777135/gkad1011.pdf",
-          "keywords": [
-            "Proteome",
-            "Protein Structure, Secondary",
-            "Artificial Intelligence"
-          ],
-          "tasks": [],
-          "datasets": [
-            "db:alphafold",
-            "db:ensembl",
-            "db:interpro",
-            "db:pdb",
-            "db:uniprot",
-            "ds:alphafold-db"
-          ],
-          "lists": [
-            "classic"
-          ],
-          "abstract": "The AlphaFold Database Protein Structure Database (AlphaFold DB, https://alphafold.ebi.ac.uk) has significantly impacted structural biology by amassing over 214 million predicted protein structures, expanding from the initial 300k structures released in 2021. Enabled by the groundbreaking AlphaFold2 artificial intelligence (AI) system, the predictions archived in AlphaFold DB have been integrated into primary data resources such as PDB, UniProt, Ensembl, InterPro and MobiDB. Our manuscript details subsequent enhancements in data archiving, covering successive releases encompassing model organisms, global health proteomes, Swiss-Prot integration, and a host of curated protein datasets. We detail the data access mechanisms of AlphaFold DB, from direct file access via FTP to advanced queries using Google Cloud Public Datasets and the programmatic access endpoints of the database. We also discuss the improvements and services added since its initial release, including enhancements to the Predicted Aligned Error viewer, customisation options for the 3D viewer, and improvements in the search engine of AlphaFold DB.",
-          "url": "https://doi.org/10.1093/nar/gkad1011"
         },
         {
           "id": "MED:25883148",
@@ -8488,6 +8490,33 @@
           "url": "https://doi.org/10.1126/sciadv.adx8352"
         },
         {
+          "id": "MED:41007412",
+          "title": "The Role of AI-Driven De Novo Protein Design in the Exploration of the Protein Functional Universe.",
+          "method": "",
+          "authors": "Zhang G, Liu C, Lu J, Zhang S, Zhu L.",
+          "journal": "Biology",
+          "year": "2025",
+          "date": "2025-09-15",
+          "doi": "10.3390/biology14091268",
+          "cited": 12,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC12467925?pdf=render",
+          "keywords": [
+            "De Novo Protein Design",
+            "Ai-driven Toolkit",
+            "Protein Functional Universe"
+          ],
+          "tasks": [
+            "design"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "The extraordinary diversity of protein sequences and structures gives rise to a vast protein functional universe with extensive biotechnological potential. Nevertheless, this universe remains largely unexplored, constrained by the limitations of natural evolution and conventional protein engineering. Substantial evidence further indicates that the known natural fold space is approaching saturation, with novel folds rarely emerging. AI-driven de novo protein design is overcoming these constraints by enabling the computational creation of proteins with customized folds and functions. This review systematically surveys the rapidly advancing field of AI-based de novo protein design, reviewing current methodologies and examining how cutting-edge computational frameworks accelerate discovery through three complementary vectors: (1) exploring novel folds and topologies; (2) designing functional sites de novo; (3) exploring sequence-structure-function landscapes. We highlight key applications across therapeutic, catalytic, and synthetic biology and discuss the persistent challenges. By fusing recent progress and the existing limitations, this review outlines how AI is not only accelerating the exploration of the protein functional universe but also fundamentally expanding the possibilities within protein engineering, paving the way for bespoke biomolecules with tailored functionalities.",
+          "url": "https://doi.org/10.3390/biology14091268"
+        },
+        {
           "id": "MED:40662798",
           "title": "Locality-aware pooling enhances protein language model performance across varied applications.",
           "method": "",
@@ -8547,32 +8576,6 @@
           ],
           "abstract": "Post-translational modifications (PTMs) regulate protein function, stability, and interactions, playing essential roles in cellular signaling, localization, and disease mechanisms. Computational approaches enable scalable PTM site prediction; however, traditional models focus only on local sequence features from fragments around potential modification sites, limiting the scope of their predictions. Recently, pre-trained protein language models (PLMs) have improved PTM prediction by leveraging biological knowledge derived from extensive protein databases. However, most PLMs used for PTM site prediction are pre-trained solely on amino acid sequences, limiting their ability to capture the structural context necessary for accurate PTM site prediction. Moreover, these methods typically train separate single-task models for each PTM type, which hinders the sharing of common features and limits potential knowledge transfer across tasks. To overcome these limitations, we introduce MTPrompt-PTM, a multi-task PTM prediction framework developed by applying prompt tuning to a structure-aware protein language model (S-PLM). Instead of training several single-task models, MTPrompt-PTM trains one multi-task model to predict multiple types of PTM sites using shared feature extraction layers and task-specific classification heads. Additionally, we incorporate a knowledge distillation strategy to enhance the efficiency and generalizability of multi-task training. Experimental results demonstrate that MTPrompt-PTM outperforms state-of-the-art PTM prediction tools on 13 types of PTM sites, highlighting the advantages of multi-task learning and structural integration.",
           "url": "https://doi.org/10.3390/biom15060843"
-        },
-        {
-          "id": "MED:42754580",
-          "title": "Accelerating protein design by scaling experimental characterization.",
-          "method": "",
-          "authors": "Qian J, Milles LF, Wicky BIM, Ragotte RJ, Motmaen A, Borst AJ, Skotheim R, Ols S, Coventry B, Li X, Kibler RD, Goreshnik I, Expòsit M, Loré K, Stewart L, Baker D.",
-          "journal": "Nature communications",
-          "year": "2026",
-          "date": "2026-08-20",
-          "doi": "10.1038/s41467-026-76740-9",
-          "cited": 10,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC13586242?pdf=render",
-          "keywords": [
-            "Proteins",
-            "Protein Engineering"
-          ],
-          "tasks": [
-            "design"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Recent advances in de novo protein design have greatly outpaced standard protein biochemistry workflows, making experimental validation a bottleneck. Here, we describe workflows to address the scale, speed and reproducibility of common in vitro protein testing methods, enabling at least an order of magnitude increase in throughput while reducing wetlab time. Semi-Automated Protein Production (SAPP) is a rapid, modular, scalable and cost-effective protocol, enabling up to milligram-scale protein production and standardized characterization - including yield, dispersity, and oligomeric state - of hundreds of designs per day, at the cost-equivalent of a few DNA oligos per construct. End-to-end protocol execution takes 48 hours, with ~6 hours spent benchside using standard laboratory equipment. We showcase the platform by rapidly screening redesigned fluorescent proteins, as well as identifying de novo binders that potently neutralize respiratory syncytial virus. We also developed a barcoding and demultiplexing protocol (DMX) to further reduce gene synthesis cost 5-fold by leveraging oligo pools as input DNA for the generation of thousands of sequence-verified arrayed clones. These protocols which combine optimized molecular biology, automated analysis, and optional open-source robotics should be widely adoptable, accelerating protein design.",
-          "url": "https://doi.org/10.1038/s41467-026-76740-9"
         }
       ]
     },
@@ -8963,7 +8966,7 @@
           "year": "2017",
           "date": "2016-11-29",
           "doi": "10.1093/nar/gkw1108",
-          "cited": 1522,
+          "cited": 1531,
           "license": "cc by-nc",
           "pdf": "https://europepmc.org/articles/PMC5210579?pdf=render",
           "keywords": [
@@ -9211,7 +9214,7 @@
           "year": "2017",
           "date": "2017-03-02",
           "doi": "10.1186/s12859-017-1559-2",
-          "cited": 729,
+          "cited": 742,
           "license": "cc by",
           "pdf": "https://europepmc.org/articles/PMC5333408?pdf=render",
           "keywords": [
@@ -9796,6 +9799,34 @@
           "url": "https://doi.org/10.1016/j.csbj.2025.01.022"
         },
         {
+          "id": "MED:40996702",
+          "title": "A review on Gene Ontology evaluations.",
+          "method": "",
+          "authors": "Pitarch B, Chagoyen M, Ranea JAG, Pazos F.",
+          "journal": "Database : the journal of biological databases and curation",
+          "year": "2025",
+          "date": "2025-01-01",
+          "doi": "10.1093/database/baaf058",
+          "cited": 14,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC12462381?pdf=render",
+          "keywords": [
+            "Gene Ontology"
+          ],
+          "tasks": [
+            "enrichment",
+            "ontology"
+          ],
+          "datasets": [
+            "db:go"
+          ],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "The analysis of the large and heterogeneous datasets that characterize modern biology demands systems capable of representing biological knowledge in a formal, standardized manner. The most widely used structured vocabulary in molecular biology and biomedicine is the Gene Ontology (GO). Although employed in many different data analysis tasks, its main application is in the functional annotation of gene products and the subsequent functional enrichment analysis of large gene/protein datasets derived from omics experiments. This key position in modern biology means the GO is subject to continuous scrutiny and improvement, not only by its developers but by the community in general. GO's vocabulary, structure, and gene annotations have been evaluated from multiple points of view, revealing important insights into how we organize our biological knowledge, the associated problems, and strategies for overcoming them. These evaluations range from technical analyses of its ontological architecture to assessments of its effectiveness in supporting biological research. This process ensures that this essential resource is updated and adapted to the new challenges posed by modern biology. In this review, we summarize some key evaluations that the GO has undergone over time.",
+          "url": "https://doi.org/10.1093/database/baaf058"
+        },
+        {
           "id": "MED:40166361",
           "title": "Applied machine learning in intelligent systems: knowledge graph-enhanced ophthalmic contrastive learning with \"clinical profile\" prompts.",
           "method": "",
@@ -10300,35 +10331,6 @@
           ],
           "abstract": "Background Neurodevelopmental conditions are crucial risk factors for catatonia in pediatric and adult populations. Recent case reports and studies have identified an increasing number of genetic abnormalities likely contributing to catatonia. Catatonia associated with genetic abnormalities is challenging in terms of identification, chronicity, and resistance to treatment. In addition, understanding these genetic abnormalities through identifying rare single nucleotide and copy number variants may offer valuable insights into the underlying pathophysiology. Methods We conducted a systematic review of all genetic abnormalities reported with catatonia and performed a gene-set enrichment analysis. Our systematic literature search for relevant articles published through July 15, 2024, using combinations of \"catatonia,\" \"catatonic syndrome,\" \"genetic,\" and \"genes\" in PubMed, yielded 317 articles. Of these, 94 were included, covering 374 cases of catatonia and 78 distinct genetic abnormalities. Results This review discusses the clinical presentation of catatonia for each genetic disorder, the treatment strategies, and the putative underlying mechanisms. Conclusions The review highlights that catatonia underpinned by genetic abnormalities presents specific clinical and treatment-response features. Therefore, we propose genetic testing guidelines for catatonia and advocate for systematically investigating catatonia in several genetic diseases. Regarding the pathophysiology of catatonia, the gene ontology of biological processes reveals significant enrichment of variants in synaptic and post-synaptic regulatory genes, particularly within GABAergic neurons, reinforcing the implication of the excitatory/inhibitory imbalance. Finally, genetic variants are enriched in microglial cells, highlighting the role of brain inflammation in triggering catatonia. This comprehensive insight could pave the way for more effective management strategies for this condition.",
           "url": "https://doi.org/10.1192/j.eurpsy.2025.2458"
-        },
-        {
-          "id": "MED:39660719",
-          "title": "Emergence of power law distributions in protein-protein interaction networks through study bias.",
-          "method": "",
-          "authors": "Blumenthal DB, Lucchetta M, Kleist L, Fekete SP, List M, Schaefer MH.",
-          "journal": "eLife",
-          "year": "2024",
-          "date": "2024-12-11",
-          "doi": "10.7554/elife.99951",
-          "cited": 8,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC11718653?pdf=render",
-          "keywords": [
-            "Human",
-            "systems biology",
-            "computational biology",
-            "Study Bias",
-            "Protein-protein Interaction Networks",
-            "Power Law Distributions",
-            "Protein Interaction Maps"
-          ],
-          "tasks": [],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Degree distributions in protein-protein interaction (PPI) networks are believed to follow a power law (PL). However, technical and study biases affect the experimental procedures for detecting PPIs. For instance, cancer-associated proteins have received disproportional attention. Moreover, bait proteins in large-scale experiments tend to have many false-positive interaction partners. Studying the degree distributions of thousands of PPI networks of controlled provenance, we address the question if PL distributions in observed PPI networks could be explained by these biases alone. Our findings are supported by mathematical models and extensive simulations, and indicate that study bias and technical bias suffice to produce the observed PL distribution. It is, hence, problematic to derive hypotheses about the topology of the true biological interactome from the PL distributions in observed PPI networks. Our study casts doubt on the use of the PL property of biological networks as a modeling assumption or quality criterion in network biology.",
-          "url": "https://doi.org/10.7554/elife.99951"
         }
       ]
     },
@@ -10579,7 +10581,7 @@
           "year": "2018",
           "date": "2018-01-23",
           "doi": "10.3389/fphar.2018.00006",
-          "cited": 1130,
+          "cited": 1140,
           "license": "cc by",
           "pdf": "https://europepmc.org/articles/PMC5787088?pdf=render",
           "keywords": [
@@ -10690,6 +10692,29 @@
           "url": "https://doi.org/10.1038/s41573-021-00195-4"
         },
         {
+          "id": "MED:28959952",
+          "title": "Deubiquitylating enzymes and drug discovery: emerging opportunities.",
+          "method": "",
+          "authors": "Harrigan JA, Jacq X, Martin NM, Jackson SP.",
+          "journal": "Nature reviews. Drug discovery",
+          "year": "2018",
+          "date": "2017-09-29",
+          "doi": "10.1038/nrd.2017.152",
+          "cited": 861,
+          "license": "",
+          "pdf": "https://europepmc.org/articles/PMC7097658?pdf=render",
+          "keywords": [],
+          "tasks": [
+            "generation"
+          ],
+          "datasets": [],
+          "lists": [
+            "classic"
+          ],
+          "abstract": "More than a decade after a Nobel Prize was awarded for the discovery of the ubiquitin-proteasome system and clinical approval of proteasome and ubiquitin E3 ligase inhibitors, first-generation deubiquitylating enzyme (DUB) inhibitors are now approaching clinical trials. However, although our knowledge of the physiological and pathophysiological roles of DUBs has evolved tremendously, the clinical development of selective DUB inhibitors has been challenging. In this Review, we discuss these issues and highlight recent advances in our understanding of DUB enzymology and biology as well as technological improvements that have contributed to the current interest in DUBs as therapeutic targets in diseases ranging from oncology to neurodegeneration.",
+          "url": "https://doi.org/10.1038/nrd.2017.152"
+        },
+        {
           "id": "MED:22035460",
           "title": "Molecular dynamics simulations and drug discovery.",
           "method": "",
@@ -10715,29 +10740,6 @@
           ],
           "abstract": "This review discusses the many roles atomistic computer simulations of macromolecular (for example, protein) receptors and their associated small-molecule ligands can play in drug discovery, including the identification of cryptic or allosteric binding sites, the enhancement of traditional virtual-screening methodologies, and the direct prediction of small-molecule binding energies. The limitations of current simulation methodologies, including the high computational costs and approximations of molecular forces required, are also discussed. With constant improvements in both computer power and algorithm design, the future of computer-aided drug design is promising; molecular dynamics simulations are likely to play an increasingly important role.",
           "url": "https://doi.org/10.1186/1741-7007-9-71"
-        },
-        {
-          "id": "MED:28959952",
-          "title": "Deubiquitylating enzymes and drug discovery: emerging opportunities.",
-          "method": "",
-          "authors": "Harrigan JA, Jacq X, Martin NM, Jackson SP.",
-          "journal": "Nature reviews. Drug discovery",
-          "year": "2018",
-          "date": "2017-09-29",
-          "doi": "10.1038/nrd.2017.152",
-          "cited": 819,
-          "license": "",
-          "pdf": "https://europepmc.org/articles/PMC7097658?pdf=render",
-          "keywords": [],
-          "tasks": [
-            "generation"
-          ],
-          "datasets": [],
-          "lists": [
-            "classic"
-          ],
-          "abstract": "More than a decade after a Nobel Prize was awarded for the discovery of the ubiquitin-proteasome system and clinical approval of proteasome and ubiquitin E3 ligase inhibitors, first-generation deubiquitylating enzyme (DUB) inhibitors are now approaching clinical trials. However, although our knowledge of the physiological and pathophysiological roles of DUBs has evolved tremendously, the clinical development of selective DUB inhibitors has been challenging. In this Review, we discuss these issues and highlight recent advances in our understanding of DUB enzymology and biology as well as technological improvements that have contributed to the current interest in DUBs as therapeutic targets in diseases ranging from oncology to neurodegeneration.",
-          "url": "https://doi.org/10.1038/nrd.2017.152"
         },
         {
           "id": "MED:29392184",
@@ -10840,6 +10842,40 @@
           "url": "https://doi.org/10.1038/aps.2014.18"
         },
         {
+          "id": "MED:29799486",
+          "title": "Natural Products for Drug Discovery in the 21st Century: Innovations for Novel Drug Discovery.",
+          "method": "",
+          "authors": "Thomford NE, Senthebane DA, Rowe A, Munro D, Seele P, Maroyi A, Dzobo K.",
+          "journal": "International journal of molecular sciences",
+          "year": "2018",
+          "date": "2018-05-25",
+          "doi": "10.3390/ijms19061578",
+          "cited": 701,
+          "license": "cc by",
+          "pdf": "https://www.mdpi.com/1422-0067/19/6/1578/pdf?version=1527242229",
+          "keywords": [
+            "Bioinformatics",
+            "Natural products",
+            "Innovation",
+            "Global Health",
+            "automation",
+            "Omics",
+            "Precision Medicine",
+            "Drug Design And Development",
+            "Computational Softwares",
+            "Drug Design"
+          ],
+          "tasks": [
+            "generation"
+          ],
+          "datasets": [],
+          "lists": [
+            "classic"
+          ],
+          "abstract": "The therapeutic properties of plants have been recognised since time immemorial. Many pathological conditions have been treated using plant-derived medicines. These medicines are used as concoctions or concentrated plant extracts without isolation of active compounds. Modern medicine however, requires the isolation and purification of one or two active compounds. There are however a lot of global health challenges with diseases such as cancer, degenerative diseases, HIV/AIDS and diabetes, of which modern medicine is struggling to provide cures. Many times the isolation of \"active compound\" has made the compound ineffective. Drug discovery is a multidimensional problem requiring several parameters of both natural and synthetic compounds such as safety, pharmacokinetics and efficacy to be evaluated during drug candidate selection. The advent of latest technologies that enhance drug design hypotheses such as Artificial Intelligence, the use of 'organ-on chip' and microfluidics technologies, means that automation has become part of drug discovery. This has resulted in increased speed in drug discovery and evaluation of the safety, pharmacokinetics and efficacy of candidate compounds whilst allowing novel ways of drug design and synthesis based on natural compounds. Recent advances in analytical and computational techniques have opened new avenues to process complex natural products and to use their structures to derive new and innovative drugs. Indeed, we are in the era of computational molecular design, as applied to natural products. Predictive computational softwares have contributed to the discovery of molecular targets of natural products and their derivatives. In future the use of quantum computing, computational softwares and databases in modelling molecular interactions and predicting features and parameters needed for drug development, such as pharmacokinetic and pharmacodynamics, will result in few false positive leads in drug development. This review discusses plant-based natural product drug discovery and how innovative technologies play a role in next-generation drug discovery.",
+          "url": "https://doi.org/10.3390/ijms19061578"
+        },
+        {
           "id": "MED:33844136",
           "title": "Artificial intelligence to deep learning: machine intelligence approach for drug discovery.",
           "method": "",
@@ -10875,40 +10911,6 @@
           ],
           "abstract": "Drug designing and development is an important area of research for pharmaceutical companies and chemical scientists. However, low efficacy, off-target delivery, time consumption, and high cost impose a hurdle and challenges that impact drug design and discovery. Further, complex and big data from genomics, proteomics, microarray data, and clinical trials also impose an obstacle in the drug discovery pipeline. Artificial intelligence and machine learning technology play a crucial role in drug discovery and development. In other words, artificial neural networks and deep learning algorithms have modernized the area. Machine learning and deep learning algorithms have been implemented in several drug discovery processes such as peptide synthesis, structure-based virtual screening, ligand-based virtual screening, toxicity prediction, drug monitoring and release, pharmacophore modeling, quantitative structure-activity relationship, drug repositioning, polypharmacology, and physiochemical activity. Evidence from the past strengthens the implementation of artificial intelligence and deep learning in this field. Moreover, novel data mining, curation, and management techniques provided critical support to recently developed modeling algorithms. In summary, artificial intelligence and deep learning advancements provide an excellent opportunity for rational drug design and discovery process, which will eventually impact mankind. The primary concern associated with drug design and development is time consumption and production cost. Further, inefficiency, inaccurate target delivery, and inappropriate dosage are other hurdles that inhibit the process of drug delivery and development. With advancements in technology, computer-aided drug design integrating artificial intelligence algorithms can eliminate the challenges and hurdles of traditional drug design and development. Artificial intelligence is referred to as superset comprising machine learning, whereas machine learning comprises supervised learning, unsupervised learning, and reinforcement learning. Further, deep learning, a subset of machine learning, has been extensively implemented in drug design and development. The artificial neural network, deep neural network, support vector machines, classification and regression, generative adversarial networks, symbolic learning, and meta-learning are examples of the algorithms applied to the drug design and discovery process. Artificial intelligence has been applied to different areas of drug design and development process, such as from peptide synthesis to molecule design, virtual screening to molecular docking, quantitative structure-activity relationship to drug repositioning, protein misfolding to protein-protein interactions, and molecular pathway identification to polypharmacology. Artificial intelligence principles have been applied to the classification of active and inactive, monitoring drug release, pre-clinical and clinical development, primary and secondary drug screening, biomarker development, pharmaceutical manufacturing, bioactivity identification and physiochemical properties, prediction of toxicity, and identification of mode of action.",
           "url": "https://doi.org/10.1007/s11030-021-10217-3"
-        },
-        {
-          "id": "MED:29799486",
-          "title": "Natural Products for Drug Discovery in the 21st Century: Innovations for Novel Drug Discovery.",
-          "method": "",
-          "authors": "Thomford NE, Senthebane DA, Rowe A, Munro D, Seele P, Maroyi A, Dzobo K.",
-          "journal": "International journal of molecular sciences",
-          "year": "2018",
-          "date": "2018-05-25",
-          "doi": "10.3390/ijms19061578",
-          "cited": 686,
-          "license": "cc by",
-          "pdf": "https://www.mdpi.com/1422-0067/19/6/1578/pdf?version=1527242229",
-          "keywords": [
-            "Bioinformatics",
-            "Natural products",
-            "Innovation",
-            "Global Health",
-            "automation",
-            "Omics",
-            "Precision Medicine",
-            "Drug Design And Development",
-            "Computational Softwares",
-            "Drug Design"
-          ],
-          "tasks": [
-            "generation"
-          ],
-          "datasets": [],
-          "lists": [
-            "classic"
-          ],
-          "abstract": "The therapeutic properties of plants have been recognised since time immemorial. Many pathological conditions have been treated using plant-derived medicines. These medicines are used as concoctions or concentrated plant extracts without isolation of active compounds. Modern medicine however, requires the isolation and purification of one or two active compounds. There are however a lot of global health challenges with diseases such as cancer, degenerative diseases, HIV/AIDS and diabetes, of which modern medicine is struggling to provide cures. Many times the isolation of \"active compound\" has made the compound ineffective. Drug discovery is a multidimensional problem requiring several parameters of both natural and synthetic compounds such as safety, pharmacokinetics and efficacy to be evaluated during drug candidate selection. The advent of latest technologies that enhance drug design hypotheses such as Artificial Intelligence, the use of 'organ-on chip' and microfluidics technologies, means that automation has become part of drug discovery. This has resulted in increased speed in drug discovery and evaluation of the safety, pharmacokinetics and efficacy of candidate compounds whilst allowing novel ways of drug design and synthesis based on natural compounds. Recent advances in analytical and computational techniques have opened new avenues to process complex natural products and to use their structures to derive new and innovative drugs. Indeed, we are in the era of computational molecular design, as applied to natural products. Predictive computational softwares have contributed to the discovery of molecular targets of natural products and their derivatives. In future the use of quantum computing, computational softwares and databases in modelling molecular interactions and predicting features and parameters needed for drug development, such as pharmacokinetic and pharmacodynamics, will result in few false positive leads in drug development. This review discusses plant-based natural product drug discovery and how innovative technologies play a role in next-generation drug discovery.",
-          "url": "https://doi.org/10.3390/ijms19061578"
         },
         {
           "id": "MED:36008483",
@@ -10965,6 +10967,32 @@
           "url": "https://doi.org/10.1289/ehp.01109s169"
         },
         {
+          "id": "MED:22008728",
+          "title": "An 18-kDa translocator protein (TSPO) polymorphism explains differences in binding affinity of the PET radioligand PBR28.",
+          "method": "",
+          "authors": "Owen DR, Yeo AJ, Gunn RN, Song K, Wadsworth G, Lewis A, Rhodes C, Pulford DJ, Bennacef I, Parker CA, StJean PL, Cardon LR, Mooser VE, Matthews PM, Rabiner EA, Rubio JP.",
+          "journal": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
+          "year": "2012",
+          "date": "2011-10-19",
+          "doi": "10.1038/jcbfm.2011.147",
+          "cited": 660,
+          "license": "cc by-nc-nd",
+          "pdf": "https://europepmc.org/articles/PMC3323305?pdf=render",
+          "keywords": [
+            "Polymorphism, Single Nucleotide"
+          ],
+          "tasks": [
+            "generation",
+            "affinity"
+          ],
+          "datasets": [],
+          "lists": [
+            "classic"
+          ],
+          "abstract": "[(11)C]PBR28 binds the 18-kDa Translocator Protein (TSPO) and is used in positron emission tomography (PET) to detect microglial activation. However, quantitative interpretations of signal are confounded by large interindividual variability in binding affinity, which displays a trimodal distribution compatible with a codominant genetic trait. Here, we tested directly for an underlying genetic mechanism to explain this. Binding affinity of PBR28 was measured in platelets isolated from 41 human subjects and tested for association with polymorphisms in TSPO and genes encoding other proteins in the TSPO complex. Complete agreement was observed between the TSPO Ala147Thr genotype and PBR28 binding affinity phenotype (P value=3.1 × 10(-13)). The TSPO Ala147Thr polymorphism predicts PBR28 binding affinity in human platelets. As all second-generation TSPO PET radioligands tested hitherto display a trimodal distribution in binding affinity analogous to PBR28, testing for this polymorphism may allow quantitative interpretation of TSPO PET studies with these radioligands.",
+          "url": "https://doi.org/10.1038/jcbfm.2011.147"
+        },
+        {
           "id": "MED:25262799",
           "title": "Structure-based virtual screening for drug discovery: principles, applications and recent advances.",
           "method": "",
@@ -10990,32 +11018,6 @@
           ],
           "abstract": "Structure-based drug discovery (SBDD) is becoming an essential tool in assisting fast and cost-efficient lead discovery and optimization. The application of rational, structure-based drug design is proven to be more efficient than the traditional way of drug discovery since it aims to understand the molecular basis of a disease and utilizes the knowledge of the three-dimensional structure of the biological target in the process. In this review, we focus on the principles and applications of Virtual Screening (VS) within the context of SBDD and examine different procedures ranging from the initial stages of the process that include receptor and library pre-processing, to docking, scoring and post-processing of topscoring hits. Recent improvements in structure-based virtual screening (SBVS) efficiency through ensemble docking, induced fit and consensus docking are also discussed. The review highlights advances in the field within the framework of several success studies that have led to nM inhibition directly from VS and provides recent trends in library design as well as discusses limitations of the method. Applications of SBVS in the design of substrates for engineered proteins that enable the discovery of new metabolic and signal transduction pathways and the design of inhibitors of multifunctional proteins are also reviewed. Finally, we contribute two promising VS protocols recently developed by us that aim to increase inhibitor selectivity. In the first protocol, we describe the discovery of micromolar inhibitors through SBVS designed to inhibit the mutant H1047R PI3Kα kinase. Second, we discuss a strategy for the identification of selective binders for the RXRα nuclear receptor. In this protocol, a set of target structures is constructed for ensemble docking based on binding site shape characterization and clustering, aiming to enhance the hit rate of selective inhibitors for the desired protein target through the SBVS process.",
           "url": "https://doi.org/10.2174/1568026614666140929124445"
-        },
-        {
-          "id": "MED:22008728",
-          "title": "An 18-kDa translocator protein (TSPO) polymorphism explains differences in binding affinity of the PET radioligand PBR28.",
-          "method": "",
-          "authors": "Owen DR, Yeo AJ, Gunn RN, Song K, Wadsworth G, Lewis A, Rhodes C, Pulford DJ, Bennacef I, Parker CA, StJean PL, Cardon LR, Mooser VE, Matthews PM, Rabiner EA, Rubio JP.",
-          "journal": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
-          "year": "2012",
-          "date": "2011-10-19",
-          "doi": "10.1038/jcbfm.2011.147",
-          "cited": 651,
-          "license": "cc by-nc-nd",
-          "pdf": "https://europepmc.org/articles/PMC3323305?pdf=render",
-          "keywords": [
-            "Polymorphism, Single Nucleotide"
-          ],
-          "tasks": [
-            "generation",
-            "affinity"
-          ],
-          "datasets": [],
-          "lists": [
-            "classic"
-          ],
-          "abstract": "[(11)C]PBR28 binds the 18-kDa Translocator Protein (TSPO) and is used in positron emission tomography (PET) to detect microglial activation. However, quantitative interpretations of signal are confounded by large interindividual variability in binding affinity, which displays a trimodal distribution compatible with a codominant genetic trait. Here, we tested directly for an underlying genetic mechanism to explain this. Binding affinity of PBR28 was measured in platelets isolated from 41 human subjects and tested for association with polymorphisms in TSPO and genes encoding other proteins in the TSPO complex. Complete agreement was observed between the TSPO Ala147Thr genotype and PBR28 binding affinity phenotype (P value=3.1 × 10(-13)). The TSPO Ala147Thr polymorphism predicts PBR28 binding affinity in human platelets. As all second-generation TSPO PET radioligands tested hitherto display a trimodal distribution in binding affinity analogous to PBR28, testing for this polymorphism may allow quantitative interpretation of TSPO PET studies with these radioligands.",
-          "url": "https://doi.org/10.1038/jcbfm.2011.147"
         },
         {
           "id": "MED:32296023",
@@ -11306,7 +11308,7 @@
           "year": "2025",
           "date": "2025-02-06",
           "doi": "10.1021/acs.jmedchem.4c01257",
-          "cited": 76,
+          "cited": 78,
           "license": "cc by",
           "pdf": "",
           "keywords": [
@@ -11323,6 +11325,38 @@
           ],
           "abstract": "Drug discovery, a multifaceted process from compound identification to regulatory approval, historically plagued by inefficiencies and time lags due to limited data utilization, now faces urgent demands for accelerated lead compound identification. Innovations in biological data and computational chemistry have spurred a shift from trial-and-error methods to holistic approaches to medicinal chemistry. Computational techniques, particularly artificial intelligence (AI), notably machine learning (ML) and deep learning (DL), have revolutionized drug development, enhancing data analysis and predictive modeling. Natural products (NPs) have long served as rich sources of biologically active compounds, with many successful drugs originating from them. Advances in information science expanded NP-related databases, enabling deeper exploration with AI. Integrating AI into NP drug discovery promises accelerated discoveries, leveraging AI's analytical prowess, including generative AI for data synthesis. This perspective illuminates AI's current landscape in NP drug discovery, addressing strengths, limitations, and future trajectories to advance this vital research domain.",
           "url": "https://doi.org/10.1021/acs.jmedchem.4c01257"
+        },
+        {
+          "id": "MED:41002784",
+          "title": "Artificial Intelligence in Clinical Medicine: Challenges Across Diagnostic Imaging, Clinical Decision Support, Surgery, Pathology, and Drug Discovery.",
+          "method": "",
+          "authors": "Ogut E.",
+          "journal": "Clinics and practice",
+          "year": "2025",
+          "date": "2025-09-16",
+          "doi": "10.3390/clinpract15090169",
+          "cited": 75,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC12468291?pdf=render",
+          "keywords": [
+            "Artificial intelligence",
+            "Pathology",
+            "Surgery",
+            "drug discovery",
+            "Diagnostic Imaging",
+            "Machine Learning",
+            "Clinical Decision Support",
+            "Deep Learning"
+          ],
+          "tasks": [
+            "docking"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Aims/Background: The growing integration of artificial intelligence (AI) into clinical medicine has opened new possibilities for enhancing diagnostic accuracy, therapeutic decision-making, and biomedical innovation across several domains. This review is aimed to evaluate the clinical applications of AI across five key domains of medicine: diagnostic imaging, clinical decision support systems (CDSS), surgery, pathology, and drug discovery, highlighting achievements, limitations, and future directions. Methods: A comprehensive PubMed search was performed without language or publication date restrictions, combining Medical Subject Headings (MeSH) and free-text keywords for AI with domain-specific terms. The search yielded 2047 records, of which 243 duplicates were removed, leaving 1804 unique studies. After screening titles and abstracts, 1482 records were excluded due to irrelevance, preclinical scope, or lack of patient-level outcomes. Full-text review of 322 articles led to the exclusion of 172 studies (no clinical validation or outcomes, n = 64; methodological studies, n = 43; preclinical and in vitro-only, n = 39; conference abstracts without peer-reviewed full text, n = 26). Ultimately, 150 studies met inclusion criteria and were analyzed qualitatively. Data extraction focused on study context, AI technique, dataset characteristics, comparator benchmarks, and reported outcomes, such as diagnostic accuracy, area under the curve (AUC), efficiency, and clinical improvements. Results: AI demonstrated strong performance in diagnostic imaging, achieving expert-level accuracy in tasks such as cancer detection (AUC up to 0.94). CDSS showed promise in predicting adverse events (sepsis, atrial fibrillation), though real-world outcome evidence was mixed. In surgery, AI enhanced intraoperative guidance and risk stratification. Pathology benefited from AI-assisted diagnosis and molecular inference from histology. AI also accelerated drug discovery through protein structure prediction and virtual screening. However, challenges included limited explainability, data bias, lack of prospective trials, and regulatory hurdles. Conclusions: AI is transforming clinical medicine, offering improved accuracy, efficiency, and discovery. Yet, its integration into routine care demands rigorous validation, ethical oversight, and human-AI collaboration. Continued interdisciplinary efforts will be essential to translate these innovations into safe and effective patient-centered care.",
+          "url": "https://doi.org/10.3390/clinpract15090169"
         },
         {
           "id": "MED:40328798",
@@ -11554,38 +11588,6 @@
           ],
           "abstract": "Plant- and marine-derived natural products are rich sources of bioactive compounds essential for drug discovery. These compounds contain complex mixtures of metabolites, which collectively contribute to their pharmacological properties. However, challenges arise in the isolation of individual bioactive compounds, owing to their intricate chemistry and low abundance in natural extracts. Despite these limitations, numerous plant and marine-derived compounds have achieved regulatory approval, particularly for treating cancer and infectious diseases. This review explores the therapeutic potential of plant and marine sources along with innovative extraction and isolation methods that support sustainable drug development. Future perspectives will highlight the role of responsible innovation, artificial intelligence, and machine learning in advancing drug discovery, underscoring the importance of continued research to meet global health needs.",
           "url": "https://doi.org/10.3389/fphar.2024.1497668"
-        },
-        {
-          "id": "MED:41002784",
-          "title": "Artificial Intelligence in Clinical Medicine: Challenges Across Diagnostic Imaging, Clinical Decision Support, Surgery, Pathology, and Drug Discovery.",
-          "method": "",
-          "authors": "Ogut E.",
-          "journal": "Clinics and practice",
-          "year": "2025",
-          "date": "2025-09-16",
-          "doi": "10.3390/clinpract15090169",
-          "cited": 42,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC12468291?pdf=render",
-          "keywords": [
-            "Artificial intelligence",
-            "Pathology",
-            "Surgery",
-            "drug discovery",
-            "Diagnostic Imaging",
-            "Machine Learning",
-            "Clinical Decision Support",
-            "Deep Learning"
-          ],
-          "tasks": [
-            "docking"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Aims/Background: The growing integration of artificial intelligence (AI) into clinical medicine has opened new possibilities for enhancing diagnostic accuracy, therapeutic decision-making, and biomedical innovation across several domains. This review is aimed to evaluate the clinical applications of AI across five key domains of medicine: diagnostic imaging, clinical decision support systems (CDSS), surgery, pathology, and drug discovery, highlighting achievements, limitations, and future directions. Methods: A comprehensive PubMed search was performed without language or publication date restrictions, combining Medical Subject Headings (MeSH) and free-text keywords for AI with domain-specific terms. The search yielded 2047 records, of which 243 duplicates were removed, leaving 1804 unique studies. After screening titles and abstracts, 1482 records were excluded due to irrelevance, preclinical scope, or lack of patient-level outcomes. Full-text review of 322 articles led to the exclusion of 172 studies (no clinical validation or outcomes, n = 64; methodological studies, n = 43; preclinical and in vitro-only, n = 39; conference abstracts without peer-reviewed full text, n = 26). Ultimately, 150 studies met inclusion criteria and were analyzed qualitatively. Data extraction focused on study context, AI technique, dataset characteristics, comparator benchmarks, and reported outcomes, such as diagnostic accuracy, area under the curve (AUC), efficiency, and clinical improvements. Results: AI demonstrated strong performance in diagnostic imaging, achieving expert-level accuracy in tasks such as cancer detection (AUC up to 0.94). CDSS showed promise in predicting adverse events (sepsis, atrial fibrillation), though real-world outcome evidence was mixed. In surgery, AI enhanced intraoperative guidance and risk stratification. Pathology benefited from AI-assisted diagnosis and molecular inference from histology. AI also accelerated drug discovery through protein structure prediction and virtual screening. However, challenges included limited explainability, data bias, lack of prospective trials, and regulatory hurdles. Conclusions: AI is transforming clinical medicine, offering improved accuracy, efficiency, and discovery. Yet, its integration into routine care demands rigorous validation, ethical oversight, and human-AI collaboration. Continued interdisciplinary efforts will be essential to translate these innovations into safe and effective patient-centered care.",
-          "url": "https://doi.org/10.3390/clinpract15090169"
         },
         {
           "id": "MED:41143208",
@@ -12019,31 +12021,36 @@
           "url": "https://doi.org/10.1038/s41551-025-01423-7"
         },
         {
-          "id": "MED:41142906",
-          "title": "Large language models for drug discovery and development.",
+          "id": "MED:41497349",
+          "title": "Drug Repurposing as an Effective Drug Discovery Strategy: A Critical Review.",
           "method": "",
-          "authors": "Zheng Y, Koh HY, Ju J, Yang M, May LT, Webb GI, Li L, Pan S, Church G.",
-          "journal": "Patterns (New York, N.Y.)",
+          "authors": "Al Khzem AH, Wali SM.",
+          "journal": "Drug design, development and therapy",
           "year": "2025",
-          "date": "2025-09-02",
-          "doi": "10.1016/j.patter.2025.101346",
+          "date": "2025-12-31",
+          "doi": "10.2147/dddt.s576701",
           "cited": 29,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC12546459?pdf=render",
+          "license": "cc by-nc",
+          "pdf": "https://europepmc.org/articles/PMC12766319?pdf=render",
           "keywords": [
+            "Strategies",
             "drug discovery",
-            "Drug Development",
-            "Large Language Models"
+            "Clinical Applications",
+            "Drug Repurposing",
+            "Pharmaceutical Chemistry",
+            "Drug Discovery",
+            "Drug Repositioning"
           ],
           "tasks": [
-            "generation"
+            "generation",
+            "docking"
           ],
           "datasets": [],
           "lists": [
             "recent"
           ],
-          "abstract": "The integration of large language models (LLMs) into the drug discovery and development field marks a significant paradigm shift, offering novel methodologies for understanding disease mechanisms, facilitating de novo drug discovery, and optimizing clinical trial processes. This review highlights the expanding role of LLMs in revolutionizing various stages of the drug development pipeline. We investigate how these advanced computational models can uncover target-disease linkage, interpret complex biomedical data, enhance drug molecule design, predict drug efficacy and safety profiles, and facilitate clinical trial processes. In this paper, we aim to provide a comprehensive overview for researchers and practitioners in computational biology, pharmacology, and AI4Science by offering insights into the potential transformative impact of LLMs on drug discovery and development.",
-          "url": "https://doi.org/10.1016/j.patter.2025.101346"
+          "abstract": "Drug repurposing, or repositioning, has emerged as a pivotal strategy in pharmaceutical research, offering a promising approach to uncover new therapeutic uses for existing drugs. While traditional de novo drug discovery typically requires 10-17 years and investments exceeding $2 billion with only 11% of Phase I candidates reaching approval, drug repurposing can reduce development timelines to 3-12 years at substantially lower costs, with approval rates reaching approximately 30% for de-risked compounds. The current review evaluates recent approaches, benefits, challenges and successful examples of drug repurposing. Relevant literature related to the advantages and obstacles associated with drug repurposing were reviewed. Additionally, the review demonstrates computational and data-driven methods, as well as traditional and novel examples of repurposed drugs across different therapeutic fields. Drug repurposing offers a faster and cost-effective approach to new therapies, particularly for critical conditions, such as rare diseases, neurodegenerative disorders and cancer. These advantages overcome the shortcomings of traditional drug development. Successful examples include the repurposing of dimethyl fumarate, chloroquine and daptomycin, which addressed a range of medical indications beyond the original drug uses. Collectively, these findings demonstrate that drug repurposing provides a viable solution for accelerating the process of drug discovery and addressing urgent medical needs. The integration of advanced computational methods and enhancing collaborative research projects would allow further expansion of treatment options and supporting timely solutions for critical and rare medical conditions.",
+          "url": "https://doi.org/10.2147/dddt.s576701"
         }
       ]
     },
@@ -12189,6 +12196,31 @@
           "url": "https://doi.org/10.1038/nature14590"
         },
         {
+          "id": "MED:23034086",
+          "title": "methylKit: a comprehensive R package for the analysis of genome-wide DNA methylation profiles.",
+          "method": "methylKit",
+          "authors": "Akalin A, Kormaksson M, Li S, Garrett-Bakelman FE, Figueroa ME, Melnick A, Mason CE.",
+          "journal": "Genome biology",
+          "year": "2012",
+          "date": "2012-10-03",
+          "doi": "10.1186/gb-2012-13-10-r87",
+          "cited": 1902,
+          "license": "cc by",
+          "pdf": "https://genomebiology.biomedcentral.com/counter/pdf/10.1186/gb-2012-13-10-r87",
+          "keywords": [
+            "DNA Methylation"
+          ],
+          "tasks": [
+            "methylation"
+          ],
+          "datasets": [],
+          "lists": [
+            "classic"
+          ],
+          "abstract": "DNA methylation is a chemical modification of cytosine bases that is pivotal for gene regulation, cellular specification and cancer development. Here, we describe an R package, methylKit, that rapidly analyzes genome-wide cytosine epigenetic profiles from high-throughput methylation and hydroxymethylation sequencing experiments. methylKit includes functions for clustering, sample quality visualization, differential methylation analysis and annotation features, thus automating and simplifying many of the steps for discerning statistically significant bases or regions of DNA methylation. Finally, we demonstrate methylKit on breast cancer data, in which we find statistically significant regions of differential methylation and stratify tumor subtypes. methylKit is available at http://code.google.com/p/methylkit.",
+          "url": "https://doi.org/10.1186/gb-2012-13-10-r87"
+        },
+        {
           "id": "MED:34850907",
           "title": "JASPAR 2022: the 9th release of the open-access database of transcription factor binding profiles.",
           "method": "JASPAR 2022",
@@ -12218,31 +12250,6 @@
           ],
           "abstract": "JASPAR (http://jaspar.genereg.net/) is an open-access database containing manually curated, non-redundant transcription factor (TF) binding profiles for TFs across six taxonomic groups. In this 9th release, we expanded the CORE collection with 341 new profiles (148 for plants, 101 for vertebrates, 85 for urochordates, and 7 for insects), which corresponds to a 19% expansion over the previous release. We added 298 new profiles to the Unvalidated collection when no orthogonal evidence was found in the literature. All the profiles were clustered to provide familial binding profiles for each taxonomic group. Moreover, we revised the structural classification of DNA binding domains to consider plant-specific TFs. This release introduces word clouds to represent the scientific knowledge associated with each TF. We updated the genome tracks of TFBSs predicted with JASPAR profiles in eight organisms; the human and mouse TFBS predictions can be visualized as native tracks in the UCSC Genome Browser. Finally, we provide a new tool to perform JASPAR TFBS enrichment analysis in user-provided genomic regions. All the data is accessible through the JASPAR website, its associated RESTful API, the R/Bioconductor data package, and a new Python package, pyJASPAR, that facilitates serverless access to the data.",
           "url": "https://doi.org/10.1093/nar/gkab1113"
-        },
-        {
-          "id": "MED:23034086",
-          "title": "methylKit: a comprehensive R package for the analysis of genome-wide DNA methylation profiles.",
-          "method": "methylKit",
-          "authors": "Akalin A, Kormaksson M, Li S, Garrett-Bakelman FE, Figueroa ME, Melnick A, Mason CE.",
-          "journal": "Genome biology",
-          "year": "2012",
-          "date": "2012-10-03",
-          "doi": "10.1186/gb-2012-13-10-r87",
-          "cited": 1846,
-          "license": "cc by",
-          "pdf": "https://genomebiology.biomedcentral.com/counter/pdf/10.1186/gb-2012-13-10-r87",
-          "keywords": [
-            "DNA Methylation"
-          ],
-          "tasks": [
-            "methylation"
-          ],
-          "datasets": [],
-          "lists": [
-            "classic"
-          ],
-          "abstract": "DNA methylation is a chemical modification of cytosine bases that is pivotal for gene regulation, cellular specification and cancer development. Here, we describe an R package, methylKit, that rapidly analyzes genome-wide cytosine epigenetic profiles from high-throughput methylation and hydroxymethylation sequencing experiments. methylKit includes functions for clustering, sample quality visualization, differential methylation analysis and annotation features, thus automating and simplifying many of the steps for discerning statistically significant bases or regions of DNA methylation. Finally, we demonstrate methylKit on breast cancer data, in which we find statistically significant regions of differential methylation and stratify tumor subtypes. methylKit is available at http://code.google.com/p/methylkit.",
-          "url": "https://doi.org/10.1186/gb-2012-13-10-r87"
         },
         {
           "id": "MED:31701148",
@@ -13348,6 +13355,39 @@
           "url": "https://doi.org/10.1093/nar/gkaf223"
         },
         {
+          "id": "MED:40080526",
+          "title": "Mutation of SMARCA4 Induces Cancer Cell-Intrinsic Defects in the Enhancer Landscape and Resistance to Immunotherapy.",
+          "method": "",
+          "authors": "Wang Y, Meraz IM, Qudratullah M, Kotagiri S, Han Y, Xi Y, Wang J, Akdemir KC, Roth JA, Lissanu Y.",
+          "journal": "Cancer research",
+          "year": "2025",
+          "date": "2025-06-01",
+          "doi": "10.1158/0008-5472.can-24-2054",
+          "cited": 38,
+          "license": "cc by-nc-nd",
+          "pdf": "https://europepmc.org/articles/PMC12127800?pdf=render",
+          "keywords": [
+            "Lung Neoplasms",
+            "DNA Helicases",
+            "Nuclear Proteins",
+            "Transcription Factors",
+            "Drug Resistance, Neoplasm",
+            "Mutation",
+            "Enhancer Elements, Genetic"
+          ],
+          "tasks": [
+            "accessibility",
+            "tf-binding",
+            "enhancers"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Cancer genomic studies have identified frequent alterations in genes encoding components of the SWI/SNF chromatin remodeling complex, including SMARCA4 and ARID1A. Importantly, clinical reports indicate that SMARCA4-mutant lung cancers respond poorly to immunotherapy and have dismal prognosis. In this study, we corroborated the clinical findings by using immune-humanized, syngeneic, and genetically engineered mouse models of lung cancer harboring SMARCA4 deficiency. Specifically, models with SMARCA4 loss showed decreased response to anti-PD-1 immunotherapy associated with significantly reduced infiltration of dendritic cells and CD4+ T cells into the tumor microenvironment. SMARCA4 loss in tumor cells led to profound downregulation of STING1, IL1β, and other components of the innate immune system, as well as inflammatory cytokines that are required for efficient recruitment and activity of immune cells. The deregulation of gene expression was caused by cancer cell-intrinsic reprogramming of the enhancer landscape with marked loss of chromatin accessibility at enhancers of genes involved in innate immune response, such as STING1, IL1β, type I IFN, and inflammatory cytokines. Interestingly, the transcription factor NF-κB-binding motif was enriched in enhancers that lose accessibility upon SMARCA4 deficiency. Furthermore, SMARCA4 and NF-κB co-occupied the same genomic loci on enhancers associated with STING1 and IFNβ, indicating a functional interplay between SMARCA4 and NF-κB. Taken together, these findings provide the mechanistic basis for the poor response of SMARCA4-mutant tumors to immunotherapy and establish a functional link between SMARCA4 and NF-κB in innate immune and inflammatory gene expression regulation. Significance: Epigenetic reprogramming in SMARCA4-mutant cancer cells alters immune infiltration and limits immunotherapy efficacy by downregulating immunostimulatory gene expression, which could potentially be targeted to overcome immunotherapy resistance in SMARCA4-deficient tumors.",
+          "url": "https://doi.org/10.1158/0008-5472.can-24-2054"
+        },
+        {
           "id": "MED:40032852",
           "title": "Enhancer reprogramming: critical roles in cancer and promising therapeutic strategies.",
           "method": "Enhancer reprogramming",
@@ -13399,6 +13439,33 @@
           ],
           "abstract": "Cellular identity requires the concerted action of multiple transcription factors (TFs) bound together to enhancers of cell-type-specific genes. Despite TFs recognizing specific DNA motifs within accessible chromatin, this information is insufficient to explain how TFs select enhancers 1 . Here we compared four different TF combinations that induce different cell states, analysing TF genome occupancy, chromatin accessibility, nucleosome positioning and 3D genome organization at the nucleosome resolution. We show that motif recognition on mononucleosomes can decipher only the individual binding of TFs. When bound together, TFs act cooperatively or competitively to target nucleosome arrays with defined 3D organization, displaying motifs in particular patterns. In one combination, motif directionality funnels TF combinatorial binding along chromatin loops, before infiltrating laterally to adjacent enhancers. In other combinations, TFs assemble on motif-dense and highly interconnected loop junctions, and subsequently translocate to nearby lineage-specific sites. We propose a guided-search model in which motif grammar on nucleosome fibres acts as signpost elements, directing TF combinatorial binding to enhancers.",
           "url": "https://doi.org/10.1038/s41586-024-08333-9"
+        },
+        {
+          "id": "MED:41266596",
+          "title": "From concept to clinic: a roadmap for DNA methylation biomarkers in liquid biopsies.",
+          "method": "From concept to clinic",
+          "authors": "Pharo H, Vedeld HM, Sjurgard IV, Pinto R, Lind GE.",
+          "journal": "Oncogene",
+          "year": "2025",
+          "date": "2025-11-20",
+          "doi": "10.1038/s41388-025-03624-5",
+          "cited": 34,
+          "license": "cc by-nc-nd",
+          "pdf": "https://europepmc.org/articles/PMC12657234?pdf=render",
+          "keywords": [
+            "Neoplasms",
+            "DNA Methylation",
+            "Biomarkers, Tumor"
+          ],
+          "tasks": [
+            "methylation"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Global cancer incidence continues to rise, emphasizing the urgent need for improved diagnostics and management strategies. DNA methylation biomarkers in liquid biopsies offer a promising, minimally invasive solution. Despite their potential, only a few tests have successfully transitioned from research to clinical practice. This review addresses key aspects influencing successful biomarker development and clinical implementation-including liquid biopsy source selection, biomarker discovery workflow and targeted validation in clinical sample series-and provide strategies to improve accuracy, reproducibility and clinical utility. Altogether, these considerations could aid in bridging the translational gap from research to clinical application, and to increase the number of clinically implemented liquid biopsy tests.",
+          "url": "https://doi.org/10.1038/s41388-025-03624-5"
         },
         {
           "id": "MED:40082405",
@@ -13527,66 +13594,6 @@
           "url": "https://doi.org/10.1038/s41467-025-58158-x"
         },
         {
-          "id": "MED:40080526",
-          "title": "Mutation of SMARCA4 Induces Cancer Cell-Intrinsic Defects in the Enhancer Landscape and Resistance to Immunotherapy.",
-          "method": "",
-          "authors": "Wang Y, Meraz IM, Qudratullah M, Kotagiri S, Han Y, Xi Y, Wang J, Akdemir KC, Roth JA, Lissanu Y.",
-          "journal": "Cancer research",
-          "year": "2025",
-          "date": "2025-06-01",
-          "doi": "10.1158/0008-5472.can-24-2054",
-          "cited": 32,
-          "license": "cc by-nc-nd",
-          "pdf": "https://europepmc.org/articles/PMC12127800?pdf=render",
-          "keywords": [
-            "Lung Neoplasms",
-            "DNA Helicases",
-            "Nuclear Proteins",
-            "Transcription Factors",
-            "Drug Resistance, Neoplasm",
-            "Mutation",
-            "Enhancer Elements, Genetic"
-          ],
-          "tasks": [
-            "accessibility",
-            "tf-binding",
-            "enhancers"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Cancer genomic studies have identified frequent alterations in genes encoding components of the SWI/SNF chromatin remodeling complex, including SMARCA4 and ARID1A. Importantly, clinical reports indicate that SMARCA4-mutant lung cancers respond poorly to immunotherapy and have dismal prognosis. In this study, we corroborated the clinical findings by using immune-humanized, syngeneic, and genetically engineered mouse models of lung cancer harboring SMARCA4 deficiency. Specifically, models with SMARCA4 loss showed decreased response to anti-PD-1 immunotherapy associated with significantly reduced infiltration of dendritic cells and CD4+ T cells into the tumor microenvironment. SMARCA4 loss in tumor cells led to profound downregulation of STING1, IL1β, and other components of the innate immune system, as well as inflammatory cytokines that are required for efficient recruitment and activity of immune cells. The deregulation of gene expression was caused by cancer cell-intrinsic reprogramming of the enhancer landscape with marked loss of chromatin accessibility at enhancers of genes involved in innate immune response, such as STING1, IL1β, type I IFN, and inflammatory cytokines. Interestingly, the transcription factor NF-κB-binding motif was enriched in enhancers that lose accessibility upon SMARCA4 deficiency. Furthermore, SMARCA4 and NF-κB co-occupied the same genomic loci on enhancers associated with STING1 and IFNβ, indicating a functional interplay between SMARCA4 and NF-κB. Taken together, these findings provide the mechanistic basis for the poor response of SMARCA4-mutant tumors to immunotherapy and establish a functional link between SMARCA4 and NF-κB in innate immune and inflammatory gene expression regulation. Significance: Epigenetic reprogramming in SMARCA4-mutant cancer cells alters immune infiltration and limits immunotherapy efficacy by downregulating immunostimulatory gene expression, which could potentially be targeted to overcome immunotherapy resistance in SMARCA4-deficient tumors.",
-          "url": "https://doi.org/10.1158/0008-5472.can-24-2054"
-        },
-        {
-          "id": "MED:41266596",
-          "title": "From concept to clinic: a roadmap for DNA methylation biomarkers in liquid biopsies.",
-          "method": "From concept to clinic",
-          "authors": "Pharo H, Vedeld HM, Sjurgard IV, Pinto R, Lind GE.",
-          "journal": "Oncogene",
-          "year": "2025",
-          "date": "2025-11-20",
-          "doi": "10.1038/s41388-025-03624-5",
-          "cited": 31,
-          "license": "cc by-nc-nd",
-          "pdf": "https://europepmc.org/articles/PMC12657234?pdf=render",
-          "keywords": [
-            "Neoplasms",
-            "DNA Methylation",
-            "Biomarkers, Tumor"
-          ],
-          "tasks": [
-            "methylation"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Global cancer incidence continues to rise, emphasizing the urgent need for improved diagnostics and management strategies. DNA methylation biomarkers in liquid biopsies offer a promising, minimally invasive solution. Despite their potential, only a few tests have successfully transitioned from research to clinical practice. This review addresses key aspects influencing successful biomarker development and clinical implementation-including liquid biopsy source selection, biomarker discovery workflow and targeted validation in clinical sample series-and provide strategies to improve accuracy, reproducibility and clinical utility. Altogether, these considerations could aid in bridging the translational gap from research to clinical application, and to increase the number of clinically implemented liquid biopsy tests.",
-          "url": "https://doi.org/10.1038/s41388-025-03624-5"
-        },
-        {
           "id": "MED:40659845",
           "title": "Response of spatially defined microglia states with distinct chromatin accessibility in a mouse model of Alzheimer's disease.",
           "method": "",
@@ -13710,6 +13717,34 @@
           "url": "https://doi.org/10.1038/s41586-025-09374-4"
         },
         {
+          "id": "MED:40481322",
+          "title": "crossNN is an explainable framework for cross-platform DNA methylation-based classification of tumors.",
+          "method": "",
+          "authors": "Yuan D, Jugas R, Pokorna P, Sterba J, Slaby O, Schmid S, Siewert C, Osberg B, Capper D, Halldorsson S, Vik-Mo EO, Zeiner PS, Weber KJ, Harter PN, Thomas C, Albers A, Rechsteiner M, Reimann R, Appelt A, Schüller U, Jabareen N, Mackowiak S, Ishaque N, Eils R, Lukassen S, Euskirchen P.",
+          "journal": "Nature cancer",
+          "year": "2025",
+          "date": "2025-06-06",
+          "doi": "10.1038/s43018-025-00976-5",
+          "cited": 30,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC12296554?pdf=render",
+          "keywords": [
+            "Neoplasms",
+            "Brain Neoplasms",
+            "DNA Methylation",
+            "Neural Networks, Computer"
+          ],
+          "tasks": [
+            "methylation"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "DNA methylation-based classification of (brain) tumors has emerged as a powerful and indispensable diagnostic technique. Initial implementations used methylation microarrays for data generation, while most current classifiers rely on a fixed methylation feature space. This makes them incompatible with other platforms, especially different flavors of DNA sequencing. Here, we describe crossNN, a neural network-based machine learning framework that can accurately classify tumors using sparse methylomes obtained on different platforms and with different epigenome coverage and sequencing depth. It outperforms other deep and conventional machine learning models regarding accuracy and computational requirements while still being explainable. We use crossNN to train a pan-cancer classifier that can discriminate more than 170 tumor types across all organ sites. Validation in more than 5,000 tumors profiled on different platforms, including nanopore and targeted bisulfite sequencing, demonstrates its robustness and scalability with 99.1% and 97.8% precision for the brain tumor and pan-cancer models, respectively.",
+          "url": "https://doi.org/10.1038/s43018-025-00976-5"
+        },
+        {
           "id": "MED:40325471",
           "title": "Recent advances on gene-related DNA methylation in cancer diagnosis, prognosis, and treatment: a clinical perspective.",
           "method": "",
@@ -13744,41 +13779,6 @@
           ],
           "abstract": "Recent advances in screening programs and the development of innovative therapeutic strategies have significantly improved the clinical outcomes of cancer patients. However, many patients still experience treatment failure, primarily due to inherent or acquired drug resistance mechanisms. This challenge underscores the urgent need for novel therapeutic targets for the effective treatment of malignancies, as well as cancer-specific biomarkers to enhance early diagnosis and guide interventions. Epigenetic mechanisms, including DNA methylation, have recently garnered growing interest as key regulators of gene expression under both physiological and pathological conditions. Although epigenetic dysregulations are reliable tumor hallmarks, DNA methylation is still not routinely integrated into clinical practice, highlighting the need for further research to translate preclinical findings from the bench to the bedside. On these bases, the present review aims to illustrate the state of the art regarding the role of DNA methylation in cancer, describing the technologies currently available for DNA methylation profiling. Furthermore, the latest evidence on the application of DNA methylation hotspots in cancer diagnosis and prognosis, as well as the impact of epidrugs in cancer care, is discussed to provide a comprehensive overview of the potential clinical relevance of DNA methylation in advancing personalized medicine.",
           "url": "https://doi.org/10.1186/s13148-025-01884-2"
-        },
-        {
-          "id": "MED:39947136",
-          "title": "Activation of the imprinted Prader-Willi syndrome locus by CRISPR-based epigenome editing.",
-          "method": "",
-          "authors": "Rohm D, Black JB, McCutcheon SR, Barrera A, Berry SS, Morone DJ, Nuttle X, de Esch CE, Tai DJC, Talkowski ME, Iglesias N, Gersbach CA.",
-          "journal": "Cell genomics",
-          "year": "2025",
-          "date": "2025-02-01",
-          "doi": "10.1016/j.xgen.2025.100770",
-          "cited": 29,
-          "license": "cc by-nc",
-          "pdf": "https://europepmc.org/articles/PMC11872474?pdf=render",
-          "keywords": [
-            "DNA methylation",
-            "Imprinting",
-            "Prader-willi Syndrome",
-            "Crispr",
-            "Dcas9",
-            "Epigenome Editing",
-            "Prader-Willi Syndrome",
-            "Genomic Imprinting",
-            "CRISPR-Cas Systems",
-            "Gene Editing",
-            "Epigenome"
-          ],
-          "tasks": [
-            "methylation"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Epigenome editing with DNA-targeting technologies such as CRISPR-dCas9 can be used to dissect gene regulatory mechanisms and potentially treat associated disorders. For example, Prader-Willi syndrome (PWS) results from loss of paternally expressed imprinted genes on chromosome 15q11.2-q13.3, although the maternal allele is intact but epigenetically silenced. Using CRISPR repression and activation screens in human induced pluripotent stem cells (iPSCs), we identified genomic elements that control the expression of the PWS gene SNRPN from the paternal and maternal chromosomes. We showed that either targeted transcriptional activation or DNA demethylation can activate the silenced maternal SNRPN and downstream PWS transcripts. However, these two approaches function at unique regions, preferentially activating different transcript variants and involving distinct epigenetic reprogramming mechanisms. Remarkably, transient expression of the targeted demethylase leads to stable, long-term maternal SNRPN expression in PWS iPSCs. This work uncovers targeted epigenetic manipulations to reprogram a disease-associated imprinted locus and suggests possible therapeutic interventions.",
-          "url": "https://doi.org/10.1016/j.xgen.2025.100770"
         }
       ]
     },
@@ -13918,7 +13918,7 @@
           "year": "2006",
           "date": "2006-01-01",
           "doi": "10.1093/nar/gkj112",
-          "cited": 3567,
+          "cited": 3595,
           "license": "",
           "pdf": "https://europepmc.org/articles/PMC1347474?pdf=render",
           "keywords": [
@@ -14206,7 +14206,7 @@
           "year": "2012",
           "date": "2012-06-01",
           "doi": "10.4161/rna.20481",
-          "cited": 1496,
+          "cited": 1508,
           "license": "cc by-nc",
           "pdf": "https://europepmc.org/articles/PMC3495743?pdf=render",
           "keywords": [],
@@ -14249,6 +14249,29 @@
           "url": "https://doi.org/10.1093/nar/gkx1030"
         },
         {
+          "id": "MED:21505438",
+          "title": "Unidirectional transfer of microRNA-loaded exosomes from T cells to antigen-presenting cells.",
+          "method": "",
+          "authors": "Mittelbrunn M, Gutiérrez-Vázquez C, Villarroya-Beltri C, González S, Sánchez-Cabo F, González MÁ, Bernad A, Sánchez-Madrid F.",
+          "journal": "Nature communications",
+          "year": "2011",
+          "date": "2011-01-01",
+          "doi": "10.1038/ncomms1285",
+          "cited": 1481,
+          "license": "cc by-nc-nd",
+          "pdf": "https://www.nature.com/articles/ncomms1285.pdf",
+          "keywords": [],
+          "tasks": [
+            "mirna"
+          ],
+          "datasets": [],
+          "lists": [
+            "classic"
+          ],
+          "abstract": "The immune synapse is an exquisitely evolved means of communication between T cells and antigen-presenting cells (APCs) during antigen recognition. Recent evidence points to the transfer of RNA via exosomes as a novel mode of intercellular communication. Here we show that exosomes of T, B and dendritic immune cells contain microRNA (miRNA) repertoires that differ from those of their parent cells. We investigate whether miRNAs are exchanged during cognate immune interactions, and demonstrate the existence of antigen-driven unidirectional transfer of miRNAs from the T cell to the APC, mediated by the delivery of CD63+ exosomes on immune synapse formation. Inhibition of exosome production by targeting neutral sphingomyelinase-2 impairs transfer of miRNAs to APCs. Moreover, miRNAs transferred during immune synapsis are able to modulate gene expression in recipient cells. Thus, our results support a mechanism of cellular communication involving antigen-dependent, unidirectional intercellular transfer of miRNAs by exosomes during immune synapsis.",
+          "url": "https://doi.org/10.1038/ncomms1285"
+        },
+        {
           "id": "MED:30335862",
           "title": "miRWalk: An online resource for prediction of microRNA binding sites.",
           "method": "miRWalk",
@@ -14272,29 +14295,6 @@
           ],
           "abstract": "miRWalk is an open-source platform providing an intuitive interface that generates predicted and validated miRNA-binding sites of known genes of human, mouse, rat, dog and cow. The core of miRWalk is the miRNA target site prediction with the random-forest-based approach software TarPmiR searching the complete transcript sequence including the 5'-UTR, CDS and 3'-UTR. Moreover, it integrates results other databases with predicted and validated miRNA-target interactions. The focus is set on a modular design and extensibility as well as a fast update cycle. The database is available using Python, MySQL and HTML/Javascript Database URL: http://mirwalk.umm.uni-heidelberg.de.",
           "url": "https://doi.org/10.1371/journal.pone.0206239"
-        },
-        {
-          "id": "MED:21505438",
-          "title": "Unidirectional transfer of microRNA-loaded exosomes from T cells to antigen-presenting cells.",
-          "method": "",
-          "authors": "Mittelbrunn M, Gutiérrez-Vázquez C, Villarroya-Beltri C, González S, Sánchez-Cabo F, González MÁ, Bernad A, Sánchez-Madrid F.",
-          "journal": "Nature communications",
-          "year": "2011",
-          "date": "2011-01-01",
-          "doi": "10.1038/ncomms1285",
-          "cited": 1477,
-          "license": "cc by-nc-nd",
-          "pdf": "https://www.nature.com/articles/ncomms1285.pdf",
-          "keywords": [],
-          "tasks": [
-            "mirna"
-          ],
-          "datasets": [],
-          "lists": [
-            "classic"
-          ],
-          "abstract": "The immune synapse is an exquisitely evolved means of communication between T cells and antigen-presenting cells (APCs) during antigen recognition. Recent evidence points to the transfer of RNA via exosomes as a novel mode of intercellular communication. Here we show that exosomes of T, B and dendritic immune cells contain microRNA (miRNA) repertoires that differ from those of their parent cells. We investigate whether miRNAs are exchanged during cognate immune interactions, and demonstrate the existence of antigen-driven unidirectional transfer of miRNAs from the T cell to the APC, mediated by the delivery of CD63+ exosomes on immune synapse formation. Inhibition of exosome production by targeting neutral sphingomyelinase-2 impairs transfer of miRNAs to APCs. Moreover, miRNAs transferred during immune synapsis are able to modulate gene expression in recipient cells. Thus, our results support a mechanism of cellular communication involving antigen-dependent, unidirectional intercellular transfer of miRNAs by exosomes during immune synapsis.",
-          "url": "https://doi.org/10.1038/ncomms1285"
         },
         {
           "id": "MED:19536157",
@@ -14862,6 +14862,36 @@
           "url": "https://doi.org/10.1038/s41467-025-60902-2"
         },
         {
+          "id": "MED:39867482",
+          "title": "Reducing off-target expression of mRNA therapeutics and vaccines in the liver with microRNA binding sites.",
+          "method": "",
+          "authors": "Parrett BJ, Yamaoka S, Barry MA.",
+          "journal": "Molecular therapy. Methods & clinical development",
+          "year": "2025",
+          "date": "2024-12-19",
+          "doi": "10.1016/j.omtm.2024.101402",
+          "cited": 37,
+          "license": "cc by-nc-nd",
+          "pdf": "https://europepmc.org/articles/PMC11758401?pdf=render",
+          "keywords": [
+            "mRNA",
+            "Vaccine",
+            "MicroRNA",
+            "Mir-122",
+            "Lipid Nanoparticle",
+            "De-targeting"
+          ],
+          "tasks": [
+            "mirna"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Lipid nanoparticles (LNPs) are often liver tropic, presenting challenges for LNP-delivered mRNA therapeutics intended for other tissues, as off-target expression in the liver may increase side effects and modulate immune responses. To avoid off-target expression in the liver, miR-122 binding sites have been used by others in viral and non-viral therapeutics. Here, we use a luciferase reporter system to compare different copy numbers and insertion locations of miR-122 binding sequences to restrict liver expression. We inserted one to five miR-122 binding sites into the 5' or 3' untranslated regions (UTRs) of luciferase mRNAs and tested them in LNPs in vitro and in vivo via systemic intravenous and local intramuscular injections in mice. Our results showed no significant differences in de-targeting efficacy between mRNAs harboring one or multiple miR-122 binding sites or between those with 5' or 3' UTR placements. To test the impact of miR-122 binding sites on antibody response to a mRNA vaccine, Ebola virus matrix protein VP40 mRNAs were modified with or without miR-122 binding sites and injected in mice intramuscularly. This work reinforces the utility of miR-122 binding sites while providing a comparison of these sites to aid the future development of LNP-mRNA therapies for non-hepatic tissues.",
+          "url": "https://doi.org/10.1016/j.omtm.2024.101402"
+        },
+        {
           "id": "MED:40057850",
           "title": "Electrochemical Biosensors for the Detection of Exosomal microRNA Biomarkers for Early Diagnosis of Neurodegenerative Diseases.",
           "method": "",
@@ -14918,36 +14948,6 @@
           ],
           "abstract": "Reactive oxygen species (ROS) play a dual role in cancer progression, acting as both signaling molecules and drivers of oxidative damage. Emerging evidence highlights the intricate interplay between ROS, microRNAs (miRNAs), and exosomes within the tumor microenvironment (TME), forming a regulatory axis that modulates immune responses, angiogenesis, and therapeutic resistance. In particular, oxidative stress not only stimulates exosome biogenesis but also influences the selective packaging of redox-sensitive miRNAs (miR-21, miR-155, and miR-210) via RNA-binding proteins such as hnRNPA2B1 and SYNCRIP. These miRNAs, delivered through exosomes, alter gene expression in recipient cells and promote tumor-supportive phenotypes such as M2 macrophage polarization, CD8 + T-cell suppression, and endothelial remodeling. This review systematically explores how this ROS-miRNA-exosome axis orchestrates communication across immune and stromal cell populations under hypoxic and inflammatory conditions. Particular emphasis is placed on the role of NADPH oxidases, hypoxia-inducible factors, and autophagy-related mechanisms in regulating exosomal output. In addition, we analyze the therapeutic relevance of natural products and herbal compounds-such as curcumin, resveratrol, and ginsenosides-which have demonstrated promising capabilities to modulate ROS levels, miRNA expression, and exosome dynamics. We further discuss the clinical potential of leveraging this axis for cancer therapy, including strategies involving mesenchymal stem cell-derived exosomes, ferroptosis regulation, and miRNA-based immune modulation. Incorporating insights from spatial transcriptomics and single-cell analysis, this review provides a mechanistic foundation for the development of exosome-centered, redox-modulating therapeutics. Ultimately, this work aims to guide future research and drug discovery efforts toward integrating herbal medicine and redox biology in the fight against cancer.",
           "url": "https://doi.org/10.3390/antiox14050501"
-        },
-        {
-          "id": "MED:39867482",
-          "title": "Reducing off-target expression of mRNA therapeutics and vaccines in the liver with microRNA binding sites.",
-          "method": "",
-          "authors": "Parrett BJ, Yamaoka S, Barry MA.",
-          "journal": "Molecular therapy. Methods & clinical development",
-          "year": "2025",
-          "date": "2024-12-19",
-          "doi": "10.1016/j.omtm.2024.101402",
-          "cited": 30,
-          "license": "cc by-nc-nd",
-          "pdf": "https://europepmc.org/articles/PMC11758401?pdf=render",
-          "keywords": [
-            "mRNA",
-            "Vaccine",
-            "MicroRNA",
-            "Mir-122",
-            "Lipid Nanoparticle",
-            "De-targeting"
-          ],
-          "tasks": [
-            "mirna"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Lipid nanoparticles (LNPs) are often liver tropic, presenting challenges for LNP-delivered mRNA therapeutics intended for other tissues, as off-target expression in the liver may increase side effects and modulate immune responses. To avoid off-target expression in the liver, miR-122 binding sites have been used by others in viral and non-viral therapeutics. Here, we use a luciferase reporter system to compare different copy numbers and insertion locations of miR-122 binding sequences to restrict liver expression. We inserted one to five miR-122 binding sites into the 5' or 3' untranslated regions (UTRs) of luciferase mRNAs and tested them in LNPs in vitro and in vivo via systemic intravenous and local intramuscular injections in mice. Our results showed no significant differences in de-targeting efficacy between mRNAs harboring one or multiple miR-122 binding sites or between those with 5' or 3' UTR placements. To test the impact of miR-122 binding sites on antibody response to a mRNA vaccine, Ebola virus matrix protein VP40 mRNAs were modified with or without miR-122 binding sites and injected in mice intramuscularly. This work reinforces the utility of miR-122 binding sites while providing a comparison of these sites to aid the future development of LNP-mRNA therapies for non-hepatic tissues.",
-          "url": "https://doi.org/10.1016/j.omtm.2024.101402"
         },
         {
           "id": "MED:40994128",
@@ -16605,38 +16605,6 @@
           "url": "https://doi.org/10.3389/fmicb.2025.1559521"
         },
         {
-          "id": "MED:39669275",
-          "title": "Microplastics and human health: unveiling the gut microbiome disruption and chronic disease risks.",
-          "method": "Microplastics and human health",
-          "authors": "Bora SS, Gogoi R, Sharma MR, Anshu, Borah MP, Deka P, Bora J, Naorem RS, Das J, Teli AB.",
-          "journal": "Frontiers in cellular and infection microbiology",
-          "year": "2024",
-          "date": "2024-11-25",
-          "doi": "10.3389/fcimb.2024.1492759",
-          "cited": 87,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC11635378?pdf=render",
-          "keywords": [
-            "Inflammation",
-            "Human health",
-            "chronic diseases",
-            "Gut Microbiota",
-            "Dysbiosis",
-            "Microplastic",
-            "Gastrointestinal Microbiome",
-            "Microplastics"
-          ],
-          "tasks": [
-            "functional"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Microplastics (MPs), defined as plastic particles smaller than 5 mm, are increasingly recognized as environmental contaminants with potential health risks. These emerge as breakdown products of larger plastics and are omnipresent in marine, freshwater, and terrestrial ecosystems. They are primarily composed of polymers such as polyethylene, polypropylene, polystyrene, and additives that enhance their performance. MPs also adsorb harmful environmental chemicals like persistent organic pollutants and heavy metals, posing risks to human and environmental health. Human exposure to MPs occurs mainly through ingestion and inhalation, with MPs detected in food products, water, and even the air. MPs have been shown to accumulate in the gastrointestinal tract, disrupting the gut microbiome, and causing dysbiosis-a harmful imbalance between beneficial and harmful bacteria. This disruption has been linked to various health issues, including gastrointestinal disorders, systemic inflammation, and chronic diseases. Furthermore, the gut-brain axis may be affected, with potential neuroinflammatory consequences. As research continues to unravel the health impacts of MP exposure, understanding the mechanisms of accumulation and the broader implications on human health is crucial. This review highlights the effects of MPs on human health, emphasizing their impact on the gut microbiome. We discuss the potential connections between MP exposure and cardiometabolic and inflammatory diseases, and disorders related to the Gut-Brain Axis. By synthesizing the latest research, this work sheds light on the silent yet pervasive threat posed by MPs and underscores the importance of further studies to understand their health impacts fully.",
-          "url": "https://doi.org/10.3389/fcimb.2024.1492759"
-        },
-        {
           "id": "MED:41112042",
           "title": "The microbiome in cancer.",
           "method": "",
@@ -16664,6 +16632,34 @@
           ],
           "abstract": "The human microbiome is now recognized as a central regulator of cancer biology, intricately shaping tumor development, immune dynamics, and therapeutic response. This comprehensive review delineates the multifaceted roles of bacteria, viruses, and fungi in modulating the tumor microenvironment and systemic immunity across diverse cancer types. We synthesize current evidence on how microbial dysbiosis promotes carcinogenesis via chronic inflammation, metabolic reprogramming, genotoxic stress, immune evasion, and epigenetic remodeling. This review emphasizes organ-specific microbiome signatures and highlights their potential as non-invasive biomarkers for early detection, treatment stratification, and prognosis. Furthermore, we explore the impact of intratumoral microbiota on cancer therapies, uncovering how microbial metabolites and host-microbe interactions shape therapeutic efficacy and resistance. Finally, advances in microbiome-targeted strategies, such as probiotics, fecal microbiota transplantation, and engineered microbes offer new avenues for adjunctive cancer therapy. This review provides a roadmap for future investigation and underscores the transformative promise of microbiome modulation in cancer prevention and treatment.",
           "url": "https://doi.org/10.1002/imt2.70070"
+        },
+        {
+          "id": "MED:39794474",
+          "title": "Ecological dynamics of Enterobacteriaceae in the human gut microbiome across global populations.",
+          "method": "",
+          "authors": "Yin Q, da Silva AC, Zorrilla F, Almeida AS, Patil KR, Almeida A.",
+          "journal": "Nature microbiology",
+          "year": "2025",
+          "date": "2025-01-10",
+          "doi": "10.1038/s41564-024-01912-6",
+          "cited": 80,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC11790488?pdf=render",
+          "keywords": [
+            "Enterobacteriaceae",
+            "Gastrointestinal Microbiome"
+          ],
+          "tasks": [
+            "profiling",
+            "functional",
+            "resistance"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Gut bacteria from the Enterobacteriaceae family are a major cause of opportunistic infections worldwide. Given their prevalence among healthy human gut microbiomes, interspecies interactions may play a role in modulating infection resistance. Here we uncover global ecological patterns linked to Enterobacteriaceae colonization and abundance by leveraging a large-scale dataset of 12,238 public human gut metagenomes spanning 45 countries. Machine learning analyses identified a robust gut microbiome signature associated with Enterobacteriaceae colonization status, consistent across health states and geographic locations. We classified 172 gut microbial species as co-colonizers and 135 as co-excluders, revealing a genus-wide signal of colonization resistance within Faecalibacterium and strain-specific co-colonization patterns of the underexplored Faecalimonas phoceensis. Co-exclusion is linked to functions involved in short-chain fatty acid production, iron metabolism and quorum sensing, while co-colonization is linked to greater functional diversity and metabolic resemblance to Enterobacteriaceae. Our work underscores the critical role of the intestinal environment in the colonization success of gut-associated opportunistic pathogens with implications for developing non-antibiotic therapeutic strategies.",
+          "url": "https://doi.org/10.1038/s41564-024-01912-6"
         },
         {
           "id": "MED:39880958",
@@ -16778,34 +16774,6 @@
           "url": "https://doi.org/10.4014/jmb.2412.12001"
         },
         {
-          "id": "MED:39794474",
-          "title": "Ecological dynamics of Enterobacteriaceae in the human gut microbiome across global populations.",
-          "method": "",
-          "authors": "Yin Q, da Silva AC, Zorrilla F, Almeida AS, Patil KR, Almeida A.",
-          "journal": "Nature microbiology",
-          "year": "2025",
-          "date": "2025-01-10",
-          "doi": "10.1038/s41564-024-01912-6",
-          "cited": 67,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC11790488?pdf=render",
-          "keywords": [
-            "Enterobacteriaceae",
-            "Gastrointestinal Microbiome"
-          ],
-          "tasks": [
-            "profiling",
-            "functional",
-            "resistance"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Gut bacteria from the Enterobacteriaceae family are a major cause of opportunistic infections worldwide. Given their prevalence among healthy human gut microbiomes, interspecies interactions may play a role in modulating infection resistance. Here we uncover global ecological patterns linked to Enterobacteriaceae colonization and abundance by leveraging a large-scale dataset of 12,238 public human gut metagenomes spanning 45 countries. Machine learning analyses identified a robust gut microbiome signature associated with Enterobacteriaceae colonization status, consistent across health states and geographic locations. We classified 172 gut microbial species as co-colonizers and 135 as co-excluders, revealing a genus-wide signal of colonization resistance within Faecalibacterium and strain-specific co-colonization patterns of the underexplored Faecalimonas phoceensis. Co-exclusion is linked to functions involved in short-chain fatty acid production, iron metabolism and quorum sensing, while co-colonization is linked to greater functional diversity and metabolic resemblance to Enterobacteriaceae. Our work underscores the critical role of the intestinal environment in the colonization success of gut-associated opportunistic pathogens with implications for developing non-antibiotic therapeutic strategies.",
-          "url": "https://doi.org/10.1038/s41564-024-01912-6"
-        },
-        {
           "id": "MED:39604327",
           "title": "Microbiome-centered therapies for the management of metabolic dysfunction-associated steatotic liver disease.",
           "method": "",
@@ -16901,6 +16869,35 @@
           ],
           "abstract": "The current discovery that the gut microbiome, which contains roughly 100 trillion microbes, affects health and disease has catalyzed a boom in multidisciplinary research efforts focused on understanding this relationship. Also, it is commonly demonstrated that the gut and the CNS are closely related in a bidirectional pathway. A balanced gut microbiome is essential for regular brain activities and emotional responses. On the other hand, the CNS regulates the majority of GI physiology. Any disruption in this bidirectional pathway led to a progression of health problems in both directions, neurological and gastrointestinal diseases. In this review, we hope to shed light on the complicated connections of the microbiome-gut-brain axis and the critical roles of gut microbiome in the early development of the brain in order to get a deeper knowledge of microbiome-mediated pathological conditions and management options through rebalancing of gut microbiome.",
           "url": "https://doi.org/10.1007/s12035-025-04846-0"
+        },
+        {
+          "id": "MED:40927228",
+          "title": "Metabolic interplay of SCFA's in the gut and oral microbiome: a link to health and disease.",
+          "method": "",
+          "authors": "Nireeksha, Maniangat Luke A, Kumari N S, Hegde MN, Hegde NN.",
+          "journal": "Frontiers in oral health",
+          "year": "2025",
+          "date": "2025-08-25",
+          "doi": "10.3389/froh.2025.1646382",
+          "cited": 58,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC12414996?pdf=render",
+          "keywords": [
+            "Inflammation",
+            "dental caries",
+            "Short Chain Fatty Acids",
+            "Periodontal Health",
+            "Oral Microbiome"
+          ],
+          "tasks": [
+            "functional"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Short-chain fatty acids (SCFAs), primarily acetate (C2), propionate (C3), and butyrate (C4), are crucial microbial metabolites formed by the fermentation of dietary fibers by gut microbiota in the colon. These SCFAs, characterized by fewer than six carbon atoms, serve as an essential energy source for colonic epithelial cells and contribute approximately 10% of the body's total energy requirement. They are central to maintaining gut health through multiple mechanisms, including reinforcing intestinal barrier function, exerting anti-inflammatory effects, regulating glucose and lipid metabolism, and influencing host immune responses. Butyrate, in particular, plays a pivotal role in protecting the gut mucosa and modulating inflammatory processes. Beyond their intestinal functions, SCFAs affect systemic metabolic outcomes such as body weight regulation and appetite control by modulating the secretion of gut hormones and interacting with G-protein coupled receptors. Despite strong experimental evidence, mainly from animal models, clinical applications of SCFA modulation remain in preliminary stages, with limited translational findings in human therapeutics.In parallel, the oral microbiome also produces SCFAs, such as propionic, butyric, isobutyric, and isovaleric acids, as metabolic by-products in biofilm ecosystems like dental plaque. These acids contribute to interspecies communication, \"cross-feeding\" dynamics, and possibly biofilm stability or pathogenicity, especially in caries and periodontal disease. SCFAs in the oral cavity may act as signaling molecules or competitive factors, modulating microbial behavior and ecological balance within the oral niche. Collectively, these insights highlight SCFAs as integral to host-microbiota interactions, both in the gut and oral environments, with potential implications for targeted microbiome-based therapies in health and disease.",
+          "url": "https://doi.org/10.3389/froh.2025.1646382"
         },
         {
           "id": "MED:40140706",
@@ -17071,6 +17068,36 @@
           "url": "https://doi.org/10.1038/s41564-025-01973-1"
         },
         {
+          "id": "MED:39911715",
+          "title": "Deep learning in microbiome analysis: a comprehensive review of neural network models.",
+          "method": "",
+          "authors": "Przymus P, Rykaczewski K, Martín-Segura A, Truu J, Carrillo De Santa Pau E, Kolev M, Naskinova I, Gruca A, Sampri A, Frohme M, Nechyporenko A.",
+          "journal": "Frontiers in microbiology",
+          "year": "2024",
+          "date": "2025-01-22",
+          "doi": "10.3389/fmicb.2024.1516667",
+          "cited": 54,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC11794229?pdf=render",
+          "keywords": [
+            "Classification",
+            "Clustering",
+            "Microbiome",
+            "Natural Language Processing",
+            "Deep Learning"
+          ],
+          "tasks": [
+            "profiling",
+            "functional"
+          ],
+          "datasets": [],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Microbiome research, the study of microbial communities in diverse environments, has seen significant advances due to the integration of deep learning (DL) methods. These computational techniques have become essential for addressing the inherent complexity and high-dimensionality of microbiome data, which consist of different types of omics datasets. Deep learning algorithms have shown remarkable capabilities in pattern recognition, feature extraction, and predictive modeling, enabling researchers to uncover hidden relationships within microbial ecosystems. By automating the detection of functional genes, microbial interactions, and host-microbiome dynamics, DL methods offer unprecedented precision in understanding microbiome composition and its impact on health, disease, and the environment. However, despite their potential, deep learning approaches face significant challenges in microbiome research. Additionally, the biological variability in microbiome datasets requires tailored approaches to ensure robust and generalizable outcomes. As microbiome research continues to generate vast and complex datasets, addressing these challenges will be crucial for advancing microbiological insights and translating them into practical applications with DL. This review provides an overview of different deep learning models in microbiome research, discussing their strengths, practical uses, and implications for future studies. We examine how these models are being applied to solve key problems and highlight potential pathways to overcome current limitations, emphasizing the transformative impact DL could have on the field moving forward.",
+          "url": "https://doi.org/10.3389/fmicb.2024.1516667"
+        },
+        {
           "id": "MED:40299368",
           "title": "Microbiome and Postbiotics in Skin Health.",
           "method": "",
@@ -17189,40 +17216,6 @@
           ],
           "abstract": "Shotgun metagenomics has become a pivotal technology in microbiome research, enabling in-depth analysis of microbial communities at both the high-resolution taxonomic and functional levels. This approach provides valuable insights of microbial diversity, interactions, and their roles in health and disease. However, the complexity of data processing and the need for reproducibility pose significant challenges to researchers. To address these challenges, we developed EasyMetagenome, a user-friendly pipeline that supports multiple analysis methods, including quality control and host removal, read-based, assembly-based, and binning, along with advanced genome analysis. The pipeline also features customizable settings, comprehensive data visualizations, and detailed parameter explanations, ensuring its adaptability across a wide range of data scenarios. Looking forward, we aim to refine the pipeline by addressing host contamination issues, optimizing workflows for third-generation sequencing data, and integrating emerging technologies like deep learning and network analysis, to further enhance microbiome insights and data accuracy. EasyMetageonome is freely available at https://github.com/YongxinLiu/EasyMetagenome.",
           "url": "https://doi.org/10.1002/imt2.70001"
-        },
-        {
-          "id": "MED:40136712",
-          "title": "Impact of a High-Fat Diet on the Gut Microbiome: A Comprehensive Study of Microbial and Metabolite Shifts During Obesity.",
-          "method": "",
-          "authors": "Mamun MAA, Rakib A, Mandal M, Singh UP.",
-          "journal": "Cells",
-          "year": "2025",
-          "date": "2025-03-20",
-          "doi": "10.3390/cells14060463",
-          "cited": 48,
-          "license": "cc by",
-          "pdf": "https://europepmc.org/articles/PMC11940932?pdf=render",
-          "keywords": [
-            "Metabolites",
-            "Obesity",
-            "Gut Microbiota",
-            "Dysbiosis",
-            "Metabolic Profile",
-            "Obesity",
-            "Diet, High-Fat",
-            "Gastrointestinal Microbiome"
-          ],
-          "tasks": [
-            "profiling",
-            "functional",
-            "amplicon"
-          ],
-          "datasets": [],
-          "lists": [
-            "recent"
-          ],
-          "abstract": "Over the last few decades, the prevalence of metabolic diseases such as obesity, diabetes, non-alcoholic fatty liver disease, hypertension, and hyperuricemia has surged, primarily due to high-fat diet (HFD). The pathologies of these metabolic diseases show disease-specific alterations in the composition and function of their gut microbiome. How HFD alters the microbiome and its metabolite to mediate adipose tissue (AT) inflammation and obesity is not well known. Thus, this study aimed to identify the changes in the gut microbiome and metabolomic signatures induced by an HFD to alter obesity. To explore the changes in the gut microbiota and metabolites, 16S rRNA gene amplicon sequencing and metabolomic analyses were performed after HFD and normal diet (ND) feeding. We noticed that, at taxonomic levels, the number of operational taxonomic units (OTUs), along with the Chao and Shannon indexes, significantly shifted in HFD-fed mice compared to those fed a ND. Similarly, at the phylum level, an increase in Firmicutes and a decrease in Bacteroidetes were noticed in HFD-fed mice. At the genus level, an increase in Lactobacillus and Ruminococcus was observed, while Allobaculum , Clostridium , and Akkermansia were markedly reduced in the HFD group. Many bacteria from the Ruminococcus genus impair bile acid metabolism and restrict weight loss. Firmicutes are efficient in breaking down complex carbohydrates into short-chain fatty acids (SCFAs) and other metabolites, whereas Bacteroidetes are involved in a more balanced or efficient energy extraction. Thus, an increase in Firmicutes over Bacteroidetes enhances the absorption of more calories from food, which may contribute to obesity. Taken together, the altered gut microbiota and metabolites trigger AT inflammation, which contributes to metabolic dysregulation and disease progression. Thus, this study highlights the potential of the gut microbiome in the development of therapeutic strategies for obesity and related metabolic disorders.",
-          "url": "https://doi.org/10.3390/cells14060463"
         }
       ]
     },
@@ -17502,7 +17495,7 @@
           "year": "2023",
           "date": "2023-09-01",
           "doi": "10.1093/bioinformatics/btad557",
-          "cited": 62,
+          "cited": 66,
           "license": "cc by",
           "pdf": "https://europepmc.org/articles/PMC10562950?pdf=render",
           "keywords": [
@@ -17656,7 +17649,7 @@
           "year": "2015",
           "date": "2015-08-27",
           "doi": "10.1371/journal.pone.0136764",
-          "cited": 42,
+          "cited": 46,
           "license": "cc by",
           "pdf": "https://europepmc.org/articles/PMC4551741?pdf=render",
           "keywords": [
@@ -18486,6 +18479,38 @@
           ],
           "abstract": "Constant pH molecular dynamics (CpHMD) has emerged as a powerful method for simulating pH-dependent processes in proteins and other biomolecules. The original implementation of the PME-based CpHMD in the GROMACS software included the CHARMM36 and Martini 2 force fields for the treatment of the titratable amino acids in proteins. As requested by the user community, this work contains the parametrization of titratable residues for the Amber99sb-ildn, Amber14sb, and OPLS-AA/M force fields. In addition to carefully carrying out the parametrization process, the performance of the different force fields in the scope of CpHMD is evaluated by performing computational titrations for a set of benchmark proteins. The calculated pKa values obtained using all force fields yield an average root-mean-square error of about 1 pH unit in comparison to experimental pKa values, which is in line with previous CpHMD benchmarks. The presented work expands the applicability of the PME-based CpHMD method in GROMACS and guides the researchers aiming to perform accurate and efficient CpHMD simulations.",
           "url": "https://doi.org/10.1021/acs.jctc.6c00678"
+        },
+        {
+          "id": "MED:42878004",
+          "title": "The MODNAP benchmark set for modeling ribose-based modified nucleic acid and nucleic acid-protein complexes: a case study with AlphaFold 3.",
+          "method": "",
+          "authors": "Fu J, Milam VT, McShan AC.",
+          "journal": "Nucleic acids research",
+          "year": "2026",
+          "date": "2026-10-01",
+          "doi": "10.1093/nar/gkag999",
+          "cited": 0,
+          "license": "cc by",
+          "pdf": "https://europepmc.org/articles/PMC13669634?pdf=render",
+          "keywords": [
+            "Ribose",
+            "Proteins",
+            "Nucleic Acids",
+            "Models, Molecular",
+            "Software"
+          ],
+          "tasks": [
+            "benchmark"
+          ],
+          "datasets": [
+            "db:pdb",
+            "ds:posebusters"
+          ],
+          "lists": [
+            "recent"
+          ],
+          "abstract": "Modified nucleic acids play important roles in biology and biotechnology. However, their chemical and structural diversity as well as effects on nucleic acid structure and intermolecular interactions remain incompletely characterized. The performance of structure prediction and co-folding algorithms for modeling modified nucleic acids and nucleic acid-protein complexes has also not been evaluated. Here, we systematically analyze ribose-based modified nucleotides present in structures deposited in the Protein Data Bank. Modified nucleotides are primarily localized to the nucleobase, where they exhibit chemical and structural diversity shaped by molecular size, topological shape descriptors, and polarity-related properties. We develop MODNAP, the first curated dataset of experimentally determined structures containing modified nucleotides. Using MODNAP, we benchmark AlphaFold 3 on 1039 nucleic acid and nucleic acid-protein complex structures spanning a range of nucleotide modifications, tertiary folds, and biological functions. AlphaFold 3 achieves success rates exceeding 80% at an RMSD threshold of 2.5 Å. However, its accuracy in positioning modified nucleotides is variable and decreases for structures not explicitly represented in training. PoseBusters analysis reveals frequent intramolecular validity failures, primarily due to non-ideal ribose ring geometries. Together, these results establish MODNAP as a resource for evaluating and improving structure prediction methods for modified nucleic acids.",
+          "url": "https://doi.org/10.1093/nar/gkag999"
         },
         {
           "id": "MED:42752547",

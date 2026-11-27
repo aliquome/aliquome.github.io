@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-25T13:23:29Z",
+  "generated_at": "2026-11-27T12:50:15Z",
   "engine": "aliquome-engine 0.1.0",
-  "commit": "725426154e34af18ac0c549c31feb56301974270",
+  "commit": "5b4e0bc9f633efc490740c9408d99a6ef4c52dec",
   "mode": "online",
   "inputs": {
     "data/database_versions.csv": "69a91fc7558f0bdfe9b62c9558dc321f4b450c3a92f1636f88ed05a628fe9bee",
@@ -16,9 +16,9 @@
   "counts": {
     "benchmark_files": 8,
     "datasets": 505,
-    "latest_papers": 1441,
+    "latest_papers": 1468,
     "leaderboard_rows": 145,
-    "papers": 652,
+    "papers": 653,
     "sources": 83,
     "versions": 794
   }
